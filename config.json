@@ -1,0 +1,56 @@
+{
+  "app_name": "Opportunity Radar AI",
+  "timezone": "Europe/Madrid",
+  "currency": "EUR",
+  "profile": {
+    "budget": 150,
+    "budgetAuthorizedAbove150": false,
+    "alertThreshold": 75,
+    "urgentThreshold": 85,
+    "categories": ["cripto", "startups", "ia_tecnologia", "lanzamientos", "negocio"]
+  },
+  "limits": {
+    "max_candidates_per_run": 10,
+    "max_rechecks_per_run": 4,
+    "max_llm_calls": {"gemini": 40, "groq": 60, "openrouter": 20, "anthropic": 0},
+    "page_text_chars": 6000,
+    "keep_runs": 120,
+    "prune_discard_days": 30
+  },
+  "models": {
+    "searcher": ["gemini"],
+    "analyst": ["groq", "openrouter", "gemini"],
+    "verifier": ["gemini", "openrouter", "groq"],
+    "gemini_preference": ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3-flash", "gemini-2.5-flash"],
+    "groq_preference": ["openai/gpt-oss-120b", "llama-3.3-70b-versatile", "qwen/qwen3-32b", "openai/gpt-oss-20b"],
+    "openrouter_preference": ["openrouter/free", "deepseek/deepseek-chat-v3.1:free", "meta-llama/llama-3.3-70b-instruct:free"]
+  },
+  "discovery_queries": {
+    "cripto": [
+      "airdrops confirmados y testnets con recompensas abiertas esta semana",
+      "proyectos DePIN o de IA descentralizada con ronda de financiación reciente que ofrecen puntos o recompensas a usuarios"
+    ],
+    "startups": [
+      "campañas de equity crowdfunding abiertas en España en plataformas autorizadas por la CNMV con ticket mínimo bajo",
+      "preventas de producto en Kickstarter o Indiegogo de startups europeas que envían a España"
+    ],
+    "ia_tecnologia": [
+      "nuevas plataformas de IA con programa de acceso anticipado, recompensas o afiliados lanzadas este mes",
+      "marketplaces de IA nuevos donde vender agentes, prompts o automatizaciones"
+    ],
+    "lanzamientos": [
+      "programas de embajadores, referidos o concursos con premios de empresas reales disponibles en España este mes",
+      "promociones bancarias o de fintech legítimas en España con bonificación por alta este mes"
+    ],
+    "negocio": [
+      "modelos de negocio digitales que crecen en EE. UU. y casi no existen en España, que se puedan empezar con menos de 150 euros",
+      "micro-SaaS o servicios con IA de nicho con demanda creciente en Europa"
+    ]
+  },
+  "rss_feeds": [
+    {"name": "Product Hunt", "url": "https://www.producthunt.com/feed", "category": "ia_tecnologia"},
+    {"name": "El Referente", "url": "https://www.elreferente.es/feed/", "category": "startups"},
+    {"name": "TechCrunch Startups", "url": "https://techcrunch.com/category/startups/feed/", "category": "startups"},
+    {"name": "The Block", "url": "https://www.theblock.co/rss.xml", "category": "cripto"}
+  ]
+}
