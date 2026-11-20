@@ -1,1 +1,3942 @@
-[]
+[
+ {
+  "name": "Mastra Factory",
+  "category": "ia_tecnologia",
+  "subcategory": "software_factory",
+  "kind": "pasiva",
+  "description": "Mastra Factory es una fábrica de software de código abierto que permite orquestar agentes IA mediante tableros Kanban configurables y Slack. Se basa en el framework Mastra y ofrece tanto una versión auto‑alojada como una versión hosted.",
+  "officialUrl": "https://factory.mastra.ai",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Al ser software libre, puede usarse en España sin restricciones.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "La versión hosted puede tener coste, no especificado en la fuente.",
+   "recommended": 0,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, es una herramienta de uso continuo.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "varias semanas para integración y adaptación",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Lanzamiento de una fábrica de software basada en agentes IA",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8,
+    "why": "Mastra registra ~4M descargas semanales; Factory ya gestiona cientos de PRs",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "No hay datos de tamaño de mercado específicos",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6,
+    "why": "Fundadores mencionados: Shane, Sam y Abhi",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 4,
+    "why": "No se dispone de información sobre financiación externa",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "238 PRs mergeados por Factory, 630 por humanos; repositorio activo",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5,
+    "why": "Uso interno descrito, adopción externa no cuantificada",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "No se menciona competencia directa",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "Depende de LLM externos y de la integración de sandboxes",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "Software libre, sin inversión financiera requerida",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9,
+    "why": "Disponible globalmente como código abierto",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que recuperar",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "closed_repo",
+    "severity": "media",
+    "detail": "El repositorio está cerrado a contribuciones externas, lo que puede limitar la comunidad."
+   },
+   {
+    "code": "dependencia_ia_externa",
+    "severity": "alta",
+    "detail": "La funcionalidad depende de APIs de LLM de terceros (Claude, Codex, etc.)."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Dependencia de proveedores de IA externos que pueden cambiar precios o disponibilidad."
+  ],
+  "whyInteresting": [
+   "Permite automatizar flujos de trabajo de desarrollo con agentes IA.",
+   "Facilita la gestión de PRs y tareas en entornos colaborativos como Slack."
+  ],
+  "howToParticipate": [
+   "1. Visitar https://github.com/mastra-ai/template-factory.",
+   "2. Leer la documentación y requisitos de entorno.",
+   "3. Ejecutar `npm create factory` para instalar localmente.",
+   "4. Configurar la integración con Slack o usar la versión hosted (si está disponible)."
+  ],
+  "lossCauses": [
+   "Pérdida de tiempo si la herramienta no se adapta a los procesos internos.",
+   "Posibles costes ocultos de la versión hosted."
+  ],
+  "earlySignals": [
+   "238 PRs mergeados por Factory en una semana.",
+   "630 PRs mergeados por humanos en la misma semana."
+  ],
+  "signals": {
+   "upvotes": 151,
+   "comments": 42
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo en España.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://news.ycombinator.com/item?id=50548660"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-factory-mastra-ai",
+  "isNew": true,
+  "score": 53,
+  "rawScore": 63.0,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "closed_repo",
+    "severity": "media",
+    "detail": "El repositorio está cerrado a contribuciones externas, lo que puede limitar la comunidad."
+   },
+   {
+    "code": "dependencia_ia_externa",
+    "severity": "alta",
+    "detail": "La funcionalidad depende de APIs de LLM de terceros (Claude, Codex, etc.)."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Lanzamiento de una fábrica de software basada en agentes IA",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "Mastra registra ~4M descargas semanales; Factory ya gestiona cientos de PRs",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay datos de tamaño de mercado específicos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Fundadores mencionados: Shane, Sam y Abhi",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de información sobre financiación externa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "238 PRs mergeados por Factory, 630 por humanos; repositorio activo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso interno descrito, adopción externa no cuantificada",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "No se menciona competencia directa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Depende de LLM externos y de la integración de sandboxes",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Software libre, sin inversión financiera requerida",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Disponible globalmente como código abierto",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que recuperar",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "upvotes": 151.0,
+    "comments": 42.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Mastra Factory\nCATEGORÍA: ia_tecnologia · software_factory\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://factory.mastra.ai\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 53/100 · Especulativa\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite automatizar flujos de trabajo de desarrollo con agentes IA.; Facilita la gestión de PRs y tareas en entornos colaborativos como Slack.\nMOTIVOS PARA DESCONFIAR: El repositorio está cerrado a contribuciones externas, lo que puede limitar la comunidad.; La funcionalidad depende de APIs de LLM de terceros (Claude, Codex, etc.).; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Dependencia de proveedores de IA externos que pueden cambiar precios o disponibilidad.\nCÓMO PARTICIPAR: 1. Visitar https://github.com/mastra-ai/template-factory.; 2. Leer la documentación y requisitos de entorno.; 3. Ejecutar `npm create factory` para instalar localmente.; 4. Configurar la integración con Slack o usar la versión hosted (si está disponible).\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de tiempo si la herramienta no se adapta a los procesos internos.; Posibles costes ocultos de la versión hosted.\nFUENTES: https://news.ycombinator.com/item?id=50548660",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-news-ycombinator-com"
+  ]
+ },
+ {
+  "name": "Cornhole News",
+  "category": "ia_tecnologia",
+  "subcategory": "news_aggregator",
+  "kind": "pasiva",
+  "description": "Plataforma web inspirada en Hacker News que agrega noticias del Midwest de EE. UU. Permite a los usuarios enviar y votar historias de la región.",
+  "officialUrl": "https://cornholenews.news",
+  "participateUrl": null,
+  "country": "EE. UU.",
+  "spainAvailability": "no",
+  "spainNotes": "Enfocado en noticias del Midwest de EE. UU.; sin contenido local ni servicios para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Ninguno",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No hay inversión; simplemente dejar de usar el sitio.",
+  "horizon": "corto a medio",
+  "deadline": null,
+  "potential": "baja",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo, navegación ocasional",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Show HN con 226 upvotes y 104 comentarios",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Contenido limitado al Midwest de EE. UU.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 3,
+    "why": "Audiencia geográfica muy específica y poco relevante para España",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5,
+    "why": "No se indica modelo de financiación ni inversores",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "226 upvotes y 104 comentarios en Hacker News indican comunidad activa",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Sin datos de usuarios activos ni métricas de tráfico",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 3,
+    "why": "Existen numerosos agregadores de noticias y sitios locales con mayor alcance",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 8,
+    "why": "Sitio web está activo y funciona sin problemas técnicos aparentes",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión económica directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2,
+    "why": "Contenido centrado en EE. UU.; sin versión o soporte para España",
+    "evidence": true
+   },
+   "salida": {
+    "v": 8,
+    "why": "No hay bloqueo de fondos ni compromiso financiero",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "audiencia_limitada",
+    "severity": "media",
+    "detail": "El contenido está centrado en una región de EE. UU., lo que limita su relevancia para usuarios españoles"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Ejemplo de comunidad auto‑moderada similar a Hacker News; útil para observar tendencias de noticias locales"
+  ],
+  "howToParticipate": [
+   "1. Visitar https://cornholenews.news",
+   "2. Registrarse si se desea participar",
+   "3. Leer y votar historias"
+  ],
+  "lossCauses": [
+   "Ninguno, ya que no hay inversión financiera"
+  ],
+  "earlySignals": [
+   "Puntos y comentarios en Hacker News indican interés inicial"
+  ],
+  "signals": {
+   "upvotes": 226,
+   "comments": 104
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No aplica a servicios financieros",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://cornholenews.news"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50561515"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-cornholenews-news",
+  "isNew": true,
+  "score": 39,
+  "rawScore": 48.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)",
+   "Tope 39: no disponible para residentes en España"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "audiencia_limitada",
+    "severity": "media",
+    "detail": "El contenido está centrado en una región de EE. UU., lo que limita su relevancia para usuarios españoles"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Show HN con 226 upvotes y 104 comentarios",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 4.0,
+    "points": 4.8,
+    "why": "Contenido limitado al Midwest de EE. UU.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Audiencia geográfica muy específica y poco relevante para España",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se indica modelo de financiación ni inversores",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "226 upvotes y 104 comentarios en Hacker News indican comunidad activa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin datos de usuarios activos ni métricas de tráfico",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen numerosos agregadores de noticias y sitios locales con mayor alcance",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Sitio web está activo y funciona sin problemas técnicos aparentes",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión económica directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Contenido centrado en EE. UU.; sin versión o soporte para España",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "No hay bloqueo de fondos ni compromiso financiero",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "upvotes": 226.0,
+    "comments": 104.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Cornhole News\nCATEGORÍA: ia_tecnologia · news_aggregator\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://cornholenews.news\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EE. UU.\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto a medio\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ejemplo de comunidad auto‑moderada similar a Hacker News; útil para observar tendencias de noticias locales\nMOTIVOS PARA DESCONFIAR: El contenido está centrado en una región de EE. UU., lo que limita su relevancia para usuarios españoles; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Visitar https://cornholenews.news; 2. Registrarse si se desea participar; 3. Leer y votar historias\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguno, ya que no hay inversión financiera\nFUENTES: https://cornholenews.news | https://news.ycombinator.com/item?id=50561515",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-cornholenews-news"
+  ]
+ },
+ {
+  "name": "WASTED",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "pasiva",
+  "description": "WASTED es una meme coin comunitaria en la cadena Solana, lanzada sin presale y con autoridad de mint revocada. La comunidad gestiona el proyecto y busca impulsar el token mediante eventos y campañas, como el lanzamiento de GTA VI. No hay un equipo centralizado y la información oficial se limita al sitio web y cuentas X.",
+  "officialUrl": "https://wastedonsolana.cc/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Se puede adquirir a través de DEX en Solana sin restricciones geográficas para residentes en España.",
+  "costs": {
+   "minEntry": 0.01,
+   "extra": 0.001,
+   "extraNotes": "comisiones de red Solana y posible slippage",
+   "recommended": 50,
+   "max": 150
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Puede venderse en DEX, pero la liquidez moderada y alta volatilidad pueden dificultar una salida sin pérdidas significativas.",
+  "horizon": "corto a mediano",
+  "deadline": null,
+  "potential": "Alto potencial de crecimiento si la comunidad mantiene el impulso, pero extremadamente especulativo y dependiente de hype externo.",
+  "difficulty": "baja",
+  "timeNeeded": "Monitorizar la comunidad y los precios; la compra/venta se realiza en minutos mediante DEX.",
+  "subscores": {
+   "novedad": {
+    "v": 4,
+    "why": "Meme coin sin innovación tecnológica significativa",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Comunidad activa y posible impulso por eventos como GTA VI",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Capitalización ~880k USD, liquidez ~92k USD, volumen 24h ~440k USD",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No hay equipo identificado; gestión comunitaria anónima",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "Fair launch sin presale, sin financiación externa conocida",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "Presencia en X, misión comunitaria, canales activos",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Uso limitado a especulación; no se reportan integraciones reales",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 3,
+    "why": "Existe gran número de meme coins competidoras en Solana",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Token en Solana con autoridad de mint revocada; depende de la estabilidad de la cadena",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4,
+    "why": "Liquidez moderada y alta volatilidad de precios",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8,
+    "why": "Acceso libre mediante DEX sin restricciones geográficas",
+    "evidence": true
+   },
+   "salida": {
+    "v": 5,
+    "why": "Venta posible en DEX pero limitada por liquidez",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_team",
+    "severity": "alta",
+    "detail": "No hay equipo identificado; proyecto gestionado por comunidad anónima"
+   },
+   {
+    "code": "low_liquidity",
+    "severity": "media",
+    "detail": "Liquidez de ~91k USD puede ser insuficiente para operaciones de gran tamaño"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Dependencia de hype externo como el lanzamiento de GTA VI",
+   "Falta de liderazgo claro y riesgos de abandono comunitario"
+  ],
+  "whyInteresting": [
+   "Token gestionado totalmente por la comunidad, lo que permite participación directa",
+   "Posible aumento de interés alrededor del lanzamiento de GTA VI, gran evento cultural"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (ej. Phantom)",
+   "Obtener SOL para pagar comisiones",
+   "Acceder a un DEX de Solana como PumpSwap o DexScreener",
+   "Buscar el par WASTED/SOL y ejecutar una orden de compra",
+   "Almacenar el token en la wallet y seguir la comunidad para decidir venta"
+  ],
+  "lossCauses": [
+   "Venta masiva por pérdida de interés comunitario",
+   "Baja liquidez que impida vender sin gran slippage",
+   "Problemas de seguridad o fallos en la cadena Solana"
+  ],
+  "earlySignals": [
+   "Incremento de volumen y número de compras en los días previos al lanzamiento de GTA VI"
+  ],
+  "signals": {
+   "volume24hUsd": 439721.59
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+   "symbol": "WASTED",
+   "name": "WASTED",
+   "priceUsd": 0.0008965,
+   "liquidityUsd": 91715.73,
+   "volume24hUsd": 439721.59,
+   "fdvUsd": 879628,
+   "mcapUsd": 879628,
+   "ageHours": 497.5,
+   "buys24h": 4233,
+   "sells24h": 3662,
+   "pairUrl": "https://dexscreener.com/solana/tt7dks9yjjzj1fwmgopmkbmdrezzymamrhodcgdfwqn"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://wastedonsolana.cc/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/tt7dks9yjjzj1fwmgopmkbmdrezzymamrhodcgdfwqn"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "tok-solana-gexthzhgaswpaq7fi8qrhfubjpimunsyhjiaa7xzpump",
+  "isNew": true,
+  "score": 36,
+  "rawScore": 46.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "no_team",
+    "severity": "alta",
+    "detail": "No hay equipo identificado; proyecto gestionado por comunidad anónima"
+   },
+   {
+    "code": "low_liquidity",
+    "severity": "media",
+    "detail": "Liquidez de ~91k USD puede ser insuficiente para operaciones de gran tamaño"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 10,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Meme coin sin innovación tecnológica significativa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Comunidad activa y posible impulso por eventos como GTA VI",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Capitalización ~880k USD, liquidez ~92k USD, volumen 24h ~440k USD",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No hay equipo identificado; gestión comunitaria anónima",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Fair launch sin presale, sin financiación externa conocida",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Presencia en X, misión comunitaria, canales activos",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso limitado a especulación; no se reportan integraciones reales",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existe gran número de meme coins competidoras en Solana",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Token en Solana con autoridad de mint revocada; depende de la estabilidad de la cadena",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 4.0,
+    "points": 4.0,
+    "why": "Liquidez moderada y alta volatilidad de precios",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Acceso libre mediante DEX sin restricciones geográficas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Venta posible en DEX pero limitada por liquidez",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 50.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -50.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 100.0,
+     "netEur": 98.76,
+     "exitImpactPct": 0.2,
+     "exitNote": null,
+     "impliedFdvUsd": 1759256
+    },
+    {
+     "multiple": 5,
+     "grossEur": 250.0,
+     "netEur": 246.02,
+     "exitImpactPct": 0.6,
+     "exitNote": null,
+     "impliedFdvUsd": 4398140
+    },
+    {
+     "multiple": 10,
+     "grossEur": 500.0,
+     "netEur": 489.07,
+     "exitImpactPct": 1.2,
+     "exitNote": null,
+     "impliedFdvUsd": 8796280
+    },
+    {
+     "multiple": 20,
+     "grossEur": 1000.0,
+     "netEur": 966.27,
+     "exitImpactPct": 2.4,
+     "exitNote": null,
+     "impliedFdvUsd": 17592560
+    },
+    {
+     "multiple": 50,
+     "grossEur": 2500.0,
+     "netEur": 2326.69,
+     "exitImpactPct": 6.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 43981400
+    },
+    {
+     "multiple": 100,
+     "grossEur": 5000.0,
+     "netEur": 4356.75,
+     "exitImpactPct": 12.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 87962800
+    },
+    {
+     "multiple": 300,
+     "grossEur": 15000.0,
+     "netEur": 9510.73,
+     "exitImpactPct": 36.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 263888400
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "priceUsd": 0.0008965,
+    "liquidityUsd": 91715.73,
+    "volume24hUsd": 439721.59,
+    "fdvUsd": 879628.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: WASTED\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://wastedonsolana.cc/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,01 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 50,00 €\nPOTENCIAL: Alto potencial de crecimiento si la comunidad mantiene el impulso, pero extremadamente especulativo y dependiente de hype externo.\nPUNTUACIÓN: 36/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto a mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Token gestionado totalmente por la comunidad, lo que permite participación directa; Posible aumento de interés alrededor del lanzamiento de GTA VI, gran evento cultural\nMOTIVOS PARA DESCONFIAR: No hay equipo identificado; proyecto gestionado por comunidad anónima; Liquidez de ~91k USD puede ser insuficiente para operaciones de gran tamaño; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Dependencia de hype externo como el lanzamiento de GTA VI; Falta de liderazgo claro y riesgos de abandono comunitario\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (ej. Phantom); Obtener SOL para pagar comisiones; Acceder a un DEX de Solana como PumpSwap o DexScreener; Buscar el par WASTED/SOL y ejecutar una orden de compra; Almacenar el token en la wallet y seguir la comunidad para decidir venta\nQUÉ PODRÍA HACERME PERDER EL DINERO: Venta masiva por pérdida de interés comunitario; Baja liquidez que impida vender sin gran slippage; Problemas de seguridad o fallos en la cadena Solana\nFUENTES: https://wastedonsolana.cc/ | https://dexscreener.com/solana/tt7dks9yjjzj1fwmgopmkbmdrezzymamrhodcgdfwqn",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "tok-solana-gexthzhgaswpaq7fi8qrhfubjpimunsyhjiaa7xzpump"
+  ]
+ },
+ {
+  "name": "GTA6CAT (GATO)",
+  "category": "cripto",
+  "subcategory": "gaming_nft",
+  "kind": "activa",
+  "description": "Token $GATO vinculado al proyecto NFT Grand Theft Gato VI en Solana, con juego y coleccionables. Precio bajo y alta volatilidad.",
+  "officialUrl": "https://thegta6cat.com/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "Proyecto internacional sin indicaciones de cumplimiento regulatorio en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0.5,
+   "extraNotes": "Comisiones de red y posible compra mínima de NFT 0.5 SOL",
+   "recommended": 100,
+   "max": 150
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEXs de Solana, pero el bajo volumen y la falta de pares puede dificultar la salida completa.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto si el juego gana tracción, pero depende de hype y adopción.",
+  "difficulty": "media",
+  "timeNeeded": "moderado (configuración de wallet y seguimiento de mercado)",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Proyecto NFT basado en temática GTA con integración de token",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7,
+    "why": "Precio bajo y posible crecimiento con juego",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Mercado de NFTs saturado y token en Solana con competencia",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se encuentran datos de equipo en la web",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "Financiación no divulgada, depende de venta de NFTs",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "Presencia en X y sitio web, pero comunidad limitada",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Requiere compra de NFT y juego, adopción incipiente",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Muchos proyectos NFT de juegos compiten por atención",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 3,
+    "why": "Depende de Solana y de infraestructura del juego, posible vulnerabilidad",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "Alta volatilidad, posible pérdida total",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Sin información de disponibilidad o cumplimiento en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5,
+    "why": "Liquidez media, pero pares limitados",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "No se muestra información del equipo ni financiación"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "opacidad del equipo",
+   "dependencia de hype de GTA"
+  ],
+  "whyInteresting": [
+   "relación con marca GTA",
+   "precio bajo del token"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (ej. Phantom)",
+   "Comprar SOL en exchange",
+   "Conectar la wallet a un DEX de Solana (ej. Raydium)",
+   "Buscar el par $GATO y comprar la cantidad deseada",
+   "Opcional: participar en el mint de NFT pagando 0.5 SOL"
+  ],
+  "lossCauses": [
+   "baja liquidez",
+   "cierre del proyecto",
+   "regulación restrictiva",
+   "hack o vulnerabilidad"
+  ],
+  "earlySignals": [
+   "alto volumen 24h (474k USD)",
+   "actividad en redes sociales"
+  ],
+  "signals": {
+   "volume24hUsd": 474396.26
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "symbol": "GATO",
+   "name": "GTA6CAT",
+   "priceUsd": 0.00327,
+   "liquidityUsd": 195698.63,
+   "volume24hUsd": 474396.26,
+   "fdvUsd": 3223564,
+   "mcapUsd": 3227646,
+   "ageHours": 2087.2,
+   "buys24h": 2830,
+   "sells24h": 2852,
+   "pairUrl": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://thegta6cat.com/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump",
+  "isNew": true,
+  "score": 31,
+  "rawScore": 41.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "No se muestra información del equipo ni financiación"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Proyecto NFT basado en temática GTA con integración de token",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Precio bajo y posible crecimiento con juego",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Mercado de NFTs saturado y token en Solana con competencia",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se encuentran datos de equipo en la web",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Financiación no divulgada, depende de venta de NFTs",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Presencia en X y sitio web, pero comunidad limitada",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 4.0,
+    "points": 3.6,
+    "why": "Requiere compra de NFT y juego, adopción incipiente",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.0,
+    "points": 2.0,
+    "why": "Muchos proyectos NFT de juegos compiten por atención",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de Solana y de infraestructura del juego, posible vulnerabilidad",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad, posible pérdida total",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sin información de disponibilidad o cumplimiento en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Liquidez media, pero pares limitados",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 100.0,
+   "extraCostsEur": 0.5,
+   "lossScenarioEur": -100.5,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 200.0,
+     "netEur": 197.06,
+     "exitImpactPct": 0.2,
+     "exitNote": null,
+     "impliedFdvUsd": 6447128
+    },
+    {
+     "multiple": 5,
+     "grossEur": 500.0,
+     "netEur": 491.72,
+     "exitImpactPct": 0.6,
+     "exitNote": null,
+     "impliedFdvUsd": 16117820
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1000.0,
+     "netEur": 978.38,
+     "exitImpactPct": 1.1,
+     "exitNote": null,
+     "impliedFdvUsd": 32235640
+    },
+    {
+     "multiple": 20,
+     "grossEur": 2000.0,
+     "netEur": 1935.01,
+     "exitImpactPct": 2.2,
+     "exitNote": null,
+     "impliedFdvUsd": 64471280
+    },
+    {
+     "multiple": 50,
+     "grossEur": 5000.0,
+     "netEur": 4671.47,
+     "exitImpactPct": 5.6,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 161178200
+    },
+    {
+     "multiple": 100,
+     "grossEur": 10000.0,
+     "netEur": 8787.37,
+     "exitImpactPct": 11.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 322356400
+    },
+    {
+     "multiple": 300,
+     "grossEur": 30000.0,
+     "netEur": 19690.33,
+     "exitImpactPct": 33.7,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 967069200
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "priceUsd": 0.00327,
+    "liquidityUsd": 195698.63,
+    "volume24hUsd": 474396.26,
+    "fdvUsd": 3223564.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: GTA6CAT (GATO)\nCATEGORÍA: cripto · gaming_nft\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://thegta6cat.com/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,50 € adicionales)\nPRESUPUESTO RECOMENDADO: 100,00 €\nPOTENCIAL: alto si el juego gana tracción, pero depende de hype y adopción.\nPUNTUACIÓN: 31/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: relación con marca GTA; precio bajo del token\nMOTIVOS PARA DESCONFIAR: No se muestra información del equipo ni financiación; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; opacidad del equipo; dependencia de hype de GTA\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (ej. Phantom); Comprar SOL en exchange; Conectar la wallet a un DEX de Solana (ej. Raydium); Buscar el par $GATO y comprar la cantidad deseada; Opcional: participar en el mint de NFT pagando 0.5 SOL\nQUÉ PODRÍA HACERME PERDER EL DINERO: baja liquidez; cierre del proyecto; regulación restrictiva; hack o vulnerabilidad\nFUENTES: https://thegta6cat.com/ | https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump"
+  ]
+ },
+ {
+  "name": "ExitPath",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "ExitPath es una plataforma open‑source que recopila alternativas a herramientas SaaS como Slack, Notion y Microsoft 365 y guía el proceso de migración. Fue presentada en Hacker News y ha generado interés en la comunidad tecnológica. No ofrece un producto comercial, sino información y recursos para cambiar de proveedores propietarios.",
+  "officialUrl": "https://exitpath-ruddy.vercel.app/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se indica disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Software open‑source, sin costes de licencia ni suscripción",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "corto‑medio plazo para adopción en entornos empresariales",
+  "deadline": null,
+  "potential": "Potencial moderado, depende de la capacidad de las organizaciones para migrar a soluciones open‑source y de la comunidad que mantenga el proyecto.",
+  "difficulty": "baja",
+  "timeNeeded": "horas a días para evaluar y planificar la migración",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Proyecto reciente con 249 upvotes en Hacker News",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6,
+    "why": "No hay datos de usuarios o ingresos que confirmen tracción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Mercado de herramientas de productividad empresarial es amplio pero dominado por grandes SaaS",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 4,
+    "why": "No se dispone de información pública sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "93 comentarios en Hacker News indican interés de la comunidad",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Falta de métricas de adopción o casos de uso documentados",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Compite directamente con soluciones consolidadas como Slack, Notion y Microsoft 365",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Código abierto permite auditoría y mitigación de vulnerabilidades",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión económica directa",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "No se indica soporte o localización para el mercado español",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que recuperar, por lo que no aplica una salida financiera",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_traction",
+    "severity": "media",
+    "detail": "No hay datos de usuarios activos, ingresos ni clientes empresariales que demuestren adopción real"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Ofrece alternativas open‑source que pueden reducir costes de licencias y dependencia de proveedores SaaS"
+  ],
+  "howToParticipate": [
+   "Visitar https://exitpath-ruddy.vercel.app/",
+   "Explorar las alternativas listadas para Slack, Notion y Microsoft 365",
+   "Evaluar la viabilidad de migrar en tu entorno o empresa",
+   "Contribuir al proyecto mediante pull requests o documentación si lo deseas"
+  ],
+  "lossCauses": [
+   "No hay riesgo financiero directo; la única pérdida posible es de tiempo si la solución no cubre las necesidades"
+  ],
+  "earlySignals": [
+   "Alto interés en Hacker News (249 upvotes y 93 comentarios)"
+  ],
+  "signals": {
+   "upvotes": 249,
+   "comments": 93
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://exitpath-ruddy.vercel.app/"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50547980"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-exitpath-ruddy-vercel-app",
+  "isNew": true,
+  "score": 30,
+  "rawScore": 35.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_traction",
+    "severity": "media",
+    "detail": "No hay datos de usuarios activos, ingresos ni clientes empresariales que demuestren adopción real"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Proyecto reciente con 249 upvotes en Hacker News",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "No hay datos de usuarios o ingresos que confirmen tracción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de herramientas de productividad empresarial es amplio pero dominado por grandes SaaS",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información pública sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "93 comentarios en Hacker News indican interés de la comunidad",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Falta de métricas de adopción o casos de uso documentados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite directamente con soluciones consolidadas como Slack, Notion y Microsoft 365",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Código abierto permite auditoría y mitigación de vulnerabilidades",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión económica directa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se indica soporte o localización para el mercado español",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay inversión que recuperar, por lo que no aplica una salida financiera",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "upvotes": 249.0,
+    "comments": 93.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: ExitPath\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://exitpath-ruddy.vercel.app/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Potencial moderado, depende de la capacidad de las organizaciones para migrar a soluciones open‑source y de la comunidad que mantenga el proyecto.\nPUNTUACIÓN: 30/100 · Descartar\nRIESGO: medio\nPLAZO: corto‑medio plazo para adopción en entornos empresariales\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ofrece alternativas open‑source que pueden reducir costes de licencias y dependencia de proveedores SaaS\nMOTIVOS PARA DESCONFIAR: No hay datos de usuarios activos, ingresos ni clientes empresariales que demuestren adopción real; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Visitar https://exitpath-ruddy.vercel.app/; Explorar las alternativas listadas para Slack, Notion y Microsoft 365; Evaluar la viabilidad de migrar en tu entorno o empresa; Contribuir al proyecto mediante pull requests o documentación si lo deseas\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay riesgo financiero directo; la única pérdida posible es de tiempo si la solución no cubre las necesidades\nFUENTES: https://exitpath-ruddy.vercel.app/ | https://news.ycombinator.com/item?id=50547980",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-exitpath-ruddy-vercel-app"
+  ]
+ },
+ {
+  "name": "Foolscap",
+  "category": "ia_tecnologia",
+  "subcategory": "productividad",
+  "kind": "pasiva",
+  "description": "Foolscap es una aplicación de escritura que analiza tu libro en tiempo real, señalando conexiones y huecos sin generar contenido propio. Garantiza que tu texto no se usa para entrenar IA y permite marcar el libro como privado. Es una herramienta orientada a escritores que buscan asistencia estructural sin comprometer la propiedad del contenido.",
+  "officialUrl": "https://foolscap.works/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se indica disponibilidad ni localización del servicio para España en la información disponible.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se especifican precios ni planes de suscripción en la fuente consultada.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "n/a",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "poco",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Aplicación de IA que analiza texto sin entrenar modelos externos, característica poco común.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Enfocada a un nicho de escritores; el mercado es limitado pero con crecimiento orgánico potencial.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "No se proporcionan datos de tamaño de mercado ni adopción.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No hay información sobre el equipo fundador o experiencia.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No se menciona financiación externa ni rondas de inversión.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "Tiene 106 upvotes y 87 comentarios en Hacker News, indicando cierto interés inicial.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Sin datos de usuarios activos o crecimiento posterior al lanzamiento.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras herramientas de escritura asistida por IA, pero Foolscap se diferencia por no usar datos para entrenar IA.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Tecnología basada en análisis de texto; riesgo técnico moderado y sin indicios de problemas críticos.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión financiera directa; riesgo financiero prácticamente nulo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "No hay información sobre disponibilidad o localización del servicio en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No aplica, no hay inversión que liquidar.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Ofrece asistencia estructural a escritores sin comprometer la privacidad del contenido",
+   "Promete no usar los textos para entrenar modelos de IA, lo que puede ser atractivo para autores preocupados por la propiedad intelectual"
+  ],
+  "howToParticipate": [
+   "Acceder a https://foolscap.works/",
+   "Crear una cuenta o iniciar sesión",
+   "Comenzar a escribir y explorar las funcionalidades de análisis"
+  ],
+  "lossCauses": [],
+  "earlySignals": [
+   "106 upvotes en Hacker News",
+   "87 comentarios en la publicación"
+  ],
+  "signals": {
+   "upvotes": 106,
+   "comments": 87
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo en UE",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://foolscap.works/"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50559749"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-foolscap-works",
+  "isNew": true,
+  "score": 26,
+  "rawScore": 30.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Aplicación de IA que analiza texto sin entrenar modelos externos, característica poco común.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Enfocada a un nicho de escritores; el mercado es limitado pero con crecimiento orgánico potencial.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se proporcionan datos de tamaño de mercado ni adopción.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No hay información sobre el equipo fundador o experiencia.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No se menciona financiación externa ni rondas de inversión.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Tiene 106 upvotes y 87 comentarios en Hacker News, indicando cierto interés inicial.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin datos de usuarios activos o crecimiento posterior al lanzamiento.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de escritura asistida por IA, pero Foolscap se diferencia por no usar datos para entrenar IA.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología basada en análisis de texto; riesgo técnico moderado y sin indicios de problemas críticos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión financiera directa; riesgo financiero prácticamente nulo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay información sobre disponibilidad o localización del servicio en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No aplica, no hay inversión que liquidar.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "upvotes": 106.0,
+    "comments": 87.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Foolscap\nCATEGORÍA: ia_tecnologia · productividad\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://foolscap.works/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 26/100 · Descartar\nRIESGO: medio\nPLAZO: n/a\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ofrece asistencia estructural a escritores sin comprometer la privacidad del contenido; Promete no usar los textos para entrenar modelos de IA, lo que puede ser atractivo para autores preocupados por la propiedad intelectual\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Acceder a https://foolscap.works/; Crear una cuenta o iniciar sesión; Comenzar a escribir y explorar las funcionalidades de análisis\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://foolscap.works/ | https://news.ycombinator.com/item?id=50559749",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-foolscap-works"
+  ]
+ },
+ {
+  "name": "Hogecoin",
+  "category": "cripto",
+  "subcategory": "meme",
+  "kind": "pasiva",
+  "description": "Hogecoin (HOGE) es una variante meme de Dogecoin basada en Solana, sin utilidad ni roadmap definido. Su token se comercializa en DEXs con pares USDC y muestra alta volatilidad y volumen diario. No está afiliado oficialmente a Billy Markus ni a Dogecoin.",
+  "officialUrl": "https://hoge.horse/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "Accesible globalmente vía DEX sin restricciones específicas para España.",
+  "costs": {
+   "minEntry": 0.01,
+   "extra": 0.001,
+   "extraNotes": "Tarifa de red de Solana, variable y generalmente baja",
+   "recommended": 100,
+   "max": 150
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Puede venderse en DEX, pero el slippage y la profundidad del libro pueden afectar la salida completa.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Alto potencial de ganancias rápidas pero extremadamente especulativo y sin fundamentos.",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para adquirir el token",
+  "subscores": {
+   "novedad": {
+    "v": 3,
+    "why": "Es una variante meme sin utilidad ni innovación real",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Volumen 24h de ~751k USD indica interés especulativo",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6,
+    "why": "Liquidez de ~116k USD y volumen alto proporcionan cierta facilidad de trading",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se menciona equipo ni desarrolladores en la información disponible",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación o inversores conocidos",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "Presencia en X y Telegram, actividad de la comunidad meme",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "Sin utilidad ni adopción real en aplicaciones o servicios",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 3,
+    "why": "Compite con Doge y numerosos otros meme‑coins en Solana y otras cadenas",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 4,
+    "why": "Token sin auditorías públicas ni información de seguridad detallada",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "Alta volatilidad, sin utilidad y sin respaldo financiero",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "Se puede comprar desde España a través de DEXs sin restricciones específicas",
+    "evidence": true
+   },
+   "salida": {
+    "v": 5,
+    "why": "Liquidez media permite venta, aunque con posible slippage",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token no ofrece ninguna funcionalidad más allá de ser un meme"
+   },
+   {
+    "code": "no_audit",
+    "severity": "media",
+    "detail": "No se dispone de auditorías de seguridad del contrato"
+   },
+   {
+    "code": "high_speculation",
+    "severity": "alta",
+    "detail": "Depende exclusivamente del hype y la actividad en redes sociales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "ausencia de equipo verificable",
+   "sin roadmap ni plan de desarrollo"
+  ],
+  "whyInteresting": [
+   "potencial de ganancias rápidas por movimientos de hype",
+   "baja barrera de entrada económica"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (p.ej., Phantom)",
+   "Obtener SOL para pagar comisiones de red",
+   "Conectar la wallet a un DEX Solana (Jupiter, Raydium)",
+   "Seleccionar el par HOGE/USDC y comprar la cantidad deseada",
+   "Guardar los tokens en la wallet"
+  ],
+  "lossCauses": [
+   "bombeo y posterior caída del precio",
+   "posible rug‑pull o eliminación del contrato",
+   "baja liquidez que impida vender sin gran slippage",
+   "pérdida o robo de la clave privada"
+  ],
+  "earlySignals": [
+   "picos repentinos de volumen 24h",
+   "incremento de menciones en X y Telegram"
+  ],
+  "signals": {
+   "volume24hUsd": 751033.87
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+   "symbol": "HOGE",
+   "name": "Hogecoin",
+   "priceUsd": 0.0008735,
+   "liquidityUsd": 115969.56,
+   "volume24hUsd": 751033.87,
+   "fdvUsd": 834595,
+   "mcapUsd": 834595,
+   "ageHours": 124.7,
+   "buys24h": 4559,
+   "sells24h": 3922,
+   "pairUrl": "https://dexscreener.com/solana/7cnc9ggegzeffk8flxiyuhdtmeefpqzond56u1mxhnor"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/FVzqGqRmr4UH1Fif6dewmwbJ1p4YUZCu8dcw4Efopump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://hoge.horse/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/7cnc9ggegzeffk8flxiyuhdtmeefpqzond56u1mxhnor"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "tok-solana-fvzqgqrmr4uh1fif6dewmwbj1p4yuzcu8dcw4efopump",
+  "isNew": true,
+  "score": 21,
+  "rawScore": 35.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token no ofrece ninguna funcionalidad más allá de ser un meme"
+   },
+   {
+    "code": "no_audit",
+    "severity": "media",
+    "detail": "No se dispone de auditorías de seguridad del contrato"
+   },
+   {
+    "code": "high_speculation",
+    "severity": "alta",
+    "detail": "Depende exclusivamente del hype y la actividad en redes sociales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Es una variante meme sin utilidad ni innovación real",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Volumen 24h de ~751k USD indica interés especulativo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Liquidez de ~116k USD y volumen alto proporcionan cierta facilidad de trading",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se menciona equipo ni desarrolladores en la información disponible",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación o inversores conocidos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Presencia en X y Telegram, actividad de la comunidad meme",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin utilidad ni adopción real en aplicaciones o servicios",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con Doge y numerosos otros meme‑coins en Solana y otras cadenas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token sin auditorías públicas ni información de seguridad detallada",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad, sin utilidad y sin respaldo financiero",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Se puede comprar desde España a través de DEXs sin restricciones específicas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Liquidez media permite venta, aunque con posible slippage",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 100.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -100.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 200.0,
+     "netEur": 197.25,
+     "exitImpactPct": 0.4,
+     "exitNote": null,
+     "impliedFdvUsd": 1669190
+    },
+    {
+     "multiple": 5,
+     "grossEur": 500.0,
+     "netEur": 490.31,
+     "exitImpactPct": 0.9,
+     "exitNote": null,
+     "impliedFdvUsd": 4172975
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1000.0,
+     "netEur": 971.23,
+     "exitImpactPct": 1.9,
+     "exitNote": null,
+     "impliedFdvUsd": 8345950
+    },
+    {
+     "multiple": 20,
+     "grossEur": 2000.0,
+     "netEur": 1904.93,
+     "exitImpactPct": 3.8,
+     "exitNote": null,
+     "impliedFdvUsd": 16691900
+    },
+    {
+     "multiple": 50,
+     "grossEur": 5000.0,
+     "netEur": 4480.82,
+     "exitImpactPct": 9.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 41729750
+    },
+    {
+     "multiple": 100,
+     "grossEur": 10000.0,
+     "netEur": 8023.28,
+     "exitImpactPct": 19.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 83459500
+    },
+    {
+     "multiple": 300,
+     "grossEur": 30000.0,
+     "netEur": 12809.53,
+     "exitImpactPct": 56.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 250378500
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "priceUsd": 0.0008735,
+    "liquidityUsd": 115969.56,
+    "volume24hUsd": 751033.87,
+    "fdvUsd": 834595.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Hogecoin\nCATEGORÍA: cripto · meme\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://hoge.horse/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,01 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 100,00 €\nPOTENCIAL: Alto potencial de ganancias rápidas pero extremadamente especulativo y sin fundamentos.\nPUNTUACIÓN: 21/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: potencial de ganancias rápidas por movimientos de hype; baja barrera de entrada económica\nMOTIVOS PARA DESCONFIAR: El token no ofrece ninguna funcionalidad más allá de ser un meme; No se dispone de auditorías de seguridad del contrato; Depende exclusivamente del hype y la actividad en redes sociales; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; ausencia de equipo verificable; sin roadmap ni plan de desarrollo\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (p.ej., Phantom); Obtener SOL para pagar comisiones de red; Conectar la wallet a un DEX Solana (Jupiter, Raydium); Seleccionar el par HOGE/USDC y comprar la cantidad deseada; Guardar los tokens en la wallet\nQUÉ PODRÍA HACERME PERDER EL DINERO: bombeo y posterior caída del precio; posible rug‑pull o eliminación del contrato; baja liquidez que impida vender sin gran slippage; pérdida o robo de la clave privada\nFUENTES: https://hoge.horse/ | https://dexscreener.com/solana/7cnc9ggegzeffk8flxiyuhdtmeefpqzond56u1mxhnor",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "tok-solana-fvzqgqrmr4uh1fif6dewmwbj1p4yuzcu8dcw4efopump"
+  ]
+ },
+ {
+  "name": "Cartoon Money (CBUCKS)",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "activa",
+  "description": "Cartoon Money es un token nativo de Solana que busca crear un mercado de coleccionables digitales. Su propuesta está todavía en fase temprana y carece de información pública sobre el equipo o la hoja de ruta.",
+  "officialUrl": "https://cartoon-money.com/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se encuentran restricciones explícitas, pero la falta de información dificulta confirmar la disponibilidad en España.",
+  "costs": {
+   "minEntry": 0.004,
+   "extra": 0.001,
+   "extraNotes": "Comisiones de red en Solana, normalmente inferiores a $0.01 (≈0,01 €).",
+   "recommended": 150.0,
+   "max": 150.0
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEXs de Solana, aunque la liquidez limitada puede generar slippage.",
+  "horizon": "corto a medio plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Token reciente sin información pública clara",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5,
+    "why": "FDV 3,9 M USD y liquidez 226 k USD sin datos de adopción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Opera en el amplio mercado cripto sin nicho definido",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de datos sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "Ausencia de información sobre rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4,
+    "why": "Única presencia conocida en X (Twitter) sin métricas de seguidores",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Sin indicadores de uso real o integraciones",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Compite con numerosos tokens meme en Solana",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2,
+    "why": "Dependencia de la cadena Solana y posible vulnerabilidad del contrato",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "Alta volatilidad y capitalización limitada",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Falta de información sobre regulaciones locales",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4,
+    "why": "Venta posible en DEX, pero con liquidez media",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_equipo",
+    "severity": "alta",
+    "detail": "No hay datos verificables sobre quién está detrás del proyecto."
+   },
+   {
+    "code": "alta_volatilidad",
+    "severity": "alta",
+    "detail": "Capitalización y liquidez bajas aumentan el riesgo de movimientos bruscos de precio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "ausencia de información verificable sobre el equipo y la financiación"
+  ],
+  "whyInteresting": [
+   "precio muy bajo permite adquirir una gran cantidad de tokens con el presupuesto disponible"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Solana (por ejemplo, Phantom).",
+   "2. Comprar SOL en un exchange y transferirlo a la wallet.",
+   "3. Acceder a un DEX de Solana (p.ej., Raydium) y conectar la wallet.",
+   "4. Buscar el par CBUCKS/USDC y ejecutar la compra.",
+   "5. Guardar los tokens en la wallet y monitorizar su evolución."
+  ],
+  "lossCauses": [
+   "caída del precio del token",
+   "hackeo o vulnerabilidad del contrato inteligente",
+   "problemas de la red Solana"
+  ],
+  "earlySignals": [
+   "volumen 24h (233 k USD) superior a la liquidez (226 k USD) sin respaldo de adopción real"
+  ],
+  "signals": {
+   "volume24hUsd": 233748.83
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+   "symbol": "CBUCKS",
+   "name": "Cartoon Money",
+   "priceUsd": 0.00413,
+   "liquidityUsd": 226682.72,
+   "volume24hUsd": 233748.83,
+   "fdvUsd": 3893297,
+   "mcapUsd": 3893297,
+   "ageHours": 1073.2,
+   "buys24h": 855,
+   "sells24h": 792,
+   "pairUrl": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://cartoon-money.com/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "tok-solana-dtcicpcktkeah7tdeztym3hxeohaomibdyjhmyxzpump",
+  "isNew": true,
+  "score": 12,
+  "rawScore": 27.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "falta_equipo",
+    "severity": "alta",
+    "detail": "No hay datos verificables sobre quién está detrás del proyecto."
+   },
+   {
+    "code": "alta_volatilidad",
+    "severity": "alta",
+    "detail": "Capitalización y liquidez bajas aumentan el riesgo de movimientos bruscos de precio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token reciente sin información pública clara",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "FDV 3,9 M USD y liquidez 226 k USD sin datos de adopción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Opera en el amplio mercado cripto sin nicho definido",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de datos sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Ausencia de información sobre rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Única presencia conocida en X (Twitter) sin métricas de seguidores",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin indicadores de uso real o integraciones",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con numerosos tokens meme en Solana",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Dependencia de la cadena Solana y posible vulnerabilidad del contrato",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad y capitalización limitada",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Falta de información sobre regulaciones locales",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Venta posible en DEX, pero con liquidez media",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 150.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -150.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 300.0,
+     "netEur": 296.13,
+     "exitImpactPct": 0.3,
+     "exitNote": null,
+     "impliedFdvUsd": 7786594
+    },
+    {
+     "multiple": 5,
+     "grossEur": 750.0,
+     "netEur": 737.1,
+     "exitImpactPct": 0.7,
+     "exitNote": null,
+     "impliedFdvUsd": 19466485
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1500.0,
+     "netEur": 1463.4,
+     "exitImpactPct": 1.5,
+     "exitNote": null,
+     "impliedFdvUsd": 38932970
+    },
+    {
+     "multiple": 20,
+     "grossEur": 3000.0,
+     "netEur": 2883.59,
+     "exitImpactPct": 2.9,
+     "exitNote": null,
+     "impliedFdvUsd": 77865940
+    },
+    {
+     "multiple": 50,
+     "grossEur": 7500.0,
+     "netEur": 6884.93,
+     "exitImpactPct": 7.3,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 194664850
+    },
+    {
+     "multiple": 100,
+     "grossEur": 15000.0,
+     "netEur": 12689.73,
+     "exitImpactPct": 14.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 389329700
+    },
+    {
+     "multiple": 300,
+     "grossEur": 45000.0,
+     "netEur": 25107.61,
+     "exitImpactPct": 43.6,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1167989100,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "priceUsd": 0.00413,
+    "liquidityUsd": 226682.72,
+    "volume24hUsd": 233748.83,
+    "fdvUsd": 3893297.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Cartoon Money (CBUCKS)\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://cartoon-money.com/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 150,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 12/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto a medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: precio muy bajo permite adquirir una gran cantidad de tokens con el presupuesto disponible\nMOTIVOS PARA DESCONFIAR: No hay datos verificables sobre quién está detrás del proyecto.; Capitalización y liquidez bajas aumentan el riesgo de movimientos bruscos de precio.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; ausencia de información verificable sobre el equipo y la financiación\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Solana (por ejemplo, Phantom).; 2. Comprar SOL en un exchange y transferirlo a la wallet.; 3. Acceder a un DEX de Solana (p.ej., Raydium) y conectar la wallet.; 4. Buscar el par CBUCKS/USDC y ejecutar la compra.; 5. Guardar los tokens en la wallet y monitorizar su evolución.\nQUÉ PODRÍA HACERME PERDER EL DINERO: caída del precio del token; hackeo o vulnerabilidad del contrato inteligente; problemas de la red Solana\nFUENTES: https://cartoon-money.com/ | https://dexscreener.com/solana/b4cp45pgifvm5faxfh6aev8qz3eunqnqgbw7kuc7mhnb",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "tok-solana-dtcicpcktkeah7tdeztym3hxeohaomibdyjhmyxzpump"
+  ]
+ },
+ {
+  "name": "WASTED (WASTED)",
+  "category": "cripto",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Token criptográfico listado en CoinGecko con ranking 793. No se dispone de información pública de su sitio oficial ni de su equipo.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información disponible sobre disponibilidad o regulación en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se dispone de datos sobre comisiones o requisitos de inversión mínima.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Sin datos claros sobre exchanges donde cotiza ni sobre volumen de negociación.",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "Desconocido, el ranking sugiere alguna actividad pero carece de indicadores de crecimiento sólido.",
+  "difficulty": "baja",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 4,
+    "why": "Token con nombre poco común y bajo ranking",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 3,
+    "why": "Sin datos de adopción ni roadmap",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2,
+    "why": "Poco conocimiento del mercado objetivo",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1,
+    "why": "No se ha encontrado información sobre el equipo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1,
+    "why": "No hay datos de rondas de financiación o inversores",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2,
+    "why": "Escasa presencia en redes sociales y foros",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "Sin indicadores de uso real",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Competidores genéricos en el sector cripto",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 2,
+    "why": "Falta de información técnica y auditorías públicas",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "Alta volatilidad y falta de liquidez clara",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1,
+    "why": "Desconocida la disponibilidad para residentes españoles",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2,
+    "why": "Sin datos claros de mercados secundarios",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo ni datos de mercado"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "falta_de_transparencia"
+  ],
+  "whyInteresting": [
+   "ranking 793 indica alguna actividad en el ecosistema cripto"
+  ],
+  "howToParticipate": [
+   "Consultar listados de exchanges que incluyan WASTED, crear una wallet compatible y adquirir mediante compra directa si está disponible"
+  ],
+  "lossCauses": [
+   "volatilidad del precio",
+   "baja liquidez",
+   "posible estafa o proyecto abandonado"
+  ],
+  "earlySignals": [
+   "ranking bajo en CoinGecko",
+   "ausencia de información oficial"
+  ],
+  "signals": {
+   "cgRank": 793
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo en España",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "CoinGecko",
+    "url": "https://www.coingecko.com/es/monedas/wasted-4"
+   }
+  ],
+  "discoveredVia": "CoinGecko",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "n-wasted-wasted",
+  "isNew": true,
+  "score": 12,
+  "rawScore": 21.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo ni datos de mercado"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Token con nombre poco común y bajo ranking",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de adopción ni roadmap",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Poco conocimiento del mercado objetivo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se ha encontrado información sobre el equipo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay datos de rondas de financiación o inversores",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Escasa presencia en redes sociales y foros",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin indicadores de uso real",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Competidores genéricos en el sector cripto",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Falta de información técnica y auditorías públicas",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad y falta de liquidez clara",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Desconocida la disponibilidad para residentes españoles",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Sin datos claros de mercados secundarios",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "cgRank": 793.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: WASTED (WASTED)\nCATEGORÍA: cripto · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Desconocido, el ranking sugiere alguna actividad pero carece de indicadores de crecimiento sólido.\nPUNTUACIÓN: 12/100 · Descartar\nRIESGO: muy alto\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: ranking 793 indica alguna actividad en el ecosistema cripto\nMOTIVOS PARA DESCONFIAR: No se dispone de sitio web oficial, equipo ni datos de mercado; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; falta_de_transparencia\nCÓMO PARTICIPAR: Consultar listados de exchanges que incluyan WASTED, crear una wallet compatible y adquirir mediante compra directa si está disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: volatilidad del precio; baja liquidez; posible estafa o proyecto abandonado\nFUENTES: https://www.coingecko.com/es/monedas/wasted-4",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-coingecko-com"
+  ]
+ },
+ {
+  "name": "Take Voyager 1 apart, down to a single memory chip",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Artículo de Show HN que describe un proyecto para desmontar la nave Voyager 1 hasta llegar a un chip de memoria. No implica inversión directa.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se indica disponibilidad o relevancia para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "N/A",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión.",
+  "horizon": "corto plazo (informativo)",
+  "deadline": null,
+  "potential": "baja",
+  "difficulty": "baja",
+  "timeNeeded": "lectura de artículo (~10 min)",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Desmontar Voyager 1 hasta un chip es un enfoque poco común",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2,
+    "why": "Sin modelo de negocio ni retorno financiero",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0,
+    "why": "No aplica a un mercado comercial",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0,
+    "why": "No se dispone de información sobre el equipo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0,
+    "why": "No se menciona financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1,
+    "why": "Poco engagement más allá de los votos y comentarios de HN",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1,
+    "why": "Sin indicios de adopción práctica",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1,
+    "why": "No se identifican competidores directos",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Desmontar hardware espacial es técnicamente complejo, pero no implica riesgo financiero",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 0,
+    "why": "No hay inversión financiera asociada",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0,
+    "why": "No hay información de disponibilidad en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0,
+    "why": "No hay mecanismo de salida financiero",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_investment_opportunity",
+    "severity": "critica",
+    "detail": "El contenido es informativo, no representa una oportunidad de inversión."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Curiosidad tecnológica sobre Voyager 1."
+  ],
+  "howToParticipate": [
+   "Leer el artículo; no hay acción de inversión."
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {
+   "upvotes": 235,
+   "comments": 57
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No aplica a inversión",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://rshekhar.com/voyager/"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50548161"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "n-take-voyager-1-apart-down-to-a-single-memory-chip",
+  "isNew": true,
+  "score": 8,
+  "rawScore": 12.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "no_investment_opportunity",
+    "severity": "critica",
+    "detail": "El contenido es informativo, no representa una oportunidad de inversión."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Desmontar Voyager 1 hasta un chip es un enfoque poco común",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Sin modelo de negocio ni retorno financiero",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a un mercado comercial",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Poco engagement más allá de los votos y comentarios de HN",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Sin indicios de adopción práctica",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "No se identifican competidores directos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desmontar hardware espacial es técnicamente complejo, pero no implica riesgo financiero",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay inversión financiera asociada",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información de disponibilidad en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida financiero",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "upvotes": 235.0,
+    "comments": 57.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Take Voyager 1 apart, down to a single memory chip\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 8/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo (informativo)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Curiosidad tecnológica sobre Voyager 1.\nMOTIVOS PARA DESCONFIAR: El contenido es informativo, no representa una oportunidad de inversión.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Leer el artículo; no hay acción de inversión.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://rshekhar.com/voyager/ | https://news.ycombinator.com/item?id=50548161",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-20T11:41:05Z",
+  "runId": "run-20261120-1141",
+  "aliases": [
+   "web-rshekhar-com"
+  ]
+ }
+]

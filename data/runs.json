@@ -1,5 +1,107 @@
 [
  {
+  "id": "run-20261120-1141",
+  "startedAt": "2026-11-20T11:41:05Z",
+  "kind": "exploracion",
+  "status": "parcial",
+  "candidates": 10,
+  "newCount": 10,
+  "updatedCount": 0,
+  "alertsSent": 0,
+  "notes": "Fuentes con fallos: geckoterminal_trending, TechCrunch Startups, The Block, busqueda_ia",
+  "sources": {
+   "tipo_cambio_BCE": {
+    "ok": true,
+    "items": 1,
+    "error": null,
+    "at": "2026-11-20T11:41:05+00:00"
+   },
+   "dexscreener_tokens": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-20T11:41:09+00:00"
+   },
+   "geckoterminal_trending": {
+    "ok": false,
+    "items": 0,
+    "error": "radar.net.request() got multiple values for keyword argument 'headers'",
+    "at": "2026-11-20T11:41:09+00:00"
+   },
+   "coingecko_trending": {
+    "ok": true,
+    "items": 3,
+    "error": null,
+    "at": "2026-11-20T11:41:09+00:00"
+   },
+   "hacker_news": {
+    "ok": true,
+    "items": 5,
+    "error": null,
+    "at": "2026-11-20T11:41:09+00:00"
+   },
+   "github_rising": {
+    "ok": true,
+    "items": 5,
+    "error": null,
+    "at": "2026-11-20T11:41:10+00:00"
+   },
+   "Product Hunt": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-20T11:41:10+00:00"
+   },
+   "El Referente": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-20T11:41:12+00:00"
+   },
+   "TechCrunch Startups": {
+    "ok": false,
+    "items": 0,
+    "error": "HTTP 403",
+    "at": "2026-11-20T11:41:12+00:00"
+   },
+   "The Block": {
+    "ok": false,
+    "items": 0,
+    "error": "HTTP 403",
+    "at": "2026-11-20T11:41:12+00:00"
+   },
+   "busqueda_ia": {
+    "ok": false,
+    "items": 0,
+    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: HTTP 429",
+    "at": "2026-11-20T11:41:44+00:00"
+   }
+  },
+  "finishedAt": "2026-11-20T11:45:24Z",
+  "ai": {
+   "calls": {
+    "gemini": 12,
+    "groq": 10
+   },
+   "models": {
+    "gemini": "gemini-3.8-flash",
+    "groq": "openai/gpt-oss-120b"
+   },
+   "errors": [
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429",
+    "verifier/gemini: HTTP 429"
+   ]
+  }
+ },
+ {
   "id": "run-20261120-1134",
   "startedAt": "2026-11-20T11:34:32Z",
   "kind": "exploracion",
