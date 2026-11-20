@@ -1,79 +1,96 @@
 {
- "lastRunAt": "2026-11-20T11:05:55Z",
+ "lastRunAt": "2026-11-20T11:35:08Z",
  "lastRunOk": false,
- "lastRunId": "run-20261120-1105",
+ "lastRunId": "run-20261120-1134",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-20T11:05:44+00:00"
+   "at": "2026-11-20T11:34:32+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T11:05:48+00:00"
+   "at": "2026-11-20T11:34:36+00:00"
   },
   "geckoterminal_trending": {
    "ok": false,
    "items": 0,
    "error": "radar.net.request() got multiple values for keyword argument 'headers'",
-   "at": "2026-11-20T11:05:48+00:00"
+   "at": "2026-11-20T11:34:36+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 5,
+   "items": 3,
    "error": null,
-   "at": "2026-11-20T11:05:48+00:00"
+   "at": "2026-11-20T11:34:36+00:00"
   },
   "hacker_news": {
    "ok": true,
-   "items": 6,
+   "items": 5,
    "error": null,
-   "at": "2026-11-20T11:05:49+00:00"
+   "at": "2026-11-20T11:34:36+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-20T11:05:49+00:00"
+   "at": "2026-11-20T11:34:37+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T11:05:50+00:00"
+   "at": "2026-11-20T11:34:37+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T11:05:51+00:00"
+   "at": "2026-11-20T11:34:39+00:00"
   },
   "TechCrunch Startups": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T11:05:51+00:00"
+   "at": "2026-11-20T11:34:39+00:00"
   },
   "The Block": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T11:05:51+00:00"
+   "at": "2026-11-20T11:34:39+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
-   "error": "falta la clave de Gemini",
-   "at": "2026-11-20T11:05:51+00:00"
+   "error": "sin resultados: searcher/gemini: HTTP 400; searcher/gemini: HTTP 400",
+   "at": "2026-11-20T11:34:43+00:00"
   }
  },
  "ai": {
-  "calls": {},
-  "models": {},
-  "errors": []
+  "calls": {
+   "gemini": 12,
+   "groq": 10
+  },
+  "models": {
+   "gemini": "gemini-3.8-flash",
+   "groq": "openai/gpt-oss-120b"
+  },
+  "errors": [
+   "analyst/groq: HTTP 401",
+   "analyst/gemini: HTTP 400",
+   "analyst/groq: HTTP 401",
+   "analyst/gemini: HTTP 400",
+   "analyst/groq: HTTP 401",
+   "analyst/gemini: HTTP 400",
+   "analyst/groq: HTTP 401",
+   "analyst/gemini: HTTP 400",
+   "analyst/groq: HTTP 401",
+   "analyst/gemini: HTTP 400"
+  ]
  },
  "schedule": "Cada 3 horas en GitHub Actions · resumen diario por la tarde · semanal los domingos",
  "profile": {
