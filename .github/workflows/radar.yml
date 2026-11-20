@@ -1,0 +1,81 @@
+name: Opportunity Radar
+
+on:
+  schedule:
+    - cron: "23 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Qué ejecutar"
+        type: choice
+        default: auto
+        options: [auto, scan, digest, weekly, test-notify]
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Pruebas
+        run: python -m pytest -q tests
+
+      - name: Ejecutar el radar
+        if: github.event_name != 'push'
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python -m radar.pipeline --mode "${{ github.event.inputs.mode || 'auto' }}"
+
+      - name: Guardar datos en el repositorio
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "opportunity-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
+          git commit -m "Radar: datos $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
+
+      - name: Preparar la web
+        run: |
+          mkdir -p _site/data
+          cp -r app/* _site/
+          for f in opps.json status.json runs.json digests.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/; done
+          [ -f _site/data/opps.json ] || echo "[]" > _site/data/opps.json
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4
