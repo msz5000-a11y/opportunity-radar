@@ -33,6 +33,50 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Reparar estructura (solo la primera vez)
+        if: hashFiles('radar/pipeline.py') == ''
+        run: |
+          python3 - <<'PY'
+          import os, zlib, struct, math, subprocess
+          M = {"radar": "__init__ collectors llm net notify pipeline prompts scoring".split(),
+               "tests": ["test_pipeline", "test_scoring"]}
+          F = {"radar": [f + ".py" for f in M["radar"]], "tests": [f + ".py" for f in M["tests"]],
+               "app": ["index.html", "manifest.webmanifest", "sw.js"], "data": ["opps.json"]}
+          for d, fs in F.items():
+              os.makedirs(d, exist_ok=True)
+              for f in fs:
+                  if os.path.exists(f):
+                      subprocess.run(["git", "mv", f, d + "/" + f], check=True)
+          def png(path, n, pad):
+              bg, fg = (14, 22, 34), (52, 211, 153)
+              c, R, rows = n / 2, n / 2 * (1 - pad), []
+              for y in range(n):
+                  row = bytearray([0])
+                  for x in range(n):
+                      dx, dy = x - c + .5, c - y - .5
+                      r, a = math.hypot(dx, dy), math.degrees(math.atan2(dy, dx)) % 360
+                      k = 0.0
+                      if r < R:
+                          if min(abs(r - R * f) for f in (.98, .66, .34)) < n * .012: k = .9
+                          if abs(dx) < n * .006 or abs(dy) < n * .006: k = max(k, .35)
+                          if 45 <= a <= 100: k = max(k, .55 * (a - 45) / 55)
+                          if r < n * .035: k = 1
+                          if math.hypot(dx - R * .45, dy - R * .38) < n * .03: k = 1
+                      row += bytes(int(bg[i] + (fg[i] - bg[i]) * k) for i in range(3))
+                  rows.append(bytes(row))
+              def ch(t, d): return struct.pack(">I", len(d)) + t + d + struct.pack(">I", zlib.crc32(t + d) & 0xffffffff)
+              os.makedirs(os.path.dirname(path), exist_ok=True)
+              open(path, "wb").write(b"\x89PNG\r\n\x1a\n" + ch(b"IHDR", struct.pack(">IIBBBBB", n, n, 8, 2, 0, 0, 0))
+                                     + ch(b"IDAT", zlib.compress(b"".join(rows), 9)) + ch(b"IEND", b""))
+          for p, n, pad in (("icon-192", 192, .1), ("icon-512", 512, .1), ("maskable-512", 512, .25), ("apple-touch-icon", 180, .12)):
+              png("app/icons/%s.png" % p, n, pad)
+          PY
+          git config user.name "opportunity-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Colocar archivos en sus carpetas y crear iconos"
+          git push
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -45,7 +89,6 @@ jobs:
         run: python -m pytest -q tests
 
       - name: Ejecutar el radar
-        if: github.event_name != 'push'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -54,10 +97,16 @@ jobs:
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python -m radar.pipeline --mode "${{ github.event.inputs.mode || 'auto' }}"
+        run: |
+          MODE="${{ github.event.inputs.mode }}"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            python -m radar.pipeline --mode check
+            python -m radar.pipeline --mode test-notify
+            MODE=scan
+          fi
+          python -m radar.pipeline --mode "${MODE:-auto}"
 
       - name: Guardar datos en el repositorio
-        if: github.event_name != 'push'
         run: |
           git config user.name "opportunity-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
