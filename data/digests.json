@@ -1,1 +1,8 @@
-[]
+[
+ {
+  "id": "daily-2026-11-20",
+  "type": "diaria",
+  "at": "2026-11-20T20:33:04Z",
+  "text": "📊 Resumen diario · Opportunity Radar\nExploraciones: 4 (0 sin errores) · Analizadas: 20 · Nuevas: 20 · Alertas: 0\n⚠️ Radar con incidencias: 4 de ~8 exploraciones previstas.\n\nMejores sin riesgo crítico:\n• Wireless Device Battery Monitor (BatteryHub) · 56/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos\n  − Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\n• Mastra Factory · 53/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Permite automatizar flujos de trabajo de desarrollo con agentes IA.\n  − El repositorio está cerrado a contribuciones externas, lo que puede limitar la comunidad.\n• Apex Neural Rendering (ANR) · 47/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Posible mejora significativa en calidad y velocidad de juegos y aplicaciones de renderizado, compitiendo directamente con DLSS\n  − El proyecto está en fase beta, lo que implica posibles cambios o interrupciones\n• Lastbook · 45/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + IA offline para supervivencia, nicho emergente\n  − El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo\n• rust-anything · 40/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Facilita la migración a Rust, un lenguaje con alta demanda por su seguridad y rendimiento\n  − No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial\n\nRiesgos críticos detectados: Take Voyager 1 apart, down to a single memory chip (no_investment_opportunity)\n\nPresupuesto configurado: 150 €. Escenarios = simulaciones. La decisión es siempre tuya."
+ }
+]

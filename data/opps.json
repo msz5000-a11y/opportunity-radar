@@ -1,5 +1,368 @@
 [
  {
+  "name": "Wireless Device Battery Monitor (BatteryHub)",
+  "category": "ia_tecnologia",
+  "subcategory": "software_utilidad",
+  "kind": "pasiva",
+  "description": "Aplicación ligera para Windows 10/11 que muestra el nivel de batería de ratones, auriculares, teclados y controladores inalámbricos directamente en la barra de tareas. No requiere software del fabricante y soporta marcas como Logitech, Razer, SteelSeries, Corsair, HyperX, entre otras.",
+  "officialUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Software de código abierto compatible con cualquier dispositivo Bluetooth reconocido por Windows, por lo que funciona en España sin restricciones.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes adicionales; opcionalmente se pueden hacer donaciones voluntarias.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, al ser software gratuito no hay inversión que liquidar.",
+  "horizon": "corto plazo / uso inmediato",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "instalación en pocos minutos",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Ahorra tiempo y evita instalación de apps de fabricantes",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 3,
+    "why": "Autor único o pequeño, sin información pública",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "Proyecto sin financiación externa conocida",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "5.2k estrellas y 435 forks en GitHub",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6,
+    "why": "Soporta más de 10 marcas y dispositivos Bluetooth",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Existen apps de fabricantes y otras utilidades similares",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 8,
+    "why": "Código C++/Win32, app ligera ~350KB, sin dependencias externas",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 10,
+    "why": "Software gratuito, sin inversión requerida",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9,
+    "why": "Software disponible globalmente, sin barreras regionales",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos",
+   "No requiere instalación de software del fabricante, reduciendo potenciales conflictos"
+  ],
+  "howToParticipate": [
+   "1. Acceder a la página de releases del repositorio GitHub.",
+   "2. Descargar el instalador \"BatteryHub-Setup\" o el zip portátil.",
+   "3. Ejecutar la instalación (opción per‑user para evitar permisos de administrador).",
+   "4. Opcional: aportar una estrella al repositorio o donar vía Ko‑fi/PayPal para apoyar al desarrollador."
+  ],
+  "lossCauses": [
+   "Ninguna pérdida financiera directa; el único riesgo es la posible incompatibilidad con algún dispositivo específico."
+  ],
+  "earlySignals": [
+   "Crecimiento sostenido de estrellas (5.2k) y forks (435) indica interés continuo de la comunidad."
+  ],
+  "signals": {
+   "stars": 5211,
+   "forks": 435
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Software de código abierto, sin implicaciones regulatorias evidentes.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-github-com-krisgfx9-wireless-device-battery-monitor",
+  "isNew": true,
+  "score": 56,
+  "rawScore": 61.5,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 10,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Ahorra tiempo y evita instalación de apps de fabricantes",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Autor único o pequeño, sin información pública",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Proyecto sin financiación externa conocida",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "5.2k estrellas y 435 forks en GitHub",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Soporta más de 10 marcas y dispositivos Bluetooth",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.0,
+    "points": 2.0,
+    "why": "Existen apps de fabricantes y otras utilidades similares",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Código C++/Win32, app ligera ~350KB, sin dependencias externas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "Software gratuito, sin inversión requerida",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Software disponible globalmente, sin barreras regionales",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 5211.0,
+    "forks": 435.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Wireless Device Battery Monitor (BatteryHub)\nCATEGORÍA: ia_tecnologia · software_utilidad\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 56/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo / uso inmediato\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos; No requiere instalación de software del fabricante, reduciendo potenciales conflictos\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Acceder a la página de releases del repositorio GitHub.; 2. Descargar el instalador \"BatteryHub-Setup\" o el zip portátil.; 3. Ejecutar la instalación (opción per‑user para evitar permisos de administrador).; 4. Opcional: aportar una estrella al repositorio o donar vía Ko‑fi/PayPal para apoyar al desarrollador.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera directa; el único riesgo es la posible incompatibilidad con algún dispositivo específico.\nFUENTES: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "web-github-com-krisgfx9-wireless-device-battery-monitor"
+  ]
+ },
+ {
   "name": "Mastra Factory",
   "category": "ia_tecnologia",
   "subcategory": "software_factory",
@@ -387,6 +750,1150 @@
   ]
  },
  {
+  "name": "Apex Neural Rendering (ANR)",
+  "category": "ia_tecnologia",
+  "subcategory": "renderizado_neural",
+  "kind": "pasiva",
+  "description": "Motor de renderizado neural que genera frames con mayor calidad y velocidad que NVIDIA DLSS. Disponible en GPUs compatibles y en beta para usuarios registrados.",
+  "officialUrl": "https://apexcompute.com/neural-rendering",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "No se indica soporte o distribución específica para España; la herramienta es global y requiere GPU compatible.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Requiere hardware GPU compatible, pero no hay coste de licencia en beta",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un producto de software.",
+  "horizon": "corto-medio plazo (beta ahora, lanzamiento comercial próximo)",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "registro y pruebas de beta, sin inversión financiera",
+  "subscores": {
+   "novedad": {
+    "v": 8,
+    "why": "Muestra mejoras de calidad y velocidad en benchmarks comparados con DLSS",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7,
+    "why": "Supera a DLSS en métricas de calidad y tiempo",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6,
+    "why": "Compite con NVIDIA DLSS, que domina el mercado de renderizado en tiempo real",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5,
+    "why": "No se proporciona información sobre el equipo fundador o desarrolladores",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "2730 estrellas y 61 forks en GitHub indican interés de la comunidad",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5,
+    "why": "Actualmente en fase beta, adopción limitada a usuarios registrados",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "NVIDIA DLSS es estándar y cuenta con amplio soporte y ecosistema",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "Benchmarks públicos demuestran rendimiento, pero el producto sigue en beta",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "Participar es gratuito, sin riesgo de pérdida de capital",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4,
+    "why": "No hay información sobre disponibilidad o soporte específico en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión financiera que liquidar; es un producto de software",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "beta_stage",
+    "severity": "media",
+    "detail": "El proyecto está en fase beta, lo que implica posibles cambios o interrupciones"
+   },
+   {
+    "code": "hardware_dependency",
+    "severity": "alta",
+    "detail": "Requiere GPUs de gama alta compatibles, lo que limita la base de usuarios potenciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "dependencia de hardware costoso"
+  ],
+  "whyInteresting": [
+   "Posible mejora significativa en calidad y velocidad de juegos y aplicaciones de renderizado, compitiendo directamente con DLSS"
+  ],
+  "howToParticipate": [
+   "Visitar https://apexcompute.com/neural-rendering",
+   "Registrarse con el email para recibir actualizaciones y acceso beta",
+   "Descargar el software cuando esté disponible",
+   "Probar en una GPU compatible (RTX 20 series o superior, AMD RX 5000+, etc.)"
+  ],
+  "lossCauses": [
+   "Falta de adopción comercial tras la beta",
+   "Incompatibilidad o alto coste del hardware necesario",
+   "Supremacía y mejoras continuas de la competencia (NVIDIA DLSS)"
+  ],
+  "earlySignals": [
+   "Publicación de benchmarks comparativos con DLSS",
+   "Crecimiento de estrellas y forks en GitHub"
+  ],
+  "signals": {
+   "stars": 2730,
+   "forks": 61
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No se requiere regulación financiera para participar en la beta",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://apexcompute.com/neural-rendering"
+   },
+   {
+    "title": "github.com",
+    "url": "https://github.com/apex-compute/ANR"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-apexcompute-com",
+  "isNew": true,
+  "score": 47,
+  "rawScore": 57.0,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "beta_stage",
+    "severity": "media",
+    "detail": "El proyecto está en fase beta, lo que implica posibles cambios o interrupciones"
+   },
+   {
+    "code": "hardware_dependency",
+    "severity": "alta",
+    "detail": "Requiere GPUs de gama alta compatibles, lo que limita la base de usuarios potenciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Muestra mejoras de calidad y velocidad en benchmarks comparados con DLSS",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Supera a DLSS en métricas de calidad y tiempo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Compite con NVIDIA DLSS, que domina el mercado de renderizado en tiempo real",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se proporciona información sobre el equipo fundador o desarrolladores",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "2730 estrellas y 61 forks en GitHub indican interés de la comunidad",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Actualmente en fase beta, adopción limitada a usuarios registrados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.0,
+    "points": 2.0,
+    "why": "NVIDIA DLSS es estándar y cuenta con amplio soporte y ecosistema",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Benchmarks públicos demuestran rendimiento, pero el producto sigue en beta",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Participar es gratuito, sin riesgo de pérdida de capital",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay información sobre disponibilidad o soporte específico en España",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión financiera que liquidar; es un producto de software",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 2730.0,
+    "forks": 61.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Apex Neural Rendering (ANR)\nCATEGORÍA: ia_tecnologia · renderizado_neural\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://apexcompute.com/neural-rendering\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 47/100 · Especulativa\nRIESGO: medio\nPLAZO: corto-medio plazo (beta ahora, lanzamiento comercial próximo)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible mejora significativa en calidad y velocidad de juegos y aplicaciones de renderizado, compitiendo directamente con DLSS\nMOTIVOS PARA DESCONFIAR: El proyecto está en fase beta, lo que implica posibles cambios o interrupciones; Requiere GPUs de gama alta compatibles, lo que limita la base de usuarios potenciales; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; dependencia de hardware costoso\nCÓMO PARTICIPAR: Visitar https://apexcompute.com/neural-rendering; Registrarse con el email para recibir actualizaciones y acceso beta; Descargar el software cuando esté disponible; Probar en una GPU compatible (RTX 20 series o superior, AMD RX 5000+, etc.)\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de adopción comercial tras la beta; Incompatibilidad o alto coste del hardware necesario; Supremacía y mejoras continuas de la competencia (NVIDIA DLSS)\nFUENTES: https://apexcompute.com/neural-rendering | https://github.com/apex-compute/ANR",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "web-apexcompute-com"
+  ]
+ },
+ {
+  "name": "Lastbook",
+  "category": "ia_tecnologia",
+  "subcategory": "knowledge_ai",
+  "kind": "pasiva",
+  "description": "Plataforma offline de IA que ofrece mapas y videos para supervivencia y reconstrucción.",
+  "officialUrl": "https://lastbook.org",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Proyecto global, accesible desde España",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes de entrada, solo tiempo",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "media",
+  "timeNeeded": "variable, depende de la contribución",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Combina IA offline con contenido de supervivencia",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Puede servir a comunidades de preparación y rescate",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Mercado de IA y supervivencia es nicho y poco probado",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "Equipo no identificado en la información disponible",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación pública o privada",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "2719 estrellas y 329 forks indican comunidad activa",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Uso real desconocido, sin métricas de adopción",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Existen otras herramientas de IA y supervivencia, pero pocas offline",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Dependencia de infraestructura offline y mantenimiento continuo",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 10,
+    "why": "No implica inversión monetaria directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8,
+    "why": "Acceso global vía internet, sin restricciones",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que retirar, participación es voluntaria",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_modelo_de_negocio",
+    "severity": "media",
+    "detail": "El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "ausencia de modelo de negocio claro"
+  ],
+  "whyInteresting": [
+   "IA offline para supervivencia, nicho emergente"
+  ],
+  "howToParticipate": [
+   "Visitar el repositorio en GitHub",
+   "Clonar el proyecto",
+   "Contribuir con código o documentación",
+   "Participar en la comunidad"
+  ],
+  "lossCauses": [
+   "Ninguno financiero"
+  ],
+  "earlySignals": [
+   "2719 estrellas en GitHub indican interés inicial",
+   "329 forks muestran actividad de desarrollo"
+  ],
+  "signals": {
+   "stars": 2719,
+   "forks": 329
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "github.com",
+    "url": "https://github.com/Immortal-Protocols/lastbook"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-lastbook-org",
+  "isNew": true,
+  "score": 45,
+  "rawScore": 50.4,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_modelo_de_negocio",
+    "severity": "media",
+    "detail": "El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Combina IA offline con contenido de supervivencia",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede servir a comunidades de preparación y rescate",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de IA y supervivencia es nicho y poco probado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Equipo no identificado en la información disponible",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública o privada",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "2719 estrellas y 329 forks indican comunidad activa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso real desconocido, sin métricas de adopción",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de IA y supervivencia, pero pocas offline",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Dependencia de infraestructura offline y mantenimiento continuo",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "No implica inversión monetaria directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Acceso global vía internet, sin restricciones",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que retirar, participación es voluntaria",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 2719.0,
+    "forks": 329.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Lastbook\nCATEGORÍA: ia_tecnologia · knowledge_ai\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://lastbook.org\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 45/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IA offline para supervivencia, nicho emergente\nMOTIVOS PARA DESCONFIAR: El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; ausencia de modelo de negocio claro\nCÓMO PARTICIPAR: Visitar el repositorio en GitHub; Clonar el proyecto; Contribuir con código o documentación; Participar en la comunidad\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguno financiero\nFUENTES: https://github.com/Immortal-Protocols/lastbook",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "n-immortal-protocols-lastbook"
+  ]
+ },
+ {
+  "name": "rust-anything",
+  "category": "ia_tecnologia",
+  "subcategory": "herramientas_de_programacion",
+  "kind": "activa",
+  "description": "Herramienta que permite reescribir aplicaciones en Rust pieza a pieza, verificando el comportamiento contra la versión original. Soporta CLIs, servidores HTTP y librerías en varios lenguajes. Ideal para mejorar rendimiento y seguridad del código existente.",
+  "officialUrl": "https://github.com/erkamyaman/rust-anything",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Proyecto open‑source, sin costes de licencia ni suscripción.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, al ser software libre no hay inversión financiera que recuperar.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "dependiendo del tamaño del proyecto, de unas horas a varias semanas por módulo a migrar",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información pública sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación externa o modelo de negocio",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5,
+    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión económica directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "No se menciona soporte o documentación en español",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "licencia_no_clara",
+    "severity": "media",
+    "detail": "No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Facilita la migración a Rust, un lenguaje con alta demanda por su seguridad y rendimiento"
+  ],
+  "howToParticipate": [
+   "Visitar https://github.com/erkamyaman/rust-anything",
+   "Leer la documentación y los ejemplos",
+   "Clonar el repositorio y probar la herramienta en un proyecto pequeño",
+   "Contribuir con mejoras o reportar issues"
+  ],
+  "lossCauses": [
+   "Pérdida de tiempo si el proyecto original carece de pruebas automatizadas",
+   "Posibles incompatibilidades con dependencias específicas del lenguaje original"
+  ],
+  "earlySignals": [
+   "Crecimiento sostenido de estrellas en GitHub",
+   "Actividad regular de commits y pull requests"
+  ],
+  "signals": {
+   "stars": 6507,
+   "forks": 508
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://www.npmjs.com/package/rust-anything"
+   },
+   {
+    "title": "github.com",
+    "url": "https://github.com/erkamyaman/rust-anything"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-github-com-erkamyaman-rust-anything",
+  "isNew": true,
+  "score": 40,
+  "rawScore": 44.6,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "licencia_no_clara",
+    "severity": "media",
+    "detail": "No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información pública sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación externa o modelo de negocio",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión económica directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se menciona soporte o documentación en español",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 6507.0,
+    "forks": 508.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: rust-anything\nCATEGORÍA: ia_tecnologia · herramientas_de_programacion\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://github.com/erkamyaman/rust-anything\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Facilita la migración a Rust, un lenguaje con alta demanda por su seguridad y rendimiento\nMOTIVOS PARA DESCONFIAR: No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Visitar https://github.com/erkamyaman/rust-anything; Leer la documentación y los ejemplos; Clonar el repositorio y probar la herramienta en un proyecto pequeño; Contribuir con mejoras o reportar issues\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de tiempo si el proyecto original carece de pruebas automatizadas; Posibles incompatibilidades con dependencias específicas del lenguaje original\nFUENTES: https://www.npmjs.com/package/rust-anything | https://github.com/erkamyaman/rust-anything",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "web-npmjs-com"
+  ]
+ },
+ {
   "name": "Cornhole News",
   "category": "ia_tecnologia",
   "subcategory": "news_aggregator",
@@ -760,6 +2267,368 @@
   "runId": "run-20261120-1141",
   "aliases": [
    "web-cornholenews-news"
+  ]
+ },
+ {
+  "name": "DeepSeek AI Chat Demo",
+  "category": "ia_tecnologia",
+  "subcategory": "demo",
+  "kind": "pasiva",
+  "description": "Demo interactivo de la API de DeepSeek AI que permite probar conversaciones con el modelo de lenguaje. Disponible vía web y código abierto en GitHub.",
+  "officialUrl": "https://deepseek-ai.github.io/chat-demo/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o restricciones específicas en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Ninguno",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un recurso gratuito y no una inversión financiera.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "baja",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Demo reciente de la API de DeepSeek AI",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Solo permite probar la API, sin funcionalidades comerciales directas",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Mercado de demos de IA es amplio y competitivo",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación pública o privada",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "5116 estrellas y 1171 forks en GitHub indican una comunidad activa",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Uso limitado a usuarios que prueban la demo",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Existen múltiples demos y plataformas de IA similares",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Código abierto, pero depende de la infraestructura de DeepSeek",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8,
+    "why": "No implica inversión monetaria",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Desconocida la adaptación o localización para España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay salida financiera, es un recurso gratuito",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Permite experimentar con la API de DeepSeek AI sin coste",
+   "Código abierto y fácil de probar"
+  ],
+  "howToParticipate": [
+   "Acceder a https://deepseek-ai.github.io/chat-demo/",
+   "Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo",
+   "Seguir la documentación para probar la API"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {
+   "stars": 5116,
+   "forks": 1171
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento legal en España",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://deepseek-ai.github.io/chat-demo/"
+   },
+   {
+    "title": "github.com",
+    "url": "https://github.com/deepseek-ai/chat-demo"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-deepseek-ai-github-io",
+  "isNew": true,
+  "score": 39,
+  "rawScore": 44.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Demo reciente de la API de DeepSeek AI",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Solo permite probar la API, sin funcionalidades comerciales directas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de demos de IA es amplio y competitivo",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública o privada",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "5116 estrellas y 1171 forks en GitHub indican una comunidad activa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso limitado a usuarios que prueban la demo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen múltiples demos y plataformas de IA similares",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Código abierto, pero depende de la infraestructura de DeepSeek",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "No implica inversión monetaria",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida la adaptación o localización para España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay salida financiera, es un recurso gratuito",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 5116.0,
+    "forks": 1171.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DeepSeek AI Chat Demo\nCATEGORÍA: ia_tecnologia · demo\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://deepseek-ai.github.io/chat-demo/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite experimentar con la API de DeepSeek AI sin coste; Código abierto y fácil de probar\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Acceder a https://deepseek-ai.github.io/chat-demo/; Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo; Seguir la documentación para probar la API\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://deepseek-ai.github.io/chat-demo/ | https://github.com/deepseek-ai/chat-demo",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "web-deepseek-ai-github-io"
   ]
  },
  {
@@ -1183,6 +3052,366 @@
   "runId": "run-20261120-1141",
   "aliases": [
    "tok-solana-gexthzhgaswpaq7fi8qrhfubjpimunsyhjiaa7xzpump"
+  ]
+ },
+ {
+  "name": "Zethos",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "Zethos se presenta como \"the ledger you and your AI work from\", un registro digital que integra funcionalidades de IA para gestionar datos. La información proviene de su ficha en Product Hunt, sin detalles adicionales sobre su funcionamiento o modelo de negocio.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información disponible sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se dispone de datos de precios o planes de suscripción.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no se trata de una inversión financiera.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "desconocido",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "El concepto de un ledger potenciado por IA es novedoso, pero la falta de información impide una valoración precisa.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Sin datos de mercado o casos de uso, el potencial es incierto.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "No se identifican mercados objetivo ni tamaño de mercado en la fuente disponible.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se encontró información sobre el equipo fundador o sus antecedentes.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos públicos sobre rondas de financiación o inversores.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3,
+    "why": "La única referencia es una publicación en Product Hunt, sin métricas de comunidad.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "No se dispone de cifras de usuarios activos o adopción temprana.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras soluciones de ledger con IA, pero sin comparativas concretas.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4,
+    "why": "Sin acceso al código o arquitectura, el riesgo técnico es indeterminado.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8,
+    "why": "No implica inversión financiera directa, por lo que el riesgo financiero es bajo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2,
+    "why": "Falta de información sobre disponibilidad o regulaciones en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "No es una inversión que requiera salida; no aplica.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "Escasa información pública sobre producto, equipo, precios y disponibilidad."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Poca transparencia y ausencia de datos verificables."
+  ],
+  "whyInteresting": [
+   "Integra IA en la gestión de registros, una tendencia emergente en productividad digital."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt para obtener enlaces y posibles contactos con los creadores."
+  ],
+  "lossCauses": [
+   "No aplica, no es una inversión financiera."
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo en España.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/zethos"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "n-zethos",
+  "isNew": true,
+  "score": 32,
+  "rawScore": 36.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "Escasa información pública sobre producto, equipo, precios y disponibilidad."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "El concepto de un ledger potenciado por IA es novedoso, pero la falta de información impide una valoración precisa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de mercado o casos de uso, el potencial es incierto.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se identifican mercados objetivo ni tamaño de mercado en la fuente disponible.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se encontró información sobre el equipo fundador o sus antecedentes.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos públicos sobre rondas de financiación o inversores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "La única referencia es una publicación en Product Hunt, sin métricas de comunidad.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "No se dispone de cifras de usuarios activos o adopción temprana.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras soluciones de ledger con IA, pero sin comparativas concretas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sin acceso al código o arquitectura, el riesgo técnico es indeterminado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "No implica inversión financiera directa, por lo que el riesgo financiero es bajo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Falta de información sobre disponibilidad o regulaciones en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "No es una inversión que requiera salida; no aplica.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Zethos\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 32/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Integra IA en la gestión de registros, una tendencia emergente en productividad digital.\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre producto, equipo, precios y disponibilidad.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Poca transparencia y ausencia de datos verificables.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt para obtener enlaces y posibles contactos con los creadores.\nQUÉ PODRÍA HACERME PERDER EL DINERO: No aplica, no es una inversión financiera.\nFUENTES: https://www.producthunt.com/products/zethos",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "news-www-producthunt-com-products-zethos"
   ]
  },
  {
@@ -2342,6 +4571,1091 @@
   ]
  },
  {
+  "name": "pickfit",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": null,
+  "description": "Pickfit es una herramienta que prueba cada IA en un sandbox antes de recomendarla. Busca ofrecer una capa de seguridad y calidad para usuarios que buscan soluciones de IA.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se ha encontrado información de precios",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es un activo financiero.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "Producto recién listado en Product Hunt",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Sin datos de mercado o tracción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "No hay información de tamaño de mercado",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de datos del equipo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No se menciona financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3,
+    "why": "Solo presencia en Product Hunt",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "Sin métricas de usuarios",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Se posiciona como sandbox para IA, competencia indirecta",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Tecnología sandbox puede presentar fallos, pero sin datos",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 7,
+    "why": "No implica inversión financiera directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Desconocida disponibilidad en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 6,
+    "why": "No aplica salida financiera",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "Información muy limitada sobre producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Información insuficiente"
+  ],
+  "whyInteresting": [
+   "Herramienta que prueba IA en sandbox antes de recomendar, potencial para filtrar calidad y reducir riesgos de adopción de IA."
+  ],
+  "howToParticipate": [
+   "1. Visitar la página de Product Hunt para obtener más información.",
+   "2. Buscar enlaces al sitio oficial o contacto del proyecto.",
+   "3. Evaluar si el producto ofrece pruebas gratuitas o suscripción y registrarse si procede."
+  ],
+  "lossCauses": [
+   "Ninguna pérdida financiera directa, pero posible pérdida de tiempo si el producto no cumple expectativas."
+  ],
+  "earlySignals": [
+   "Listado reciente en Product Hunt."
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No se ha verificado cumplimiento regulatorio",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/pickfit"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "n-pickfit",
+  "isNew": true,
+  "score": 25,
+  "rawScore": 35.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "Información muy limitada sobre producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Producto recién listado en Product Hunt",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de mercado o tracción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay información de tamaño de mercado",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de datos del equipo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No se menciona financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Solo presencia en Product Hunt",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin métricas de usuarios",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Se posiciona como sandbox para IA, competencia indirecta",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología sandbox puede presentar fallos, pero sin datos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "No implica inversión financiera directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida disponibilidad en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "No aplica salida financiera",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: pickfit\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 25/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta que prueba IA en sandbox antes de recomendar, potencial para filtrar calidad y reducir riesgos de adopción de IA.\nMOTIVOS PARA DESCONFIAR: Información muy limitada sobre producto, equipo y modelo de negocio.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Información insuficiente\nCÓMO PARTICIPAR: 1. Visitar la página de Product Hunt para obtener más información.; 2. Buscar enlaces al sitio oficial o contacto del proyecto.; 3. Evaluar si el producto ofrece pruebas gratuitas o suscripción y registrarse si procede.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera directa, pero posible pérdida de tiempo si el producto no cumple expectativas.\nFUENTES: https://www.producthunt.com/products/pickfit",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "news-www-producthunt-com-products-pickfit"
+  ]
+ },
+ {
+  "name": "hippomaps – search the map in plain words",
+  "category": "ia_tecnologia",
+  "subcategory": "geospatial_search",
+  "kind": "pasiva",
+  "description": "Una herramienta que permite buscar datos de OpenStreetMap usando lenguaje natural determinista. Presentada en Hacker News con 113 upvotes y 32 comentarios.",
+  "officialUrl": "https://hippomaps.ch/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se indica disponibilidad específica para España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se menciona modelo de precios en la información disponible.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, no es un activo financiero.",
+  "horizon": "corto plazo (prueba del producto)",
+  "deadline": null,
+  "potential": "alto potencial en aplicaciones de búsqueda geoespacial si se integra en servicios.",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para probar la herramienta.",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "producto nuevo en Hacker News",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 7,
+    "why": "interés de la comunidad HN (upvotes)",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "mercado amplio pero competitivo de búsqueda geoespacial",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0,
+    "why": "no hay información del equipo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0,
+    "why": "no hay datos de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "113 upvotes y 32 comentarios en Hacker News",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "solo menciones en HN, sin usuarios reportados",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "existen otras herramientas de búsqueda OSM",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "tecnología basada en búsqueda determinista, pero sin pruebas públicas",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "no implica inversión financiera directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2,
+    "why": "no hay indicios de disponibilidad en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0,
+    "why": "no hay activo que vender",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Innovadora forma de buscar en OpenStreetMap usando lenguaje natural.",
+   "Recibió atención en Hacker News, indicando interés de la comunidad tech."
+  ],
+  "howToParticipate": [
+   "Acceder a https://hippomaps.ch/ y probar la búsqueda con consultas en lenguaje natural.",
+   "Seguir el proyecto en su repositorio o foro si está disponible para estar al tanto de actualizaciones."
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {
+   "upvotes": 113,
+   "comments": 32
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No se requiere regulación específica para una herramienta de búsqueda.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50561199"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-hippomaps-ch",
+  "isNew": true,
+  "score": 24,
+  "rawScore": 29.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "producto nuevo en Hacker News",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "interés de la comunidad HN (upvotes)",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "mercado amplio pero competitivo de búsqueda geoespacial",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no hay información del equipo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no hay datos de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "113 upvotes y 32 comentarios en Hacker News",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "solo menciones en HN, sin usuarios reportados",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "existen otras herramientas de búsqueda OSM",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "tecnología basada en búsqueda determinista, pero sin pruebas públicas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "no implica inversión financiera directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "no hay indicios de disponibilidad en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no hay activo que vender",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "upvotes": 113.0,
+    "comments": 32.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: hippomaps – search the map in plain words\nCATEGORÍA: ia_tecnologia · geospatial_search\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://hippomaps.ch/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial en aplicaciones de búsqueda geoespacial si se integra en servicios.\nPUNTUACIÓN: 24/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo (prueba del producto)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovadora forma de buscar en OpenStreetMap usando lenguaje natural.; Recibió atención en Hacker News, indicando interés de la comunidad tech.\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Acceder a https://hippomaps.ch/ y probar la búsqueda con consultas en lenguaje natural.; Seguir el proyecto en su repositorio o foro si está disponible para estar al tanto de actualizaciones.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://hippomaps.ch/?q=cafes+by+the+Limmat+100+m+from+the+lake+in+zurich#map=15.02/47.36708/8.54935 | https://news.ycombinator.com/item?id=50561199",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "web-hippomaps-ch"
+  ]
+ },
+ {
+  "name": "tinytldr",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "tinytldr es una herramienta que ofrece plantillas para agentes de IA, facilitando la creación de respuestas rápidas y estructuradas. Está listada en Product Hunt como una solución para simplificar el trabajo de los agentes automatizados.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se han encontrado datos de precios o planes de suscripción.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un producto SaaS sin mecanismo de venta de participación.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "Producto recién listado en Product Hunt",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Sin datos de mercado o tracción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "No se dispone de información sobre tamaño o crecimiento del mercado",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se ha encontrado información sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3,
+    "why": "Poca evidencia de comunidad activa más allá de Product Hunt",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "No hay métricas de usuarios o adopción disponibles",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Se desconoce el panorama competitivo específico",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Tecnología basada en plantillas, riesgo técnico moderado",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5,
+    "why": "No implica inversión financiera directa",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2,
+    "why": "Desconocida disponibilidad y localización del servicio en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2,
+    "why": "No hay mecanismo de salida o reventa",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Falta de datos verificables sobre precios, equipo y tracción."
+  ],
+  "whyInteresting": [
+   "Puede simplificar la creación de respuestas para agentes de IA, un nicho en crecimiento."
+  ],
+  "howToParticipate": [
+   "Acceder a la página de Product Hunt del producto y seguir el enlace al sitio oficial para registrarse o probar la herramienta."
+  ],
+  "lossCauses": [
+   "Gasto en suscripción o licencia sin obtener valor esperado."
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de requisitos legales en España.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/tinytldr"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "n-tinytldr",
+  "isNew": true,
+  "score": 23,
+  "rawScore": 28.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Producto recién listado en Product Hunt",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de mercado o tracción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se dispone de información sobre tamaño o crecimiento del mercado",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se ha encontrado información sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Poca evidencia de comunidad activa más allá de Product Hunt",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "No hay métricas de usuarios o adopción disponibles",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Se desconoce el panorama competitivo específico",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología basada en plantillas, riesgo técnico moderado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión financiera directa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Desconocida disponibilidad y localización del servicio en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No hay mecanismo de salida o reventa",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: tinytldr\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 23/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Puede simplificar la creación de respuestas para agentes de IA, un nicho en crecimiento.\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre el producto, equipo y modelo de negocio.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Falta de datos verificables sobre precios, equipo y tracción.\nCÓMO PARTICIPAR: Acceder a la página de Product Hunt del producto y seguir el enlace al sitio oficial para registrarse o probar la herramienta.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Gasto en suscripción o licencia sin obtener valor esperado.\nFUENTES: https://www.producthunt.com/products/tinytldr",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "news-www-producthunt-com-products-tinytldr"
+  ]
+ },
+ {
   "name": "Hogecoin",
   "category": "cripto",
   "subcategory": "meme",
@@ -2774,6 +6088,366 @@
   "runId": "run-20261120-1141",
   "aliases": [
    "tok-solana-fvzqgqrmr4uh1fif6dewmwbj1p4yuzcu8dcw4efopump"
+  ]
+ },
+ {
+  "name": "Cup of Sugar",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "Plataforma que permite compartir un sueño y desglosarlo en pequeños pasos mediante la IA Cubby.",
+  "officialUrl": "https://www.producthunt.com/products/cup-of-sugar-2",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se han encontrado datos de precios o costes de entrada.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica a un token o activo financiero.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "desconocida",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 3,
+    "why": "Producto recién lanzado en Product Hunt sin datos de adopción",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2,
+    "why": "Sin métricas de usuarios ni financiación visible",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2,
+    "why": "Mercado de gestión de objetivos con competencia establecida",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1,
+    "why": "No se ha publicado ronda de inversión ni inversores",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2,
+    "why": "Poca actividad visible fuera de Product Hunt",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 1,
+    "why": "Sin datos de usuarios activos",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Existen varias apps de gestión de metas, pero sin datos comparativos",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3,
+    "why": "Dependencia de IA sin detalles técnicos publicados",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "No hay modelo de negocio claro ni ingresos demostrados",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1,
+    "why": "Desconocido si el producto está disponible o adaptado al mercado español",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1,
+    "why": "No hay mecanismo de salida o liquidez definido",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "info_insuficiente",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "poca información disponible"
+  ],
+  "whyInteresting": [
+   "potencial uso de IA para estructurar objetivos personales"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir cualquier enlace disponible para registrarse o solicitar acceso"
+  ],
+  "lossCauses": [
+   "cierre del proyecto por falta de financiación o adopción"
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/cup-of-sugar-2"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-20",
+  "id": "web-producthunt-com-products-cup-of-sugar-2",
+  "isNew": true,
+  "score": 13,
+  "rawScore": 17.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "info_insuficiente",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto recién lanzado en Product Hunt sin datos de adopción",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Sin métricas de usuarios ni financiación visible",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Mercado de gestión de objetivos con competencia establecida",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No se ha publicado ronda de inversión ni inversores",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Poca actividad visible fuera de Product Hunt",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Sin datos de usuarios activos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varias apps de gestión de metas, pero sin datos comparativos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Dependencia de IA sin detalles técnicos publicados",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No hay modelo de negocio claro ni ingresos demostrados",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Desconocido si el producto está disponible o adaptado al mercado español",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mecanismo de salida o liquidez definido",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Cup of Sugar\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://www.producthunt.com/products/cup-of-sugar-2\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 13/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: potencial uso de IA para estructurar objetivos personales\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre el producto, equipo y modelo de negocio.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; poca información disponible\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir cualquier enlace disponible para registrarse o solicitar acceso\nQUÉ PODRÍA HACERME PERDER EL DINERO: cierre del proyecto por falta de financiación o adopción\nFUENTES: https://www.producthunt.com/products/cup-of-sugar-2",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-20T20:33:04Z",
+  "runId": "run-20261120-2033",
+  "aliases": [
+   "news-www-producthunt-com-products-cup-of-sugar-2"
   ]
  },
  {

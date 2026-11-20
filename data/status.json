@@ -1,73 +1,73 @@
 {
- "lastRunAt": "2026-11-20T11:45:24Z",
+ "lastRunAt": "2026-11-20T20:37:00Z",
  "lastRunOk": false,
- "lastRunId": "run-20261120-1141",
+ "lastRunId": "run-20261120-2033",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-20T11:41:05+00:00"
+   "at": "2026-11-20T20:33:04+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
-   "items": 4,
+   "items": 2,
    "error": null,
-   "at": "2026-11-20T11:41:09+00:00"
+   "at": "2026-11-20T20:33:08+00:00"
   },
   "geckoterminal_trending": {
    "ok": false,
    "items": 0,
    "error": "radar.net.request() got multiple values for keyword argument 'headers'",
-   "at": "2026-11-20T11:41:09+00:00"
+   "at": "2026-11-20T20:33:08+00:00"
   },
   "coingecko_trending": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-20T11:41:09+00:00"
+   "at": "2026-11-20T20:33:08+00:00"
   },
   "hacker_news": {
    "ok": true,
-   "items": 5,
+   "items": 3,
    "error": null,
-   "at": "2026-11-20T11:41:09+00:00"
+   "at": "2026-11-20T20:33:08+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-20T11:41:10+00:00"
+   "at": "2026-11-20T20:33:09+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T11:41:10+00:00"
+   "at": "2026-11-20T20:33:09+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T11:41:12+00:00"
+   "at": "2026-11-20T20:33:10+00:00"
   },
   "TechCrunch Startups": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T11:41:12+00:00"
+   "at": "2026-11-20T20:33:10+00:00"
   },
   "The Block": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T11:41:12+00:00"
+   "at": "2026-11-20T20:33:10+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: HTTP 429",
-   "at": "2026-11-20T11:41:44+00:00"
+   "at": "2026-11-20T20:33:42+00:00"
   }
  },
  "ai": {
@@ -76,7 +76,7 @@
    "groq": 10
   },
   "models": {
-   "gemini": "gemini-3.8-flash",
+   "gemini": "gemini-3.1-flash-lite",
    "groq": "openai/gpt-oss-120b"
   },
   "errors": [
