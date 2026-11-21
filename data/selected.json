@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T08:19:26Z",
+ "generatedAt": "2026-11-21T08:22:01Z",
  "minScore": 70,
  "budget": 150.0,
  "criteria": [
@@ -473,14 +473,12 @@
   }
  },
  "ai": {
-  "used": 3,
+  "used": 0,
   "errors": [],
-  "calls": {
-   "groq": 3
-  }
+  "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T08:19:59Z",
+  "at": "2026-11-21T08:22:01Z",
   "status": 200
  }
 }
