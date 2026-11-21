@@ -18028,6 +18028,407 @@
   ]
  },
  {
+  "name": "Codemany",
+  "category": "ia_tecnologia",
+  "subcategory": "devops",
+  "kind": "activa",
+  "description": "Codemany es una herramienta que promete acelerar la ejecución de GitHub Actions hasta 3 veces, orientada a equipos de desarrollo que buscan reducir tiempos de CI/CD. Se presenta en Product Hunt como una solución basada en IA para optimizar pipelines.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no disponible",
+  "spainNotes": "No hay información pública sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": null,
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un producto SaaS; la salida sería cancelar la suscripción.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "Mejora de CI/CD es valiosa, pero depende de adopción y pruebas de rendimiento.",
+  "difficulty": "media",
+  "timeNeeded": "Pocas semanas para pruebas piloto.",
+  "subscores": {
+   "novedad": {
+    "v": 5.5,
+    "why": "Promete 3x velocidad en GitHub Actions, afirmación única en Product Hunt · Verificador: La optimización de CI/CD mediante IA es una tendencia, pero la afirmación de 3x no está verificada.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4.5,
+    "why": "Ahorro de tiempo en pipelines es atractivo, aunque el mercado está competido · Verificador: El ahorro de tiempo es útil, pero sin acceso al producto, el valor real es especulativo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Existe un amplio mercado de herramientas CI/CD con varios jugadores establecidos · Verificador: Mercado saturado con soluciones como GitHub Actions nativas, Vercel, o CircleCI.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información sobre el equipo fundador o sus antecedentes · Verificador: Cero información pública sobre los desarrolladores o la entidad legal detrás.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No hay datos públicos de rondas de inversión o financiación · Verificador: No hay registros de rondas de inversión o respaldo institucional.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Producto listado en Product Hunt con sección de discusión · Verificador: Actividad mínima en Product Hunt; sin presencia en foros técnicos como GitHub Discussions o Reddit.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "No hay métricas de usuarios activos ni casos de uso publicados · Verificador: No existen casos de uso, testimonios o métricas de adopción verificables.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 3.0,
+    "why": "Compite con herramientas consolidadas como CircleCI, GitHub Actions nativas y otras SaaS de CI/CD · Verificador: Alta competencia con herramientas de infraestructura CI/CD mucho más robustas y confiables. · Discrepancia entre modelos (3 vs 6): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Depende de la integración con la infraestructura de GitHub y de la estabilidad del algoritmo de optimización · Verificador: Riesgo alto al otorgar permisos de GitHub Actions a un servicio sin identidad corporativa verificable. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "No implica inversión de capital; el riesgo se limita a gasto de suscripción · Verificador: Riesgo de suscripción SaaS, aunque la falta de precios claros es una señal de alerta.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay indicios de soporte local, precios en euros o presencia en el mercado español · Verificador: No hay adaptación al mercado español ni presencia legal.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8.0,
+    "why": "Salida sencilla mediante cancelación de suscripción; no hay bloqueo de capital · Verificador: Al ser un SaaS, la salida es la cancelación de la suscripción.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_public_pricing",
+    "severity": "media",
+    "detail": "No se ha encontrado información de precios ni modelo de negocio claro en la web oficial"
+   },
+   {
+    "code": "inaccessible_website",
+    "severity": "critica",
+    "detail": "El dominio oficial devuelve error 403, impidiendo cualquier auditoría de seguridad o legal."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre la empresa, equipo o términos legales."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Conectar repositorios de GitHub a un servicio desconocido supone un riesgo de seguridad para la cadena de suministro de software."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de una presencia web operativa (error 403 persistente), no hay información sobre el equipo fundador, ni términos de servicio o política de precios claros. La falta de transparencia técnica y corporativa impide validar la promesa de valor."
+   }
+  ],
+  "distrust": [
+   "Información limitada; la página oficial no es accesible (HTTP 403)"
+  ],
+  "whyInteresting": [
+   "Posible ahorro significativo de tiempo y costes en pipelines CI/CD"
+  ],
+  "howToParticipate": [
+   "1. Acceder a la página de Product Hunt para Codemany",
+   "2. Buscar el enlace a la web oficial o a la página de registro",
+   "3. Crear una cuenta y conectar el repositorio de GitHub",
+   "4. Configurar los workflows y medir la mejora de velocidad"
+  ],
+  "lossCauses": [
+   "El producto no entrega la velocidad prometida",
+   "Suspensión del servicio o cambios en la política de precios"
+  ],
+  "earlySignals": [
+   "Aparición en Product Hunt y discusión inicial de la comunidad"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser un servicio SaaS de optimización de software, no requiere registro en la CNMV ni MiCA, pero la falta de entidad legal impide verificar su cumplimiento normativo básico.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/codemany"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto carece de una presencia web operativa (error 403 persistente), no hay información sobre el equipo fundador, ni términos de servicio o política de precios claros. La falta de transparencia técnica y corporativa impide validar la promesa de valor.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-codemany",
+  "isNew": true,
+  "score": 10,
+  "rawScore": 24.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "lack_of_public_pricing",
+    "severity": "media",
+    "detail": "No se ha encontrado información de precios ni modelo de negocio claro en la web oficial"
+   },
+   {
+    "code": "inaccessible_website",
+    "severity": "critica",
+    "detail": "El dominio oficial devuelve error 403, impidiendo cualquier auditoría de seguridad o legal."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre la empresa, equipo o términos legales."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Conectar repositorios de GitHub a un servicio desconocido supone un riesgo de seguridad para la cadena de suministro de software."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de una presencia web operativa (error 403 persistente), no hay información sobre el equipo fundador, ni términos de servicio o política de precios claros. La falta de transparencia técnica y corporativa impide validar la promesa de valor."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Promete 3x velocidad en GitHub Actions, afirmación única en Product Hunt · Verificador: La optimización de CI/CD mediante IA es una tendencia, pero la afirmación de 3x no está verificada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Ahorro de tiempo en pipelines es atractivo, aunque el mercado está competido · Verificador: El ahorro de tiempo es útil, pero sin acceso al producto, el valor real es especulativo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Existe un amplio mercado de herramientas CI/CD con varios jugadores establecidos · Verificador: Mercado saturado con soluciones como GitHub Actions nativas, Vercel, o CircleCI.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información sobre el equipo fundador o sus antecedentes · Verificador: Cero información pública sobre los desarrolladores o la entidad legal detrás.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay datos públicos de rondas de inversión o financiación · Verificador: No hay registros de rondas de inversión o respaldo institucional.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Producto listado en Product Hunt con sección de discusión · Verificador: Actividad mínima en Product Hunt; sin presencia en foros técnicos como GitHub Discussions o Reddit.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "No hay métricas de usuarios activos ni casos de uso publicados · Verificador: No existen casos de uso, testimonios o métricas de adopción verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con herramientas consolidadas como CircleCI, GitHub Actions nativas y otras SaaS de CI/CD · Verificador: Alta competencia con herramientas de infraestructura CI/CD mucho más robustas y confiables. · Discrepancia entre modelos (3 vs 6): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la integración con la infraestructura de GitHub y de la estabilidad del algoritmo de optimización · Verificador: Riesgo alto al otorgar permisos de GitHub Actions a un servicio sin identidad corporativa verificable. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión de capital; el riesgo se limita a gasto de suscripción · Verificador: Riesgo de suscripción SaaS, aunque la falta de precios claros es una señal de alerta.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay indicios de soporte local, precios en euros o presencia en el mercado español · Verificador: No hay adaptación al mercado español ni presencia legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Salida sencilla mediante cancelación de suscripción; no hay bloqueo de capital · Verificador: Al ser un SaaS, la salida es la cancelación de la suscripción.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Codemany\nCATEGORÍA: ia_tecnologia · devops\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no disponible\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Mejora de CI/CD es valiosa, pero depende de adopción y pruebas de rendimiento.\nPUNTUACIÓN: 10/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible ahorro significativo de tiempo y costes en pipelines CI/CD\nMOTIVOS PARA DESCONFIAR: No se ha encontrado información de precios ni modelo de negocio claro en la web oficial; El dominio oficial devuelve error 403, impidiendo cualquier auditoría de seguridad o legal.; Ausencia total de información sobre la empresa, equipo o términos legales.; Conectar repositorios de GitHub a un servicio desconocido supone un riesgo de seguridad para la cadena de suministro de software.; El verificador tiene dudas: El proyecto carece de una presencia web operativa (error 403 persistente), no hay información sobre el equipo fundador, ni términos de servicio o política de precios claros. La falta de transparencia técnica y corporativa impide validar la promesa de valor.; Información limitada; la página oficial no es accesible (HTTP 403)\nCÓMO PARTICIPAR: 1. Acceder a la página de Product Hunt para Codemany; 2. Buscar el enlace a la web oficial o a la página de registro; 3. Crear una cuenta y conectar el repositorio de GitHub; 4. Configurar los workflows y medir la mejora de velocidad\nQUÉ PODRÍA HACERME PERDER EL DINERO: El producto no entrega la velocidad prometida; Suspensión del servicio o cambios en la política de precios\nFUENTES: https://www.producthunt.com/products/codemany",
+  "firstSeenAt": "2026-11-21T12:35:30Z",
+  "lastSeenAt": "2026-11-21T12:35:30Z",
+  "runId": "run-20261121-1235",
+  "aliases": [
+   "news-www-producthunt-com-products-codemany"
+  ]
+ },
+ {
   "name": "Prompt Puncher",
   "category": "ia_tecnologia",
   "subcategory": "juego",
