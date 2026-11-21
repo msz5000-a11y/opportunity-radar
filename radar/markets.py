@@ -104,9 +104,7 @@ def technicals(c, h=None, l=None, v=None, bench=None) -> dict:
     out["trigger"] = detect_trigger(c, h, l, v)
     a = out["atr"] or (c[-1] * 0.05)
     swing = min(l[-20:])
-    stop = max(swing, c[-1] - 2 * a)
-    if stop >= c[-1] * 0.995:
-        stop = min(swing, c[-1] - 2 * a)
+    stop = min(swing, c[-1] - 2 * a)  # el mínimo reciente, pero nunca a menos de 2 ATR del precio
     out["stop"] = round(stop, 6)
     out["riskPct"] = round((c[-1] - stop) / c[-1] * 100, 1)
     return out
