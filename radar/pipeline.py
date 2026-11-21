@@ -126,7 +126,7 @@ def apply_verification(ficha: dict, ver: dict | None, verifier_model: str | None
 # ------------------------------------------------------------------ pasos
 def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str]) -> list[dict]:
     cats = [c for c in cfg["profile"]["categories"] if c in cfg["discovery_queries"]]
-    pool = [(c, q) for c in cats for q in cfg["discovery_queries"][c]]
+    pool = [(c, prompts.loc_query(q)) for c in cats for q in cfg["discovery_queries"][c]]
     if not pool:
         return []
     cursor = state.get("discoveryCursor", 0)
@@ -139,7 +139,7 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
             if found:
                 urls = {f["url"] for f in found}
                 txt = "\n".join(f"- {f['title']} | {f['url']} | {f['content'][:300]}" for f in found)
-                res = router.ask_role("discoverer", prompts.DISCOVERY_SYSTEM,
+                res = router.ask_role("discoverer", prompts.loc(prompts.DISCOVERY_SYSTEM),
                                       prompts.DISCOVERY_RESULTS_PROMPT.format(today=today, query=q, category=cat, results=txt,
                                                                               known=", ".join(str(k) for k in known[-60:] if k) or "ninguna"))
                 for c in ((res or {}).get("data") or {}).get("candidates", [])[:4] if res else []:
@@ -157,7 +157,7 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
                                 "grounding": [{"title": f["title"], "url": f["url"]} for f in found[:6]],
                                 "searchModel": f"tavily+{res['provider']}:{res['model']}"})
                 continue
-        res = router.ask_role("searcher", prompts.DISCOVERY_SYSTEM,
+        res = router.ask_role("searcher", prompts.loc(prompts.DISCOVERY_SYSTEM),
                               prompts.DISCOVERY_PROMPT.format(today=today, query=q, category=cat, known=", ".join(str(k) for k in known[-60:] if k) or "ninguna"),
                               search=True, require_search=True)
         if not res:
@@ -184,7 +184,7 @@ def analyse(router: Router, cfg: dict, item: dict, today: str, available: float,
         market_block = json.dumps({"market": item["market"], "securityFlags": flags}, ensure_ascii=False)
     page = net.page_text(item.get("url") or "", cfg["limits"]["page_text_chars"]) if item.get("url") else ""
     raw = {k: item.get(k) for k in ("source", "title", "url", "summary", "participateUrl", "deadline", "signals", "extraSources", "category")}
-    res = router.ask_role("analyst", prompts.ANALYST_SYSTEM,
+    res = router.ask_role("analyst", prompts.loc(prompts.ANALYST_SYSTEM),
                           prompts.ANALYST_PROMPT.format(today=today, available=round(available, 2),
                                                         raw=json.dumps(raw, ensure_ascii=False),
                                                         market=market_block, page=page or "(sin texto)",
@@ -209,7 +209,7 @@ def analyse(router: Router, cfg: dict, item: dict, today: str, available: float,
     ficha["discoveredVia"] = item.get("source")
     ficha["aiModels"] = {"searcher": item.get("searchModel"), "analyst": f"{res['provider']}:{res['model']}"}
     raw_for_verifier = json.dumps(raw, ensure_ascii=False)
-    ver = router.ask_role("verifier", prompts.VERIFIER_SYSTEM,
+    ver = router.ask_role("verifier", prompts.loc(prompts.VERIFIER_SYSTEM),
                           prompts.VERIFIER_PROMPT.format(today=today, ficha=json.dumps(_compact(ficha), ensure_ascii=False), raw=raw_for_verifier,
                                                          page=(page or "(sin texto)")[:4000]),
                           search=True, exclude={res["provider"]})
@@ -324,6 +324,7 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
     digests: list = store.load("digests.json", [])
     status = store.load("status.json", {})
     profile = {**cfg["profile"], **{k: v for k, v in store.load("profile.json", {}).items() if k in cfg["profile"]}}
+    prompts.set_context(profile)
     cap = float(cfg["profile"].get("maxBudget", 2000) or 2000)
     if not profile.get("budgetAuthorizedAbove150"):
         cap = min(cap, 150.0)

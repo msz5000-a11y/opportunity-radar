@@ -59,7 +59,7 @@
       ? `PER ${nf(m.pe, 1)} · Precio/caja libre ${nf(m.pfcf, 1)} · ROI ${pct(m.roi)} · Calidad ${m.fscore ?? "—"}/9`
       : `Cap./comisiones ${nf(m.pf, 1)} · MVRV ${nf(m.mvrv, 2)} · ${pct(m.athDiscount, 0)} bajo máximos`;
     const lossMax = t.riskPct != null ? Math.round(budget() * t.riskPct / 100) : null;
-    const fair = it.fairValue ? `${usd(it.fairValue[0])} – ${usd(it.fairValue[1])} (${nf((it.fairValue[0] / it.price - 1) * 100, 0)} % a ${nf((it.fairValue[1] / it.price - 1) * 100, 0)} %)` : "—";
+    const fair = it.fairValue ? `${usd(it.fairValue[0])} – ${usd(it.fairValue[1])} (${nf((it.fairValue[0] / it.price - 1) * 100, 0)} % – ${nf((it.fairValue[1] / it.price - 1) * 100, 0)} %)` : "—";
     const rd = it.reddit;
     const news = (it.news || []).map(n => { const u = safeUrl(n.url); return u ? `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(n.title)}</a></li>` : ""; }).join("");
     return `<div class="mk-card ${sig ? "sig" : ""}">

@@ -40,7 +40,7 @@ CRITERIA = [
     ("competencia", "Competencia (10 = poca)", 5),
     ("riesgo_tecnico", "Riesgo técnico (10 = bajo)", 8),
     ("riesgo_financiero", "Riesgo financiero (10 = bajo)", 10),
-    ("entrada_espana", "Facilidad de entrada desde España", 8),
+    ("entrada_espana", "Facilidad de entrada desde tu región", 8),
     ("salida", "Posibilidad de salida o monetización", 8),
 ]
 assert sum(w for _, _, w in CRITERIA) == 100
@@ -263,7 +263,7 @@ def evaluate(c: dict, profile: dict, existing: dict | None, now: str, fx: float 
         score = min(score, 39)
     if c.get("spainAvailability") == "no":
         if score > 39:
-            caps.append("Tope 39: no disponible para residentes en España")
+            caps.append("Tope 39: no disponible en tu región")
         score = min(score, 39)
     if evidenced < MIN_EVIDENCED:
         if score > 59:

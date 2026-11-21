@@ -19,6 +19,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from . import net, notify
+from . import prompts
 from .llm import Router
 
 MIN_SCORE = 70
@@ -33,7 +34,7 @@ CRITERIA = [
     ("nota", f"Nota del radar de {MIN_SCORE}/100 o más"),
     ("verificada", "Verificada por un segundo modelo de IA independiente"),
     ("riesgos", "Sin riesgos críticos y como mucho 1 riesgo alto"),
-    ("espana", "Disponible en España"),
+    ("espana", "Disponible en tu región"),
     ("presupuesto", "Coste de entrada dentro de tu presupuesto"),
     ("riesgo_global", "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)"),
     ("fuentes", "Web oficial y al menos 2 fuentes"),
@@ -166,7 +167,7 @@ def selector_router(cfg: dict, transport=None) -> Router:
 def second_opinion(router: Router, o: dict, budget: float, read_web: bool = True) -> dict | None:
     web = net.page_text(o.get("officialUrl"), 5000) if (read_web and o.get("officialUrl")) else ""
     prompt = PROMPT.format(ficha=json.dumps(_ficha(o), ensure_ascii=False)[:9000], web=web or "(vacío)", budget=int(budget))
-    res = router.ask_role("selector", SYSTEM, prompt)
+    res = router.ask_role("selector", prompts.loc(SYSTEM), prompts.loc(prompt))
     if not res or not isinstance(res.get("data"), dict):
         return None
     d = res["data"]
@@ -226,6 +227,7 @@ def run(data_dir: Path, cfg: dict, dry: bool = False, transport=None, read_web: 
     if not profile.get("budgetAuthorizedAbove150"):
         cap = min(cap, 150.0)
     budget = min(float(profile.get("budget", cap) or cap), cap)
+    prompts.set_context(profile)
     actions = _load(data_dir / "actions.json", {}) or {}
     for o in opps:
         a = actions.get(o.get("id"))

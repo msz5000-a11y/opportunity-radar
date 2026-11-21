@@ -14,7 +14,9 @@
       "lanzamientos",
       "negocio"
     ],
-    "maxBudget": 2000
+    "maxBudget": 2000,
+    "region": "es",
+    "language": "es"
   },
   "limits": {
     "max_candidates_per_run": 10,

@@ -101,3 +101,50 @@ Devuelve:
 "corrections": {{"officialUrl": "... solo si la de la ficha es incorrecta", "participateUrl": "...", "deadline": "...", "spainAvailability": "...", "country": "..."}},
 "regulatory": {{"checked": true, "status": "autorizada|no_autorizada|advertencia_cnmv|no_aplica|desconocido", "notes": "...", "sources": ["https://..."]}},
 "sources": [{{"title": "...", "url": "https://..."}}]}}"""
+
+
+# ---------------------------------------------------------------- región e idioma (Ajustes de la app)
+REGIONS = {
+    "es": {"name": "España", "resident": "un residente en España", "residents": "residentes en España", "tax": "(IRPF, etc.)",
+           "reg": "advertencias de la CNMV (cnmv.es), registro MiCA de ESMA para servicios cripto, registro CNMV de plataformas de financiación participativa"},
+    "eu": {"name": "la Unión Europea", "resident": "una persona residente en la Unión Europea", "residents": "residentes en la UE", "tax": "(impuestos de su país de la UE)",
+           "reg": "advertencias del regulador nacional y de ESMA, registro MiCA de ESMA para servicios cripto, registro ECSP de ESMA de plataformas de financiación participativa"},
+    "uk": {"name": "el Reino Unido", "resident": "una persona residente en el Reino Unido", "residents": "residentes en el Reino Unido", "tax": "(Capital Gains Tax, ISA)",
+           "reg": "la FCA Warning List y el registro de la FCA (fca.org.uk), y el régimen de promociones cripto de la FCA"},
+    "us": {"name": "Estados Unidos", "resident": "una persona residente en Estados Unidos", "residents": "residentes en EE. UU.", "tax": "(capital gains ante el IRS)",
+           "reg": "advertencias y registros de la SEC, FINRA BrokerCheck y la CFTC, además de las normas estatales"},
+    "latam": {"name": "Latinoamérica", "resident": "una persona residente en Latinoamérica", "residents": "residentes en Latinoamérica", "tax": "(impuestos de su país)",
+              "reg": "advertencias del regulador financiero de cada país (CNBV, CMF, CNV, SFC, SMV, etc.)"},
+    "global": {"name": "cualquier país", "resident": "una persona (la disponibilidad se indica por país)", "residents": "residentes en la mayoría de países",
+               "tax": "(impuestos de su país)", "reg": "las listas de advertencias de reguladores (IOSCO I-SCAN) y los registros oficiales del país del proyecto"},
+}
+CTX = {"region": "es", "language": "es"}
+
+
+def set_context(profile: dict) -> None:
+    CTX["region"] = profile.get("region") if profile.get("region") in REGIONS else "es"
+    CTX["language"] = "en" if profile.get("language") == "en" else "es"
+
+
+def loc(text: str) -> str:
+    """Adapta un texto de instrucciones a la región y al idioma de salida elegidos en la app."""
+    r = REGIONS[CTX["region"]]
+    if CTX["region"] != "es":
+        for a, b in (("advertencias de la CNMV (cnmv.es), registro \"\n    \"MiCA de ESMA para servicios cripto, registro CNMV de plataformas de financiación participativa", r["reg"]),
+                     ("advertencias de la CNMV (cnmv.es), registro MiCA de ESMA para servicios cripto, registro CNMV de plataformas de financiación participativa", r["reg"]),
+                     ("una persona residente en España", r["resident"]), ("un residente en España", r["resident"]),
+                     ("residentes en España", r["residents"]), ("(IRPF, etc.)", r["tax"]), ("de la CNMV", "del regulador"),
+                     ("en España", "en " + r["name"]), ("España", r["name"])):
+            text = text.replace(a, b)
+    if CTX["language"] == "en":
+        text = text.replace("Español de España.", "") + "\nIMPORTANT: write every text value of the JSON in English (keys and enum values stay as specified)."
+    return text
+
+
+def loc_query(q: str) -> str:
+    r = REGIONS[CTX["region"]]
+    if CTX["region"] == "es":
+        return q
+    if CTX["region"] == "global":
+        return q.replace("por la CNMV", "por el regulador").replace(" en España", "").replace(" a España", "").replace("España", "").strip()
+    return q.replace("por la CNMV", "por el regulador financiero").replace("España", r["name"])

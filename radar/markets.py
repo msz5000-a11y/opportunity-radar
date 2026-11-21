@@ -286,7 +286,7 @@ def score_stocks(cache: dict, prices: dict) -> tuple[list[dict], dict]:
             continue
         if m.get("gm") is None and m.get("cr") is None:
             continue  # sin margen bruto ni liquidez corriente: casi siempre banco o aseguradora (se valoran aparte)
-        r = {"ticker": sym, "name": entry.get("name") or sym, "price": price, "mcap": m["mcap"] * 1e6, **m}
+        r = {**m, "ticker": sym, "name": entry.get("name") or sym, "price": price, "mcap": m["mcap"] * 1e6}
         r["fscore"], r["fscoreDetail"] = fscore_lite(m)
         fails = []
         if (m.get("nm") is not None and m["nm"] < 0) and (m.get("pfcf") is not None and m["pfcf"] < 0):
@@ -383,17 +383,21 @@ def stocks(data_dir: Path) -> dict:
     rs = pct_rank({r["ticker"]: r["tech"].get("rs3m") for r in fin})
     val = pct_rank({r["ticker"]: r["value"] for r in fin})
     qual = pct_rank({r["ticker"]: r["quality"] for r in fin})
+    def sector_median(sec, k):
+        xs = sorted(x[k] for x in ranked if x.get("sector") == sec and x.get(k) and x[k] > 0)
+        return xs[len(xs) // 2] if len(xs) >= 3 else None
     items = []
     for r in fin:
         tch = r["tech"]
         m = _mean([mom.get(r["ticker"]), rs.get(r["ticker"]), 1.0 if tch["sma200"] and tch["close"] > tch["sma200"] else 0.0]) or 0
         score = round(40 * val.get(r["ticker"], 0) + 35 * qual.get(r["ticker"], 0) + 25 * m)
         knife = mom.get(r["ticker"], 0.5) < 0.2 and tch["sma200"] and tch["close"] < tch["sma200"]
-        fair = []
-        if med["pe"] and r.get("pe"):
-            fair.append(tch["close"] * med["pe"] / r["pe"])
-        if med["pfcf"] and r.get("pfcf") and r["pfcf"] > 0:
-            fair.append(tch["close"] * med["pfcf"] / r["pfcf"])
+        fair = []  # valor razonable: vuelta al múltiplo mediano de su sector (solo si hay al menos 3 empresas comparables)
+        spe, spf = sector_median(r.get("sector"), "pe"), sector_median(r.get("sector"), "pfcf")
+        if spe and r.get("pe"):
+            fair.append(tch["close"] * spe / r["pe"])
+        if spf and r.get("pfcf") and r["pfcf"] > 0:
+            fair.append(tch["close"] * spf / r["pfcf"])
         items.append({
             "symbol": r["ticker"], "name": r["name"], "sector": r.get("sector"), "price": round(tch["close"], 2),
             "mcap": r["mcap"], "score": score, "fallingKnife": bool(knife), "trigger": tch["trigger"],

@@ -249,6 +249,19 @@ details summary{cursor:pointer;font-weight:600}
   <section id="v-settings" class="view" hidden>
     <h1>Perfil y ajustes</h1>
     <div class="section card stack">
+      <h2>Idioma y región</h2>
+      <div class="field">
+        <label for="sLang">Idioma / Language</label>
+        <select id="sLang"><option value="es">Español</option><option value="en">English</option></select>
+      </div>
+      <div class="field">
+        <label for="sRegion">Región donde buscar oportunidades</label>
+        <select id="sRegion"><option value="es">España</option><option value="eu">Unión Europea</option><option value="uk">Reino Unido</option><option value="us">Estados Unidos</option><option value="latam">Latinoamérica</option><option value="global">Global</option></select>
+      </div>
+      <div class="small muted">La región cambia dónde busca el radar y qué regulador comprueba. Se aplica en la próxima exploración si la sincronización está activa.</div>
+      <button class="btn" id="shareApp" type="button">Compartir la app</button>
+    </div>
+    <div class="section card stack">
       <h2>Presupuesto</h2>
       <div class="field">
         <label for="sBudget">Capital máximo para oportunidades (€)</label>
@@ -795,6 +808,7 @@ details summary{cursor:pointer;font-weight:600}
 
   function fillSettings() {
     const p = state.profile || defaultProfile();
+    $("#sRegion").value = p.region || "es"; $("#sLang").value = LS.get("radar-lang", null) || p.language || ((navigator.language || "es").startsWith("es") ? "es" : "en");
     $("#sBudget").value = p.budget ?? 2000; $("#sAuth").checked = !!p.budgetAuthorizedAbove150;
     $("#sAlert").value = p.alertThreshold ?? 75; $("#sUrgent").value = p.urgentThreshold ?? 85;
     const cats = arr(p.categories).length ? arr(p.categories) : Object.keys(CAT);
@@ -808,8 +822,11 @@ details summary{cursor:pointer;font-weight:600}
     const alertTh = Math.min(100, Math.max(40, +$("#sAlert").value || 75));
     const urgentTh = Math.min(100, Math.max(alertTh, +$("#sUrgent").value || 85));
     const cats = $$(".sCat").filter(c => c.checked).map(c => c.value);
-    state.profile = {...(state.profile || defaultProfile()), budget, budgetAuthorizedAbove150: auth, alertThreshold: alertTh, urgentThreshold: urgentTh, categories: cats.length ? cats : Object.keys(CAT), committed: committedTotal(), updatedAt: new Date().toISOString()};
+    state.profile = {...(state.profile || defaultProfile()), budget, budgetAuthorizedAbove150: auth, alertThreshold: alertTh, urgentThreshold: urgentTh, region: $("#sRegion").value || "es", language: $("#sLang").value || "es", categories: cats.length ? cats : Object.keys(CAT), committed: committedTotal(), updatedAt: new Date().toISOString()};
+    const langChanged = (LS.get("radar-lang", null) || "es") !== state.profile.language;
+    LS.set("radar-lang", state.profile.language);
     LS.set("radar-profile", state.profile); scheduleSync(); fillSettings(); renderAll();
+    if (langChanged) setTimeout(() => location.reload(), 600);
     toast(gh.ready() ? "Ajustes guardados. El radar los usará en la próxima exploración." : "Ajustes guardados en este móvil. Conecta la sincronización para que el radar los use.");
   });
   $("#saveGh").addEventListener("click", async () => {
@@ -820,6 +837,13 @@ details summary{cursor:pointer;font-weight:600}
     await pullRemoteState(); scheduleSync();
   });
   $("#clearGh").addEventListener("click", () => { LS.set("radar-gh", {}); fillSettings(); setSyncStatus("Token borrado de este móvil.", "warn"); });
+
+  $("#shareApp").addEventListener("click", async () => {
+    const url = location.origin + location.pathname;
+    const data = {title: "Opportunity Radar", text: "Radar de oportunidades, acciones y cripto · Opportunity radar", url};
+    try { if (navigator.share) { await navigator.share(data); return; } } catch { return; }
+    try { await navigator.clipboard.writeText(url); toast("Enlace copiado: " + url); } catch { toast(url); }
+  });
 
   // ---------- instalación ----------
   let installEvt = null;
@@ -874,6 +898,6 @@ details summary{cursor:pointer;font-weight:600}
   setInterval(() => { if (!state.current) loadData(); }, 5 * 60000);
 })();
 </script>
-<script src="selected.js?v=3"></script><script src="markets.js?v=3"></script>
+<script src="selected.js?v=4"></script><script src="markets.js?v=4"></script><script src="i18n.js?v=4"></script>
 </body>
 </html>
