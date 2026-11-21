@@ -1,0 +1,402 @@
+{
+ "generatedAt": "2026-11-21T08:15:23Z",
+ "minScore": 70,
+ "budget": 150.0,
+ "criteria": [
+  {
+   "id": "nota",
+   "label": "Nota del radar de 70/100 o más"
+  },
+  {
+   "id": "verificada",
+   "label": "Verificada por un segundo modelo de IA independiente"
+  },
+  {
+   "id": "riesgos",
+   "label": "Sin riesgos críticos y como mucho 1 riesgo alto"
+  },
+  {
+   "id": "espana",
+   "label": "Disponible en España"
+  },
+  {
+   "id": "presupuesto",
+   "label": "Coste de entrada dentro de tu presupuesto"
+  },
+  {
+   "id": "riesgo_global",
+   "label": "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)"
+  },
+  {
+   "id": "fuentes",
+   "label": "Web oficial y al menos 2 fuentes"
+  },
+  {
+   "id": "beneficio",
+   "label": "Vía clara y legal para ganar dinero"
+  },
+  {
+   "id": "vigente",
+   "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
+  }
+ ],
+ "studied": 33,
+ "selected": [],
+ "nearMisses": [
+  {
+   "id": "web-factory-mastra-ai",
+   "name": "Mastra Factory",
+   "category": "ia_tecnologia",
+   "score": 53,
+   "adjustedScore": 58,
+   "risk": "medio",
+   "officialUrl": "https://factory.mastra.ai",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-github-com-diggerhq-opencomputer",
+   "name": "OpenComputer",
+   "category": "ia_tecnologia",
+   "score": 60,
+   "adjustedScore": 60,
+   "risk": "medio",
+   "officialUrl": "https://github.com/diggerhq/opencomputer",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-noniv-github-io",
+   "name": "Abyssal Garden",
+   "category": "ia_tecnologia",
+   "score": 50,
+   "adjustedScore": 50,
+   "risk": "medio",
+   "officialUrl": "https://noniv.github.io/abyssal-garden/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-lastbook-org",
+   "name": "Lastbook",
+   "category": "ia_tecnologia",
+   "score": 45,
+   "adjustedScore": 45,
+   "risk": "medio",
+   "officialUrl": "https://lastbook.org",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
+   "id": "web-github-com-krisgfx9-wireless-device-battery-monitor",
+   "name": "Wireless Device Battery Monitor (BatteryHub)",
+   "category": "ia_tecnologia",
+   "score": 56,
+   "adjustedScore": 56,
+   "risk": "medio",
+   "officialUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": false,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 5,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Web oficial y al menos 2 fuentes",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  }
+ ],
+ "manuals": {
+  "web-github-com-diggerhq-opencomputer": {
+   "segundaOpinion": {
+    "veredicto": "dudosa",
+    "motivo": "No hay mecanismo de monetización directo y la herramienta es gratuita, por lo que el riesgo es bajo pero el retorno no está garantizado.",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "El software es gratuito y no ofrece recompensas ni ventas; el beneficio sería indirecto en productividad."
+   },
+   "resumen": "OpenComputer es un agente de código open‑source que genera pull requests desde Slack, más rápido que Devin. Se puede auto‑implementar o usar en la nube con prueba gratuita de 3 días.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que tu cuenta de Slack y GitHub estén configuradas y tengan los permisos necesarios.",
+    "Confirmar que tienes acceso a un modelo de IA (Claude, OpenAI, etc.) si vas a usar la versión cloud.",
+    "Asegurarte de que dispones de una máquina virtual con acceso a Internet y, si auto‑hostas, de que el firewall permite solo tráfico saliente.",
+    "Revisar que el repositorio de GitHub tenga al menos un README y un flujo de CI configurado para PRs.",
+    "Confirmar que el presupuesto de 150 € no se usará para suscripciones externas, ya que el software es gratuito."
+   ],
+   "pasos": [
+    {
+     "titulo": "Clonar el repositorio",
+     "detalle": "git clone https://github.com/diggerhq/opencomputer.git",
+     "tiempo": "5 min"
+    },
+    {
+     "titulo": "Instalar dependencias",
+     "detalle": "Ejecutar npm install o pip install según el README; instalar Docker y Podman si auto‑hostas",
+     "tiempo": "15 min"
+    },
+    {
+     "titulo": "Configurar Slack y GitHub",
+     "detalle": "Crear una app de Slack, obtener el token, y conectar el repositorio en la configuración de OpenComputer",
+     "tiempo": "20 min"
+    },
+    {
+     "titulo": "Probar en modo cloud",
+     "detalle": "Registrarse en la página oficial, usar la prueba gratuita de 3 días y crear un PR de prueba",
+     "tiempo": "30 min"
+    },
+    {
+     "titulo": "Auto‑hostear (opcional)",
+     "detalle": "Seguir SELFHOSTING.md, crear una VM, configurar firewall y ejecutar el gateway",
+     "tiempo": "2-3 h"
+    }
+   ],
+   "planDeSalida": "Puedes dejar de usarlo en cualquier momento; simplemente desinstala el software o cancela la suscripción a la nube si la has activado.",
+   "senalesDeAlarma": [
+    "Costos inesperados de suscripción a modelos de IA",
+    "Falta de soporte oficial",
+    "Dependencia de APIs externas que puedan cerrarse"
+   ],
+   "erroresTipicos": [
+    "No configurar el firewall a solo salida",
+    "No usar rootless Podman y exponer la VM",
+    "No persistir el estado en el git‑backed store",
+    "Ignorar los límites de la prueba gratuita"
+   ],
+   "fiscalidad": "Como no generas ingresos directos con el software, no hay impuestos a declarar. Si vendes servicios que utilizan OpenComputer, esos ingresos se gravan como rendimientos del trabajo en el IRPF. Consulta con un asesor fiscal.",
+   "tiempoNecesario": "≈ 4‑6 h para auto‑implementación, 30‑60 min para usar la versión cloud",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-21T08:15:27Z",
+   "fichaScore": 60
+  },
+  "web-factory-mastra-ai": {
+   "segundaOpinion": {
+    "veredicto": "confirmada",
+    "motivo": "La herramienta es gratuita y de código abierto, lo que permite iniciarse sin coste, aunque depende de APIs externas que pueden generar costes ocultos.",
+    "contradicciones": [
+     "La ficha indica costos 0€ pero la red flag menciona posibles costes de la versión hosted",
+     "El repositorio es cerrado a contribuciones externas a pesar de ser de código abierto"
+    ]
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "Mastra Factory es una herramienta de productividad, no un producto con mecanismo de monetización directa."
+   },
+   "resumen": "Mastra Factory es una fábrica de software de código abierto que orquesta agentes IA mediante tableros Kanban y Slack. Se puede auto‑alojar o usar una versión hosted, aunque la última puede tener costes no especificados.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que tienes un repositorio GitHub y un workspace de Slack configurados.",
+    "Confirmar que dispones de una cuenta con un proveedor de LLM (Claude, Codex, etc.).",
+    "Instalar Node.js y npm en tu máquina.",
+    "Crear una cuenta en Mastra platform si vas a usar la versión hosted.",
+    "Asegurarte de que puedes generar y guardar una clave de cifrado de credenciales en .env."
+   ],
+   "pasos": [
+    {
+     "titulo": "Preparar entorno",
+     "detalle": "Instala Node.js, Git, y crea un workspace de Slack y un repositorio GitHub.",
+     "tiempo": "1 h"
+    },
+    {
+     "titulo": "Instalar Mastra Factory",
+     "detalle": "Ejecuta `npm create factory@latest <project-name>` y sigue los prompts.",
+     "tiempo": "30 min"
+    },
+    {
+     "titulo": "Configurar cifrado de credenciales",
+     "detalle": "Genera una clave con `openssl rand -base64 32` y añádela a .env como FACTORY_CREDENTIAL_ENCRYPTION_KEY.",
+     "tiempo": "15 min"
+    },
+    {
+     "titulo": "Conectar GitHub",
+     "detalle": "En la UI de Factory, selecciona el repositorio que los agentes deben modificar y concede los permisos necesarios.",
+     "tiempo": "15 min"
+    },
+    {
+     "titulo": "Conectar proveedor de LLM",
+     "detalle": "En la UI, elige tu modelo y provee las credenciales necesarias.",
+     "tiempo": "30 min"
+    },
+    {
+     "titulo": "Ejecutar servidor",
+     "detalle": "Corre `npm run dev` y abre la URL local mostrada.",
+     "tiempo": "15 min"
+    },
+    {
+     "titulo": "Probar flujo",
+     "detalle": "Crea un issue de prueba y verifica que aparece en el tablero y que el agente puede crear un PR.",
+     "tiempo": "15 min"
+    }
+   ],
+   "planDeSalida": "Si después de 4 semanas de uso no se observa mejora en la gestión de PRs o tareas, detén el proyecto y elimina la instalación local. Si optas por la versión hosted y aparecen costes inesperados, cancela la suscripción inmediatamente.",
+   "senalesDeAlarma": [
+    "Aumento inesperado de precios o suspensión de la API del LLM",
+    "La herramienta no se integra con Slack o GitHub",
+    "No hay mejora en el tiempo de cierre de PRs",
+    "Costes ocultos de la versión hosted"
+   ],
+   "erroresTipicos": [
+    "No generar la clave de cifrado de credenciales",
+    "No configurar correctamente .env",
+    "Usar un proveedor de LLM no soportado",
+    "No conectar el repositorio GitHub",
+    "Ignorar los prompts de instalación"
+   ],
+   "fiscalidad": "El uso de la herramienta para fines personales no genera ingresos sujetos a IRPF. Si la utilizas en una actividad empresarial, los costes de software son deducibles. Consulta con un asesor fiscal para confirmar la normativa aplicable.",
+   "tiempoNecesario": "≈ 20‑30 h distribuidas en 4‑6 semanas",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-21T08:15:30Z",
+   "fichaScore": 53
+  },
+  "web-noniv-github-io": {
+   "segundaOpinion": {
+    "veredicto": "rechazada",
+    "motivo": "No hay plan de monetización ni inversión, por lo que no genera beneficio económico",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "No existe ningún mecanismo de ingresos asociado a la demo"
+   },
+   "resumen": "Abyssal Garden es una demo interactiva 3D que simula un mundo submarino generado por código WebGPU. No ofrece ningún beneficio económico.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que el navegador Chrome esté actualizado a la última versión",
+    "Acceder a la URL oficial para comprobar que la demo carga correctamente"
+   ],
+   "pasos": [
+    {
+     "titulo": "Abrir Chrome",
+     "detalle": "Iniciar el navegador Chrome en su versión más reciente",
+     "tiempo": "1 minuto"
+    },
+    {
+     "titulo": "Acceder a la demo",
+     "detalle": "Navegar a https://noniv.github.io/abyssal-garden/",
+     "tiempo": "1 minuto"
+    },
+    {
+     "titulo": "Explorar el entorno",
+     "detalle": "Usar WASD y Q/E para moverse y disfrutar de la demo",
+     "tiempo": "5-10 minutos"
+    }
+   ],
+   "planDeSalida": "No hay posición que liquidar; basta con cerrar la pestaña",
+   "senalesDeAlarma": [
+    "Si la demo no carga o presenta errores graves",
+    "Si se detecta contenido malicioso"
+   ],
+   "erroresTipicos": [
+    "Pasar tiempo sin obtener beneficio",
+    "Pensar que hay alguna forma de ganar dinero"
+   ],
+   "fiscalidad": "No hay ingresos, por lo que no hay obligación de declarar. Confirmar con asesor fiscal.",
+   "tiempoNecesario": "5-10 minutos",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-21T08:15:46Z",
+   "fichaScore": 50
+  }
+ },
+ "ai": {
+  "used": 3,
+  "errors": [],
+  "calls": {
+   "groq": 3
+  }
+ },
+ "geminiDiagnostic": {
+  "at": "2026-11-21T08:15:46Z",
+  "status": 200
+ }
+}
