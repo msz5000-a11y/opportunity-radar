@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T12:48:22Z",
+ "generatedAt": "2026-11-21T13:06:08Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -478,7 +478,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T12:48:22Z",
-  "status": 200
+  "at": "2026-11-21T13:06:08Z",
+  "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
  }
 }
