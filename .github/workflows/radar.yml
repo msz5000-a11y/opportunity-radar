@@ -126,7 +126,7 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
-        run: python -m radar.markets
+        run: python -m radar.markets $([ "${{ github.event_name }}" = "push" ] && echo --force)
 
       - name: Guardar datos en el repositorio
         run: |
