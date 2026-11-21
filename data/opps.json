@@ -22571,6 +22571,399 @@
   ]
  },
  {
+  "name": "Stitch Loop",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Stitch Loop es un agente de IA de Google que automatiza la corrección de errores y monitoriza métricas. Aparece en Product Hunt como una herramienta emergente para desarrolladores.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No hay información pública sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión monetaria para usar el producto",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "Desconocido, dependerá de la adopción por parte de desarrolladores y empresas.",
+  "difficulty": "baja",
+  "timeNeeded": "Poco tiempo para probar si está disponible.",
+  "subscores": {
+   "novedad": {
+    "v": 0.0,
+    "why": "Primer agente de IA de Google orientado a corrección automática · Verificador: El producto no existe como entidad real. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "Potencial de ahorro de tiempo para equipos de desarrollo, pero sin datos de adopción · Verificador: Al no existir el producto, no tiene potencial. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Mercado de herramientas de DevOps y IA es competitivo y amplio · Verificador: No hay mercado para un producto inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto · Verificador: No hay equipo verificable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se ha publicado ninguna ronda de financiación · Verificador: No existe financiación para un proyecto inexistente. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Listado en Product Hunt genera interés inicial · Verificador: La mención en Product Hunt es probablemente un error o spam. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Sin datos de usuarios activos o casos de uso publicados · Verificador: Adopción nula. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Existen otras herramientas de IA para corrección de código, pero sin detalle comparativo · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Depende de la infraestructura de Google; sin embargo, la disponibilidad del producto es incierta · Verificador: Riesgo máximo al intentar acceder a enlaces no verificados de un producto inexistente. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No implica inversión de capital · Verificador: Aunque no requiere dinero, el riesgo de phishing al interactuar con enlaces falsos es alto.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "No hay indicios de soporte o localización para España · Verificador: No disponible. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay mecanismo de salida financiero ya que no es una inversión · Verificador: No aplica.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo, financiación, disponibilidad en España ni acceso al sitio oficial (HTTP 403)."
+   },
+   {
+    "code": "producto_inexistente",
+    "severity": "critica",
+    "detail": "No hay evidencia de que Google haya lanzado o anunciado 'Stitch Loop'. El enlace de Product Hunt no dirige a una web oficial."
+   },
+   {
+    "code": "phishing_risk",
+    "severity": "alta",
+    "detail": "Interactuar con enlaces de productos inexistentes que se hacen pasar por Google es un vector de riesgo de ciberseguridad."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: Tras una búsqueda exhaustiva, no existe ningún producto oficial de Google llamado 'Stitch Loop'. La entrada en Product Hunt parece ser un error de indexación, una suplantación o un proyecto fantasma sin respaldo corporativo real. La falta de URL oficial y la imposibilidad de verificar la existencia del equipo confirman que no es una herramienta legítima de Google."
+   }
+  ],
+  "distrust": [
+   "Información limitada",
+   "No se pudo acceder al sitio oficial"
+  ],
+  "whyInteresting": [
+   "Posible herramienta de automatización de IA para desarrolladores",
+   "Mención de Google sugiere respaldo tecnológico"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al producto para solicitar acceso si está disponible."
+  ],
+  "lossCauses": [
+   "Pérdida de tiempo si el producto no se lanza o no está disponible"
+  ],
+  "earlySignals": [
+   "Listado en Product Hunt genera visibilidad inicial"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser un producto financiero ni una empresa real, no está sujeto a regulación financiera, pero el riesgo de fraude es elevado.",
+   "sources": [
+    "https://www.google.com"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/stitch-loop"
+   },
+   {
+    "title": "Google Cloud Products",
+    "url": "https://cloud.google.com/products"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "Tras una búsqueda exhaustiva, no existe ningún producto oficial de Google llamado 'Stitch Loop'. La entrada en Product Hunt parece ser un error de indexación, una suplantación o un proyecto fantasma sin respaldo corporativo real. La falta de URL oficial y la imposibilidad de verificar la existencia del equipo confirman que no es una herramienta legítima de Google.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 25
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-stitch-loop",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 14.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo, financiación, disponibilidad en España ni acceso al sitio oficial (HTTP 403)."
+   },
+   {
+    "code": "producto_inexistente",
+    "severity": "critica",
+    "detail": "No hay evidencia de que Google haya lanzado o anunciado 'Stitch Loop'. El enlace de Product Hunt no dirige a una web oficial."
+   },
+   {
+    "code": "phishing_risk",
+    "severity": "alta",
+    "detail": "Interactuar con enlaces de productos inexistentes que se hacen pasar por Google es un vector de riesgo de ciberseguridad."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: Tras una búsqueda exhaustiva, no existe ningún producto oficial de Google llamado 'Stitch Loop'. La entrada en Product Hunt parece ser un error de indexación, una suplantación o un proyecto fantasma sin respaldo corporativo real. La falta de URL oficial y la imposibilidad de verificar la existencia del equipo confirman que no es una herramienta legítima de Google."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Primer agente de IA de Google orientado a corrección automática · Verificador: El producto no existe como entidad real. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Potencial de ahorro de tiempo para equipos de desarrollo, pero sin datos de adopción · Verificador: Al no existir el producto, no tiene potencial. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Mercado de herramientas de DevOps y IA es competitivo y amplio · Verificador: No hay mercado para un producto inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto · Verificador: No hay equipo verificable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se ha publicado ninguna ronda de financiación · Verificador: No existe financiación para un proyecto inexistente. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Listado en Product Hunt genera interés inicial · Verificador: La mención en Product Hunt es probablemente un error o spam. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin datos de usuarios activos o casos de uso publicados · Verificador: Adopción nula. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Existen otras herramientas de IA para corrección de código, pero sin detalle comparativo · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la infraestructura de Google; sin embargo, la disponibilidad del producto es incierta · Verificador: Riesgo máximo al intentar acceder a enlaces no verificados de un producto inexistente. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No implica inversión de capital · Verificador: Aunque no requiere dinero, el riesgo de phishing al interactuar con enlaces falsos es alto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay indicios de soporte o localización para España · Verificador: No disponible. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mecanismo de salida financiero ya que no es una inversión · Verificador: No aplica.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Stitch Loop\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Desconocido, dependerá de la adopción por parte de desarrolladores y empresas.\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: crítico\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible herramienta de automatización de IA para desarrolladores; Mención de Google sugiere respaldo tecnológico\nMOTIVOS PARA DESCONFIAR: No se dispone de datos sobre el equipo, financiación, disponibilidad en España ni acceso al sitio oficial (HTTP 403).; No hay evidencia de que Google haya lanzado o anunciado 'Stitch Loop'. El enlace de Product Hunt no dirige a una web oficial.; Interactuar con enlaces de productos inexistentes que se hacen pasar por Google es un vector de riesgo de ciberseguridad.; El verificador no pudo confirmar que sea real: Tras una búsqueda exhaustiva, no existe ningún producto oficial de Google llamado 'Stitch Loop'. La entrada en Product Hunt parece ser un error de indexación, una suplantación o un proyecto fantasma sin respaldo corporativo real. La falta de URL oficial y la imposibilidad de verificar la existencia del equipo confirman que no es una herramienta legítima de Google.; Información limitada; No se pudo acceder al sitio oficial\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al producto para solicitar acceso si está disponible.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de tiempo si el producto no se lanza o no está disponible\nFUENTES: https://www.producthunt.com/products/stitch-loop | https://cloud.google.com/products",
+  "firstSeenAt": "2026-11-21T13:37:00Z",
+  "lastSeenAt": "2026-11-21T13:37:00Z",
+  "runId": "run-20261121-1337",
+  "aliases": [
+   "news-www-producthunt-com-products-stitch-loop"
+  ]
+ },
+ {
   "name": "Honey‑trap awareness for AI professionals",
   "category": "ia_tecnologia",
   "subcategory": "seguridad",

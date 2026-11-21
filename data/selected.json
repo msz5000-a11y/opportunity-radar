@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T13:06:08Z",
+ "generatedAt": "2026-11-21T13:37:34Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 60,
+ "studied": 61,
  "selected": [],
  "nearMisses": [
   {
@@ -478,7 +478,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T13:06:08Z",
-  "error": "HTTPSConnectionPool(host='generativelanguage.googleapis.com', port=443): Read timed out. (read timeout=30)"
+  "at": "2026-11-21T13:37:34Z",
+  "status": 200
  }
 }
