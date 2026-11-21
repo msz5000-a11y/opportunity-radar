@@ -56,7 +56,7 @@
     const m = it.metrics || {}, t = it.tech || {};
     const sig = it.trigger && !it.fallingKnife;
     const line = kind === "accion"
-      ? `EV/EBIT ${nf(m.evEbit, 1)} · Caja libre ${pct(m.fcfYield)} · ROIC ${pct(m.roic)} · F-score ${m.fscore ?? "—"}/9`
+      ? `PER ${nf(m.pe, 1)} · Precio/caja libre ${nf(m.pfcf, 1)} · ROI ${pct(m.roi)} · Calidad ${m.fscore ?? "—"}/9`
       : `Cap./comisiones ${nf(m.pf, 1)} · MVRV ${nf(m.mvrv, 2)} · ${pct(m.athDiscount, 0)} bajo máximos`;
     const lossMax = t.riskPct != null ? Math.round(budget() * t.riskPct / 100) : null;
     const fair = it.fairValue ? `${usd(it.fairValue[0])} – ${usd(it.fairValue[1])} (${nf((it.fairValue[0] / it.price - 1) * 100, 0)} % a ${nf((it.fairValue[1] / it.price - 1) * 100, 0)} %)` : "—";
@@ -81,21 +81,21 @@
           ${it.trigger ? `<p class="small" style="margin:4px 0">${esc(it.trigger.text)}.</p>` : `<p class="small muted" style="margin:4px 0">Sin señal de giro todavía: el radar te avisará si aparece.</p>`}
           <h4>${kind === "accion" ? "Valor y calidad" : "Valor y uso"}</h4>
           <div class="kv">${kind === "accion" ? `
-            <span>EV/EBIT (mediana: ${nf(data.stocks.medians?.evEbit, 1)})</span><span>${nf(m.evEbit, 1)}</span>
-            <span>Rentabilidad por caja libre</span><span>${pct(m.fcfYield)}</span>
+            <span>PER (mediana: ${nf(data.stocks.medians?.pe, 1)})</span><span>${nf(m.pe, 1)}</span>
+            <span>Precio / caja libre (mediana: ${nf(data.stocks.medians?.pfcf, 1)})</span><span>${nf(m.pfcf, 1)}</span>
+            <span>Valor de empresa / caja libre</span><span>${nf(m.evFcf, 1)}</span>
             <span>Precio / valor contable</span><span>${nf(m.pb, 2)}</span>
-            <span>ROIC</span><span>${pct(m.roic)}</span>
-            <span>Beneficio bruto / activos</span><span>${pct(m.gpa)}</span>
-            <span>Altman Z (riesgo de quiebra si &lt; 1,8)</span><span>${nf(m.altmanZ, 2)}</span>
-            <span>Deuda neta / EBITDA</span><span>${nf(m.ndEbitda, 2)}</span>
-            <span>Cambio de acciones en circulación</span><span>${pct(m.dilution)}</span>` : `
+            <span>Rentabilidad sobre la inversión (ROI)</span><span>${pct(m.roi)}</span>
+            <span>Margen bruto / operativo</span><span>${pct(m.gm)} / ${pct(m.om)}</span>
+            <span>Deuda / patrimonio</span><span>${nf(m.de, 2)}</span>
+            <span>Crecimiento de ventas (12 meses)</span><span>${pct(m.revG)}</span>` : `
             <span>Capitalización / comisiones anuales</span><span>${nf(m.pf, 1)}</span>
             <span>Capitalización / ingresos anuales</span><span>${nf(m.ps, 1)}</span>
             <span>MVRV (&lt; 1 = barato históricamente)</span><span>${nf(m.mvrv, 2)}</span>
             <span>Caída desde máximos</span><span>${pct(m.athDiscount, 0)}</span>
             <span>Crecimiento de comisiones (30 días)</span><span>${pct(m.feesGrowth)}</span>
             <span>En circulación</span><span>${pct(m.circulating, 0)}</span>`}</div>
-          ${it.fscoreDetail?.length ? `<p class="small muted" style="margin:2px 0">F-score: ${esc(it.fscoreDetail.join(" · "))}</p>` : ""}
+          ${it.fscoreDetail?.length ? `<p class="small muted" style="margin:2px 0">Calidad (tipo Piotroski): ${esc(it.fscoreDetail.join(" · "))}</p>` : ""}
           <h4>Técnico</h4>
           <div class="kv"><span>Media 50 / 200 sesiones</span><span>${usd(t.sma50)} / ${usd(t.sma200)}</span>
             <span>RSI (14)</span><span>${nf(t.rsi, 0)}</span>
@@ -114,7 +114,7 @@
     }
     const items = block.items || [];
     const head = kind === "accion"
-      ? `<p class="small muted" style="margin:0">${nf(block.universe, 0)} empresas estudiadas (cuentas ${esc(block.fiscalYear)}, cierre ${esc(block.priceDate)}); ${nf(block.passed, 0)} pasan los descartes; se muestran las mejores (${items.length}).</p>`
+      ? `<p class="small muted" style="margin:0">${nf(block.universe, 0)} empresas líquidas (cierre ${esc(block.priceDate)}); cuentas revisadas de ${nf(block.covered, 0)} (se amplía cada día); ${nf(block.passed, 0)} pasan los descartes; se muestran las mejores (${items.length}).</p>`
       : `<p class="small muted" style="margin:0">${nf(block.universe, 0)} criptos estudiadas; ${nf(block.passed, 0)} pasan los descartes; se muestran las mejores (${items.length}).</p>`;
     return head + (items.length ? items.map(i => card(i, kind)).join("") : `<div class="empty">Ninguna cumple los criterios hoy.</div>`);
   }
@@ -133,11 +133,11 @@
 
   const HOW = `<div class="stack small" style="gap:8px">
     <p style="margin:0"><strong>Método:</strong> como un fondo cuantitativo. Se combinan valor, calidad y momento, y solo se avisa cuando aparece una señal técnica de giro.</p>
-    <p style="margin:0"><strong>Acciones (EE. UU.):</strong> capitalización &gt; 500 M$, liquidez &gt; 5 M$/día y precio &gt; 5 $. Descarte automático: riesgo de quiebra (Altman Z &lt; 1,8), F-score ≤ 3, caja libre negativa dos años, dilución &gt; 10 % o deuda neta &gt; 4× EBITDA. Nota: valor 35 %, calidad 30 %, momento 20 % y recompras 15 %.</p>
+    <p style="margin:0"><strong>Acciones (EE. UU.):</strong> capitalización &gt; 500 M$, liquidez &gt; 5 M$/día y precio &gt; 5 $. Descarte automático: pierde dinero y quema caja, calidad de 3 puntos o menos sobre 9, deuda &gt; 2,5× patrimonio, intereses mal cubiertos, ventas cayendo &gt; 20 % o sin beneficios. Nota: valor 40 % (PER, precio/caja libre, precio/valor contable), calidad 35 % (ROI, márgenes y una puntuación tipo Piotroski) y momento 25 %.</p>
     <p style="margin:0"><strong>Cripto:</strong> top 300 con más de 5 M$/día, sin stablecoins ni tokens envueltos. Descarte: menos del 50 % en circulación o sin datos para valorarla. Nota: valor 35 %, uso 25 %, técnico 20 % y sentimiento 20 %.</p>
     <p style="margin:0"><strong>Señal de giro:</strong> recupera la media de 50 sesiones tras semanas por debajo (RSI &gt; 50 y volumen alto) o rebota en una media de 200 que sube. Si el S&amp;P 500 o BTC están por debajo de su media de 200, se exige más nota.</p>
     <p style="margin:0"><strong>Cuchillo cayendo:</strong> barata pero con muy mala tendencia; se marca y no genera señal.</p>
-    <p class="muted" style="margin:0">Datos: SEC EDGAR, Massive, CoinGecko, DefiLlama, CoinMetrics, alternative.me, ApeWisdom y Tavily. Las cuentas son anuales y los precios, del cierre anterior. No es asesoramiento financiero: el radar nunca compra ni vende por ti.</p></div>`;
+    <p class="muted" style="margin:0">Datos: Finnhub, Massive, CoinGecko, DefiLlama, CoinMetrics, alternative.me, ApeWisdom y Tavily. Las cuentas son de los últimos 12 meses y los precios, del cierre anterior. No es asesoramiento financiero: el radar nunca compra ni vende por ti.</p></div>`;
 
   function render() {
     const t = data?.generatedAt ? new Date(data.generatedAt).toLocaleString("es-ES", {timeZone: "Europe/Madrid", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit"}) : "sin datos";

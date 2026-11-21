@@ -4,7 +4,7 @@ Método (como un fondo cuantitativo): valor + calidad + momento en cada activo, 
 técnica de giro para avisar. Registra cada señal en una cartera fantasma para medir si el sistema funciona.
 Nunca compra ni vende nada: solo analiza y avisa.
 
-Fuentes gratuitas: SEC EDGAR (cuentas), Massive (precios, clave gratuita MASSIVE_API_KEY), CoinGecko, DefiLlama,
+Fuentes gratuitas: Finnhub (cuentas, FINNHUB_API_KEY), Massive (precios, MASSIVE_API_KEY), CoinGecko, DefiLlama,
 CoinMetrics Community, alternative.me (miedo y codicia), ApeWisdom (menciones en Reddit) y Tavily (noticias).
 Uso: python -m radar.markets [--data data] [--force]
 """
@@ -20,10 +20,10 @@ from pathlib import Path
 
 from . import net, notify, search
 
-SEC_HEADERS = {"User-Agent": "OpportunityRadar msz5000-a11y@users.noreply.github.com", "Accept": "application/json"}
 MASSIVE = "https://api.massive.com"
 MIN_MCAP, MIN_PRICE, MIN_DOLLAR_VOL = 500e6, 5.0, 5e6
 FINALISTS = 40
+FH_PER_RUN = 300  # empresas consultadas en Finnhub por ejecución (60/minuto)
 SIGNAL_MIN_SCORE = 60
 PAPER_DAYS = 90
 STABLE = {"usdt", "usdc", "dai", "fdusd", "tusd", "usde", "usds", "pyusd", "usdd", "frax", "gusd", "usdp", "lusd", "eurc",
@@ -155,19 +155,8 @@ def massive(path: str, params: dict | None = None) -> dict:
     return {}
 
 
-def sec_json(url: str):
-    import requests as _rq
-    r = _rq.get(url, headers={**SEC_HEADERS, "Accept-Encoding": "gzip, deflate"}, timeout=90)
-    time.sleep(0.12)
-    if r.status_code != 200:
-        import re as _re
-        title = _re.search(r"<title>(.*?)</title>", r.text, _re.S | _re.I)
-        raise RuntimeError(f"HTTP {r.status_code}: {(title.group(1).strip() if title else r.text[:120])[:140]}")
-    return r.json()
-
-
 def massive_tickers() -> dict:
-    """Plan B si la SEC no deja descargar su lista: tickers de acciones comunes con su CIK (Massive)."""
+    """Acciones ordinarias de NYSE/Nasdaq (Massive, referencia gratuita): {TICKER: nombre}."""
     out, cursor, pages = {}, None, 0
     while pages < 8:
         params = {"market": "stocks", "type": "CS", "active": "true", "limit": 1000}
@@ -175,53 +164,13 @@ def massive_tickers() -> dict:
             params["cursor"] = cursor
         res = massive("/v3/reference/tickers", params)
         for t in res.get("results") or []:
-            if t.get("cik") and t.get("primary_exchange") in ("XNYS", "XNAS", "XASE", "ARCX", "BATS"):
-                out[t["ticker"].upper()] = (int(t["cik"]), t.get("name") or t["ticker"])
+            if t.get("primary_exchange") in ("XNYS", "XNAS", "XASE", "ARCX", "BATS"):
+                out[t["ticker"].upper()] = t.get("name") or t["ticker"]
         nxt = res.get("next_url") or ""
         cursor = nxt.split("cursor=")[1].split("&")[0] if "cursor=" in nxt else None
         pages += 1
         if not cursor:
             break
-    return out
-
-
-def frames(concepts: list[str], period: str, unit: str = "USD") -> dict:
-    """Valor por CIK de la primera etiqueta XBRL disponible (SEC EDGAR, todo el mercado en una llamada)."""
-    out: dict = {}
-    for c in concepts:
-        try:
-            data = sec_json(f"https://data.sec.gov/api/xbrl/frames/us-gaap/{c}/{unit}/{period}.json").get("data", [])
-        except Exception as e:  # noqa: BLE001
-            STATUS.setdefault("sec_frames_errors", {"ok": False, "items": 0, "error": str(e)[:160]})
-            continue
-        for r in data:
-            if r.get("val") is not None:
-                out.setdefault(int(r["cik"]), float(r["val"]))
-    return out
-
-
-DURATION = {"rev": ["Revenues", "RevenueFromContractWithCustomerExcludingAssessedTax", "SalesRevenueNet"],
-            "gp": ["GrossProfit"], "ebit": ["OperatingIncomeLoss"], "ni": ["NetIncomeLoss"],
-            "cfo": ["NetCashProvidedByUsedInOperatingActivities"], "capex": ["PaymentsToAcquirePropertyPlantAndEquipment"],
-            "da": ["DepreciationDepletionAndAmortization", "DepreciationAndAmortization"]}
-INSTANT = {"assets": ["Assets"], "ca": ["AssetsCurrent"], "cl": ["LiabilitiesCurrent"], "liab": ["Liabilities"],
-           "eq": ["StockholdersEquity"], "re": ["RetainedEarningsAccumulatedDeficit"],
-           "cash": ["CashAndCashEquivalentsAtCarryingValue"], "ltd": ["LongTermDebtNoncurrent", "LongTermDebt"],
-           "std": ["DebtCurrent", "LongTermDebtCurrent"]}
-
-
-def fundamentals(year: int) -> dict:
-    """{cik: {"y": {...}, "p": {...}}} con el último año fiscal completo (y) y el anterior (p)."""
-    out: dict = {}
-    for tag, yr in (("y", year), ("p", year - 1)):
-        for k, cs in DURATION.items():
-            for cik, v in frames(cs, f"CY{yr}").items():
-                out.setdefault(cik, {"y": {}, "p": {}})[tag][k] = v
-        for cik, v in frames(["WeightedAverageNumberOfDilutedSharesOutstanding"], f"CY{yr}", "shares").items():
-            out.setdefault(cik, {"y": {}, "p": {}})[tag]["shares"] = v
-        for k, cs in INSTANT.items():
-            for cik, v in frames(cs, f"CY{yr}Q4I").items():
-                out.setdefault(cik, {"y": {}, "p": {}})[tag][k] = v
     return out
 
 
@@ -249,6 +198,49 @@ def bars(ticker: str, days: int = 400) -> dict | None:
     return {"c": [r["c"] for r in rows], "h": [r["h"] for r in rows], "l": [r["l"] for r in rows], "v": [r.get("v", 0) for r in rows]}
 
 
+_fh_last = [0.0]
+
+
+def finnhub(path: str, params: dict) -> dict:
+    """Finnhub, plan gratuito (60 llamadas/minuto, solo EE. UU.)."""
+    key = os.environ.get("FINNHUB_API_KEY")
+    for attempt in range(2):
+        wait = 1.05 - (time.time() - _fh_last[0])
+        if wait > 0:
+            time.sleep(wait)
+        _fh_last[0] = time.time()
+        try:
+            return net.request("GET", "https://finnhub.io/api/v1" + path, params={**params, "token": key}, timeout=30, retries=1).json()
+        except Exception as e:  # noqa: BLE001
+            if "429" in str(e) and attempt == 0:
+                time.sleep(61)
+                continue
+            raise RuntimeError(str(e).replace(key or "#", "***"))
+    return {}
+
+
+FH_FIELDS = {"mcap": ["marketCapitalization"], "pe": ["peTTM", "peBasicExclExtraTTM", "peAnnual"],
+             "pb": ["pbQuarterly", "pbAnnual"], "pfcf": ["pfcfShareTTM", "pfcfShareAnnual"],
+             "evFcf": ["currentEv/freeCashFlowTTM", "currentEv/freeCashFlowAnnual"],
+             "roi": ["roiTTM", "roiAnnual"], "roa": ["roaTTM", "roaRfy"], "gm": ["grossMarginTTM", "grossMarginAnnual"],
+             "om": ["operatingMarginTTM", "operatingMarginAnnual"], "nm": ["netProfitMarginTTM", "netProfitMarginAnnual"],
+             "cr": ["currentRatioQuarterly", "currentRatioAnnual"], "de": ["totalDebt/totalEquityQuarterly", "totalDebt/totalEquityAnnual"],
+             "cov": ["netInterestCoverageTTM", "netInterestCoverageAnnual"], "revG": ["revenueGrowthTTMYoy"], "epsG": ["epsGrowthTTMYoy"]}
+SERIES = ("roa", "currentRatio", "grossMargin", "totalDebtToEquity")
+
+
+def fh_metrics(sym: str) -> dict:
+    d = finnhub("/stock/metric", {"symbol": sym, "metric": "all"})
+    m = d.get("metric") or {}
+    out = {k: next((m[f] for f in fs if isinstance(m.get(f), (int, float))), None) for k, fs in FH_FIELDS.items()}
+    ann = (d.get("series") or {}).get("annual") or {}
+    for s in SERIES:
+        vals = [x.get("v") for x in (ann.get(s) or [])[:2] if isinstance(x.get("v"), (int, float))]
+        if len(vals) == 2:
+            out[s + "Y"], out[s + "P"] = vals[0], vals[1]
+    return out
+
+
 def ape(kind: str) -> dict:
     """Menciones en Reddit (ApeWisdom): {SIMBOLO: {...}}."""
     try:
@@ -269,107 +261,63 @@ def news(query: str) -> list[dict]:
 
 
 # ------------------------------------------------------------------ acciones
-def score_stocks(fund: dict, prices: dict, tickers: dict) -> tuple[list[dict], dict]:
-    """Etapa A: descartes antitrampa y nota de valor + calidad con las cuentas y el último cierre."""
-    by_cik: dict = {}
-    for t, (cik, name) in tickers.items():
-        p = prices.get(t)
-        if p and p.get("c") and p.get("v"):
-            dv = p["c"] * p["v"]
-            if cik not in by_cik or dv > by_cik[cik]["dv"]:
-                by_cik[cik] = {"ticker": t, "name": name, "price": p["c"], "dv": dv}
+def fscore_lite(m: dict) -> tuple[int, list[str]]:
+    """Calidad tipo Piotroski aproximada con los datos gratuitos de Finnhub (9 puntos)."""
+    def gt(a, b):
+        return a is not None and b is not None and a > b
+    checks = [("beneficio positivo", (m.get("nm") or 0) > 0), ("caja libre positiva", (m.get("pfcf") or 0) > 0),
+              ("rentabilidad sobre activos positiva", (m.get("roa") or 0) > 0),
+              ("rentabilidad sobre activos al alza", gt(m.get("roaY"), m.get("roaP"))),
+              ("liquidez corriente al alza", gt(m.get("currentRatioY"), m.get("currentRatioP"))),
+              ("margen bruto al alza", gt(m.get("grossMarginY"), m.get("grossMarginP"))),
+              ("menos deuda", gt(m.get("totalDebtToEquityP"), m.get("totalDebtToEquityY"))),
+              ("ventas al alza", (m.get("revG") or 0) > 0), ("beneficio por acción al alza", (m.get("epsG") or 0) > 0)]
+    pts = [label for label, ok in checks if ok]
+    return len(pts), pts
+
+
+def score_stocks(cache: dict, prices: dict) -> tuple[list[dict], dict]:
+    """Etapa A: descartes antitrampa y nota de valor + calidad."""
     rows = []
-    for cik, q in by_cik.items():
-        f = fund.get(cik)
-        if not f:
+    for sym, entry in cache.items():
+        m, p = entry.get("m") or {}, prices.get(sym)
+        if not p or not m.get("mcap"):
             continue
-        y, p = f["y"], f["p"]
-        sh, price = y.get("shares"), q["price"]
-        if not sh or price < MIN_PRICE or q["dv"] < MIN_DOLLAR_VOL:
+        price, dv = p["c"], p["c"] * p.get("v", 0)
+        if price < MIN_PRICE or dv < MIN_DOLLAR_VOL or m["mcap"] * 1e6 < MIN_MCAP:
             continue
-        mcap = price * sh
-        if mcap < MIN_MCAP:
-            continue
-        if y.get("gp") is None and y.get("ca") is None:
-            continue  # sin margen bruto ni activo corriente: casi siempre banco o aseguradora (se valoran aparte)
-        ta, ebit = y.get("assets"), y.get("ebit")
-        debt = (y.get("ltd") or 0) + (y.get("std") or 0)
-        cash = y.get("cash") or 0
-        ev = mcap + debt - cash
-        fcf = (y["cfo"] - (y.get("capex") or 0)) if y.get("cfo") is not None else None
-        fcf_p = (p["cfo"] - (p.get("capex") or 0)) if p.get("cfo") is not None else None
-        eq = y.get("eq")
-        liab = y.get("liab") if y.get("liab") is not None else ((ta - eq) if ta and eq is not None else None)
-        ebitda = (ebit + (y.get("da") or 0)) if ebit is not None else None
-        r = {"cik": cik, "ticker": q["ticker"], "name": q["name"], "price": price, "mcap": mcap, "ev": ev,
-             "shares": sh, "debt": debt, "cash": cash, "ebit": ebit, "fcf": fcf,
-             "evEbit": ev / ebit if ebit and ebit > 0 and ev > 0 else None,
-             "fcfYield": fcf / ev if fcf is not None and ev > 0 else None,
-             "pb": mcap / eq if eq and eq > 0 else None,
-             "roic": ebit * 0.79 / (eq + debt - cash) if ebit is not None and eq is not None and (eq + debt - cash) > 0 else None,
-             "gpa": y["gp"] / ta if y.get("gp") is not None and ta else None,
-             "ndEbitda": (debt - cash) / ebitda if ebitda and ebitda > 0 else None,
-             "dilution": sh / p["shares"] - 1 if p.get("shares") else None}
-        # Altman Z (no financieras)
-        if ta and liab and y.get("ca") is not None and y.get("cl") is not None and ebit is not None and y.get("rev") is not None:
-            r["altmanZ"] = (1.2 * (y["ca"] - y["cl"]) / ta + 1.4 * (y.get("re") or 0) / ta + 3.3 * ebit / ta
-                            + 0.6 * mcap / liab + 1.0 * y["rev"] / ta)
-        r["fscore"], r["fscoreDetail"] = fscore(y, p)
+        if m.get("gm") is None and m.get("cr") is None:
+            continue  # sin margen bruto ni liquidez corriente: casi siempre banco o aseguradora (se valoran aparte)
+        r = {"ticker": sym, "name": entry.get("name") or sym, "price": price, "mcap": m["mcap"] * 1e6, **m}
+        r["fscore"], r["fscoreDetail"] = fscore_lite(m)
         fails = []
-        if r.get("altmanZ") is not None and r["altmanZ"] < 1.8:
-            fails.append("riesgo de quiebra (Altman Z < 1,8)")
+        if (m.get("nm") is not None and m["nm"] < 0) and (m.get("pfcf") is not None and m["pfcf"] < 0):
+            fails.append("pierde dinero y quema caja")
         if r["fscore"] <= 3:
-            fails.append("F-score de 3 o menos")
-        if fcf is not None and fcf < 0 and fcf_p is not None and fcf_p < 0:
-            fails.append("caja libre negativa dos años")
-        if r["dilution"] is not None and r["dilution"] > 0.10:
-            fails.append("dilución de más del 10 %")
-        if r["ndEbitda"] is not None and r["ndEbitda"] > 4:
-            fails.append("deuda neta de más de 4 veces el EBITDA")
-        if r["evEbit"] is None:
-            fails.append("sin beneficio operativo positivo")
+            fails.append("calidad baja (3 puntos o menos de 9)")
+        if m.get("de") is not None and m["de"] > 2.5:
+            fails.append("deuda de más de 2,5 veces su patrimonio")
+        if m.get("cov") is not None and m["cov"] < 2:
+            fails.append("apenas cubre los intereses de su deuda")
+        if m.get("revG") is not None and m["revG"] < -20:
+            fails.append("ventas cayendo más de un 20 %")
+        if not (m.get("pe") and m["pe"] > 0):
+            fails.append("sin beneficios (PER no válido)")
         r["fails"] = fails
         rows.append(r)
     ok = [r for r in rows if not r["fails"]]
-    pv = [pct_rank({r["cik"]: r[k] for r in ok}, hb) for k, hb in (("evEbit", False), ("fcfYield", True), ("pb", False))]
-    pq = [pct_rank({r["cik"]: r[k] for r in ok}, True) for k in ("roic", "gpa")]
+    pv = [pct_rank({r["ticker"]: (r[k] if r.get(k) and r[k] > 0 else None) for r in ok}, False) for k in ("evFcf", "pe", "pb", "pfcf")]
+    pq = [pct_rank({r["ticker"]: r.get(k) for r in ok}, True) for k in ("roi", "gm", "om")]
     for r in ok:
-        r["value"] = _mean([d.get(r["cik"]) for d in pv]) or 0
-        r["quality"] = _mean([d.get(r["cik"]) for d in pq] + [r["fscore"] / 9]) or 0
-        r["stageA"] = 35 * r["value"] + 30 * r["quality"]
+        r["value"] = _mean([d.get(r["ticker"]) for d in pv]) or 0
+        r["quality"] = _mean([d.get(r["ticker"]) for d in pq] + [r["fscore"] / 9]) or 0
+        r["stageA"] = 40 * r["value"] + 35 * r["quality"]
     ok.sort(key=lambda r: -r["stageA"])
-    ev_ebits = sorted(r["evEbit"] for r in ok if r["evEbit"])
-    fcfys = sorted(r["fcfYield"] for r in ok if r.get("fcfYield") and r["fcfYield"] > 0)
-    med = {"evEbit": ev_ebits[len(ev_ebits) // 2] if ev_ebits else None, "fcfYield": fcfys[len(fcfys) // 2] if fcfys else None,
-           "universe": len(rows), "passed": len(ok)}
-    return ok, med
 
-
-def fscore(y: dict, p: dict) -> tuple[int, list[str]]:
-    """Piotroski (9 puntos). Si falta un dato, ese punto no suma."""
-    pts = []
-
-    def g(d, k):
-        return d.get(k)
-
-    ta, tap = g(y, "assets"), g(p, "assets")
-    roa = y["ni"] / ta if g(y, "ni") is not None and ta else None
-    roap = p["ni"] / tap if g(p, "ni") is not None and tap else None
-    checks = [
-        ("beneficio positivo", roa is not None and roa > 0),
-        ("caja operativa positiva", (g(y, "cfo") or 0) > 0),
-        ("rentabilidad sobre activos al alza", roa is not None and roap is not None and roa > roap),
-        ("caja operativa mayor que el beneficio", g(y, "cfo") is not None and g(y, "ni") is not None and y["cfo"] > y["ni"]),
-        ("menos deuda a largo plazo", ta and tap and (g(y, "ltd") or 0) / ta <= (g(p, "ltd") or 0) / tap),
-        ("liquidez corriente al alza", all(g(d, k) for d in (y, p) for k in ("ca", "cl")) and y["ca"] / y["cl"] > p["ca"] / p["cl"]),
-        ("sin emitir acciones", g(y, "shares") and g(p, "shares") and y["shares"] <= p["shares"] * 1.005),
-        ("margen bruto al alza", all(g(d, k) for d in (y, p) for k in ("gp", "rev")) and y["gp"] / y["rev"] > p["gp"] / p["rev"]),
-        ("rotación de activos al alza", all(g(d, k) for d in (y, p) for k in ("rev", "assets")) and y["rev"] / ta > p["rev"] / tap),
-    ]
-    for label, okk in checks:
-        if okk:
-            pts.append(label)
-    return len(pts), pts
+    def median(k):
+        xs = sorted(r[k] for r in ok if r.get(k) and r[k] > 0)
+        return xs[len(xs) // 2] if xs else None
+    return ok, {"pe": median("pe"), "pfcf": median("pfcf"), "universe": len(rows), "passed": len(ok)}
 
 
 def stocks(data_dir: Path) -> dict:
@@ -377,55 +325,40 @@ def stocks(data_dir: Path) -> dict:
     if not (os.environ.get("MASSIVE_API_KEY") or os.environ.get("POLYGON_API_KEY")):
         _ok("massive", 0, "falta la clave gratuita MASSIVE_API_KEY")
         return out
-    tickers = {}
-    try:
-        tk = sec_json("https://www.sec.gov/files/company_tickers_exchange.json")
-        idx = {k: i for i, k in enumerate(tk["fields"])}
-        tickers = {r[idx["ticker"]].upper().replace("-", "."): (int(r[idx["cik"]]), r[idx["name"]]) for r in tk["data"]
-                   if r[idx["exchange"]] in ("NYSE", "Nasdaq") and r[idx["ticker"]]}
-        _ok("sec_tickers", len(tickers))
-    except Exception as e:  # noqa: BLE001
-        _ok("sec_tickers", 0, e)
-    try:  # ¿el plan gratuito de Massive incluye estados financieros? (diagnóstico de una llamada)
-        fin = massive("/vX/reference/financials", {"ticker": "AAPL", "timeframe": "annual", "limit": 1})
-        _ok("massive_financials", len(fin.get("results") or []), None if fin.get("results") else str(fin)[:140])
-    except Exception as e:  # noqa: BLE001
-        _ok("massive_financials", 0, e)
-    if not tickers:
-        try:
-            tickers = massive_tickers()
-            _ok("massive_tickers", len(tickers), None if tickers else "sin datos")
-        except Exception as e:  # noqa: BLE001
-            _ok("massive_tickers", 0, e)
-    if not tickers:
+    if not os.environ.get("FINNHUB_API_KEY"):
+        _ok("finnhub", 0, "falta la clave gratuita FINNHUB_API_KEY")
         return out
     try:
+        names = massive_tickers()
+        _ok("massive_tickers", len(names), None if names else "sin datos")
         date, prices = grouped_daily()
         _ok("massive_grouped", len(prices), None if prices else "sin datos del último día")
     except Exception as e:  # noqa: BLE001
         _ok("massive_grouped", 0, e)
         return out
-    if not prices:
+    if not prices or not names:
         return out
-    t = now_utc()
-    year = t.year - 1 if t.month >= 4 else t.year - 2
-    fund = fundamentals(year)
-    _ok("sec_frames", len(fund), None if fund else "sin datos de cuentas")
-    ranked, med = score_stocks(fund, prices, tickers)
-    # Etapa B: sector (SEC), historia de precios (Massive) y técnico
-    finalists = []
-    for r in ranked[:FINALISTS + 25]:
-        if len(finalists) >= FINALISTS:
-            break
+    # Cuentas (Finnhub) con caché rotatoria: hasta FH_PER_RUN empresas al día, refresco semanal
+    cp = data_dir / "fund_cache.json"
+    cache = json.loads(cp.read_text(encoding="utf-8")) if cp.exists() else {}
+    today = now_utc().date()
+    cand = sorted((s for s in names if s in prices and prices[s].get("c", 0) >= MIN_PRICE
+                   and prices[s]["c"] * prices[s].get("v", 0) >= MIN_DOLLAR_VOL), key=lambda s: -prices[s]["c"] * prices[s].get("v", 0))
+    stale = [s for s in cand if s not in cache or (today - datetime.fromisoformat(cache[s]["at"]).date()).days >= 7]
+    fetched, err = 0, None
+    for s in stale[:FH_PER_RUN]:
         try:
-            sub = sec_json(f"https://data.sec.gov/submissions/CIK{r['cik']:010d}.json")
-            sic = int(sub.get("sic") or 0)
-            r["sector"] = sub.get("sicDescription") or ""
-        except Exception:  # noqa: BLE001
-            sic, r["sector"] = 0, ""
-        if 6000 <= sic <= 6799:
-            continue  # financieras y REIT: sus cuentas no encajan con EV/EBIT
-        finalists.append(r)
+            cache[s] = {"at": today.isoformat(), "name": names[s], "m": fh_metrics(s)}
+            fetched += 1
+        except Exception as e:  # noqa: BLE001
+            err = e
+            if "401" in str(e) or "403" in str(e):
+                break
+    cache = {s: v for s, v in cache.items() if s in names}
+    cp.write_text(json.dumps(cache, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    _ok("finnhub_metrics", fetched, err if not fetched and err else None)
+    ranked, med = score_stocks(cache, prices)
+    finalists = ranked[:FINALISTS]
     spy = None
     try:
         spy = bars("SPY")
@@ -441,33 +374,34 @@ def stocks(data_dir: Path) -> dict:
         if b:
             hist_ok += 1
             r["tech"] = technicals(b["c"], b["h"], b["l"], b["v"], spy["c"] if spy else None)
+        try:
+            prof = finnhub("/stock/profile2", {"symbol": r["ticker"]})
+            r["sector"] = prof.get("finnhubIndustry") or ""
+        except Exception:  # noqa: BLE001
+            r["sector"] = ""
     _ok("massive_bars", hist_ok)
-    fin = [r for r in finalists if r.get("tech")]
-    mom = pct_rank({r["cik"]: r["tech"].get("mom12_1") for r in fin})
-    rs = pct_rank({r["cik"]: r["tech"].get("rs3m") for r in fin})
-    buy = pct_rank({r["cik"]: (-r["dilution"] if r.get("dilution") is not None else None) for r in fin})
-    val = pct_rank({r["cik"]: r["value"] for r in fin})
-    qual = pct_rank({r["cik"]: r["quality"] for r in fin})
+    fin = [r for r in finalists if r.get("tech") and r.get("sector") not in ("Banking", "Insurance", "Financial Services", "Real Estate")]
+    mom = pct_rank({r["ticker"]: r["tech"].get("mom12_1") for r in fin})
+    rs = pct_rank({r["ticker"]: r["tech"].get("rs3m") for r in fin})
+    val = pct_rank({r["ticker"]: r["value"] for r in fin})
+    qual = pct_rank({r["ticker"]: r["quality"] for r in fin})
     items = []
     for r in fin:
         tch = r["tech"]
-        m = _mean([mom.get(r["cik"]), rs.get(r["cik"]), 1.0 if tch["sma200"] and tch["close"] > tch["sma200"] else 0.0]) or 0
-        score = round(35 * val.get(r["cik"], 0) + 30 * qual.get(r["cik"], 0) + 20 * m + 15 * buy.get(r["cik"], 0.5))
-        knife = mom.get(r["cik"], 0.5) < 0.2 and tch["sma200"] and tch["close"] < tch["sma200"]
+        m = _mean([mom.get(r["ticker"]), rs.get(r["ticker"]), 1.0 if tch["sma200"] and tch["close"] > tch["sma200"] else 0.0]) or 0
+        score = round(40 * val.get(r["ticker"], 0) + 35 * qual.get(r["ticker"], 0) + 25 * m)
+        knife = mom.get(r["ticker"], 0.5) < 0.2 and tch["sma200"] and tch["close"] < tch["sma200"]
         fair = []
-        if med["evEbit"] and r["ebit"]:
-            fair.append((med["evEbit"] * r["ebit"] - r["debt"] + r["cash"]) / r["shares"])
-        if med["fcfYield"] and r.get("fcf") and r["fcf"] > 0:
-            fair.append((r["fcf"] / med["fcfYield"] - r["debt"] + r["cash"]) / r["shares"])
-        fair = [x for x in fair if x > 0]
+        if med["pe"] and r.get("pe"):
+            fair.append(tch["close"] * med["pe"] / r["pe"])
+        if med["pfcf"] and r.get("pfcf") and r["pfcf"] > 0:
+            fair.append(tch["close"] * med["pfcf"] / r["pfcf"])
         items.append({
             "symbol": r["ticker"], "name": r["name"], "sector": r.get("sector"), "price": round(tch["close"], 2),
             "mcap": r["mcap"], "score": score, "fallingKnife": bool(knife), "trigger": tch["trigger"],
-            "metrics": {"evEbit": _r(r["evEbit"], 1), "fcfYield": _r(r["fcfYield"] * 100 if r["fcfYield"] is not None else None, 1),
-                        "pb": _r(r["pb"], 2), "roic": _r(r["roic"] * 100 if r["roic"] is not None else None, 1),
-                        "gpa": _r(r["gpa"] * 100 if r["gpa"] is not None else None, 1), "fscore": r["fscore"],
-                        "altmanZ": _r(r.get("altmanZ"), 2), "ndEbitda": _r(r["ndEbitda"], 2),
-                        "dilution": _r(r["dilution"] * 100 if r["dilution"] is not None else None, 1)},
+            "metrics": {"pe": _r(r.get("pe"), 1), "pfcf": _r(r.get("pfcf"), 1), "evFcf": _r(r.get("evFcf"), 1), "pb": _r(r.get("pb"), 2),
+                        "roi": _r(r.get("roi"), 1), "gm": _r(r.get("gm"), 1), "om": _r(r.get("om"), 1), "fscore": r["fscore"],
+                        "de": _r(r.get("de"), 2), "revG": _r(r.get("revG"), 1)},
             "fscoreDetail": r["fscoreDetail"],
             "tech": {k: _r(tch.get(k), 2) for k in ("sma50", "sma200", "rsi", "stop", "riskPct")} | {
                 "mom12_1": _r(tch["mom12_1"] * 100 if tch.get("mom12_1") is not None else None, 1),
@@ -479,8 +413,8 @@ def stocks(data_dir: Path) -> dict:
     if spy:
         regime = {"symbol": "S&P 500 (SPY)", "close": spy["c"][-1], "sma200": _r(sma(spy["c"], 200), 2),
                   "riskOn": bool(sma(spy["c"], 200) and spy["c"][-1] > sma(spy["c"], 200))}
-    return {"enabled": True, "priceDate": date, "fiscalYear": year, "universe": med["universe"], "passed": med["passed"],
-            "medians": {"evEbit": _r(med["evEbit"], 1), "fcfYield": _r((med["fcfYield"] or 0) * 100, 1)},
+    return {"enabled": True, "priceDate": date, "universe": len(cand), "covered": len(cache), "studied": med["universe"],
+            "passed": med["passed"], "medians": {"pe": _r(med["pe"], 1), "pfcf": _r(med["pfcf"], 1)},
             "regime": regime, "items": items, "prices": {k: v["c"] for k, v in prices.items()}}
 
 

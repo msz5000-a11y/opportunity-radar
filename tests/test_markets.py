@@ -28,20 +28,18 @@ def test_indicators_and_trigger():
     assert markets.detect_trigger(flat) is None
 
 
-def test_fscore_and_stage_a():
-    y = {"ni": 10, "assets": 100, "cfo": 15, "ltd": 10, "ca": 50, "cl": 25, "shares": 10, "gp": 40, "rev": 100,
-         "ebit": 14, "capex": 3, "eq": 60, "cash": 10, "re": 30, "liab": 40, "da": 2}
-    p = {"ni": 8, "assets": 100, "cfo": 12, "ltd": 12, "ca": 45, "cl": 25, "shares": 10, "gp": 37, "rev": 95, "capex": 3}
-    n, det = markets.fscore(y, p)
+def test_fscore_lite_and_stage_a():
+    good = {"mcap": 3000, "pe": 12, "pb": 1.5, "pfcf": 10, "evFcf": 11, "roi": 15, "roa": 8, "gm": 40, "om": 15, "nm": 10,
+            "cr": 2, "de": 0.5, "cov": 10, "revG": 5, "epsG": 8, "roaY": 8, "roaP": 7, "currentRatioY": 2, "currentRatioP": 1.8,
+            "grossMarginY": 40, "grossMarginP": 39, "totalDebtToEquityY": 0.5, "totalDebtToEquityP": 0.6}
+    n, det = markets.fscore_lite(good)
     assert n == 9 and len(det) == 9
-    bad = dict(y, ni=-5, cfo=-1, capex=5)
-    fund = {1: {"y": y, "p": p}, 2: {"y": bad, "p": dict(p, cfo=-2)}, 3: {"y": dict(y, shares=50), "p": p}}
-    prices = {"GOOD": {"c": 80.0, "v": 1e6}, "BAD": {"c": 80.0, "v": 1e6}, "DIL": {"c": 80.0, "v": 1e6}}
-    tickers = {"GOOD": (1, "Good Co"), "BAD": (2, "Bad Co"), "DIL": (3, "Dilution Co")}
-    ok, med = markets.score_stocks({k: {"y": {**v["y"], "shares": v["y"]["shares"] * 1e6}, "p": {**v["p"], "shares": v["p"]["shares"] * 1e6}}
-                                    for k, v in fund.items()}, prices, tickers)
-    assert [r["ticker"] for r in ok] == ["GOOD"]
-    assert med["universe"] == 3 and ok[0]["evEbit"] > 0
+    bad = dict(good, nm=-5, pfcf=-3, pe=None, revG=-30, epsG=-10)
+    debt = dict(good, de=4.0)
+    cache = {"GOOD": {"m": good, "name": "Good"}, "BAD": {"m": bad, "name": "Bad"}, "DEBT": {"m": debt, "name": "Debt"}}
+    prices = {k: {"c": 80.0, "v": 1e6} for k in cache}
+    ok, med = markets.score_stocks(cache, prices)
+    assert [r["ticker"] for r in ok] == ["GOOD"] and med["universe"] == 3 and med["pe"] == 12
 
 
 def test_paper_portfolio_open_and_stop():
