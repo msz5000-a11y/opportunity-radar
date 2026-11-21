@@ -1,5 +1,24 @@
 [
  {
+  "id": "run-20261121-1215",
+  "startedAt": "2026-11-21T12:15:20Z",
+  "kind": "exploracion",
+  "status": "error",
+  "candidates": 0,
+  "newCount": 0,
+  "updatedCount": 0,
+  "alertsSent": 0,
+  "notes": "Fallo general: sequence item 40: expected str instance, NoneType found",
+  "sources": {},
+  "finishedAt": "2026-11-21T12:15:26Z",
+  "ai": {
+   "calls": {},
+   "models": {},
+   "errors": [],
+   "googleSearch": true
+  }
+ },
+ {
   "id": "run-20261121-1206",
   "startedAt": "2026-11-21T12:06:40Z",
   "kind": "exploracion",

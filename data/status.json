@@ -1,7 +1,7 @@
 {
- "lastRunAt": "2026-11-21T12:11:17Z",
+ "lastRunAt": "2026-11-21T12:15:26Z",
  "lastRunOk": false,
- "lastRunId": "run-20261121-1206",
+ "lastRunId": "run-20261121-1215",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
@@ -71,20 +71,10 @@
   }
  },
  "ai": {
-  "calls": {
-   "gemini": 11,
-   "groq": 10
-  },
-  "models": {
-   "gemini": "gemini-3.1-flash-lite",
-   "groq": "openai/gpt-oss-120b"
-  },
-  "errors": [
-   "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
-   "searcher/gemini: HTTP 429",
-   "searcher/gemini: búsqueda de Google sin cupo en Gemini"
-  ],
-  "googleSearch": false
+  "calls": {},
+  "models": {},
+  "errors": [],
+  "googleSearch": true
  },
  "schedule": "Cada 3 horas en GitHub Actions · resumen diario por la tarde · semanal los domingos",
  "profile": {
