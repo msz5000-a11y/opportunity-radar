@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T08:15:23Z",
+ "generatedAt": "2026-11-21T08:19:26Z",
  "minScore": 70,
  "budget": 150.0,
  "criteria": [
@@ -40,9 +40,64 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 33,
+ "studied": 39,
  "selected": [],
  "nearMisses": [
+  {
+   "id": "web-focuspyme-emprenemjunts-es",
+   "name": "FIT 2026 – Foro de Inversión y Territorio",
+   "category": "negocio",
+   "score": 71,
+   "adjustedScore": 71,
+   "risk": "bajo",
+   "officialUrl": "https://focuspyme.emprenemjunts.es/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": true,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 8,
+   "failed": [
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-bfsport-gal",
+   "name": "BF Sport Incubadora 2027",
+   "category": "startups",
+   "score": 62,
+   "adjustedScore": 62,
+   "risk": "medio",
+   "officialUrl": "https://bfsport.gal/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
   {
    "id": "web-factory-mastra-ai",
    "name": "Mastra Factory",
@@ -101,13 +156,13 @@
    "hasManual": true
   },
   {
-   "id": "web-noniv-github-io",
-   "name": "Abyssal Garden",
-   "category": "ia_tecnologia",
-   "score": 50,
-   "adjustedScore": 50,
+   "id": "web-bfhc-es",
+   "name": "Business Factory Health&Care Incubation Program",
+   "category": "startups",
+   "score": 60,
+   "adjustedScore": 60,
    "risk": "medio",
-   "officialUrl": "https://noniv.github.io/abyssal-garden/",
+   "officialUrl": "https://bfhc.es/",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
@@ -128,65 +183,6 @@
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": true
-  },
-  {
-   "id": "web-lastbook-org",
-   "name": "Lastbook",
-   "category": "ia_tecnologia",
-   "score": 45,
-   "adjustedScore": 45,
-   "risk": "medio",
-   "officialUrl": "https://lastbook.org",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
-   "id": "web-github-com-krisgfx9-wireless-device-battery-monitor",
-   "name": "Wireless Device Battery Monitor (BatteryHub)",
-   "category": "ia_tecnologia",
-   "score": 56,
-   "adjustedScore": 56,
-   "risk": "medio",
-   "officialUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": false,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 5,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
-    "Web oficial y al menos 2 fuentes",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
   }
  ],
  "manuals": {
@@ -337,55 +333,143 @@
    "generadoEn": "2026-11-21T08:15:30Z",
    "fichaScore": 53
   },
-  "web-noniv-github-io": {
+  "web-focuspyme-emprenemjunts-es": {
    "segundaOpinion": {
-    "veredicto": "rechazada",
-    "motivo": "No hay plan de monetización ni inversión, por lo que no genera beneficio económico",
+    "veredicto": "confirmada",
+    "motivo": "No hay contradicciones y la información es coherente",
     "contradicciones": []
    },
    "viaDeBeneficio": {
     "existe": false,
-    "explicacion": "No existe ningún mecanismo de ingresos asociado a la demo"
+    "explicacion": "El evento no ofrece retorno económico directo"
    },
-   "resumen": "Abyssal Garden es una demo interactiva 3D que simula un mundo submarino generado por código WebGPU. No ofrece ningún beneficio económico.",
+   "resumen": "FIT 2026 es un foro de networking y aprendizaje sobre inversión y territorio en la Comunidad Valenciana. Se celebra el 25 de noviembre de 2026 en Bellver Blue Tech Zone.",
    "cuantoPoner": "0 €",
    "antesDeEmpezar": [
-    "Verificar que el navegador Chrome esté actualizado a la última versión",
-    "Acceder a la URL oficial para comprobar que la demo carga correctamente"
+    "Verificar el coste de inscripción en la web oficial",
+    "Confirmar la disponibilidad de plazas",
+    "Planificar transporte y alojamiento si fuera necesario"
    ],
    "pasos": [
     {
-     "titulo": "Abrir Chrome",
-     "detalle": "Iniciar el navegador Chrome en su versión más reciente",
-     "tiempo": "1 minuto"
+     "titulo": "Visitar la web oficial",
+     "detalle": "Acceder a https://focuspyme.emprenemjunts.es/ y buscar la sección de registro",
+     "tiempo": "5 min"
     },
     {
-     "titulo": "Acceder a la demo",
-     "detalle": "Navegar a https://noniv.github.io/abyssal-garden/",
-     "tiempo": "1 minuto"
+     "titulo": "Registrarse",
+     "detalle": "Completar el formulario de inscripción o contactar con la Red CEEI",
+     "tiempo": "10 min"
     },
     {
-     "titulo": "Explorar el entorno",
-     "detalle": "Usar WASD y Q/E para moverse y disfrutar de la demo",
-     "tiempo": "5-10 minutos"
+     "titulo": "Planificar viaje",
+     "detalle": "Reservar transporte y, si es necesario, alojamiento",
+     "tiempo": "30 min"
+    },
+    {
+     "titulo": "Asistir al evento",
+     "detalle": "Llegar a Bellver Blue Tech Zone el 25 de noviembre de 2026",
+     "tiempo": "5 h"
     }
    ],
-   "planDeSalida": "No hay posición que liquidar; basta con cerrar la pestaña",
+   "planDeSalida": "No aplica, ya que no hay inversión financiera; simplemente asistir y aprovechar el networking",
    "senalesDeAlarma": [
-    "Si la demo no carga o presenta errores graves",
-    "Si se detecta contenido malicioso"
+    "Evento cancelado o pospuesto",
+    "Inscripción con coste inesperado",
+    "Falta de información clara sobre la agenda"
    ],
    "erroresTipicos": [
-    "Pasar tiempo sin obtener beneficio",
-    "Pensar que hay alguna forma de ganar dinero"
+    "No comprobar el coste antes de registrarse",
+    "No planificar el transporte",
+    "No aprovechar las oportunidades de networking"
    ],
-   "fiscalidad": "No hay ingresos, por lo que no hay obligación de declarar. Confirmar con asesor fiscal.",
-   "tiempoNecesario": "5-10 minutos",
+   "fiscalidad": "No hay ingresos sujetos a IRPF; la asistencia no genera obligaciones fiscales. Se recomienda confirmar con un asesor si se generan ingresos indirectos.",
+   "tiempoNecesario": "5 h de evento + 2 h de desplazamiento (aprox.)",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": false,
+   "generadoEn": "2026-11-21T08:19:30Z",
+   "fichaScore": 71
+  },
+  "web-bfsport-gal": {
+   "segundaOpinion": {
+    "veredicto": "confirmada",
+    "motivo": "Es un programa gratuito con mentoría y red de contactos, sin riesgo financiero y con posibilidad de validar un MVP.",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "No ofrece retorno financiero directo; el beneficio es el acceso a la red y la validación del proyecto."
+   },
+   "resumen": "BF Sport Incubadora 2027 es un programa de incubación gratuito de 8 semanas para startups deportivas en fase de idea, con mentoría y acceso a una red de expertos en Galicia.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que el proyecto esté en fase de definición y que el equipo sea de Galicia, España; leer las Bases Legales del programa; confirmar que la fecha límite es 22/12/2026."
+   ],
+   "pasos": [
+    {
+     "titulo": "Acceder al portal",
+     "detalle": "Ir a https://bfsport.gal/ y buscar la convocatoria Pre‑Seed 2027.",
+     "tiempo": "5 min"
+    }
+   ],
    "modelo": "groq:openai/gpt-oss-20b",
    "independiente": true,
    "webLeida": true,
-   "generadoEn": "2026-11-21T08:15:46Z",
-   "fichaScore": 50
+   "generadoEn": "2026-11-21T08:19:42Z",
+   "fichaScore": 62
+  },
+  "web-bfhc-es": {
+   "segundaOpinion": {
+    "veredicto": "dudosa",
+    "motivo": "El programa no ofrece retorno económico directo y depende de financiación externa post‑incubación",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "No hay mecanismo de ganancia directa; el beneficio es el acceso a recursos y posibles inversores tras la incubación"
+   },
+   "resumen": "Programa de incubación de 12 meses para startups de salud en Galicia, con mentorización y recursos públicos.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que la startup cumpla con los requisitos de la convocatoria",
+    "Confirmar que la sede sea en Galicia y que la empresa esté registrada en España",
+    "Revisar que no haya costes de participación"
+   ],
+   "pasos": [
+    {
+     "titulo": "Visitar web",
+     "detalle": "Acceder a https://bfhc.es/ y leer la convocatoria",
+     "tiempo": "5 min"
+    },
+    {
+     "titulo": "Contacto",
+     "detalle": "Enviar correo o rellenar formulario de contacto",
+     "tiempo": "10 min"
+    },
+    {
+     "titulo": "Presentar candidatura",
+     "detalle": "Completar la solicitud con la documentación requerida",
+     "tiempo": "30 min"
+    }
+   ],
+   "planDeSalida": "La salida se produce al finalizar la incubación; la startup puede buscar inversión externa o graduarse sin retorno económico inmediato.",
+   "senalesDeAlarma": [
+    "No conseguir financiación tras la incubación",
+    "El proyecto no pasa la validación clínica necesaria"
+   ],
+   "erroresTipicos": [
+    "No preparar un plan de negocio sólido",
+    "Ignorar los requisitos regulatorios de salud",
+    "No seguir el proceso de selección"
+   ],
+   "fiscalidad": "Si la startup recibe financiación posterior, se considerará ingreso en el IRPF; se recomienda consultar con un asesor fiscal.",
+   "tiempoNecesario": "Compromiso de tiempo completo durante los 12 meses de incubación",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": false,
+   "generadoEn": "2026-11-21T08:19:59Z",
+   "fichaScore": 60
   }
  },
  "ai": {
@@ -396,7 +480,7 @@
   }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T08:15:46Z",
+  "at": "2026-11-21T08:19:59Z",
   "status": 200
  }
 }

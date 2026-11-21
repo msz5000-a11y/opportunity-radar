@@ -1,96 +1,90 @@
 {
- "lastRunAt": "2026-11-21T08:15:23Z",
+ "lastRunAt": "2026-11-21T08:19:26Z",
  "lastRunOk": false,
- "lastRunId": "run-20261121-0810",
+ "lastRunId": "run-20261121-0817",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-21T08:10:29+00:00"
+   "at": "2026-11-21T08:17:30+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T08:10:33+00:00"
+   "at": "2026-11-21T08:17:33+00:00"
   },
   "geckoterminal_trending": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-21T08:10:33+00:00"
+   "at": "2026-11-21T08:17:34+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 1,
+   "items": 3,
    "error": null,
-   "at": "2026-11-21T08:10:33+00:00"
+   "at": "2026-11-21T08:17:34+00:00"
   },
   "hacker_news": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T08:10:33+00:00"
+   "at": "2026-11-21T08:17:34+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-21T08:10:34+00:00"
+   "at": "2026-11-21T08:17:35+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T08:10:34+00:00"
+   "at": "2026-11-21T08:17:35+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T08:10:35+00:00"
+   "at": "2026-11-21T08:17:37+00:00"
   },
   "TechCrunch Startups": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-21T08:10:35+00:00"
+   "at": "2026-11-21T08:17:37+00:00"
   },
   "The Block": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-21T08:10:35+00:00"
+   "at": "2026-11-21T08:17:37+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
-   "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: HTTP 429",
-   "at": "2026-11-21T08:11:07+00:00"
+   "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
+   "at": "2026-11-21T08:17:54+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 12,
-   "groq": 10
+   "gemini": 7,
+   "groq": 6
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
    "groq": "openai/gpt-oss-120b"
   },
   "errors": [
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429",
-   "verifier/gemini: HTTP 429"
-  ]
+   "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
+   "searcher/gemini: HTTP 429",
+   "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+  ],
+  "googleSearch": false
  },
  "schedule": "Cada 3 horas en GitHub Actions · resumen diario por la tarde · semanal los domingos",
  "profile": {
