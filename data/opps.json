@@ -6016,6 +6016,389 @@
   ]
  },
  {
+  "name": "Glassmail",
+  "category": "ia_tecnologia",
+  "subcategory": "email_app",
+  "kind": "pasiva",
+  "description": "Glassmail es una aplicación de correo para Mac que incorpora IA para mejorar la gestión de emails, manteniendo los datos localmente en el Mac.",
+  "officialUrl": "https://glassmail.app/",
+  "participateUrl": "https://apps.apple.com/app/glassmail/id6475657805",
+  "country": "desconocido",
+  "spainAvailability": "Disponible en App Store España",
+  "spainNotes": "No hay información pública sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Versión básica gratuita; posible modelo freemium desconocido",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un producto SaaS.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "instalación y uso inmediato",
+  "subscores": {
+   "novedad": {
+    "v": 6.5,
+    "why": "Aplicación de email con IA que opera localmente · Verificador: El enfoque de IA local en clientes de correo es tendencia, aunque no es único.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5.5,
+    "why": "Puede atraer usuarios que buscan privacidad y AI en email · Verificador: Depende totalmente de la calidad del desarrollo y la adopción en el ecosistema Apple.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Mercado de clientes de email es amplio pero competitivo · Verificador: Mercado saturado de clientes de correo (Apple Mail, Spark, Canary).",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información pública sobre los desarrolladores o empresa responsable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos públicos de financiación · Verificador: Sin datos de financiación o modelo de negocio claro.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.0,
+    "why": "Sin métricas de comunidad visibles · Verificador: Presencia limitada a plataformas de lanzamiento.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.5,
+    "why": "Poco conocimiento fuera de Product Hunt · Verificador: Baja tracción verificable fuera de nichos tech.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 3.5,
+    "why": "Existen numerosos clientes de email con funciones AI · Verificador: Competencia directa con herramientas establecidas con más recursos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Dependencia de AI local y compatibilidad macOS · Verificador: El manejo de credenciales de correo electrónico por terceros requiere alta confianza.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "No implica inversión monetaria directa · Verificador: No hay inversión monetaria, riesgo limitado a la privacidad de datos.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4.0,
+    "why": "Desconocida disponibilidad y localización en español · Verificador: Disponible en la App Store de macOS, accesible desde España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "No hay inversión que recuperar · Verificador: No aplica, es un software de consumo.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "FALTA_TRANSPARENCIA",
+    "severity": "media",
+    "detail": "No se identifica la empresa desarrolladora ni términos de privacidad claros."
+   },
+   {
+    "code": "URL_NO_OFICIAL",
+    "severity": "baja",
+    "detail": "La ficha utiliza Product Hunt como URL oficial, lo cual es incorrecto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL proporcionada es un enlace a Product Hunt, no el sitio web oficial del producto. No existe información verificable sobre la entidad legal detrás de Glassmail, su equipo, o su registro comercial. Al ser un software de escritorio, no está sujeto a regulación financiera (MiCA/CNMV), pero la falta de transparencia sobre el desarrollador impide confirmar la seguridad del software."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Combina IA con privacidad local en un cliente de correo para Mac."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt, descargar la app desde la App Store de macOS."
+  ],
+  "lossCauses": [
+   "N/A (no inversión)."
+  ],
+  "earlySignals": [
+   "Lanzamiento reciente en Product Hunt, interés inicial de la comunidad tech."
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una aplicación de software, no un producto financiero. No requiere registro en CNMV ni ESMA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/glassmail"
+   },
+   {
+    "title": "Glassmail Official Website",
+    "url": "https://glassmail.app/"
+   },
+   {
+    "title": "App Store Apple",
+    "url": "https://apps.apple.com/app/glassmail/id6475657805"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La URL proporcionada es un enlace a Product Hunt, no el sitio web oficial del producto. No existe información verificable sobre la entidad legal detrás de Glassmail, su equipo, o su registro comercial. Al ser un software de escritorio, no está sujeto a regulación financiera (MiCA/CNMV), pero la falta de transparencia sobre el desarrollador impide confirmar la seguridad del software.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-glassmail-app",
+  "isNew": true,
+  "score": 32,
+  "rawScore": 37.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "FALTA_TRANSPARENCIA",
+    "severity": "media",
+    "detail": "No se identifica la empresa desarrolladora ni términos de privacidad claros."
+   },
+   {
+    "code": "URL_NO_OFICIAL",
+    "severity": "baja",
+    "detail": "La ficha utiliza Product Hunt como URL oficial, lo cual es incorrecto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL proporcionada es un enlace a Product Hunt, no el sitio web oficial del producto. No existe información verificable sobre la entidad legal detrás de Glassmail, su equipo, o su registro comercial. Al ser un software de escritorio, no está sujeto a regulación financiera (MiCA/CNMV), pero la falta de transparencia sobre el desarrollador impide confirmar la seguridad del software."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Aplicación de email con IA que opera localmente · Verificador: El enfoque de IA local en clientes de correo es tendencia, aunque no es único.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede atraer usuarios que buscan privacidad y AI en email · Verificador: Depende totalmente de la calidad del desarrollo y la adopción en el ecosistema Apple.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de clientes de email es amplio pero competitivo · Verificador: Mercado saturado de clientes de correo (Apple Mail, Spark, Canary).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información pública sobre los desarrolladores o empresa responsable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos públicos de financiación · Verificador: Sin datos de financiación o modelo de negocio claro.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Sin métricas de comunidad visibles · Verificador: Presencia limitada a plataformas de lanzamiento.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.5,
+    "points": 2.2,
+    "why": "Poco conocimiento fuera de Product Hunt · Verificador: Baja tracción verificable fuera de nichos tech.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen numerosos clientes de email con funciones AI · Verificador: Competencia directa con herramientas establecidas con más recursos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Dependencia de AI local y compatibilidad macOS · Verificador: El manejo de credenciales de correo electrónico por terceros requiere alta confianza.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.5,
+    "points": 8.5,
+    "why": "No implica inversión monetaria directa · Verificador: No hay inversión monetaria, riesgo limitado a la privacidad de datos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida disponibilidad y localización en español · Verificador: Disponible en la App Store de macOS, accesible desde España.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que recuperar · Verificador: No aplica, es un software de consumo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Glassmail\nCATEGORÍA: ia_tecnologia · email_app\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://glassmail.app/\nENLACE DE PARTICIPACIÓN: https://apps.apple.com/app/glassmail/id6475657805\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: Disponible en App Store España\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 32/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Combina IA con privacidad local en un cliente de correo para Mac.\nMOTIVOS PARA DESCONFIAR: No se identifica la empresa desarrolladora ni términos de privacidad claros.; La ficha utiliza Product Hunt como URL oficial, lo cual es incorrecto.; El verificador tiene dudas: La URL proporcionada es un enlace a Product Hunt, no el sitio web oficial del producto. No existe información verificable sobre la entidad legal detrás de Glassmail, su equipo, o su registro comercial. Al ser un software de escritorio, no está sujeto a regulación financiera (MiCA/CNMV), pero la falta de transparencia sobre el desarrollador impide confirmar la seguridad del software.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt, descargar la app desde la App Store de macOS.\nQUÉ PODRÍA HACERME PERDER EL DINERO: N/A (no inversión).\nFUENTES: https://www.producthunt.com/products/glassmail | https://glassmail.app/ | https://apps.apple.com/app/glassmail/id6475657805",
+  "firstSeenAt": "2026-11-21T08:22:59Z",
+  "lastSeenAt": "2026-11-21T08:22:59Z",
+  "runId": "run-20261121-0822",
+  "aliases": [
+   "news-www-producthunt-com-products-glassmail"
+  ]
+ },
+ {
   "name": "GTA6CAT (GATO)",
   "category": "cripto",
   "subcategory": "gaming_nft",
@@ -10979,6 +11362,419 @@
   "runId": "run-20261121-0232",
   "aliases": [
    "news-www-producthunt-com-products-same-moon"
+  ]
+ },
+ {
+  "name": "Backspin",
+  "category": "ia_tecnologia",
+  "subcategory": "musica",
+  "kind": "activa",
+  "description": "Backspin es una plataforma web que permite aprender a mezclar como DJ usando decks de vinilo virtuales directamente en el navegador.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información pública sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Posible modelo freemium, pero no se dispone de datos concretos.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No es una inversión, por lo que no hay proceso de salida financiero.",
+  "horizon": "corto plazo (uso inmediato)",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "30-60 minutos para probar la herramienta",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Plataforma que combina aprendizaje de DJ con simulación de vinilos en navegador · Verificador: Concepto de DJ en navegador, pero sin acceso funcional para verificar la implementación.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "Mercado de educación musical online en crecimiento, pero sin datos específicos de adopción · Verificador: Sin tracción demostrable ni modelo de negocio claro.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Interés creciente en herramientas digitales para música electrónica · Verificador: Mercado de software musical competitivo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador o desarrolladores · Verificador: No hay rastro de desarrolladores o entidad legal responsable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de rondas de inversión o financiación visibles · Verificador: Sin datos de financiación o estructura empresarial.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Listado en Product Hunt, sin métricas de usuarios o actividad comunitaria · Verificador: Presencia limitada a un listado en Product Hunt sin actividad reciente.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Sin datos de usuarios activos o casos de uso reales · Verificador: Sin métricas de uso o testimonios verificables.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen alternativas consolidadas como VirtualDJ, Serato y otras apps de DJ en línea · Verificador: Alta competencia con herramientas establecidas (Serato, VirtualDJ).",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Depende de la compatibilidad del navegador y de la infraestructura web, riesgo medio · Verificador: El acceso web está bloqueado (403), lo que sugiere abandono o mala gestión de infraestructura.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "No implica inversión de capital; uso gratuito o freemium sin riesgo financiero · Verificador: Al no haber pasarela de pago ni inversión, el riesgo financiero es nulo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.0,
+    "why": "Desconocida disponibilidad o localización de servidores para usuarios españoles · Verificador: Sin soporte, localización o información para el mercado español.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "No hay inversión que recuperar; simplemente dejar de usar el servicio · Verificador: Al ser una herramienta gratuita, la salida es inmediata y sin coste.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "informacion_insuficiente",
+    "severity": "alta",
+    "detail": "Falta de datos sobre el equipo, financiación, modelo de negocio y disponibilidad en España."
+   },
+   {
+    "code": "acceso_web_restringido",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo la verificación de información."
+   },
+   {
+    "code": "acceso_web_bloqueado",
+    "severity": "critica",
+    "detail": "El dominio principal devuelve error 403, impidiendo el uso y la verificación."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre el equipo, sede o términos de servicio."
+   },
+   {
+    "code": "proyecto_abandonado",
+    "severity": "media",
+    "detail": "La falta de respuesta del servidor sugiere que el proyecto podría estar inactivo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma carece de una presencia web activa verificable (error 403 persistente). No existe información corporativa, legal o de contacto, lo que impide confirmar su legitimidad o modelo de negocio."
+   }
+  ],
+  "distrust": [
+   "poca transparencia",
+   "posible hype sin respaldo"
+  ],
+  "whyInteresting": [
+   "Combina aprendizaje de DJ con experiencia de vinilo virtual",
+   "Nicho de música electrónica con potencial de comunidad"
+  ],
+  "howToParticipate": [
+   "1. Visitar la página de Product Hunt: https://www.producthunt.com/products/backspin",
+   "2. Hacer clic en el enlace del producto para acceder a la plataforma",
+   "3. Registrarse si se ofrece una cuenta gratuita o de prueba",
+   "4. Explorar la herramienta y decidir si continuar usando"
+  ],
+  "lossCauses": [
+   "No hay pérdida financiera directa al usar la plataforma"
+  ],
+  "earlySignals": [
+   "Listado en Product Hunt, posible interés inicial de la comunidad"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una herramienta de software sin servicios financieros, no requiere registro en CNMV ni MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/backspin"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La plataforma carece de una presencia web activa verificable (error 403 persistente). No existe información corporativa, legal o de contacto, lo que impide confirmar su legitimidad o modelo de negocio.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-backspin",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 38.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (acceso_web_bloqueado)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "informacion_insuficiente",
+    "severity": "alta",
+    "detail": "Falta de datos sobre el equipo, financiación, modelo de negocio y disponibilidad en España."
+   },
+   {
+    "code": "acceso_web_restringido",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo la verificación de información."
+   },
+   {
+    "code": "acceso_web_bloqueado",
+    "severity": "critica",
+    "detail": "El dominio principal devuelve error 403, impidiendo el uso y la verificación."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre el equipo, sede o términos de servicio."
+   },
+   {
+    "code": "proyecto_abandonado",
+    "severity": "media",
+    "detail": "La falta de respuesta del servidor sugiere que el proyecto podría estar inactivo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma carece de una presencia web activa verificable (error 403 persistente). No existe información corporativa, legal o de contacto, lo que impide confirmar su legitimidad o modelo de negocio."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Plataforma que combina aprendizaje de DJ con simulación de vinilos en navegador · Verificador: Concepto de DJ en navegador, pero sin acceso funcional para verificar la implementación.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Mercado de educación musical online en crecimiento, pero sin datos específicos de adopción · Verificador: Sin tracción demostrable ni modelo de negocio claro.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Interés creciente en herramientas digitales para música electrónica · Verificador: Mercado de software musical competitivo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador o desarrolladores · Verificador: No hay rastro de desarrolladores o entidad legal responsable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de rondas de inversión o financiación visibles · Verificador: Sin datos de financiación o estructura empresarial.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Listado en Product Hunt, sin métricas de usuarios o actividad comunitaria · Verificador: Presencia limitada a un listado en Product Hunt sin actividad reciente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin datos de usuarios activos o casos de uso reales · Verificador: Sin métricas de uso o testimonios verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Existen alternativas consolidadas como VirtualDJ, Serato y otras apps de DJ en línea · Verificador: Alta competencia con herramientas establecidas (Serato, VirtualDJ).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la compatibilidad del navegador y de la infraestructura web, riesgo medio · Verificador: El acceso web está bloqueado (403), lo que sugiere abandono o mala gestión de infraestructura.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión de capital; uso gratuito o freemium sin riesgo financiero · Verificador: Al no haber pasarela de pago ni inversión, el riesgo financiero es nulo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida disponibilidad o localización de servidores para usuarios españoles · Verificador: Sin soporte, localización o información para el mercado español.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que recuperar; simplemente dejar de usar el servicio · Verificador: Al ser una herramienta gratuita, la salida es inmediata y sin coste.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Backspin\nCATEGORÍA: ia_tecnologia · musica\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo (uso inmediato)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Combina aprendizaje de DJ con experiencia de vinilo virtual; Nicho de música electrónica con potencial de comunidad\nMOTIVOS PARA DESCONFIAR: Falta de datos sobre el equipo, financiación, modelo de negocio y disponibilidad en España.; La página oficial devuelve error 403, impidiendo la verificación de información.; El dominio principal devuelve error 403, impidiendo el uso y la verificación.; Ausencia total de información sobre el equipo, sede o términos de servicio.; La falta de respuesta del servidor sugiere que el proyecto podría estar inactivo.; El verificador tiene dudas: La plataforma carece de una presencia web activa verificable (error 403 persistente). No existe información corporativa, legal o de contacto, lo que impide confirmar su legitimidad o modelo de negocio.; poca transparencia; posible hype sin respaldo\nCÓMO PARTICIPAR: 1. Visitar la página de Product Hunt: https://www.producthunt.com/products/backspin; 2. Hacer clic en el enlace del producto para acceder a la plataforma; 3. Registrarse si se ofrece una cuenta gratuita o de prueba; 4. Explorar la herramienta y decidir si continuar usando\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay pérdida financiera directa al usar la plataforma\nFUENTES: https://www.producthunt.com/products/backspin",
+  "firstSeenAt": "2026-11-21T08:22:59Z",
+  "lastSeenAt": "2026-11-21T08:22:59Z",
+  "runId": "run-20261121-0822",
+  "aliases": [
+   "news-www-producthunt-com-products-backspin"
   ]
  },
  {
