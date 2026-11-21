@@ -23,7 +23,7 @@ from . import net, notify, search
 MASSIVE = "https://api.massive.com"
 MIN_MCAP, MIN_PRICE, MIN_DOLLAR_VOL = 500e6, 5.0, 5e6
 FINALISTS = 40
-FH_PER_RUN = 300  # empresas consultadas en Finnhub por ejecución (60/minuto)
+FH_PER_RUN = 300  # empresas consultadas en Finnhub por ejecución (60 por minuto)
 SIGNAL_MIN_SCORE = 60
 PAPER_DAYS = 90
 STABLE = {"usdt", "usdc", "dai", "fdusd", "tusd", "usde", "usds", "pyusd", "usdd", "frax", "gusd", "usdp", "lusd", "eurc",
