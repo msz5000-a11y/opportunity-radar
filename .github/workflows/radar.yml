@@ -12,7 +12,7 @@ on:
         options: [auto, scan, digest, weekly, test-notify]
   push:
     branches: [main]
-    paths: ["app/**", ".github/workflows/**"]
+    paths: ["app/**", "radar/**", "config.json", ".github/workflows/**"]
 
 permissions:
   contents: write

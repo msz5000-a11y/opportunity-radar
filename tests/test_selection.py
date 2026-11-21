@@ -132,3 +132,24 @@ def test_ai_budget_per_run(data):
     out = selection.run(d, CFG, transport=fake)
     assert out["ai"]["used"] == selection.MAX_AI_PER_RUN
     assert len(out["selected"]) == selection.MAX_SELECTED
+
+
+def test_gemini_search_429_falls_back_without_search(monkeypatch):
+    from radar import llm
+    monkeypatch.setenv("GEMINI_API_KEY", "g")
+    seen = []
+
+    def tr(method, url, **kw):
+        if url.endswith("pageSize=200"):
+            return R({"models": [{"name": "models/gemini-3.1-flash-lite", "supportedGenerationMethods": ["generateContent"]}]})
+        body = kw.get("json") or {}
+        seen.append("tools" in body)
+        if "tools" in body:
+            raise net.FetchError("HTTP 429")
+        return R({"candidates": [{"content": {"parts": [{"text": '{"verdict": "dudosa"}'}]}}]})
+
+    r = llm.Router(CFG, transport=tr)
+    res = r.ask_role("verifier", "s", "p", search=True)
+    assert res["data"]["verdict"] == "dudosa" and r.search_blocked
+    assert r.ask_role("searcher", "s", "p", search=True, require_search=True) is None
+    assert seen == [True, False]  # el buscador ya no gasta llamadas con la búsqueda bloqueada

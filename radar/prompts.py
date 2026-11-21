@@ -74,6 +74,12 @@ FICHA A VERIFICAR:
 DATOS BRUTOS ORIGINALES:
 {raw}
 
+TEXTO DE LA PÁGINA ORIGINAL (por si no puedes buscar):
+{page}
+
+Si no dispones de búsqueda web, verifica con este texto y con la coherencia de la ficha; lo que no puedas comprobar,
+puntúalo con "evidence": false y no lo des por confirmado.
+
 Devuelve:
 {{"verdict": "confirmada|dudosa|falsa", "verdictReason": "...",
 "subscores": {{"novedad": {{"v": 0-10, "why": "...", "evidence": true|false}}, ... los 12 criterios ...}},

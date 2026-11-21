@@ -136,7 +136,7 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
     for cat, q in picks:
         res = router.ask_role("searcher", prompts.DISCOVERY_SYSTEM,
                               prompts.DISCOVERY_PROMPT.format(today=today, query=q, category=cat, known=", ".join(known[-60:]) or "ninguna"),
-                              search=True)
+                              search=True, require_search=True)
         if not res:
             continue
         grounding = [{"title": g["title"], "url": router.resolve_redirect(g["url"])} for g in res["grounding"][:6]]
@@ -187,7 +187,8 @@ def analyse(router: Router, cfg: dict, item: dict, today: str, available: float,
     ficha["aiModels"] = {"searcher": item.get("searchModel"), "analyst": f"{res['provider']}:{res['model']}"}
     raw_for_verifier = json.dumps(raw, ensure_ascii=False)
     ver = router.ask_role("verifier", prompts.VERIFIER_SYSTEM,
-                          prompts.VERIFIER_PROMPT.format(today=today, ficha=json.dumps(_compact(ficha), ensure_ascii=False), raw=raw_for_verifier),
+                          prompts.VERIFIER_PROMPT.format(today=today, ficha=json.dumps(_compact(ficha), ensure_ascii=False), raw=raw_for_verifier,
+                                                         page=(page or "(sin texto)")[:4000]),
                           search=True, exclude={res["provider"]})
     ficha = apply_verification(ficha, ver["data"] if ver and isinstance(ver["data"], dict) else None,
                                f"{ver['provider']}:{ver['model']}" if ver else None)

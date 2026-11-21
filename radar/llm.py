@@ -69,6 +69,7 @@ class Router:
         self.calls = {p: 0 for p in KEYS}
         self.errors: list[str] = []
         self.chosen: dict[str, str] = {}
+        self.search_blocked = False  # la búsqueda de Google de Gemini sin cupo: se sigue sin ella
         self.transport = transport or net.request  # inyectable en pruebas
 
     # ---------------------------------------------------------- disponibilidad
@@ -136,8 +137,28 @@ class Router:
         return self._pick(provider, listed)
 
     # ---------------------------------------------------------- llamadas
-    def ask(self, provider: str, system: str, prompt: str, *, search: bool = False, temperature: float = 0.2) -> dict:
-        """Devuelve {"data": <json>, "model": str, "provider": str, "grounding": [{"title","url"}]}."""
+    def ask(self, provider: str, system: str, prompt: str, *, search: bool = False, temperature: float = 0.2,
+            require_search: bool = False) -> dict:
+        """Devuelve {"data": <json>, "model": str, "provider": str, "grounding": [{"title","url"}]}.
+
+        Si la búsqueda de Google de Gemini responde 429 (sin cupo), se repite la petición sin búsqueda, salvo que
+        el rol la necesite (descubrir oportunidades nuevas sin buscar llevaría a inventarlas)."""
+        if provider == "gemini" and search and self.search_blocked:
+            if require_search:
+                raise LLMError("búsqueda de Google sin cupo en Gemini")
+            search = False
+        try:
+            return self._ask(provider, system, prompt, search=search, temperature=temperature)
+        except Exception as e:  # noqa: BLE001
+            if provider == "gemini" and search and "429" in str(e):
+                self.search_blocked = True
+                self.errors.append("gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda")
+                if require_search:
+                    raise
+                return self._ask(provider, system, prompt, search=False, temperature=temperature)
+            raise
+
+    def _ask(self, provider: str, system: str, prompt: str, *, search: bool = False, temperature: float = 0.2) -> dict:
         self._count(provider)
         key = os.environ.get(KEYS[provider], "")
         grounding = []
@@ -181,7 +202,8 @@ class Router:
             raise LLMError(f"proveedor desconocido: {provider}")
         return {"data": extract_json(text), "model": self.chosen.get(provider, ""), "provider": provider, "grounding": grounding}
 
-    def ask_role(self, role: str, system: str, prompt: str, *, search: bool = False, exclude: set[str] | None = None) -> dict | None:
+    def ask_role(self, role: str, system: str, prompt: str, *, search: bool = False, exclude: set[str] | None = None,
+                 require_search: bool = False) -> dict | None:
         """Prueba los proveedores del rol en orden; si uno falla, pasa al siguiente."""
         tried = set(exclude or set())
         while True:
@@ -190,7 +212,9 @@ class Router:
                 return None
             tried.add(p)
             try:
-                return self.ask(p, system, prompt, search=search and p == "gemini")
+                if require_search and p != "gemini":
+                    continue
+                return self.ask(p, system, prompt, search=search and p == "gemini", require_search=require_search)
             except BudgetExceeded:
                 continue
             except Exception as e:
@@ -209,4 +233,5 @@ class Router:
             return url
 
     def usage(self) -> dict:
-        return {"calls": {k: v for k, v in self.calls.items() if v}, "models": self.chosen, "errors": self.errors[-10:]}
+        return {"calls": {k: v for k, v in self.calls.items() if v}, "models": self.chosen, "errors": self.errors[-10:],
+                "googleSearch": not self.search_blocked}
