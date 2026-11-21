@@ -106,7 +106,7 @@ jobs:
           python -m radar.pipeline --mode "${MODE:-auto}"
 
       - name: Seleccionar las mejores y escribir manuales
-        if: github.event.inputs.mode != 'test-notify'
+        if: ${{ !cancelled() && github.event.inputs.mode != 'test-notify' }}
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -118,7 +118,7 @@ jobs:
         run: python -m radar.selection
 
       - name: Mercados (acciones y cripto infravaloradas, una vez al día)
-        if: github.event.inputs.mode != 'test-notify'
+        if: ${{ !cancelled() && github.event.inputs.mode != 'test-notify' }}
         continue-on-error: true
         env:
           MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
@@ -129,6 +129,7 @@ jobs:
         run: python -m radar.markets $([ "${{ github.event_name }}" = "push" ] && echo --force)
 
       - name: Guardar datos en el repositorio
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "opportunity-radar-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -138,6 +139,7 @@ jobs:
           for i in 1 2 3; do git pull --rebase -X theirs origin main && git push && break; sleep 5; done
 
       - name: Preparar la web
+        if: ${{ !cancelled() }}
         run: |
           mkdir -p _site/data
           cp -r app/* _site/
@@ -146,8 +148,11 @@ jobs:
           if [ -f _site/selected.js ] && ! grep -q 'selected.js' _site/index.html; then sed -i 's#</body>#<script src="selected.js"></script></body>#' _site/index.html; fi
 
       - uses: actions/configure-pages@v5
+        if: ${{ !cancelled() }}
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ !cancelled() }}
         with:
           path: _site
       - id: deploy
+        if: ${{ !cancelled() }}
         uses: actions/deploy-pages@v4
