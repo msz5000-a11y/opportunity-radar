@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 
 import requests
 
-UA = "OpportunityRadarAI/2.0 (+uso personal; investigación de oportunidades; contacto vía GitHub)"
+UA = "OpportunityRadarAI/2.0 (+https://github.com/msz5000-a11y/opportunity-radar; personal research)"
 _session = requests.Session()
 _session.headers.update({"User-Agent": UA, "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"})
 _last_call: dict[str, float] = {}
