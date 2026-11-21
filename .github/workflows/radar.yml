@@ -26,7 +26,7 @@ concurrency:
 jobs:
   radar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 50
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -93,6 +93,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -100,8 +101,6 @@ jobs:
         run: |
           MODE="${{ github.event.inputs.mode }}"
           if [ "${{ github.event_name }}" = "push" ]; then
-            python -m radar.pipeline --mode check
-            python -m radar.pipeline --mode test-notify
             MODE=scan
           fi
           python -m radar.pipeline --mode "${MODE:-auto}"
@@ -118,6 +117,17 @@ jobs:
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python -m radar.selection
 
+      - name: Mercados (acciones y cripto infravaloradas, una vez al día)
+        if: github.event.inputs.mode != 'test-notify'
+        continue-on-error: true
+        env:
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python -m radar.markets
+
       - name: Guardar datos en el repositorio
         run: |
           git config user.name "opportunity-radar-bot"
@@ -131,7 +141,7 @@ jobs:
         run: |
           mkdir -p _site/data
           cp -r app/* _site/
-          for f in opps.json status.json runs.json digests.json selected.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/; done
+          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/; done
           [ -f _site/data/opps.json ] || echo "[]" > _site/data/opps.json
           if [ -f _site/selected.js ] && ! grep -q 'selected.js' _site/index.html; then sed -i 's#</body>#<script src="selected.js"></script></body>#' _site/index.html; fi
 

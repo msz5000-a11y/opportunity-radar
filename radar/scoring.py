@@ -203,7 +203,7 @@ def scenarios(c: dict, stake_eur: float, usd_to_eur: float | None) -> dict:
 # Evaluación de una candidata
 # ---------------------------------------------------------------------------
 def evaluate(c: dict, profile: dict, existing: dict | None, now: str, fx: float | None) -> dict:
-    budget = _num(profile.get("budget")) or 150.0
+    budget = _num(profile.get("budget")) or 2000.0
     committed = _num(profile.get("committed")) or 0.0
     available = max(0.0, budget - committed)
     alert_th = _num(profile.get("alertThreshold")) or 75
@@ -290,7 +290,7 @@ def evaluate(c: dict, profile: dict, existing: dict | None, now: str, fx: float 
     # 5) Escenarios
     costs = c.get("costs") or {}
     stake = _num(costs.get("recommended")) or min_entry or 0.0
-    stake = min(stake, available if available > 0 else budget, 150.0)
+    stake = min(stake, available if available > 0 else budget, budget)
     scen = scenarios(c, stake, fx)
 
     # 6) Momentum / detección temprana

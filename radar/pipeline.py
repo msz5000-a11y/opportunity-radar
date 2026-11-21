@@ -16,7 +16,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import collectors, net, notify, prompts, scoring
+from . import collectors, net, notify, prompts, scoring, search
 from .llm import Router
 
 MADRID = ZoneInfo("Europe/Madrid")
@@ -134,6 +134,29 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
     state["discoveryCursor"] = (cursor + 2) % len(pool)
     out = []
     for cat, q in picks:
+        if search.available():  # Tavily (gratis) primero: la búsqueda de Google de Gemini no tiene cupo gratuito
+            found = search.tavily(q, max_results=6, time_range="month")
+            if found:
+                urls = {f["url"] for f in found}
+                txt = "\n".join(f"- {f['title']} | {f['url']} | {f['content'][:300]}" for f in found)
+                res = router.ask_role("discoverer", prompts.DISCOVERY_SYSTEM,
+                                      prompts.DISCOVERY_RESULTS_PROMPT.format(today=today, query=q, category=cat, results=txt,
+                                                                              known=", ".join(known[-60:]) or "ninguna"))
+                for c in ((res or {}).get("data") or {}).get("candidates", [])[:4] if res else []:
+                    if not isinstance(c, dict) or not c.get("name"):
+                        continue
+                    srcs = [u for u in c.get("sourceUrls") or [] if u in urls]
+                    if not srcs:
+                        continue  # sin fuente real de la búsqueda, se descarta
+                    off = c.get("officialUrl") if c.get("officialUrl") in urls or any(
+                        str(c.get("officialUrl") or "#").split("/")[2:3] == u.split("/")[2:3] for u in urls) else None
+                    out.append({"source": f"Búsqueda web (Tavily + {res['model']})", "category": cat, "kind": "descubrimiento",
+                                "title": c["name"], "url": off or srcs[0],
+                                "summary": f"{c.get('summary', '')} {c.get('whyNow', '')}".strip(),
+                                "participateUrl": c.get("participateUrl"), "deadline": c.get("deadline"), "extraSources": srcs,
+                                "grounding": [{"title": f["title"], "url": f["url"]} for f in found[:6]],
+                                "searchModel": f"tavily+{res['provider']}:{res['model']}"})
+                continue
         res = router.ask_role("searcher", prompts.DISCOVERY_SYSTEM,
                               prompts.DISCOVERY_PROMPT.format(today=today, query=q, category=cat, known=", ".join(known[-60:]) or "ninguna"),
                               search=True, require_search=True)
@@ -287,7 +310,7 @@ def build_digest(kind: str, opps: dict, runs: list, profile: dict, actions_note:
         lines.append("")
         lines.append("Riesgos críticos detectados: " + "; ".join(f"{o.get('name')} ({(o.get('flags') or [{}])[0].get('code', '')})" for o in crit[:6]))
     lines.append("")
-    lines.append(f"Presupuesto configurado: {profile.get('budget', 150)} €. Escenarios = simulaciones. La decisión es siempre tuya.")
+    lines.append(f"Presupuesto configurado: {profile.get('budget', 2000)} €. Escenarios = simulaciones. La decisión es siempre tuya.")
     return "\n".join(lines)
 
 
@@ -301,8 +324,10 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
     digests: list = store.load("digests.json", [])
     status = store.load("status.json", {})
     profile = {**cfg["profile"], **{k: v for k, v in store.load("profile.json", {}).items() if k in cfg["profile"]}}
-    if float(profile.get("budget", 150)) > 150 and not profile.get("budgetAuthorizedAbove150"):
-        profile["budget"] = 150
+    cap = float(cfg["profile"].get("maxBudget", 2000) or 2000)
+    if not profile.get("budgetAuthorizedAbove150"):
+        cap = min(cap, 150.0)
+    profile["budget"] = min(float(profile.get("budget", cap) or cap), cap)
     for oid, act in (store.load("actions.json", {}) or {}).items():
         if oid in opps and isinstance(act, dict):
             opps[oid]["userAction"] = act.get("action")
@@ -326,9 +351,7 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
 
     try:
         if mode in ("auto", "scan"):
-            available = max(0.0, float(profile.get("budget", 150)))
-            if not profile.get("budgetAuthorizedAbove150"):
-                available = min(available, 150.0)
+            available = max(0.0, float(profile.get("budget", 2000)))
             items, srcs = [], {}
             fx, st = collectors.fx_usd_eur()
             srcs["tipo_cambio_BCE"] = st

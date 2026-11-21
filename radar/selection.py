@@ -41,7 +41,7 @@ CRITERIA = [
     ("vigente", "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"),
 ]
 
-SYSTEM = """Eres un analista prudente que ayuda a una persona residente en España a decidir si una oportunidad merece la pena con un máximo de 150 €.
+SYSTEM = """Eres un analista prudente que ayuda a una persona residente en España a decidir si una oportunidad merece la pena sin pasar del presupuesto máximo que se indica.
 Haces dos cosas: (1) una segunda opinión independiente sobre la ficha que te dan, y (2) un manual práctico para aprovecharla.
 Reglas estrictas:
 - Usa SOLO los datos de la ficha y el texto de la web oficial que te paso. No inventes cifras, enlaces, plazos, nombres ni resultados.
@@ -222,9 +222,10 @@ def run(data_dir: Path, cfg: dict, dry: bool = False, transport=None, read_web: 
     raw = _load(data_dir / "opps.json", [])
     opps = list(raw.values()) if isinstance(raw, dict) else list(raw)
     profile = {**cfg.get("profile", {}), **{k: v for k, v in _load(data_dir / "profile.json", {}).items()}}
-    budget = float(profile.get("budget", 150) or 150)
-    if budget > 150 and not profile.get("budgetAuthorizedAbove150"):
-        budget = 150.0
+    cap = float(cfg.get("profile", {}).get("maxBudget", 2000) or 2000)
+    if not profile.get("budgetAuthorizedAbove150"):
+        cap = min(cap, 150.0)
+    budget = min(float(profile.get("budget", cap) or cap), cap)
     actions = _load(data_dir / "actions.json", {}) or {}
     for o in opps:
         a = actions.get(o.get("id"))

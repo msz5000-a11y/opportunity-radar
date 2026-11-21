@@ -254,8 +254,8 @@ details summary{cursor:pointer;font-weight:600}
         <label for="sBudget">Capital máximo para oportunidades (€)</label>
         <input id="sBudget" type="number" min="0" step="1" inputmode="decimal">
       </div>
-      <label class="toggle" for="sAuth"><input type="checkbox" id="sAuth"> Autorizo expresamente superar 150 €</label>
-      <div class="small muted">Sin esta autorización el radar nunca recomienda más de 150 €. Este presupuesto no incluye el coste de la aplicación, que es 0 €.</div>
+      <label class="toggle" for="sAuth"><input type="checkbox" id="sAuth"> Autorizo expresamente superar 150 € (hasta 2.000 €)</label>
+      <div class="small muted">Sin esta autorización el radar nunca recomienda más de 150 €; con ella, hasta 2.000 €. Este presupuesto no incluye el coste de la aplicación, que es 0 €.</div>
     </div>
     <div class="section card stack">
       <h2>Alertas</h2>
@@ -456,7 +456,7 @@ details summary{cursor:pointer;font-weight:600}
   function renderRadar() {
     const vis = visibleOpps();
     const p = state.profile || {};
-    const budget = +p.budget || 150, committed = committedTotal();
+    const budget = +p.budget || 2000, committed = committedTotal();
     const urgent7 = state.opps.filter(o => o.lastAlert?.level === "urgente" && (Date.now() - new Date(o.lastAlert.at)) < 7*864e5).length;
     const runs24 = state.runs.filter(r => (Date.now() - new Date(r.startedAt)) < 864e5).length;
     const k = [
@@ -532,7 +532,7 @@ details summary{cursor:pointer;font-weight:600}
   // ---------- render: seguimiento ----------
   function committedTotal() { return Object.values(state.actions).reduce((s, a) => s + (a.action !== "descartada" && +a.committedEur > 0 ? +a.committedEur : 0), 0); }
   function renderTrack() {
-    const p = state.profile || {}, budget = +p.budget || 150, c = committedTotal();
+    const p = state.profile || {}, budget = +p.budget || 2000, c = committedTotal();
     $("#budgetKpis").innerHTML = [[eur(budget),"Presupuesto total","money"],[eur(c),"Comprometido","money"],[eur(Math.max(0,budget-c)),"Disponible","money"],[Object.values(state.actions).filter(a=>a.action==="guardada").length,"Favoritas"]]
       .map(([v,l,cls]) => `<div class="kpi ${cls||""}"><b>${esc(v)}</b><span>${esc(l)}</span></div>`).join("");
     const by = (act) => state.opps.filter(o => actionOf(o.id) === act).sort((a,b)=>(b.score||0)-(a.score||0));
@@ -784,18 +784,18 @@ details summary{cursor:pointer;font-weight:600}
   async function saveNote() {
     const id = state.current; const v = $("#dCommit").value.trim();
     const amount = v === "" ? null : Math.max(0, +v);
-    const p = state.profile || defaultProfile(); const budget = +p.budget || 150;
+    const p = state.profile || defaultProfile(); const budget = +p.budget || 2000;
     const others = committedTotal() - (+state.actions[id]?.committedEur || 0);
     if (amount != null && others + amount > budget) { toast(`Superarías tu presupuesto de ${eur(budget)}. Ajusta el importe o el presupuesto.`); return; }
     await writeAction(id, {committedEur: amount, note: $("#dNote").value.trim().slice(0, 500)});
     state.profile = {...p, committed: committedTotal(), updatedAt: new Date().toISOString()}; LS.set("radar-profile", state.profile);
     toast("Guardado"); renderAll();
   }
-  const defaultProfile = () => ({budget:150, budgetAuthorizedAbove150:false, alertThreshold:75, urgentThreshold:85, categories:Object.keys(CAT), committed:0});
+  const defaultProfile = () => ({budget:2000, budgetAuthorizedAbove150:true, alertThreshold:75, urgentThreshold:85, categories:Object.keys(CAT), committed:0});
 
   function fillSettings() {
     const p = state.profile || defaultProfile();
-    $("#sBudget").value = p.budget ?? 150; $("#sAuth").checked = !!p.budgetAuthorizedAbove150;
+    $("#sBudget").value = p.budget ?? 2000; $("#sAuth").checked = !!p.budgetAuthorizedAbove150;
     $("#sAlert").value = p.alertThreshold ?? 75; $("#sUrgent").value = p.urgentThreshold ?? 85;
     const cats = arr(p.categories).length ? arr(p.categories) : Object.keys(CAT);
     $$(".sCat").forEach(cb => cb.checked = cats.includes(cb.value));
@@ -803,7 +803,8 @@ details summary{cursor:pointer;font-weight:600}
   }
   $("#saveSettings").addEventListener("click", () => {
     let budget = Math.max(0, +$("#sBudget").value || 0); const auth = $("#sAuth").checked;
-    if (budget > 150 && !auth) { budget = 150; $("#sBudget").value = 150; toast("Sin tu autorización expresa el máximo es 150 €."); }
+    if (budget > 2000) { budget = 2000; $("#sBudget").value = 2000; toast("El máximo configurado es 2.000 €."); }
+    else if (budget > 150 && !auth) { budget = 150; $("#sBudget").value = 150; toast("Sin tu autorización expresa el máximo es 150 €."); }
     const alertTh = Math.min(100, Math.max(40, +$("#sAlert").value || 75));
     const urgentTh = Math.min(100, Math.max(alertTh, +$("#sUrgent").value || 85));
     const cats = $$(".sCat").filter(c => c.checked).map(c => c.value);
@@ -862,6 +863,9 @@ details summary{cursor:pointer;font-weight:600}
 
   state.actions = LS.get("radar-actions", {});
   state.profile = LS.get("radar-profile", null);
+  if (state.profile && +state.profile.budget === 150 && !state.profile.budgetAuthorizedAbove150 && !LS.get("radar-budget-2000", false)) {
+    state.profile = {...state.profile, budget: 2000, budgetAuthorizedAbove150: true}; LS.set("radar-profile", state.profile); LS.set("radar-budget-2000", true);
+  }
   go(VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : "radar", false);
   fillSettings();
   renderAll();
@@ -870,5 +874,6 @@ details summary{cursor:pointer;font-weight:600}
   setInterval(() => { if (!state.current) loadData(); }, 5 * 60000);
 })();
 </script>
+<script src="selected.js"></script><script src="markets.js"></script>
 </body>
 </html>

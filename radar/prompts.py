@@ -2,7 +2,7 @@
 
 COMMON = (
     "Trabajas para OPPORTUNITY RADAR AI, un radar personal de oportunidades para un residente en España con un "
-    "presupuesto máximo de 150 €. Idioma: español. Moneda: euros. Reglas: no inventes datos, cifras, equipos, URLs ni "
+    "presupuesto máximo de 2.000 € por oportunidad (el disponible exacto se indica en cada petición). Idioma: español. Moneda: euros. Reglas: no inventes datos, cifras, equipos, URLs ni "
     "probabilidades; si algo no consta en el material o en fuentes que hayas consultado, usa null o 'desconocido'. "
     "No es asesoramiento financiero. Nunca propongas comprar automáticamente, conectar wallets, firmar transacciones ni "
     "dar frases semilla. Responde SOLO con un objeto JSON válido."
@@ -23,6 +23,20 @@ Devuelve como máximo 4 candidatas en este formato:
 "participateUrl": "https://... o null", "summary": "qué es y qué gana el usuario, 1-2 frases",
 "whyNow": "por qué es temprano/emergente ahora", "deadline": "AAAA-MM-DD o null",
 "sourceUrls": ["https://...", "https://..."]}}]}}"""
+
+DISCOVERY_RESULTS_PROMPT = """Fecha de hoy: {today}. Búsqueda: {query}
+Categoría del radar: {category}.
+Ya conocidas (no las repitas): {known}
+
+RESULTADOS DE BÚSQUEDA (son tus únicas fuentes; no añadas nada que no aparezca aquí):
+{results}
+
+Extrae como máximo 4 oportunidades reales y concretas que aparezcan en estos resultados (no artículos genéricos ni
+listas). En sourceUrls usa solo URLs de los resultados. officialUrl solo si el dominio oficial aparece en ellos.
+Devuelve:
+{{"candidates": [{{"name": "...", "officialUrl": "https://... o null", "participateUrl": "https://... o null",
+"summary": "qué es y qué gana el usuario, 1-2 frases", "whyNow": "por qué es temprano/emergente ahora",
+"deadline": "AAAA-MM-DD o null", "sourceUrls": ["https://..."]}}]}}"""
 
 ANALYST_SYSTEM = COMMON + (
     " Tu papel: analista de inversiones y oportunidades emergentes. Con el material aportado, construye una ficha "

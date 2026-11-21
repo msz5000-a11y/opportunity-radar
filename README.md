@@ -1,6 +1,6 @@
 # Opportunity Radar AI · v2
 
-Radar autónomo de oportunidades (cripto, startups, IA, lanzamientos e ideas de negocio) para un residente en España con un presupuesto máximo de 150 €.
+Radar autónomo de oportunidades (cripto, startups, IA, lanzamientos e ideas de negocio) para un residente en España con un presupuesto máximo de 2.000 € por oportunidad.
 
 **No compra, no envía dinero, no firma transacciones, no se conecta a wallets y nunca pide frases semilla ni claves.** Solo investiga, analiza y te avisa. Los escenarios 2x-300x son simulaciones matemáticas, no predicciones. Nada de esto es asesoramiento financiero.
 
