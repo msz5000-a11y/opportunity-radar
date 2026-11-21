@@ -160,7 +160,9 @@ def sec_json(url: str):
     r = _rq.get(url, headers={**SEC_HEADERS, "Accept-Encoding": "gzip, deflate"}, timeout=90)
     time.sleep(0.12)
     if r.status_code != 200:
-        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:120]}")
+        import re as _re
+        title = _re.search(r"<title>(.*?)</title>", r.text, _re.S | _re.I)
+        raise RuntimeError(f"HTTP {r.status_code}: {(title.group(1).strip() if title else r.text[:120])[:140]}")
     return r.json()
 
 
@@ -384,6 +386,11 @@ def stocks(data_dir: Path) -> dict:
         _ok("sec_tickers", len(tickers))
     except Exception as e:  # noqa: BLE001
         _ok("sec_tickers", 0, e)
+    try:  # ¿el plan gratuito de Massive incluye estados financieros? (diagnóstico de una llamada)
+        fin = massive("/vX/reference/financials", {"ticker": "AAPL", "timeframe": "annual", "limit": 1})
+        _ok("massive_financials", len(fin.get("results") or []), None if fin.get("results") else str(fin)[:140])
+    except Exception as e:  # noqa: BLE001
+        _ok("massive_financials", 0, e)
     if not tickers:
         try:
             tickers = massive_tickers()
