@@ -1,5 +1,5 @@
 // Service worker: la interfaz funciona sin conexión; los datos se piden siempre a la red primero.
-const CACHE = "radar-v2-1";
+const CACHE = "radar-v2-3";
 const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener("activate", (e) => {
