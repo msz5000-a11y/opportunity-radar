@@ -1510,10 +1510,10 @@
   "category": "ia_tecnologia",
   "subcategory": "software_utilidad",
   "kind": "pasiva",
-  "description": "Aplicación ligera para Windows 10/11 que muestra el nivel de batería de ratones, auriculares, teclados y controladores inalámbricos directamente en la barra de tareas. No requiere software del fabricante y soporta marcas como Logitech, Razer, SteelSeries, Corsair, HyperX, entre otras.",
+  "description": "Aplicación ligera para Windows 10/11 que muestra el nivel de batería de ratones, auriculares, teclados y controladores inalámbricos directamente en la barra de tareas, sin necesidad del software del fabricante.",
   "officialUrl": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
   "participateUrl": null,
-  "country": "desconocido",
+  "country": "global",
   "spainAvailability": "si",
   "spainNotes": "Software de código abierto compatible con cualquier dispositivo Bluetooth reconocido por Windows, por lo que funciona en España sin restricciones.",
   "costs": {
@@ -1525,7 +1525,7 @@
   },
   "canLoseAll": false,
   "liquidity": "nula",
-  "exitNotes": "No aplica, al ser software gratuito no hay inversión que liquidar.",
+  "exitNotes": "No hay inversión que liquidar; el uso puede cesar en cualquier momento.",
   "horizon": "corto plazo / uso inmediato",
   "deadline": null,
   "potential": "moderado",
@@ -1533,63 +1533,63 @@
   "timeNeeded": "instalación en pocos minutos",
   "subscores": {
    "novedad": {
-    "v": 6,
-    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante",
+    "v": 6.0,
+    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante · Verificador: Utilidad de nicho para monitorización de periféricos sin software propietario.",
     "evidence": true
    },
    "potencial": {
-    "v": 5,
-    "why": "Ahorra tiempo y evita instalación de apps de fabricantes",
+    "v": 5.0,
+    "why": "Ahorra tiempo y evita instalación de apps de fabricantes · Verificador: Ahorra recursos del sistema al evitar bloatware de fabricantes.",
     "evidence": true
    },
    "mercado": {
-    "v": 4,
-    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado",
+    "v": 4.0,
+    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado · Verificador: Mercado limitado a usuarios de periféricos inalámbricos en Windows.",
     "evidence": true
    },
    "equipo": {
-    "v": 3,
-    "why": "Autor único o pequeño, sin información pública",
+    "v": 3.0,
+    "why": "Autor único o pequeño, sin información pública disponible · Verificador: Desarrollador individual (krisgfx9), sin entidad corporativa pública.",
     "evidence": false
    },
    "financiacion": {
-    "v": 2,
-    "why": "Proyecto sin financiación externa conocida",
+    "v": 1.5,
+    "why": "Proyecto sin financiación externa conocida · Verificador: Proyecto personal sin financiación externa.",
     "evidence": false
    },
    "comunidad": {
-    "v": 7,
-    "why": "5.2k estrellas y 435 forks en GitHub",
+    "v": 7.5,
+    "why": "5.8k estrellas y 483 forks en GitHub · Verificador: 5.8k estrellas y actividad constante en GitHub.",
     "evidence": true
    },
    "adopcion": {
-    "v": 6,
-    "why": "Soporta más de 10 marcas y dispositivos Bluetooth",
+    "v": 6.0,
+    "why": "Soporta más de 10 marcas y dispositivos Bluetooth · Verificador: Soporte amplio para marcas principales y dispositivos Bluetooth.",
     "evidence": true
    },
    "competencia": {
-    "v": 4,
-    "why": "Existen apps de fabricantes y otras utilidades similares",
+    "v": 4.0,
+    "why": "Existen apps de fabricantes y otras utilidades similares · Verificador: Existen alternativas como 'Bluetooth Battery Monitor' o software oficial.",
     "evidence": true
    },
    "riesgo_tecnico": {
-    "v": 8,
-    "why": "Código C++/Win32, app ligera ~350KB, sin dependencias externas",
+    "v": 8.0,
+    "why": "Código C++/Win32, app ligera ~350 KB, sin dependencias externas · Verificador: Código abierto bajo licencia GPL-3.0, auditable por la comunidad.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 10,
-    "why": "Software gratuito, sin inversión requerida",
+    "v": 10.0,
+    "why": "Software gratuito, sin inversión requerida · Verificador: Software gratuito, riesgo financiero nulo.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9,
-    "why": "Software disponible globalmente, sin barreras regionales",
+    "v": 9.5,
+    "why": "Software disponible globalmente, sin barreras regionales · Verificador: Disponible globalmente sin restricciones geográficas.",
     "evidence": true
    },
    "salida": {
-    "v": 9,
-    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento",
+    "v": 9.5,
+    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento · Verificador: Al ser software gratuito, la salida es inmediata mediante desinstalación.",
     "evidence": true
    }
   },
@@ -1598,6 +1598,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "software_no_certificado",
+    "severity": "baja",
+    "detail": "Al ser un ejecutable de código abierto, no cuenta con firma digital de empresa reconocida, lo que puede disparar alertas de Windows Defender."
    }
   ],
   "distrust": [],
@@ -1615,38 +1620,43 @@
    "Ninguna pérdida financiera directa; el único riesgo es la posible incompatibilidad con algún dispositivo específico."
   ],
   "earlySignals": [
-   "Crecimiento sostenido de estrellas (5.2k) y forks (435) indica interés continuo de la comunidad."
+   "Crecimiento sostenido de estrellas (5.8k) y forks (483) indica interés continuo de la comunidad."
   ],
   "signals": {
-   "stars": 5211,
-   "forks": 435
+   "stars": 5751,
+   "forks": 483
   },
   "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "Software de código abierto, sin implicaciones regulatorias evidentes.",
-   "sources": []
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una herramienta de software de utilidad, no un producto financiero ni servicio regulado por la CNMV o MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
   },
   "sources": [
    {
-    "title": "GitHub",
+    "title": "github.com",
     "url": "https://github.com/krisgfx9/Wireless-Device-Battery-Monitor"
    }
   ],
   "discoveredVia": "GitHub",
   "aiModels": {
    "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
-   "verdict": "sin verificar",
-   "model": null
+   "verdict": "confirmada",
+   "reason": "El software es un proyecto de código abierto legítimo alojado en GitHub. No es una oportunidad de inversión, sino una utilidad gratuita. La información técnica es coherente con el repositorio verificado.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
   },
-  "discoveredAt": "2026-11-20",
+  "discoveredAt": "2026-11-21",
   "id": "web-github-com-krisgfx9-wireless-device-battery-monitor",
-  "isNew": true,
-  "score": 56,
-  "rawScore": 61.5,
+  "isNew": false,
+  "score": 57,
+  "rawScore": 62.3,
   "tier": "especulativa",
   "tierLabel": "Especulativa",
   "humanReview": false,
@@ -1660,6 +1670,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "software_no_certificado",
+    "severity": "baja",
+    "detail": "Al ser un ejecutable de código abierto, no cuenta con firma digital de empresa reconocida, lo que puede disparar alertas de Windows Defender."
    }
   ],
   "evidenced": 10,
@@ -1670,7 +1685,7 @@
     "weight": 8,
     "value": 6.0,
     "points": 4.8,
-    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante",
+    "why": "Herramienta única que muestra baterías en la barra de tareas sin software del fabricante · Verificador: Utilidad de nicho para monitorización de periféricos sin software propietario.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1680,7 +1695,7 @@
     "weight": 12,
     "value": 5.0,
     "points": 6.0,
-    "why": "Ahorra tiempo y evita instalación de apps de fabricantes",
+    "why": "Ahorra tiempo y evita instalación de apps de fabricantes · Verificador: Ahorra recursos del sistema al evitar bloatware de fabricantes.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1690,7 +1705,7 @@
     "weight": 8,
     "value": 4.0,
     "points": 3.2,
-    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado",
+    "why": "Dirigido a usuarios de periféricos inalámbricos, nicho limitado · Verificador: Mercado limitado a usuarios de periféricos inalámbricos en Windows.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1700,7 +1715,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "Autor único o pequeño, sin información pública",
+    "why": "Autor único o pequeño, sin información pública disponible · Verificador: Desarrollador individual (krisgfx9), sin entidad corporativa pública.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -1708,9 +1723,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 2.0,
-    "points": 1.4,
-    "why": "Proyecto sin financiación externa conocida",
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Proyecto sin financiación externa conocida · Verificador: Proyecto personal sin financiación externa.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -1718,9 +1733,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "5.2k estrellas y 435 forks en GitHub",
+    "value": 7.5,
+    "points": 5.2,
+    "why": "5.8k estrellas y 483 forks en GitHub · Verificador: 5.8k estrellas y actividad constante en GitHub.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1730,7 +1745,7 @@
     "weight": 9,
     "value": 6.0,
     "points": 5.4,
-    "why": "Soporta más de 10 marcas y dispositivos Bluetooth",
+    "why": "Soporta más de 10 marcas y dispositivos Bluetooth · Verificador: Soporte amplio para marcas principales y dispositivos Bluetooth.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1740,7 +1755,7 @@
     "weight": 5,
     "value": 4.0,
     "points": 2.0,
-    "why": "Existen apps de fabricantes y otras utilidades similares",
+    "why": "Existen apps de fabricantes y otras utilidades similares · Verificador: Existen alternativas como 'Bluetooth Battery Monitor' o software oficial.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1750,7 +1765,7 @@
     "weight": 8,
     "value": 8.0,
     "points": 6.4,
-    "why": "Código C++/Win32, app ligera ~350KB, sin dependencias externas",
+    "why": "Código C++/Win32, app ligera ~350 KB, sin dependencias externas · Verificador: Código abierto bajo licencia GPL-3.0, auditable por la comunidad.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1760,17 +1775,17 @@
     "weight": 10,
     "value": 10.0,
     "points": 10.0,
-    "why": "Software gratuito, sin inversión requerida",
+    "why": "Software gratuito, sin inversión requerida · Verificador: Software gratuito, riesgo financiero nulo.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "Software disponible globalmente, sin barreras regionales",
+    "value": 9.5,
+    "points": 7.6,
+    "why": "Software disponible globalmente, sin barreras regionales · Verificador: Disponible globalmente sin restricciones geográficas.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1778,9 +1793,401 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento · Verificador: Al ser software gratuito, la salida es inmediata mediante desinstalación.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "stars": 10.4,
+    "forks": 11.0
+   },
+   "label": "Estable",
+   "since": "2026-11-20T20:33:04Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 5211.0,
+    "forks": 435.0
+   },
+   {
+    "t": "2026-11-21T19:30:11Z",
+    "stars": 5751.0,
+    "forks": 483.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Wireless Device Battery Monitor (BatteryHub)\nCATEGORÍA: ia_tecnologia · software_utilidad\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 57/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo / uso inmediato\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos; No requiere instalación de software del fabricante, reduciendo potenciales conflictos\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Al ser un ejecutable de código abierto, no cuenta con firma digital de empresa reconocida, lo que puede disparar alertas de Windows Defender.\nCÓMO PARTICIPAR: 1. Acceder a la página de releases del repositorio GitHub.; 2. Descargar el instalador \"BatteryHub-Setup\" o el zip portátil.; 3. Ejecutar la instalación (opción per‑user para evitar permisos de administrador).; 4. Opcional: aportar una estrella al repositorio o donar vía Ko‑fi/PayPal para apoyar al desarrollador.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera directa; el único riesgo es la posible incompatibilidad con algún dispositivo específico.\nFUENTES: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "web-github-com-krisgfx9-wireless-device-battery-monitor"
+  ]
+ },
+ {
+  "name": "Zero C#",
+  "category": "ia_tecnologia",
+  "subcategory": "compiladores|runtime",
+  "kind": "pasiva",
+  "description": "Zero C# permite compilar código C# a binarios nativos sin necesidad de .NET runtime ni garbage collector. El proyecto es open‑source (MIT/AGPL‑3) y genera ejecutables muy pequeños para Linux, macOS, Windows, WebAssembly y DOS.",
+  "officialUrl": "https://onurgumus.github.io/zero-csharp/index.html",
+  "participateUrl": "https://github.com/onurgumus/zero-csharp",
+  "country": "internacional",
+  "spainAvailability": "si",
+  "spainNotes": "Software libre disponible globalmente, usable en entornos españoles sin restricciones",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay costes de licencia; solo posibles gastos de infraestructura para pruebas",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, al ser una herramienta de software libre no hay posición financiera que liquidar",
+  "horizon": "medio",
+  "deadline": null,
+  "potential": "El proyecto abre posibilidades para desarrolladores que buscan binarios ultra‑ligeros y portabilidad sin runtime, aunque la adopción actual es limitada",
+  "difficulty": "media",
+  "timeNeeded": "varias horas para compilar y probar un proyecto sencillo",
+  "subscores": {
+   "novedad": {
+    "v": 7.5,
+    "why": "Compila C# a binario nativo sin runtime ni GC, algo poco común · Verificador: Permite compilación nativa de C# sin runtime ni GC, un nicho técnico muy específico.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.0,
+    "why": "Puede interesar a sectores de IoT, sistemas embebidos y desarrollo de herramientas pequeñas · Verificador: Útil para sistemas embebidos y entornos de recursos limitados.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Mercado de compiladores y runtimes es competitivo y especializado · Verificador: Mercado de nicho para desarrolladores de sistemas.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3.0,
+    "why": "No se dispone de información pública sobre el equipo fundador o mantenedores principales · Verificador: Desarrollado principalmente por Onur Gumus; falta información corporativa extensa.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "Proyecto open‑source sin modelo de financiación declarado · Verificador: Proyecto open-source sin modelo de negocio comercial declarado.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "64 upvotes y 45 comentarios en Hacker News indican interés inicial · Verificador: Interés técnico en Hacker News, pero comunidad de usuarios pequeña.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Poca evidencia de adopción comercial o en proyectos de gran escala · Verificador: Uso limitado a entusiastas y proyectos experimentales.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen alternativas como .NET Native, pero no se menciona competencia directa en la fuente · Verificador: Compite con NativeAOT de Microsoft y otros compiladores de C#.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Tecnología emergente, posible falta de soporte y bugs no detectados · Verificador: Tecnología experimental; la falta de GC requiere gestión manual de memoria.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "Uso gratuito, sin inversión financiera directa · Verificador: Al ser software libre gratuito, no existe riesgo de pérdida de capital.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "Software libre, sin barreras de entrada para usuarios españoles · Verificador: Sin restricciones geográficas para su descarga y uso.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay inversión financiera que recuperar; la salida consiste en dejar de usar la herramienta · Verificador: No hay activos financieros; la salida es simplemente dejar de usar el software.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "poca_adopcion",
+    "severity": "media",
+    "detail": "Escasa adopción comercial y comunidad limitada fuera de entusiastas"
+   },
+   {
+    "code": "tecnologia_experimental",
+    "severity": "media",
+    "detail": "Al no utilizar Garbage Collector, el desarrollador debe gestionar la memoria manualmente, lo que aumenta el riesgo de errores de segmentación o fugas de memoria."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Permite crear binarios extremadamente pequeños",
+   "Elimina la necesidad de instalar .NET runtime en dispositivos con recursos limitados",
+   "Facilita el desarrollo multiplataforma con un solo código fuente"
+  ],
+  "howToParticipate": [
+   "Visitar la página oficial y el repositorio en GitHub",
+   "Clonar el proyecto y seguir la guía de instalación",
+   "Compilar el ejemplo 'Minimal' para la plataforma deseada",
+   "Contribuir con mejoras o reportar bugs a través de pull requests"
+  ],
+  "lossCauses": [
+   "Obsolescencia del proyecto si la comunidad deja de mantenerlo",
+   "Incompatibilidades con futuras versiones de C# o sistemas operativos"
+  ],
+  "earlySignals": [
+   "Interés inicial en Hacker News (64 upvotes, 45 comentarios)",
+   "Publicación de tutoriales y ejemplos en la web oficial"
+  ],
+  "signals": {
+   "upvotes": 64,
+   "comments": 45
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una herramienta de desarrollo (software), no un servicio financiero, por lo que no está sujeto a regulación de la CNMV ni MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://onurgumus.github.io/zero-csharp/index.html"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50590279"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El proyecto es una herramienta de desarrollo de software libre (fork de bflat) y no una entidad financiera o de inversión. La información técnica es coherente con el repositorio oficial y la naturaleza del proyecto.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-onurgumus-github-io",
+  "isNew": true,
+  "score": 54,
+  "rawScore": 54.1,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "poca_adopcion",
+    "severity": "media",
+    "detail": "Escasa adopción comercial y comunidad limitada fuera de entusiastas"
+   },
+   {
+    "code": "tecnologia_experimental",
+    "severity": "media",
+    "detail": "Al no utilizar Garbage Collector, el desarrollador debe gestionar la memoria manualmente, lo que aumenta el riesgo de errores de segmentación o fugas de memoria."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Compila C# a binario nativo sin runtime ni GC, algo poco común · Verificador: Permite compilación nativa de C# sin runtime ni GC, un nicho técnico muy específico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Puede interesar a sectores de IoT, sistemas embebidos y desarrollo de herramientas pequeñas · Verificador: Útil para sistemas embebidos y entornos de recursos limitados.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de compiladores y runtimes es competitivo y especializado · Verificador: Mercado de nicho para desarrolladores de sistemas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información pública sobre el equipo fundador o mantenedores principales · Verificador: Desarrollado principalmente por Onur Gumus; falta información corporativa extensa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Proyecto open‑source sin modelo de financiación declarado · Verificador: Proyecto open-source sin modelo de negocio comercial declarado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "64 upvotes y 45 comentarios en Hacker News indican interés inicial · Verificador: Interés técnico en Hacker News, pero comunidad de usuarios pequeña.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Poca evidencia de adopción comercial o en proyectos de gran escala · Verificador: Uso limitado a entusiastas y proyectos experimentales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen alternativas como .NET Native, pero no se menciona competencia directa en la fuente · Verificador: Compite con NativeAOT de Microsoft y otros compiladores de C#.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología emergente, posible falta de soporte y bugs no detectados · Verificador: Tecnología experimental; la falta de GC requiere gestión manual de memoria.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "Uso gratuito, sin inversión financiera directa · Verificador: Al ser software libre gratuito, no existe riesgo de pérdida de capital.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
     "value": 9.0,
     "points": 7.2,
-    "why": "No hay inversión que recuperar; uso puede cesar en cualquier momento",
+    "why": "Software libre, sin barreras de entrada para usuarios españoles · Verificador: Sin restricciones geográficas para su descarga y uso.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay inversión financiera que recuperar; la salida consiste en dejar de usar la herramienta · Verificador: No hay activos financieros; la salida es simplemente dejar de usar el software.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -1850,9 +2257,9 @@
   },
   "metrics": [
    {
-    "t": "2026-11-20T20:33:04Z",
-    "stars": 5211.0,
-    "forks": 435.0
+    "t": "2026-11-21T19:30:11Z",
+    "upvotes": 64.0,
+    "comments": 45.0
    }
   ],
   "alert": {
@@ -1860,12 +2267,12 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Wireless Device Battery Monitor (BatteryHub)\nCATEGORÍA: ia_tecnologia · software_utilidad\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 56/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo / uso inmediato\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos; No requiere instalación de software del fabricante, reduciendo potenciales conflictos\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Acceder a la página de releases del repositorio GitHub.; 2. Descargar el instalador \"BatteryHub-Setup\" o el zip portátil.; 3. Ejecutar la instalación (opción per‑user para evitar permisos de administrador).; 4. Opcional: aportar una estrella al repositorio o donar vía Ko‑fi/PayPal para apoyar al desarrollador.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera directa; el único riesgo es la posible incompatibilidad con algún dispositivo específico.\nFUENTES: https://github.com/krisgfx9/Wireless-Device-Battery-Monitor",
-  "firstSeenAt": "2026-11-20T20:33:04Z",
-  "lastSeenAt": "2026-11-20T20:33:04Z",
-  "runId": "run-20261120-2033",
+  "alertText": "NOMBRE: Zero C#\nCATEGORÍA: ia_tecnologia · compiladores|runtime\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://onurgumus.github.io/zero-csharp/index.html\nENLACE DE PARTICIPACIÓN: https://github.com/onurgumus/zero-csharp\nPAÍS: internacional\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: El proyecto abre posibilidades para desarrolladores que buscan binarios ultra‑ligeros y portabilidad sin runtime, aunque la adopción actual es limitada\nPUNTUACIÓN: 54/100 · Especulativa\nRIESGO: medio\nPLAZO: medio\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite crear binarios extremadamente pequeños; Elimina la necesidad de instalar .NET runtime en dispositivos con recursos limitados; Facilita el desarrollo multiplataforma con un solo código fuente\nMOTIVOS PARA DESCONFIAR: Escasa adopción comercial y comunidad limitada fuera de entusiastas; Al no utilizar Garbage Collector, el desarrollador debe gestionar la memoria manualmente, lo que aumenta el riesgo de errores de segmentación o fugas de memoria.\nCÓMO PARTICIPAR: Visitar la página oficial y el repositorio en GitHub; Clonar el proyecto y seguir la guía de instalación; Compilar el ejemplo 'Minimal' para la plataforma deseada; Contribuir con mejoras o reportar bugs a través de pull requests\nQUÉ PODRÍA HACERME PERDER EL DINERO: Obsolescencia del proyecto si la comunidad deja de mantenerlo; Incompatibilidades con futuras versiones de C# o sistemas operativos\nFUENTES: https://onurgumus.github.io/zero-csharp/index.html | https://news.ycombinator.com/item?id=50590279",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
   "aliases": [
-   "web-github-com-krisgfx9-wireless-device-battery-monitor"
+   "web-onurgumus-github-io"
   ]
  },
  {
@@ -3028,6 +3435,401 @@
   "category": "ia_tecnologia",
   "subcategory": "knowledge_ai",
   "kind": "pasiva",
+  "description": "Lastbook es una plataforma offline de inteligencia artificial que brinda mapas y videos orientados a la supervivencia y la reconstrucción. El proyecto está disponible globalmente y permite a los usuarios contribuir al código y al contenido sin coste de entrada. Su enfoque en IA offline lo sitúa en un nicho emergente de preparación y resiliencia.",
+  "officialUrl": "https://github.com/Immortal-Protocols/lastbook",
+  "participateUrl": "https://github.com/Immortal-Protocols/lastbook",
+  "country": "global",
+  "spainAvailability": "si",
+  "spainNotes": "Proyecto global, accesible desde España",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes de entrada, solo tiempo",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No hay inversión que retirar, participación es voluntaria",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "media",
+  "timeNeeded": "variable, depende de la contribución",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Combina IA offline con contenido de supervivencia · Verificador: Enfoque en resiliencia offline mediante IA local.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.5,
+    "why": "Puede servir a comunidades de preparación y rescate · Verificador: Utilidad alta en escenarios de desconexión, pero nicho.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.5,
+    "why": "Mercado de IA y supervivencia es nicho y poco probado · Verificador: No es un producto comercial, es un proyecto de código abierto.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.5,
+    "why": "Equipo no identificado en la información disponible · Verificador: Desarrolladores anónimos bajo seudónimo en GitHub.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de financiación pública o privada · Verificador: Proyecto comunitario sin financiación externa conocida.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6.5,
+    "why": "2719 estrellas y 329 forks indican comunidad activa · Verificador: Actividad constante en GitHub con 2849 estrellas.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Uso real desconocido, sin métricas de adopción · Verificador: Uso técnico especializado, difícil de medir.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Existen otras herramientas de IA y supervivencia, pero pocas offline · Verificador: Existen otras herramientas de archivado offline (ej. Kiwix), pero con distinto enfoque.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.5,
+    "why": "Dependencia de infraestructura offline y mantenimiento continuo · Verificador: Requiere conocimientos técnicos para su despliegue.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 10.0,
+    "why": "No implica inversión monetaria directa · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "Acceso global vía internet, sin restricciones · Verificador: Acceso libre a través de internet.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay inversión que retirar, participación es voluntaria · Verificador: Al ser software libre, no hay activos que liquidar.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_modelo_de_negocio",
+    "severity": "media",
+    "detail": "El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "anonimato_equipo",
+    "severity": "media",
+    "detail": "El equipo de desarrollo es anónimo, lo cual es común en proyectos open source pero dificulta la rendición de cuentas."
+   },
+   {
+    "code": "falta_de_modelo_de_negocio",
+    "severity": "baja",
+    "detail": "No es un negocio, es un proyecto de utilidad pública/tecnológica sin sostenibilidad financiera garantizada."
+   }
+  ],
+  "distrust": [
+   "ausencia de modelo de negocio claro"
+  ],
+  "whyInteresting": [
+   "IA offline para supervivencia, nicho emergente"
+  ],
+  "howToParticipate": [
+   "Visitar el repositorio en GitHub",
+   "Clonar el proyecto",
+   "Contribuir con código o documentación",
+   "Participar en la comunidad"
+  ],
+  "lossCauses": [
+   "Ninguno financiero"
+  ],
+  "earlySignals": [
+   "2719 estrellas en GitHub indican interés inicial",
+   "329 forks muestran actividad de desarrollo"
+  ],
+  "signals": {
+   "stars": 2719,
+   "forks": 329
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser un proyecto de código abierto sin oferta de valores, servicios financieros o captación de capital, no requiere supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "github.com",
+    "url": "https://github.com/Immortal-Protocols/lastbook"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El proyecto existe como repositorio de código abierto en GitHub bajo la organización 'Immortal-Protocols'. Es una herramienta técnica de acceso libre sin ánimo de lucro ni modelo de inversión, por lo que no está sujeta a regulación financiera ni requiere registro en la CNMV.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-github-com-immortal-protocols-lastbook",
+  "isNew": true,
+  "score": 46,
+  "rawScore": 51.1,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_modelo_de_negocio",
+    "severity": "media",
+    "detail": "El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "anonimato_equipo",
+    "severity": "media",
+    "detail": "El equipo de desarrollo es anónimo, lo cual es común en proyectos open source pero dificulta la rendición de cuentas."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Combina IA offline con contenido de supervivencia · Verificador: Enfoque en resiliencia offline mediante IA local.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede servir a comunidades de preparación y rescate · Verificador: Utilidad alta en escenarios de desconexión, pero nicho.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de IA y supervivencia es nicho y poco probado · Verificador: No es un producto comercial, es un proyecto de código abierto.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.5,
+    "points": 2.5,
+    "why": "Equipo no identificado en la información disponible · Verificador: Desarrolladores anónimos bajo seudónimo en GitHub.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de financiación pública o privada · Verificador: Proyecto comunitario sin financiación externa conocida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.5,
+    "points": 4.5,
+    "why": "2719 estrellas y 329 forks indican comunidad activa · Verificador: Actividad constante en GitHub con 2849 estrellas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso real desconocido, sin métricas de adopción · Verificador: Uso técnico especializado, difícil de medir.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de IA y supervivencia, pero pocas offline · Verificador: Existen otras herramientas de archivado offline (ej. Kiwix), pero con distinto enfoque.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Dependencia de infraestructura offline y mantenimiento continuo · Verificador: Requiere conocimientos técnicos para su despliegue.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "No implica inversión monetaria directa · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Acceso global vía internet, sin restricciones · Verificador: Acceso libre a través de internet.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay inversión que retirar, participación es voluntaria · Verificador: Al ser software libre, no hay activos que liquidar.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T19:30:11Z",
+    "stars": 2719.0,
+    "forks": 329.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Lastbook\nCATEGORÍA: ia_tecnologia · knowledge_ai\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://github.com/Immortal-Protocols/lastbook\nENLACE DE PARTICIPACIÓN: https://github.com/Immortal-Protocols/lastbook\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 46/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IA offline para supervivencia, nicho emergente\nMOTIVOS PARA DESCONFIAR: El proyecto no muestra un modelo de negocio claro para sostenibilidad a largo plazo; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; El equipo de desarrollo es anónimo, lo cual es común en proyectos open source pero dificulta la rendición de cuentas.; ausencia de modelo de negocio claro\nCÓMO PARTICIPAR: Visitar el repositorio en GitHub; Clonar el proyecto; Contribuir con código o documentación; Participar en la comunidad\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguno financiero\nFUENTES: https://github.com/Immortal-Protocols/lastbook",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "n-immortal-protocols-lastbook"
+  ]
+ },
+ {
+  "name": "Lastbook",
+  "category": "ia_tecnologia",
+  "subcategory": "knowledge_ai",
+  "kind": "pasiva",
   "description": "Plataforma offline de IA que ofrece mapas y videos para supervivencia y reconstrucción.",
   "officialUrl": "https://lastbook.org",
   "participateUrl": null,
@@ -3399,6 +4201,390 @@
   ]
  },
  {
+  "name": "DeepSeek AI Chat Demo",
+  "category": "ia_tecnologia",
+  "subcategory": "demo",
+  "kind": "pasiva",
+  "description": "Demo interactivo de la API de DeepSeek AI que permite probar conversaciones con el modelo de lenguaje. Es gratuito, de código abierto y accesible vía web. No ofrece funcionalidades comerciales directas, pero sirve para experimentar con la tecnología.",
+  "officialUrl": "https://deepseek-ai.github.io/chat-demo/",
+  "participateUrl": "https://github.com/deepseek-ai/chat-demo",
+  "country": "China",
+  "spainAvailability": "disponible",
+  "spainNotes": "No se dispone de información sobre disponibilidad o restricciones específicas en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Ninguno",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un recurso gratuito y no una inversión financiera.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "baja",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Demo reciente de la API de DeepSeek AI · Verificador: Demo técnica para la API de DeepSeek, actualizada según el ciclo de desarrollo de la empresa.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Solo permite probar la API, sin funcionalidades comerciales directas · Verificador: Es una herramienta de prueba, no un producto comercial con modelo de negocio propio.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Mercado de demos de IA es amplio y competitivo · Verificador: El mercado de interfaces de chat para LLMs está altamente saturado.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3.0,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto · Verificador: DeepSeek AI es una entidad reconocida en el sector de la IA con sede en China. · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "No hay datos de financiación pública o privada · Verificador: Proyecto respaldado por la infraestructura de DeepSeek AI. · Discrepancia entre modelos (2 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7.0,
+    "why": "5209 estrellas y 1217 forks en GitHub indican una comunidad activa · Verificador: Alta actividad en GitHub con miles de estrellas y forks.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Uso limitado a usuarios que prueban la demo · Verificador: Uso técnico creciente por desarrolladores que integran la API. · Discrepancia entre modelos (3 vs 6): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Existen múltiples demos y plataformas de IA similares · Verificador: Compite con interfaces de OpenAI, Anthropic y otros modelos open-source.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.5,
+    "why": "Código abierto, pero depende de la infraestructura de DeepSeek · Verificador: Código abierto, pero la privacidad depende de la política de datos de DeepSeek.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "No implica inversión monetaria · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.0,
+    "why": "Desconocida la adaptación o localización para España · Verificador: Accesible desde España vía web sin restricciones geográficas. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay salida financiera, es un recurso gratuito · Verificador: Al ser un recurso gratuito, la salida es inmediata al cerrar el navegador.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Permite experimentar con la API de DeepSeek AI sin coste",
+   "Código abierto y fácil de probar"
+  ],
+  "howToParticipate": [
+   "Acceder a https://deepseek-ai.github.io/chat-demo/",
+   "Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo",
+   "Seguir la documentación para probar la API"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {
+   "stars": 5209,
+   "forks": 1217
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un servicio financiero ni de inversión. No requiere supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://deepseek-ai.github.io/chat-demo/"
+   },
+   {
+    "title": "github.com",
+    "url": "https://github.com/deepseek-ai/chat-demo"
+   },
+   {
+    "title": "GitHub DeepSeek AI",
+    "url": "https://github.com/deepseek-ai"
+   },
+   {
+    "title": "DeepSeek AI Official Site",
+    "url": "https://www.deepseek.com/"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La URL corresponde al repositorio oficial de GitHub de DeepSeek AI. Es una herramienta técnica de código abierto sin fines comerciales directos, por lo que no requiere registro en CNMV ni MiCA al no ser un servicio financiero.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 67
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-deepseek-ai-github-io",
+  "isNew": false,
+  "score": 44,
+  "rawScore": 48.9,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Demo reciente de la API de DeepSeek AI · Verificador: Demo técnica para la API de DeepSeek, actualizada según el ciclo de desarrollo de la empresa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Solo permite probar la API, sin funcionalidades comerciales directas · Verificador: Es una herramienta de prueba, no un producto comercial con modelo de negocio propio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de demos de IA es amplio y competitivo · Verificador: El mercado de interfaces de chat para LLMs está altamente saturado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo detrás del proyecto · Verificador: DeepSeek AI es una entidad reconocida en el sector de la IA con sede en China. · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública o privada · Verificador: Proyecto respaldado por la infraestructura de DeepSeek AI. · Discrepancia entre modelos (2 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "5209 estrellas y 1217 forks en GitHub indican una comunidad activa · Verificador: Alta actividad en GitHub con miles de estrellas y forks.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso limitado a usuarios que prueban la demo · Verificador: Uso técnico creciente por desarrolladores que integran la API. · Discrepancia entre modelos (3 vs 6): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen múltiples demos y plataformas de IA similares · Verificador: Compite con interfaces de OpenAI, Anthropic y otros modelos open-source.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Código abierto, pero depende de la infraestructura de DeepSeek · Verificador: Código abierto, pero la privacidad depende de la política de datos de DeepSeek.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión monetaria · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida la adaptación o localización para España · Verificador: Accesible desde España vía web sin restricciones geográficas. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay salida financiera, es un recurso gratuito · Verificador: Al ser un recurso gratuito, la salida es inmediata al cerrar el navegador.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "stars": 1.8,
+    "forks": 3.9
+   },
+   "label": "Estable",
+   "since": "2026-11-20T20:33:04Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T20:33:04Z",
+    "stars": 5116.0,
+    "forks": 1171.0
+   },
+   {
+    "t": "2026-11-21T19:30:11Z",
+    "stars": 5209.0,
+    "forks": 1217.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DeepSeek AI Chat Demo\nCATEGORÍA: ia_tecnologia · demo\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://deepseek-ai.github.io/chat-demo/\nENLACE DE PARTICIPACIÓN: https://github.com/deepseek-ai/chat-demo\nPAÍS: China\nDISPONIBILIDAD EN ESPAÑA: disponible\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 44/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite experimentar con la API de DeepSeek AI sin coste; Código abierto y fácil de probar\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Acceder a https://deepseek-ai.github.io/chat-demo/; Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo; Seguir la documentación para probar la API\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://deepseek-ai.github.io/chat-demo/ | https://github.com/deepseek-ai/chat-demo | https://github.com/deepseek-ai | https://www.deepseek.com/",
+  "firstSeenAt": "2026-11-20T20:33:04Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "web-deepseek-ai-github-io"
+  ]
+ },
+ {
   "name": "Shipyard",
   "category": "ia_tecnologia",
   "subcategory": "automatizacion_integraciones",
@@ -3757,11 +4943,11 @@
   "category": "ia_tecnologia",
   "subcategory": "herramientas_de_programacion",
   "kind": "activa",
-  "description": "Herramienta que permite reescribir aplicaciones en Rust pieza a pieza, verificando el comportamiento contra la versión original. Soporta CLIs, servidores HTTP y librerías en varios lenguajes. Ideal para mejorar rendimiento y seguridad del código existente.",
+  "description": "Herramienta open‑source que permite migrar aplicaciones a Rust pieza a pieza, verificando el comportamiento contra la versión original mediante pruebas automatizadas. Facilita mejorar rendimiento y seguridad del código existente sin costes de licencia.",
   "officialUrl": "https://github.com/erkamyaman/rust-anything",
-  "participateUrl": null,
-  "country": "desconocido",
-  "spainAvailability": "desconocida",
+  "participateUrl": "https://github.com/erkamyaman/rust-anything",
+  "country": "global",
+  "spainAvailability": "disponible",
   "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
   "costs": {
    "minEntry": 0,
@@ -3780,63 +4966,63 @@
   "timeNeeded": "dependiendo del tamaño del proyecto, de unas horas a varias semanas por módulo a migrar",
   "subscores": {
    "novedad": {
-    "v": 7,
-    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas",
+    "v": 7.0,
+    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas · Verificador: Enfoque de migración incremental con validación de comportamiento mediante tests.",
     "evidence": false
    },
    "potencial": {
-    "v": 6,
-    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código",
+    "v": 6.0,
+    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código · Verificador: Alta utilidad para modernización de sistemas legacy a Rust.",
     "evidence": false
    },
    "mercado": {
-    "v": 4,
-    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente",
+    "v": 4.5,
+    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente · Verificador: Nicho técnico especializado en ingeniería de software.",
     "evidence": false
    },
    "equipo": {
-    "v": 3,
-    "why": "No se dispone de información pública sobre el equipo fundador",
+    "v": 3.0,
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: Desarrollador individual (Erkam Yaman), sin estructura corporativa pública.",
     "evidence": false
    },
    "financiacion": {
-    "v": 2,
-    "why": "No hay datos de financiación externa o modelo de negocio",
+    "v": 1.5,
+    "why": "No hay datos de financiación externa o modelo de negocio · Verificador: Proyecto personal sin modelo de negocio ni financiación externa.",
     "evidence": false
    },
    "comunidad": {
-    "v": 6,
-    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa",
+    "v": 6.5,
+    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa · Verificador: 7.2k estrellas y 585 forks en GitHub reflejan una comunidad técnica activa.",
     "evidence": true
    },
    "adopcion": {
-    "v": 5,
-    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción",
+    "v": 5.0,
+    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción · Verificador: Uso orgánico por desarrolladores, sin métricas de adopción empresarial.",
     "evidence": false
    },
    "competencia": {
-    "v": 5,
-    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas",
+    "v": 5.0,
+    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas · Verificador: Existen herramientas de refactorización, pero este enfoque es específico.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 7,
-    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original",
+    "v": 6.5,
+    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original · Verificador: Depende de la calidad de los tests del usuario para garantizar la integridad.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 9,
-    "why": "No implica inversión económica directa",
+    "v": 9.5,
+    "why": "No implica inversión económica directa · Verificador: Al ser software gratuito, no existe riesgo de pérdida de capital.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 5,
-    "why": "No se menciona soporte o documentación en español",
+    "v": 5.0,
+    "why": "No se menciona soporte o documentación en español · Verificador: Disponible globalmente al ser software open source. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
     "evidence": false
    },
    "salida": {
-    "v": 8,
-    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso",
+    "v": 9.0,
+    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso · Verificador: No hay lock-in; el código migrado pertenece al usuario.",
     "evidence": true
    }
   },
@@ -3850,6 +5036,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "falta_soporte_comercial",
+    "severity": "baja",
+    "detail": "Al ser un proyecto personal, no cuenta con soporte técnico garantizado ni SLAs."
    }
   ],
   "distrust": [],
@@ -3875,10 +5066,12 @@
    "forks": 508
   },
   "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
-   "sources": []
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una herramienta de software, no un servicio financiero ni de inversión. No requiere supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://github.com/erkamyaman/rust-anything/blob/main/LICENSE"
+   ]
   },
   "sources": [
    {
@@ -3893,17 +5086,20 @@
   "discoveredVia": "GitHub",
   "aiModels": {
    "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
-   "verdict": "sin verificar",
-   "model": null
+   "verdict": "confirmada",
+   "reason": "El proyecto es una herramienta de código abierto alojada en GitHub. Se confirma su naturaleza como software libre (MIT License) y su utilidad técnica para migración de código. No es una entidad financiera, por lo que no requiere registro en CNMV ni MiCA.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
   },
-  "discoveredAt": "2026-11-20",
+  "discoveredAt": "2026-11-21",
   "id": "web-github-com-erkamyaman-rust-anything",
-  "isNew": true,
+  "isNew": false,
   "score": 40,
-  "rawScore": 44.6,
+  "rawScore": 45.5,
   "tier": "especulativa",
   "tierLabel": "Especulativa",
   "humanReview": false,
@@ -3922,6 +5118,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "falta_soporte_comercial",
+    "severity": "baja",
+    "detail": "Al ser un proyecto personal, no cuenta con soporte técnico garantizado ni SLAs."
    }
   ],
   "evidenced": 4,
@@ -3932,7 +5133,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas",
+    "why": "Enfoque sistemático para migrar a Rust con pruebas de comportamiento integradas · Verificador: Enfoque de migración incremental con validación de comportamiento mediante tests.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3942,7 +5143,7 @@
     "weight": 12,
     "value": 3.0,
     "points": 3.6,
-    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código",
+    "why": "Puede reducir costes de infraestructura al mejorar eficiencia del código · Verificador: Alta utilidad para modernización de sistemas legacy a Rust.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3952,7 +5153,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente",
+    "why": "Nicho de desarrolladores que buscan migrar a Rust, limitado pero creciente · Verificador: Nicho técnico especializado en ingeniería de software.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3962,7 +5163,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "No se dispone de información pública sobre el equipo fundador",
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: Desarrollador individual (Erkam Yaman), sin estructura corporativa pública.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -3970,9 +5171,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 2.0,
-    "points": 1.4,
-    "why": "No hay datos de financiación externa o modelo de negocio",
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de financiación externa o modelo de negocio · Verificador: Proyecto personal sin modelo de negocio ni financiación externa.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -3980,9 +5181,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 6.0,
-    "points": 4.2,
-    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa",
+    "value": 6.5,
+    "points": 4.5,
+    "why": "6507 estrellas y 508 forks en GitHub indican una comunidad activa · Verificador: 7.2k estrellas y 585 forks en GitHub reflejan una comunidad técnica activa.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3992,7 +5193,7 @@
     "weight": 9,
     "value": 3.0,
     "points": 2.7,
-    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción",
+    "why": "Algunos proyectos lo usan, pero no hay métricas oficiales de adopción · Verificador: Uso orgánico por desarrolladores, sin métricas de adopción empresarial.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -4002,7 +5203,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas",
+    "why": "Existen otras herramientas de migración a Rust, pero ninguna con el mismo enfoque de pruebas continuas · Verificador: Existen herramientas de refactorización, pero este enfoque es específico.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -4010,9 +5211,9 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original",
+    "value": 6.5,
+    "points": 5.2,
+    "why": "Código abierto permite auditoría; sin embargo, depende de la calidad de los tests del proyecto original · Verificador: Depende de la calidad de los tests del usuario para garantizar la integridad.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -4020,19 +5221,19 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 9.0,
-    "points": 9.0,
-    "why": "No implica inversión económica directa",
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No implica inversión económica directa · Verificador: Al ser software gratuito, no existe riesgo de pérdida de capital.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "No se menciona soporte o documentación en español",
+    "why": "No se menciona soporte o documentación en español · Verificador: Disponible globalmente al ser software open source. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -4040,9 +5241,9 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso",
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Al ser software libre, no hay lock‑in ni barreras para abandonar su uso · Verificador: No hay lock-in; el código migrado pertenece al usuario.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -4106,13 +5307,22 @@
    "basis": "capital"
   },
   "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
+   "available": true,
+   "changes": {
+    "stars": 0.0,
+    "forks": 0.0
+   },
+   "label": "Estable",
+   "since": "2026-11-20T20:33:04Z"
   },
   "metrics": [
    {
     "t": "2026-11-20T20:33:04Z",
+    "stars": 6507.0,
+    "forks": 508.0
+   },
+   {
+    "t": "2026-11-21T19:30:11Z",
     "stars": 6507.0,
     "forks": 508.0
    }
@@ -4122,10 +5332,10 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: rust-anything\nCATEGORÍA: ia_tecnologia · herramientas_de_programacion\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://github.com/erkamyaman/rust-anything\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Facilita la migración a Rust, un lenguaje con alta demanda por su seguridad y rendimiento\nMOTIVOS PARA DESCONFIAR: No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Visitar https://github.com/erkamyaman/rust-anything; Leer la documentación y los ejemplos; Clonar el repositorio y probar la herramienta en un proyecto pequeño; Contribuir con mejoras o reportar issues\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de tiempo si el proyecto original carece de pruebas automatizadas; Posibles incompatibilidades con dependencias específicas del lenguaje original\nFUENTES: https://www.npmjs.com/package/rust-anything | https://github.com/erkamyaman/rust-anything",
+  "alertText": "NOMBRE: rust-anything\nCATEGORÍA: ia_tecnologia · herramientas_de_programacion\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://github.com/erkamyaman/rust-anything\nENLACE DE PARTICIPACIÓN: https://github.com/erkamyaman/rust-anything\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: disponible\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Facilita la migración a Rust, un lenguaje con alta demanda por su seguridad y rendimiento\nMOTIVOS PARA DESCONFIAR: No se ha encontrado información explícita sobre la licencia del proyecto, lo que puede limitar su uso comercial; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Al ser un proyecto personal, no cuenta con soporte técnico garantizado ni SLAs.\nCÓMO PARTICIPAR: Visitar https://github.com/erkamyaman/rust-anything; Leer la documentación y los ejemplos; Clonar el repositorio y probar la herramienta en un proyecto pequeño; Contribuir con mejoras o reportar issues\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de tiempo si el proyecto original carece de pruebas automatizadas; Posibles incompatibilidades con dependencias específicas del lenguaje original\nFUENTES: https://www.npmjs.com/package/rust-anything | https://github.com/erkamyaman/rust-anything",
   "firstSeenAt": "2026-11-20T20:33:04Z",
-  "lastSeenAt": "2026-11-20T20:33:04Z",
-  "runId": "run-20261120-2033",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
   "aliases": [
    "web-npmjs-com"
   ]
@@ -4518,368 +5728,6 @@
   "runId": "run-20261121-0810",
   "aliases": [
    "web-cornholenews-news"
-  ]
- },
- {
-  "name": "DeepSeek AI Chat Demo",
-  "category": "ia_tecnologia",
-  "subcategory": "demo",
-  "kind": "pasiva",
-  "description": "Demo interactivo de la API de DeepSeek AI que permite probar conversaciones con el modelo de lenguaje. Disponible vía web y código abierto en GitHub.",
-  "officialUrl": "https://deepseek-ai.github.io/chat-demo/",
-  "participateUrl": null,
-  "country": "desconocido",
-  "spainAvailability": "desconocida",
-  "spainNotes": "No se dispone de información sobre disponibilidad o restricciones específicas en España.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "Ninguno",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": false,
-  "liquidity": "no aplica",
-  "exitNotes": "No aplica, es un recurso gratuito y no una inversión financiera.",
-  "horizon": "corto plazo",
-  "deadline": null,
-  "potential": "baja",
-  "difficulty": "baja",
-  "timeNeeded": "poco tiempo",
-  "subscores": {
-   "novedad": {
-    "v": 7,
-    "why": "Demo reciente de la API de DeepSeek AI",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 5,
-    "why": "Solo permite probar la API, sin funcionalidades comerciales directas",
-    "evidence": false
-   },
-   "mercado": {
-    "v": 4,
-    "why": "Mercado de demos de IA es amplio y competitivo",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 3,
-    "why": "No se dispone de información sobre el equipo detrás del proyecto",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 2,
-    "why": "No hay datos de financiación pública o privada",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 6,
-    "why": "5116 estrellas y 1171 forks en GitHub indican una comunidad activa",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 3,
-    "why": "Uso limitado a usuarios que prueban la demo",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 4,
-    "why": "Existen múltiples demos y plataformas de IA similares",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 5,
-    "why": "Código abierto, pero depende de la infraestructura de DeepSeek",
-    "evidence": false
-   },
-   "riesgo_financiero": {
-    "v": 8,
-    "why": "No implica inversión monetaria",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 3,
-    "why": "Desconocida la adaptación o localización para España",
-    "evidence": false
-   },
-   "salida": {
-    "v": 9,
-    "why": "No hay salida financiera, es un recurso gratuito",
-    "evidence": true
-   }
-  },
-  "redFlags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "distrust": [],
-  "whyInteresting": [
-   "Permite experimentar con la API de DeepSeek AI sin coste",
-   "Código abierto y fácil de probar"
-  ],
-  "howToParticipate": [
-   "Acceder a https://deepseek-ai.github.io/chat-demo/",
-   "Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo",
-   "Seguir la documentación para probar la API"
-  ],
-  "lossCauses": [],
-  "earlySignals": [],
-  "signals": {
-   "stars": 5116,
-   "forks": 1171
-  },
-  "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "Pendiente de verificación de cumplimiento legal en España",
-   "sources": []
-  },
-  "sources": [
-   {
-    "title": "GitHub",
-    "url": "https://deepseek-ai.github.io/chat-demo/"
-   },
-   {
-    "title": "github.com",
-    "url": "https://github.com/deepseek-ai/chat-demo"
-   }
-  ],
-  "discoveredVia": "GitHub",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
-  },
-  "verification": {
-   "verdict": "sin verificar",
-   "model": null
-  },
-  "discoveredAt": "2026-11-20",
-  "id": "web-deepseek-ai-github-io",
-  "isNew": true,
-  "score": 39,
-  "rawScore": 44.4,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
-  ],
-  "critical": false,
-  "risk": "medio",
-  "flags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "evidenced": 4,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Demo reciente de la API de DeepSeek AI",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 3.0,
-    "points": 3.6,
-    "why": "Solo permite probar la API, sin funcionalidades comerciales directas",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Mercado de demos de IA es amplio y competitivo",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "No se dispone de información sobre el equipo detrás del proyecto",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 2.0,
-    "points": 1.4,
-    "why": "No hay datos de financiación pública o privada",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 6.0,
-    "points": 4.2,
-    "why": "5116 estrellas y 1171 forks en GitHub indican una comunidad activa",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Uso limitado a usuarios que prueban la demo",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Existen múltiples demos y plataformas de IA similares",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Código abierto, pero depende de la infraestructura de DeepSeek",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 8.0,
-    "points": 8.0,
-    "why": "No implica inversión monetaria",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Desconocida la adaptación o localización para España",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "No hay salida financiera, es un recurso gratuito",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-20T20:33:04Z",
-    "stars": 5116.0,
-    "forks": 1171.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: DeepSeek AI Chat Demo\nCATEGORÍA: ia_tecnologia · demo\nFECHA DE DESCUBRIMIENTO: 2026-11-20\nWEB OFICIAL: https://deepseek-ai.github.io/chat-demo/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite experimentar con la API de DeepSeek AI sin coste; Código abierto y fácil de probar\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Acceder a https://deepseek-ai.github.io/chat-demo/; Explorar la interfaz web o clonar el repositorio desde https://github.com/deepseek-ai/chat-demo; Seguir la documentación para probar la API\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://deepseek-ai.github.io/chat-demo/ | https://github.com/deepseek-ai/chat-demo",
-  "firstSeenAt": "2026-11-20T20:33:04Z",
-  "lastSeenAt": "2026-11-20T20:33:04Z",
-  "runId": "run-20261120-2033",
-  "aliases": [
-   "web-deepseek-ai-github-io"
   ]
  },
  {
@@ -18028,6 +18876,478 @@
   ]
  },
  {
+  "name": "FIONA",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "pasiva",
+  "description": "FIONA es un token ERC‑20 listado en GeckoTerminal con apenas 42 h de existencia. Presenta una liquidez de ~80 000 USD y un volumen de 24 h superior a 780 000 USD, lo que indica actividad comercial reciente. No se dispone de información oficial ni de datos sobre el equipo o la hoja de ruta.",
+  "officialUrl": null,
+  "participateUrl": "https://www.geckoterminal.com/eth/pools/0xac0734f7e5af840adf41d1d3719a12a5ceb53ff4cb7f025f0480ad3fb8bc2655",
+  "country": "desconocido",
+  "spainAvailability": "no_autorizado",
+  "spainNotes": "No hay información pública sobre registro o autorización del token en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": null,
+   "extraNotes": "Se asume que el único coste adicional son las tarifas de gas de Ethereum, variables y no especificadas.",
+   "recommended": 1000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en el mismo pool, pero la liquidez limitada y el bajo número de holders pueden generar slippage significativo.",
+  "horizon": "corto‑medio plazo",
+  "deadline": null,
+  "potential": "alto potencial de revalorización dado el bajo precio y el fuerte volumen, pero con alta incertidumbre por falta de datos oficiales",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para adquirir vía un exchange descentralizado",
+  "subscores": {
+   "novedad": {
+    "v": 8.5,
+    "why": "Token creado hace menos de 2 días (42 h) · Verificador: Token con menos de 48 horas de existencia.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Precio muy bajo y volumen 24 h > 780 k USD sugieren interés especulativo · Verificador: El alto volumen inicial es común en esquemas de especulación extrema; sin utilidad, el potencial es puramente azaroso. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.0,
+    "why": "Liquidez de ~80 k USD y 857 holders indican mercado incipiente · Verificador: Liquidez baja y alta concentración de riesgo. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información sobre el equipo o fundadores · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "FDV de ~995 k USD, sin datos de rondas de inversión públicas · Verificador: No existe financiación institucional; es un despliegue de contrato inteligente sin respaldo. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "857 holders y 1 044 compras en 24 h, pero sin canales oficiales visibles · Verificador: Actividad especulativa en DEX sin canales de comunicación oficiales verificables.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "Sin referencias a integraciones o casos de uso reales · Verificador: Cero adopción real o casos de uso documentados. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.0,
+    "why": "Mercado de tokens ERC‑20 altamente competido · Verificador: Mercado saturado de tokens sin valor intrínseco. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Código del contrato no auditado y ausencia de auditorías públicas · Verificador: Ausencia de auditorías y código no verificado.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta volatilidad, posibilidad de pérdida total y falta de respaldo institucional · Verificador: Riesgo máximo de pérdida total (rug-pull, honeypot).",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "Desconocida la regulación del token en España y ausencia de información local · Verificador: No cumple con estándares MiCA ni registros de la CNMV.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.0,
+    "why": "Liquidez media permite venta, pero con posible slippage y sin exchanges centralizados listados · Verificador: Dependencia total de la liquidez del pool en Uniswap; riesgo de slippage extremo.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_equipo",
+    "severity": "critica",
+    "detail": "No se ha identificado al equipo ni a los fundadores del proyecto"
+   },
+   {
+    "code": "ausencia_de_auditoria",
+    "severity": "alta",
+    "detail": "No hay auditorías de seguridad públicas del contrato inteligente"
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "media",
+    "detail": "No se conoce el estatus regulatorio del token en la UE o España"
+   },
+   {
+    "code": "falta_de_equipo",
+    "severity": "critica",
+    "detail": "Anonimato total de los creadores."
+   },
+   {
+    "code": "ausencia_de_auditoria",
+    "severity": "alta",
+    "detail": "El contrato inteligente no ha sido auditado por terceros."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "La falta de bloqueo de liquidez o transparencia aumenta el riesgo de estafa."
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "media",
+    "detail": "No cumple con los requisitos de transparencia para activos digitales en España."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación sin presencia web, equipo identificado ni auditorías. Presenta características típicas de 'memecoin' de alta volatilidad y riesgo extremo de pérdida total. No existe información oficial que permita verificar su legitimidad o cumplimiento normativo."
+   }
+  ],
+  "distrust": [
+   "ausencia de página web oficial",
+   "no se identifican perfiles de redes sociales verificables",
+   "falta de documentación técnica"
+  ],
+  "whyInteresting": [
+   "alto volumen de trading en sus primeras 24 h",
+   "precio extremadamente bajo que permite comprar gran número de unidades con poco capital"
+  ],
+  "howToParticipate": [
+   "Acceder a un wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.)",
+   "Conectar el wallet a un DEX como Uniswap o SushiSwap",
+   "Buscar el par FIONA/ETH usando la URL proporcionada",
+   "Confirmar la transacción pagando gas y recibir los tokens"
+  ],
+  "lossCauses": [
+   "slippage por liquidez limitada",
+   "posible rug‑pull o vulnerabilidad del contrato",
+   "cambios regulatorios que impidan la negociación en España"
+  ],
+  "earlySignals": [
+   "volumen 24 h > 780 k USD",
+   "12,5 % de los holders están en el top 10% del pool"
+  ],
+  "signals": {
+   "volume24hUsd": 783450.680856704
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "El activo no figura en registros de la CNMV ni cumple con la normativa MiCA. Se considera un activo especulativo no regulado.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "eth",
+   "tokenAddress": "0xbbbb0d0797b8a758d3b0c2fea74cd6b517134b15",
+   "priceUsd": 0.00100984049830901,
+   "liquidityUsd": 80151.8135,
+   "volume24hUsd": 783450.680856704,
+   "fdvUsd": 995190.6872,
+   "ageHours": 42.1,
+   "buys24h": 1044,
+   "sells24h": 762,
+   "pairUrl": "https://www.geckoterminal.com/eth/pools/0xac0734f7e5af840adf41d1d3719a12a5ceb53ff4cb7f025f0480ad3fb8bc2655",
+   "top10Pct": 12.5,
+   "holders": 857
+  },
+  "securityChecks": [
+   {
+    "tool": "GoPlus",
+    "url": "https://gopluslabs.io/token-security/1/0xbbbb0d0797b8a758d3b0c2fea74cd6b517134b15"
+   },
+   {
+    "tool": "honeypot.is",
+    "error": "HTTP 404"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/eth/pools/0xac0734f7e5af840adf41d1d3719a12a5ceb53ff4cb7f025f0480ad3fb8bc2655"
+   },
+   {
+    "title": "CNMV - Advertencias",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es un token de muy reciente creación sin presencia web, equipo identificado ni auditorías. Presenta características típicas de 'memecoin' de alta volatilidad y riesgo extremo de pérdida total. No existe información oficial que permita verificar su legitimidad o cumplimiento normativo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-eth-0xbbbb0d0797b8a758d3b0c2fea74cd6b517134b15",
+  "isNew": true,
+  "score": 11,
+  "rawScore": 26.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_equipo",
+    "severity": "critica",
+    "detail": "No se ha identificado al equipo ni a los fundadores del proyecto"
+   },
+   {
+    "code": "ausencia_de_auditoria",
+    "severity": "alta",
+    "detail": "No hay auditorías de seguridad públicas del contrato inteligente"
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "media",
+    "detail": "No se conoce el estatus regulatorio del token en la UE o España"
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "La falta de bloqueo de liquidez o transparencia aumenta el riesgo de estafa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación sin presencia web, equipo identificado ni auditorías. Presenta características típicas de 'memecoin' de alta volatilidad y riesgo extremo de pérdida total. No existe información oficial que permita verificar su legitimidad o cumplimiento normativo."
+   },
+   {
+    "code": "posible_wash_trading",
+    "severity": "alta",
+    "detail": "Volumen 24 h 10 veces la liquidez: posible volumen artificial."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "Token creado hace menos de 2 días (42 h) · Verificador: Token con menos de 48 horas de existencia.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Precio muy bajo y volumen 24 h > 780 k USD sugieren interés especulativo · Verificador: El alto volumen inicial es común en esquemas de especulación extrema; sin utilidad, el potencial es puramente azaroso. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Liquidez de ~80 k USD y 857 holders indican mercado incipiente · Verificador: Liquidez baja y alta concentración de riesgo. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información sobre el equipo o fundadores · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "FDV de ~995 k USD, sin datos de rondas de inversión públicas · Verificador: No existe financiación institucional; es un despliegue de contrato inteligente sin respaldo. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 4.0,
+    "points": 2.8,
+    "why": "857 holders y 1 044 compras en 24 h, pero sin canales oficiales visibles · Verificador: Actividad especulativa en DEX sin canales de comunicación oficiales verificables.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Sin referencias a integraciones o casos de uso reales · Verificador: Cero adopción real o casos de uso documentados. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Mercado de tokens ERC‑20 altamente competido · Verificador: Mercado saturado de tokens sin valor intrínseco. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Código del contrato no auditado y ausencia de auditorías públicas · Verificador: Ausencia de auditorías y código no verificado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad, posibilidad de pérdida total y falta de respaldo institucional · Verificador: Riesgo máximo de pérdida total (rug-pull, honeypot).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Desconocida la regulación del token en España y ausencia de información local · Verificador: No cumple con estándares MiCA ni registros de la CNMV.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Liquidez media permite venta, pero con posible slippage y sin exchanges centralizados listados · Verificador: Dependencia total de la liquidez del pool en Uniswap; riesgo de slippage extremo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 1000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -1000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 2000.0,
+     "netEur": 1871.41,
+     "exitImpactPct": 5.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1990381
+    },
+    {
+     "multiple": 5,
+     "grossEur": 5000.0,
+     "netEur": 4271.28,
+     "exitImpactPct": 13.7,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 4975953
+    },
+    {
+     "multiple": 10,
+     "grossEur": 10000.0,
+     "netEur": 7185.13,
+     "exitImpactPct": 27.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 9951907
+    },
+    {
+     "multiple": 20,
+     "grossEur": 20000.0,
+     "netEur": 8940.53,
+     "exitImpactPct": 54.8,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 19903814
+    },
+    {
+     "multiple": 50,
+     "grossEur": 50000.0,
+     "netEur": 495.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 49759534
+    },
+    {
+     "multiple": 100,
+     "grossEur": 100000.0,
+     "netEur": 990.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 99519069
+    },
+    {
+     "multiple": 300,
+     "grossEur": 300000.0,
+     "netEur": 2970.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 298557206
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T19:30:11Z",
+    "priceUsd": 0.00100984049830901,
+    "liquidityUsd": 80151.8135,
+    "volume24hUsd": 783450.680856704,
+    "fdvUsd": 995190.6872,
+    "holders": 857.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: FIONA\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.geckoterminal.com/eth/pools/0xac0734f7e5af840adf41d1d3719a12a5ceb53ff4cb7f025f0480ad3fb8bc2655\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no_autorizado\nCOSTE DE ENTRADA: 0,00 € (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 1.000,00 €\nPOTENCIAL: alto potencial de revalorización dado el bajo precio y el fuerte volumen, pero con alta incertidumbre por falta de datos oficiales\nPUNTUACIÓN: 11/100 · Descartar\nRIESGO: crítico\nPLAZO: corto‑medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alto volumen de trading en sus primeras 24 h; precio extremadamente bajo que permite comprar gran número de unidades con poco capital\nMOTIVOS PARA DESCONFIAR: No se ha identificado al equipo ni a los fundadores del proyecto; No hay auditorías de seguridad públicas del contrato inteligente; No se conoce el estatus regulatorio del token en la UE o España; La falta de bloqueo de liquidez o transparencia aumenta el riesgo de estafa.; El verificador tiene dudas: El activo es un token de muy reciente creación sin presencia web, equipo identificado ni auditorías. Presenta características típicas de 'memecoin' de alta volatilidad y riesgo extremo de pérdida total. No existe información oficial que permita verificar su legitimidad o cumplimiento normativo.; Volumen 24 h 10 veces la liquidez: posible volumen artificial.; ausencia de página web oficial; no se identifican perfiles de redes sociales verificables; falta de documentación técnica\nCÓMO PARTICIPAR: Acceder a un wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.); Conectar el wallet a un DEX como Uniswap o SushiSwap; Buscar el par FIONA/ETH usando la URL proporcionada; Confirmar la transacción pagando gas y recibir los tokens\nQUÉ PODRÍA HACERME PERDER EL DINERO: slippage por liquidez limitada; posible rug‑pull o vulnerabilidad del contrato; cambios regulatorios que impidan la negociación en España\nFUENTES: https://www.geckoterminal.com/eth/pools/0xac0734f7e5af840adf41d1d3719a12a5ceb53ff4cb7f025f0480ad3fb8bc2655 | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "tok-eth-0xbbbb0d0797b8a758d3b0c2fea74cd6b517134b15"
+  ]
+ },
+ {
   "name": "Codemany",
   "category": "ia_tecnologia",
   "subcategory": "devops",
@@ -22964,6 +24284,834 @@
   ]
  },
  {
+  "name": "Doddle",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Herramienta que permite dibujar sobre videos para generar efectos 3D. Presentada en Product Hunt como una solución creativa para la edición de contenido visual.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se han encontrado datos sobre precios o planes de suscripción.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es un activo financiero.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 5.5,
+    "why": "Ofrece una funcionalidad de dibujo en tiempo real sobre video, poco común en herramientas de edición tradicionales. · Verificador: La idea de dibujo sobre video para efectos 3D es interesante, pero no hay prueba de funcionamiento.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "El mercado de edición de video está en crecimiento, pero la adopción depende de la facilidad de uso y la integración con plataformas existentes. · Verificador: Sin producto funcional ni equipo visible, el potencial es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Existe demanda de herramientas creativas para creadores de contenido, aunque el segmento está fragmentado. · Verificador: El mercado de edición de video es amplio, pero la herramienta no demuestra tracción.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información pública sobre el equipo fundador o su experiencia. · Verificador: No existe información pública sobre los desarrolladores. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se han encontrado datos de rondas de inversión o financiación externa. · Verificador: No hay registros de financiación ni modelo de negocio. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Aún no hay indicios de una comunidad activa alrededor del producto. · Verificador: Inexistente en canales públicos. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Sin métricas de usuarios activos o casos de uso publicados. · Verificador: No hay métricas de uso. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Compite con editores de video tradicionales y herramientas de efectos visuales, pero su enfoque es específico. · Verificador: Existen soluciones establecidas (Adobe, DaVinci) frente a las cuales esta herramienta no compite actualmente.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Requiere procesamiento de video en tiempo real, lo que puede implicar desafíos de rendimiento y compatibilidad. · Verificador: Alta incertidumbre sobre la viabilidad del software al no haber acceso al mismo. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "No implica inversión financiera directa; el riesgo se limita a la posible falta de valor percibido si se paga por un servicio que no cumple expectativas. · Verificador: Al no haber producto, no hay riesgo de inversión, pero sí de pérdida de tiempo. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Sin información sobre planes de expansión o localización para el mercado español. · Verificador: Sin información de disponibilidad. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No aplica, al no ser un activo financiero, no hay proceso de salida de inversión. · Verificador: No aplica al ser una herramienta de software sin mercado secundario. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "No se ha encontrado un dominio oficial funcional para el producto."
+   },
+   {
+    "code": "LACK_OF_TRANSPARENCY",
+    "severity": "media",
+    "detail": "Ausencia total de información sobre el equipo o la empresa detrás del desarrollo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web verificable, sitio oficial activo o información corporativa. El enlace de Product Hunt redirige a una página sin información operativa, lo que impide confirmar su existencia real, modelo de negocio o disponibilidad en España."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Innovación en edición de video mediante dibujo directo para crear efectos 3D, potencial atractivo para creadores de contenido y marketers."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt para Doddle",
+   "Buscar el sitio oficial de Doddle (enlace no disponible en la fuente)",
+   "Registrarse para recibir noticias o solicitar acceso beta si está disponible"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al tratarse de una herramienta de software (SaaS) y no de un producto financiero, no está sujeta a supervisión de la CNMV o registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/doddle-3"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La herramienta carece de presencia web verificable, sitio oficial activo o información corporativa. El enlace de Product Hunt redirige a una página sin información operativa, lo que impide confirmar su existencia real, modelo de negocio o disponibilidad en España.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 25
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-doddle",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 13.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "No se ha encontrado un dominio oficial funcional para el producto."
+   },
+   {
+    "code": "LACK_OF_TRANSPARENCY",
+    "severity": "media",
+    "detail": "Ausencia total de información sobre el equipo o la empresa detrás del desarrollo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web verificable, sitio oficial activo o información corporativa. El enlace de Product Hunt redirige a una página sin información operativa, lo que impide confirmar su existencia real, modelo de negocio o disponibilidad en España."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Ofrece una funcionalidad de dibujo en tiempo real sobre video, poco común en herramientas de edición tradicionales. · Verificador: La idea de dibujo sobre video para efectos 3D es interesante, pero no hay prueba de funcionamiento.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "El mercado de edición de video está en crecimiento, pero la adopción depende de la facilidad de uso y la integración con plataformas existentes. · Verificador: Sin producto funcional ni equipo visible, el potencial es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Existe demanda de herramientas creativas para creadores de contenido, aunque el segmento está fragmentado. · Verificador: El mercado de edición de video es amplio, pero la herramienta no demuestra tracción.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información pública sobre el equipo fundador o su experiencia. · Verificador: No existe información pública sobre los desarrolladores. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se han encontrado datos de rondas de inversión o financiación externa. · Verificador: No hay registros de financiación ni modelo de negocio. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Aún no hay indicios de una comunidad activa alrededor del producto. · Verificador: Inexistente en canales públicos. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin métricas de usuarios activos o casos de uso publicados. · Verificador: No hay métricas de uso. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con editores de video tradicionales y herramientas de efectos visuales, pero su enfoque es específico. · Verificador: Existen soluciones establecidas (Adobe, DaVinci) frente a las cuales esta herramienta no compite actualmente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Requiere procesamiento de video en tiempo real, lo que puede implicar desafíos de rendimiento y compatibilidad. · Verificador: Alta incertidumbre sobre la viabilidad del software al no haber acceso al mismo. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No implica inversión financiera directa; el riesgo se limita a la posible falta de valor percibido si se paga por un servicio que no cumple expectativas. · Verificador: Al no haber producto, no hay riesgo de inversión, pero sí de pérdida de tiempo. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin información sobre planes de expansión o localización para el mercado español. · Verificador: Sin información de disponibilidad. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica, al no ser un activo financiero, no hay proceso de salida de inversión. · Verificador: No aplica al ser una herramienta de software sin mercado secundario. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Doddle\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en edición de video mediante dibujo directo para crear efectos 3D, potencial atractivo para creadores de contenido y marketers.\nMOTIVOS PARA DESCONFIAR: No se ha encontrado un dominio oficial funcional para el producto.; Ausencia total de información sobre el equipo o la empresa detrás del desarrollo.; El verificador tiene dudas: La herramienta carece de presencia web verificable, sitio oficial activo o información corporativa. El enlace de Product Hunt redirige a una página sin información operativa, lo que impide confirmar su existencia real, modelo de negocio o disponibilidad en España.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt para Doddle; Buscar el sitio oficial de Doddle (enlace no disponible en la fuente); Registrarse para recibir noticias o solicitar acceso beta si está disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/doddle-3",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "news-www-producthunt-com-products-doddle-3"
+  ]
+ },
+ {
+  "name": "Trump $1 Coin",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "activa",
+  "description": "Token temático de Donald Trump en la cadena Solana. No dispone de página oficial accesible y la información disponible es escasa. Su capitalización y liquidez son bajas, lo que implica alto riesgo y posible volatilidad especulativa.",
+  "officialUrl": "https://axiom.trade/pulse?chain=sol&pulseChains=sol&trackerChains=sol,robinhood",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no_disponible_regulado",
+  "spainNotes": "No hay información pública sobre disponibilidad o regulación en España",
+  "costs": {
+   "minEntry": 0.01,
+   "extra": 0.001,
+   "extraNotes": "Comisiones de la red Solana (bajas) y posibles tarifas del DEX",
+   "recommended": 100,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEX, pero la baja liquidez y el bajo volumen pueden generar slippage y dificultar la salida completa del capital",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Alto potencial especulativo por el hype alrededor del tema, pero sin fundamentos claros",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para adquirir a través de un DEX",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Token temático de Trump, sin precedentes claros · Verificador: Es una memecoin genérica más sobre temática política sin innovación técnica. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Precio muy bajo y alta volatilidad potencial · Verificador: El potencial es puramente especulativo y dependiente de manipulación de mercado. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.5,
+    "why": "Liquidity USD 54,478.83 y volumen 24h USD 50,638.66 · Verificador: Liquidez muy baja (aprox. 54k USD), altamente susceptible a manipulación.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información sobre el equipo desarrollador · Verificador: Equipo anónimo, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de rondas de financiación o inversores · Verificador: No existe financiación institucional; es un token lanzado sin respaldo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Único enlace a Twitter de Polymarket relacionado · Verificador: Comunidad fragmentada en redes sociales sin canal oficial verificado.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1.5,
+    "why": "Sin casos de uso o adopción reportados · Verificador: Cero adopción real; solo uso especulativo en DEX.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Existe gran cantidad de memecoins similares en Solana · Verificador: Mercado saturado de tokens similares en Solana.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "No se encuentran auditorías ni revisiones de código públicas · Verificador: El contrato no tiene auditorías; riesgo de 'rug pull' según RugCheck.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "Baja capitalización (FDV 342,787 USD) y alta volatilidad · Verificador: Riesgo extremo de pérdida total del capital invertido.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay información sobre disponibilidad o restricciones en España · Verificador: No regulado en España; acceso solo a través de DEX no supervisados.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.5,
+    "why": "Liquidez media, pero posible slippage al intentar vender grandes cantidades · Verificador: La baja liquidez hace que la salida sea difícil sin impactar el precio (slippage).",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo, auditorías o hoja de ruta"
+   },
+   {
+    "code": "potential_scam",
+    "severity": "media",
+    "detail": "Token con temática política y sin fundamentos claros, típico de proyectos de alto riesgo"
+   },
+   {
+    "code": "lack_of_information",
+    "severity": "critica",
+    "detail": "Ausencia total de equipo, roadmap o entidad legal."
+   },
+   {
+    "code": "potential_scam",
+    "severity": "alta",
+    "detail": "El análisis de RugCheck indica un riesgo muy elevado de manipulación."
+   },
+   {
+    "code": "unregulated_asset",
+    "severity": "alta",
+    "detail": "Activo no registrado bajo normativa MiCA ni supervisado por la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es una memecoin de alta volatilidad sin equipo, sin utilidad y con un riesgo extremo de pérdida total. La URL oficial proporcionada en la ficha es un agregador de datos (Axiom/DexScreener) y no una página web del proyecto, lo que confirma la ausencia de una entidad responsable."
+   }
+  ],
+  "distrust": [
+   "Falta de información del equipo y ausencia de auditorías externas"
+  ],
+  "whyInteresting": [
+   "Tema de Trump puede generar hype y movimientos especulativos rápidos"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Solana (ej. Phantom).",
+   "2. Comprar SOL en un exchange y transferirlo a la wallet.",
+   "3. Conectar la wallet a un DEX de Solana (ej. Raydium o Orca).",
+   "4. Buscar el par del token 1 (address 2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump) y ejecutar la compra.",
+   "5. Guardar los tokens en la wallet y monitorizar el mercado."
+  ],
+  "lossCauses": [
+   "Baja liquidez que impida vender sin gran slippage",
+   "Pump‑and‑dump o manipulación de precio",
+   "Posible vulnerabilidad del contrato o hack"
+  ],
+  "earlySignals": [
+   "Incremento repentino del volumen 24h"
+  ],
+  "signals": {
+   "volume24hUsd": 50638.66
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "No es un instrumento financiero regulado. La CNMV no supervisa este tipo de activos cripto sin emisor identificado.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump",
+   "symbol": "1",
+   "name": "Trump $1 Coin",
+   "priceUsd": 0.0003513,
+   "liquidityUsd": 54478.83,
+   "volume24hUsd": 50638.66,
+   "fdvUsd": 342787,
+   "mcapUsd": 342787,
+   "ageHours": 887.2,
+   "buys24h": 695,
+   "sells24h": 710,
+   "pairUrl": "https://dexscreener.com/solana/aqn7ukkysnazns61dvw2q6hqmm7wifsayjbon6fvwhgf"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://axiom.trade/pulse?chain=sol&pulseChains=sol&trackerChains=sol,robinhood"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/aqn7ukkysnazns61dvw2q6hqmm7wifsayjbon6fvwhgf"
+   },
+   {
+    "title": "RugCheck (Análisis de seguridad)",
+    "url": "https://rugcheck.xyz/tokens/2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es una memecoin de alta volatilidad sin equipo, sin utilidad y con un riesgo extremo de pérdida total. La URL oficial proporcionada en la ficha es un agregador de datos (Axiom/DexScreener) y no una página web del proyecto, lo que confirma la ausencia de una entidad responsable.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-solana-2bcchqadi4qehwpkg3w13sicywwqpgkftnioutqvpump",
+  "isNew": true,
+  "score": 3,
+  "rawScore": 18.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo, auditorías o hoja de ruta"
+   },
+   {
+    "code": "potential_scam",
+    "severity": "media",
+    "detail": "Token con temática política y sin fundamentos claros, típico de proyectos de alto riesgo"
+   },
+   {
+    "code": "unregulated_asset",
+    "severity": "alta",
+    "detail": "Activo no registrado bajo normativa MiCA ni supervisado por la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es una memecoin de alta volatilidad sin equipo, sin utilidad y con un riesgo extremo de pérdida total. La URL oficial proporcionada en la ficha es un agregador de datos (Axiom/DexScreener) y no una página web del proyecto, lo que confirma la ausencia de una entidad responsable."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No es un instrumento financiero regulado. La CNMV no supervisa este tipo de activos cripto sin emisor identificado."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Token temático de Trump, sin precedentes claros · Verificador: Es una memecoin genérica más sobre temática política sin innovación técnica. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Precio muy bajo y alta volatilidad potencial · Verificador: El potencial es puramente especulativo y dependiente de manipulación de mercado. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Liquidity USD 54,478.83 y volumen 24h USD 50,638.66 · Verificador: Liquidez muy baja (aprox. 54k USD), altamente susceptible a manipulación.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información sobre el equipo desarrollador · Verificador: Equipo anónimo, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de rondas de financiación o inversores · Verificador: No existe financiación institucional; es un token lanzado sin respaldo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Único enlace a Twitter de Polymarket relacionado · Verificador: Comunidad fragmentada en redes sociales sin canal oficial verificado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.5,
+    "points": 1.4,
+    "why": "Sin casos de uso o adopción reportados · Verificador: Cero adopción real; solo uso especulativo en DEX.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existe gran cantidad de memecoins similares en Solana · Verificador: Mercado saturado de tokens similares en Solana.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se encuentran auditorías ni revisiones de código públicas · Verificador: El contrato no tiene auditorías; riesgo de 'rug pull' según RugCheck.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "Baja capitalización (FDV 342,787 USD) y alta volatilidad · Verificador: Riesgo extremo de pérdida total del capital invertido.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay información sobre disponibilidad o restricciones en España · Verificador: No regulado en España; acceso solo a través de DEX no supervisados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Liquidez media, pero posible slippage al intentar vender grandes cantidades · Verificador: La baja liquidez hace que la salida sea difícil sin impactar el precio (slippage).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 100.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -100.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 200.0,
+     "netEur": 196.4,
+     "exitImpactPct": 0.8,
+     "exitNote": null,
+     "impliedFdvUsd": 685574
+    },
+    {
+     "multiple": 5,
+     "grossEur": 500.0,
+     "netEur": 485.01,
+     "exitImpactPct": 2.0,
+     "exitNote": null,
+     "impliedFdvUsd": 1713935
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1000.0,
+     "netEur": 950.06,
+     "exitImpactPct": 4.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 3427870
+    },
+    {
+     "multiple": 20,
+     "grossEur": 2000.0,
+     "netEur": 1820.23,
+     "exitImpactPct": 8.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 6855740
+    },
+    {
+     "multiple": 50,
+     "grossEur": 5000.0,
+     "netEur": 3951.44,
+     "exitImpactPct": 20.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 17139350
+    },
+    {
+     "multiple": 100,
+     "grossEur": 10000.0,
+     "netEur": 5905.76,
+     "exitImpactPct": 40.3,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 34278700
+    },
+    {
+     "multiple": 300,
+     "grossEur": 30000.0,
+     "netEur": 297.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 102836100
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T19:30:11Z",
+    "priceUsd": 0.0003513,
+    "liquidityUsd": 54478.83,
+    "volume24hUsd": 50638.66,
+    "fdvUsd": 342787.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Trump $1 Coin\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://axiom.trade/pulse?chain=sol&pulseChains=sol&trackerChains=sol,robinhood\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no_disponible_regulado\nCOSTE DE ENTRADA: 0,01 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 100,00 €\nPOTENCIAL: Alto potencial especulativo por el hype alrededor del tema, pero sin fundamentos claros\nPUNTUACIÓN: 3/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Tema de Trump puede generar hype y movimientos especulativos rápidos\nMOTIVOS PARA DESCONFIAR: No se dispone de datos sobre el equipo, auditorías o hoja de ruta; Token con temática política y sin fundamentos claros, típico de proyectos de alto riesgo; Activo no registrado bajo normativa MiCA ni supervisado por la CNMV.; El verificador tiene dudas: El activo es una memecoin de alta volatilidad sin equipo, sin utilidad y con un riesgo extremo de pérdida total. La URL oficial proporcionada en la ficha es un agregador de datos (Axiom/DexScreener) y no una página web del proyecto, lo que confirma la ausencia de una entidad responsable.; No es un instrumento financiero regulado. La CNMV no supervisa este tipo de activos cripto sin emisor identificado.; Falta de información del equipo y ausencia de auditorías externas\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Solana (ej. Phantom).; 2. Comprar SOL en un exchange y transferirlo a la wallet.; 3. Conectar la wallet a un DEX de Solana (ej. Raydium o Orca).; 4. Buscar el par del token 1 (address 2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump) y ejecutar la compra.; 5. Guardar los tokens en la wallet y monitorizar el mercado.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Baja liquidez que impida vender sin gran slippage; Pump‑and‑dump o manipulación de precio; Posible vulnerabilidad del contrato o hack\nFUENTES: https://axiom.trade/pulse?chain=sol&pulseChains=sol&trackerChains=sol,robinhood | https://dexscreener.com/solana/aqn7ukkysnazns61dvw2q6hqmm7wifsayjbon6fvwhgf | https://rugcheck.xyz/tokens/2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "tok-solana-2bcchqadi4qehwpkg3w13sicywwqpgkftnioutqvpump"
+  ]
+ },
+ {
   "name": "Chainflip (FLIP)",
   "category": "cripto",
   "subcategory": "token",
@@ -23384,6 +25532,413 @@
   "runId": "run-20261121-1543",
   "aliases": [
    "news-www-theblock-co-news-defi-2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4"
+  ]
+ },
+ {
+  "name": "CYBER",
+  "category": "cripto",
+  "subcategory": "bridge",
+  "kind": "pasiva",
+  "description": "CYBER es un token asociado a un puente de activos que ha sido objeto de un presunto exploit de aproximadamente $1 millón. Las principales exchanges surcoreanas Upbit y Bithumb han congelado depósitos y retiros del token mientras investigan el incidente. La falta de información oficial y la incertidumbre regulatoria hacen que la oportunidad sea altamente riesgosa.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no disponible",
+  "spainNotes": "No hay información pública sobre disponibilidad o soporte del token en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "N/A",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": true,
+  "liquidity": "no aplica",
+  "exitNotes": "Sin información clara sobre mecanismos de salida; los exchanges principales están congelados.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto pero incierto",
+  "difficulty": "alta",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Token CYBER ha sido objeto de un presunto exploit de puente de $1 M · Verificador: El incidente de seguridad es reciente y de alto impacto en el ecosistema cripto.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Posible recuperación tras el incidente, pero sin datos concretos · Verificador: El potencial es puramente especulativo y negativo debido al exploit. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.0,
+    "why": "Mercado cripto volátil y sin datos de capitalización para CYBER · Verificador: La liquidez está comprometida por la suspensión de servicios en exchanges principales.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No se dispone de información pública sobre el equipo detrás de CYBER · Verificador: No existe información pública verificable sobre los desarrolladores o la entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "Sin datos de rondas de financiación o respaldo institucional · Verificador: No hay datos de respaldo institucional o capital riesgo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "Interés limitado, solo menciones en medios especializados · Verificador: La comunidad está en estado de alerta y pánico por la pérdida de fondos.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Solo disponible en exchanges surcoreanos, sin presencia clara en España · Verificador: La adopción está bloqueada por la suspensión de depósitos/retiros.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otros tokens de puente con funcionalidades similares · Verificador: Existen múltiples puentes (bridges) más seguros y auditados.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.5,
+    "why": "Presunto exploit de puente y congelación de fondos en exchanges · Verificador: Exploit confirmado en el puente; vulnerabilidad crítica.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "Alta probabilidad de pérdida total por hack o congelación · Verificador: Riesgo extremo de pérdida total de capital.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No hay disponibilidad confirmada ni soporte en plataformas españolas · Verificador: No hay presencia ni soporte en el mercado español.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "Liquidez incierta y exchanges congelados dificultan la venta · Verificador: Imposibilidad técnica de retirar fondos en los exchanges afectados.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "security_incident",
+    "severity": "critica",
+    "detail": "Upbit y Bithumb congelaron depósitos y retiros de CYBER por un presunto exploit de $1 M"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "alta",
+    "detail": "Falta de claridad regulatoria en España y Europa para tokens de puente"
+   },
+   {
+    "code": "security_incident",
+    "severity": "critica",
+    "detail": "Exploit activo en el puente de activos con fondos congelados."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia de equipo, sede o entidad legal identificable."
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "No registrado en CNMV ni bajo supervisión MiCA."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La oportunidad presenta riesgos críticos de seguridad y falta de transparencia. La congelación de activos en exchanges coreanos y la ausencia de una entidad emisora verificable en España desaconsejan cualquier interacción."
+   }
+  ],
+  "distrust": [
+   "Falta de información oficial",
+   "Incidente de seguridad reciente"
+  ],
+  "whyInteresting": [
+   "Posible alta rentabilidad si el exploit se resuelve",
+   "Interés del mercado cripto en soluciones de puente"
+  ],
+  "howToParticipate": [
+   "Actualmente no es posible depositar CYBER en exchanges españoles; esperar a que se reanuden los servicios o buscar plataformas P2P no reguladas"
+  ],
+  "lossCauses": [
+   "Hack del puente",
+   "Congelación de fondos por exchanges",
+   "Regulación restrictiva"
+  ],
+  "earlySignals": [
+   "Congelación de depósitos en Upbit y Bithumb",
+   "Investigación de ciberseguridad sobre el exploit"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en los registros de la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La oportunidad presenta riesgos críticos de seguridad y falta de transparencia. La congelación de activos en exchanges coreanos y la ausencia de una entidad emisora verificable en España desaconsejan cualquier interacción.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-cyber",
+  "isNew": true,
+  "score": 2,
+  "rawScore": 22.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "security_incident",
+    "severity": "critica",
+    "detail": "Upbit y Bithumb congelaron depósitos y retiros de CYBER por un presunto exploit de $1 M"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "alta",
+    "detail": "Falta de claridad regulatoria en España y Europa para tokens de puente"
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia de equipo, sede o entidad legal identificable."
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "No registrado en CNMV ni bajo supervisión MiCA."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La oportunidad presenta riesgos críticos de seguridad y falta de transparencia. La congelación de activos en exchanges coreanos y la ausencia de una entidad emisora verificable en España desaconsejan cualquier interacción."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Token CYBER ha sido objeto de un presunto exploit de puente de $1 M · Verificador: El incidente de seguridad es reciente y de alto impacto en el ecosistema cripto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Posible recuperación tras el incidente, pero sin datos concretos · Verificador: El potencial es puramente especulativo y negativo debido al exploit. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado cripto volátil y sin datos de capitalización para CYBER · Verificador: La liquidez está comprometida por la suspensión de servicios en exchanges principales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información pública sobre el equipo detrás de CYBER · Verificador: No existe información pública verificable sobre los desarrolladores o la entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Sin datos de rondas de financiación o respaldo institucional · Verificador: No hay datos de respaldo institucional o capital riesgo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Interés limitado, solo menciones en medios especializados · Verificador: La comunidad está en estado de alerta y pánico por la pérdida de fondos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Solo disponible en exchanges surcoreanos, sin presencia clara en España · Verificador: La adopción está bloqueada por la suspensión de depósitos/retiros.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros tokens de puente con funcionalidades similares · Verificador: Existen múltiples puentes (bridges) más seguros y auditados.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Presunto exploit de puente y congelación de fondos en exchanges · Verificador: Exploit confirmado en el puente; vulnerabilidad crítica.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "Alta probabilidad de pérdida total por hack o congelación · Verificador: Riesgo extremo de pérdida total de capital.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay disponibilidad confirmada ni soporte en plataformas españolas · Verificador: No hay presencia ni soporte en el mercado español.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Liquidez incierta y exchanges congelados dificultan la venta · Verificador: Imposibilidad técnica de retirar fondos en los exchanges afectados.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: CYBER\nCATEGORÍA: cripto · bridge\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no disponible\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto pero incierto\nPUNTUACIÓN: 2/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible alta rentabilidad si el exploit se resuelve; Interés del mercado cripto en soluciones de puente\nMOTIVOS PARA DESCONFIAR: Upbit y Bithumb congelaron depósitos y retiros de CYBER por un presunto exploit de $1 M; Falta de claridad regulatoria en España y Europa para tokens de puente; Ausencia de equipo, sede o entidad legal identificable.; No registrado en CNMV ni bajo supervisión MiCA.; El verificador tiene dudas: La oportunidad presenta riesgos críticos de seguridad y falta de transparencia. La congelación de activos en exchanges coreanos y la ausencia de una entidad emisora verificable en España desaconsejan cualquier interacción.; Falta de información oficial; Incidente de seguridad reciente\nCÓMO PARTICIPAR: Actualmente no es posible depositar CYBER en exchanges españoles; esperar a que se reanuden los servicios o buscar plataformas P2P no reguladas\nQUÉ PODRÍA HACERME PERDER EL DINERO: Hack del puente; Congelación de fondos por exchanges; Regulación restrictiva\nFUENTES: https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810",
+  "firstSeenAt": "2026-11-21T19:30:11Z",
+  "lastSeenAt": "2026-11-21T19:30:11Z",
+  "runId": "run-20261121-1930",
+  "aliases": [
+   "news-www-theblock-co-news-defi-2026-11-21-cyber-investigating-suspected-1-million-bridge-e"
   ]
  },
  {

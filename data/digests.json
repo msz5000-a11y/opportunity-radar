@@ -1,5 +1,11 @@
 [
  {
+  "id": "daily-2026-11-21",
+  "type": "diaria",
+  "at": "2026-11-21T19:30:11Z",
+  "text": "📊 Resumen diario · Opportunity Radar\nExploraciones: 18 (0 sin errores) · Analizadas: 63 · Nuevas: 58 · Alertas: 0\n\nMejores sin riesgo crítico:\n• FIT 2026 – Foro de Inversión y Territorio · 71/100 · negocio · entrada 0 € · riesgo bajo\n  + Acceso a una red de inversores y decision‑makers de la zona\n  − No se indica claramente si la inscripción es gratuita o de pago.\n• BF Sport Incubadora 2027 · 62/100 · startups · entrada 0 € · riesgo medio\n  + Acceso gratuito a una red de expertos del deporte y bienestar\n  − Solo se seleccionarán un máximo de 12 proyectos, lo que reduce la probabilidad de ser aceptado.\n• OpenComputer · 60/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + alternativa open‑source más rápida a Devin\n  − El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos.\n• Business Factory Health&Care Incubation Program · 60/100 · startups · entrada 0 € · riesgo medio\n  + acceso a mentorización y recursos de una incubadora pública\n  − Falta de información sobre la viabilidad comercial y financiación posterior de los proyectos\n• Wireless Device Battery Monitor (BatteryHub) · 57/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Herramienta gratuita que mejora la experiencia de uso de periféricos inalámbricos\n  − Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\n\nRiesgos críticos detectados: Backspin (informacion_insuficiente); SuperMailbox (falta_de_informacion); Europa Fusion (falta_de_transparencia); AnyProfile (NO_OFFICIAL_SITE); WaitFeed (falta_de_informacion); FOBO (sin_analisis_contrato)\n\nPresupuesto configurado: 2000.0 €. Escenarios = simulaciones. La decisión es siempre tuya."
+ },
+ {
   "id": "daily-2026-11-20",
   "type": "diaria",
   "at": "2026-11-20T20:33:04Z",

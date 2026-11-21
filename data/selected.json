@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T15:43:50Z",
+ "generatedAt": "2026-11-21T19:33:35Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 62,
+ "studied": 68,
  "selected": [],
  "nearMisses": [
   {
@@ -127,18 +127,18 @@
    "hasManual": true
   },
   {
-   "id": "web-github-com-diggerhq-opencomputer",
-   "name": "OpenComputer",
+   "id": "web-onurgumus-github-io",
+   "name": "Zero C#",
    "category": "ia_tecnologia",
-   "score": 60,
-   "adjustedScore": 60,
+   "score": 54,
+   "adjustedScore": 54,
    "risk": "medio",
-   "officialUrl": "https://github.com/diggerhq/opencomputer",
+   "officialUrl": "https://onurgumus.github.io/zero-csharp/index.html",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
     "nota": false,
-    "verificada": false,
+    "verificada": true,
     "riesgos": true,
     "espana": true,
     "presupuesto": true,
@@ -147,22 +147,21 @@
     "beneficio": false,
     "vigente": true
    },
-   "passed": 6,
+   "passed": 7,
    "failed": [
     "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
     "Vía clara y legal para ganar dinero"
    ],
-   "hasManual": true
+   "hasManual": false
   },
   {
-   "id": "web-bfhc-es",
-   "name": "Business Factory Health&Care Incubation Program",
-   "category": "startups",
+   "id": "web-github-com-diggerhq-opencomputer",
+   "name": "OpenComputer",
+   "category": "ia_tecnologia",
    "score": 60,
    "adjustedScore": 60,
    "risk": "medio",
-   "officialUrl": "https://bfhc.es/",
+   "officialUrl": "https://github.com/diggerhq/opencomputer",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
@@ -478,7 +477,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T15:43:50Z",
+  "at": "2026-11-21T19:33:35Z",
   "status": 200
  }
 }
