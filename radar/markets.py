@@ -533,18 +533,29 @@ def crypto() -> dict:
     ok.sort(key=lambda c: -(35 * c["_value"] + 25 * c["_usage"]))
     fin = ok[:FINALISTS]
     # Historia de precios (DefiLlama, sin clave) para el técnico
-    hist = {}
-    try:
-        start = int((now_utc() - timedelta(days=420)).timestamp())
-        ids = ["coingecko:bitcoin"] + [f"coingecko:{c['id']}" for c in fin if c["id"] != "bitcoin"]
-        for i in range(0, len(ids), 20):
-            r = net.request("GET", f"https://coins.llama.fi/chart/{','.join(ids[i:i + 20])}", timeout=60,
-                            params={"start": start, "span": 420, "period": "1d"}).json()
-            for k, v in (r.get("coins") or {}).items():
-                hist[k.split(":", 1)[1]] = [p["price"] for p in v.get("prices", []) if p.get("price")]
-        _ok("defillama_prices", len(hist))
-    except Exception as e:  # noqa: BLE001
-        _ok("defillama_prices", len(hist), e)
+    hist, errs = {}, []
+    ids = ["coingecko:bitcoin"] + [f"coingecko:{c['id']}" for c in fin if c["id"] != "bitcoin"]
+    end = int(now_utc().timestamp())
+    variants = [{"end": end, "span": 400, "period": "1d"}, {"end": end, "span": 300, "period": "1d"},
+                {"start": end - 400 * 86400, "span": 400, "period": "1d"}]
+    import requests as _rq
+    for i in range(0, len(ids), 10):
+        batch = ",".join(ids[i:i + 10])
+        for params in variants:
+            try:
+                r = _rq.get(f"https://coins.llama.fi/chart/{batch}", params=params, timeout=60,
+                            headers={"User-Agent": net.UA, "Accept": "application/json"})
+                if r.status_code != 200:
+                    errs.append(f"{r.status_code} {params}: {r.text[:120]}")
+                    continue
+                for k, v in (r.json().get("coins") or {}).items():
+                    hist[k.split(":", 1)[1]] = [p["price"] for p in v.get("prices", []) if p.get("price")]
+                variants = [params] + [x for x in variants if x is not params]
+                break
+            except Exception as e:  # noqa: BLE001
+                errs.append(str(e)[:120])
+        time.sleep(0.5)
+    _ok("defillama_prices", len(hist), None if hist else ("; ".join(errs[:3]) or "sin datos"))
     btc = hist.get("bitcoin")
     reddit = ape("all-crypto")
     for c in fin:
