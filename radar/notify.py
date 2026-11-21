@@ -22,7 +22,7 @@ def send(title: str, message: str, *, priority: int = 3, tags: list[str] | None 
     if not topic:
         LAST["error"] = "falta el secreto NTFY_TOPIC"
         return False
-    server = os.environ.get("NTFY_SERVER", "https://ntfy.sh").rstrip("/")
+    server = (os.environ.get("NTFY_SERVER") or "https://ntfy.sh").strip().rstrip("/")
     body = {"topic": topic, "title": title[:250], "message": message[:3900], "priority": max(1, min(5, priority)),
             "tags": tags or [], "markdown": False}
     if click:

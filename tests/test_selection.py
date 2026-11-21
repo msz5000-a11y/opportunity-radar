@@ -153,3 +153,12 @@ def test_gemini_search_429_falls_back_without_search(monkeypatch):
     assert res["data"]["verdict"] == "dudosa" and r.search_blocked
     assert r.ask_role("searcher", "s", "p", search=True, require_search=True) is None
     assert seen == [True, False]  # el buscador ya no gasta llamadas con la búsqueda bloqueada
+
+
+def test_ntfy_empty_server_secret_uses_default(monkeypatch):
+    from radar import notify as nt
+    monkeypatch.setenv("NTFY_TOPIC", "radar-5v3e8vadbfp1ajxx27milt")
+    monkeypatch.setenv("NTFY_SERVER", "")
+    urls = []
+    monkeypatch.setattr(net, "request", lambda m, url, **k: urls.append(url) or R({}))
+    assert nt.send("t", "m") and urls == ["https://ntfy.sh"]
