@@ -22964,6 +22964,429 @@
   ]
  },
  {
+  "name": "Chainflip (FLIP)",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "activa",
+  "description": "Token FLIP de Chainflip sufrió una caída del 34% tras un ataque que drenó 4,86 M $ de su vault, presuntamente por compromiso de claves. La situación indica alta vulnerabilidad de seguridad y volatilidad de precio.",
+  "officialUrl": "https://chainflip.io",
+  "participateUrl": "https://chainflip.io",
+  "country": "Descentralizado (Sede legal no transparente)",
+  "spainAvailability": "No regulado",
+  "spainNotes": "No se dispone de información sobre disponibilidad o regulación en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No hay datos sobre comisiones o requisitos de staking; la inversión mínima dependerá del precio del token en el exchange.",
+   "recommended": 2000,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Sin datos claros sobre mercados secundarios; la venta podría verse limitada por la baja confianza tras el hack.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "alta",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 3.0,
+    "why": "El ataque y la caída del precio son eventos recientes y poco comunes en el sector. · Verificador: El hackeo es un evento reciente y de alto impacto en el ecosistema DeFi. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.5,
+    "why": "No hay indicios de crecimiento orgánico; el token está bajo presión negativa. · Verificador: La confianza del mercado está severamente dañada tras el drenaje de fondos.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.5,
+    "why": "El mercado cripto es amplio, pero el token FLIP tiene baja capitalización y poca liquidez conocida. · Verificador: Token de baja capitalización con liquidez afectada por el incidente.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "Sin información disponible sobre el equipo en la fuente proporcionada. · Verificador: Falta de transparencia sobre la gestión de claves privadas que permitió el ataque. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 4.0,
+    "why": "No se citan rondas de financiación ni fondos de inversión en la fuente. · Verificador: Aunque existen inversores institucionales históricos, el incidente pone en duda la gestión de tesorería.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "No se dispone de datos sobre la comunidad o actividad en redes sociales. · Verificador: Alta incertidumbre y sentimiento negativo tras el drenaje del vault.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.5,
+    "why": "El ataque sugiere una adopción limitada y problemas operativos. · Verificador: El ataque operativo reduce la confianza de los usuarios en el protocolo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen varios protocolos de intercambio descentralizado; FLIP no destaca claramente. · Verificador: El sector de exchanges descentralizados (DEX) es altamente competitivo y saturado.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Compromiso de claves y vulnerabilidad que permitió el robo de 4,86 M $; evidencia directa del riesgo técnico. · Verificador: Compromiso de claves confirmado; vulnerabilidad crítica en la infraestructura.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "Pérdida del 34% del valor del token y posible pérdida total por hack; alto riesgo financiero. · Verificador: Pérdida de valor del 34% y riesgo de insolvencia del protocolo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "Sin información sobre disponibilidad o cumplimiento regulatorio en España. · Verificador: No hay presencia legal ni registro en la CNMV para operar en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.5,
+    "why": "Liquidez limitada y posible restricción de exchanges tras el incidente. · Verificador: La liquidez en mercados secundarios puede estar restringida o ser insuficiente.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "security_breach",
+    "severity": "alta",
+    "detail": "Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves."
+   },
+   {
+    "code": "price_drop_34pct",
+    "severity": "alta",
+    "detail": "Caída del 34 % del precio del token tras el ataque."
+   },
+   {
+    "code": "security_breach",
+    "severity": "critica",
+    "detail": "Drenaje de 4,86 M$ por compromiso de claves privadas."
+   },
+   {
+    "code": "unregulated",
+    "severity": "alta",
+    "detail": "No figura en registros de la CNMV ni cumple con MiCA en España."
+   },
+   {
+    "code": "price_volatility",
+    "severity": "alta",
+    "detail": "Caída del 34% tras el incidente de seguridad."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca."
+   }
+  ],
+  "distrust": [
+   "seguridad del protocolo",
+   "confianza de la comunidad"
+  ],
+  "whyInteresting": [
+   "alta volatilidad que podría generar oportunidades de trading a corto plazo",
+   "evento reciente que permite observar la reacción del mercado"
+  ],
+  "howToParticipate": [
+   "1. Verificar que el token FLIP cotiza en un exchange fiable (p.ej., Binance, KuCoin).",
+   "2. Crear una cuenta y completar KYC si es necesario.",
+   "3. Depositar euros y comprar FLIP al precio de mercado.",
+   "4. Guardar los tokens en una wallet segura, preferiblemente hardware, para mitigar riesgos de custodia."
+  ],
+  "lossCauses": [
+   "hack del vault",
+   "compromiso de claves privadas",
+   "baja liquidez que impida venta rápida",
+   "posibles restricciones regulatorias en España"
+  ],
+  "earlySignals": [
+   "caída del 34 % del precio",
+   "anuncio de ataque en medios especializados",
+   "disminución de la actividad en redes sociales del proyecto"
+  ],
+  "signals": {
+   "priceDropPercent": -34
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en los registros de la CNMV de empresas de servicios de inversión ni en el registro de proveedores de servicios de activos virtuales (VASP) de España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+   },
+   {
+    "title": "CNMV - Registro de entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-chainflip-io",
+  "isNew": true,
+  "score": 2,
+  "rawScore": 22.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 5 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "security_breach",
+    "severity": "alta",
+    "detail": "Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves."
+   },
+   {
+    "code": "price_drop_34pct",
+    "severity": "alta",
+    "detail": "Caída del 34 % del precio del token tras el ataque."
+   },
+   {
+    "code": "unregulated",
+    "severity": "alta",
+    "detail": "No figura en registros de la CNMV ni cumple con MiCA en España."
+   },
+   {
+    "code": "price_volatility",
+    "severity": "alta",
+    "detail": "Caída del 34% tras el incidente de seguridad."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "El ataque y la caída del precio son eventos recientes y poco comunes en el sector. · Verificador: El hackeo es un evento reciente y de alto impacto en el ecosistema DeFi. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.5,
+    "points": 1.8,
+    "why": "No hay indicios de crecimiento orgánico; el token está bajo presión negativa. · Verificador: La confianza del mercado está severamente dañada tras el drenaje de fondos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "El mercado cripto es amplio, pero el token FLIP tiene baja capitalización y poca liquidez conocida. · Verificador: Token de baja capitalización con liquidez afectada por el incidente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Sin información disponible sobre el equipo en la fuente proporcionada. · Verificador: Falta de transparencia sobre la gestión de claves privadas que permitió el ataque. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se citan rondas de financiación ni fondos de inversión en la fuente. · Verificador: Aunque existen inversores institucionales históricos, el incidente pone en duda la gestión de tesorería.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de datos sobre la comunidad o actividad en redes sociales. · Verificador: Alta incertidumbre y sentimiento negativo tras el drenaje del vault.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.5,
+    "points": 2.2,
+    "why": "El ataque sugiere una adopción limitada y problemas operativos. · Verificador: El ataque operativo reduce la confianza de los usuarios en el protocolo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varios protocolos de intercambio descentralizado; FLIP no destaca claramente. · Verificador: El sector de exchanges descentralizados (DEX) es altamente competitivo y saturado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Compromiso de claves y vulnerabilidad que permitió el robo de 4,86 M $; evidencia directa del riesgo técnico. · Verificador: Compromiso de claves confirmado; vulnerabilidad crítica en la infraestructura.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "Pérdida del 34% del valor del token y posible pérdida total por hack; alto riesgo financiero. · Verificador: Pérdida de valor del 34% y riesgo de insolvencia del protocolo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Sin información sobre disponibilidad o cumplimiento regulatorio en España. · Verificador: No hay presencia legal ni registro en la CNMV para operar en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Liquidez limitada y posible restricción de exchanges tras el incidente. · Verificador: La liquidez en mercados secundarios puede estar restringida o ser insuficiente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3960.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 19800.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 39600.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 99000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 198000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 594000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T15:43:17Z",
+    "priceDropPercent": -34.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Chainflip (FLIP)\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://chainflip.io\nENLACE DE PARTICIPACIÓN: https://chainflip.io\nPAÍS: Descentralizado (Sede legal no transparente)\nDISPONIBILIDAD EN ESPAÑA: No regulado\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 2/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alta volatilidad que podría generar oportunidades de trading a corto plazo; evento reciente que permite observar la reacción del mercado\nMOTIVOS PARA DESCONFIAR: Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves.; Caída del 34 % del precio del token tras el ataque.; No figura en registros de la CNMV ni cumple con MiCA en España.; Caída del 34% tras el incidente de seguridad.; El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca.; seguridad del protocolo; confianza de la comunidad\nCÓMO PARTICIPAR: 1. Verificar que el token FLIP cotiza en un exchange fiable (p.ej., Binance, KuCoin).; 2. Crear una cuenta y completar KYC si es necesario.; 3. Depositar euros y comprar FLIP al precio de mercado.; 4. Guardar los tokens en una wallet segura, preferiblemente hardware, para mitigar riesgos de custodia.\nQUÉ PODRÍA HACERME PERDER EL DINERO: hack del vault; compromiso de claves privadas; baja liquidez que impida venta rápida; posibles restricciones regulatorias en España\nFUENTES: https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-21T15:43:17Z",
+  "lastSeenAt": "2026-11-21T15:43:17Z",
+  "runId": "run-20261121-1543",
+  "aliases": [
+   "news-www-theblock-co-news-defi-2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4"
+  ]
+ },
+ {
   "name": "Honey‑trap awareness for AI professionals",
   "category": "ia_tecnologia",
   "subcategory": "seguridad",

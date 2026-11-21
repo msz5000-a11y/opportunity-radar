@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T13:37:34Z",
+ "generatedAt": "2026-11-21T15:43:50Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -17,7 +17,7 @@
   },
   {
    "id": "espana",
-   "label": "Disponible en España"
+   "label": "Disponible en tu región"
   },
   {
    "id": "presupuesto",
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 61,
+ "studied": 62,
  "selected": [],
  "nearMisses": [
   {
@@ -478,7 +478,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T13:37:34Z",
+  "at": "2026-11-21T15:43:50Z",
   "status": 200
  }
 }

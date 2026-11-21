@@ -1,73 +1,73 @@
 {
- "lastRunAt": "2026-11-21T13:37:33Z",
+ "lastRunAt": "2026-11-21T15:43:50Z",
  "lastRunOk": false,
- "lastRunId": "run-20261121-1337",
+ "lastRunId": "run-20261121-1543",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-21T13:37:00+00:00"
+   "at": "2026-11-21T15:43:17+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
-   "items": 2,
+   "items": 1,
    "error": null,
-   "at": "2026-11-21T13:37:04+00:00"
+   "at": "2026-11-21T15:43:21+00:00"
   },
   "geckoterminal_trending": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-21T13:37:04+00:00"
+   "at": "2026-11-21T15:43:21+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 2,
+   "items": 3,
    "error": null,
-   "at": "2026-11-21T13:37:04+00:00"
+   "at": "2026-11-21T15:43:21+00:00"
   },
   "hacker_news": {
    "ok": true,
-   "items": 3,
+   "items": 1,
    "error": null,
-   "at": "2026-11-21T13:37:04+00:00"
+   "at": "2026-11-21T15:43:21+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-21T13:37:05+00:00"
+   "at": "2026-11-21T15:43:22+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T13:37:05+00:00"
+   "at": "2026-11-21T15:43:22+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T13:37:07+00:00"
+   "at": "2026-11-21T15:43:24+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T13:37:07+00:00"
+   "at": "2026-11-21T15:43:24+00:00"
   },
   "The Block": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T13:37:07+00:00"
+   "at": "2026-11-21T15:43:25+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-21T13:37:25+00:00"
+   "at": "2026-11-21T15:43:42+00:00"
   }
  },
  "ai": {
@@ -99,7 +99,9 @@
    "lanzamientos",
    "negocio"
   ],
-  "maxBudget": 2000
+  "maxBudget": 2000,
+  "region": "es",
+  "language": "es"
  },
  "version": 2
 }

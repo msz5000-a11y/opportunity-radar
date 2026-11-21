@@ -1,10 +1,25 @@
 {
- "positions": [],
+ "positions": [
+  {
+   "id": "cripto-VVV-2026-11-21",
+   "type": "cripto",
+   "symbol": "VVV",
+   "name": "Venice Token",
+   "date": "2026-11-21",
+   "entry": 23.21,
+   "stop": 17.968,
+   "score": 70,
+   "trigger": "Recupera su media de 50 sesiones tras semanas por debajo, con RSI por encima de 50",
+   "benchEntry": 59794.875617000005,
+   "status": "abierta",
+   "returnPct": 0.0
+  }
+ ],
  "summary": {
-  "signals": 0,
-  "open": 0,
+  "signals": 1,
+  "open": 1,
   "closed": 0,
-  "avgReturn": null,
+  "avgReturn": 0.0,
   "avgBench": null,
   "hitRate": null
  }
