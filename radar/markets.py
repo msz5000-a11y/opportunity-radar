@@ -156,9 +156,31 @@ def massive(path: str, params: dict | None = None) -> dict:
 
 
 def sec_json(url: str):
-    r = net.request("GET", url, headers=SEC_HEADERS, timeout=90, retries=2)
+    import requests as _rq
+    r = _rq.get(url, headers={**SEC_HEADERS, "Accept-Encoding": "gzip, deflate"}, timeout=90)
     time.sleep(0.12)
+    if r.status_code != 200:
+        raise RuntimeError(f"HTTP {r.status_code}: {r.text[:120]}")
     return r.json()
+
+
+def massive_tickers() -> dict:
+    """Plan B si la SEC no deja descargar su lista: tickers de acciones comunes con su CIK (Massive)."""
+    out, cursor, pages = {}, None, 0
+    while pages < 8:
+        params = {"market": "stocks", "type": "CS", "active": "true", "limit": 1000}
+        if cursor:
+            params["cursor"] = cursor
+        res = massive("/v3/reference/tickers", params)
+        for t in res.get("results") or []:
+            if t.get("cik") and t.get("primary_exchange") in ("XNYS", "XNAS", "XASE", "ARCX", "BATS"):
+                out[t["ticker"].upper()] = (int(t["cik"]), t.get("name") or t["ticker"])
+        nxt = res.get("next_url") or ""
+        cursor = nxt.split("cursor=")[1].split("&")[0] if "cursor=" in nxt else None
+        pages += 1
+        if not cursor:
+            break
+    return out
 
 
 def frames(concepts: list[str], period: str, unit: str = "USD") -> dict:
@@ -167,7 +189,8 @@ def frames(concepts: list[str], period: str, unit: str = "USD") -> dict:
     for c in concepts:
         try:
             data = sec_json(f"https://data.sec.gov/api/xbrl/frames/us-gaap/{c}/{unit}/{period}.json").get("data", [])
-        except Exception:  # noqa: BLE001
+        except Exception as e:  # noqa: BLE001
+            STATUS.setdefault("sec_frames_errors", {"ok": False, "items": 0, "error": str(e)[:160]})
             continue
         for r in data:
             if r.get("val") is not None:
@@ -352,6 +375,7 @@ def stocks(data_dir: Path) -> dict:
     if not (os.environ.get("MASSIVE_API_KEY") or os.environ.get("POLYGON_API_KEY")):
         _ok("massive", 0, "falta la clave gratuita MASSIVE_API_KEY")
         return out
+    tickers = {}
     try:
         tk = sec_json("https://www.sec.gov/files/company_tickers_exchange.json")
         idx = {k: i for i, k in enumerate(tk["fields"])}
@@ -360,6 +384,13 @@ def stocks(data_dir: Path) -> dict:
         _ok("sec_tickers", len(tickers))
     except Exception as e:  # noqa: BLE001
         _ok("sec_tickers", 0, e)
+    if not tickers:
+        try:
+            tickers = massive_tickers()
+            _ok("massive_tickers", len(tickers), None if tickers else "sin datos")
+        except Exception as e:  # noqa: BLE001
+            _ok("massive_tickers", 0, e)
+    if not tickers:
         return out
     try:
         date, prices = grouped_daily()
@@ -539,8 +570,8 @@ def crypto() -> dict:
     variants = [{"end": end, "span": 400, "period": "1d"}, {"end": end, "span": 300, "period": "1d"},
                 {"start": end - 400 * 86400, "span": 400, "period": "1d"}]
     import requests as _rq
-    for i in range(0, len(ids), 10):
-        batch = ",".join(ids[i:i + 10])
+    for i in range(0, len(ids)):  # máximo 500 puntos por petición: una moneda cada vez
+        batch = ids[i]
         for params in variants:
             try:
                 r = _rq.get(f"https://coins.llama.fi/chart/{batch}", params=params, timeout=60,
@@ -554,7 +585,7 @@ def crypto() -> dict:
                 break
             except Exception as e:  # noqa: BLE001
                 errs.append(str(e)[:120])
-        time.sleep(0.5)
+        time.sleep(0.3)
     _ok("defillama_prices", len(hist), None if hist else ("; ".join(errs[:3]) or "sin datos"))
     btc = hist.get("bitcoin")
     reddit = ape("all-crypto")

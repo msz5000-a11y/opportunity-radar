@@ -141,7 +141,7 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
                 txt = "\n".join(f"- {f['title']} | {f['url']} | {f['content'][:300]}" for f in found)
                 res = router.ask_role("discoverer", prompts.DISCOVERY_SYSTEM,
                                       prompts.DISCOVERY_RESULTS_PROMPT.format(today=today, query=q, category=cat, results=txt,
-                                                                              known=", ".join(known[-60:]) or "ninguna"))
+                                                                              known=", ".join(str(k) for k in known[-60:] if k) or "ninguna"))
                 for c in ((res or {}).get("data") or {}).get("candidates", [])[:4] if res else []:
                     if not isinstance(c, dict) or not c.get("name"):
                         continue
@@ -158,7 +158,7 @@ def discover(router: Router, cfg: dict, state: dict, today: str, known: list[str
                                 "searchModel": f"tavily+{res['provider']}:{res['model']}"})
                 continue
         res = router.ask_role("searcher", prompts.DISCOVERY_SYSTEM,
-                              prompts.DISCOVERY_PROMPT.format(today=today, query=q, category=cat, known=", ".join(known[-60:]) or "ninguna"),
+                              prompts.DISCOVERY_PROMPT.format(today=today, query=q, category=cat, known=", ".join(str(k) for k in known[-60:] if k) or "ninguna"),
                               search=True, require_search=True)
         if not res:
             continue
