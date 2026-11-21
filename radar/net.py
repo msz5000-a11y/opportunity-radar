@@ -51,7 +51,8 @@ def request(method: str, url: str, *, retries: int = 3, timeout: int = 25, **kw)
 
 
 def get_json(url: str, **kw):
-    return request("GET", url, headers={"Accept": "application/json"}, **kw).json()
+    kw["headers"] = {"Accept": "application/json", **(kw.get("headers") or {})}
+    return request("GET", url, **kw).json()
 
 
 def allowed_by_robots(url: str) -> bool:
