@@ -14033,6 +14033,400 @@
   ]
  },
  {
+  "name": "WaitFeed",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "Plataforma que ofrece un feed de IA mientras el usuario está en espera, integrándose en agentes de espera. Busca mejorar la experiencia durante tiempos de inactividad.",
+  "officialUrl": null,
+  "participateUrl": "https://www.producthunt.com/products/waitfeed-2",
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No hay información sobre disponibilidad o localización en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se dispone de datos de precios.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica como inversión directa.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Producto recién listado en Product Hunt · Verificador: La idea de un feed durante esperas es conocida en UX, pero poco implementada con IA generativa.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Sin datos de mercado ni tracción · Verificador: Sin tracción, equipo ni modelo de negocio, el potencial es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.5,
+    "why": "Existen varios feeds de IA y herramientas de espera · Verificador: Mercado saturado de herramientas de IA; la propuesta de valor es débil.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No hay información sobre el equipo · Verificador: No existe información pública sobre los fundadores o desarrolladores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No se reporta financiación pública · Verificador: No hay registro de rondas de inversión o financiación pública.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "Listado en Product Hunt indica alguna comunidad inicial · Verificador: Interacción mínima en Product Hunt; no hay comunidad activa.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "No hay métricas de usuarios disponibles · Verificador: No hay métricas de uso ni casos de éxito.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Hay competidores en IA y feeds de contenido · Verificador: Alta competencia en servicios de IA para atención al cliente.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Depende de integración con agentes, sin detalles técnicos públicos · Verificador: Sitio web inaccesible (403) y falta de documentación técnica.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.0,
+    "why": "No implica inversión de capital, solo uso del servicio · Verificador: Riesgo total de pérdida de tiempo/recursos al no existir producto funcional.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay indicios de disponibilidad en España · Verificador: Sin rastro de operaciones o entidad legal en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No existe posibilidad de salida al no ser un activo financiero.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No hay datos de equipo, precios, ni disponibilidad; sitio web inaccesible (403)"
+   },
+   {
+    "code": "sitio_web_inaccesible",
+    "severity": "critica",
+    "detail": "El dominio o URL del producto devuelve error 403, indicando falta de mantenimiento o configuración incorrecta."
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de datos sobre el equipo, sede social o términos de servicio."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web operativa, información sobre el equipo, modelo de negocio o entidad legal. La única fuente es un listado en Product Hunt sin actividad verificable, lo que sugiere un proyecto abandonado o en fase de concepto sin viabilidad comercial actual."
+   }
+  ],
+  "distrust": [
+   "Falta de información pública",
+   "Sitio web inaccesible (403)"
+  ],
+  "whyInteresting": [
+   "Innovación en ofrecer contenido IA durante tiempos de espera",
+   "Potencial para mejorar experiencia de usuario en agentes de espera"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt del producto",
+   "Seguir al creador para actualizaciones",
+   "Esperar lanzamiento oficial y suscribirse si está disponible"
+  ],
+  "lossCauses": [
+   "El producto nunca se lanza",
+   "Falta de adopción por parte de usuarios",
+   "Problemas técnicos de integración"
+  ],
+  "earlySignals": [
+   "Listado reciente en Product Hunt",
+   "Interés inicial de la comunidad tech"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser un producto financiero ni de inversión, no requiere autorización de la CNMV. Sin embargo, cualquier servicio SaaS en España debe cumplir con el RGPD, lo cual no puede verificarse al no existir web.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/waitfeed-2"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto carece de presencia web operativa, información sobre el equipo, modelo de negocio o entidad legal. La única fuente es un listado en Product Hunt sin actividad verificable, lo que sugiere un proyecto abandonado o en fase de concepto sin viabilidad comercial actual.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-waitfeed",
+  "isNew": true,
+  "score": 15,
+  "rawScore": 29.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No hay datos de equipo, precios, ni disponibilidad; sitio web inaccesible (403)"
+   },
+   {
+    "code": "sitio_web_inaccesible",
+    "severity": "critica",
+    "detail": "El dominio o URL del producto devuelve error 403, indicando falta de mantenimiento o configuración incorrecta."
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de datos sobre el equipo, sede social o términos de servicio."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web operativa, información sobre el equipo, modelo de negocio o entidad legal. La única fuente es un listado en Product Hunt sin actividad verificable, lo que sugiere un proyecto abandonado o en fase de concepto sin viabilidad comercial actual."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Producto recién listado en Product Hunt · Verificador: La idea de un feed durante esperas es conocida en UX, pero poco implementada con IA generativa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Sin datos de mercado ni tracción · Verificador: Sin tracción, equipo ni modelo de negocio, el potencial es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Existen varios feeds de IA y herramientas de espera · Verificador: Mercado saturado de herramientas de IA; la propuesta de valor es débil.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No hay información sobre el equipo · Verificador: No existe información pública sobre los fundadores o desarrolladores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No se reporta financiación pública · Verificador: No hay registro de rondas de inversión o financiación pública.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Listado en Product Hunt indica alguna comunidad inicial · Verificador: Interacción mínima en Product Hunt; no hay comunidad activa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "No hay métricas de usuarios disponibles · Verificador: No hay métricas de uso ni casos de éxito.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Hay competidores en IA y feeds de contenido · Verificador: Alta competencia en servicios de IA para atención al cliente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de integración con agentes, sin detalles técnicos públicos · Verificador: Sitio web inaccesible (403) y falta de documentación técnica.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "No implica inversión de capital, solo uso del servicio · Verificador: Riesgo total de pérdida de tiempo/recursos al no existir producto funcional.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay indicios de disponibilidad en España · Verificador: Sin rastro de operaciones o entidad legal en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No existe posibilidad de salida al no ser un activo financiero.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: WaitFeed\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.producthunt.com/products/waitfeed-2\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 15/100 · Descartar\nRIESGO: crítico\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en ofrecer contenido IA durante tiempos de espera; Potencial para mejorar experiencia de usuario en agentes de espera\nMOTIVOS PARA DESCONFIAR: No hay datos de equipo, precios, ni disponibilidad; sitio web inaccesible (403); El dominio o URL del producto devuelve error 403, indicando falta de mantenimiento o configuración incorrecta.; Ausencia total de datos sobre el equipo, sede social o términos de servicio.; El verificador tiene dudas: El proyecto carece de presencia web operativa, información sobre el equipo, modelo de negocio o entidad legal. La única fuente es un listado en Product Hunt sin actividad verificable, lo que sugiere un proyecto abandonado o en fase de concepto sin viabilidad comercial actual.; Falta de información pública; Sitio web inaccesible (403)\nCÓMO PARTICIPAR: Visitar la página de Product Hunt del producto; Seguir al creador para actualizaciones; Esperar lanzamiento oficial y suscribirse si está disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: El producto nunca se lanza; Falta de adopción por parte de usuarios; Problemas técnicos de integración\nFUENTES: https://www.producthunt.com/products/waitfeed-2",
+  "firstSeenAt": "2026-11-21T11:58:40Z",
+  "lastSeenAt": "2026-11-21T11:58:40Z",
+  "runId": "run-20261121-1158",
+  "aliases": [
+   "news-www-producthunt-com-products-waitfeed-2"
+  ]
+ },
+ {
   "name": "Cup of Sugar",
   "category": "ia_tecnologia",
   "subcategory": null,
