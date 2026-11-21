@@ -12484,6 +12484,411 @@
   ]
  },
  {
+  "name": "Fortitude",
+  "category": "cripto",
+  "subcategory": "minería",
+  "kind": "activa",
+  "description": "Fortitude, minero de Zcash, ha obtenido el respaldo de sus accionistas para una posible salida a Nasdaq. ZEC cotiza un 55 % por debajo de su máximo histórico.",
+  "officialUrl": "https://dcg.co/",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "no disponible",
+  "spainNotes": "Posible compra a través de brokers internacionales; sin presencia local ni oferta pública en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin comisiones adicionales conocidas; dependerá del broker.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Venta en mercado secundario una vez cotice en Nasdaq; antes de la salida no hay mercado líquido.",
+  "horizon": "mediano a largo plazo (12‑36 meses)",
+  "deadline": null,
+  "potential": "alto si la salida a Nasdaq se concreta y ZEC se recupera.",
+  "difficulty": "media",
+  "timeNeeded": "investigación y apertura de cuenta de corretaje.",
+  "subscores": {
+   "novedad": {
+    "v": 6.5,
+    "why": "Respaldo de accionistas para listar en Nasdaq es poco frecuente en mineros de Zcash · Verificador: La intención de listar un minero de Zcash en Nasdaq es un evento corporativo relevante.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Posible revalorización tras la IPO y recuperación de ZEC · Verificador: Depende totalmente de la ejecución de la IPO y la volatilidad de ZEC. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.5,
+    "why": "Sector de minería de criptomonedas con alta volatilidad · Verificador: El mercado de minería está altamente saturado y presionado por los costes energéticos.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "No se dispone de información pública sobre el equipo directivo · Verificador: Al ser parte de DCG, cuenta con el respaldo de un conglomerado conocido en el sector cripto. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.0,
+    "why": "No se revelan datos de financiación más allá del respaldo interno · Verificador: Respaldada por DCG, aunque los detalles financieros específicos de Fortitude no son públicos.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "Ausencia de datos sobre comunidad de usuarios o inversores · Verificador: No existe una comunidad de inversores minoristas, es una estructura corporativa cerrada.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Adopción de Zcash y de la empresa aún limitada · Verificador: Zcash tiene una adopción limitada en comparación con otras redes PoW.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 3.5,
+    "why": "Muchos mineros compiten por la misma recompensa de ZEC · Verificador: Alta competencia en minería de Zcash y presión de otros mineros cotizados.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Riesgos inherentes a la minería de Zcash y a la infraestructura de hardware · Verificador: Riesgos operativos estándar de minería de criptoactivos.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "Inversión en una empresa no cotizada aún y exposición a la volatilidad de ZEC · Verificador: Inversión en fase pre-IPO con alta iliquidez y riesgo de fracaso en la salida a bolsa. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "Acceso solo vía brokers internacionales; sin oferta local · Verificador: No existe vía legal directa para que un minorista en España participe en esta fase. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "Liquidez limitada hasta la IPO; mercado secundario incierto · Verificador: Inexistente hasta que se produzca la cotización en Nasdaq. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "nasdaq_listing_uncertain",
+    "severity": "alta",
+    "detail": "La salida a Nasdaq aún no está confirmada; depende de aprobación regulatoria y de condiciones de mercado."
+   },
+   {
+    "code": "no_retail_access",
+    "severity": "critica",
+    "detail": "No hay forma legal ni técnica para que un inversor minorista en España participe en esta fase pre-IPO."
+   },
+   {
+    "code": "nasdaq_listing_uncertain",
+    "severity": "alta",
+    "detail": "La aprobación de accionistas no garantiza la aprobación de la SEC ni el éxito de la salida a bolsa."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "media",
+    "detail": "Ausencia de estados financieros auditados públicos para Fortitude."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La empresa Fortitude es una subsidiaria de Digital Currency Group (DCG). Aunque la noticia de la votación de los accionistas es coherente con el ecosistema de DCG, no existe una web oficial pública para inversores minoristas ni un registro de oferta pública en España. La inversión en empresas pre-IPO es de altísimo riesgo y no está disponible para el inversor minorista estándar en España sin acceso a mercados privados o institucionales."
+   }
+  ],
+  "distrust": [
+   "Falta de información oficial accesible",
+   "Dependencia de la cotización de ZEC"
+  ],
+  "whyInteresting": [
+   "Posible exposición a Zcash a través de una empresa listada",
+   "Apoyo de accionistas indica confianza interna"
+  ],
+  "howToParticipate": [
+   "1. Abrir cuenta con un broker que opere en Nasdaq.",
+   "2. Esperar a que Fortitude cotice tras la IPO.",
+   "3. Comprar acciones cuando estén disponibles.",
+   "4. Monitorear el precio de ZEC y el desempeño financiero de la empresa."
+  ],
+  "lossCauses": [
+   "Fracaso en la salida a Nasdaq",
+   "Caída prolongada de ZEC",
+   "Problemas regulatorios"
+  ],
+  "earlySignals": [
+   "Aprobación de la junta de accionistas",
+   "Registro de la IPO en la SEC"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una empresa estadounidense en fase pre-IPO, no está sujeta a la CNMV ni al registro MiCA de ESMA. No es un producto financiero comercializable en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/business/2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasdaq-listing-zec-retreats-all-time-high-444784"
+   },
+   {
+    "title": "Digital Currency Group Official Site",
+    "url": "https://dcg.co/"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La empresa Fortitude es una subsidiaria de Digital Currency Group (DCG). Aunque la noticia de la votación de los accionistas es coherente con el ecosistema de DCG, no existe una web oficial pública para inversores minoristas ni un registro de oferta pública en España. La inversión en empresas pre-IPO es de altísimo riesgo y no está disponible para el inversor minorista estándar en España sin acceso a mercados privados o institucionales.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-dcg-co",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 34.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (no_retail_access)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "nasdaq_listing_uncertain",
+    "severity": "alta",
+    "detail": "La salida a Nasdaq aún no está confirmada; depende de aprobación regulatoria y de condiciones de mercado."
+   },
+   {
+    "code": "no_retail_access",
+    "severity": "critica",
+    "detail": "No hay forma legal ni técnica para que un inversor minorista en España participe en esta fase pre-IPO."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "media",
+    "detail": "Ausencia de estados financieros auditados públicos para Fortitude."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La empresa Fortitude es una subsidiaria de Digital Currency Group (DCG). Aunque la noticia de la votación de los accionistas es coherente con el ecosistema de DCG, no existe una web oficial pública para inversores minoristas ni un registro de oferta pública en España. La inversión en empresas pre-IPO es de altísimo riesgo y no está disponible para el inversor minorista estándar en España sin acceso a mercados privados o institucionales."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.5,
+    "points": 5.2,
+    "why": "Respaldo de accionistas para listar en Nasdaq es poco frecuente en mineros de Zcash · Verificador: La intención de listar un minero de Zcash en Nasdaq es un evento corporativo relevante.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Posible revalorización tras la IPO y recuperación de ZEC · Verificador: Depende totalmente de la ejecución de la IPO y la volatilidad de ZEC. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Sector de minería de criptomonedas con alta volatilidad · Verificador: El mercado de minería está altamente saturado y presionado por los costes energéticos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información pública sobre el equipo directivo · Verificador: Al ser parte de DCG, cuenta con el respaldo de un conglomerado conocido en el sector cripto. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se revelan datos de financiación más allá del respaldo interno · Verificador: Respaldada por DCG, aunque los detalles financieros específicos de Fortitude no son públicos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Ausencia de datos sobre comunidad de usuarios o inversores · Verificador: No existe una comunidad de inversores minoristas, es una estructura corporativa cerrada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción de Zcash y de la empresa aún limitada · Verificador: Zcash tiene una adopción limitada en comparación con otras redes PoW.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.5,
+    "points": 1.8,
+    "why": "Muchos mineros compiten por la misma recompensa de ZEC · Verificador: Alta competencia en minería de Zcash y presión de otros mineros cotizados.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Riesgos inherentes a la minería de Zcash y a la infraestructura de hardware · Verificador: Riesgos operativos estándar de minería de criptoactivos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Inversión en una empresa no cotizada aún y exposición a la volatilidad de ZEC · Verificador: Inversión en fase pre-IPO con alta iliquidez y riesgo de fracaso en la salida a bolsa. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Acceso solo vía brokers internacionales; sin oferta local · Verificador: No existe vía legal directa para que un minorista en España participe en esta fase. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Liquidez limitada hasta la IPO; mercado secundario incierto · Verificador: Inexistente hasta que se produzca la cotización en Nasdaq. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Fortitude\nCATEGORÍA: cripto · minería\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://dcg.co/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: no disponible\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto si la salida a Nasdaq se concreta y ZEC se recupera.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano a largo plazo (12‑36 meses)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible exposición a Zcash a través de una empresa listada; Apoyo de accionistas indica confianza interna\nMOTIVOS PARA DESCONFIAR: La salida a Nasdaq aún no está confirmada; depende de aprobación regulatoria y de condiciones de mercado.; No hay forma legal ni técnica para que un inversor minorista en España participe en esta fase pre-IPO.; Ausencia de estados financieros auditados públicos para Fortitude.; El verificador tiene dudas: La empresa Fortitude es una subsidiaria de Digital Currency Group (DCG). Aunque la noticia de la votación de los accionistas es coherente con el ecosistema de DCG, no existe una web oficial pública para inversores minoristas ni un registro de oferta pública en España. La inversión en empresas pre-IPO es de altísimo riesgo y no está disponible para el inversor minorista estándar en España sin acceso a mercados privados o institucionales.; Falta de información oficial accesible; Dependencia de la cotización de ZEC\nCÓMO PARTICIPAR: 1. Abrir cuenta con un broker que opere en Nasdaq.; 2. Esperar a que Fortitude cotice tras la IPO.; 3. Comprar acciones cuando estén disponibles.; 4. Monitorear el precio de ZEC y el desempeño financiero de la empresa.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Fracaso en la salida a Nasdaq; Caída prolongada de ZEC; Problemas regulatorios\nFUENTES: https://www.theblock.co/news/business/2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasdaq-listing-zec-retreats-all-time-high-444784 | https://dcg.co/",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "news-www-theblock-co-news-business-2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasda"
+  ]
+ },
+ {
   "name": "AI Context Flow MCP",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -14033,6 +14438,386 @@
   ]
  },
  {
+  "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",
+  "category": "cripto",
+  "subcategory": "regulación",
+  "kind": "pasiva",
+  "description": "El representante Sean Casten propone un programa de denuncias al DOJ para frenar el insider trading en los mercados de predicción. La medida busca mayor transparencia y podría afectar a plataformas cripto que operan en este segmento. Su aprobación aún está en proceso legislativo.",
+  "officialUrl": "https://www.congress.gov",
+  "participateUrl": null,
+  "country": "EE.UU.",
+  "spainAvailability": "no aplica",
+  "spainNotes": "Impacto indirecto en plataformas de predicción que operen en España, dependiendo de la adopción de la normativa EE.UU.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay inversión directa requerida",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica",
+  "horizon": "corto-medio plazo (2027-2028)",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "monitorizar cambios regulatorios y adaptar exposición",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Rep. Sean Casten propone programa de denuncias al DOJ · Verificador: Propuesta legislativa reciente en EE.UU. sobre mercados de predicción.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Podría reducir fraude en mercados de predicción cripto · Verificador: Es un evento de riesgo, no una oportunidad de ganancia directa. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.5,
+    "why": "Los mercados de predicción cripto están en crecimiento · Verificador: Los mercados de predicción son un sector emergente pero bajo escrutinio.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No hay equipo asociado a la iniciativa · Verificador: No aplica, es una iniciativa legislativa gubernamental.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.5,
+    "why": "No se menciona financiación en la fuente · Verificador: No aplica, no es un proyecto de inversión.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "Impulso político en EE.UU. · Verificador: Interés limitado a observadores de política cripto.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "Aún no se ha implementado la normativa · Verificador: Normativa en fase de propuesta, sin adopción real. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Otros legisladores podrían proponer alternativas regulatorias · Verificador: Otros marcos regulatorios (CFTC, SEC) compiten por jurisdicción.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.5,
+    "why": "Dependencia de aprobación legislativa y posibles cambios · Verificador: No hay riesgo técnico, es riesgo regulatorio.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "No implica inversión directa, riesgo financiero bajo · Verificador: No hay inversión directa, por tanto no hay riesgo de pérdida de capital.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "Impacto indirecto en plataformas españolas · Verificador: No es un servicio disponible, es una noticia regulatoria extranjera.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.5,
+    "why": "No hay salida de inversión asociada · Verificador: No aplica.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "La propuesta aún no está aprobada y su alcance es incierto"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "alta",
+    "detail": "La propuesta puede alterar drásticamente el modelo de negocio de plataformas de predicción que operan globalmente."
+   },
+   {
+    "code": "not_an_investment",
+    "severity": "baja",
+    "detail": "La ficha se presenta como una oportunidad, pero es puramente informativa sobre regulación."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una propuesta legislativa en EE.UU. que no constituye una oportunidad de inversión, sino un evento de riesgo regulatorio. La información sobre la disponibilidad en España es especulativa y no existe una entidad o plataforma que verificar bajo MiCA o CNMV, ya que es un proceso político."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Posible cambio regulatorio que afectará a los mercados de predicción cripto"
+  ],
+  "howToParticipate": [
+   "1. Seguir de cerca el avance del proyecto de ley en el Congreso EE.UU.; 2. Evaluar cómo las plataformas de predicción cripto que operan en España podrían verse afectadas; 3. Ajustar la exposición a dichos tokens o servicios según la evolución normativa"
+  ],
+  "lossCauses": [
+   "Cambios regulatorios adversos que limiten o prohíban la operativa de mercados de predicción"
+  ],
+  "earlySignals": [
+   "Debates y presentaciones del proyecto de ley en comités del Congreso"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un servicio financiero, sino una propuesta de ley. No requiere registro en CNMV ni MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-casten-seeks-curb-prediction-market-insider-trading-doj-whistleblower-program-444779"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha describe una propuesta legislativa en EE.UU. que no constituye una oportunidad de inversión, sino un evento de riesgo regulatorio. La información sobre la disponibilidad en España es especulativa y no existe una entidad o plataforma que verificar bajo MiCA o CNMV, ya que es un proceso político.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-congress-gov",
+  "isNew": true,
+  "score": 16,
+  "rawScore": 20.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "La propuesta aún no está aprobada y su alcance es incierto"
+   },
+   {
+    "code": "not_an_investment",
+    "severity": "baja",
+    "detail": "La ficha se presenta como una oportunidad, pero es puramente informativa sobre regulación."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una propuesta legislativa en EE.UU. que no constituye una oportunidad de inversión, sino un evento de riesgo regulatorio. La información sobre la disponibilidad en España es especulativa y no existe una entidad o plataforma que verificar bajo MiCA o CNMV, ya que es un proceso político."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Rep. Sean Casten propone programa de denuncias al DOJ · Verificador: Propuesta legislativa reciente en EE.UU. sobre mercados de predicción.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Podría reducir fraude en mercados de predicción cripto · Verificador: Es un evento de riesgo, no una oportunidad de ganancia directa. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Los mercados de predicción cripto están en crecimiento · Verificador: Los mercados de predicción son un sector emergente pero bajo escrutinio.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No hay equipo asociado a la iniciativa · Verificador: No aplica, es una iniciativa legislativa gubernamental.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No se menciona financiación en la fuente · Verificador: No aplica, no es un proyecto de inversión.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Impulso político en EE.UU. · Verificador: Interés limitado a observadores de política cripto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Aún no se ha implementado la normativa · Verificador: Normativa en fase de propuesta, sin adopción real. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Otros legisladores podrían proponer alternativas regulatorias · Verificador: Otros marcos regulatorios (CFTC, SEC) compiten por jurisdicción.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Dependencia de aprobación legislativa y posibles cambios · Verificador: No hay riesgo técnico, es riesgo regulatorio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No implica inversión directa, riesgo financiero bajo · Verificador: No hay inversión directa, por tanto no hay riesgo de pérdida de capital.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Impacto indirecto en plataformas españolas · Verificador: No es un servicio disponible, es una noticia regulatoria extranjera.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay salida de inversión asociada · Verificador: No aplica.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Iniciativa de regulación de mercados de predicción (EE.UU.)\nCATEGORÍA: cripto · regulación\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://www.congress.gov\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EE.UU.\nDISPONIBILIDAD EN ESPAÑA: no aplica\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 16/100 · Descartar\nRIESGO: medio\nPLAZO: corto-medio plazo (2027-2028)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible cambio regulatorio que afectará a los mercados de predicción cripto\nMOTIVOS PARA DESCONFIAR: La propuesta aún no está aprobada y su alcance es incierto; La ficha se presenta como una oportunidad, pero es puramente informativa sobre regulación.; El verificador tiene dudas: La ficha describe una propuesta legislativa en EE.UU. que no constituye una oportunidad de inversión, sino un evento de riesgo regulatorio. La información sobre la disponibilidad en España es especulativa y no existe una entidad o plataforma que verificar bajo MiCA o CNMV, ya que es un proceso político.\nCÓMO PARTICIPAR: 1. Seguir de cerca el avance del proyecto de ley en el Congreso EE.UU.; 2. Evaluar cómo las plataformas de predicción cripto que operan en España podrían verse afectadas; 3. Ajustar la exposición a dichos tokens o servicios según la evolución normativa\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cambios regulatorios adversos que limiten o prohíban la operativa de mercados de predicción\nFUENTES: https://www.theblock.co/news/regulation/2026-11-20-rep-casten-seeks-curb-prediction-market-insider-trading-doj-whistleblower-program-444779",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "news-www-theblock-co-news-regulation-2026-11-20-rep-casten-seeks-curb-prediction-market-in"
+  ]
+ },
+ {
   "name": "WaitFeed",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -14424,6 +15209,382 @@
   "runId": "run-20261121-1158",
   "aliases": [
    "news-www-producthunt-com-products-waitfeed-2"
+  ]
+ },
+ {
+  "name": "Nvidia fallout discussion (TechCrunch podcast)",
+  "category": "startups",
+  "subcategory": "ia_tecnologia",
+  "kind": "pasiva",
+  "description": "Podcast de TechCrunch que analiza el escándalo de Jensen Huang y sus repercusiones en Nvidia y la industria de IA. No incluye oferta de inversión ni token asociado.",
+  "officialUrl": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "no",
+  "spainNotes": "Contenido informativo; no hay propuesta de inversión disponible en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes asociados",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "no aplica",
+  "horizon": "corto plazo (información)",
+  "deadline": null,
+  "potential": "informativo",
+  "difficulty": "baja",
+  "timeNeeded": "aprox. 30 min para escuchar el podcast",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "El tema es de actualidad pero no constituye una novedad de inversión · Verificador: Es un podcast de actualidad periodística, no una novedad de inversión.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "No hay producto o token que pueda generar retorno financiero · Verificador: No existe producto financiero ni retorno asociado.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.0,
+    "why": "Se menciona el mercado de IA, pero sin datos de oportunidad concreta · Verificador: Análisis de mercado tecnológico, sin oportunidad de entrada.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "Los presentadores son periodistas, no fundadores de startup · Verificador: Equipo editorial verificado de TechCrunch. · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No se describe financiación de proyecto alguno · Verificador: No aplica, es contenido mediático.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "Audiencia de TechCrunch, pero sin comunidad de inversores · Verificador: Audiencia global de TechCrunch.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Se discute adopción de IA, sin métricas de adopción de producto · Verificador: No aplica. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Se menciona competencia en IA, sin análisis profundo · Verificador: No aplica. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 9.0,
+    "why": "No hay componente técnico de inversión · Verificador: Riesgo nulo al ser solo contenido de audio.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No hay exposición financiera · Verificador: Riesgo nulo al no haber inversión.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No hay oferta disponible en España · Verificador: Contenido accesible, pero no es una oferta de inversión.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.5,
+    "why": "No aplica salida de inversión · Verificador: No aplica.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_investment_opportunity",
+    "severity": "critica",
+    "detail": "El contenido es meramente informativo; no existe propuesta de inversión ni token asociado."
+   },
+   {
+    "code": "no_investment_opportunity",
+    "severity": "critica",
+    "detail": "El usuario debe entender que esto es contenido periodístico y no una oportunidad de inversión financiera."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Entender el impacto del escándalo en Nvidia y en el ecosistema de IA."
+  ],
+  "howToParticipate": [
+   "Escuchar el podcast en Apple Podcasts, Spotify o la web de TechCrunch. No hay acción de inversión que ejecutar."
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser contenido informativo sin oferta de valores o servicios financieros, no está sujeto a supervisión de la CNMV ni MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "TechCrunch Startups",
+    "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/"
+   }
+  ],
+  "discoveredVia": "TechCrunch Startups",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El contenido es un podcast informativo legítimo de TechCrunch. No es una oportunidad de inversión, por lo que no requiere registro en la CNMV ni cumple con criterios de activos financieros.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-techcrunch-com",
+  "isNew": true,
+  "score": 14,
+  "rawScore": 24.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_proveedor_local",
+    "severity": "media",
+    "detail": "No se identifican empresas españolas con oferta concreta en este nicho"
+   },
+   {
+    "code": "falta_de_producto",
+    "severity": "critica",
+    "detail": "La oportunidad no es un producto, sino un artículo periodístico sobre un riesgo de seguridad."
+   },
+   {
+    "code": "ausencia_de_proveedor",
+    "severity": "alta",
+    "detail": "No se identifica ninguna entidad legal o empresa que ofrezca estos servicios."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una tendencia de mercado y un riesgo de seguridad, no una oportunidad de inversión o un producto comercial concreto. No existe una plataforma, empresa o servicio específico que contratar, por lo que no es una oportunidad de negocio ejecutable."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "El uso de IA para automatizar honey‑traps es una amenaza emergente reciente · Verificador: El uso de IA para escalar ataques de ingeniería social es una tendencia actual documentada.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Muchas empresas de IA carecen de protocolos de contra‑inteligencia · Verificador: El riesgo es real, pero la monetización como servicio de consultoría es un mercado de nicho y difícil de escalar. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Creciente preocupación de seguridad en el sector IA, pero mercado de consultoría aún fragmentado · Verificador: No hay un mercado estructurado de 'servicios de prevención de honey-traps' para IA, sino servicios generales de ciberseguridad.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No existe un equipo ni empresa detrás de esta propuesta. (un solo modelo)",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de financiación ni modelo de negocio. (un solo modelo)",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No existe comunidad asociada. (un solo modelo)",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Adopción lenta en empresas tradicionales, pero aceleración en startups de IA · Verificador: Las empresas suelen priorizar firewalls y seguridad técnica sobre la formación en contra-inteligencia humana. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.5,
+    "points": 1.8,
+    "why": "Existen consultoras de seguridad, pero poca especialización en honey‑traps IA · Verificador: Las grandes consultoras de ciberseguridad ya cubren ingeniería social, aunque no bajo este nombre específico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Dependencia de herramientas de IA que pueden ser evadidas · Verificador: La mitigación depende de factores humanos, los cuales son intrínsecamente difíciles de asegurar.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Ingresos basados en contratos; riesgo de cancelación si la amenaza disminuye · Verificador: Al no ser una inversión, el riesgo es la pérdida de tiempo buscando un servicio inexistente. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Falta de proveedores locales especializados · Verificador: No hay proveedores locales identificados para este nicho específico. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica al no ser un activo financiero. (un solo modelo)",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:00:28Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Honey‑trap awareness & mitigation services for AI companies\nCATEGORÍA: negocio · seguridad_cibernetica\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: n/a\nDISPONIBILIDAD EN ESPAÑA: no_disponible\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 14/100 · Descartar\nRIESGO: crítico\nPLAZO: corto‑plazo (meses)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Aumento de ataques de honey‑trap facilitados por IA; Riesgo directo para ejecutivos y secretos estratégicos de empresas de IA\nMOTIVOS PARA DESCONFIAR: No se identifican empresas españolas con oferta concreta en este nicho; La oportunidad no es un producto, sino un artículo periodístico sobre un riesgo de seguridad.; No se identifica ninguna entidad legal o empresa que ofrezca estos servicios.; El verificador tiene dudas: La ficha describe una tendencia de mercado y un riesgo de seguridad, no una oportunidad de inversión o un producto comercial concreto. No existe una plataforma, empresa o servicio específico que contratar, por lo que no es una oportunidad de negocio ejecutable.; No hay datos de precios ni de proveedores específicos; la información es meramente descriptiva\nCÓMO PARTICIPAR: 1. Identificar consultoras de ciberseguridad con experiencia en ingeniería social; 2. Solicitar propuestas de auditoría de honey‑trap; 3. Evaluar coste‑beneficio antes de contratar\nQUÉ PODRÍA HACERME PERDER EL DINERO: Contratar un proveedor sin experiencia específica en honey‑traps IA; Subestimar la sofisticación de los ataques\nFUENTES: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "news-techcrunch-com-podcast-the-fallout-from-nvidias-jensen-huang-scandal-continues"
   ]
  },
  {
@@ -17602,6 +18763,1817 @@
   "runId": "run-20261121-0817",
   "aliases": [
    "news-www-producthunt-com-products-hollr-3"
+  ]
+ },
+ {
+  "name": "CASHCAT / WETH 0.3% Liquidity Pool",
+  "category": "cripto",
+  "subcategory": "liquidity_pool",
+  "kind": "pasiva",
+  "description": "Pool de liquidez del token CASHCAT emparejado con WETH en la cadena Robinhood, con una comisión del 0.3%.",
+  "officialUrl": null,
+  "participateUrl": "https://www.geckoterminal.com/robinhood/pools/0xd42a491087a15e5afd51feb3606066cc152d2b09",
+  "country": "desconocido",
+  "spainAvailability": "no regulado",
+  "spainNotes": "No hay restricciones conocidas, pero la cadena Robinhood es poco usada en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "comisiones de transacción en la cadena Robinhood",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Puedes retirar tu liquidez en cualquier momento, pero puedes sufrir pérdida impermanente.",
+  "horizon": "corto-medio plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "media",
+  "timeNeeded": "algunas horas para investigar y añadir liquidez",
+  "subscores": {
+   "novedad": {
+    "v": 3.5,
+    "why": "Pool en cadena Robinhood poco conocida · Verificador: La red Robinhood es de nicho y poco documentada en entornos financieros regulados.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4.5,
+    "why": "Volumen 24h (1.87M USD) supera la liquidez (590k USD) · Verificador: El volumen es alto, pero la liquidez es insuficiente para absorber salidas grandes sin impacto masivo en el precio.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "FDV 35.6M USD indica un mercado pequeño · Verificador: Capitalización de mercado altamente especulativa y sin fundamentos claros. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No hay información pública del equipo · Verificador: Anonimato total del equipo desarrollador.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "No se dispone de datos de financiación · Verificador: No existen datos de financiación institucional o capital riesgo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Sin datos de comunidad o redes sociales · Verificador: Ausencia de canales oficiales verificados o gobernanza transparente.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3.5,
+    "why": "Alto volumen de operaciones indica cierta adopción · Verificador: El volumen de trading es alto, pero parece concentrado en bots y especulación a corto plazo.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 3.5,
+    "why": "Existen muchos pools similares en otras cadenas · Verificador: Existen miles de pools similares en redes descentralizadas con mayor historial.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Sin analizador de contratos; flag de riesgo medio · Verificador: Contrato no verificado por firmas de seguridad reconocidas; riesgo de rug pull.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta volatilidad del token y riesgo de pérdida impermanente · Verificador: Alta probabilidad de pérdida total debido a la volatilidad y pérdida impermanente.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 5.0,
+    "why": "Cualquier usuario con wallet compatible puede participar · Verificador: Técnicamente accesible, pero sin protección legal para el inversor.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.5,
+    "why": "Liquidez disponible permite retirar en cualquier momento · Verificador: La liquidez permite retirar, siempre que el pool mantenga profundidad suficiente.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood"
+   },
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red robinhood."
+   },
+   {
+    "code": "anonimato_equipo",
+    "severity": "alta",
+    "detail": "No hay responsables legales identificables detrás del token CASHCAT."
+   },
+   {
+    "code": "riesgo_tecnico_alto",
+    "severity": "critica",
+    "detail": "Contrato inteligente sin auditoría pública en una red de baja transparencia."
+   },
+   {
+    "code": "falta_regulacion",
+    "severity": "alta",
+    "detail": "El activo no cumple con normativas MiCA ni supervisión de la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo opera en una red (Robinhood Chain) que carece de transparencia institucional, auditorías de seguridad públicas y registro en entidades reguladoras como la CNMV o ESMA. La falta de información sobre el equipo y la naturaleza especulativa del token CASHCAT elevan el riesgo a niveles críticos para un inversor minorista."
+   }
+  ],
+  "distrust": [
+   "falta de información oficial y análisis de contrato"
+  ],
+  "whyInteresting": [
+   "alto volumen relativo a la liquidez indica actividad sostenida",
+   "precio bajo permite potencial upside si el proyecto gana tracción"
+  ],
+  "howToParticipate": [
+   "1. Obtén una wallet compatible con la cadena Robinhood",
+   "2. Conecta la wallet a un DEX que soporte la pool (p.ej. a través del enlace de GeckoTerminal)",
+   "3. Añade liquidez en el par CASHCAT/WETH 0.3% con el importe que desees (máximo 2.000 €)",
+   "4. Monitorea tu posición y retira cuando lo consideres oportuno"
+  ],
+  "lossCauses": [
+   "pérdida impermanente por variación de precios",
+   "caída del precio del token CASHCAT",
+   "problemas de contrato o hack en la cadena Robinhood"
+  ],
+  "earlySignals": [
+   "crecimiento del volumen 24h",
+   "ratio de compras superior a ventas (4687 buys vs 4511 sells)"
+  ],
+  "signals": {
+   "buys24h": 4687,
+   "sells24h": 4511,
+   "volume24hUsd": 1869296.66059714
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en los registros de la CNMV ni en el registro de proveedores de servicios de activos virtuales del Banco de España. La red Robinhood no está sujeta a supervisión financiera europea.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "robinhood",
+   "tokenAddress": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "priceUsd": 0.0362738338928859,
+   "liquidityUsd": 589976.239,
+   "volume24hUsd": 1869296.66059714,
+   "fdvUsd": 35617171.8619548,
+   "ageHours": 3424.4,
+   "buys24h": 4687,
+   "sells24h": 4511,
+   "pairUrl": "https://www.geckoterminal.com/robinhood/pools/0xd42a491087a15e5afd51feb3606066cc152d2b09"
+  },
+  "securityChecks": [],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/robinhood/pools/0xd42a491087a15e5afd51feb3606066cc152d2b09"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo opera en una red (Robinhood Chain) que carece de transparencia institucional, auditorías de seguridad públicas y registro en entidades reguladoras como la CNMV o ESMA. La falta de información sobre el equipo y la naturaleza especulativa del token CASHCAT elevan el riesgo a niveles críticos para un inversor minorista.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-robinhood-0x020bfc650a365f8bb26819deaabf3e21291018b4",
+  "isNew": true,
+  "score": 7,
+  "rawScore": 27.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood"
+   },
+   {
+    "code": "anonimato_equipo",
+    "severity": "alta",
+    "detail": "No hay responsables legales identificables detrás del token CASHCAT."
+   },
+   {
+    "code": "riesgo_tecnico_alto",
+    "severity": "critica",
+    "detail": "Contrato inteligente sin auditoría pública en una red de baja transparencia."
+   },
+   {
+    "code": "falta_regulacion",
+    "severity": "alta",
+    "detail": "El activo no cumple con normativas MiCA ni supervisión de la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo opera en una red (Robinhood Chain) que carece de transparencia institucional, auditorías de seguridad públicas y registro en entidades reguladoras como la CNMV o ESMA. La falta de información sobre el equipo y la naturaleza especulativa del token CASHCAT elevan el riesgo a niveles críticos para un inversor minorista."
+   },
+   {
+    "code": "fdv_inflada",
+    "severity": "alta",
+    "detail": "FDV 60 veces la liquidez: la capitalización no es dinero retirable."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Pool en cadena Robinhood poco conocida · Verificador: La red Robinhood es de nicho y poco documentada en entornos financieros regulados.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 4.5,
+    "points": 5.4,
+    "why": "Volumen 24h (1.87M USD) supera la liquidez (590k USD) · Verificador: El volumen es alto, pero la liquidez es insuficiente para absorber salidas grandes sin impacto masivo en el precio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "FDV 35.6M USD indica un mercado pequeño · Verificador: Capitalización de mercado altamente especulativa y sin fundamentos claros. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No hay información pública del equipo · Verificador: Anonimato total del equipo desarrollador.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No se dispone de datos de financiación · Verificador: No existen datos de financiación institucional o capital riesgo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Sin datos de comunidad o redes sociales · Verificador: Ausencia de canales oficiales verificados o gobernanza transparente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.5,
+    "points": 3.1,
+    "why": "Alto volumen de operaciones indica cierta adopción · Verificador: El volumen de trading es alto, pero parece concentrado en bots y especulación a corto plazo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen muchos pools similares en otras cadenas · Verificador: Existen miles de pools similares en redes descentralizadas con mayor historial.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Sin analizador de contratos; flag de riesgo medio · Verificador: Contrato no verificado por firmas de seguridad reconocidas; riesgo de rug pull.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad del token y riesgo de pérdida impermanente · Verificador: Alta probabilidad de pérdida total debido a la volatilidad y pérdida impermanente.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Cualquier usuario con wallet compatible puede participar · Verificador: Técnicamente accesible, pero sin protección legal para el inversor.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Liquidez disponible permite retirar en cualquier momento · Verificador: La liquidez permite retirar, siempre que el pool mantenga profundidad suficiente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3900.99,
+     "exitImpactPct": 1.5,
+     "exitNote": null,
+     "impliedFdvUsd": 71234344
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9531.17,
+     "exitImpactPct": 3.7,
+     "exitNote": null,
+     "impliedFdvUsd": 178085859
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 18324.68,
+     "exitImpactPct": 7.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 356171719
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 33698.7,
+     "exitImpactPct": 14.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 712343437
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 62116.9,
+     "exitImpactPct": 37.3,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1780858593,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 50467.59,
+     "exitImpactPct": 74.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 3561717186,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5940.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 10685151559,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:00:28Z",
+    "priceUsd": 0.0362738338928859,
+    "liquidityUsd": 589976.239,
+    "volume24hUsd": 1869296.66059714,
+    "fdvUsd": 35617171.8619548,
+    "buys24h": 4687.0,
+    "sells24h": 4511.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: CASHCAT / WETH 0.3% Liquidity Pool\nCATEGORÍA: cripto · liquidity_pool\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.geckoterminal.com/robinhood/pools/0xd42a491087a15e5afd51feb3606066cc152d2b09\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no regulado\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 7/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alto volumen relativo a la liquidez indica actividad sostenida; precio bajo permite potencial upside si el proyecto gana tracción\nMOTIVOS PARA DESCONFIAR: No hay analizador de contratos para la red Robinhood; No hay responsables legales identificables detrás del token CASHCAT.; Contrato inteligente sin auditoría pública en una red de baja transparencia.; El activo no cumple con normativas MiCA ni supervisión de la CNMV.; El verificador tiene dudas: El activo opera en una red (Robinhood Chain) que carece de transparencia institucional, auditorías de seguridad públicas y registro en entidades reguladoras como la CNMV o ESMA. La falta de información sobre el equipo y la naturaleza especulativa del token CASHCAT elevan el riesgo a niveles críticos para un inversor minorista.; FDV 60 veces la liquidez: la capitalización no es dinero retirable.; falta de información oficial y análisis de contrato\nCÓMO PARTICIPAR: 1. Obtén una wallet compatible con la cadena Robinhood; 2. Conecta la wallet a un DEX que soporte la pool (p.ej. a través del enlace de GeckoTerminal); 3. Añade liquidez en el par CASHCAT/WETH 0.3% con el importe que desees (máximo 2.000 €); 4. Monitorea tu posición y retira cuando lo consideres oportuno\nQUÉ PODRÍA HACERME PERDER EL DINERO: pérdida impermanente por variación de precios; caída del precio del token CASHCAT; problemas de contrato o hack en la cadena Robinhood\nFUENTES: https://www.geckoterminal.com/robinhood/pools/0xd42a491087a15e5afd51feb3606066cc152d2b09 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "tok-robinhood-0x020bfc650a365f8bb26819deaabf3e21291018b4"
+  ]
+ },
+ {
+  "name": "Minería de Bitcoin (equipos o pools)",
+  "category": "cripto",
+  "subcategory": "minería",
+  "kind": "activa",
+  "description": "La caída del precio de Bitcoin está presionando a los mineros, lo que puede generar oportunidades de inversión en equipos o participación en pools de minería. La actividad está regulada de forma limitada y depende fuertemente del valor de BTC. Requiere conocimientos técnicos y una inversión inicial que puede superar los 2.000 €, aunque existen opciones de bajo coste mediante pools.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "global",
+  "spainAvailability": "legal pero no rentable",
+  "spainNotes": "La minería es posible en España, pero la rentabilidad depende del coste eléctrico y la regulación local, que no está clara.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Costes de electricidad, mantenimiento y posibles tarifas de pool.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "La venta de hardware usado es limitada y los contratos de pool pueden ser difíciles de rescindir sin penalizaciones.",
+  "horizon": "medio plazo",
+  "deadline": null,
+  "potential": "Depende directamente del precio de Bitcoin y de la dificultad de la red; una caída prolongada puede reducir la rentabilidad.",
+  "difficulty": "alta",
+  "timeNeeded": "Requiere tiempo para configurar hardware, unirse a un pool y monitorizar la operación.",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "La minería de Bitcoin es una actividad establecida desde 2009 · Verificador: Tecnología madura desde 2009, no es una novedad.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Potencial limitado por la volatilidad de BTC y la creciente dificultad de la red · Verificador: Con 2.000 €, el retorno es negativo tras costes eléctricos en España. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "Mercado global de minería con varios actores grandes y pequeños · Verificador: Mercado global altamente eficiente y competitivo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre equipos o equipos fundadores · Verificador: No aplica, es una actividad descentralizada.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos de financiación específicos para esta oportunidad · Verificador: No aplica, no es un proyecto con financiación externa.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Existe una comunidad activa de mineros y pools · Verificador: Comunidad técnica global muy extensa. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "Adopción moderada; muchos usuarios participan a través de pools · Verificador: Adopción masiva a nivel industrial. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Alta competencia entre mineros y pools a nivel global · Verificador: Competencia extrema a nivel global con hardware especializado. · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.0,
+    "why": "Riesgo de fallos de hardware, sobrecalentamiento y obsolescencia rápida · Verificador: Obsolescencia rápida del hardware (ASICs). · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Altamente expuesto a la volatilidad del precio de Bitcoin y a cambios regulatorios · Verificador: Exposición total a la volatilidad de BTC y costes energéticos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 3.5,
+    "why": "Incertidumbre sobre la normativa española y costes energéticos locales · Verificador: Legalmente permitida, pero económicamente desaconsejable para particulares.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 3.5,
+    "why": "Baja liquidez del hardware y posibles penalizaciones en contratos de pool · Verificador: Mercado de segunda mano para hardware obsoleto muy limitado.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "price_volatility",
+    "severity": "alta",
+    "detail": "La rentabilidad depende del precio de Bitcoin, que es altamente volátil"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "Falta de claridad regulatoria en España sobre la minería de criptomonedas"
+   },
+   {
+    "code": "economic_infeasibility",
+    "severity": "critica",
+    "detail": "Con 2.000 € y los precios de la electricidad en España, la minería doméstica es deficitaria."
+   },
+   {
+    "code": "hardware_obsolescence",
+    "severity": "alta",
+    "detail": "El hardware ASIC pierde valor rápidamente ante nuevos modelos más eficientes."
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "Aunque legal, la actividad está sujeta a impuestos sobre beneficios y posibles regulaciones ambientales."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La minería de Bitcoin no es una 'oportunidad de inversión' per se, sino una actividad industrial de alto riesgo. No existe una entidad centralizada que verificar, y la rentabilidad en España es inviable para un presupuesto de 2.000 € debido a los costes eléctricos y la dificultad de red actual."
+   }
+  ],
+  "distrust": [
+   "Dependencia directa del precio de Bitcoin y de la dificultad de la red"
+  ],
+  "whyInteresting": [
+   "Presión a los mineros por la caída de precios puede crear oportunidades de compra a precios reducidos",
+   "Posibilidad de diversificar con un activo digital mediante infraestructura propia"
+  ],
+  "howToParticipate": [
+   "1. Evaluar la rentabilidad mediante calculadoras de minería (p.ej. WhatToMine)",
+   "2. Seleccionar hardware dentro del presupuesto disponible",
+   "3. Unirse a un pool de minería con buena reputación",
+   "4. Configurar y monitorizar el equipo, considerando costes eléctricos"
+  ],
+  "lossCauses": [
+   "Caída prolongada del precio de Bitcoin",
+   "Aumento de la dificultad de minería",
+   "Fallos de hardware o sobrecalentamiento",
+   "Incremento de costes energéticos o cambios regulatorios"
+  ],
+  "earlySignals": [
+   "Descenso sostenido del precio de Bitcoin",
+   "Incremento de la dificultad de la red en los últimos meses"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "La minería de criptoactivos no es un servicio financiero regulado por la CNMV ni requiere registro MiCA, a menos que se ofrezca como servicio de inversión (cloud mining), lo cual suele ser un esquema de alto riesgo.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786"
+   },
+   {
+    "title": "CNMV - Advertencias sobre criptoactivos",
+    "url": "https://www.cnmv.es/portal/Inversor/Criptoactivos.aspx"
+   },
+   {
+    "title": "WhatToMine - Calculadora de rentabilidad",
+    "url": "https://whattomine.com/"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La minería de Bitcoin no es una 'oportunidad de inversión' per se, sino una actividad industrial de alto riesgo. No existe una entidad centralizada que verificar, y la rentabilidad en España es inviable para un presupuesto de 2.000 € debido a los costes eléctricos y la dificultad de red actual.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-mineria-de-bitcoin-equipos-o-pools",
+  "isNew": true,
+  "score": 7,
+  "rawScore": 21.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "price_volatility",
+    "severity": "alta",
+    "detail": "La rentabilidad depende del precio de Bitcoin, que es altamente volátil"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "Falta de claridad regulatoria en España sobre la minería de criptomonedas"
+   },
+   {
+    "code": "economic_infeasibility",
+    "severity": "critica",
+    "detail": "Con 2.000 € y los precios de la electricidad en España, la minería doméstica es deficitaria."
+   },
+   {
+    "code": "hardware_obsolescence",
+    "severity": "alta",
+    "detail": "El hardware ASIC pierde valor rápidamente ante nuevos modelos más eficientes."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La minería de Bitcoin no es una 'oportunidad de inversión' per se, sino una actividad industrial de alto riesgo. No existe una entidad centralizada que verificar, y la rentabilidad en España es inviable para un presupuesto de 2.000 € debido a los costes eléctricos y la dificultad de red actual."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "La minería de Bitcoin es una actividad establecida desde 2009 · Verificador: Tecnología madura desde 2009, no es una novedad.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Potencial limitado por la volatilidad de BTC y la creciente dificultad de la red · Verificador: Con 2.000 €, el retorno es negativo tras costes eléctricos en España. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado global de minería con varios actores grandes y pequeños · Verificador: Mercado global altamente eficiente y competitivo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre equipos o equipos fundadores · Verificador: No aplica, es una actividad descentralizada.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de financiación específicos para esta oportunidad · Verificador: No aplica, no es un proyecto con financiación externa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Existe una comunidad activa de mineros y pools · Verificador: Comunidad técnica global muy extensa. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción moderada; muchos usuarios participan a través de pools · Verificador: Adopción masiva a nivel industrial. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Alta competencia entre mineros y pools a nivel global · Verificador: Competencia extrema a nivel global con hardware especializado. · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo de fallos de hardware, sobrecalentamiento y obsolescencia rápida · Verificador: Obsolescencia rápida del hardware (ASICs). · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Altamente expuesto a la volatilidad del precio de Bitcoin y a cambios regulatorios · Verificador: Exposición total a la volatilidad de BTC y costes energéticos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Incertidumbre sobre la normativa española y costes energéticos locales · Verificador: Legalmente permitida, pero económicamente desaconsejable para particulares.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Baja liquidez del hardware y posibles penalizaciones en contratos de pool · Verificador: Mercado de segunda mano para hardware obsoleto muy limitado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Minería de Bitcoin (equipos o pools)\nCATEGORÍA: cripto · minería\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: legal pero no rentable\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Depende directamente del precio de Bitcoin y de la dificultad de la red; una caída prolongada puede reducir la rentabilidad.\nPUNTUACIÓN: 7/100 · Descartar\nRIESGO: crítico\nPLAZO: medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Presión a los mineros por la caída de precios puede crear oportunidades de compra a precios reducidos; Posibilidad de diversificar con un activo digital mediante infraestructura propia\nMOTIVOS PARA DESCONFIAR: La rentabilidad depende del precio de Bitcoin, que es altamente volátil; Falta de claridad regulatoria en España sobre la minería de criptomonedas; Con 2.000 € y los precios de la electricidad en España, la minería doméstica es deficitaria.; El hardware ASIC pierde valor rápidamente ante nuevos modelos más eficientes.; El verificador tiene dudas: La minería de Bitcoin no es una 'oportunidad de inversión' per se, sino una actividad industrial de alto riesgo. No existe una entidad centralizada que verificar, y la rentabilidad en España es inviable para un presupuesto de 2.000 € debido a los costes eléctricos y la dificultad de red actual.; Dependencia directa del precio de Bitcoin y de la dificultad de la red\nCÓMO PARTICIPAR: 1. Evaluar la rentabilidad mediante calculadoras de minería (p.ej. WhatToMine); 2. Seleccionar hardware dentro del presupuesto disponible; 3. Unirse a un pool de minería con buena reputación; 4. Configurar y monitorizar el equipo, considerando costes eléctricos\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída prolongada del precio de Bitcoin; Aumento de la dificultad de minería; Fallos de hardware o sobrecalentamiento; Incremento de costes energéticos o cambios regulatorios\nFUENTES: https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786 | https://www.cnmv.es/portal/Inversor/Criptoactivos.aspx | https://whattomine.com/",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "news-www-theblock-co-newsletters-the-daily-2026-11-20-jpmorgan-bitcoin-price-drop-miners-s"
+  ]
+ },
+ {
+  "name": "DCTY Token",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "pasiva",
+  "description": "Token DCTY lanzado recientemente en la cadena Ethereum. Presenta alta actividad de compra en sus primeras 36 horas y un volumen de 24 h superior a su liquidez. Carece de información pública sobre su equipo y sitio oficial, lo que aumenta la incertidumbre.",
+  "officialUrl": null,
+  "participateUrl": "https://www.geckoterminal.com/eth/pools/0xeb97505545c3859168f509b645265e0c7d5be4ecd1a93a49a15035f7275df32f",
+  "country": "desconocido",
+  "spainAvailability": "no disponible legalmente",
+  "spainNotes": "No se dispone de datos que confirmen disponibilidad o restricciones en España.",
+  "costs": {
+   "minEntry": 10,
+   "extra": 0,
+   "extraNotes": "Gastos de gas estimados en torno a 5‑10 €",
+   "recommended": 1000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en el pool de Geckoterminal, pero la liquidez limitada puede generar slippage.",
+  "horizon": "corto a medio plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 8.0,
+    "why": "Token lanzado hace 36 h · Verificador: Token lanzado hace aproximadamente 36 horas.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Volumen 24 h (2.07 M USD) supera la liquidez (239 k USD) · Verificador: El alto volumen frente a la baja liquidez es un indicador de manipulación o alta volatilidad, no necesariamente de valor fundamental. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "15.3 % del suministro en los 10 mayores holders · Verificador: Concentración significativa en pocos holders y falta de transparencia.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información del equipo · Verificador: Equipo totalmente anónimo sin presencia pública verificable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "No hay datos de financiación pública · Verificador: No existe financiación institucional ni hoja de ruta pública.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "880 holders registrados · Verificador: Comunidad incipiente basada puramente en especulación de precio.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "1618 compras vs 435 ventas en 24 h · Verificador: La actividad es puramente especulativa en DEX, sin uso real del token. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.0,
+    "why": "No se identifican competidores claros · Verificador: No hay propuesta de valor diferenciada frente a miles de tokens similares. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Sin auditorías o revisiones de código públicas · Verificador: Ausencia de auditorías de contrato inteligente; riesgo de honeypot o funciones maliciosas.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "FDV 8.94 M USD con liquidez solo 239 k USD · Verificador: Riesgo extremo de pérdida total debido a la baja liquidez y alta volatilidad.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "Falta de información sobre disponibilidad en España · Verificador: No cumple con ninguna normativa MiCA ni registro en CNMV.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "Posible venta en pool, pero liquidez limitada · Verificador: La liquidez es insuficiente para salidas grandes sin causar un desplome del precio (slippage). · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_oficial",
+    "severity": "alta",
+    "detail": "No se encontró sitio web oficial ni documentación del proyecto."
+   },
+   {
+    "code": "equipo_desconocido",
+    "severity": "media",
+    "detail": "No hay datos sobre el equipo fundador o desarrolladores."
+   },
+   {
+    "code": "fdv_alto_vs_liquidez",
+    "severity": "alta",
+    "detail": "FDV 8.94 M USD con liquidez solo 239 k USD indica riesgo de volatilidad."
+   },
+   {
+    "code": "falta_de_oficial",
+    "severity": "critica",
+    "detail": "No existe sitio web oficial ni whitepaper."
+   },
+   {
+    "code": "equipo_anonimo",
+    "severity": "alta",
+    "detail": "El equipo es desconocido, lo que impide cualquier reclamación legal."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "La falta de auditoría y la liquidez bloqueada (o no) en un pool descentralizado permite el retiro de fondos por parte de los creadores."
+   },
+   {
+    "code": "no_regulado",
+    "severity": "alta",
+    "detail": "El activo no está registrado en la CNMV ni bajo supervisión de la ESMA."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo presenta características típicas de un 'memecoin' de alta volatilidad sin respaldo institucional, equipo conocido ni sitio web oficial. La falta de auditorías y la alta disparidad entre FDV y liquidez suponen un riesgo extremo de pérdida total de capital."
+   }
+  ],
+  "distrust": [
+   "ausencia de información oficial",
+   "equipo no identificado"
+  ],
+  "whyInteresting": [
+   "alto volumen de compra inicial",
+   "baja capitalización y potencial de crecimiento"
+  ],
+  "howToParticipate": [
+   "Acceder a la URL de participación en Geckoterminal",
+   "Conectar una wallet compatible con Ethereum",
+   "Comprar DCTY usando ETH o USDC en el pool indicado"
+  ],
+  "lossCauses": [
+   "baja liquidez que cause slippage",
+   "posible rug pull por falta de auditoría",
+   "cambio regulatorio que afecte tokens sin respaldo"
+  ],
+  "earlySignals": [
+   "volumen 24 h > 2 M USD",
+   "crecimiento rápido de holders en 36 h"
+  ],
+  "signals": {
+   "volume24hUsd": 2074688.68218151
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "No es un activo financiero regulado. La inversión en tokens sin emisor identificado no cuenta con protección del inversor en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "eth",
+   "tokenAddress": "0x2ab88bee42286c1cd2ea5cae5d14d376fb1f94b9",
+   "priceUsd": 0.00894023137778198,
+   "liquidityUsd": 239438.0543,
+   "volume24hUsd": 2074688.68218151,
+   "fdvUsd": 8940231.378,
+   "ageHours": 36.3,
+   "buys24h": 1618,
+   "sells24h": 435,
+   "pairUrl": "https://www.geckoterminal.com/eth/pools/0xeb97505545c3859168f509b645265e0c7d5be4ecd1a93a49a15035f7275df32f",
+   "top10Pct": 15.3,
+   "holders": 880
+  },
+  "securityChecks": [
+   {
+    "tool": "GoPlus",
+    "url": "https://gopluslabs.io/token-security/1/0x2ab88bee42286c1cd2ea5cae5d14d376fb1f94b9"
+   },
+   {
+    "tool": "honeypot.is",
+    "error": "HTTP 404"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/eth/pools/0xeb97505545c3859168f509b645265e0c7d5be4ecd1a93a49a15035f7275df32f"
+   },
+   {
+    "title": "CNMV Advertencias",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo presenta características típicas de un 'memecoin' de alta volatilidad sin respaldo institucional, equipo conocido ni sitio web oficial. La falta de auditorías y la alta disparidad entre FDV y liquidez suponen un riesgo extremo de pérdida total de capital.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 67
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-eth-0x2ab88bee42286c1cd2ea5cae5d14d376fb1f94b9",
+  "isNew": true,
+  "score": 6,
+  "rawScore": 26.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 6 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_oficial",
+    "severity": "alta",
+    "detail": "No se encontró sitio web oficial ni documentación del proyecto."
+   },
+   {
+    "code": "equipo_desconocido",
+    "severity": "media",
+    "detail": "No hay datos sobre el equipo fundador o desarrolladores."
+   },
+   {
+    "code": "fdv_alto_vs_liquidez",
+    "severity": "alta",
+    "detail": "FDV 8.94 M USD con liquidez solo 239 k USD indica riesgo de volatilidad."
+   },
+   {
+    "code": "equipo_anonimo",
+    "severity": "alta",
+    "detail": "El equipo es desconocido, lo que impide cualquier reclamación legal."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "La falta de auditoría y la liquidez bloqueada (o no) en un pool descentralizado permite el retiro de fondos por parte de los creadores."
+   },
+   {
+    "code": "no_regulado",
+    "severity": "alta",
+    "detail": "El activo no está registrado en la CNMV ni bajo supervisión de la ESMA."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo presenta características típicas de un 'memecoin' de alta volatilidad sin respaldo institucional, equipo conocido ni sitio web oficial. La falta de auditorías y la alta disparidad entre FDV y liquidez suponen un riesgo extremo de pérdida total de capital."
+   },
+   {
+    "code": "posible_wash_trading",
+    "severity": "alta",
+    "detail": "Volumen 24 h 9 veces la liquidez: posible volumen artificial."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No es un activo financiero regulado. La inversión en tokens sin emisor identificado no cuenta con protección del inversor en España."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Token lanzado hace 36 h · Verificador: Token lanzado hace aproximadamente 36 horas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Volumen 24 h (2.07 M USD) supera la liquidez (239 k USD) · Verificador: El alto volumen frente a la baja liquidez es un indicador de manipulación o alta volatilidad, no necesariamente de valor fundamental. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "15.3 % del suministro en los 10 mayores holders · Verificador: Concentración significativa en pocos holders y falta de transparencia.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información del equipo · Verificador: Equipo totalmente anónimo sin presencia pública verificable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública · Verificador: No existe financiación institucional ni hoja de ruta pública.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.5,
+    "points": 2.5,
+    "why": "880 holders registrados · Verificador: Comunidad incipiente basada puramente en especulación de precio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "1618 compras vs 435 ventas en 24 h · Verificador: La actividad es puramente especulativa en DEX, sin uso real del token. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "No se identifican competidores claros · Verificador: No hay propuesta de valor diferenciada frente a miles de tokens similares. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Sin auditorías o revisiones de código públicas · Verificador: Ausencia de auditorías de contrato inteligente; riesgo de honeypot o funciones maliciosas.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "FDV 8.94 M USD con liquidez solo 239 k USD · Verificador: Riesgo extremo de pérdida total debido a la baja liquidez y alta volatilidad.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Falta de información sobre disponibilidad en España · Verificador: No cumple con ninguna normativa MiCA ni registro en CNMV.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Posible venta en pool, pero liquidez limitada · Verificador: La liquidez es insuficiente para salidas grandes sin causar un desplome del precio (slippage). · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 1000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -1000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 2000.0,
+     "netEur": 1943.65,
+     "exitImpactPct": 1.8,
+     "exitNote": null,
+     "impliedFdvUsd": 17880463
+    },
+    {
+     "multiple": 5,
+     "grossEur": 5000.0,
+     "netEur": 4722.8,
+     "exitImpactPct": 4.6,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 44701157
+    },
+    {
+     "multiple": 10,
+     "grossEur": 10000.0,
+     "netEur": 8991.2,
+     "exitImpactPct": 9.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 89402314
+    },
+    {
+     "multiple": 20,
+     "grossEur": 20000.0,
+     "netEur": 16164.8,
+     "exitImpactPct": 18.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 178804628
+    },
+    {
+     "multiple": 50,
+     "grossEur": 50000.0,
+     "netEur": 26779.97,
+     "exitImpactPct": 45.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 447011569
+    },
+    {
+     "multiple": 100,
+     "grossEur": 100000.0,
+     "netEur": 8119.9,
+     "exitImpactPct": 91.8,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 894023138
+    },
+    {
+     "multiple": 300,
+     "grossEur": 300000.0,
+     "netEur": 2970.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 2682069413,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:00:28Z",
+    "priceUsd": 0.00894023137778198,
+    "liquidityUsd": 239438.0543,
+    "volume24hUsd": 2074688.68218151,
+    "fdvUsd": 8940231.378,
+    "holders": 880.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DCTY Token\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.geckoterminal.com/eth/pools/0xeb97505545c3859168f509b645265e0c7d5be4ecd1a93a49a15035f7275df32f\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no disponible legalmente\nCOSTE DE ENTRADA: 10,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 1.000,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 6/100 · Descartar\nRIESGO: crítico\nPLAZO: corto a medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alto volumen de compra inicial; baja capitalización y potencial de crecimiento\nMOTIVOS PARA DESCONFIAR: No se encontró sitio web oficial ni documentación del proyecto.; No hay datos sobre el equipo fundador o desarrolladores.; FDV 8.94 M USD con liquidez solo 239 k USD indica riesgo de volatilidad.; El equipo es desconocido, lo que impide cualquier reclamación legal.; La falta de auditoría y la liquidez bloqueada (o no) en un pool descentralizado permite el retiro de fondos por parte de los creadores.; El activo no está registrado en la CNMV ni bajo supervisión de la ESMA.; El verificador tiene dudas: El activo presenta características típicas de un 'memecoin' de alta volatilidad sin respaldo institucional, equipo conocido ni sitio web oficial. La falta de auditorías y la alta disparidad entre FDV y liquidez suponen un riesgo extremo de pérdida total de capital.; Volumen 24 h 9 veces la liquidez: posible volumen artificial.; No es un activo financiero regulado. La inversión en tokens sin emisor identificado no cuenta con protección del inversor en España.; ausencia de información oficial; equipo no identificado\nCÓMO PARTICIPAR: Acceder a la URL de participación en Geckoterminal; Conectar una wallet compatible con Ethereum; Comprar DCTY usando ETH o USDC en el pool indicado\nQUÉ PODRÍA HACERME PERDER EL DINERO: baja liquidez que cause slippage; posible rug pull por falta de auditoría; cambio regulatorio que afecte tokens sin respaldo\nFUENTES: https://www.geckoterminal.com/eth/pools/0xeb97505545c3859168f509b645265e0c7d5be4ecd1a93a49a15035f7275df32f | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "tok-eth-0x2ab88bee42286c1cd2ea5cae5d14d376fb1f94b9"
+  ]
+ },
+ {
+  "name": "WASTED",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "pasiva",
+  "description": "WASTED es un token ERC‑20 muy reciente en la cadena Ethereum, con un precio de alrededor de 0,016 USD por unidad. Presenta un volumen de 24 h superior a su liquidez, lo que indica actividad especulativa. No se dispone de información oficial ni de equipo detrás del proyecto.",
+  "officialUrl": null,
+  "participateUrl": "https://app.uniswap.org/",
+  "country": "desconocido",
+  "spainAvailability": "No regulado",
+  "spainNotes": "Token sin restricciones geográficas conocidas, pero sin información de disponibilidad específica en España.",
+  "costs": {
+   "minEntry": 0.02,
+   "extra": 10,
+   "extraNotes": "Gastos de gas en la red Ethereum, variables según congestión",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEX, pero el slippage y los costes de gas pueden reducir la rentabilidad.",
+  "horizon": "corto a medio plazo",
+  "deadline": null,
+  "potential": "Alto potencial especulativo por su bajo precio y elevado volumen, aunque carece de fundamentos claros.",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Token lanzado hace apenas 81,9 h · Verificador: Token lanzado hace menos de 4 días, alta volatilidad inicial. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Volumen 24 h (722 k USD) supera la liquidez (324 k USD) · Verificador: El potencial es puramente especulativo y depende de la liquidez de terceros. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Liquidity 324 k USD y volumen 722 k USD indican mercado activo pero limitado · Verificador: Liquidez baja y alta dependencia de volumen de trading volátil.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de datos sobre el equipo detrás del token · Verificador: No existe información pública sobre los desarrolladores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay información pública de financiación o inversores · Verificador: No hay rondas de financiación ni respaldo institucional.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.5,
+    "why": "Ausencia de datos de comunidad en la fuente consultada · Verificador: Sin presencia verificable en redes sociales o canales oficiales.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.5,
+    "why": "No se encontró evidencia de adopción real o integraciones · Verificador: Cero adopción real o casos de uso fuera del trading especulativo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.5,
+    "why": "Existe alta competencia entre tokens meme y de bajo valor en Ethereum · Verificador: Mercado saturado de tokens meme sin valor intrínseco.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Sin flags de seguridad, pero sin auditoría pública conocida · Verificador: Contrato sin auditoría pública, riesgo de honeypot o funciones maliciosas. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Token muy joven y volatilidad alta, respaldado solo por datos de mercado · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay información específica sobre disponibilidad en España · Verificador: No regulado, sin acceso a través de entidades registradas en CNMV.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.0,
+    "why": "Liquidez suficiente para venta, aunque el gas y slippage pueden afectar · Verificador: Dependiente de la liquidez en Uniswap; el slippage puede ser prohibitivo.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_info",
+    "severity": "alta",
+    "detail": "No se encontró información oficial, equipo, hoja de ruta ni auditoría del contrato"
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "critica",
+    "detail": "Anonimato total del equipo y ausencia de sitio web oficial."
+   },
+   {
+    "code": "riesgo_seguridad",
+    "severity": "critica",
+    "detail": "Contrato inteligente no auditado; riesgo de rug pull."
+   },
+   {
+    "code": "volatilidad_extrema",
+    "severity": "alta",
+    "detail": "Activo altamente especulativo sin valor fundamental."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token especulativo de muy reciente creación sin equipo, auditoría, ni utilidad demostrable. Presenta riesgos extremos de seguridad y volatilidad. No existe información oficial que permita validar su legitimidad."
+   }
+  ],
+  "distrust": [
+   "Falta de transparencia sobre el equipo y la finalidad del token",
+   "Posible token meme sin utilidad real"
+  ],
+  "whyInteresting": [
+   "Alto volumen relativo a la liquidez sugiere actividad especulativa",
+   "Precio extremadamente bajo permite comprar gran cantidad con poco capital"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.)",
+   "2. Comprar ETH en un exchange y transferirlo a la wallet",
+   "3. Conectar la wallet a un DEX como Uniswap",
+   "4. Intercambiar ETH por WASTED usando el par indicado en GeckoTerminal",
+   "5. Guardar los tokens en la wallet"
+  ],
+  "lossCauses": [
+   "Baja liquidez y alto slippage",
+   "Costes de gas elevados que reduzcan beneficios",
+   "Rug pull o vulnerabilidad del contrato inteligente",
+   "Caída brusca del precio por falta de demanda"
+  ],
+  "earlySignals": [
+   "Volumen 24 h superior al doble de la liquidez",
+   "Número de compras (788) mucho mayor que ventas (320)"
+  ],
+  "signals": {
+   "volume24hUsd": 722981.483943318
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "El activo no está registrado en la CNMV ni cumple con la normativa MiCA. Es un token de utilidad no regulado operando en redes descentralizadas.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "eth",
+   "tokenAddress": "0x43b31245dc64e26951d2712f623eda973d71e865",
+   "priceUsd": 0.0160244090623521,
+   "liquidityUsd": 324884.9144,
+   "volume24hUsd": 722981.483943318,
+   "fdvUsd": 16160479.13,
+   "ageHours": 81.9,
+   "buys24h": 788,
+   "sells24h": 320,
+   "pairUrl": "https://www.geckoterminal.com/eth/pools/0x7f87340a28dfd2e98348ebfb45fd73c0df2f710abf2358dc0024d45c1508d771"
+  },
+  "securityChecks": [
+   {
+    "tool": "GoPlus",
+    "url": "https://gopluslabs.io/token-security/1/0x43b31245dc64e26951d2712f623eda973d71e865"
+   },
+   {
+    "tool": "honeypot.is",
+    "error": "HTTP 404"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/eth/pools/0x7f87340a28dfd2e98348ebfb45fd73c0df2f710abf2358dc0024d45c1508d771"
+   },
+   {
+    "title": "CNMV Advertencias",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es un token especulativo de muy reciente creación sin equipo, auditoría, ni utilidad demostrable. Presenta riesgos extremos de seguridad y volatilidad. No existe información oficial que permita validar su legitimidad.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-eth-0x43b31245dc64e26951d2712f623eda973d71e865",
+  "isNew": true,
+  "score": 3,
+  "rawScore": 17.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_info",
+    "severity": "alta",
+    "detail": "No se encontró información oficial, equipo, hoja de ruta ni auditoría del contrato"
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "critica",
+    "detail": "Anonimato total del equipo y ausencia de sitio web oficial."
+   },
+   {
+    "code": "riesgo_seguridad",
+    "severity": "critica",
+    "detail": "Contrato inteligente no auditado; riesgo de rug pull."
+   },
+   {
+    "code": "volatilidad_extrema",
+    "severity": "alta",
+    "detail": "Activo altamente especulativo sin valor fundamental."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token especulativo de muy reciente creación sin equipo, auditoría, ni utilidad demostrable. Presenta riesgos extremos de seguridad y volatilidad. No existe información oficial que permita validar su legitimidad."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token lanzado hace apenas 81,9 h · Verificador: Token lanzado hace menos de 4 días, alta volatilidad inicial. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Volumen 24 h (722 k USD) supera la liquidez (324 k USD) · Verificador: El potencial es puramente especulativo y depende de la liquidez de terceros. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Liquidity 324 k USD y volumen 722 k USD indican mercado activo pero limitado · Verificador: Liquidez baja y alta dependencia de volumen de trading volátil.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de datos sobre el equipo detrás del token · Verificador: No existe información pública sobre los desarrolladores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información pública de financiación o inversores · Verificador: No hay rondas de financiación ni respaldo institucional.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Ausencia de datos de comunidad en la fuente consultada · Verificador: Sin presencia verificable en redes sociales o canales oficiales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "No se encontró evidencia de adopción real o integraciones · Verificador: Cero adopción real o casos de uso fuera del trading especulativo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.5,
+    "points": 1.2,
+    "why": "Existe alta competencia entre tokens meme y de bajo valor en Ethereum · Verificador: Mercado saturado de tokens meme sin valor intrínseco.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Sin flags de seguridad, pero sin auditoría pública conocida · Verificador: Contrato sin auditoría pública, riesgo de honeypot o funciones maliciosas. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Token muy joven y volatilidad alta, respaldado solo por datos de mercado · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay información específica sobre disponibilidad en España · Verificador: No regulado, sin acceso a través de entidades registradas en CNMV.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Liquidez suficiente para venta, aunque el gas y slippage pueden afectar · Verificador: Dependiente de la liquidez en Uniswap; el slippage puede ser prohibitivo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 10.0,
+   "lossScenarioEur": -2010.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3842.84,
+     "exitImpactPct": 2.7,
+     "exitNote": null,
+     "impliedFdvUsd": 32320958
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9220.22,
+     "exitImpactPct": 6.8,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 80802396
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 17110.88,
+     "exitImpactPct": 13.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 161604791
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 28873.51,
+     "exitImpactPct": 27.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 323209583
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 32011.96,
+     "exitImpactPct": 67.7,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 808023956
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 1970.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1616047913,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5930.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 4848143739,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:00:28Z",
+    "priceUsd": 0.0160244090623521,
+    "liquidityUsd": 324884.9144,
+    "volume24hUsd": 722981.483943318,
+    "fdvUsd": 16160479.13
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: WASTED\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://app.uniswap.org/\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: No regulado\nCOSTE DE ENTRADA: 0,02 € (+ 10,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Alto potencial especulativo por su bajo precio y elevado volumen, aunque carece de fundamentos claros.\nPUNTUACIÓN: 3/100 · Descartar\nRIESGO: crítico\nPLAZO: corto a medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Alto volumen relativo a la liquidez sugiere actividad especulativa; Precio extremadamente bajo permite comprar gran cantidad con poco capital\nMOTIVOS PARA DESCONFIAR: No se encontró información oficial, equipo, hoja de ruta ni auditoría del contrato; Anonimato total del equipo y ausencia de sitio web oficial.; Contrato inteligente no auditado; riesgo de rug pull.; Activo altamente especulativo sin valor fundamental.; El verificador tiene dudas: El activo es un token especulativo de muy reciente creación sin equipo, auditoría, ni utilidad demostrable. Presenta riesgos extremos de seguridad y volatilidad. No existe información oficial que permita validar su legitimidad.; Falta de transparencia sobre el equipo y la finalidad del token; Posible token meme sin utilidad real\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.); 2. Comprar ETH en un exchange y transferirlo a la wallet; 3. Conectar la wallet a un DEX como Uniswap; 4. Intercambiar ETH por WASTED usando el par indicado en GeckoTerminal; 5. Guardar los tokens en la wallet\nQUÉ PODRÍA HACERME PERDER EL DINERO: Baja liquidez y alto slippage; Costes de gas elevados que reduzcan beneficios; Rug pull o vulnerabilidad del contrato inteligente; Caída brusca del precio por falta de demanda\nFUENTES: https://www.geckoterminal.com/eth/pools/0x7f87340a28dfd2e98348ebfb45fd73c0df2f710abf2358dc0024d45c1508d771 | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={...}",
+  "firstSeenAt": "2026-11-21T12:00:28Z",
+  "lastSeenAt": "2026-11-21T12:00:28Z",
+  "runId": "run-20261121-1200",
+  "aliases": [
+   "tok-eth-0x43b31245dc64e26951d2712f623eda973d71e865"
   ]
  }
 ]
