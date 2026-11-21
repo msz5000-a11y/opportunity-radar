@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T12:36:12Z",
+ "generatedAt": "2026-11-21T12:48:22Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -478,7 +478,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T12:36:12Z",
+  "at": "2026-11-21T12:48:22Z",
   "status": 200
  }
 }
