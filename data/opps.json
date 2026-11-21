@@ -21775,178 +21775,193 @@
   ]
  },
  {
-  "name": "Bending Spoons adquiere Mailchimp",
-  "category": "startups",
-  "subcategory": "adquisiciones",
-  "kind": "pasiva",
-  "description": "Bending Spoons compró Mailchimp por 3.68 bn USD en una operación mayoritariamente en efectivo con un 10 % de acciones.",
-  "officialUrl": "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
+  "name": "Publicit",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "Plataforma omnicanal de infraestructura publicitaria dirigida a marketers y agentes de IA.",
+  "officialUrl": "https://www.producthunt.com/products/publicit",
   "participateUrl": null,
-  "country": "Italia",
+  "country": "desconocido",
   "spainAvailability": "no",
-  "spainNotes": "No hay oferta pública ni participación directa para inversores españoles.",
+  "spainNotes": "No se dispone de información sobre disponibilidad o presencia en España.",
   "costs": {
    "minEntry": null,
    "extra": null,
-   "extraNotes": "No hay inversión directa disponible.",
+   "extraNotes": "No se ha encontrado información sobre precios o requisitos de inversión.",
    "recommended": null,
    "max": null
   },
-  "canLoseAll": false,
-  "liquidity": "nula",
-  "exitNotes": "No aplica, no hay activo negociable.",
-  "horizon": "largo plazo (operación corporativa)",
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Salida posible mediante venta de acciones en ronda futura o adquisición.",
+  "horizon": "medio plazo",
   "deadline": null,
-  "potential": "Alto impacto en el sector de email marketing, pero sin acceso para inversores particulares.",
+  "potential": "Alta, dado el crecimiento de la publicidad programática y la integración de IA.",
   "difficulty": "alta",
-  "timeNeeded": "ninguno (no hay acción requerida).",
+  "timeNeeded": "Variable, depende de la fase de financiación y desarrollo del producto.",
   "subscores": {
    "novedad": {
-    "v": 6.0,
-    "why": "Adquisición de una empresa consolidada · Verificador: Adquisición corporativa de gran escala en el sector SaaS.",
-    "evidence": true
+    "v": 3.0,
+    "why": "Infraestructura publicitaria omnicanal con IA es un enfoque emergente, pero no único. · Verificador: El concepto es genérico y no hay evidencia de producto funcional.",
+    "evidence": false
    },
    "potencial": {
-    "v": 5.0,
-    "why": "Potencial de crecimiento para Bending Spoons, pero sin acceso al inversor · Verificador: Bending Spoons busca consolidar activos, pero no hay acceso para inversores minoristas.",
-    "evidence": true
+    "v": 1.0,
+    "why": "Mercado de ad tech en expansión y demanda de soluciones AI. · Verificador: Sin datos de mercado o tracción, el potencial es especulativo. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
+    "evidence": false
    },
    "mercado": {
-    "v": 7.0,
-    "why": "Mercado global de email marketing de varios miles de millones de euros · Verificador: El sector de email marketing es masivo y maduro.",
-    "evidence": true
+    "v": 2.0,
+    "why": "Sector publicitario global grande, pero competitivo. · Verificador: El sector ad-tech es real, pero no hay evidencia de que esta entidad opere en él. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
    },
    "equipo": {
-    "v": 8.0,
-    "why": "Equipo directivo de Bending Spoons con historial de integraciones exitosas · Verificador: Bending Spoons tiene un historial probado de adquisiciones de software.",
-    "evidence": true
+    "v": 0.0,
+    "why": "No se dispone de datos sobre el equipo fundador. · Verificador: No se ha podido identificar a ningún fundador o equipo técnico. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
    },
    "financiacion": {
-    "v": 6.0,
-    "why": "Operación 90 % efectivo, 10 % acciones; gran desembolso de capital · Verificador: Operación de 3.68 mil millones USD (90% efectivo, 10% acciones).",
-    "evidence": true
+    "v": 1.0,
+    "why": "Sin información pública sobre rondas de financiación. · Verificador: No hay registros de rondas de inversión ni estructura societaria.",
+    "evidence": false
    },
    "comunidad": {
-    "v": 1.0,
-    "why": "No existe comunidad de inversores para esta operación · Verificador: No existe comunidad de inversores para esta operación privada. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "v": 2.0,
+    "why": "Poca información de comunidad más allá de Product Hunt. · Verificador: Presencia nula fuera de un listado en Product Hunt.",
     "evidence": false
    },
    "adopcion": {
-    "v": 7.5,
-    "why": "Mailchimp es una herramienta ampliamente adoptada por pymes · Verificador: Mailchimp es un estándar de la industria para pymes.",
-    "evidence": true
+    "v": 0.0,
+    "why": "No hay datos de clientes o adopción temprana. · Verificador: No existen clientes, casos de uso o métricas de adopción. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
    },
    "competencia": {
-    "v": 6.0,
-    "why": "Existen competidores fuertes como Constant Contact y SendGrid · Verificador: Mercado altamente competitivo (Constant Contact, SendGrid, etc.).",
-    "evidence": true
+    "v": 1.0,
+    "why": "Existen varios jugadores en ad tech con IA, pero detalle desconocido. · Verificador: Imposible evaluar competencia sin un producto real. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 4.0,
-    "why": "Baja complejidad técnica en la integración de productos · Verificador: La integración de sistemas complejos conlleva riesgos operativos. · Discrepancia entre modelos (8 vs 4): se toma el valor bajo.",
+    "v": 5.0,
+    "why": "Tecnología AI y omnicanal implica desafíos de integración. · Verificador: Riesgo máximo al no existir infraestructura verificable. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
     "evidence": false
    },
    "riesgo_financiero": {
-    "v": 4.0,
-    "why": "Alto riesgo financiero por el gran pago en efectivo y posible sobrevaloración · Verificador: El alto precio pagado frente a la valoración de Intuit sugiere un riesgo de sobrevaloración.",
-    "evidence": true
+    "v": 3.0,
+    "why": "Alta incertidumbre de modelo de negocio y falta de financiación conocida. · Verificador: Inversión de riesgo extremo sin transparencia ni entidad legal. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
+    "evidence": false
    },
    "entrada_espana": {
     "v": 1.0,
-    "why": "No hay mecanismo de entrada para inversores españoles · Verificador: No existe mecanismo de entrada para inversores particulares en España.",
+    "why": "No se ha detectado presencia o plan de entrada a España. · Verificador: No hay presencia, registro ni actividad en España.",
     "evidence": false
    },
    "salida": {
-    "v": 0.5,
-    "why": "No hay activo negociable que permita salida · Verificador: No hay activo negociable para el inversor.",
+    "v": 0.0,
+    "why": "Salida dependerá de eventos de mercado o adquisición. · Verificador: Sin activos ni valor de mercado, la salida es imposible. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
     "evidence": false
    }
   },
   "redFlags": [
    {
-    "code": "sin_acceso_inversor",
-    "severity": "critica",
-    "detail": "No hay forma de invertir directamente con 2.000 €."
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre equipo, financiación, precios ni disponibilidad en España."
    },
    {
-    "code": "sin_acceso_inversor",
+    "code": "falta_de_informacion",
     "severity": "critica",
-    "detail": "Operación corporativa privada; no hay posibilidad de inversión para particulares con 2.000 €."
+    "detail": "No existe sitio web oficial, equipo, ni registro mercantil asociado a 'Publicit'."
+   },
+   {
+    "code": "riesgo_estafa",
+    "severity": "alta",
+    "detail": "La falta de transparencia total y la imposibilidad de verificar la existencia de la empresa sugieren un alto riesgo de fraude o proyecto abandonado."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha original carece de una URL oficial válida (la proporcionada es un enlace a Product Hunt, no el sitio web del producto) y no existe información verificable sobre la existencia legal, equipo, financiación o modelo de negocio de 'Publicit'. El acceso a la web oficial es inexistente o está bloqueado, lo que impide cualquier validación de cumplimiento normativo o viabilidad."
    }
   ],
   "distrust": [
-   "No hay oferta pública ni instrumentos financieros asociados."
+   "Escasa información pública y acceso bloqueado a la web oficial (403)."
   ],
   "whyInteresting": [
-   "Muestra la estrategia de consolidación de Bending Spoons en el sector SaaS."
+   "Combina publicidad omnicanal con IA, un nicho en crecimiento."
   ],
   "howToParticipate": [
-   "No hay participación directa disponible para inversores particulares."
+   "1. Visitar la página de Product Hunt para obtener más información.",
+   "2. Buscar si la startup tiene una ronda de financiación abierta en plataformas de equity crowdfunding.",
+   "3. Contactar directamente con los fundadores si aparecen datos de contacto."
   ],
   "lossCauses": [
-   "Ninguno aplicable, ya que no hay inversión."
+   "Falta de adopción del producto, problemas técnicos de integración, insuficiente financiación, competencia fuerte."
   ],
-  "earlySignals": [],
-  "signals": {},
+  "earlySignals": [
+   "Listado en Product Hunt, interés inicial de la comunidad tech."
+  ],
+  "signals": {
+   "métrica": 0
+  },
   "regulatory": {
    "checked": true,
-   "status": "no_aplica",
-   "notes": "Al ser una adquisición corporativa privada entre entidades, no requiere registro en la CNMV para inversores minoristas al no haber oferta pública.",
+   "status": "desconocido",
+   "notes": "No figura en los registros de la CNMV ni en el registro MiCA de ESMA. Al no ser una entidad identificable, no puede cumplir con la normativa vigente en España.",
    "sources": [
     "https://www.cnmv.es"
    ]
   },
   "sources": [
    {
-    "title": "TechCrunch Startups",
-    "url": "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/"
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/publicit"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es"
    }
   ],
-  "discoveredVia": "TechCrunch Startups",
+  "discoveredVia": "Product Hunt",
   "aiModels": {
    "searcher": null,
    "analyst": "groq:openai/gpt-oss-120b",
    "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
-   "verdict": "confirmada",
-   "reason": "La adquisición de Mailchimp por parte de Bending Spoons es un hecho corporativo reportado por fuentes fiables, pero no constituye una oportunidad de inversión para particulares.",
+   "verdict": "falsa",
+   "reason": "La ficha original carece de una URL oficial válida (la proporcionada es un enlace a Product Hunt, no el sitio web del producto) y no existe información verificable sobre la existencia legal, equipo, financiación o modelo de negocio de 'Publicit'. El acceso a la web oficial es inexistente o está bloqueado, lo que impide cualquier validación de cumplimiento normativo o viabilidad.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 83
+   "agreementPct": 33
   },
   "discoveredAt": "2026-11-21",
-  "id": "web-techcrunch-com",
-  "isNew": false,
-  "score": 0,
-  "rawScore": 1.2,
+  "id": "web-producthunt-com-products-publicit",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 14.0,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
   "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
+   "-10 por 2 riesgo(s) alto(s)"
   ],
   "critical": true,
   "risk": "crítico",
   "flags": [
    {
-    "code": "sin_producto",
-    "severity": "critica",
-    "detail": "El artículo no describe un producto o servicio que pueda ser adquirido o invertido."
-   },
-   {
-    "code": "sin_coste",
+    "code": "falta_de_informacion",
     "severity": "alta",
-    "detail": "No hay coste ni modelo de negocio asociado."
+    "detail": "No se dispone de datos sobre equipo, financiación, precios ni disponibilidad en España."
    },
    {
-    "code": "informacion_falsa",
-    "severity": "critica",
-    "detail": "El artículo citado no existe en TechCrunch y el escándalo mencionado es una invención."
+    "code": "riesgo_estafa",
+    "severity": "alta",
+    "detail": "La falta de transparencia total y la imposibilidad de verificar la existencia de la empresa sugieren un alto riesgo de fraude o proyecto abandonado."
    },
    {
     "code": "verificacion_fallida",
     "severity": "critica",
-    "detail": "El verificador no pudo confirmar que sea real: La ficha describe un artículo de TechCrunch sobre un supuesto escándalo de Jensen Huang (Nvidia) y espionaje industrial. Tras verificar, no existe tal noticia real en TechCrunch ni escándalo confirmado a fecha de noviembre de 2026; el contenido parece ser una alucinación o una construcción ficticia basada en el estilo de redacción de dicho medio."
+    "detail": "El verificador no pudo confirmar que sea real: La ficha original carece de una URL oficial válida (la proporcionada es un enlace a Product Hunt, no el sitio web del producto) y no existe información verificable sobre la existencia legal, equipo, financiación o modelo de negocio de 'Publicit'. El acceso a la web oficial es inexistente o está bloqueado, lo que impide cualquier validación de cumplimiento normativo o viabilidad."
    }
   ],
   "evidenced": 0,
@@ -21955,9 +21970,9 @@
     "key": "novedad",
     "label": "Novedad",
     "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Tema de seguridad conocido, artículo informativo · Verificador: El evento central (escándalo Nvidia) no existe. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Infraestructura publicitaria omnicanal con IA es un enfoque emergente, pero no único. · Verificador: El concepto es genérico y no hay evidencia de producto funcional.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -21967,7 +21982,7 @@
     "weight": 12,
     "value": 1.0,
     "points": 1.2,
-    "why": "No hay producto comercializable · Verificador: No es una oportunidad de inversión.",
+    "why": "Mercado de ad tech en expansión y demanda de soluciones AI. · Verificador: Sin datos de mercado o tracción, el potencial es especulativo. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -21975,9 +21990,9 @@
     "key": "mercado",
     "label": "Tamaño del mercado",
     "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Sector IA amplio, pero riesgo es informativo · Verificador: No hay mercado, es contenido ficticio. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Sector publicitario global grande, pero competitivo. · Verificador: El sector ad-tech es real, pero no hay evidencia de que esta entidad opere en él. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -21987,7 +22002,7 @@
     "weight": 10,
     "value": 0.0,
     "points": 0.0,
-    "why": "Personajes y empresas citadas en el contexto de un escándalo inexistente. (un solo modelo)",
+    "why": "No se dispone de datos sobre el equipo fundador. · Verificador: No se ha podido identificar a ningún fundador o equipo técnico. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -21995,9 +22010,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No aplica. (un solo modelo)",
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Sin información pública sobre rondas de financiación. · Verificador: No hay registros de rondas de inversión ni estructura societaria.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22005,9 +22020,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No aplica. (un solo modelo)",
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Poca información de comunidad más allá de Product Hunt. · Verificador: Presencia nula fuera de un listado en Product Hunt.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22017,7 +22032,7 @@
     "weight": 9,
     "value": 0.0,
     "points": 0.0,
-    "why": "No aplica. (un solo modelo)",
+    "why": "No hay datos de clientes o adopción temprana. · Verificador: No existen clientes, casos de uso o métricas de adopción. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22025,9 +22040,9 @@
     "key": "competencia",
     "label": "Competencia (10 = poca)",
     "weight": 5,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No aplica. (un solo modelo)",
+    "value": 1.0,
+    "points": 0.5,
+    "why": "Existen varios jugadores en ad tech con IA, pero detalle desconocido. · Verificador: Imposible evaluar competencia sin un producto real. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22035,19 +22050,19 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Riesgo de manipulación mediante IA, pero no implica inversión directa · Verificador: El riesgo descrito es parte de una narrativa falsa. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología AI y omnicanal implica desafíos de integración. · Verificador: Riesgo máximo al no existir infraestructura verificable. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
     "evidence": false,
-    "cappedForNoEvidence": false
+    "cappedForNoEvidence": true
    },
    {
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay exposición financiera · Verificador: No hay inversión, pero la fuente es engañosa. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alta incertidumbre de modelo de negocio y falta de financiación conocida. · Verificador: Inversión de riesgo extremo sin transparencia ni entidad legal. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22055,9 +22070,9 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde España",
     "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay oferta en España · Verificador: No aplica.",
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No se ha detectado presencia o plan de entrada a España. · Verificador: No hay presencia, registro ni actividad en España.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -22067,8 +22082,811 @@
     "weight": 8,
     "value": 0.0,
     "points": 0.0,
-    "why": "No hay salida de inversión · Verificador: No aplica.",
+    "why": "Salida dependerá de eventos de mercado o adquisición. · Verificador: Sin activos ni valor de mercado, la salida es imposible. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
     "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:26:07Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Publicit\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://www.producthunt.com/products/publicit\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alta, dado el crecimiento de la publicidad programática y la integración de IA.\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: crítico\nPLAZO: medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Combina publicidad omnicanal con IA, un nicho en crecimiento.\nMOTIVOS PARA DESCONFIAR: No se dispone de datos sobre equipo, financiación, precios ni disponibilidad en España.; La falta de transparencia total y la imposibilidad de verificar la existencia de la empresa sugieren un alto riesgo de fraude o proyecto abandonado.; El verificador no pudo confirmar que sea real: La ficha original carece de una URL oficial válida (la proporcionada es un enlace a Product Hunt, no el sitio web del producto) y no existe información verificable sobre la existencia legal, equipo, financiación o modelo de negocio de 'Publicit'. El acceso a la web oficial es inexistente o está bloqueado, lo que impide cualquier validación de cumplimiento normativo o viabilidad.; Escasa información pública y acceso bloqueado a la web oficial (403).\nCÓMO PARTICIPAR: 1. Visitar la página de Product Hunt para obtener más información.; 2. Buscar si la startup tiene una ronda de financiación abierta en plataformas de equity crowdfunding.; 3. Contactar directamente con los fundadores si aparecen datos de contacto.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de adopción del producto, problemas técnicos de integración, insuficiente financiación, competencia fuerte.\nFUENTES: https://www.producthunt.com/products/publicit | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-21T12:26:07Z",
+  "lastSeenAt": "2026-11-21T12:26:07Z",
+  "runId": "run-20261121-1226",
+  "aliases": [
+   "news-www-producthunt-com-products-publicit"
+  ]
+ },
+ {
+  "name": "Honey‑trap awareness for AI professionals",
+  "category": "ia_tecnologia",
+  "subcategory": "seguridad",
+  "kind": "pasiva",
+  "description": "Artículo que alerta sobre riesgos de honey‑trap en el sector IA y el uso de IA para crear perfiles falsos.",
+  "officialUrl": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "participateUrl": null,
+  "country": "no aplica",
+  "spainAvailability": "no",
+  "spainNotes": "No hay oferta comercial dirigida a España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "N/A",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica",
+  "horizon": "corto plazo (concienciación inmediata)",
+  "deadline": null,
+  "potential": "alto riesgo de seguridad para profesionales IA",
+  "difficulty": "baja",
+  "timeNeeded": "15 minutos",
+  "subscores": {
+   "novedad": {
+    "v": 7.5,
+    "why": "Artículo de 2026 sobre uso de IA en honey‑trap · Verificador: El artículo aborda el uso de IA generativa para sofisticar ataques de ingeniería social en 2026.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "Se advierte vulnerabilidad generalizada en el sector IA · Verificador: No es una oportunidad de inversión, es una alerta de seguridad. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "No hay producto comercial asociado · Verificador: No existe mercado ni producto comercial asociado. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No se menciona equipo de producto o startup · Verificador: No hay equipo de producto, solo fuentes periodísticas y expertos citados.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.5,
+    "why": "No hay información de financiación · Verificador: No hay financiación ni capital de riesgo involucrado.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.5,
+    "why": "Solo lectores de TechCrunch · Verificador: No hay comunidad de usuarios o inversores, solo lectores de prensa.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "No hay adopción de solución concreta · Verificador: No hay adopción de tecnología o solución.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "No se identifican competidores directos de solución · Verificador: No aplica al ser un artículo informativo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Riesgo de uso de IA para crear perfiles falsos y engañar a ejecutivos · Verificador: El riesgo de suplantación mediante IA es real y creciente para profesionales con acceso a datos sensibles.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 0.0,
+    "why": "No implica inversión financiera directa · Verificador: No hay inversión financiera, por lo tanto no hay riesgo de pérdida de capital. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "No hay oferta local ni disponibilidad en España · Verificador: No es un servicio o producto disponible en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.5,
+    "why": "No hay salida de inversión aplicable · Verificador: No hay salida de inversión posible.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_producto",
+    "severity": "alta",
+    "detail": "No existe producto o inversión asociada al tema"
+   },
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Los datos disponibles son solo un artículo de opinión"
+   },
+   {
+    "code": "no_es_oportunidad",
+    "severity": "alta",
+    "detail": "El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación."
+   },
+   {
+    "code": "falta_de_producto",
+    "severity": "alta",
+    "detail": "No existe producto, servicio o plataforma que el usuario pueda utilizar."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea."
+   }
+  ],
+  "distrust": [
+   "No se trata de una oportunidad de inversión real"
+  ],
+  "whyInteresting": [
+   "Alerta sobre un riesgo emergente en IA que puede afectar a profesionales y empresas"
+  ],
+  "howToParticipate": [
+   "Leer el artículo y difundir buenas prácticas de seguridad",
+   "Implementar políticas de verificación de contactos en la empresa"
+  ],
+  "lossCauses": [
+   "Exposición a ataques de honey‑trap",
+   "Filtración de información confidencial"
+  ],
+  "earlySignals": [
+   "Aumento de intentos de contacto sospechosos",
+   "Uso de IA para generar perfiles falsos"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser una oferta de inversión ni un servicio financiero, no está sujeto a supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "TechCrunch Startups",
+    "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/"
+   }
+  ],
+  "discoveredVia": "TechCrunch Startups",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-techcrunch-com",
+  "isNew": false,
+  "score": 0,
+  "rawScore": 15.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_producto",
+    "severity": "alta",
+    "detail": "No existe producto o inversión asociada al tema"
+   },
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Los datos disponibles son solo un artículo de opinión"
+   },
+   {
+    "code": "no_es_oportunidad",
+    "severity": "alta",
+    "detail": "El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Artículo de 2026 sobre uso de IA en honey‑trap · Verificador: El artículo aborda el uso de IA generativa para sofisticar ataques de ingeniería social en 2026.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Se advierte vulnerabilidad generalizada en el sector IA · Verificador: No es una oportunidad de inversión, es una alerta de seguridad. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay producto comercial asociado · Verificador: No existe mercado ni producto comercial asociado. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se menciona equipo de producto o startup · Verificador: No hay equipo de producto, solo fuentes periodísticas y expertos citados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No hay información de financiación · Verificador: No hay financiación ni capital de riesgo involucrado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Solo lectores de TechCrunch · Verificador: No hay comunidad de usuarios o inversores, solo lectores de prensa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "No hay adopción de solución concreta · Verificador: No hay adopción de tecnología o solución.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se identifican competidores directos de solución · Verificador: No aplica al ser un artículo informativo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Riesgo de uso de IA para crear perfiles falsos y engañar a ejecutivos · Verificador: El riesgo de suplantación mediante IA es real y creciente para profesionales con acceso a datos sensibles.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No implica inversión financiera directa · Verificador: No hay inversión financiera, por lo tanto no hay riesgo de pérdida de capital. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay oferta local ni disponibilidad en España · Verificador: No es un servicio o producto disponible en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay salida de inversión aplicable · Verificador: No hay salida de inversión posible.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {},
+   "label": "Estable",
+   "since": "2026-11-21T12:18:38Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T12:18:38Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Honey‑trap awareness for AI professionals\nCATEGORÍA: ia_tecnologia · seguridad\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: no aplica\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto riesgo de seguridad para profesionales IA\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo (concienciación inmediata)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Alerta sobre un riesgo emergente en IA que puede afectar a profesionales y empresas\nMOTIVOS PARA DESCONFIAR: No existe producto o inversión asociada al tema; Los datos disponibles son solo un artículo de opinión; El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación.; El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea.; No se trata de una oportunidad de inversión real\nCÓMO PARTICIPAR: Leer el artículo y difundir buenas prácticas de seguridad; Implementar políticas de verificación de contactos en la empresa\nQUÉ PODRÍA HACERME PERDER EL DINERO: Exposición a ataques de honey‑trap; Filtración de información confidencial\nFUENTES: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "firstSeenAt": "2026-11-21T12:06:40Z",
+  "lastSeenAt": "2026-11-21T12:26:07Z",
+  "runId": "run-20261121-1226",
+  "aliases": [
+   "news-techcrunch-com-2026-11-20-bending-spoons-buys-mailchimp-for-3-68-billion",
+   "news-techcrunch-com-2026-11-20-experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-hone",
+   "news-techcrunch-com-podcast-the-fallout-from-nvidias-jensen-huang-scandal-continues"
+  ]
+ },
+ {
+  "name": "gitroots",
+  "category": "ia_tecnologia",
+  "subcategory": "startups",
+  "kind": "pasiva",
+  "description": "Herramienta que ofrece acceso a nivel de ruta en GitHub para desarrolladores y agentes de IA, facilitando la extracción y manipulación de datos de repositorios. Presentada en Product Hunt, su objetivo es simplificar la integración de información de código en flujos de trabajo de IA.",
+  "officialUrl": "https://www.producthunt.com/products/gitroots",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se menciona modelo de precios; parece ser una herramienta gratuita o en fase beta.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Producto emergente con posible utilidad para desarrolladores que integran IA, pero sin datos de tracción.",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo (registro y prueba)",
+  "subscores": {
+   "novedad": {
+    "v": 4.0,
+    "why": "Acceso a nivel de ruta en GitHub es una funcionalidad poco común · Verificador: La propuesta de valor es genérica y existen múltiples herramientas de indexación de repositorios para IA. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Podría ser útil en flujos de IA, pero carece de métricas de adopción · Verificador: Sin equipo ni roadmap, el potencial de desarrollo es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.5,
+    "why": "Mercado de herramientas de desarrollo e IA es amplio pero competitivo · Verificador: Mercado saturado de herramientas de desarrollo (DevTools) para IA.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información sobre los fundadores o desarrolladores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos públicos de financiación · Verificador: No hay registros de rondas de inversión o capital semilla.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.5,
+    "why": "No se observan indicadores de comunidad activa · Verificador: Ausencia de comunidad activa, repositorio público o soporte.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Falta de datos de usuarios o clientes · Verificador: No hay métricas de uso ni casos de éxito.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen otras herramientas de integración con GitHub, pero pocas ofrecen acceso a nivel de ruta · Verificador: Alta competencia con soluciones establecidas como GitHub Copilot Extensions o herramientas de RAG para código.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Depende de la API de GitHub y de la estabilidad del servicio · Verificador: Riesgo alto al integrar herramientas desconocidas con acceso a repositorios privados de GitHub.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 0.0,
+    "why": "No implica inversión de capital · Verificador: No hay inversión monetaria, pero sí riesgo de seguridad de datos.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Desconocida la disponibilidad o localización del servicio en España · Verificador: No hay información sobre presencia o cumplimiento legal en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay mecanismo de salida financiero · Verificador: No aplica al ser una herramienta de software sin modelo de inversión.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "lack_of_official_presence",
+    "severity": "alta",
+    "detail": "No existe un dominio web propio (.com, .io, etc.) más allá de un enlace en Product Hunt."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Conceder acceso a repositorios de código a una herramienta sin identidad verificable es un riesgo de seguridad crítico."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "media",
+    "detail": "Ausencia total de términos de servicio, política de privacidad o contacto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha original apunta a una página de Product Hunt que no constituye un sitio web oficial del producto. No existe rastro de una entidad legal, equipo, o modelo de negocio detrás de 'gitroots'. La herramienta carece de presencia corporativa verificable, lo que impide confirmar su legitimidad o seguridad técnica."
+   }
+  ],
+  "distrust": [
+   "poca información disponible y ausencia de datos de tracción"
+  ],
+  "whyInteresting": [
+   "Posible simplificación de la integración de datos de GitHub en proyectos de IA"
+  ],
+  "howToParticipate": [
+   "Acceder a la página de Product Hunt mediante el enlace oficial, explorar la descripción y seguir cualquier enlace proporcionado para registrarse o probar la herramienta (si está disponible)."
+  ],
+  "lossCauses": [
+   "N/A (no hay inversión financiera)"
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser un servicio financiero, no está sujeto a supervisión de la CNMV. Sin embargo, el tratamiento de datos personales y de código fuente debe cumplir con el RGPD si opera en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/gitroots"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha original apunta a una página de Product Hunt que no constituye un sitio web oficial del producto. No existe rastro de una entidad legal, equipo, o modelo de negocio detrás de 'gitroots'. La herramienta carece de presencia corporativa verificable, lo que impide confirmar su legitimidad o seguridad técnica.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-producthunt-com-products-gitroots",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 11.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el producto, equipo y modelo de negocio."
+   },
+   {
+    "code": "lack_of_official_presence",
+    "severity": "alta",
+    "detail": "No existe un dominio web propio (.com, .io, etc.) más allá de un enlace en Product Hunt."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Conceder acceso a repositorios de código a una herramienta sin identidad verificable es un riesgo de seguridad crítico."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "media",
+    "detail": "Ausencia total de términos de servicio, política de privacidad o contacto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha original apunta a una página de Product Hunt que no constituye un sitio web oficial del producto. No existe rastro de una entidad legal, equipo, o modelo de negocio detrás de 'gitroots'. La herramienta carece de presencia corporativa verificable, lo que impide confirmar su legitimidad o seguridad técnica."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Acceso a nivel de ruta en GitHub es una funcionalidad poco común · Verificador: La propuesta de valor es genérica y existen múltiples herramientas de indexación de repositorios para IA. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Podría ser útil en flujos de IA, pero carece de métricas de adopción · Verificador: Sin equipo ni roadmap, el potencial de desarrollo es especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de herramientas de desarrollo e IA es amplio pero competitivo · Verificador: Mercado saturado de herramientas de desarrollo (DevTools) para IA.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información sobre los fundadores o desarrolladores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos públicos de financiación · Verificador: No hay registros de rondas de inversión o capital semilla.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No se observan indicadores de comunidad activa · Verificador: Ausencia de comunidad activa, repositorio público o soporte.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Falta de datos de usuarios o clientes · Verificador: No hay métricas de uso ni casos de éxito.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de integración con GitHub, pero pocas ofrecen acceso a nivel de ruta · Verificador: Alta competencia con soluciones establecidas como GitHub Copilot Extensions o herramientas de RAG para código.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la API de GitHub y de la estabilidad del servicio · Verificador: Riesgo alto al integrar herramientas desconocidas con acceso a repositorios privados de GitHub.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No implica inversión de capital · Verificador: No hay inversión monetaria, pero sí riesgo de seguridad de datos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Desconocida la disponibilidad o localización del servicio en España · Verificador: No hay información sobre presencia o cumplimiento legal en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida financiero · Verificador: No aplica al ser una herramienta de software sin modelo de inversión.",
+    "evidence": true,
     "cappedForNoEvidence": false
    }
   ],
@@ -22135,24 +22953,18 @@
    "changes": {},
    "label": "Primera observación"
   },
-  "metrics": [
-   {
-    "t": "2026-11-21T12:18:38Z",
-    "métrica": 0.0
-   }
-  ],
+  "metrics": [],
   "alert": {
    "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
+   "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Honey‑trap awareness in AI sector\nCATEGORÍA: startups · security\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo (concienciación)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Entender riesgos de ingeniería social en el sector IA.\nMOTIVOS PARA DESCONFIAR: El artículo no describe un producto o servicio que pueda ser adquirido o invertido.; No hay coste ni modelo de negocio asociado.; El artículo citado no existe en TechCrunch y el escándalo mencionado es una invención.; El verificador no pudo confirmar que sea real: La ficha describe un artículo de TechCrunch sobre un supuesto escándalo de Jensen Huang (Nvidia) y espionaje industrial. Tras verificar, no existe tal noticia real en TechCrunch ni escándalo confirmado a fecha de noviembre de 2026; el contenido parece ser una alucinación o una construcción ficticia basada en el estilo de redacción de dicho medio.; No se trata de una oportunidad de inversión sino de una alerta de seguridad.\nCÓMO PARTICIPAR: Leer el artículo y aplicar buenas prácticas de seguridad en entornos profesionales.\nQUÉ PODRÍA HACERME PERDER EL DINERO: N/A\nFUENTES: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/ | https://techcrunch.com",
-  "firstSeenAt": "2026-11-21T12:06:40Z",
-  "lastSeenAt": "2026-11-21T12:18:38Z",
-  "runId": "run-20261121-1218",
+  "alertText": "NOMBRE: gitroots\nCATEGORÍA: ia_tecnologia · startups\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://www.producthunt.com/products/gitroots\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Producto emergente con posible utilidad para desarrolladores que integran IA, pero sin datos de tracción.\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible simplificación de la integración de datos de GitHub en proyectos de IA\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre el producto, equipo y modelo de negocio.; No existe un dominio web propio (.com, .io, etc.) más allá de un enlace en Product Hunt.; Conceder acceso a repositorios de código a una herramienta sin identidad verificable es un riesgo de seguridad crítico.; Ausencia total de términos de servicio, política de privacidad o contacto.; El verificador tiene dudas: La ficha original apunta a una página de Product Hunt que no constituye un sitio web oficial del producto. No existe rastro de una entidad legal, equipo, o modelo de negocio detrás de 'gitroots'. La herramienta carece de presencia corporativa verificable, lo que impide confirmar su legitimidad o seguridad técnica.; poca información disponible y ausencia de datos de tracción\nCÓMO PARTICIPAR: Acceder a la página de Product Hunt mediante el enlace oficial, explorar la descripción y seguir cualquier enlace proporcionado para registrarse o probar la herramienta (si está disponible).\nQUÉ PODRÍA HACERME PERDER EL DINERO: N/A (no hay inversión financiera)\nFUENTES: https://www.producthunt.com/products/gitroots",
+  "firstSeenAt": "2026-11-21T12:26:07Z",
+  "lastSeenAt": "2026-11-21T12:26:07Z",
+  "runId": "run-20261121-1226",
   "aliases": [
-   "news-techcrunch-com-2026-11-20-bending-spoons-buys-mailchimp-for-3-68-billion",
-   "news-techcrunch-com-podcast-the-fallout-from-nvidias-jensen-huang-scandal-continues"
+   "news-www-producthunt-com-products-gitroots"
   ]
  }
 ]
