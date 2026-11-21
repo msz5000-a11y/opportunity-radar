@@ -5656,6 +5656,352 @@
   ]
  },
  {
+  "name": "LoudFlow",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "LoudFlow es una herramienta de IA que genera voz a partir de texto, anunciada en Product Hunt.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información disponible sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se dispone de datos de precios.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un producto SaaS.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "Producto recién listado en Product Hunt, sin historial público amplio",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Promete mejorar la generación de voz, pero sin métricas de adopción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Mercado de TTS está en crecimiento, pero competencia establecida",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "No hay datos públicos de rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4,
+    "why": "Poca evidencia de comunidad activa fuera de Product Hunt",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Sin datos de usuarios o clientes actuales",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen varios actores consolidados en TTS",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "Tecnología de TTS es madura, pero la innovación específica es desconocida",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 7,
+    "why": "No implica inversión financiera directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4,
+    "why": "No hay información sobre disponibilidad o localización en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "No aplica inversión financiera, por lo que no hay salida tradicional",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Innovadora aplicación de texto a voz basada en IA."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al producto para obtener más información."
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/loudflow"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-loudflow",
+  "isNew": true,
+  "score": 35,
+  "rawScore": 39.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Producto recién listado en Product Hunt, sin historial público amplio",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Promete mejorar la generación de voz, pero sin métricas de adopción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de TTS está en crecimiento, pero competencia establecida",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos públicos de rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Poca evidencia de comunidad activa fuera de Product Hunt",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin datos de usuarios o clientes actuales",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varios actores consolidados en TTS",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología de TTS es madura, pero la innovación específica es desconocida",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "No implica inversión financiera directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay información sobre disponibilidad o localización en España",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "No aplica inversión financiera, por lo que no hay salida tradicional",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: LoudFlow\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 35/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovadora aplicación de texto a voz basada en IA.\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al producto para obtener más información.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/loudflow",
+  "firstSeenAt": "2026-11-21T11:26:25Z",
+  "lastSeenAt": "2026-11-21T11:26:25Z",
+  "runId": "run-20261121-1126",
+  "aliases": [
+   "news-www-producthunt-com-products-loudflow"
+  ]
+ },
+ {
   "name": "Zethos",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -7553,6 +7899,366 @@
   "runId": "run-20261121-0232",
   "aliases": [
    "news-www-producthunt-com-products-groundwork-6"
+  ]
+ },
+ {
+  "name": "Exa Websets V2",
+  "category": "ia_tecnologia",
+  "subcategory": "startup",
+  "kind": "pasiva",
+  "description": "Herramienta que permite crear conjuntos de datos personalizados a partir de la web en tiempo real, afirmando ser 4 veces más rápida que soluciones tradicionales.",
+  "officialUrl": null,
+  "participateUrl": "https://www.producthunt.com/products/exa-ai",
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se ha encontrado información sobre precios o planes de suscripción.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es un activo financiero negociable.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "desconocido",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Promete crear datasets 4x más rápido",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Sin datos de mercado ni adopción",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "No hay información de tamaño de mercado ni clientes",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de datos sobre el equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "No se ha encontrado información de rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4,
+    "why": "Solo presencia en Product Hunt, sin métricas de comunidad",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Falta de datos de usuarios activos o casos de uso",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras herramientas de scraping y generación de datasets, pero sin comparativa directa",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Tecnología basada en web scraping, con riesgos de bloqueos y cambios de sitios",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8,
+    "why": "No implica inversión de capital; riesgo limitado a posible suscripción",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 4,
+    "why": "Desconocida la disponibilidad o localización del servicio en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que recuperar; uso del servicio es reversible",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y faltan datos de precios, equipo y mercado."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Escasa información pública disponible."
+  ],
+  "whyInteresting": [
+   "Promete acelerar la creación de datasets personalizados, lo que puede ser útil para proyectos de IA y análisis de datos."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt indicada y buscar enlaces de registro o prueba del producto."
+  ],
+  "lossCauses": [
+   "N/A - no hay inversión financiera directa."
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/exa-ai"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-exa-websets-v2",
+  "isNew": true,
+  "score": 28,
+  "rawScore": 33.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y faltan datos de precios, equipo y mercado."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Promete crear datasets 4x más rápido",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de mercado ni adopción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay información de tamaño de mercado ni clientes",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de datos sobre el equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se ha encontrado información de rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Solo presencia en Product Hunt, sin métricas de comunidad",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Falta de datos de usuarios activos o casos de uso",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de scraping y generación de datasets, pero sin comparativa directa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología basada en web scraping, con riesgos de bloqueos y cambios de sitios",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión de capital; riesgo limitado a posible suscripción",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida la disponibilidad o localización del servicio en España",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay inversión que recuperar; uso del servicio es reversible",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Exa Websets V2\nCATEGORÍA: ia_tecnologia · startup\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.producthunt.com/products/exa-ai\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 28/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Promete acelerar la creación de datasets personalizados, lo que puede ser útil para proyectos de IA y análisis de datos.\nMOTIVOS PARA DESCONFIAR: No se pudo acceder a la web oficial (HTTP 403) y faltan datos de precios, equipo y mercado.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Escasa información pública disponible.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt indicada y buscar enlaces de registro o prueba del producto.\nQUÉ PODRÍA HACERME PERDER EL DINERO: N/A - no hay inversión financiera directa.\nFUENTES: https://www.producthunt.com/products/exa-ai",
+  "firstSeenAt": "2026-11-21T11:26:25Z",
+  "lastSeenAt": "2026-11-21T11:26:25Z",
+  "runId": "run-20261121-1126",
+  "aliases": [
+   "news-www-producthunt-com-products-exa-ai"
   ]
  },
  {
@@ -12941,6 +13647,392 @@
   ]
  },
  {
+  "name": "Smorza",
+  "category": "ia_tecnologia",
+  "subcategory": "software",
+  "kind": "pasiva",
+  "description": "Smorza es una aplicación para macOS que asigna a cada aplicación su propio volumen y salida de audio.",
+  "officialUrl": "https://www.producthunt.com/products/smorza",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "disponible (digital)",
+  "spainNotes": "No hay información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Precio no especificado",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica",
+  "horizon": "corto plazo (uso del software)",
+  "deadline": "no aplica",
+  "potential": "baja",
+  "difficulty": "baja",
+  "timeNeeded": "instalación y configuración",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Primer producto que gestiona volúmenes por app en macOS · Verificador: Existen herramientas consolidadas como SoundSource o Background Music que realizan esta función desde hace años. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "Puede interesar a usuarios de macOS que buscan control de audio · Verificador: Mercado saturado con alternativas de mayor reputación.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.0,
+    "why": "Mercado de apps de audio para macOS es limitado · Verificador: Nicho específico de utilidades para macOS.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No hay información sobre el equipo · Verificador: Identidad del desarrollador o empresa desconocida.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de financiación · Verificador: No hay datos de financiación o modelo de negocio claro.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Poca información de comunidad · Verificador: Presencia mínima fuera de Product Hunt.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.5,
+    "why": "Sin datos de usuarios activos · Verificador: Sin métricas de adopción verificables.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otras apps de control de audio · Verificador: Alta competencia con software establecido (Rogue Amoeba, etc.). · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.5,
+    "why": "Software macOS, riesgo técnico moderado · Verificador: Software de terceros con acceso a drivers de audio sin firma corporativa verificable.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No implica inversión financiera · Verificador: No es una inversión, es una utilidad de software.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 4.0,
+    "why": "Desconocida disponibilidad en España · Verificador: Al ser software digital, está disponible globalmente si el desarrollador lo permite. · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "No hay bloqueo, se puede desinstalar · Verificador: Desinstalación estándar de macOS.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "La URL oficial apunta a un agregador (Product Hunt) y no al sitio web del desarrollador."
+   },
+   {
+    "code": "UNKNOWN_DEVELOPER",
+    "severity": "media",
+    "detail": "Falta de información sobre la entidad legal responsable del software."
+   },
+   {
+    "code": "SECURITY_RISK",
+    "severity": "media",
+    "detail": "Instalar software de audio de fuentes no verificadas puede comprometer la privacidad del sistema."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL oficial proporcionada en la ficha dirige a Product Hunt, no al sitio web del desarrollador. No existe información pública verificable sobre el equipo, la empresa responsable o la seguridad del software. Al ser un software de terceros que requiere permisos de audio en macOS, la falta de transparencia es un riesgo de seguridad."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Gestión de audio por aplicación en macOS"
+  ],
+  "howToParticipate": [
+   "1. Visitar la página de Product Hunt.",
+   "2. Seguir el enlace al sitio oficial del producto.",
+   "3. Descargar e instalar la aplicación en macOS.",
+   "4. Configurar volúmenes por aplicación según necesidad."
+  ],
+  "lossCauses": [
+   "No hay inversión financiera, pero posible pérdida de tiempo si la app no funciona como esperado."
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una utilidad de software y no un servicio financiero, no está sujeto a supervisión de la CNMV ni MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/smorza"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La URL oficial proporcionada en la ficha dirige a Product Hunt, no al sitio web del desarrollador. No existe información pública verificable sobre el equipo, la empresa responsable o la seguridad del software. Al ser un software de terceros que requiere permisos de audio en macOS, la falta de transparencia es un riesgo de seguridad.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-producthunt-com-products-smorza",
+  "isNew": true,
+  "score": 16,
+  "rawScore": 25.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "La URL oficial apunta a un agregador (Product Hunt) y no al sitio web del desarrollador."
+   },
+   {
+    "code": "UNKNOWN_DEVELOPER",
+    "severity": "media",
+    "detail": "Falta de información sobre la entidad legal responsable del software."
+   },
+   {
+    "code": "SECURITY_RISK",
+    "severity": "media",
+    "detail": "Instalar software de audio de fuentes no verificadas puede comprometer la privacidad del sistema."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL oficial proporcionada en la ficha dirige a Product Hunt, no al sitio web del desarrollador. No existe información pública verificable sobre el equipo, la empresa responsable o la seguridad del software. Al ser un software de terceros que requiere permisos de audio en macOS, la falta de transparencia es un riesgo de seguridad."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Primer producto que gestiona volúmenes por app en macOS · Verificador: Existen herramientas consolidadas como SoundSource o Background Music que realizan esta función desde hace años. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede interesar a usuarios de macOS que buscan control de audio · Verificador: Mercado saturado con alternativas de mayor reputación.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de apps de audio para macOS es limitado · Verificador: Nicho específico de utilidades para macOS.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No hay información sobre el equipo · Verificador: Identidad del desarrollador o empresa desconocida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de financiación · Verificador: No hay datos de financiación o modelo de negocio claro.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Poca información de comunidad · Verificador: Presencia mínima fuera de Product Hunt.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.5,
+    "points": 2.2,
+    "why": "Sin datos de usuarios activos · Verificador: Sin métricas de adopción verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras apps de control de audio · Verificador: Alta competencia con software establecido (Rogue Amoeba, etc.). · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Software macOS, riesgo técnico moderado · Verificador: Software de terceros con acceso a drivers de audio sin firma corporativa verificable.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión financiera · Verificador: No es una inversión, es una utilidad de software.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida disponibilidad en España · Verificador: Al ser software digital, está disponible globalmente si el desarrollador lo permite. · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay bloqueo, se puede desinstalar · Verificador: Desinstalación estándar de macOS.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Smorza\nCATEGORÍA: ia_tecnologia · software\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://www.producthunt.com/products/smorza\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: disponible (digital)\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: baja\nPUNTUACIÓN: 16/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo (uso del software)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Gestión de audio por aplicación en macOS\nMOTIVOS PARA DESCONFIAR: La URL oficial apunta a un agregador (Product Hunt) y no al sitio web del desarrollador.; Falta de información sobre la entidad legal responsable del software.; Instalar software de audio de fuentes no verificadas puede comprometer la privacidad del sistema.; El verificador tiene dudas: La URL oficial proporcionada en la ficha dirige a Product Hunt, no al sitio web del desarrollador. No existe información pública verificable sobre el equipo, la empresa responsable o la seguridad del software. Al ser un software de terceros que requiere permisos de audio en macOS, la falta de transparencia es un riesgo de seguridad.\nCÓMO PARTICIPAR: 1. Visitar la página de Product Hunt.; 2. Seguir el enlace al sitio oficial del producto.; 3. Descargar e instalar la aplicación en macOS.; 4. Configurar volúmenes por aplicación según necesidad.\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay inversión financiera, pero posible pérdida de tiempo si la app no funciona como esperado.\nFUENTES: https://www.producthunt.com/products/smorza",
+  "firstSeenAt": "2026-11-21T11:26:25Z",
+  "lastSeenAt": "2026-11-21T11:26:25Z",
+  "runId": "run-20261121-1126",
+  "aliases": [
+   "news-www-producthunt-com-products-smorza"
+  ]
+ },
+ {
   "name": "Cup of Sugar",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -14489,6 +15581,464 @@
   "runId": "run-20261121-0810",
   "aliases": [
    "web-coingecko-com"
+  ]
+ },
+ {
+  "name": "FOBO",
+  "category": "cripto",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "FOBO es un token nativo de la cadena Robinhood lanzado recientemente. Cuenta con una capitalización de mercado de ~1,43 M USD y una liquidez superior al millón de dólares. No se dispone de información pública sobre su equipo ni auditorías de seguridad.",
+  "officialUrl": "https://fobo.fun",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No hay información sobre disponibilidad o regulación en España",
+  "costs": {
+   "minEntry": 0.0015,
+   "extra": 0,
+   "extraNotes": "Sin comisiones adicionales conocidas",
+   "recommended": 150,
+   "max": 150
+  },
+  "canLoseAll": true,
+  "liquidity": "alta",
+  "exitNotes": "Puede venderse en DEXs de la cadena Robinhood, aunque el slippage dependerá del volumen disponible",
+  "horizon": "corto a medio plazo",
+  "deadline": null,
+  "potential": "alto potencial pero con alta incertidumbre por falta de auditoría y datos de equipo",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Token con 618 h de edad, recién lanzado · Verificador: Token con menos de un mes de existencia.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "FDV de 1,43 M USD indica espacio de crecimiento limitado · Verificador: Alta probabilidad de ser un esquema especulativo sin valor intrínseco. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "Liquidez de 1,059,549 USD y volumen 36,864 USD/24 h · Verificador: Liquidez altamente volátil y dependiente de DEXs no regulados. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de datos públicos sobre el equipo · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay información sobre rondas de inversión o fondos · Verificador: Sin información de respaldo institucional.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "Presencia en X y Telegram, sin métricas de actividad · Verificador: Actividad mínima y sin validación de usuarios reales.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Sin datos de adopción real o integraciones · Verificador: Inexistente fuera de entornos especulativos.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.0,
+    "why": "Mercado cripto altamente competitivo · Verificador: Mercado saturado de tokens sin utilidad. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Flag de seguridad: sin analizador de contrato, severidad media · Verificador: Ausencia total de auditorías y riesgo de rug pull.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.0,
+    "why": "Alta volatilidad y falta de auditoría aumentan riesgo financiero · Verificador: Riesgo de pérdida total del capital invertido. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "Desconocida la disponibilidad o regulación en España · Verificador: No cumple con requisitos de la CNMV ni registro MiCA.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "Liquidez alta facilita salida, aunque depende del DEX · Verificador: La liquidez puede desaparecer instantáneamente en este tipo de activos. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood"
+   },
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red robinhood."
+   },
+   {
+    "code": "suplantacion_identidad",
+    "severity": "critica",
+    "detail": "Uso del nombre Robinhood para generar confianza falsa."
+   },
+   {
+    "code": "sin_auditoria",
+    "severity": "critica",
+    "detail": "Contrato inteligente sin auditoría pública."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "alta",
+    "detail": "Alta probabilidad de manipulación de liquidez por parte de los creadores."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo presenta riesgos extremos de seguridad y opacidad. No existe una red oficial denominada 'Robinhood' para tokens de este tipo; el nombre parece intentar suplantar o confundirse con la plataforma financiera regulada Robinhood Markets, Inc. No hay registro de este token en fuentes oficiales ni cumplimiento con normativas MiCA."
+   }
+  ],
+  "distrust": [
+   "Falta de auditoría del contrato"
+  ],
+  "whyInteresting": [
+   "Token barato con alta liquidez y potencial de crecimiento"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con la cadena Robinhood (ej. MetaMask configurada con la red).",
+   "2. Obtener el token nativo de la cadena (ej. RBN) en un exchange que lo liste.",
+   "3. Conectar la wallet a un DEX de la cadena Robinhood usando el enlace de pair proporcionado.",
+   "4. Intercambiar el token nativo por FOBO al precio de mercado."
+  ],
+  "lossCauses": [
+   "Volatilidad extrema del precio",
+   "Posible rug pull por falta de auditoría",
+   "Baja actividad y adopción"
+  ],
+  "earlySignals": [
+   "Baja actividad en redes sociales",
+   "Flag de seguridad sin análisis de contrato"
+  ],
+  "signals": {
+   "volume24hUsd": 36864.86
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro de ESMA bajo MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "robinhood",
+   "tokenAddress": "0x000DE658153f47f23e92973C8EB1e89762703676",
+   "symbol": "FOBO",
+   "name": "FOBO",
+   "priceUsd": 0.001447,
+   "liquidityUsd": 1059549.02,
+   "volume24hUsd": 36864.86,
+   "fdvUsd": 1431533,
+   "mcapUsd": 1431533,
+   "ageHours": 618.4,
+   "buys24h": 176,
+   "sells24h": 122,
+   "pairUrl": "https://dexscreener.com/robinhood/0x32c50d83271c3af69696fe6b08def9c4f26d38b640da2cdb2a7c39acd8bbca5a"
+  },
+  "securityChecks": [],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://fobo.fun"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/robinhood/0x32c50d83271c3af69696fe6b08def9c4f26d38b640da2cdb2a7c39acd8bbca5a"
+   },
+   {
+    "title": "CNMV - Registro de proveedores de servicios de activos virtuales",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d550000-0000-0000-0000-000000000000}"
+   },
+   {
+    "title": "ESMA - MiCA Register",
+    "url": "https://www.esma.europa.eu/"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo presenta riesgos extremos de seguridad y opacidad. No existe una red oficial denominada 'Robinhood' para tokens de este tipo; el nombre parece intentar suplantar o confundirse con la plataforma financiera regulada Robinhood Markets, Inc. No hay registro de este token en fuentes oficiales ni cumplimiento con normativas MiCA.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-robinhood-0x000de658153f47f23e92973c8eb1e89762703676",
+  "isNew": true,
+  "score": 11,
+  "rawScore": 20.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood"
+   },
+   {
+    "code": "suplantacion_identidad",
+    "severity": "critica",
+    "detail": "Uso del nombre Robinhood para generar confianza falsa."
+   },
+   {
+    "code": "sin_auditoria",
+    "severity": "critica",
+    "detail": "Contrato inteligente sin auditoría pública."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "alta",
+    "detail": "Alta probabilidad de manipulación de liquidez por parte de los creadores."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo presenta riesgos extremos de seguridad y opacidad. No existe una red oficial denominada 'Robinhood' para tokens de este tipo; el nombre parece intentar suplantar o confundirse con la plataforma financiera regulada Robinhood Markets, Inc. No hay registro de este token en fuentes oficiales ni cumplimiento con normativas MiCA."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro de ESMA bajo MiCA."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Token con 618 h de edad, recién lanzado · Verificador: Token con menos de un mes de existencia.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "FDV de 1,43 M USD indica espacio de crecimiento limitado · Verificador: Alta probabilidad de ser un esquema especulativo sin valor intrínseco. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Liquidez de 1,059,549 USD y volumen 36,864 USD/24 h · Verificador: Liquidez altamente volátil y dependiente de DEXs no regulados. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de datos públicos sobre el equipo · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay información sobre rondas de inversión o fondos · Verificador: Sin información de respaldo institucional.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Presencia en X y Telegram, sin métricas de actividad · Verificador: Actividad mínima y sin validación de usuarios reales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin datos de adopción real o integraciones · Verificador: Inexistente fuera de entornos especulativos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "Mercado cripto altamente competitivo · Verificador: Mercado saturado de tokens sin utilidad. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Flag de seguridad: sin analizador de contrato, severidad media · Verificador: Ausencia total de auditorías y riesgo de rug pull.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "Alta volatilidad y falta de auditoría aumentan riesgo financiero · Verificador: Riesgo de pérdida total del capital invertido. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Desconocida la disponibilidad o regulación en España · Verificador: No cumple con requisitos de la CNMV ni registro MiCA.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Liquidez alta facilita salida, aunque depende del DEX · Verificador: La liquidez puede desaparecer instantáneamente en este tipo de activos. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 150.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -150.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 300.0,
+     "netEur": 296.82,
+     "exitImpactPct": 0.1,
+     "exitNote": null,
+     "impliedFdvUsd": 2863066
+    },
+    {
+     "multiple": 5,
+     "grossEur": 750.0,
+     "netEur": 741.34,
+     "exitImpactPct": 0.2,
+     "exitNote": null,
+     "impliedFdvUsd": 7157665
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1500.0,
+     "netEur": 1480.38,
+     "exitImpactPct": 0.3,
+     "exitNote": null,
+     "impliedFdvUsd": 14315330
+    },
+    {
+     "multiple": 20,
+     "grossEur": 3000.0,
+     "netEur": 2951.52,
+     "exitImpactPct": 0.6,
+     "exitNote": null,
+     "impliedFdvUsd": 28630660
+    },
+    {
+     "multiple": 50,
+     "grossEur": 7500.0,
+     "netEur": 7309.48,
+     "exitImpactPct": 1.6,
+     "exitNote": null,
+     "impliedFdvUsd": 71576650
+    },
+    {
+     "multiple": 100,
+     "grossEur": 15000.0,
+     "netEur": 14387.91,
+     "exitImpactPct": 3.1,
+     "exitNote": null,
+     "impliedFdvUsd": 143153300
+    },
+    {
+     "multiple": 300,
+     "grossEur": 45000.0,
+     "netEur": 40391.22,
+     "exitImpactPct": 9.3,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 429459900
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T11:26:25Z",
+    "priceUsd": 0.001447,
+    "liquidityUsd": 1059549.02,
+    "volume24hUsd": 36864.86,
+    "fdvUsd": 1431533.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: FOBO\nCATEGORÍA: cripto · None\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://fobo.fun\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 150,00 €\nPOTENCIAL: alto potencial pero con alta incertidumbre por falta de auditoría y datos de equipo\nPUNTUACIÓN: 11/100 · Descartar\nRIESGO: crítico\nPLAZO: corto a medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Token barato con alta liquidez y potencial de crecimiento\nMOTIVOS PARA DESCONFIAR: No hay analizador de contratos para la red Robinhood; Uso del nombre Robinhood para generar confianza falsa.; Contrato inteligente sin auditoría pública.; Alta probabilidad de manipulación de liquidez por parte de los creadores.; El verificador tiene dudas: El activo presenta riesgos extremos de seguridad y opacidad. No existe una red oficial denominada 'Robinhood' para tokens de este tipo; el nombre parece intentar suplantar o confundirse con la plataforma financiera regulada Robinhood Markets, Inc. No hay registro de este token en fuentes oficiales ni cumplimiento con normativas MiCA.; No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro de ESMA bajo MiCA.; Falta de auditoría del contrato\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con la cadena Robinhood (ej. MetaMask configurada con la red).; 2. Obtener el token nativo de la cadena (ej. RBN) en un exchange que lo liste.; 3. Conectar la wallet a un DEX de la cadena Robinhood usando el enlace de pair proporcionado.; 4. Intercambiar el token nativo por FOBO al precio de mercado.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Volatilidad extrema del precio; Posible rug pull por falta de auditoría; Baja actividad y adopción\nFUENTES: https://fobo.fun | https://dexscreener.com/robinhood/0x32c50d83271c3af69696fe6b08def9c4f26d38b640da2cdb2a7c39acd8bbca5a | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d550000-0000-0000-0000-000000000000} | https://www.esma.europa.eu/",
+  "firstSeenAt": "2026-11-21T11:26:25Z",
+  "lastSeenAt": "2026-11-21T11:26:25Z",
+  "runId": "run-20261121-1126",
+  "aliases": [
+   "tok-robinhood-0x000de658153f47f23e92973c8eb1e89762703676"
   ]
  },
  {
