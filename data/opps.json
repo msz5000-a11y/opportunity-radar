@@ -1,5 +1,386 @@
 [
  {
+  "name": "OpenComputer",
+  "category": "ia_tecnologia",
+  "subcategory": "software_open_source",
+  "kind": "activa",
+  "description": "OpenComputer es una alternativa open‑source a Devin que permite generar pull requests mediante comandos en Slack. Promete ser 3.3× más rápido que Devin y puede auto‑hostearse o usarse en la nube con una prueba gratuita de 3 días.",
+  "officialUrl": "https://github.com/diggerhq/opencomputer",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible como SaaS y auto‑hosteable, sin restricciones conocidas para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Uso en la nube puede requerir suscripción a modelos de IA (Claude, OpenAI) y costes de infraestructura.",
+   "recommended": 0,
+   "max": 150
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es software gratuito sin inversión financiera.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "varias horas para auto‑host; minutos para usar SaaS",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Benchmark indica 3.3× más rápido que Devin",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8,
+    "why": "750 estrellas en GitHub y 80 forks demuestran interés",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6,
+    "why": "Existe mercado de agentes de código en Slack y competidores como Devin",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5,
+    "why": "No se menciona información del equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 4,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "750 estrellas, 22 comentarios en Hacker News y actividad en GitHub",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6,
+    "why": "3‑day free trial con 600 minutos disponible",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Compite con Devin y otros agentes de IA como Claude Code",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 7,
+    "why": "Accesible vía web y SaaS sin limitaciones geográficas",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión financiera que recuperar",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "dependencia_api_externa",
+    "severity": "media",
+    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "falta de información pública sobre el equipo y roadmap"
+  ],
+  "whyInteresting": [
+   "alternativa open‑source más rápida a Devin",
+   "posibilidad de auto‑hostear y controlar datos"
+  ],
+  "howToParticipate": [
+   "Visitar https://github.com/diggerhq/opencomputer",
+   "Leer el README y seguir las instrucciones de self‑hosting",
+   "Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial"
+  ],
+  "lossCauses": [
+   "costes de infraestructura si se auto‑hostea",
+   "dependencia de APIs externas que pueden encarecerse o cerrarse",
+   "ausencia de soporte comercial oficial"
+  ],
+  "earlySignals": [
+   "crecimiento de estrellas en GitHub",
+   "menciones y votos positivos en Hacker News"
+  ],
+  "signals": {
+   "upvotes": 69,
+   "comments": 22
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://github.com/diggerhq/opencomputer"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50581403"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-github-com-diggerhq-opencomputer",
+  "isNew": true,
+  "score": 60,
+  "rawScore": 64.5,
+  "tier": "investigar",
+  "tierLabel": "Interesante, necesita investigación",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "dependencia_api_externa",
+    "severity": "media",
+    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 10,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Benchmark indica 3.3× más rápido que Devin",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "750 estrellas en GitHub y 80 forks demuestran interés",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Existe mercado de agentes de código en Slack y competidores como Devin",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se menciona información del equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "750 estrellas, 22 comentarios en Hacker News y actividad en GitHub",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "3‑day free trial con 600 minutos disponible",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Compite con Devin y otros agentes de IA como Claude Code",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Accesible vía web y SaaS sin limitaciones geográficas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión financiera que recuperar",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T02:32:23Z",
+    "upvotes": 69.0,
+    "comments": 22.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: OpenComputer\nCATEGORÍA: ia_tecnologia · software_open_source\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://github.com/diggerhq/opencomputer\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 60/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alternativa open‑source más rápida a Devin; posibilidad de auto‑hostear y controlar datos\nMOTIVOS PARA DESCONFIAR: El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; falta de información pública sobre el equipo y roadmap\nCÓMO PARTICIPAR: Visitar https://github.com/diggerhq/opencomputer; Leer el README y seguir las instrucciones de self‑hosting; Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial\nQUÉ PODRÍA HACERME PERDER EL DINERO: costes de infraestructura si se auto‑hostea; dependencia de APIs externas que pueden encarecerse o cerrarse; ausencia de soporte comercial oficial\nFUENTES: https://github.com/diggerhq/opencomputer | https://news.ycombinator.com/item?id=50581403",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "web-github-com-diggerhq-opencomputer"
+  ]
+ },
+ {
   "name": "Wireless Device Battery Monitor (BatteryHub)",
   "category": "ia_tecnologia",
   "subcategory": "software_utilidad",
@@ -747,6 +1128,383 @@
   "runId": "run-20261120-1141",
   "aliases": [
    "web-news-ycombinator-com"
+  ]
+ },
+ {
+  "name": "Abyssal Garden",
+  "category": "ia_tecnologia",
+  "subcategory": "demo_webgpu",
+  "kind": "pasiva",
+  "description": "Abyssal Garden es una demo interactiva en 3D que simula un mundo submarino generado completamente por código WebGPU. Todo el contenido (kelp, rayos de sol, manta rays) está contenido en un único archivo HTML de 97 KB, sin imágenes ni modelos externos.",
+  "officialUrl": "https://noniv.github.io/abyssal-garden/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Accesible desde cualquier navegador Chrome en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay costes adicionales; es gratuito.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No hay inversión ni posición que liquidar; basta con cerrar la pestaña.",
+  "horizon": "inmediato",
+  "deadline": null,
+  "potential": "bajo",
+  "difficulty": "baja",
+  "timeNeeded": "5-10 minutos",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Genera todo en código, sin assets, en 97 KB HTML",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Es una demo artística sin modelo de negocio claro",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2,
+    "why": "No se indica ningún mercado objetivo",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información sobre el equipo desarrollador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación pública",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "2613 estrellas y 388 forks en GitHub",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Solo disponible como demo web, sin métricas de usuarios activos",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras demos WebGPU, pero pocas con tamaño tan reducido",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8,
+    "why": "Funciona en Chrome sin dependencias externas",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 10,
+    "why": "Es gratuito, no requiere inversión",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9,
+    "why": "Accesible vía navegador desde cualquier ubicación, incluida España",
+    "evidence": true
+   },
+   "salida": {
+    "v": 10,
+    "why": "No hay lock‑in; basta con cerrar la página",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "ausencia_de_modelo_de_negocio",
+    "severity": "baja",
+    "detail": "No se describe ningún plan de monetización o generación de ingresos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Falta de información sobre el equipo y financiación."
+  ],
+  "whyInteresting": [
+   "Ejemplo destacado de arte generativo y optimización WebGPU en un archivo extremadamente pequeño."
+  ],
+  "howToParticipate": [
+   "1. Abrir Chrome (versión reciente).",
+   "2. Navegar a https://noniv.github.io/abyssal-garden/.",
+   "3. Usar WASD y Q/E para explorar el entorno."
+  ],
+  "lossCauses": [
+   "Ninguno: es gratuito y no implica inversión."
+  ],
+  "earlySignals": [
+   "Número de estrellas (2613) y forks (388) en GitHub indica interés de la comunidad."
+  ],
+  "signals": {
+   "stars": 2613,
+   "forks": 388
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación; no se trata de un activo regulado.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "GitHub",
+    "url": "https://noniv.github.io/abyssal-garden/"
+   },
+   {
+    "title": "github.com",
+    "url": "https://github.com/Noniv/abyssal-garden"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-noniv-github-io",
+  "isNew": true,
+  "score": 50,
+  "rawScore": 55.2,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "ausencia_de_modelo_de_negocio",
+    "severity": "baja",
+    "detail": "No se describe ningún plan de monetización o generación de ingresos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Genera todo en código, sin assets, en 97 KB HTML",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Es una demo artística sin modelo de negocio claro",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se indica ningún mercado objetivo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo desarrollador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "2613 estrellas y 388 forks en GitHub",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Solo disponible como demo web, sin métricas de usuarios activos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras demos WebGPU, pero pocas con tamaño tan reducido",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Funciona en Chrome sin dependencias externas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "Es gratuito, no requiere inversión",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Accesible vía navegador desde cualquier ubicación, incluida España",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "No hay lock‑in; basta con cerrar la página",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T02:32:23Z",
+    "stars": 2613.0,
+    "forks": 388.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Abyssal Garden\nCATEGORÍA: ia_tecnologia · demo_webgpu\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://noniv.github.io/abyssal-garden/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: bajo\nPUNTUACIÓN: 50/100 · Especulativa\nRIESGO: medio\nPLAZO: inmediato\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ejemplo destacado de arte generativo y optimización WebGPU en un archivo extremadamente pequeño.\nMOTIVOS PARA DESCONFIAR: No se describe ningún plan de monetización o generación de ingresos.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Falta de información sobre el equipo y financiación.\nCÓMO PARTICIPAR: 1. Abrir Chrome (versión reciente).; 2. Navegar a https://noniv.github.io/abyssal-garden/.; 3. Usar WASD y Q/E para explorar el entorno.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguno: es gratuito y no implica inversión.\nFUENTES: https://noniv.github.io/abyssal-garden/ | https://github.com/Noniv/abyssal-garden",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "web-noniv-github-io"
   ]
  },
  {
@@ -2632,6 +3390,356 @@
   ]
  },
  {
+  "name": "Innovation Day 28DIGITAL 2026",
+  "category": "startups",
+  "subcategory": "eventos",
+  "kind": "pasiva",
+  "description": "Evento presencial en Madrid que reunió a startups y expertos para debatir sobre talento, tecnología y confianza, presentando proyectos como Mential, Sykah y KanzoTech.",
+  "officialUrl": "https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "no",
+  "spainNotes": "Evento realizado el 19 de noviembre de 2026 en la Fundación PONS, Madrid; ya finalizado.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se menciona coste de asistencia",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Alto potencial de networking y conocimiento de startups emergentes en IA y salud.",
+  "difficulty": "baja",
+  "timeNeeded": "2-3 horas (asistencia al evento)",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6,
+    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 4,
+    "why": "No se menciona financiación para los proyectos presentados",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "Participación de universidades, empresas y startups españolas",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5,
+    "why": "No hay datos de adopción de las soluciones presentadas",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 6,
+    "why": "Existen otros eventos similares en el ecosistema tech español",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 9,
+    "why": "No implica inversión ni desarrollo técnico propio",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No hay inversión económica requerida",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9,
+    "why": "Evento realizado en Madrid, España",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay salida financiera asociada",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Conocer tendencias en IA, talento y confianza",
+   "Networking con startups como Mential, Sykah y KanzoTech"
+  ],
+  "howToParticipate": [
+   "Revisar la agenda del Innovation Day en la web de 28DIGITAL",
+   "Registrarse en la plataforma de eventos (si estuviera abierto)",
+   "Asistir al evento presencial en la Fundación PONS, Madrid"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "web-elreferente-es",
+  "isNew": true,
+  "score": 39,
+  "rawScore": 63.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)",
+   "Tope 39: no disponible para residentes en España"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona financiación para los proyectos presentados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Participación de universidades, empresas y startups españolas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "No hay datos de adopción de las soluciones presentadas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros eventos similares en el ecosistema tech español",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No implica inversión ni desarrollo técnico propio",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No hay inversión económica requerida",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Evento realizado en Madrid, España",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay salida financiera asociada",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d"
+  ]
+ },
+ {
   "name": "WASTED",
   "category": "cripto",
   "subcategory": "memecoin",
@@ -4206,6 +5314,730 @@
   ]
  },
  {
+  "name": "Groundwork",
+  "category": "ia_tecnologia",
+  "subcategory": "desconocido",
+  "kind": "activa",
+  "description": "Herramienta listada en Product Hunt que menciona planes de Claude Code que no sobrescriben al re‑ejecutarse. Información limitada disponible.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se pudo acceder a la web oficial (HTTP 403).",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes adicionales conocidos",
+   "recommended": 0,
+   "max": 150
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica inversión financiera directa",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo",
+  "subscores": {
+   "novedad": {
+    "v": 5,
+    "why": "Producto listado en Product Hunt sin mucha información adicional",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Sin datos de mercado ni tracción visibles",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "Categoría IA tecnología, mercado amplio pero sin datos específicos",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de información del equipo fundador o staff",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos públicos de rondas de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2,
+    "why": "Presencia limitada a la página de Product Hunt",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "No se publican métricas de usuarios o adopción",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "Existe competencia en el sector IA, pero sin detalle concreto",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6,
+    "why": "Tecnología basada en Claude Code, sin detalles de implementación ni auditorías públicas",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8,
+    "why": "No implica inversión financiera directa; uso potencial gratuito",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "Producto disponible online, sin restricción geográfica conocida",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5,
+    "why": "No aplica inversión, por lo que no hay proceso de salida financiero",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Nueva herramienta que menciona gestión de planes de Claude Code sin sobrescritura"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al producto para obtener más información"
+  ],
+  "lossCauses": [
+   "Ninguna pérdida financiera directa, ya que no se requiere inversión"
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/groundwork-6"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-groundwork",
+  "isNew": true,
+  "score": 28,
+  "rawScore": 33.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Producto listado en Product Hunt sin mucha información adicional",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de mercado ni tracción visibles",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Categoría IA tecnología, mercado amplio pero sin datos específicos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información del equipo fundador o staff",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos públicos de rondas de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Presencia limitada a la página de Product Hunt",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "No se publican métricas de usuarios o adopción",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existe competencia en el sector IA, pero sin detalle concreto",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología basada en Claude Code, sin detalles de implementación ni auditorías públicas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "No implica inversión financiera directa; uso potencial gratuito",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto disponible online, sin restricción geográfica conocida",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No aplica inversión, por lo que no hay proceso de salida financiero",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Groundwork\nCATEGORÍA: ia_tecnologia · desconocido\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 28/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Nueva herramienta que menciona gestión de planes de Claude Code sin sobrescritura\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al producto para obtener más información\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera directa, ya que no se requiere inversión\nFUENTES: https://www.producthunt.com/products/groundwork-6",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "news-www-producthunt-com-products-groundwork-6"
+  ]
+ },
+ {
+  "name": "InteraOne",
+  "category": "ia_tecnologia",
+  "subcategory": "software",
+  "kind": "pasiva",
+  "description": "InteraOne es una alternativa open‑source a Intercom y Zendesk que incorpora agentes de IA para la atención al cliente.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Software open‑source, sin costes de licencia",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es software libre.",
+  "horizon": "corto‑medio plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "media",
+  "timeNeeded": "Depende de la integración y personalización requerida.",
+  "subscores": {
+   "novedad": {
+    "v": 8,
+    "why": "Plataforma open‑source con IA para soporte al cliente, nicho poco explotado",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Puede captar usuarios que buscan alternativas más económicas a Intercom/Zendesk",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Gran mercado de herramientas de atención al cliente, pero dominado por grandes players",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de datos sobre el equipo fundador o desarrolladores",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1,
+    "why": "No hay información pública sobre rondas de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3,
+    "why": "Presencia limitada a discusión en Product Hunt",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "Sin datos de usuarios o casos de uso publicados",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 7,
+    "why": "Compite con Intercom, Zendesk y otras soluciones SaaS consolidadas",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Depende de la calidad del código open‑source y de los modelos de IA integrados",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión financiera directa",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4,
+    "why": "Desconocida la disponibilidad o adopción en el mercado español",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "Al ser software libre, no hay lock‑in financiero",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion_equipo",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo fundador o desarrolladores"
+   },
+   {
+    "code": "sitio_web_no_accesible",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar la información"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Información limitada sobre equipo y comunidad"
+  ],
+  "whyInteresting": [
+   "Alternativa open‑source a soluciones costosas de soporte al cliente con IA"
+  ],
+  "howToParticipate": [
+   "1. Acceder a la página de Product Hunt para obtener el enlace al repositorio del proyecto.",
+   "2. Descargar el código fuente desde GitHub (enlace proporcionado en la descripción).",
+   "3. Instalar y configurar la solución según la documentación disponible."
+  ],
+  "lossCauses": [
+   "Falta de soporte técnico",
+   "Posibles vulnerabilidades de seguridad en el código abierto",
+   "Baja adopción y falta de comunidad activa"
+  ],
+  "earlySignals": [
+   "Interés inicial en Product Hunt"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/interaone"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-interaone",
+  "isNew": true,
+  "score": 27,
+  "rawScore": 36.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion_equipo",
+    "severity": "alta",
+    "detail": "No se dispone de datos sobre el equipo fundador o desarrolladores"
+   },
+   {
+    "code": "sitio_web_no_accesible",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar la información"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Plataforma open‑source con IA para soporte al cliente, nicho poco explotado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede captar usuarios que buscan alternativas más económicas a Intercom/Zendesk",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Gran mercado de herramientas de atención al cliente, pero dominado por grandes players",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de datos sobre el equipo fundador o desarrolladores",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay información pública sobre rondas de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Presencia limitada a discusión en Product Hunt",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin datos de usuarios o casos de uso publicados",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con Intercom, Zendesk y otras soluciones SaaS consolidadas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la calidad del código open‑source y de los modelos de IA integrados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión financiera directa",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida la disponibilidad o adopción en el mercado español",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Al ser software libre, no hay lock‑in financiero",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: InteraOne\nCATEGORÍA: ia_tecnologia · software\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 27/100 · Descartar\nRIESGO: medio\nPLAZO: corto‑medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Alternativa open‑source a soluciones costosas de soporte al cliente con IA\nMOTIVOS PARA DESCONFIAR: No se dispone de datos sobre el equipo fundador o desarrolladores; La página oficial devuelve error 403, impidiendo validar la información; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Información limitada sobre equipo y comunidad\nCÓMO PARTICIPAR: 1. Acceder a la página de Product Hunt para obtener el enlace al repositorio del proyecto.; 2. Descargar el código fuente desde GitHub (enlace proporcionado en la descripción).; 3. Instalar y configurar la solución según la documentación disponible.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de soporte técnico; Posibles vulnerabilidades de seguridad en el código abierto; Baja adopción y falta de comunidad activa\nFUENTES: https://www.producthunt.com/products/interaone",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "news-www-producthunt-com-products-interaone"
+  ]
+ },
+ {
   "name": "Foolscap",
   "category": "ia_tecnologia",
   "subcategory": "productividad",
@@ -5656,6 +7488,366 @@
   ]
  },
  {
+  "name": "tripps",
+  "category": "ia_tecnologia",
+  "subcategory": "startup",
+  "kind": "activa",
+  "description": "Tripps permite planificar un viaje grupal mediante un único enlace, sin necesidad de crear una cuenta. La herramienta está listada en Product Hunt y se presenta como una solución sencilla para organizar itinerarios colectivos.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información disponible sobre disponibilidad o soporte específico en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se indica coste de uso; la información es insuficiente para determinar precios adicionales.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, al tratarse de un servicio sin inversión financiera directa.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo para probar la herramienta",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Producto recién listado en Product Hunt, sin historial público amplio",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4,
+    "why": "Propuesta de valor simple, pero sin datos de adopción o mercado",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "Mercado de planificación de viajes grupales es competitivo y no se citan estudios de mercado",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de información sobre los fundadores o el equipo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2,
+    "why": "Ausencia de datos sobre usuarios activos o comunidad alrededor del producto",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "Sin métricas de usuarios o crecimiento reportado",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen varias herramientas similares; la ventaja competitiva no está clara",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Tecnología no descrita; riesgo medio por falta de información",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "No implica inversión financiera directa, pero el riesgo de gasto futuro es desconocido",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Producto web, potencialmente accesible, pero sin confirmación de localización o soporte en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4,
+    "why": "No hay mecanismo de salida financiero; la única salida es dejar de usar el servicio",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el equipo, financiación, métricas de uso y disponibilidad en España."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Información limitada impide una evaluación fiable"
+  ],
+  "whyInteresting": [
+   "Ofrece una forma rápida y sin registro para organizar viajes grupales"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt para tripps",
+   "Buscar enlaces o botones que dirijan al sitio oficial o a la herramienta",
+   "Probar la funcionalidad creando un enlace de viaje"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de cumplimiento normativo en España",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/tripps"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-tripps",
+  "isNew": true,
+  "score": 22,
+  "rawScore": 26.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre el equipo, financiación, métricas de uso y disponibilidad en España."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto recién listado en Product Hunt, sin historial público amplio",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Propuesta de valor simple, pero sin datos de adopción o mercado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de planificación de viajes grupales es competitivo y no se citan estudios de mercado",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información sobre los fundadores o el equipo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No se menciona financiación externa ni rondas de inversión",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Ausencia de datos sobre usuarios activos o comunidad alrededor del producto",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin métricas de usuarios o crecimiento reportado",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varias herramientas similares; la ventaja competitiva no está clara",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología no descrita; riesgo medio por falta de información",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No implica inversión financiera directa, pero el riesgo de gasto futuro es desconocido",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto web, potencialmente accesible, pero sin confirmación de localización o soporte en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay mecanismo de salida financiero; la única salida es dejar de usar el servicio",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: tripps\nCATEGORÍA: ia_tecnologia · startup\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 22/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ofrece una forma rápida y sin registro para organizar viajes grupales\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre el equipo, financiación, métricas de uso y disponibilidad en España.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Información limitada impide una evaluación fiable\nCÓMO PARTICIPAR: Visitar la página de Product Hunt para tripps; Buscar enlaces o botones que dirijan al sitio oficial o a la herramienta; Probar la funcionalidad creando un enlace de viaje\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/tripps",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "news-www-producthunt-com-products-tripps"
+  ]
+ },
+ {
   "name": "Hogecoin",
   "category": "cripto",
   "subcategory": "meme",
@@ -6088,6 +8280,782 @@
   "runId": "run-20261120-1141",
   "aliases": [
    "tok-solana-fvzqgqrmr4uh1fif6dewmwbj1p4yuzcu8dcw4efopump"
+  ]
+ },
+ {
+  "name": "Same Moon",
+  "category": "ia_tecnologia",
+  "subcategory": "educacion",
+  "kind": "pasiva",
+  "description": "Same Moon ofrece cuentos gratuitos para niños que han tenido que abandonar su hogar. La plataforma está diseñada para proporcionar historias antes de dormir y ayudar a los menores a sobrellevar la situación de desplazamiento. Es un proyecto accesible vía web sin coste para el usuario.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible como servicio web/app, sin restricciones geográficas conocidas.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "gratuito",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es un servicio gratuito sin inversión financiera.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto potencial social, bajo potencial financiero",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo, uso ocasional",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "concepto de historias gratuitas para niños desplazados",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5,
+    "why": "impacto social limitado, sin modelo de negocio claro",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "mercado amplio de apps educativas pero altamente competido",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0,
+    "why": "no hay información del equipo en la fuente",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0,
+    "why": "no se dispone de datos de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0,
+    "why": "no hay datos de comunidad o usuarios activos",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "presencia en Product Hunt indica alguna adopción inicial",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5,
+    "why": "existen varias apps de cuentos infantiles; enfoque en desplazados es nicho",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4,
+    "why": "dependencia de infraestructura web sin datos de seguridad publicados",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "producto gratuito, sin inversión requerida",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8,
+    "why": "acceso web global, sin restricciones conocidas para España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0,
+    "why": "no aplica, no hay inversión financiera que recuperar",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre equipo, financiación y métricas de uso"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "poca información disponible sobre el proyecto"
+  ],
+  "whyInteresting": [
+   "producto con impacto social relevante para niños desplazados"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al sitio oficial para usar la aplicación"
+  ],
+  "lossCauses": [
+   "Ninguna pérdida financiera, solo posible pérdida de tiempo si el servicio no funciona"
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/same-moon"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "n-same-moon",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 25.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre equipo, financiación y métricas de uso"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "concepto de historias gratuitas para niños desplazados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "impacto social limitado, sin modelo de negocio claro",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "mercado amplio de apps educativas pero altamente competido",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no hay información del equipo en la fuente",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no se dispone de datos de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no hay datos de comunidad o usuarios activos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "presencia en Product Hunt indica alguna adopción inicial",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "existen varias apps de cuentos infantiles; enfoque en desplazados es nicho",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "dependencia de infraestructura web sin datos de seguridad publicados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "producto gratuito, sin inversión requerida",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "acceso web global, sin restricciones conocidas para España",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "no aplica, no hay inversión financiera que recuperar",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Same Moon\nCATEGORÍA: ia_tecnologia · educacion\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial social, bajo potencial financiero\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: producto con impacto social relevante para niños desplazados\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre equipo, financiación y métricas de uso; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; poca información disponible sobre el proyecto\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al sitio oficial para usar la aplicación\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ninguna pérdida financiera, solo posible pérdida de tiempo si el servicio no funciona\nFUENTES: https://www.producthunt.com/products/same-moon",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "news-www-producthunt-com-products-same-moon"
+  ]
+ },
+ {
+  "name": "Wanted (WANTED)",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "activa",
+  "description": "Token memecoin en la cadena Robinhood que destina todas sus comisiones a comprar y quemar el token $FOBO, creando un mecanismo de piso de precios. No hay información pública sobre el equipo ni auditorías del contrato.",
+  "officialUrl": "https://wantedhood.xyz",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "El token está en una cadena poco conocida en España y no figura en exchanges locales; su compra requiere una wallet compatible con Robinhood y acceso a DEXs internacionales.",
+  "costs": {
+   "minEntry": 0.01,
+   "extra": 0,
+   "extraNotes": "Se asume que no hay comisiones de gas significativas en la cadena Robinhood, pero pueden existir costes de puente o de DEX.",
+   "recommended": 50,
+   "max": 150
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en el DEX indicado, pero el volumen es bajo y la profundidad de mercado limitada, lo que puede generar deslizamiento al intentar salir con cantidades relevantes.",
+  "horizon": "corto a medio plazo, altamente especulativo",
+  "deadline": null,
+  "potential": "Bajo, depende de la adopción del token $FOBO y del interés de la comunidad en el mecanismo de quemado, sin fundamentos claros más allá del hype memecoin.",
+  "difficulty": "alta",
+  "timeNeeded": "pocos minutos para comprar, pero requiere seguimiento continuo del mercado y gestión de riesgos",
+  "subscores": {
+   "novedad": {
+    "v": 4,
+    "why": "Mecanismo de usar comisiones para comprar y quemar otro token ($FOBO)",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 3,
+    "why": "Sin caso de uso claro y alta dependencia del hype",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3,
+    "why": "Capitalización de ~58.9k USD y volumen 24h de ~27.6k USD",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0,
+    "why": "No se proporciona información sobre el equipo ni fundadores",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0,
+    "why": "No hay datos de rondas de financiación o inversores externos",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3,
+    "why": "Cuentas en X y Telegram, pero sin métricas de actividad pública",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2,
+    "why": "Ninguna integración conocida en plataformas o servicios externos",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2,
+    "why": "Existe abundante oferta de memecoins con mecánicas similares",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 2,
+    "why": "No hay analizador de contrato para la cadena Robinhood; flag de seguridad media",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 2,
+    "why": "Baja capitalización, alta volatilidad y posible rugpull",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2,
+    "why": "Acceso posible vía DEXs internacionales, pero sin regulación ni soporte local",
+    "evidence": false
+   },
+   "salida": {
+    "v": 3,
+    "why": "Liquidez media y bajo volumen pueden dificultar la venta sin deslizamiento",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood, lo que impide verificar la seguridad del código."
+   },
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red robinhood."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "ausencia de auditoría de contrato",
+   "información del equipo desconocida",
+   "posible esquema de pump‑and‑dump típico de memecoins"
+  ],
+  "whyInteresting": [
+   "mecanismo de quemado de $FOBO mediante comisiones",
+   "precio extremadamente bajo que permite adquirir gran cantidad con presupuesto limitado"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con la cadena Robinhood (ej. MetaMask con RPC personalizado).",
+   "2. Obtener el token nativo necesario para pagar tarifas en esa cadena (si aplica).",
+   "3. Conectar la wallet al DEX indicado en la URL de DexScreener.",
+   "4. Comprar $WANTED usando la cantidad deseada (ej. 50 €).",
+   "5. Guardar los tokens en la wallet y monitorizar el precio y el volumen."
+  ],
+  "lossCauses": [
+   "baja liquidez y alto deslizamiento al vender",
+   "posible rugpull o eliminación del contrato",
+   "volatilidad extrema típica de memecoins",
+   "ausencia de auditoría y análisis de contrato"
+  ],
+  "earlySignals": [
+   "taxa de sniper 90 % → 2.5 % indica medidas anti‑bots pero también alta carga fiscal",
+   "precio actual ~0.000059 USD, muy bajo y susceptible a manipulaciones",
+   "volumen 24h ~27.6k USD sugiere actividad limitada"
+  ],
+  "signals": {
+   "volume24hUsd": 27633.48
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "No se ha verificado cumplimiento normativo en España o UE; se recomienda consultar a un profesional antes de invertir.",
+   "sources": []
+  },
+  "market": {
+   "chain": "robinhood",
+   "tokenAddress": "0x2d3E65142bf632eD90e8EE43225CE543E7AACf58",
+   "symbol": "WANTED",
+   "name": "Wanted",
+   "priceUsd": 5.965e-05,
+   "liquidityUsd": 53925.97,
+   "volume24hUsd": 27633.48,
+   "fdvUsd": 58895,
+   "mcapUsd": 58895,
+   "ageHours": 40.0,
+   "buys24h": 205,
+   "sells24h": 165,
+   "pairUrl": "https://dexscreener.com/robinhood/0x80e3ab49c7c7eecfa47e331dcd2ce77c9924e09920b40708f0ae9ee511e76daf"
+  },
+  "securityChecks": [],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://wantedhood.xyz"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/robinhood/0x80e3ab49c7c7eecfa47e331dcd2ce77c9924e09920b40708f0ae9ee511e76daf"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-21",
+  "id": "tok-robinhood-0x2d3e65142bf632ed90e8ee43225ce543e7aacf58",
+  "isNew": true,
+  "score": 17,
+  "rawScore": 21.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "alto",
+  "flags": [
+   {
+    "code": "sin_analisis_contrato",
+    "severity": "media",
+    "detail": "No hay analizador de contratos para la red Robinhood, lo que impide verificar la seguridad del código."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Mecanismo de usar comisiones para comprar y quemar otro token ($FOBO)",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin caso de uso claro y alta dependencia del hype",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Capitalización de ~58.9k USD y volumen 24h de ~27.6k USD",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se proporciona información sobre el equipo ni fundadores",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de rondas de financiación o inversores externos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Cuentas en X y Telegram, pero sin métricas de actividad pública",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Ninguna integración conocida en plataformas o servicios externos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Existe abundante oferta de memecoins con mecánicas similares",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No hay analizador de contrato para la cadena Robinhood; flag de seguridad media",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Baja capitalización, alta volatilidad y posible rugpull",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde España",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Acceso posible vía DEXs internacionales, pero sin regulación ni soporte local",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Liquidez media y bajo volumen pueden dificultar la venta sin deslizamiento",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 50.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -50.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 100.0,
+     "netEur": 98.6,
+     "exitImpactPct": 0.4,
+     "exitNote": null,
+     "impliedFdvUsd": 117790
+    },
+    {
+     "multiple": 5,
+     "grossEur": 250.0,
+     "netEur": 244.98,
+     "exitImpactPct": 1.0,
+     "exitNote": null,
+     "impliedFdvUsd": 294475
+    },
+    {
+     "multiple": 10,
+     "grossEur": 500.0,
+     "netEur": 484.91,
+     "exitImpactPct": 2.0,
+     "exitNote": null,
+     "impliedFdvUsd": 588950
+    },
+    {
+     "multiple": 20,
+     "grossEur": 1000.0,
+     "netEur": 949.65,
+     "exitImpactPct": 4.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1177900
+    },
+    {
+     "multiple": 50,
+     "grossEur": 2500.0,
+     "netEur": 2222.8,
+     "exitImpactPct": 10.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 2944750
+    },
+    {
+     "multiple": 100,
+     "grossEur": 5000.0,
+     "netEur": 3941.2,
+     "exitImpactPct": 20.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 5889500
+    },
+    {
+     "multiple": 300,
+     "grossEur": 15000.0,
+     "netEur": 5770.82,
+     "exitImpactPct": 61.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 17668500
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T02:32:23Z",
+    "priceUsd": 5.965e-05,
+    "liquidityUsd": 53925.97,
+    "volume24hUsd": 27633.48,
+    "fdvUsd": 58895.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Wanted (WANTED)\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://wantedhood.xyz\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,01 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 50,00 €\nPOTENCIAL: Bajo, depende de la adopción del token $FOBO y del interés de la comunidad en el mecanismo de quemado, sin fundamentos claros más allá del hype memecoin.\nPUNTUACIÓN: 17/100 · Descartar\nRIESGO: alto\nPLAZO: corto a medio plazo, altamente especulativo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: mecanismo de quemado de $FOBO mediante comisiones; precio extremadamente bajo que permite adquirir gran cantidad con presupuesto limitado\nMOTIVOS PARA DESCONFIAR: No hay analizador de contratos para la red Robinhood, lo que impide verificar la seguridad del código.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; ausencia de auditoría de contrato; información del equipo desconocida; posible esquema de pump‑and‑dump típico de memecoins\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con la cadena Robinhood (ej. MetaMask con RPC personalizado).; 2. Obtener el token nativo necesario para pagar tarifas en esa cadena (si aplica).; 3. Conectar la wallet al DEX indicado en la URL de DexScreener.; 4. Comprar $WANTED usando la cantidad deseada (ej. 50 €).; 5. Guardar los tokens en la wallet y monitorizar el precio y el volumen.\nQUÉ PODRÍA HACERME PERDER EL DINERO: baja liquidez y alto deslizamiento al vender; posible rugpull o eliminación del contrato; volatilidad extrema típica de memecoins; ausencia de auditoría y análisis de contrato\nFUENTES: https://wantedhood.xyz | https://dexscreener.com/robinhood/0x80e3ab49c7c7eecfa47e331dcd2ce77c9924e09920b40708f0ae9ee511e76daf",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-21T02:32:23Z",
+  "runId": "run-20261121-0232",
+  "aliases": [
+   "tok-robinhood-0x2d3e65142bf632ed90e8ee43225ce543e7aacf58"
   ]
  },
  {

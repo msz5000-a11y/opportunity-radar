@@ -1,73 +1,73 @@
 {
- "lastRunAt": "2026-11-20T20:37:00Z",
+ "lastRunAt": "2026-11-21T02:36:27Z",
  "lastRunOk": false,
- "lastRunId": "run-20261120-2033",
+ "lastRunId": "run-20261121-0232",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-20T20:33:04+00:00"
+   "at": "2026-11-21T02:32:23+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
-   "items": 2,
+   "items": 4,
    "error": null,
-   "at": "2026-11-20T20:33:08+00:00"
+   "at": "2026-11-21T02:32:27+00:00"
   },
   "geckoterminal_trending": {
    "ok": false,
    "items": 0,
    "error": "radar.net.request() got multiple values for keyword argument 'headers'",
-   "at": "2026-11-20T20:33:08+00:00"
+   "at": "2026-11-21T02:32:27+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 3,
+   "items": 1,
    "error": null,
-   "at": "2026-11-20T20:33:08+00:00"
+   "at": "2026-11-21T02:32:27+00:00"
   },
   "hacker_news": {
    "ok": true,
-   "items": 3,
+   "items": 4,
    "error": null,
-   "at": "2026-11-20T20:33:08+00:00"
+   "at": "2026-11-21T02:32:27+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-20T20:33:09+00:00"
+   "at": "2026-11-21T02:32:28+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T20:33:09+00:00"
+   "at": "2026-11-21T02:32:28+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-20T20:33:10+00:00"
+   "at": "2026-11-21T02:32:30+00:00"
   },
   "TechCrunch Startups": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T20:33:10+00:00"
+   "at": "2026-11-21T02:32:30+00:00"
   },
   "The Block": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-20T20:33:10+00:00"
+   "at": "2026-11-21T02:32:30+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: HTTP 429",
-   "at": "2026-11-20T20:33:42+00:00"
+   "at": "2026-11-21T02:33:02+00:00"
   }
  },
  "ai": {
