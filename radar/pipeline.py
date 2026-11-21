@@ -320,7 +320,9 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
                 "ntfy": bool(os.environ.get("NTFY_TOPIC"))}
     if mode == "test-notify":
         ok = notify.send("✅ Opportunity Radar conectado", "Las alertas llegarán aquí aunque el móvil esté bloqueado.", priority=3, tags=["white_check_mark"])
-        return {"sent": ok}
+        if not dry:
+            store.save("notify.json", {"at": iso(now_utc()), **notify.LAST})
+        return {"sent": ok, **notify.LAST}
 
     try:
         if mode in ("auto", "scan"):
