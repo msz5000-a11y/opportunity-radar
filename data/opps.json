@@ -21039,6 +21039,393 @@
   ]
  },
  {
+  "name": "MeshLive",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "MeshLive permite realizar videollamadas y livestreams sin conexión a internet usando una red mesh de Bluetooth. La solución está pensada para entornos donde la conectividad tradicional es limitada o inexistente.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se encontró información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Producto aparentemente gratuito, sin costes adicionales conocidos",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Alto potencial para comunicaciones descentralizadas, pero sin datos de adopción verificables.",
+  "difficulty": "baja",
+  "timeNeeded": "Poco tiempo para probar la aplicación",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Permite videollamadas offline mediante malla Bluetooth, una funcionalidad poco común · Verificador: La propuesta de videollamadas vía Bluetooth mesh es técnicamente innovadora.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Concepto innovador que podría abrir nuevos casos de uso en entornos sin internet · Verificador: Sin equipo ni desarrollo visible, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Mercado de comunicaciones es amplio pero altamente competido · Verificador: Mercado de nicho con barreras técnicas altas para la adopción masiva.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador o desarrollador · Verificador: No existe rastro público de los fundadores o desarrolladores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos públicos sobre rondas de financiación · Verificador: No hay registros de financiación ni modelo de negocio.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "No se encontró evidencia de comunidad activa o usuarios registrados · Verificador: Ausencia total de comunidad, redes sociales o foros de soporte.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Falta de métricas de usuarios o adopción · Verificador: No hay métricas de usuarios ni pruebas de funcionamiento.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Existen numerosas apps de videollamadas y soluciones mesh que compiten directamente · Verificador: Existen alternativas establecidas como Bridgefy o Briar para comunicaciones offline.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Depende de la estabilidad del hardware Bluetooth y de la implementación del mesh · Verificador: Alto riesgo: falta de auditorías de código y posibilidad de vulnerabilidades en la implementación Bluetooth. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "No requiere inversión financiera directa · Verificador: No requiere inversión, pero el riesgo de seguridad informática es elevado.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Sin información clara sobre disponibilidad o soporte en España · Verificador: No hay información sobre disponibilidad en el mercado español. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay mecanismo de salida financiero · Verificador: No aplica al ser un producto sin modelo financiero.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Poca información disponible; la web oficial devuelve error 403 y no hay datos de equipo, financiación o adopción."
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "El dominio oficial no resuelve (error 403) y no hay información sobre la entidad legal responsable."
+   },
+   {
+    "code": "proyecto_fantasma",
+    "severity": "media",
+    "detail": "La falta de actualizaciones y la ausencia de una web funcional sugieren un proyecto abandonado o inexistente."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia digital verificable, sitio web oficial funcional y datos sobre el equipo desarrollador. La información se limita a una página de Product Hunt sin actividad ni enlaces operativos, lo que impide confirmar su existencia real o seguridad técnica."
+   }
+  ],
+  "distrust": [
+   "falta de datos verificables sobre el proyecto"
+  ],
+  "whyInteresting": [
+   "Innovación en comunicaciones offline usando Bluetooth mesh"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt para obtener más información",
+   "Registrarse para recibir actualizaciones del proyecto",
+   "Probar la aplicación si está disponible para descarga"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser un producto financiero ni de inversión, no está sujeto a supervisión de la CNMV o MiCA, pero carece de cualquier certificación de seguridad o privacidad.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/meshlive"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto carece de presencia digital verificable, sitio web oficial funcional y datos sobre el equipo desarrollador. La información se limita a una página de Product Hunt sin actividad ni enlaces operativos, lo que impide confirmar su existencia real o seguridad técnica.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "n-meshlive",
+  "isNew": true,
+  "score": 13,
+  "rawScore": 23.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "informacion_limitada",
+    "severity": "media",
+    "detail": "Poca información disponible; la web oficial devuelve error 403 y no hay datos de equipo, financiación o adopción."
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "El dominio oficial no resuelve (error 403) y no hay información sobre la entidad legal responsable."
+   },
+   {
+    "code": "proyecto_fantasma",
+    "severity": "media",
+    "detail": "La falta de actualizaciones y la ausencia de una web funcional sugieren un proyecto abandonado o inexistente."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia digital verificable, sitio web oficial funcional y datos sobre el equipo desarrollador. La información se limita a una página de Product Hunt sin actividad ni enlaces operativos, lo que impide confirmar su existencia real o seguridad técnica."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Permite videollamadas offline mediante malla Bluetooth, una funcionalidad poco común · Verificador: La propuesta de videollamadas vía Bluetooth mesh es técnicamente innovadora.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Concepto innovador que podría abrir nuevos casos de uso en entornos sin internet · Verificador: Sin equipo ni desarrollo visible, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de comunicaciones es amplio pero altamente competido · Verificador: Mercado de nicho con barreras técnicas altas para la adopción masiva.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador o desarrollador · Verificador: No existe rastro público de los fundadores o desarrolladores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos públicos sobre rondas de financiación · Verificador: No hay registros de financiación ni modelo de negocio.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se encontró evidencia de comunidad activa o usuarios registrados · Verificador: Ausencia total de comunidad, redes sociales o foros de soporte.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Falta de métricas de usuarios o adopción · Verificador: No hay métricas de usuarios ni pruebas de funcionamiento.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen numerosas apps de videollamadas y soluciones mesh que compiten directamente · Verificador: Existen alternativas establecidas como Bridgefy o Briar para comunicaciones offline.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la estabilidad del hardware Bluetooth y de la implementación del mesh · Verificador: Alto riesgo: falta de auditorías de código y posibilidad de vulnerabilidades en la implementación Bluetooth. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No requiere inversión financiera directa · Verificador: No requiere inversión, pero el riesgo de seguridad informática es elevado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin información clara sobre disponibilidad o soporte en España · Verificador: No hay información sobre disponibilidad en el mercado español. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida financiero · Verificador: No aplica al ser un producto sin modelo financiero.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: MeshLive\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial para comunicaciones descentralizadas, pero sin datos de adopción verificables.\nPUNTUACIÓN: 13/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en comunicaciones offline usando Bluetooth mesh\nMOTIVOS PARA DESCONFIAR: Poca información disponible; la web oficial devuelve error 403 y no hay datos de equipo, financiación o adopción.; El dominio oficial no resuelve (error 403) y no hay información sobre la entidad legal responsable.; La falta de actualizaciones y la ausencia de una web funcional sugieren un proyecto abandonado o inexistente.; El verificador tiene dudas: El proyecto carece de presencia digital verificable, sitio web oficial funcional y datos sobre el equipo desarrollador. La información se limita a una página de Product Hunt sin actividad ni enlaces operativos, lo que impide confirmar su existencia real o seguridad técnica.; falta de datos verificables sobre el proyecto\nCÓMO PARTICIPAR: Visitar la página de Product Hunt para obtener más información; Registrarse para recibir actualizaciones del proyecto; Probar la aplicación si está disponible para descarga\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/meshlive",
+  "firstSeenAt": "2026-11-22T11:42:05Z",
+  "lastSeenAt": "2026-11-22T11:42:05Z",
+  "runId": "run-20261122-1142",
+  "aliases": [
+   "news-www-producthunt-com-products-meshlive"
+  ]
+ },
+ {
   "name": "WASTED (WASTED)",
   "category": "cripto",
   "subcategory": null,
@@ -24757,6 +25144,397 @@
   ]
  },
  {
+  "name": "TeaserKit",
+  "category": "ia_tecnologia",
+  "subcategory": "lanzamientos",
+  "kind": "activa",
+  "description": "Herramienta basada en IA que genera guiones y dirige la creación de videos de lanzamiento para productos tecnológicos.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se han encontrado costos asociados al uso inicial; posible modelo freemium desconocido.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, al tratarse de un producto SaaS sin token ni acciones públicas.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "poco tiempo para probar la versión beta",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Listado reciente en Product Hunt como herramienta AI para videos de lanzamiento · Verificador: Listado reciente en Product Hunt, aunque sin actividad verificable.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Sin datos de adopción o financiación, potencial estimado basado en tendencia AI video · Verificador: Imposible evaluar potencial sin acceso al producto o métricas. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.0,
+    "why": "Mercado de generación de video AI emergente, pero sin cifras concretas para este producto · Verificador: Mercado de IA generativa saturado; sin diferenciación clara visible.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: No existe información pública sobre los fundadores o desarrolladores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No se han encontrado rondas de inversión anunciadas · Verificador: Sin registros de rondas de inversión o capital semilla.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.0,
+    "why": "Poca interacción visible más allá del listado en Product Hunt · Verificador: Ausencia de comunidad activa o redes sociales vinculadas.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Sin métricas de usuarios activos o clientes anunciados · Verificador: No hay pruebas de usuarios activos o casos de uso.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otras soluciones AI de video (p.ej., Synthesia, Pictory) que compiten en el mismo nicho · Verificador: Alta competencia con herramientas consolidadas como Synthesia o HeyGen.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Dependencia de modelos de IA y posible falta de robustez en producción · Verificador: Riesgo elevado por falta de transparencia y acceso al servicio.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "No hay inversión directa requerida, pero riesgo de que el producto no genere ingresos · Verificador: No requiere inversión monetaria, pero el riesgo de pérdida de tiempo es alto.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No hay indicios de localización o soporte en español · Verificador: Sin localización, soporte o términos legales en español. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "No hay mecanismo de salida financiero (acciones, tokens) para el usuario · Verificador: Producto SaaS sin activos financieros asociados.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o usuarios."
+   },
+   {
+    "code": "falta_de_informacion",
+    "severity": "critica",
+    "detail": "La URL oficial devuelve error 403. No hay rastro de la empresa en registros mercantiles ni presencia digital verificable."
+   },
+   {
+    "code": "opacidad_equipo",
+    "severity": "alta",
+    "detail": "Anonimato total de los responsables del proyecto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web verificable, equipo conocido o información corporativa. El acceso a su supuesta URL resulta en error 403, lo que impide confirmar su existencia operativa o cumplimiento normativo."
+   }
+  ],
+  "distrust": [
+   "Escasa información pública y ausencia de datos verificables"
+  ],
+  "whyInteresting": [
+   "Innovación en generación automática de guiones y dirección de videos de lanzamiento mediante IA"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y buscar enlaces al sitio oficial o formulario de registro; suscribirse a la newsletter o solicitar acceso beta si está disponible"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "No hay inversión directa, por lo que no hay riesgo de pérdida financiera; sin embargo, el tiempo invertido puede no traducirse en beneficio si el producto no despega"
+  ],
+  "earlySignals": [
+   "Listado en Product Hunt (2026)"
+  ],
+  "signals": {
+   "métrica": 0
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una herramienta SaaS sin componente financiero, no requiere registro en CNMV, pero carece de términos de servicio o política de privacidad visibles para cumplir con RGPD.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/teaserkit"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La herramienta carece de presencia web verificable, equipo conocido o información corporativa. El acceso a su supuesta URL resulta en error 403, lo que impide confirmar su existencia operativa o cumplimiento normativo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "n-teaserkit",
+  "isNew": true,
+  "score": 9,
+  "rawScore": 23.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o usuarios."
+   },
+   {
+    "code": "opacidad_equipo",
+    "severity": "alta",
+    "detail": "Anonimato total de los responsables del proyecto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web verificable, equipo conocido o información corporativa. El acceso a su supuesta URL resulta en error 403, lo que impide confirmar su existencia operativa o cumplimiento normativo."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Listado reciente en Product Hunt como herramienta AI para videos de lanzamiento · Verificador: Listado reciente en Product Hunt, aunque sin actividad verificable.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Sin datos de adopción o financiación, potencial estimado basado en tendencia AI video · Verificador: Imposible evaluar potencial sin acceso al producto o métricas. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de generación de video AI emergente, pero sin cifras concretas para este producto · Verificador: Mercado de IA generativa saturado; sin diferenciación clara visible.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: No existe información pública sobre los fundadores o desarrolladores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No se han encontrado rondas de inversión anunciadas · Verificador: Sin registros de rondas de inversión o capital semilla.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Poca interacción visible más allá del listado en Product Hunt · Verificador: Ausencia de comunidad activa o redes sociales vinculadas.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin métricas de usuarios activos o clientes anunciados · Verificador: No hay pruebas de usuarios activos o casos de uso.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras soluciones AI de video (p.ej., Synthesia, Pictory) que compiten en el mismo nicho · Verificador: Alta competencia con herramientas consolidadas como Synthesia o HeyGen.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Dependencia de modelos de IA y posible falta de robustez en producción · Verificador: Riesgo elevado por falta de transparencia y acceso al servicio.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No hay inversión directa requerida, pero riesgo de que el producto no genere ingresos · Verificador: No requiere inversión monetaria, pero el riesgo de pérdida de tiempo es alto.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay indicios de localización o soporte en español · Verificador: Sin localización, soporte o términos legales en español. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay mecanismo de salida financiero (acciones, tokens) para el usuario · Verificador: Producto SaaS sin activos financieros asociados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-22T11:42:05Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: TeaserKit\nCATEGORÍA: ia_tecnologia · lanzamientos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 9/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en generación automática de guiones y dirección de videos de lanzamiento mediante IA\nMOTIVOS PARA DESCONFIAR: No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o usuarios.; Anonimato total de los responsables del proyecto.; El verificador tiene dudas: La herramienta carece de presencia web verificable, equipo conocido o información corporativa. El acceso a su supuesta URL resulta en error 403, lo que impide confirmar su existencia operativa o cumplimiento normativo.; Escasa información pública y ausencia de datos verificables\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y buscar enlaces al sitio oficial o formulario de registro; suscribirse a la newsletter o solicitar acceso beta si está disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay inversión directa, por lo que no hay riesgo de pérdida financiera; sin embargo, el tiempo invertido puede no traducirse en beneficio si el producto no despega\nFUENTES: https://www.producthunt.com/products/teaserkit",
+  "firstSeenAt": "2026-11-22T11:42:05Z",
+  "lastSeenAt": "2026-11-22T11:42:05Z",
+  "runId": "run-20261122-1142",
+  "aliases": [
+   "news-www-producthunt-com-products-teaserkit"
+  ]
+ },
+ {
   "name": "Take Voyager 1 apart, down to a single memory chip",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -25532,165 +26310,156 @@
   ]
  },
  {
-  "name": "Bitcoin Mining Exposure",
-  "category": "cripto",
-  "subcategory": "minería",
-  "kind": "pasiva",
-  "description": "Inversión pasiva en la actividad de minería de Bitcoin, aprovechando la presión que la caída del precio ejerce sobre los mineros para potenciales oportunidades de compra de equipos o contratos de cloud mining.",
+  "name": "Ulika",
+  "category": "ia_tecnologia",
+  "subcategory": "editores_visuales",
+  "kind": "activa",
+  "description": "Ulika es un editor visual para sitios construidos con los modelos de IA Claude, Cursor o Codex, anunciado en Product Hunt.",
   "officialUrl": null,
   "participateUrl": null,
-  "country": "global",
-  "spainAvailability": "no_recomendada",
-  "spainNotes": "No se dispone de información específica sobre la disponibilidad de productos o servicios de minería en España en la fuente consultada.",
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No hay información pública sobre disponibilidad o localización en España.",
   "costs": {
-   "minEntry": null,
-   "extra": null,
-   "extraNotes": "Los costes pueden incluir compra de hardware, electricidad y tarifas de pool; no se especifican en la fuente.",
-   "recommended": null,
-   "max": null
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión ni pago para acceder al producto en su fase actual.",
+   "recommended": 0,
+   "max": 0
   },
-  "canLoseAll": true,
-  "liquidity": "baja",
-  "exitNotes": "La venta de equipos de minería usados suele ser lenta y a precios reducidos; los contratos de cloud mining pueden ser difíciles de rescindir.",
-  "horizon": "mediano",
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no hay inversión financiera que recuperar.",
+  "horizon": "inmediato",
   "deadline": null,
-  "potential": "alto",
-  "difficulty": "alta",
-  "timeNeeded": "alto",
+  "potential": "Potencial de facilitar la creación de sitios web mediante IA, aunque sin datos de adopción ni métricas de uso.",
+  "difficulty": "baja",
+  "timeNeeded": "Pocos minutos para probar el editor una vez disponible.",
   "subscores": {
    "novedad": {
-    "v": 2.0,
-    "why": "La minería de Bitcoin es una actividad establecida, sin novedades tecnológicas recientes en la fuente · Verificador: La minería de Bitcoin es una actividad madura y bien documentada desde 2009.",
-    "evidence": false
+    "v": 5.5,
+    "why": "Combina edición visual con sitios generados por Claude, Cursor o Codex · Verificador: La integración de editores visuales con modelos LLM es tendencia, pero la ejecución es inexistente.",
+    "evidence": true
    },
    "potencial": {
-    "v": 4.0,
-    "why": "La caída del precio de Bitcoin puede crear oportunidades de compra de equipos a precios reducidos · Verificador: La rentabilidad depende estrictamente del coste eléctrico y la eficiencia del hardware, factores muy adversos en España para pequeños inversores. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "v": 2.0,
+    "why": "Ofrece una solución práctica para usuarios de esas IA, pero el mercado aún es limitado · Verificador: Sin producto funcional, el potencial es puramente especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
     "evidence": false
    },
    "mercado": {
-    "v": 6.0,
-    "why": "El mercado de minería está influenciado por el precio de Bitcoin y la dificultad de red, mencionado en la fuente · Verificador: El mercado de minería es global y altamente competitivo, dominado por grandes granjas industriales.",
-    "evidence": true
+    "v": 3.5,
+    "why": "Mercado emergente de herramientas de desarrollo asistido por IA, sin datos concretos de tamaño · Verificador: Mercado saturado de herramientas 'wrapper' de IA sin diferenciación clara.",
+    "evidence": false
    },
    "equipo": {
     "v": 1.0,
-    "why": "No se menciona ningún equipo o equipo fundador en la fuente · Verificador: No existe un equipo promotor ni entidad detrás de esta propuesta genérica.",
+    "why": "No se dispone de información sobre el equipo fundador o desarrolladores · Verificador: No hay rastro de fundadores, empresa o entidad legal detrás.",
     "evidence": false
    },
    "financiacion": {
-    "v": 1.0,
-    "why": "No hay datos sobre financiación externa o capital disponible · Verificador: No hay estructura de capital ni entidad que reciba fondos.",
+    "v": 0.5,
+    "why": "No hay datos públicos de financiación o rondas de inversión · Verificador: Cero información sobre capital o respaldo.",
     "evidence": false
    },
    "comunidad": {
-    "v": 3.5,
-    "why": "Se menciona presión sobre mineros, pero sin datos de comunidad activa · Verificador: Existe una comunidad técnica, pero no una comunidad de inversión minorista organizada.",
-    "evidence": true
+    "v": 1.5,
+    "why": "Únicamente listado en Product Hunt, sin comunidad visible · Verificador: Inexistente fuera de un listado estático en Product Hunt.",
+    "evidence": false
    },
    "adopcion": {
-    "v": 5.0,
-    "why": "La minería de Bitcoin tiene adopción global, pero sin indicadores de crecimiento reciente · Verificador: La minería es la base de la red Bitcoin, pero la adopción minorista mediante cloud mining es decreciente debido a estafas.",
-    "evidence": true
+    "v": 1.0,
+    "why": "Sin métricas de usuarios activos o clientes anunciados · Verificador: No hay métricas de usuarios ni casos de uso verificables.",
+    "evidence": false
    },
    "competencia": {
-    "v": 5.0,
-    "why": "Existe alta competencia entre mineros, pero la fuente no detalla competidores específicos · Verificador: Competencia extrema a nivel industrial con hardware especializado (ASICs). · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "v": 5.5,
+    "why": "Existen editores visuales genéricos, pero pocos enfocados en IA como Claude o Codex · Verificador: Alta competencia de herramientas consolidadas como V0.dev o Bolt.new.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 3.0,
-    "why": "Riesgo de fallos de hardware y aumento de dificultad de red · Verificador: Riesgo alto de obsolescencia de hardware y dificultad de red creciente. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
-    "evidence": false
+    "v": 7.0,
+    "why": "Depende de APIs externas de Claude, Cursor y Codex, lo que implica posibles cambios o limitaciones · Verificador: Riesgo alto al depender de servicios de terceros sin infraestructura propia verificable.",
+    "evidence": true
    },
    "riesgo_financiero": {
-    "v": 2.0,
-    "why": "Alta volatilidad del precio de Bitcoin y posible pérdida total del capital invertido · Verificador: Alta probabilidad de pérdida de capital por volatilidad y costes operativos superiores a los ingresos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "v": 1.0,
+    "why": "No implica inversión económica directa; riesgo financiero prácticamente nulo · Verificador: No hay inversión monetaria, pero sí riesgo de pérdida de tiempo y datos. · Discrepancia entre modelos (9 vs 1): se toma el valor bajo.",
     "evidence": false
    },
    "entrada_espana": {
-    "v": 1.5,
-    "why": "Falta de información sobre proveedores o pools españoles · Verificador: España tiene costes eléctricos elevados que hacen inviable la minería doméstica competitiva.",
+    "v": 2.0,
+    "why": "Desconocida la disponibilidad o localización del servicio en España · Verificador: No hay indicios de operaciones en España.",
     "evidence": false
    },
    "salida": {
-    "v": 2.5,
-    "why": "Liquidez limitada para vender equipos o rescindir contratos · Verificador: Liquidez casi nula para equipos usados o contratos de cloud mining de dudosa reputación.",
-    "evidence": true
+    "v": 0.5,
+    "why": "No hay mecanismo de salida financiera ya que no se trata de una inversión · Verificador: No aplica al no ser una inversión financiera.",
+    "evidence": false
    }
   },
   "redFlags": [
    {
-    "code": "alta_volatilidad",
+    "code": "falta_de_informacion_oficial",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o roadmap."
+   },
+   {
+    "code": "incertidumbre_mercado",
+    "severity": "media",
+    "detail": "El mercado objetivo y la adopción real son desconocidos."
+   },
+   {
+    "code": "falta_de_presencia_web",
     "severity": "critica",
-    "detail": "El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería."
+    "detail": "El dominio o URL oficial no responde (HTTP 403), lo cual es una señal de alerta grave para un producto tecnológico."
    },
    {
-    "code": "regulacion_incierta",
+    "code": "ausencia_de_equipo",
     "severity": "alta",
-    "detail": "La normativa española y europea sobre criptominería y consumo energético es incierta."
+    "detail": "No existe información pública sobre los desarrolladores o la entidad legal responsable."
    },
    {
-    "code": "ausencia_entidad",
-    "severity": "critica",
-    "detail": "No hay una plataforma, empresa o contrato legal que respalde la inversión."
-   },
-   {
-    "code": "riesgo_estafa_cloud_mining",
-    "severity": "alta",
-    "detail": "El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes."
-   },
-   {
-    "code": "inviabilidad_electrica",
-    "severity": "alta",
-    "detail": "El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala."
+    "code": "proyecto_fantasma",
+    "severity": "media",
+    "detail": "El proyecto parece abandonado o nunca lanzado, a pesar de figurar en directorios."
    },
    {
     "code": "verificacion_dudosa",
     "severity": "alta",
-    "detail": "El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado. La minería de Bitcoin es una actividad industrial, no un producto de inversión minorista estándar en España."
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web activa, equipo identificable o modelo de negocio claro. La única referencia es un listado en Product Hunt sin enlaces funcionales, lo que impide verificar su legitimidad, seguridad o disponibilidad en España."
    }
   ],
   "distrust": [
-   "Falta de datos oficiales y ausencia de información concreta sobre proveedores o pools en España"
+   "Escasa información verificable sobre el proyecto y su equipo"
   ],
   "whyInteresting": [
-   "Presión sobre mineros tras la caída del precio de Bitcoin puede generar oportunidades de adquisición a bajo coste"
+   "Herramienta novedosa que permite crear sitios web con IA sin necesidad de programar"
   ],
   "howToParticipate": [
-   "1. Analizar el precio actual de equipos de minería usados o contratos de cloud mining disponibles; 2. Evaluar el coste eléctrico y la regulación local; 3. Comprar hardware o contratar un servicio de cloud mining; 4. Unirse a un pool de minería para compartir recompensas; 5. Monitorizar la rentabilidad y vender o ajustar la posición según evolucione el precio de Bitcoin"
+   "1. Visitar la página de Product Hunt de Ulika (https://www.producthunt.com/products/ulika).",
+   "2. Seguir los enlaces o instrucciones allí para solicitar acceso o registrarse cuando el sitio esté disponible.",
+   "3. Probar el editor visual y evaluar su utilidad para tus proyectos."
   ],
-  "lossCauses": [
-   "Caída prolongada del precio de Bitcoin",
-   "Aumento de la dificultad de minería",
-   "Fallos de hardware o aumento de costes energéticos",
-   "Cambios regulatorios que limiten la actividad"
-  ],
-  "earlySignals": [
-   "Reducción del hash rate global",
-   "Incremento de la dificultad de red",
-   "Anuncios de cierres de pools de minería"
-  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
   "signals": {},
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "La minería de Bitcoin no es un servicio financiero regulado por la CNMV, pero las empresas que ofrecen 'cloud mining' como inversión suelen ser objeto de advertencias por falta de registro como ESI o por operar como esquemas no autorizados.",
+   "notes": "Al no ser un servicio financiero ni ofrecer inversión, no está sujeto a supervisión de la CNMV, pero carece de cualquier cumplimiento normativo de protección de datos (RGPD) al no tener web operativa.",
    "sources": [
     "https://www.cnmv.es"
    ]
   },
   "sources": [
    {
-    "title": "The Block",
-    "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786"
-   },
-   {
-    "title": "CNMV - Advertencias sobre criptoactivos",
-    "url": "https://www.cnmv.es/portal/Inversor/Criptoactivos.aspx"
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/ulika"
    }
   ],
-  "discoveredVia": "The Block",
+  "discoveredVia": "Product Hunt",
   "aiModels": {
    "searcher": null,
    "analyst": "groq:openai/gpt-oss-120b",
@@ -25698,86 +26467,86 @@
   },
   "verification": {
    "verdict": "dudosa",
-   "reason": "La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado. La minería de Bitcoin es una actividad industrial, no un producto de inversión minorista estándar en España.",
+   "reason": "El proyecto carece de presencia web activa, equipo identificable o modelo de negocio claro. La única referencia es un listado en Product Hunt sin enlaces funcionales, lo que impide verificar su legitimidad, seguridad o disponibilidad en España.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 67
+   "agreementPct": 83
   },
-  "discoveredAt": "2026-11-21",
-  "id": "n-bitcoin-mining-exposure",
+  "discoveredAt": "2026-11-22",
+  "id": "n-ulika",
   "isNew": true,
   "score": 8,
-  "rawScore": 27.7,
+  "rawScore": 22.6,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
   "caps": [
-   "-20 por 4 riesgo(s) alto(s)"
+   "-15 por 3 riesgo(s) alto(s)"
   ],
   "critical": true,
   "risk": "crítico",
   "flags": [
    {
-    "code": "alta_volatilidad",
+    "code": "falta_de_informacion_oficial",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o roadmap."
+   },
+   {
+    "code": "incertidumbre_mercado",
+    "severity": "media",
+    "detail": "El mercado objetivo y la adopción real son desconocidos."
+   },
+   {
+    "code": "falta_de_presencia_web",
     "severity": "critica",
-    "detail": "El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería."
+    "detail": "El dominio o URL oficial no responde (HTTP 403), lo cual es una señal de alerta grave para un producto tecnológico."
    },
    {
-    "code": "regulacion_incierta",
+    "code": "ausencia_de_equipo",
     "severity": "alta",
-    "detail": "La normativa española y europea sobre criptominería y consumo energético es incierta."
+    "detail": "No existe información pública sobre los desarrolladores o la entidad legal responsable."
    },
    {
-    "code": "ausencia_entidad",
-    "severity": "critica",
-    "detail": "No hay una plataforma, empresa o contrato legal que respalde la inversión."
-   },
-   {
-    "code": "riesgo_estafa_cloud_mining",
-    "severity": "alta",
-    "detail": "El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes."
-   },
-   {
-    "code": "inviabilidad_electrica",
-    "severity": "alta",
-    "detail": "El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala."
+    "code": "proyecto_fantasma",
+    "severity": "media",
+    "detail": "El proyecto parece abandonado o nunca lanzado, a pesar de figurar en directorios."
    },
    {
     "code": "verificacion_dudosa",
     "severity": "alta",
-    "detail": "El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado. La minería de Bitcoin es una actividad industrial, no un producto de inversión minorista estándar en España."
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web activa, equipo identificable o modelo de negocio claro. La única referencia es un listado en Product Hunt sin enlaces funcionales, lo que impide verificar su legitimidad, seguridad o disponibilidad en España."
    }
   ],
-  "evidenced": 4,
+  "evidenced": 2,
   "breakdown": [
    {
     "key": "novedad",
     "label": "Novedad",
     "weight": 8,
-    "value": 2.0,
-    "points": 1.6,
-    "why": "La minería de Bitcoin es una actividad establecida, sin novedades tecnológicas recientes en la fuente · Verificador: La minería de Bitcoin es una actividad madura y bien documentada desde 2009.",
-    "evidence": false,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Combina edición visual con sitios generados por Claude, Cursor o Codex · Verificador: La integración de editores visuales con modelos LLM es tendencia, pero la ejecución es inexistente.",
+    "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "potencial",
     "label": "Potencial de crecimiento",
     "weight": 12,
-    "value": 3.0,
-    "points": 3.6,
-    "why": "La caída del precio de Bitcoin puede crear oportunidades de compra de equipos a precios reducidos · Verificador: La rentabilidad depende estrictamente del coste eléctrico y la eficiencia del hardware, factores muy adversos en España para pequeños inversores. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Ofrece una solución práctica para usuarios de esas IA, pero el mercado aún es limitado · Verificador: Sin producto funcional, el potencial es puramente especulativo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
     "evidence": false,
-    "cappedForNoEvidence": true
+    "cappedForNoEvidence": false
    },
    {
     "key": "mercado",
     "label": "Tamaño del mercado",
     "weight": 8,
-    "value": 6.0,
-    "points": 4.8,
-    "why": "El mercado de minería está influenciado por el precio de Bitcoin y la dificultad de red, mencionado en la fuente · Verificador: El mercado de minería es global y altamente competitivo, dominado por grandes granjas industriales.",
-    "evidence": true,
-    "cappedForNoEvidence": false
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado emergente de herramientas de desarrollo asistido por IA, sin datos concretos de tamaño · Verificador: Mercado saturado de herramientas 'wrapper' de IA sin diferenciación clara.",
+    "evidence": false,
+    "cappedForNoEvidence": true
    },
    {
     "key": "equipo",
@@ -25785,7 +26554,7 @@
     "weight": 10,
     "value": 1.0,
     "points": 1.0,
-    "why": "No se menciona ningún equipo o equipo fundador en la fuente · Verificador: No existe un equipo promotor ni entidad detrás de esta propuesta genérica.",
+    "why": "No se dispone de información sobre el equipo fundador o desarrolladores · Verificador: No hay rastro de fundadores, empresa o entidad legal detrás.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -25793,9 +26562,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 1.0,
-    "points": 0.7,
-    "why": "No hay datos sobre financiación externa o capital disponible · Verificador: No hay estructura de capital ni entidad que reciba fondos.",
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No hay datos públicos de financiación o rondas de inversión · Verificador: Cero información sobre capital o respaldo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -25803,20 +26572,20 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 3.5,
-    "points": 2.5,
-    "why": "Se menciona presión sobre mineros, pero sin datos de comunidad activa · Verificador: Existe una comunidad técnica, pero no una comunidad de inversión minorista organizada.",
-    "evidence": true,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Únicamente listado en Product Hunt, sin comunidad visible · Verificador: Inexistente fuera de un listado estático en Product Hunt.",
+    "evidence": false,
     "cappedForNoEvidence": false
    },
    {
     "key": "adopcion",
     "label": "Adopción",
     "weight": 9,
-    "value": 5.0,
-    "points": 4.5,
-    "why": "La minería de Bitcoin tiene adopción global, pero sin indicadores de crecimiento reciente · Verificador: La minería es la base de la red Bitcoin, pero la adopción minorista mediante cloud mining es decreciente debido a estafas.",
-    "evidence": true,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Sin métricas de usuarios activos o clientes anunciados · Verificador: No hay métricas de usuarios ni casos de uso verificables.",
+    "evidence": false,
     "cappedForNoEvidence": false
    },
    {
@@ -25825,7 +26594,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Existe alta competencia entre mineros, pero la fuente no detalla competidores específicos · Verificador: Competencia extrema a nivel industrial con hardware especializado (ASICs). · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "why": "Existen editores visuales genéricos, pero pocos enfocados en IA como Claude o Codex · Verificador: Alta competencia de herramientas consolidadas como V0.dev o Bolt.new.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -25833,29 +26602,29 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Riesgo de fallos de hardware y aumento de dificultad de red · Verificador: Riesgo alto de obsolescencia de hardware y dificultad de red creciente. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
-    "evidence": false,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Depende de APIs externas de Claude, Cursor y Codex, lo que implica posibles cambios o limitaciones · Verificador: Riesgo alto al depender de servicios de terceros sin infraestructura propia verificable.",
+    "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 2.0,
-    "points": 2.0,
-    "why": "Alta volatilidad del precio de Bitcoin y posible pérdida total del capital invertido · Verificador: Alta probabilidad de pérdida de capital por volatilidad y costes operativos superiores a los ingresos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No implica inversión económica directa; riesgo financiero prácticamente nulo · Verificador: No hay inversión monetaria, pero sí riesgo de pérdida de tiempo y datos. · Discrepancia entre modelos (9 vs 1): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 1.5,
-    "points": 1.2,
-    "why": "Falta de información sobre proveedores o pools españoles · Verificador: España tiene costes eléctricos elevados que hacen inviable la minería doméstica competitiva.",
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Desconocida la disponibilidad o localización del servicio en España · Verificador: No hay indicios de operaciones en España.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -25863,17 +26632,17 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 2.5,
-    "points": 2.0,
-    "why": "Liquidez limitada para vender equipos o rescindir contratos · Verificador: Liquidez casi nula para equipos usados o contratos de cloud mining de dudosa reputación.",
-    "evidence": true,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay mecanismo de salida financiera ya que no se trata de una inversión · Verificador: No aplica al no ser una inversión financiera.",
+    "evidence": false,
     "cappedForNoEvidence": false
    }
   ],
   "scenarios": {
    "stakeEur": 0.0,
    "extraCostsEur": 0.0,
-   "lossScenarioEur": -0.0,
+   "lossScenarioEur": null,
    "rows": [
     {
      "multiple": 2,
@@ -25939,12 +26708,12 @@
    "reason": "Riesgo crítico: no se notifica como oportunidad"
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Bitcoin Mining Exposure\nCATEGORÍA: cripto · minería\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: no_recomendada\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 8/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Presión sobre mineros tras la caída del precio de Bitcoin puede generar oportunidades de adquisición a bajo coste\nMOTIVOS PARA DESCONFIAR: El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería.; La normativa española y europea sobre criptominería y consumo energético es incierta.; No hay una plataforma, empresa o contrato legal que respalde la inversión.; El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes.; El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala.; El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado. La minería de Bitcoin es una actividad industrial, no un producto de inversión minorista estándar en España.; Falta de datos oficiales y ausencia de información concreta sobre proveedores o pools en España\nCÓMO PARTICIPAR: 1. Analizar el precio actual de equipos de minería usados o contratos de cloud mining disponibles; 2. Evaluar el coste eléctrico y la regulación local; 3. Comprar hardware o contratar un servicio de cloud mining; 4. Unirse a un pool de minería para compartir recompensas; 5. Monitorizar la rentabilidad y vender o ajustar la posición según evolucione el precio de Bitcoin\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída prolongada del precio de Bitcoin; Aumento de la dificultad de minería; Fallos de hardware o aumento de costes energéticos; Cambios regulatorios que limiten la actividad\nFUENTES: https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786 | https://www.cnmv.es/portal/Inversor/Criptoactivos.aspx",
-  "firstSeenAt": "2026-11-21T12:06:40Z",
-  "lastSeenAt": "2026-11-21T12:06:40Z",
-  "runId": "run-20261121-1206",
+  "alertText": "NOMBRE: Ulika\nCATEGORÍA: ia_tecnologia · editores_visuales\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Potencial de facilitar la creación de sitios web mediante IA, aunque sin datos de adopción ni métricas de uso.\nPUNTUACIÓN: 8/100 · Descartar\nRIESGO: crítico\nPLAZO: inmediato\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta novedosa que permite crear sitios web con IA sin necesidad de programar\nMOTIVOS PARA DESCONFIAR: No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o roadmap.; El mercado objetivo y la adopción real son desconocidos.; El dominio o URL oficial no responde (HTTP 403), lo cual es una señal de alerta grave para un producto tecnológico.; No existe información pública sobre los desarrolladores o la entidad legal responsable.; El proyecto parece abandonado o nunca lanzado, a pesar de figurar en directorios.; El verificador tiene dudas: El proyecto carece de presencia web activa, equipo identificable o modelo de negocio claro. La única referencia es un listado en Product Hunt sin enlaces funcionales, lo que impide verificar su legitimidad, seguridad o disponibilidad en España.; Escasa información verificable sobre el proyecto y su equipo\nCÓMO PARTICIPAR: 1. Visitar la página de Product Hunt de Ulika (https://www.producthunt.com/products/ulika).; 2. Seguir los enlaces o instrucciones allí para solicitar acceso o registrarse cuando el sitio esté disponible.; 3. Probar el editor visual y evaluar su utilidad para tus proyectos.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/ulika",
+  "firstSeenAt": "2026-11-22T11:42:05Z",
+  "lastSeenAt": "2026-11-22T11:42:05Z",
+  "runId": "run-20261122-1142",
   "aliases": [
-   "news-www-theblock-co-newsletters-the-daily-2026-11-20-jpmorgan-bitcoin-price-drop-miners-s"
+   "news-www-producthunt-com-products-ulika"
   ]
  },
  {
@@ -26302,6 +27071,464 @@
   "aliases": [
    "news-www-theblock-co-news-markets-2026-11-20-binance-hack-laundering-ramps-up-149-million"
   ]
+ },
+ {
+  "name": "Bitcoin Mining Exposure",
+  "category": "cripto",
+  "subcategory": "minería",
+  "kind": "pasiva",
+  "description": "Inversión pasiva en la actividad de minería de Bitcoin, aprovechando la presión que la caída del precio ejerce sobre los mineros para potenciales oportunidades de compra de equipos o contratos de cloud mining. No existe un vehículo de inversión concreto ni entidad regulada que respalde la operación en España.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "global",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información específica sobre la disponibilidad de productos o servicios de minería en España en la fuente consultada.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Los costes pueden incluir compra de hardware, electricidad y tarifas de pool; no se especifican en la fuente.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "La venta de equipos de minería usados suele ser lenta y a precios reducidos; los contratos de cloud mining pueden ser difíciles de rescindir.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "alta",
+  "timeNeeded": "alto",
+  "subscores": {
+   "novedad": {
+    "v": 1.5,
+    "why": "La minería de Bitcoin es una actividad establecida, sin novedades tecnológicas recientes en la fuente · Verificador: La minería de Bitcoin es una actividad madura y bien conocida.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "La caída del precio de Bitcoin puede crear oportunidades de compra de equipos a precios reducidos; la rentabilidad depende estrictamente del coste eléctrico y la eficiencia del hardware, factores muy adversos en España para pequeños inversores · Verificador: El potencial es altamente especulativo y depende de variables externas incontrolables para un inversor minorista.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.5,
+    "why": "El mercado de minería está influenciado por el precio de Bitcoin y la dificultad de red, mencionado en la fuente · Verificador: El mercado de minería es global y altamente competitivo.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.5,
+    "why": "No se menciona ningún equipo o equipo fundador en la fuente · Verificador: No existe un equipo o entidad detrás de esta 'oportunidad'.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.5,
+    "why": "No hay datos sobre financiación externa o capital disponible · Verificador: No hay estructura de financiación ni capital de riesgo involucrado.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.2,
+    "why": "Se menciona presión sobre mineros, pero sin datos de comunidad activa · Verificador: Existe una comunidad global de mineros, pero no hay una comunidad de inversión asociada a esta propuesta.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "La minería de Bitcoin tiene adopción global, pero sin indicadores de crecimiento reciente · Verificador: La minería es la base de la red Bitcoin, pero no es una adopción de un producto de inversión.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existe alta competencia entre mineros, pero la fuente no detalla competidores específicos · Verificador: La competencia es extrema, dominada por grandes granjas industriales con acceso a energía barata. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.0,
+    "why": "Riesgo de fallos de hardware y aumento de dificultad de red · Verificador: Riesgo de obsolescencia de hardware y dificultad creciente de la red. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta volatilidad del precio de Bitcoin y posible pérdida total del capital invertido · Verificador: Riesgo de pérdida total del capital por volatilidad y costes operativos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.8,
+    "why": "Falta de información sobre proveedores o pools españoles; España tiene costes eléctricos elevados que hacen inviable la minería doméstica competitiva · Verificador: Inviable para el inversor minorista debido a costes eléctricos y falta de infraestructura competitiva.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.2,
+    "why": "Liquidez limitada para vender equipos o rescindir contratos · Verificador: Liquidez muy baja para hardware usado o contratos de dudosa ejecución.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "alta_volatilidad",
+    "severity": "critica",
+    "detail": "El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería."
+   },
+   {
+    "code": "regulacion_incierta",
+    "severity": "alta",
+    "detail": "La normativa española y europea sobre criptominería y consumo energético es incierta."
+   },
+   {
+    "code": "ausencia_entidad",
+    "severity": "critica",
+    "detail": "No hay una plataforma, empresa o contrato legal que respalde la inversión."
+   },
+   {
+    "code": "riesgo_estafa_cloud_mining",
+    "severity": "alta",
+    "detail": "El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes."
+   },
+   {
+    "code": "inviabilidad_electrica",
+    "severity": "alta",
+    "detail": "El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado."
+   },
+   {
+    "code": "ausencia_entidad",
+    "severity": "critica",
+    "detail": "No existe una entidad, plataforma o producto de inversión real que respalde la oportunidad."
+   },
+   {
+    "code": "inviabilidad_economica",
+    "severity": "alta",
+    "detail": "El coste de la electricidad en España hace que la minería doméstica sea deficitaria."
+   },
+   {
+    "code": "riesgo_estafa",
+    "severity": "alta",
+    "detail": "El sector del cloud mining es un vector común de esquemas Ponzi y fraude."
+   },
+   {
+    "code": "falta_regulacion",
+    "severity": "media",
+    "detail": "La actividad no está supervisada por la CNMV ni protegida por el fondo de garantía de inversiones."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una actividad económica general (minería de Bitcoin) y no una oportunidad de inversión específica, producto financiero o plataforma. No existe un vehículo de inversión, entidad regulada ni oferta comercial verificable para los 2.000 € mencionados. La minería doméstica en España es inviable económicamente debido a los costes eléctricos y la dificultad de red, y el 'cloud mining' es un sector de altísimo riesgo con frecuentes estafas."
+   }
+  ],
+  "distrust": [
+   "Falta de datos oficiales y ausencia de información concreta sobre proveedores o pools en España"
+  ],
+  "whyInteresting": [
+   "Presión sobre mineros tras la caída del precio de Bitcoin puede generar oportunidades de adquisición a bajo coste"
+  ],
+  "howToParticipate": [
+   "1. Analizar el precio actual de equipos de minería usados o contratos de cloud mining disponibles",
+   "2. Evaluar el coste eléctrico y la regulación local",
+   "3. Comprar hardware o contratar un servicio de cloud mining",
+   "4. Unirse a un pool de minería para compartir recompensas",
+   "5. Monitorizar la rentabilidad y vender o ajustar la posición según evolucione el precio de Bitcoin"
+  ],
+  "lossCauses": [
+   "Caída prolongada del precio de Bitcoin",
+   "Aumento de la dificultad de minería",
+   "Fallos de hardware o aumento de costes energéticos",
+   "Cambios regulatorios que limiten la actividad"
+  ],
+  "earlySignals": [
+   "Reducción del hash rate global",
+   "Incremento de la dificultad de red",
+   "Anuncios de cierres de pools de minería"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "La minería de Bitcoin no es una actividad financiera regulada. Sin embargo, cualquier oferta de 'cloud mining' que prometa rentabilidades suele ser considerada una actividad de alto riesgo y, si se comercializa como inversión, podría requerir registro como ESI, el cual no existe en este caso.",
+   "sources": [
+    "https://www.cnmv.es/portal/Inversor/Criptoactivos.aspx"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha describe una actividad económica general (minería de Bitcoin) y no una oportunidad de inversión específica, producto financiero o plataforma. No existe un vehículo de inversión, entidad regulada ni oferta comercial verificable para los 2.000 € mencionados. La minería doméstica en España es inviable económicamente debido a los costes eléctricos y la dificultad de red, y el 'cloud mining' es un sector de altísimo riesgo con frecuentes estafas.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "n-bitcoin-mining-exposure",
+  "isNew": false,
+  "score": 5,
+  "rawScore": 25.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 6 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "alta_volatilidad",
+    "severity": "critica",
+    "detail": "El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería."
+   },
+   {
+    "code": "regulacion_incierta",
+    "severity": "alta",
+    "detail": "La normativa española y europea sobre criptominería y consumo energético es incierta."
+   },
+   {
+    "code": "ausencia_entidad",
+    "severity": "critica",
+    "detail": "No hay una plataforma, empresa o contrato legal que respalde la inversión."
+   },
+   {
+    "code": "riesgo_estafa_cloud_mining",
+    "severity": "alta",
+    "detail": "El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes."
+   },
+   {
+    "code": "inviabilidad_electrica",
+    "severity": "alta",
+    "detail": "El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado."
+   },
+   {
+    "code": "inviabilidad_economica",
+    "severity": "alta",
+    "detail": "El coste de la electricidad en España hace que la minería doméstica sea deficitaria."
+   },
+   {
+    "code": "riesgo_estafa",
+    "severity": "alta",
+    "detail": "El sector del cloud mining es un vector común de esquemas Ponzi y fraude."
+   },
+   {
+    "code": "falta_regulacion",
+    "severity": "media",
+    "detail": "La actividad no está supervisada por la CNMV ni protegida por el fondo de garantía de inversiones."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "La minería de Bitcoin es una actividad establecida, sin novedades tecnológicas recientes en la fuente · Verificador: La minería de Bitcoin es una actividad madura y bien conocida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "La caída del precio de Bitcoin puede crear oportunidades de compra de equipos a precios reducidos; la rentabilidad depende estrictamente del coste eléctrico y la eficiencia del hardware, factores muy adversos en España para pequeños inversores · Verificador: El potencial es altamente especulativo y depende de variables externas incontrolables para un inversor minorista.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "El mercado de minería está influenciado por el precio de Bitcoin y la dificultad de red, mencionado en la fuente · Verificador: El mercado de minería es global y altamente competitivo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "No se menciona ningún equipo o equipo fundador en la fuente · Verificador: No existe un equipo o entidad detrás de esta 'oportunidad'.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No hay datos sobre financiación externa o capital disponible · Verificador: No hay estructura de financiación ni capital de riesgo involucrado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.2,
+    "points": 2.2,
+    "why": "Se menciona presión sobre mineros, pero sin datos de comunidad activa · Verificador: Existe una comunidad global de mineros, pero no hay una comunidad de inversión asociada a esta propuesta.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 5.0,
+    "points": 4.5,
+    "why": "La minería de Bitcoin tiene adopción global, pero sin indicadores de crecimiento reciente · Verificador: La minería es la base de la red Bitcoin, pero no es una adopción de un producto de inversión.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existe alta competencia entre mineros, pero la fuente no detalla competidores específicos · Verificador: La competencia es extrema, dominada por grandes granjas industriales con acceso a energía barata. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo de fallos de hardware y aumento de dificultad de red · Verificador: Riesgo de obsolescencia de hardware y dificultad creciente de la red. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad del precio de Bitcoin y posible pérdida total del capital invertido · Verificador: Riesgo de pérdida total del capital por volatilidad y costes operativos. · Discrepancia entre modelos (2 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.8,
+    "points": 0.6,
+    "why": "Falta de información sobre proveedores o pools españoles; España tiene costes eléctricos elevados que hacen inviable la minería doméstica competitiva · Verificador: Inviable para el inversor minorista debido a costes eléctricos y falta de infraestructura competitiva.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.2,
+    "points": 1.8,
+    "why": "Liquidez limitada para vender equipos o rescindir contratos · Verificador: Liquidez muy baja para hardware usado o contratos de dudosa ejecución.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Bitcoin Mining Exposure\nCATEGORÍA: cripto · minería\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 5/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Presión sobre mineros tras la caída del precio de Bitcoin puede generar oportunidades de adquisición a bajo coste\nMOTIVOS PARA DESCONFIAR: El precio de Bitcoin es extremadamente volátil, lo que afecta directamente la rentabilidad de la minería.; La normativa española y europea sobre criptominería y consumo energético es incierta.; No hay una plataforma, empresa o contrato legal que respalde la inversión.; El sector del cloud mining está históricamente plagado de esquemas Ponzi y servicios no transparentes.; El coste de la electricidad en España es prohibitivo para la minería de Bitcoin a pequeña escala.; El verificador tiene dudas: La ficha describe una actividad genérica de minería sin un vehículo de inversión específico, plataforma o entidad regulada. No existe una 'oportunidad' concreta para invertir 2.000 € en un producto financiero o servicio verificado.; El coste de la electricidad en España hace que la minería doméstica sea deficitaria.; El sector del cloud mining es un vector común de esquemas Ponzi y fraude.; La actividad no está supervisada por la CNMV ni protegida por el fondo de garantía de inversiones.; Falta de datos oficiales y ausencia de información concreta sobre proveedores o pools en España\nCÓMO PARTICIPAR: 1. Analizar el precio actual de equipos de minería usados o contratos de cloud mining disponibles; 2. Evaluar el coste eléctrico y la regulación local; 3. Comprar hardware o contratar un servicio de cloud mining; 4. Unirse a un pool de minería para compartir recompensas; 5. Monitorizar la rentabilidad y vender o ajustar la posición según evolucione el precio de Bitcoin\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída prolongada del precio de Bitcoin; Aumento de la dificultad de minería; Fallos de hardware o aumento de costes energéticos; Cambios regulatorios que limiten la actividad\nFUENTES: https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786",
+  "firstSeenAt": "2026-11-21T12:06:40Z",
+  "lastSeenAt": "2026-11-22T11:42:05Z",
+  "runId": "run-20261122-1142",
+  "aliases": [
+   "news-www-theblock-co-newsletters-the-daily-2026-11-20-jpmorgan-bitcoin-price-drop-miners-s"
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "CASHCAT / WETH 0.3% Liquidity Pool",
@@ -29260,6 +30487,498 @@
   "runId": "run-20261121-1930",
   "aliases": [
    "news-www-producthunt-com-products-doddle-3"
+  ]
+ },
+ {
+  "name": "Rocket Raccoon (ROCKET)",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "activa",
+  "description": "Token meme en Solana inspirado en el personaje Rocket Raccoon. No tiene utilidad ni afiliación oficial con Marvel. Su valor depende exclusivamente de la especulación y el hype.",
+  "officialUrl": "https://rocketraccoon.xyz/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Se puede adquirir a través de DEXs en Solana usando una wallet compatible (e.g., Phantom).",
+  "costs": {
+   "minEntry": 10,
+   "extra": 0,
+   "extraNotes": "Comisiones de red y swap",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Puede venderse en DEXs, pero la baja profundidad de mercado y posible caída del precio dificultan la salida completa.",
+  "horizon": "corto a medio plazo (meses)",
+  "deadline": null,
+  "potential": "Alto riesgo, posible ganancia rápida si hype se materializa",
+  "difficulty": "media",
+  "timeNeeded": "Requiere crear wallet, adquirir SOL para gas y hacer swap; unas horas.",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Token recién lanzado con temática de Rocket Raccoon · Verificador: Token recién lanzado en la red Solana.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Sin utilidad, depende de hype no confirmado · Verificador: Dependencia total de rumores no confirmados y especulación.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Liquidity 80k USD y volumen 212k USD en 24h · Verificador: Liquidez volátil y volumen concentrado en especulación a corto plazo.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se menciona equipo en la web · Verificador: Anonimato total; no hay equipo identificable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay información de financiación · Verificador: No existe financiación institucional ni capital riesgo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "Cuentas en X y Telegram con actividad · Verificador: Comunidad basada en hype de redes sociales, altamente inestable.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No hay adopción real, solo especulación · Verificador: Cero adopción real o utilidad práctica.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.5,
+    "why": "Muchos memecoins similares en Solana · Verificador: Saturación extrema de memecoins en Solana sin diferenciación.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 1.5,
+    "why": "Contrato nuevo, sin auditoría, en cadena Solana · Verificador: Contrato sin auditoría externa; riesgo de vulnerabilidades.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "Puede perderse todo, sin valor intrínseco · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 7.0,
+    "why": "Accesible globalmente vía DEX · Verificador: Accesible mediante DEXs globales, aunque sin supervisión local.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "Liquidez media, pero posible slippage · Verificador: La liquidez puede desaparecer rápidamente (rug pull). · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "Token sin utilidad ni valor intrínseco"
+   },
+   {
+    "code": "unverified_affiliation",
+    "severity": "media",
+    "detail": "Afirmaciones de vínculo con Marvel no verificadas"
+   },
+   {
+    "code": "new_token",
+    "severity": "alta",
+    "detail": "Lanzado hace 24h, alto riesgo de rug pull"
+   },
+   {
+    "code": "speculative_hype",
+    "severity": "media",
+    "detail": "Depende de rumores de película no confirmados"
+   },
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token carece de valor intrínseco y utilidad."
+   },
+   {
+    "code": "unverified_affiliation",
+    "severity": "alta",
+    "detail": "Uso no autorizado de propiedad intelectual de Marvel/Disney."
+   },
+   {
+    "code": "rug_pull_risk",
+    "severity": "critica",
+    "detail": "Alta probabilidad de manipulación de liquidez por parte de los creadores."
+   },
+   {
+    "code": "unregulated",
+    "severity": "alta",
+    "detail": "Activo no regulado bajo MiCA ni supervisado por la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es una memecoin sin utilidad, sin equipo conocido y sin respaldo oficial. Aunque técnicamente es accesible desde España, presenta riesgos extremos de seguridad (rug pull) y carece de cualquier regulación financiera. La ficha original sobreestima la fiabilidad de un activo especulativo de alto riesgo."
+   }
+  ],
+  "distrust": [
+   "no affiliation with Marvel",
+   "unverified rumors",
+   "no utility"
+  ],
+  "whyInteresting": [
+   "Posible explosión de precio si la película Avengers: Doomsday genera hype y la comunidad meme impulsa el token"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (e.g., Phantom).",
+   "Comprar SOL en un exchange y transferirlo a la wallet.",
+   "Conectar la wallet a un DEX como Raydium o Serum.",
+   "Buscar el par ROCKET/USDC y realizar una compra.",
+   "Mantener el token y monitorizar noticias sobre la película y la comunidad."
+  ],
+  "actionable": true,
+  "profitPath": "Comprar ROCKET a bajo precio y vender cuando el precio suba tras un aumento de interés mediático.",
+  "lossCauses": [
+   "Rug pull del contrato",
+   "Pérdida total de valor por falta de demanda",
+   "Regulaciones que prohíban memecoins",
+   "Problemas de red en Solana"
+  ],
+  "earlySignals": [
+   "Alto volumen 24h comparado con liquidez",
+   "Creciente actividad en X y Telegram",
+   "Menciones en medios sobre la supuesta película"
+  ],
+  "signals": {
+   "volume24hUsd": 211965.65
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "No es un instrumento financiero regulado. La CNMV advierte constantemente sobre los riesgos de los criptoactivos sin utilidad. No figura en registros de la ESMA.",
+   "sources": [
+    "https://www.cnmv.es/portal/inversor/Criptoactivos.aspx"
+   ]
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "6C9r2gzu8Pr54hTevHo3x5gSj9JqtpApj7obJnrtpump",
+   "symbol": "ROCKET",
+   "name": "Rocket Raccoon",
+   "priceUsd": 0.0008461,
+   "liquidityUsd": 80595.85,
+   "volume24hUsd": 211965.65,
+   "fdvUsd": 818822,
+   "mcapUsd": 818822,
+   "ageHours": 24.0,
+   "buys24h": 610,
+   "sells24h": 380,
+   "pairUrl": "https://dexscreener.com/solana/9nlfujwrhgqyxkw2jukka1gjvtibxaty2ad4qrysckke"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/6C9r2gzu8Pr54hTevHo3x5gSj9JqtpApj7obJnrtpump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://rocketraccoon.xyz/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/9nlfujwrhgqyxkw2jukka1gjvtibxaty2ad4qrysckke"
+   },
+   {
+    "title": "CNMV - Advertencias sobre criptoactivos",
+    "url": "https://www.cnmv.es/portal/inversor/Criptoactivos.aspx"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es una memecoin sin utilidad, sin equipo conocido y sin respaldo oficial. Aunque técnicamente es accesible desde España, presenta riesgos extremos de seguridad (rug pull) y carece de cualquier regulación financiera. La ficha original sobreestima la fiabilidad de un activo especulativo de alto riesgo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "tok-solana-6c9r2gzu8pr54htevho3x5gsj9jqtpapj7objnrtpump",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 23.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "Token sin utilidad ni valor intrínseco"
+   },
+   {
+    "code": "unverified_affiliation",
+    "severity": "media",
+    "detail": "Afirmaciones de vínculo con Marvel no verificadas"
+   },
+   {
+    "code": "new_token",
+    "severity": "alta",
+    "detail": "Lanzado hace 24h, alto riesgo de rug pull"
+   },
+   {
+    "code": "speculative_hype",
+    "severity": "media",
+    "detail": "Depende de rumores de película no confirmados"
+   },
+   {
+    "code": "rug_pull_risk",
+    "severity": "critica",
+    "detail": "Alta probabilidad de manipulación de liquidez por parte de los creadores."
+   },
+   {
+    "code": "unregulated",
+    "severity": "alta",
+    "detail": "Activo no regulado bajo MiCA ni supervisado por la CNMV."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es una memecoin sin utilidad, sin equipo conocido y sin respaldo oficial. Aunque técnicamente es accesible desde España, presenta riesgos extremos de seguridad (rug pull) y carece de cualquier regulación financiera. La ficha original sobreestima la fiabilidad de un activo especulativo de alto riesgo."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No es un instrumento financiero regulado. La CNMV advierte constantemente sobre los riesgos de los criptoactivos sin utilidad. No figura en registros de la ESMA."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Token recién lanzado con temática de Rocket Raccoon · Verificador: Token recién lanzado en la red Solana.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Sin utilidad, depende de hype no confirmado · Verificador: Dependencia total de rumores no confirmados y especulación.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Liquidity 80k USD y volumen 212k USD en 24h · Verificador: Liquidez volátil y volumen concentrado en especulación a corto plazo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona equipo en la web · Verificador: Anonimato total; no hay equipo identificable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información de financiación · Verificador: No existe financiación institucional ni capital riesgo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.5,
+    "points": 2.5,
+    "why": "Cuentas en X y Telegram con actividad · Verificador: Comunidad basada en hype de redes sociales, altamente inestable.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay adopción real, solo especulación · Verificador: Cero adopción real o utilidad práctica.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.5,
+    "points": 0.8,
+    "why": "Muchos memecoins similares en Solana · Verificador: Saturación extrema de memecoins en Solana sin diferenciación.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Contrato nuevo, sin auditoría, en cadena Solana · Verificador: Contrato sin auditoría externa; riesgo de vulnerabilidades.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "Puede perderse todo, sin valor intrínseco · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Accesible globalmente vía DEX · Verificador: Accesible mediante DEXs globales, aunque sin supervisión local.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Liquidez media, pero posible slippage · Verificador: La liquidez puede desaparecer rápidamente (rug pull). · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3528.01,
+     "exitImpactPct": 10.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1637644
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 7200.09,
+     "exitImpactPct": 27.3,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 4094110
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 9000.36,
+     "exitImpactPct": 54.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 8188220
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 396.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 16376440
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 990.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 40941100
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 1980.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 81882200
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5940.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 245646600
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-22T11:42:05Z",
+    "priceUsd": 0.0008461,
+    "liquidityUsd": 80595.85,
+    "volume24hUsd": 211965.65,
+    "fdvUsd": 818822.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Rocket Raccoon (ROCKET)\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://rocketraccoon.xyz/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 10,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Alto riesgo, posible ganancia rápida si hype se materializa\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: crítico\nPLAZO: corto a medio plazo (meses)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible explosión de precio si la película Avengers: Doomsday genera hype y la comunidad meme impulsa el token\nMOTIVOS PARA DESCONFIAR: Token sin utilidad ni valor intrínseco; Afirmaciones de vínculo con Marvel no verificadas; Lanzado hace 24h, alto riesgo de rug pull; Depende de rumores de película no confirmados; Alta probabilidad de manipulación de liquidez por parte de los creadores.; Activo no regulado bajo MiCA ni supervisado por la CNMV.; El verificador tiene dudas: El activo es una memecoin sin utilidad, sin equipo conocido y sin respaldo oficial. Aunque técnicamente es accesible desde España, presenta riesgos extremos de seguridad (rug pull) y carece de cualquier regulación financiera. La ficha original sobreestima la fiabilidad de un activo especulativo de alto riesgo.; No es un instrumento financiero regulado. La CNMV advierte constantemente sobre los riesgos de los criptoactivos sin utilidad. No figura en registros de la ESMA.; no affiliation with Marvel; unverified rumors; no utility\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (e.g., Phantom).; Comprar SOL en un exchange y transferirlo a la wallet.; Conectar la wallet a un DEX como Raydium o Serum.; Buscar el par ROCKET/USDC y realizar una compra.; Mantener el token y monitorizar noticias sobre la película y la comunidad.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rug pull del contrato; Pérdida total de valor por falta de demanda; Regulaciones que prohíban memecoins; Problemas de red en Solana\nFUENTES: https://rocketraccoon.xyz/ | https://dexscreener.com/solana/9nlfujwrhgqyxkw2jukka1gjvtibxaty2ad4qrysckke | https://www.cnmv.es/portal/inversor/Criptoactivos.aspx",
+  "firstSeenAt": "2026-11-22T11:42:05Z",
+  "lastSeenAt": "2026-11-22T11:42:05Z",
+  "runId": "run-20261122-1142",
+  "aliases": [
+   "tok-solana-6c9r2gzu8pr54htevho3x5gsj9jqtpapj7objnrtpump"
   ]
  },
  {
