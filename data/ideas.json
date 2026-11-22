@@ -1,0 +1,814 @@
+{
+ "generatedAt": "2026-11-22T08:48:05Z",
+ "items": [
+  {
+   "name": "Connect Money",
+   "type": "saas",
+   "originCountry": "Egypt",
+   "summary": "Plataforma de finanzas integradas que permite a empresas emitir tarjetas prepago de marca e integrar servicios financieros sin construir su propia infraestructura bancaria. Sirve a negocios de retail, fintech, agritech, educación, energía y pymes.",
+   "traction": [
+    "Emitió más de 300,000 tarjetas en seis sectores",
+    "Financiación acumulada de $11.5 M",
+    "Ronda pre‑Series A de $3.5 M (incluye venta secundaria)",
+    "Ronda seed de $8 M en junio 2024"
+   ],
+   "whyItWorked": [
+    "Alta demanda de soluciones de finanzas integradas (embedded finance)",
+    "Licencia del Banco Central de Egipto que permite operar legalmente",
+    "Alianzas con bancos, procesadores de pagos y redes de tarjetas",
+    "Apoyo de inversores locales con experiencia en fintech"
+   ],
+   "markets": {
+    "es": {
+     "fit": 6,
+     "why": "Existe un mercado creciente de fintechs y de tarjetas prepago, pero la regulación española (PSD2, Banco de España) y la necesidad de integrar esquemas de pago locales añaden complejidad.",
+     "adapt": "Traducción al español, cumplimiento de PSD2 y normativa de la CNMV, integración con SEPA y tarjetas locales, adaptación de canales de venta a bancos y plataformas españolas.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 10,
+     "why": "Ya opera con licencia del Banco Central de Egipto y tiene tracción comprobada en el mercado local.",
+     "adapt": "Ninguna adaptación significativa; continuar con el modelo actual.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 7,
+     "why": "Alto interés en soluciones de finanzas integradas y en tarjetas prepago, pero requiere licencias específicas (SAMA) y alianzas con bancos de la región.",
+     "adapt": "Localizar al árabe, obtener licencia de la Saudi Central Bank (SAMA) y de autoridades locales, integrar con redes de pago GCC (Mada, STC Pay), adaptar precios y canales de distribución.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     3000
+    ],
+    "weeks": 10,
+    "team": "Product Manager, Backend Developer, Frontend Developer, Compliance/Legal advisor, UI/UX Designer",
+    "stack": "Node.js / Express, React, PostgreSQL, AWS (or similar), APIs de bancos locales",
+    "noCode": false
+   },
+   "monetization": "Cobro de suscripción mensual por acceso a la plataforma + tarifa por tarjeta emitida y porcentaje sobre transacciones procesadas.",
+   "risks": [
+    "Obtención de licencias regulatorias en nuevos mercados",
+    "Dependencia de socios bancarios y procesadores de pagos",
+    "Competencia de bancos tradicionales y fintechs locales",
+    "Adopción lenta por parte de empresas que prefieren soluciones internas"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con pymes y plataformas en España y GCC para validar necesidad de tarjetas prepago integradas.",
+    "Establecer contacto con asesores regulatorios locales para mapear requisitos de licencia.",
+    "Desarrollar un prototipo de API de emisión de tarjetas usando un sandbox bancario.",
+    "Lanzar un piloto con 1‑2 clientes piloto en cada mercado objetivo.",
+    "Recopilar métricas de uso y ajustar modelo de precios."
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "connectmoney",
+   "links": [
+    {
+     "title": "Wamda: Egypt&#039;s Connect Money raises $3.5 million pre-Series A",
+     "url": "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series"
+    },
+    {
+     "title": "Buscar «Connect Money» en Google",
+     "url": "https://www.google.com/search?q=Connect+Money"
+    }
+   ],
+   "source": "Wamda",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Fintech de pagos y crédito con $3.5M de pre‑Series A, solución de bajo coste que puede lanzarse en Egipto o el Golfo",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 100
+  },
+  {
+   "name": "Wilco",
+   "type": "saas",
+   "originCountry": "Spain",
+   "summary": "Wilco es una plataforma de agentes de IA por voz y mensajería que automatiza el seguimiento de pacientes para clínicas de salud. Sirve a grupos de clínicas (dentales, estéticas, veterinarias, etc.) para convertir consultas iniciales en citas y planes de tratamiento.",
+   "traction": [
+    "Ronda de financiación de €2.5 millones liderada por Samaipata, con participación de ABAC Nest Ventures",
+    "Clientes entre los mayores grupos de clínicas en España: Vitaldent, Clínica Baviera y WM Clinics",
+    "Cubre seis especialidades clínicas (dentista, estética médica, veterinaria, fisioterapia, oftalmología y dermatología)",
+    "Los ingenieros de Wilco suelen lanzar la solución en 3‑8 semanas tras la integración"
+   ],
+   "whyItWorked": [
+    "Resuelve una alta tasa de abandono (60‑80 % de contactos que no llegan a consulta)",
+    "Combina IA con humanos en el bucle para garantizar calidad y confianza",
+    "Implementación rápida y personalizada gracias a ingenieros dedicados a cada clínica",
+    "Modelo B2B enfocado en grupos de clínicas con alto volumen de pacientes"
+   ],
+   "markets": {
+    "es": {
+     "fit": 9,
+     "why": "El problema de pérdida de pacientes es idéntico en España y ya cuenta con clientes locales; la regulación de datos de salud (GDPR) ya está cubierta.",
+     "adapt": "Mantener idioma español, integrar con los softwares de gestión clínica españoles y usar WhatsApp Business.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Alta necesidad de digitalizar la atención médica, pero requerirá adaptación a regulaciones locales de datos (EG‑PDPL) y a plataformas de mensajería populares (WhatsApp sigue siendo dominante).",
+     "adapt": "Traducción al árabe, cumplimiento de la ley egipcia de protección de datos, posible integración con sistemas de gestión hospitalaria locales.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 5,
+     "why": "Mercado con alto gasto en salud y adopción de tecnología, pero regulaciones estrictas de datos (por ejemplo, Saudi Data & AI Authority) y preferencia por canales como SMS o apps locales pueden requerir ajustes.",
+     "adapt": "Localizar al árabe e inglés, cumplir con normas de privacidad de cada emirato, considerar integración con plataformas de mensajería aprobadas (WhatsApp Business, Telegram).",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     3000
+    ],
+    "weeks": 10,
+    "team": "Product manager, AI/ML engineer, backend developer, frontend developer, UX designer, healthcare domain consultant",
+    "stack": "Python (FastAPI), Twilio/WhatsApp Business API, PostgreSQL, React, Docker",
+    "noCode": false
+   },
+   "monetization": "Modelo de suscripción SaaS por clínica (tarifa mensual basada en número de pacientes o interacciones) + cargos por integración personalizada.",
+   "risks": [
+    "Cumplimiento de normativas de protección de datos de salud (GDPR, EG‑PDPL, normas GCC)",
+    "Integración con sistemas de gestión clínica heterogéneos",
+    "Adopción por parte del personal médico y resistencia al cambio",
+    "Competencia de proveedores locales de soluciones de IA para salud"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con al menos 5 clínicas españolas para validar la pérdida de pacientes y el interés en una solución IA.",
+    "Desarrollar un prototipo de bot de WhatsApp que gestione una única especialidad (p.ej., odontología).",
+    "Ejecutar un piloto de 4‑6 semanas con una clínica pequeña y medir la tasa de conversión de consultas a citas.",
+    "Recopilar feedback, ajustar flujos y preparar una propuesta de precios basada en resultados del piloto."
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "wilco",
+   "links": [
+    {
+     "title": "EU-Startups: Madrid-based Wilco secures €2.5 million to scale its AI patient follow-up platform across ",
+     "url": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/"
+    },
+    {
+     "title": "Buscar «Wilco» en Google",
+     "url": "https://www.google.com/search?q=Wilco"
+    }
+   ],
+   "source": "EU-Startups",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Servicio de seguimiento de pacientes vía IA, €2.5M de ronda, se puede adaptar a sistemas de salud españoles o egipcios",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 96
+  },
+  {
+   "name": "Yodawy",
+   "type": "marketplace",
+   "originCountry": "Egypt",
+   "summary": "Yodawy es una plataforma digital de salud que gestiona beneficios farmacéuticos, ofrece e‑prescripción y una infraestructura tecnológica de fulfilment en todo Egipto. Sirve a aseguradoras, proveedores médicos, farmacias y pacientes, facilitando la entrega de medicamentos recetados.",
+   "traction": [
+    "Fundada en 2018",
+    "Recibió US$16 M en la primera fase de su ronda Serie B en febrero de 2023",
+    "Banked US$10 M adicionales, elevando el capital total recaudado a US$34,5 M",
+    "Desarrolló una infraestructura nacional de fulfilment y un gateway de e‑prescripción"
+   ],
+   "whyItWorked": [
+    "Identificó una oportunidad no explotada en la cadena de prescripción y entrega de medicamentos",
+    "Combinó tecnología, farmacéuticos expertos y logística de última generación",
+    "Construyó alianzas con aseguradoras y proveedores de salud",
+    "Digitalizó el proceso de prescripción reduciendo el uso de papel"
+   ],
+   "markets": {
+    "es": {
+     "fit": 6,
+     "why": "Existe demanda de e‑prescripción y entrega de medicamentos, pero la normativa española y la integración con el Sistema Nacional de Salud requieren adaptaciones.",
+     "adapt": "Traducción al español, cumplimiento GDPR y normativa de medicamentos de la UE, integración con seguros y farmacias locales, métodos de pago españoles.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 9,
+     "why": "Modelo ya validado en el mercado egipcio con infraestructura y regulaciones locales conocidas.",
+     "adapt": "Mantener idioma árabe, reforzar alianzas con aseguradoras locales, escalar la red logística.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 7,
+     "why": "Alto nivel de adopción digital y necesidad de soluciones de salud, aunque cada país del GCC tiene regulaciones específicas y retos logísticos.",
+     "adapt": "Soporte multilingüe (árabe e inglés), cumplimiento con normas de salud de cada emirato, adaptación de métodos de pago y logística transfronteriza.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     2500
+    ],
+    "weeks": 12,
+    "team": "Product Manager, Full‑stack Developer, UI/UX Designer, QA Tester",
+    "stack": "React (frontend) + Node.js (backend) + AWS (hosting) o alternativa no‑code como Bubble",
+    "noCode": true
+   },
+   "monetization": "Comisión por transacción de cada receta entregada y suscripción mensual para aseguradoras y farmacias que usan la plataforma.",
+   "risks": [
+    "Cumplimiento regulatorio de datos de salud y prescripciones",
+    "Complejidad logística y gestión de entregas a tiempo",
+    "Competencia de farmacias online ya establecidas",
+    "Dependencia de alianzas con aseguradoras y proveedores"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con farmacias y aseguradoras locales para validar el interés",
+    "Desarrollar un prototipo de e‑prescripción usando una herramienta no‑code",
+    "Lanzar un piloto en una ciudad egipcia con un número limitado de farmacias",
+    "Recopilar métricas de uso y satisfacción para ajustar el modelo antes de escalar"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "yodawy",
+   "links": [
+    {
+     "title": "Disrupt Africa: Egyptian e-health startup Yodawy banks $10m funding",
+     "url": "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/"
+    },
+    {
+     "title": "Buscar «Yodawy» en Google",
+     "url": "https://www.google.com/search?q=Yodawy"
+    }
+   ],
+   "source": "Disrupt Africa",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Plataforma de gestión de beneficios farmacéuticos en e‑health, $10M de financiación, modelo SaaS aplicable al mercado MENA",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 96
+  },
+  {
+   "name": "Everful",
+   "type": "marketplace",
+   "originCountry": "USA",
+   "summary": "Plataforma B2B que conecta a minoristas y marcas con fábricas chinas, gestionando todo el proceso de pedido a entrega. Sirve a pequeños retailers que no disponen de equipos de sourcing internos.",
+   "traction": [
+    "Serie A de $48.5M liderada por Vertex Ventures Southeast Asia & India y January Capital",
+    "Objetivo de $100M de ingresos anualizados al final del año, dos años y medio después del lanzamiento",
+    "Más de 5 millones de artículos enviados al mes",
+    "Presencia en más de 60 países",
+    "Más de 30,000 fábricas asociadas",
+    "Catálogo online con más de 20 millones de productos"
+   ],
+   "whyItWorked": [
+    "Ofrece un proceso end‑to‑end (sourcing, consolidación, control de calidad y logística) que elimina la necesidad de intermediarios",
+    "Utiliza IA para automatizar tareas de sourcing, seguimiento de tendencias y gestión logística",
+    "Cubre una brecha entre la rapidez de tendencias de consumo y los modelos tradicionales de compra al por mayor",
+    "Verifica fábricas y garantiza calidad, generando confianza en retailers sin equipos propios"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "El mercado español de pequeñas boutiques y marcas emergentes necesita sourcing ágil y con bajo MOQ; la propuesta de valor de Everful encaja bien.",
+     "adapt": "Localizar la plataforma (español), integrar métodos de pago locales (SEPA, Bizum) y cumplir con la normativa de protección de datos (GDPR) y etiquetado de productos.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Los retailers egipcios buscan reducir costos de inventario y aprovechar precios chinos, pero la infraestructura logística y aduanera es más compleja.",
+     "adapt": "Traducción al árabe, integración con pasarelas de pago locales (Fawry, Paymob) y adaptación a regulaciones de importación egipcias.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 8,
+     "why": "Los mercados del Golfo tienen alto poder adquisitivo y una creciente escena de ecommerce B2B; la necesidad de sourcing rápido y fiable es alta.",
+     "adapt": "Soporte en árabe e inglés, integración con pagos regionales (PayTabs, mada), cumplimiento con normas de importación del GCC y certificaciones de calidad.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     2500
+    ],
+    "weeks": 8,
+    "team": "desarrollador full‑stack, diseñador UI/UX, especialista en integración de pagos, gestor de proyecto",
+    "stack": "Webflow o Softr para front‑end, Airtable como base de datos, Zapier para automatizaciones, API de Alibaba/Shopify para catálogos",
+    "noCode": true
+   },
+   "monetization": "no consta, verificar",
+   "risks": [
+    "Tensiones comerciales EE.UU.–China y posibles aranceles que encarecen los productos",
+    "Dependencia de la calidad y fiabilidad de fábricas chinas",
+    "Competencia de gigantes como Alibaba y plataformas como Faire",
+    "Regulaciones de importación y aduanas en cada mercado objetivo"
+   ],
+   "firstSteps": [
+    "Validar la demanda local mediante entrevistas a 20‑30 retailers en cada mercado (España, Egipto, GCC)",
+    "Construir un landing page multilingüe (español, árabe, inglés) con propuesta de valor y formulario de interés",
+    "Realizar pruebas piloto con 3‑5 fábricas chinas y 5‑10 retailers usando la integración mínima de catálogo y pedidos",
+    "Recopilar feedback y ajustar procesos de calidad y logística antes de escalar"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "everful",
+   "links": [
+    {
+     "title": "TechCrunch Startups: Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
+     "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/"
+    },
+    {
+     "title": "Buscar «Everful» en Google",
+     "url": "https://www.google.com/search?q=Everful"
+    }
+   ],
+   "source": "TechCrunch Startups",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Marketplace de sourcing directo de fábricas con $48.5M de financiación, modelo replicable para conectar minoristas locales con fabricantes en España o Egipto",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 92
+  },
+  {
+   "name": "Archer",
+   "type": "saas",
+   "originCountry": "UK",
+   "summary": "Plataforma de IA que actúa como agente de reclutamiento tanto para empleadores como para candidatos. Ofrece sourcing, calificación y presentación directa en el ATS del empleador.",
+   "traction": [
+    "Ha recaudado €9.1 million en la última ronda liderada por Volition Capital",
+    "Total recaudado desde 2014: más de €41.06 million",
+    "Cuenta con una base de 1 million usuarios y un pool de 1.5 million de buscadores de empleo",
+    "Accede a 25 million de perfiles en EE. UU., Reino Unido e India",
+    "Más de 120 clientes empresariales (ej. HSBC, Vanguard, Sainsbury’s)",
+    "ARR creció cinco veces en los últimos 12 meses"
+   ],
+   "whyItWorked": [
+    "Modelo dual que sirve a ambos lados del mercado (empleadores y candidatos)",
+    "Uso de IA para filtrar y calificar candidatos, reduciendo el ruido de aplicaciones masivas",
+    "Integración directa con ATS de los clientes, facilitando el flujo de trabajo",
+    "Validación de identidad y eliminación de perfiles falsos",
+    "Alta tasa de entrevistas (5× el benchmark) para candidatos presentados"
+   ],
+   "markets": {
+    "es": {
+     "fit": 8,
+     "why": "Alta digitalización del reclutamiento y escasez de talento tech en España; empresas buscan automatizar procesos de selección.",
+     "adapt": "Localizar la plataforma (español), adaptar normativa GDPR y legislación laboral española, integrar con ATS locales.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Mercado de empleo en rápido crecimiento y adopción de tecnología, pero menor madurez de IA y desafíos de conectividad.",
+     "adapt": "Traducción al árabe, cumplimiento de leyes de protección de datos egipcias, integración con sistemas de pago locales y adaptación a procesos de contratación más tradicionales.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 7,
+     "why": "Gran inversión en transformación digital y alta demanda de talento internacional; los Emiratos y Arabia Saudita están impulsando IA en recursos humanos.",
+     "adapt": "Soporte en árabe e inglés, alineación con regulaciones de datos del GCC, adaptación a normas de visado y contratación de expatriados.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     2500
+    ],
+    "weeks": 8,
+    "team": "AI/ML engineer, backend developer, frontend developer, product manager, recruiting domain expert",
+    "stack": "Python (FastAPI), PostgreSQL, React, AWS (or similar cloud), integración con APIs de ATS",
+    "noCode": false
+   },
+   "monetization": "Modelo SaaS por suscripción a empresas, con tarifas basadas en número de usuarios activos o volumen de candidatos presentados; posible venta de módulos de talent intelligence.",
+   "risks": [
+    "Sesgo algorítmico y cumplimiento de normativa de IA",
+    "Protección de datos y privacidad (GDPR, leyes locales)",
+    "Alta competencia en el espacio de reclutamiento AI",
+    "Resistencia cultural a la automatización del proceso de selección"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con reclutadores y candidatos en España para validar necesidad de un agente dual",
+    "Construir un prototipo de flujo de sourcing y calificación usando herramientas low‑code (ej. Bubble) para probar el concepto con < 1 000 usuarios",
+    "Buscar un cliente piloto (p.ej. una fintech o retailer) dispuesto a probar la integración con su ATS",
+    "Definir roadmap de localización (idioma, cumplimiento legal) para cada mercado objetivo"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "archer",
+   "links": [
+    {
+     "title": "EU-Startups: Archer raises €9.1 million to deploy AI recruiting agents for employers and job seekers",
+     "url": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
+    },
+    {
+     "title": "Buscar «Archer» en Google",
+     "url": "https://www.google.com/search?q=Archer"
+    }
+   ],
+   "source": "EU-Startups",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Plataforma de reclutamiento con agentes de IA, €9.1M de inversión, fácil de escalar como SaaS para empresas en el Golfo",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 92
+  },
+  {
+   "name": "Payhawk",
+   "type": "saas",
+   "originCountry": "UK",
+   "summary": "Payhawk es una plataforma SaaS de gestión financiera empresarial que ayuda a las compañías a controlar gastos y procesos de procurement mediante agentes de IA. Está dirigida a equipos de finanzas y compras de medianas y grandes empresas.",
+   "traction": [
+    "$280 M recaudados en ronda Serie C",
+    "Valoración post‑ronda de $2 B",
+    "Financiación total superior a $500 M",
+    "Operación en 33 países",
+    "70 % del fondo de $100 M levantado en 2022 aún disponible"
+   ],
+   "whyItWorked": [
+    "Uso de IA para automatizar y simplificar procesos de gasto",
+    "Gran necesidad de control y visibilidad en la gestión de gastos corporativos",
+    "Apoyo de inversores de renombre (Goldman Sachs, Greenoaks, Lightspeed, QED)",
+    "Modelo SaaS escalable a nivel internacional"
+   ],
+   "markets": {
+    "es": {
+     "fit": 8,
+     "why": "Alta adopción de soluciones fintech y fuerte presión regulatoria para controlar gastos corporativos.",
+     "adapt": "Localizar la UI al español, integrar métodos de pago locales (SEPA), cumplir con la normativa LOPD y eIDAS.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Creciente sector de startups y multinacionales, pero menor madurez fintech y desafíos regulatorios.",
+     "adapt": "Traducción al árabe, integración con sistemas bancarios egipcios, cumplimiento con la ley de protección de datos egipcia.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 7,
+     "why": "Mercado con alta inversión corporativa y fuerte enfoque en eficiencia operativa, aunque con requisitos de cumplimiento Sharia.",
+     "adapt": "Soporte en árabe e inglés, adaptación a normas de compliance locales (AML/KYC), integración con bancos del Golfo.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     2500
+    ],
+    "weeks": 12,
+    "team": "product manager, backend developer, frontend developer, UI/UX designer",
+    "stack": "Node.js, React, PostgreSQL, AWS (o alternativa low‑code como Bubble si se prioriza rapidez)",
+    "noCode": false
+   },
+   "monetization": "Modelo de suscripción mensual o anual por usuario/empresa, con planes escalables según número de empleados y funcionalidades avanzadas.",
+   "risks": [
+    "Cumplimiento normativo en cada jurisdicción (GDPR, LOPD, leyes locales)",
+    "Resistencia al cambio de los equipos de finanzas tradicionales",
+    "Competencia establecida en gestión de gastos (ej. Spendesk, Pleo)",
+    "Dependencia de integraciones con bancos y proveedores de tarjetas"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con CFOs y responsables de compras en España, Egipto y GCC para validar necesidades específicas.",
+    "Mapear requisitos regulatorios y de integración bancaria en cada mercado.",
+    "Construir una landing page multilingüe y captar leads mediante campañas dirigidas.",
+    "Desarrollar un prototipo de flujo de captura de gastos y aprobación en 4‑6 semanas."
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "payhawk",
+   "links": [
+    {
+     "title": "TechCrunch Startups: Spend management platform Payhawk announces $280M raise, 2B valuation",
+     "url": "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/"
+    },
+    {
+     "title": "Buscar «Payhawk» en Google",
+     "url": "https://www.google.com/search?q=Payhawk"
+    }
+   ],
+   "source": "TechCrunch Startups",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Plataforma de gestión de gastos empresariales con $280M de financiación, modelo SaaS que puede adaptarse a pymes en España",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 92
+  },
+  {
+   "name": "Cashi",
+   "type": "app",
+   "originCountry": "Sudán",
+   "summary": "Plataforma de pagos digitales que permite a usuarios y comercios depositar, retirar, pagar facturas y transferir fondos a través de una red de comercios locales. Sirve a personas y negocios en zonas con acceso limitado a internet y servicios bancarios tradicionales.",
+   "traction": [
+    "Inversión de €600,000 (≈ $660,000) de Proparco",
+    "2.2 millones de usuarios registrados en la billetera digital MyCashi",
+    "Fundada en 2022"
+   ],
+   "whyItWorked": [
+    "Ofrece canales de pago USSD, SMS y tarjetas offline que funcionan sin conexión a internet",
+    "Responde a la necesidad de servicios financieros en áreas afectadas por conflicto y falta de infraestructura bancaria",
+    "Apoyo de una institución de desarrollo (Proparco) que valida el modelo en mercados frágiles"
+   ],
+   "markets": {
+    "es": {
+     "fit": 4,
+     "why": "España tiene alta penetración de smartphones y banca digital; la necesidad de soluciones offline es limitada, pero puede servir a comunidades rurales o de inmigrantes sin acceso bancario.",
+     "adapt": "Localizar idioma, integrar con regulaciones SEPA y PSD2, adaptar métodos de pago a tarjetas y cuentas bancarias españolas.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 7,
+     "why": "Egipto combina alta adopción móvil con áreas rurales donde el acceso a internet es irregular; la demanda de pagos vía USSD y SMS es relevante.",
+     "adapt": "Traducción al árabe, cumplimiento con la normativa del Banco Central de Egipto, integración con sistemas de pago locales (Fawry, Masary).",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 5,
+     "why": "En los países del Golfo la infraestructura bancaria es avanzada, pero existe población de trabajadores migrantes y zonas rurales donde soluciones offline pueden aportar valor.",
+     "adapt": "Soporte multilingüe (árabe e inglés), alineación con regulaciones de la Autoridad de Servicios Financieros de cada emirato, adaptación a métodos de pago locales (Apple Pay, mada).",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     2000,
+     5000
+    ],
+    "weeks": 12,
+    "team": "desarrollador backend, desarrollador frontend/mobile, especialista en USSD, diseñador UI/UX, gestor de producto",
+    "stack": "Node.js + Express, React Native (o Flutter), API de USSD (ej. Twilio), base de datos PostgreSQL, integración con pasarelas de pago locales",
+    "noCode": false
+   },
+   "monetization": "no consta, verificar",
+   "risks": [
+    "Regulación financiera y requisitos de licencias en cada país",
+    "Seguridad y prevención de fraude en canales offline",
+    "Adopción limitada si la infraestructura de internet mejora rápidamente",
+    "Dependencia de alianzas con comercios locales"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con usuarios potenciales en zonas rurales de Egipto y GCC para validar necesidad de pagos offline",
+    "Mapear requisitos regulatorios de pagos móviles y USSD en cada mercado objetivo",
+    "Desarrollar un prototipo de USSD que permita consultas de saldo y transferencias simples",
+    "Buscar socios locales (comercios, operadores de telecom) para pruebas piloto",
+    "Obtener feedback y ajustar modelo de negocio antes de escalar"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "cashi",
+   "links": [
+    {
+     "title": "Wamda: Sudan&#039;s Cashi secures $660,000 investment from France&#039;s Proparco",
+     "url": "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco"
+    },
+    {
+     "title": "Buscar «Cashi» en Google",
+     "url": "https://www.google.com/search?q=Cashi"
+    }
+   ],
+   "source": "Wamda",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Fintech sudanés con $660k de inversión, ofrece servicios financieros básicos que pueden replicarse en mercados emergentes",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 88
+  },
+  {
+   "name": "Unsiloed AI",
+   "type": "software",
+   "originCountry": "USA",
+   "summary": "Plataforma que extrae y estructura datos de documentos empresariales complejos para que los agentes de IA los consuman. Sirve a bancos, despachos legales, hospitales y startups de IA de voz.",
+   "traction": [
+    "$7.5M seed funding led by Felicis Ventures",
+    "Headcount actual de 7 personas",
+    "Precisión del 99.78% en 84,000 puntos de datos de 542 documentos financieros",
+    "Puntuación 88.0 en el benchmark olmOCR‑Bench (vs 66.0 Reducto, 39.9 Unstructured)"
+   ],
+   "whyItWorked": [
+    "Resuelve la extracción de información de tablas, gráficos y diseños complejos donde los LLM tradicionales fallan",
+    "Modelo de visión dual‑stream que procesa texto e imagen por separado",
+    "Chunking basado en heat‑maps que enfoca cómputo en áreas críticas",
+    "Decodificador especializado que incorpora terminología sectorial"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "Alta demanda de automatización documental en banca, legal y sanidad; buen alineamiento con normativa de protección de datos si se garantiza el procesamiento local.",
+     "adapt": "Traducción al español, integración con ERP locales, cumplimiento de RGPD y LOPDGDD, posible hosting en zona EU.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 5,
+     "why": "Mercado en crecimiento para digitalización de documentos, pero retos de infraestructura y regulaciones de datos locales.",
+     "adapt": "Localizar al árabe, adaptar precios a moneda local, considerar hosting en centros de datos egipcios para cumplir con leyes de soberanía de datos.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 6,
+     "why": "Sector financiero y legal muy avanzado y con alta disposición a pagar por precisión; sin embargo, requisitos estrictos de seguridad y posible necesidad de certificaciones locales.",
+     "adapt": "Soporte en árabe e inglés, cumplimiento con normas de privacidad de los Emiratos y Arabia Saudita, integración con plataformas de nube locales (Azure Gulf, AWS Middle East).",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     1500,
+     2000
+    ],
+    "weeks": 10,
+    "team": "Ingeniero de IA (vision), backend developer, frontend developer, product manager",
+    "stack": "Python, PyTorch/TensorFlow, FastAPI, React, AWS/GCP para inferencia",
+    "noCode": false
+   },
+   "monetization": "Cobro por página procesada (ej. 0.01 € por página) con planes de suscripción para volúmenes altos.",
+   "risks": [
+    "Privacidad y cumplimiento de regulaciones de datos (RGPD, Ley Egipcia de Protección de Datos, normas GCC)",
+    "Necesidad de grandes datasets etiquetados para entrenar modelos sectoriales",
+    "Competencia de grandes proveedores (Microsoft Azure Document Intelligence, Amazon Textract)",
+    "Dependencia de infraestructura de cómputo costosa"
+   ],
+   "firstSteps": [
+    "Validar interés con 3‑5 clientes potenciales en banca y legal en cada región mediante entrevistas",
+    "Construir un prototipo que procese PDFs en español/árabe y genere un heat‑map de extracción",
+    "Realizar pruebas piloto con documentos reales y medir precisión vs procesos internos",
+    "Asegurar cumplimiento de normativa de datos locales antes del despliegue"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 1,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "unsiloedai",
+   "links": [
+    {
+     "title": "TechCrunch Startups: Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+     "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/"
+    },
+    {
+     "title": "Buscar «Unsiloed AI» en Google",
+     "url": "https://www.google.com/search?q=Unsiloed+AI"
+    }
+   ],
+   "source": "TechCrunch Startups",
+   "foundAt": "2026-11-22T08:48:05Z",
+   "why": "Startup de procesamiento de documentos para IA con $7.5M de inversión, producto SaaS que puede ser desarrollado por equipos pequeños",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 88
+  }
+ ],
+ "status": {
+  "TechCrunch Startups": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:06+00:00"
+  },
+  "TechCrunch Venture": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:07+00:00"
+  },
+  "Crunchbase News": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:07+00:00"
+  },
+  "EU-Startups": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:08+00:00"
+  },
+  "Tech.eu": {
+   "ok": false,
+   "items": 0,
+   "error": "HTTP 403",
+   "at": "2026-11-22T08:48:08+00:00"
+  },
+  "Sifted": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:08+00:00"
+  },
+  "YourStory": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:08+00:00"
+  },
+  "TechCabal": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:09+00:00"
+  },
+  "Disrupt Africa": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:10+00:00"
+  },
+  "Wamda": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:11+00:00"
+  },
+  "Rest of World": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:11+00:00"
+  },
+  "Product Hunt": {
+   "ok": true,
+   "items": 8,
+   "error": null,
+   "at": "2026-11-22T08:48:11+00:00"
+  },
+  "Hacker News": {
+   "ok": true,
+   "items": 2,
+   "error": null,
+   "at": "2026-11-22T08:48:11+00:00"
+  }
+ },
+ "aiErrors": [],
+ "seenUrls": [
+  "https://yourstory.com/2026/11/weekly-funding-roundup-nov-14-20-vc-funding-bounces-back-after-record-low-last-week",
+  "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco",
+  "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
+  "https://www.eu-startups.com/2026/11/uk-startup-clarity-sensors-receives-e2-2-million-nihr-award-to-make-advanced-medical-imaging-more-accessible/",
+  "https://techcabal.com/2026/11/20/nigeria-1-trillion-stock-market-startups/",
+  "https://techcabal.com/2026/11/21/moniepoint-northern-regional-headquarters/",
+  "https://www.eu-startups.com/2026/11/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-nov-16-nov-20/",
+  "https://sifted.eu/articles/european-angels-anthropic-ipo/",
+  "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "https://techcabal.com/2026/11/20/huang-cross-border-payments-africa/",
+  "https://www.eu-startups.com/2026/11/building-in-the-uk-key-changes-and-deadlines-founders-need-to-know/",
+  "https://news.crunchbase.com/venture/biggest-startup-rounds-science-neurotech-model-ml-galvanize-therapeutics/",
+  "https://www.wamda.com/2026/11/shaffra-establishes-saudi-headquarters-ai-workforce-deployments-grow",
+  "https://yourstory.com/2026/11/gta-6-is-rated-17-what-indian-parents-should-know-before-letting-their-children-play",
+  "https://www.wamda.com/2026/11/egypt-chipverse-secures-pre-seed-funding-double-gpu-capacity",
+  "https://www.eu-startups.com/2026/11/following-e1-billion-funding-round-quantum-systems-commits-over-e10-million-to-expand-drone-support-in-ukraine/",
+  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+  "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+  "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
+  "https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
+  "https://techcabal.com/2026/11/20/gtco-revives-737-brand-with-new-ap/",
+  "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/",
+  "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
+  "https://yourstory.com/2026/11/karnataka-cm-to-lead-delegation-to-japan-to-explore-investments",
+  "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+  "https://yourstory.com/2026/11/urban-company-raises-rs-2500-cr-through-qip",
+  "https://old.disruptafrica.com/2024/01/22/undp-launches-timbuktoo-financing-initiative-for-african-startups/",
+  "https://www.wamda.com/2026/11/ziina-offers-new-feature-split-simplify-shared-payments",
+  "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+  "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
+  "https://techcrunch.com/2026/11/17/stripe-backer-atomico-calls-for-europe-to-own-its-success-stories/",
+  "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/",
+  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+  "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series",
+  "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
+  "https://old.disruptafrica.com/2024/01/23/how-egyptian-prop-tech-startup-partment-enables-hassle-free-2nd-home-ownership/",
+  "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/",
+  "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
+  "https://old.disruptafrica.com/2024/01/20/third-episode-of-new-disrupt-podcast-series-shines-light-on-africas-ed-tech-space/",
+  "https://techcabal.com/2026/11/20/techcabal-daily-kuda-cuts-jobs-again/",
+  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+  "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+  "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
+  "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
+  "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/",
+  "https://sifted.eu/articles/hoplite-raise-stripe-founders/",
+  "https://techcabal.com/2026/11/20/ex-banker-cherotich-rutto-tawi-fresh/",
+  "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+  "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/",
+  "https://techcabal.com/2026/11/21/gulf-capital-digital-nomads/",
+  "https://news.crunchbase.com/ai/anthropic-ant-ipo-revenue-growth-risks-s1-analysis/",
+  "https://yourstory.com/2026/11/what-parents-should-know-about-gta-6-bike-taxis-could-return-to-karnataka",
+  "https://sifted.eu/articles/slush-20u20-2026/",
+  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+  "https://www.wamda.com/2026/11/500-global-sanabil-investments-select-seven-startups-accelerators-12th-cohort",
+  "https://news.crunchbase.com/venture/interesting-startup-deals-ai-solar-healthcare-space-tech/",
+  "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
+  "https://news.crunchbase.com/venture/data-recruiting-job-hunting-hr-ai-startups-mercor/",
+  "https://old.disruptafrica.com/2024/01/22/10-startups-selected-for-africa-tech-summit-nairobi-investment-showcase/",
+  "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
+  "https://www.wamda.com/2026/11/finbursa-names-angelica-tigan-cro-lead-global-expansion",
+  "https://techcabal.com/2026/11/20/afrilabs-2026-benin-innovation/",
+  "https://yourstory.com/2026/11/upi-was-never-free-but-is-its-new-merchant-fee-fair",
+  "https://old.disruptafrica.com/2024/01/20/which-meme-coins-to-buy-in-2024-top-meme-coins-by-market-capitalization-and-new-trending-coins-including-apemax-dogecoin-shiba-inu-pepe-coin-floki-memecoin-by-9gag-and-bonk/",
+  "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+  "https://old.disruptafrica.com/2024/01/20/5-top-trending-altcoins-to-buy-now-can-these-altcoins-explode-after-the-bitcoin-halving-apemax-arbitrum-polkadot-skale-maverick-protocol/",
+  "https://old.disruptafrica.com/2024/01/23/announcing-the-5m-core-africa-innovation-fund-empowering-local-web3-builders/",
+  "https://www.eu-startups.com/2026/11/dutch-startup-gradyent-lands-e20-million-eib-loan-to-expand-digital-twin-technology-across-europes-heating-networks/",
+  "https://news.crunchbase.com/startups/blue-economy-technology-defense-energy-onetti-mind-the-bridge/"
+ ],
+ "newCount": 8,
+ "studied": 70
+}

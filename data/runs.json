@@ -1,5 +1,89 @@
 [
  {
+  "id": "run-20261122-0826",
+  "startedAt": "2026-11-22T08:26:57Z",
+  "kind": "exploracion",
+  "status": "parcial",
+  "candidates": 10,
+  "newCount": 7,
+  "updatedCount": 3,
+  "alertsSent": 0,
+  "notes": "Fuentes con fallos: busqueda_ia",
+  "sources": {
+   "tipo_cambio_BCE": {
+    "ok": true,
+    "items": 1,
+    "error": null,
+    "at": "2026-11-22T08:26:57+00:00"
+   },
+   "dexscreener_tokens": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-22T08:27:01+00:00"
+   },
+   "geckoterminal_trending": {
+    "ok": true,
+    "items": 3,
+    "error": null,
+    "at": "2026-11-22T08:27:01+00:00"
+   },
+   "coingecko_trending": {
+    "ok": true,
+    "items": 3,
+    "error": null,
+    "at": "2026-11-22T08:27:01+00:00"
+   },
+   "Product Hunt": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-22T08:27:01+00:00"
+   },
+   "El Referente": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-22T08:27:02+00:00"
+   },
+   "TechCrunch Startups": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-22T08:27:02+00:00"
+   },
+   "The Block": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-22T08:27:02+00:00"
+   },
+   "busqueda_ia": {
+    "ok": false,
+    "items": 0,
+    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
+    "at": "2026-11-22T08:27:20+00:00"
+   }
+  },
+  "finishedAt": "2026-11-22T08:31:41Z",
+  "ai": {
+   "calls": {
+    "gemini": 11,
+    "groq": 10
+   },
+   "models": {
+    "gemini": "gemini-3.1-flash-lite",
+    "groq": "openai/gpt-oss-120b"
+   },
+   "errors": [
+    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
+    "searcher/gemini: HTTP 429",
+    "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+   ],
+   "googleSearch": false
+  }
+ },
+ {
   "id": "run-20261122-0126",
   "startedAt": "2026-11-22T01:26:32Z",
   "kind": "exploracion",
