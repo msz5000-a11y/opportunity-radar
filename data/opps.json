@@ -28,62 +28,62 @@
   "subscores": {
    "novedad": {
     "v": 6.0,
-    "why": "Evento nuevo para 2026 en la región, pero el formato de foros es habitual. · Verificador: Es una edición específica para 2026 dentro del marco de Focus Pyme.",
+    "why": "Evento nuevo para 2026 en la región, pero el formato de foros es habitual. · Verificador: Es una edición específica para 2026 dentro del marco de Focus Pyme. · Verificador: Es una edición específica para 2026 dentro del marco consolidado de Focus Pyme.",
     "evidence": true
    },
    "potencial": {
     "v": 5.0,
-    "why": "Posibilidad de contactos con inversores y conocimiento de tendencias, sin garantía de inversión posterior. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente.",
+    "why": "Posibilidad de contactos con inversores y conocimiento de tendencias, sin garantía de inversión posterior. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente.",
     "evidence": true
    },
    "mercado": {
     "v": 7.0,
-    "why": "Enfocado al ecosistema empresarial y de inversión de la Comunidad Valenciana, mercado regional bien definido. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana.",
+    "why": "Enfocado al ecosistema empresarial y de inversión de la Comunidad Valenciana, mercado regional bien definido. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana.",
     "evidence": true
    },
    "equipo": {
-    "v": 7.0,
-    "why": "Organiza la Red CEEI Comunitat Valenciana y cuenta con ponentes reconocidos (Rodolfo Carpintier, Jesús Alonso Gallo, etc.). · Verificador: Organizado por Red CEEI, entidad pública con trayectoria probada.",
+    "v": 7.5,
+    "why": "Organiza la Red CEEI Comunitat Valenciana y cuenta con ponentes reconocidos (Rodolfo Carpintier, Jesús Alonso Gallo, etc.). · Verificador: Organizado por Red CEEI, entidad pública con trayectoria probada. · Verificador: Organizado por la Red CEEI, entidad pública con trayectoria probada.",
     "evidence": true
    },
    "financiacion": {
     "v": 5.0,
-    "why": "No se menciona financiación propia del asistente; el objetivo es conectar con fuentes externas. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión.",
+    "why": "No se menciona financiación propia del asistente; el objetivo es conectar con fuentes externas. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión.",
     "evidence": true
    },
    "comunidad": {
     "v": 8.0,
-    "why": "Reúne a inversores, startups, pymes y entidades públicas locales. · Verificador: Conecta actores clave del ecosistema inversor regional.",
+    "why": "Reúne a inversores, startups, pymes y entidades públicas locales. · Verificador: Conecta actores clave del ecosistema inversor regional. · Verificador: Conecta actores clave del ecosistema inversor regional.",
     "evidence": true
    },
    "adopcion": {
     "v": 4.0,
-    "why": "Depende de la capacidad de los asistentes para aplicar lo aprendido; adopción indirecta. · Verificador: La adopción de conocimientos depende del perfil del asistente.",
+    "why": "Depende de la capacidad de los asistentes para aplicar lo aprendido; adopción indirecta. · Verificador: La adopción de conocimientos depende del perfil del asistente. · Verificador: La adopción de conocimientos depende del perfil del asistente.",
     "evidence": true
    },
    "competencia": {
     "v": 6.0,
-    "why": "Existen otros foros similares en España, pero este se centra en la Comunidad Valenciana. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional.",
+    "why": "Existen otros foros similares en España, pero este se centra en la Comunidad Valenciana. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional.",
     "evidence": true
    },
    "riesgo_tecnico": {
-    "v": 9.5,
-    "why": "No hay componente tecnológico propio que implique riesgo técnico. · Verificador: Evento presencial, riesgo técnico nulo.",
+    "v": 9.8,
+    "why": "No hay componente tecnológico propio que implique riesgo técnico. · Verificador: Evento presencial, riesgo técnico nulo. · Verificador: Evento presencial, riesgo técnico nulo.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 9.5,
-    "why": "No implica inversión de capital; riesgo financiero prácticamente nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo.",
+    "v": 9.8,
+    "why": "No implica inversión de capital; riesgo financiero prácticamente nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9.5,
-    "why": "Evento abierto en territorio español, sin barreras de entrada para residentes. · Verificador: Evento presencial en Oropesa del Mar, España.",
+    "v": 9.8,
+    "why": "Evento abierto en territorio español, sin barreras de entrada para residentes. · Verificador: Evento presencial en Oropesa del Mar, España. · Verificador: Evento presencial en Oropesa del Mar, España.",
     "evidence": true
    },
    "salida": {
-    "v": 9.5,
-    "why": "No hay salida financiera; la participación concluye al terminar el evento. · Verificador: No aplica, es un evento de networking.",
+    "v": 9.8,
+    "why": "No hay salida financiera; la participación concluye al terminar el evento. · Verificador: No aplica, es un evento de networking. · Verificador: No aplica, es un evento de networking.",
     "evidence": true
    }
   },
@@ -97,6 +97,11 @@
     "code": "falta_info_coste",
     "severity": "baja",
     "detail": "Aunque se asume gratuito por ser iniciativa de CEEI/Focus Pyme, no se especifica explícitamente en la fuente."
+   },
+   {
+    "code": "falta_info_coste",
+    "severity": "baja",
+    "detail": "Aunque se asume gratuito por ser iniciativa de CEEI, no se especifica explícitamente en la fuente."
    }
   ],
   "distrust": [],
@@ -139,15 +144,15 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "El evento FIT 2026 está organizado por la Red CEEI Comunitat Valenciana, una entidad pública/institucional reconocida. La información es coherente con las actividades de fomento empresarial de la Generalitat Valenciana. No es una inversión financiera, por lo que no requiere registro en la CNMV.",
+   "reason": "El evento FIT 2026 está debidamente documentado como una iniciativa institucional de la Red CEEI Comunitat Valenciana enmarcada en el programa Focus Pyme. La información sobre ponentes, ubicación y temática es coherente con las fuentes consultadas.",
    "model": "gemini:gemini-3.1-flash-lite",
    "agreementPct": 100
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "web-focuspyme-emprenemjunts-es",
-  "isNew": true,
-  "score": 71,
-  "rawScore": 71.4,
+  "isNew": false,
+  "score": 73,
+  "rawScore": 72.9,
   "tier": "investigar",
   "tierLabel": "Interesante, necesita investigación",
   "humanReview": false,
@@ -169,7 +174,7 @@
     "weight": 8,
     "value": 6.0,
     "points": 4.8,
-    "why": "Evento nuevo para 2026 en la región, pero el formato de foros es habitual. · Verificador: Es una edición específica para 2026 dentro del marco de Focus Pyme.",
+    "why": "Evento nuevo para 2026 en la región, pero el formato de foros es habitual. · Verificador: Es una edición específica para 2026 dentro del marco de Focus Pyme. · Verificador: Es una edición específica para 2026 dentro del marco consolidado de Focus Pyme.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -179,7 +184,7 @@
     "weight": 12,
     "value": 5.0,
     "points": 6.0,
-    "why": "Posibilidad de contactos con inversores y conocimiento de tendencias, sin garantía de inversión posterior. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente.",
+    "why": "Posibilidad de contactos con inversores y conocimiento de tendencias, sin garantía de inversión posterior. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente. · Verificador: Networking de alto nivel, pero el retorno depende de la gestión del asistente.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -189,7 +194,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Enfocado al ecosistema empresarial y de inversión de la Comunidad Valenciana, mercado regional bien definido. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana.",
+    "why": "Enfocado al ecosistema empresarial y de inversión de la Comunidad Valenciana, mercado regional bien definido. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana. · Verificador: Enfocado en el ecosistema empresarial de la Comunidad Valenciana.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -197,9 +202,9 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 7.0,
-    "points": 7.0,
-    "why": "Organiza la Red CEEI Comunitat Valenciana y cuenta con ponentes reconocidos (Rodolfo Carpintier, Jesús Alonso Gallo, etc.). · Verificador: Organizado por Red CEEI, entidad pública con trayectoria probada.",
+    "value": 7.5,
+    "points": 7.5,
+    "why": "Organiza la Red CEEI Comunitat Valenciana y cuenta con ponentes reconocidos (Rodolfo Carpintier, Jesús Alonso Gallo, etc.). · Verificador: Organizado por Red CEEI, entidad pública con trayectoria probada. · Verificador: Organizado por la Red CEEI, entidad pública con trayectoria probada.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -209,7 +214,7 @@
     "weight": 7,
     "value": 5.0,
     "points": 3.5,
-    "why": "No se menciona financiación propia del asistente; el objetivo es conectar con fuentes externas. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión.",
+    "why": "No se menciona financiación propia del asistente; el objetivo es conectar con fuentes externas. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión. · Verificador: El evento es un punto de encuentro, no una plataforma de inversión.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -219,7 +224,7 @@
     "weight": 7,
     "value": 8.0,
     "points": 5.6,
-    "why": "Reúne a inversores, startups, pymes y entidades públicas locales. · Verificador: Conecta actores clave del ecosistema inversor regional.",
+    "why": "Reúne a inversores, startups, pymes y entidades públicas locales. · Verificador: Conecta actores clave del ecosistema inversor regional. · Verificador: Conecta actores clave del ecosistema inversor regional.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -229,7 +234,7 @@
     "weight": 9,
     "value": 4.0,
     "points": 3.6,
-    "why": "Depende de la capacidad de los asistentes para aplicar lo aprendido; adopción indirecta. · Verificador: La adopción de conocimientos depende del perfil del asistente.",
+    "why": "Depende de la capacidad de los asistentes para aplicar lo aprendido; adopción indirecta. · Verificador: La adopción de conocimientos depende del perfil del asistente. · Verificador: La adopción de conocimientos depende del perfil del asistente.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -239,7 +244,7 @@
     "weight": 5,
     "value": 6.0,
     "points": 3.0,
-    "why": "Existen otros foros similares en España, pero este se centra en la Comunidad Valenciana. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional.",
+    "why": "Existen otros foros similares en España, pero este se centra en la Comunidad Valenciana. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional. · Verificador: Existen otros foros, pero este tiene respaldo institucional regional.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -247,9 +252,9 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "No hay componente tecnológico propio que implique riesgo técnico. · Verificador: Evento presencial, riesgo técnico nulo.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "No hay componente tecnológico propio que implique riesgo técnico. · Verificador: Evento presencial, riesgo técnico nulo. · Verificador: Evento presencial, riesgo técnico nulo.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -257,19 +262,19 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 9.5,
-    "points": 9.5,
-    "why": "No implica inversión de capital; riesgo financiero prácticamente nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo.",
+    "value": 9.8,
+    "points": 9.8,
+    "why": "No implica inversión de capital; riesgo financiero prácticamente nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo. · Verificador: No hay inversión de capital, riesgo financiero nulo.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "Evento abierto en territorio español, sin barreras de entrada para residentes. · Verificador: Evento presencial en Oropesa del Mar, España.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "Evento abierto en territorio español, sin barreras de entrada para residentes. · Verificador: Evento presencial en Oropesa del Mar, España. · Verificador: Evento presencial en Oropesa del Mar, España.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -277,9 +282,9 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "No hay salida financiera; la participación concluye al terminar el evento. · Verificador: No aplica, es un evento de networking.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "No hay salida financiera; la participación concluye al terminar el evento. · Verificador: No aplica, es un evento de networking. · Verificador: No aplica, es un evento de networking.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -352,26 +357,28 @@
    "level": "ninguna",
    "reason": ""
   },
-  "hoursLeft": 87.7,
-  "alertText": "NOMBRE: FIT 2026 – Foro de Inversión y Territorio\nCATEGORÍA: negocio · evento_inversor\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://focuspyme.emprenemjunts.es/\nENLACE DE PARTICIPACIÓN: https://focuspyme.emprenemjunts.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto valor de networking y aprendizaje, pero sin retorno financiero directo.\nPUNTUACIÓN: 71/100 · Interesante, necesita investigación\nRIESGO: bajo\nPLAZO: corto plazo (evento de un día)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso a una red de inversores y decision‑makers de la zona; Actualización sobre tendencias de IA, venture capital y contratación pública\nMOTIVOS PARA DESCONFIAR: No se indica claramente si la inscripción es gratuita o de pago.\nCÓMO PARTICIPAR: Visitar la página oficial del evento (enlace anterior); Buscar información de registro o contacto (p.ej. email de la Red CEEI); Completar la inscripción si es requerida; Asistir el 25‑nov‑2026 en Bellver Blue Tech Zone\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/el-nuevo-foro-fit-2026-reunira-a-referentes-de-la-inversion-y-la-empresa-para-impulsar-el-crecimiento-en-la-comunitat-valenciana/ | https://focuspyme.emprenemjunts.es/",
+  "hoursLeft": 63.1,
+  "alertText": "NOMBRE: FIT 2026 – Foro de Inversión y Territorio\nCATEGORÍA: negocio · evento_inversor\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://focuspyme.emprenemjunts.es/\nENLACE DE PARTICIPACIÓN: https://focuspyme.emprenemjunts.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto valor de networking y aprendizaje, pero sin retorno financiero directo.\nPUNTUACIÓN: 73/100 · Interesante, necesita investigación\nRIESGO: bajo\nPLAZO: corto plazo (evento de un día)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso a una red de inversores y decision‑makers de la zona; Actualización sobre tendencias de IA, venture capital y contratación pública\nMOTIVOS PARA DESCONFIAR: No se indica claramente si la inscripción es gratuita o de pago.\nCÓMO PARTICIPAR: Visitar la página oficial del evento (enlace anterior); Buscar información de registro o contacto (p.ej. email de la Red CEEI); Completar la inscripción si es requerida; Asistir el 25‑nov‑2026 en Bellver Blue Tech Zone\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/el-nuevo-foro-fit-2026-reunira-a-referentes-de-la-inversion-y-la-empresa-para-impulsar-el-crecimiento-en-la-comunitat-valenciana/ | https://focuspyme.emprenemjunts.es/",
   "firstSeenAt": "2026-11-21T08:17:30Z",
-  "lastSeenAt": "2026-11-21T08:17:30Z",
-  "runId": "run-20261121-0817",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
   "aliases": [
    "news-elreferente-es-actualidad-el-nuevo-foro-fit-2026-reunira-a-referentes-de-la-inversion"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "BF Sport Incubadora 2027",
   "category": "startups",
   "subcategory": "incubadora_deportiva",
   "kind": "pasiva",
-  "description": "Programa de incubación de dos meses impulsado por la Business Factory Sport (BF Sport) en Galicia. Ofrece mentoría, tutorización y acceso a la red del ecosistema deportivo sin coste de participación. Hasta 12 proyectos serán seleccionados para un itinerario híbrido de enero a marzo de 2027.",
+  "description": "Programa de incubación de dos meses impulsado por Business Factory Sport en Galicia. Ofrece mentoría, tutorización y acceso a la red del ecosistema deportivo sin coste de participación. Hasta 12 proyectos serán seleccionados para un itinerario híbrido de enero a marzo de 2027.",
   "officialUrl": "https://bfsport.gal/",
   "participateUrl": "https://bfsport.gal/",
   "country": "España",
   "spainAvailability": "si",
-  "spainNotes": "Dirigido a emprendedores y empresas de Galicia, España, con ideas en fase de definición en deporte y bienestar.",
+  "spainNotes": "Dirigido a emprendedores y empresas de Galicia con ideas en fase de definición en deporte y bienestar.",
   "costs": {
    "minEntry": 0,
    "extra": 0,
@@ -389,63 +396,63 @@
   "timeNeeded": "Preparar la candidatura y dedicar 8 semanas al programa de incubación.",
   "subscores": {
    "novedad": {
-    "v": 6.5,
-    "why": "Programa nuevo con convocatoria abierta hasta 22 dic 2026 · Verificador: Convocatoria anual recurrente, edición 2027 confirmada.",
+    "v": 6.8,
+    "why": "Programa nuevo con convocatoria abierta hasta 22 dic 2026 · Verificador: Convocatoria anual recurrente, esta edición específica cierra el 22 de diciembre de 2026.",
     "evidence": true
    },
    "potencial": {
     "v": 6.0,
-    "why": "Apoyo a proyectos en fase temprana del sector deporte/bienestar, mercado en crecimiento · Verificador: Enfoque en validación de MVP, útil para etapas tempranas.",
+    "why": "Apoyo a proyectos en fase temprana del sector deporte/bienestar, mercado en crecimiento · Verificador: El sector deportivo y de bienestar tiene tracción, aunque el programa es de incubación temprana.",
     "evidence": true
    },
    "mercado": {
     "v": 7.0,
-    "why": "Sector deportivo y de bienestar con demanda creciente en España · Verificador: Sector deporte y bienestar con apoyo institucional en Galicia.",
+    "why": "Sector deportivo y de bienestar con demanda creciente en España · Verificador: El mercado de 'SportTech' y bienestar está en expansión en España.",
     "evidence": true
    },
    "equipo": {
-    "v": 4.5,
-    "why": "No se describen los mentores ni el equipo gestor en la información disponible · Verificador: Respaldado por IGAPE y Clúster Galego, aunque los mentores específicos varían por edición.",
+    "v": 4.8,
+    "why": "No se describen los mentores ni el equipo gestor en la información disponible · Verificador: El programa es gestionado por el Clúster Galego da Industria do Deporte e o Bienestar y el IGAPE, pero los mentores específicos no se listan.",
     "evidence": false
    },
    "financiacion": {
-    "v": 4.5,
-    "why": "Solo se ofrece acompañamiento, sin financiación directa garantizada · Verificador: Es un programa de incubación (aceleración), no un fondo de inversión.",
+    "v": 4.2,
+    "why": "Solo se ofrece acompañamiento, sin financiación directa garantizada · Verificador: Es un programa de apoyo estratégico y mentoría, no una ronda de inversión directa.",
     "evidence": true
    },
    "comunidad": {
-    "v": 6.5,
-    "why": "Conexión con el ecosistema local y eventos de networking · Verificador: Acceso directo al ecosistema deportivo gallego.",
+    "v": 6.8,
+    "why": "Conexión con el ecosistema local y eventos de networking · Verificador: Acceso directo al ecosistema del Clúster Galego da Industria do Deporte.",
     "evidence": true
    },
    "adopcion": {
     "v": 4.0,
-    "why": "Los proyectos están en fase de definición; adopción de mercado aún no probada · Verificador: Depende totalmente de la ejecución del emprendedor tras el programa.",
+    "why": "Los proyectos están en fase de definición; adopción de mercado aún no probada · Verificador: Al ser proyectos en fase de definición, la adopción es nula hasta la creación del MVP.",
     "evidence": true
    },
    "competencia": {
     "v": 5.0,
-    "why": "Existen otras incubadoras y aceleradoras deportivas en España · Verificador: Existen otras aceleradoras verticales, pero esta es específica para el sector en Galicia.",
+    "why": "Existen otras incubadoras y aceleradoras deportivas en España · Verificador: Existen múltiples aceleradoras verticales en España, lo que aumenta la competencia por talento.",
     "evidence": true
    },
    "riesgo_tecnico": {
     "v": 8.0,
-    "why": "Apoyo técnico y mentoría reducen riesgos de desarrollo · Verificador: El soporte técnico y mentoría mitigan riesgos de desarrollo.",
+    "why": "Apoyo técnico y mentoría reducen riesgos de desarrollo · Verificador: El acompañamiento técnico reduce el riesgo de ejecución del MVP.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 9.5,
-    "why": "Participación gratuita elimina riesgo financiero directo · Verificador: Programa gratuito, sin coste de entrada ni inversión requerida.",
+    "v": 9.8,
+    "why": "Participación gratuita elimina riesgo financiero directo · Verificador: La participación es gratuita y no requiere capital propio.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9.5,
-    "why": "Programa localizado en Galicia, abierto a emprendedores españoles · Verificador: Programa público español, plenamente disponible.",
+    "v": 9.8,
+    "why": "Programa localizado en Galicia, abierto a emprendedores españoles · Verificador: Programa público español, totalmente disponible en Galicia.",
     "evidence": true
    },
    "salida": {
     "v": 5.0,
-    "why": "No hay garantía de salida financiera; depende de la capacidad de captar inversión posterior · Verificador: El éxito depende de la captación de inversión externa post-programa.",
+    "why": "No hay garantía de salida financiera; depende de la capacidad de captar inversión posterior · Verificador: La salida depende exclusivamente del éxito del proyecto tras la incubación.",
     "evidence": true
    }
   },
@@ -463,12 +470,12 @@
    {
     "code": "plazas_limitadas",
     "severity": "media",
-    "detail": "Máximo de 12 proyectos seleccionados."
+    "detail": "Solo se seleccionan 12 proyectos, lo que implica una alta tasa de rechazo."
    },
    {
-    "code": "sin_financiacion_directa",
+    "code": "alcance_geografico",
     "severity": "baja",
-    "detail": "El programa ofrece mentoría y soporte, no capital semilla directo."
+    "detail": "Aunque es en España, está enfocado principalmente en emprendedores o empresas de Galicia."
    }
   ],
   "distrust": [
@@ -480,27 +487,28 @@
    "Ventana temporal corta que permite una rápida iteración."
   ],
   "howToParticipate": [
-   "Acceder al portal oficial de BF Sport (enlace proporcionado en la convocatoria).",
-   "Completar el formulario de candidatura antes del 22‑12‑2026.",
-   "Adjuntar una descripción clara del proyecto, objetivo y estado actual.",
-   "Esperar la decisión del Consejo Ejecutivo de BF Sport.",
-   "Si se es seleccionado, participar en el itinerario de 8 semanas (25 ene‑25 mar 2027)."
+   "Acceder al portal oficial de BF Sport",
+   "Completar el formulario de candidatura antes del 22‑12‑2026",
+   "Adjuntar una descripción clara del proyecto, objetivo y estado actual",
+   "Esperar la decisión del Consejo Ejecutivo de BF Sport",
+   "Si se es seleccionado, participar en el itinerario de 8 semanas (25 ene‑25 mar 2027)"
   ],
   "lossCauses": [
    "Tiempo invertido en la preparación de la candidatura sin ser seleccionado",
-   "Posible falta de financiación posterior al programa."
+   "Posible falta de financiación posterior al programa"
   ],
   "earlySignals": [
    "Número de aplicaciones recibidas (no divulgado)",
-   "Selección de los 12 proyectos finalistas."
+   "Selección de los 12 proyectos finalistas"
   ],
   "signals": {},
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Al ser un programa de incubación pública sin captación de fondos de terceros ni servicios financieros, no requiere registro en CNMV ni MiCA.",
+   "notes": "Es un programa de incubación pública (IGAPE/Xunta de Galicia). No es un servicio financiero ni de inversión, por lo que no requiere supervisión de la CNMV ni registro MiCA.",
    "sources": [
-    "https://www.igape.gal/"
+    "https://www.igape.gal/",
+    "https://bfsport.gal/"
    ]
   },
   "sources": [
@@ -509,7 +517,7 @@
     "url": "https://elreferente.es/ecosistema/bf-sport-abre-una-nueva-convocatoria-de-incubacion-hasta-el-22-de-diciembre/"
    },
    {
-    "title": "Business Factory Sport - Web Oficial",
+    "title": "Web oficial Business Factory Sport",
     "url": "https://bfsport.gal/"
    }
   ],
@@ -521,15 +529,15 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "El programa BF Sport es una iniciativa pública real impulsada por la Xunta de Galicia (IGAPE) y el Clúster Galego da Industria do Deporte e o Bienestar. La convocatoria para la edición 2027 es coherente con el histórico de este programa regional.",
+   "reason": "La convocatoria de la Business Factory Sport (BF Sport) es una iniciativa pública real impulsada por la Xunta de Galicia a través del IGAPE. La información coincide con los datos oficiales del ecosistema emprendedor gallego y la fuente proporcionada.",
    "model": "gemini:gemini-3.1-flash-lite",
    "agreementPct": 100
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "web-bfsport-gal",
-  "isNew": true,
-  "score": 62,
-  "rawScore": 62.3,
+  "isNew": false,
+  "score": 63,
+  "rawScore": 63.1,
   "tier": "investigar",
   "tierLabel": "Interesante, necesita investigación",
   "humanReview": false,
@@ -546,6 +554,11 @@
     "code": "sin_financiacion_directa",
     "severity": "baja",
     "detail": "El programa no incluye inversión de capital; el éxito depende de la capacidad del equipo para buscar fondos externos."
+   },
+   {
+    "code": "alcance_geografico",
+    "severity": "baja",
+    "detail": "Aunque es en España, está enfocado principalmente en emprendedores o empresas de Galicia."
    }
   ],
   "evidenced": 11,
@@ -554,9 +567,9 @@
     "key": "novedad",
     "label": "Novedad",
     "weight": 8,
-    "value": 6.5,
-    "points": 5.2,
-    "why": "Programa nuevo con convocatoria abierta hasta 22 dic 2026 · Verificador: Convocatoria anual recurrente, edición 2027 confirmada.",
+    "value": 6.8,
+    "points": 5.4,
+    "why": "Programa nuevo con convocatoria abierta hasta 22 dic 2026 · Verificador: Convocatoria anual recurrente, esta edición específica cierra el 22 de diciembre de 2026.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -566,7 +579,7 @@
     "weight": 12,
     "value": 6.0,
     "points": 7.2,
-    "why": "Apoyo a proyectos en fase temprana del sector deporte/bienestar, mercado en crecimiento · Verificador: Enfoque en validación de MVP, útil para etapas tempranas.",
+    "why": "Apoyo a proyectos en fase temprana del sector deporte/bienestar, mercado en crecimiento · Verificador: El sector deportivo y de bienestar tiene tracción, aunque el programa es de incubación temprana.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -576,7 +589,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Sector deportivo y de bienestar con demanda creciente en España · Verificador: Sector deporte y bienestar con apoyo institucional en Galicia.",
+    "why": "Sector deportivo y de bienestar con demanda creciente en España · Verificador: El mercado de 'SportTech' y bienestar está en expansión en España.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -586,7 +599,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "No se describen los mentores ni el equipo gestor en la información disponible · Verificador: Respaldado por IGAPE y Clúster Galego, aunque los mentores específicos varían por edición.",
+    "why": "No se describen los mentores ni el equipo gestor en la información disponible · Verificador: El programa es gestionado por el Clúster Galego da Industria do Deporte e o Bienestar y el IGAPE, pero los mentores específicos no se listan.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -594,9 +607,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 4.5,
-    "points": 3.1,
-    "why": "Solo se ofrece acompañamiento, sin financiación directa garantizada · Verificador: Es un programa de incubación (aceleración), no un fondo de inversión.",
+    "value": 4.2,
+    "points": 2.9,
+    "why": "Solo se ofrece acompañamiento, sin financiación directa garantizada · Verificador: Es un programa de apoyo estratégico y mentoría, no una ronda de inversión directa.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -604,9 +617,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 6.5,
-    "points": 4.5,
-    "why": "Conexión con el ecosistema local y eventos de networking · Verificador: Acceso directo al ecosistema deportivo gallego.",
+    "value": 6.8,
+    "points": 4.8,
+    "why": "Conexión con el ecosistema local y eventos de networking · Verificador: Acceso directo al ecosistema del Clúster Galego da Industria do Deporte.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -616,7 +629,7 @@
     "weight": 9,
     "value": 4.0,
     "points": 3.6,
-    "why": "Los proyectos están en fase de definición; adopción de mercado aún no probada · Verificador: Depende totalmente de la ejecución del emprendedor tras el programa.",
+    "why": "Los proyectos están en fase de definición; adopción de mercado aún no probada · Verificador: Al ser proyectos en fase de definición, la adopción es nula hasta la creación del MVP.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -626,7 +639,7 @@
     "weight": 5,
     "value": 5.0,
     "points": 2.5,
-    "why": "Existen otras incubadoras y aceleradoras deportivas en España · Verificador: Existen otras aceleradoras verticales, pero esta es específica para el sector en Galicia.",
+    "why": "Existen otras incubadoras y aceleradoras deportivas en España · Verificador: Existen múltiples aceleradoras verticales en España, lo que aumenta la competencia por talento.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -636,7 +649,7 @@
     "weight": 8,
     "value": 8.0,
     "points": 6.4,
-    "why": "Apoyo técnico y mentoría reducen riesgos de desarrollo · Verificador: El soporte técnico y mentoría mitigan riesgos de desarrollo.",
+    "why": "Apoyo técnico y mentoría reducen riesgos de desarrollo · Verificador: El acompañamiento técnico reduce el riesgo de ejecución del MVP.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -644,19 +657,19 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 9.5,
-    "points": 9.5,
-    "why": "Participación gratuita elimina riesgo financiero directo · Verificador: Programa gratuito, sin coste de entrada ni inversión requerida.",
+    "value": 9.8,
+    "points": 9.8,
+    "why": "Participación gratuita elimina riesgo financiero directo · Verificador: La participación es gratuita y no requiere capital propio.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "Programa localizado en Galicia, abierto a emprendedores españoles · Verificador: Programa público español, plenamente disponible.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "Programa localizado en Galicia, abierto a emprendedores españoles · Verificador: Programa público español, totalmente disponible en Galicia.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -666,7 +679,7 @@
     "weight": 8,
     "value": 5.0,
     "points": 4.0,
-    "why": "No hay garantía de salida financiera; depende de la capacidad de captar inversión posterior · Verificador: El éxito depende de la captación de inversión externa post-programa.",
+    "why": "No hay garantía de salida financiera; depende de la capacidad de captar inversión posterior · Verificador: La salida depende exclusivamente del éxito del proyecto tras la incubación.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -739,21 +752,23 @@
    "level": "ninguna",
    "reason": ""
   },
-  "hoursLeft": 735.7,
-  "alertText": "NOMBRE: BF Sport Incubadora 2027\nCATEGORÍA: startups · incubadora_deportiva\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://bfsport.gal/\nENLACE DE PARTICIPACIÓN: https://bfsport.gal/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 62/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto plazo (incubación de 8 semanas, enero‑marzo 2027)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso gratuito a una red de expertos del deporte y bienestar; Posibilidad de validar y lanzar un MVP con apoyo especializado; Ventana temporal corta que permite una rápida iteración.\nMOTIVOS PARA DESCONFIAR: Solo se seleccionarán un máximo de 12 proyectos, lo que reduce la probabilidad de ser aceptado.; El programa no incluye inversión de capital; el éxito depende de la capacidad del equipo para buscar fondos externos.; Falta de información detallada sobre los mentores y criterios de selección.\nCÓMO PARTICIPAR: Acceder al portal oficial de BF Sport (enlace proporcionado en la convocatoria).; Completar el formulario de candidatura antes del 22‑12‑2026.; Adjuntar una descripción clara del proyecto, objetivo y estado actual.; Esperar la decisión del Consejo Ejecutivo de BF Sport.; Si se es seleccionado, participar en el itinerario de 8 semanas (25 ene‑25 mar 2027).\nQUÉ PODRÍA HACERME PERDER EL DINERO: Tiempo invertido en la preparación de la candidatura sin ser seleccionado; Posible falta de financiación posterior al programa.\nFUENTES: https://elreferente.es/ecosistema/bf-sport-abre-una-nueva-convocatoria-de-incubacion-hasta-el-22-de-diciembre/ | https://bfsport.gal/",
+  "hoursLeft": 711.1,
+  "alertText": "NOMBRE: BF Sport Incubadora 2027\nCATEGORÍA: startups · incubadora_deportiva\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://bfsport.gal/\nENLACE DE PARTICIPACIÓN: https://bfsport.gal/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 63/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto plazo (incubación de 8 semanas, enero‑marzo 2027)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso gratuito a una red de expertos del deporte y bienestar; Posibilidad de validar y lanzar un MVP con apoyo especializado; Ventana temporal corta que permite una rápida iteración.\nMOTIVOS PARA DESCONFIAR: Solo se seleccionarán un máximo de 12 proyectos, lo que reduce la probabilidad de ser aceptado.; El programa no incluye inversión de capital; el éxito depende de la capacidad del equipo para buscar fondos externos.; Aunque es en España, está enfocado principalmente en emprendedores o empresas de Galicia.; Falta de información detallada sobre los mentores y criterios de selección.\nCÓMO PARTICIPAR: Acceder al portal oficial de BF Sport; Completar el formulario de candidatura antes del 22‑12‑2026; Adjuntar una descripción clara del proyecto, objetivo y estado actual; Esperar la decisión del Consejo Ejecutivo de BF Sport; Si se es seleccionado, participar en el itinerario de 8 semanas (25 ene‑25 mar 2027)\nQUÉ PODRÍA HACERME PERDER EL DINERO: Tiempo invertido en la preparación de la candidatura sin ser seleccionado; Posible falta de financiación posterior al programa\nFUENTES: https://elreferente.es/ecosistema/bf-sport-abre-una-nueva-convocatoria-de-incubacion-hasta-el-22-de-diciembre/ | https://bfsport.gal/",
   "firstSeenAt": "2026-11-21T08:17:30Z",
-  "lastSeenAt": "2026-11-21T08:17:30Z",
-  "runId": "run-20261121-0817",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
   "aliases": [
    "news-elreferente-es-ecosistema-bf-sport-abre-una-nueva-convocatoria-de-incubacion-hasta-el"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "Business Factory Health&Care Incubation Program",
   "category": "startups",
   "subcategory": "healthcare",
   "kind": "activa",
-  "description": "Programa de incubación de hasta doce meses para cinco startups del sector sanitario, apoyado por la Xunta de Galicia, IGAPE y XesGalicia.",
+  "description": "Programa de incubación de hasta doce meses para cinco startups del sector sanitario, apoyado por la Xunta de Galicia, IGAPE y XesGalicia. Ofrece mentorización, recursos y validación clínica para soluciones innovadoras en salud.",
   "officialUrl": "https://bfhc.es/",
   "participateUrl": "https://bfhc.es/",
   "country": "España",
@@ -770,7 +785,7 @@
   "liquidity": "nula",
   "exitNotes": "Salida mediante graduación del programa o búsqueda de inversión externa tras la incubación.",
   "horizon": "12 meses",
-  "deadline": null,
+  "deadline": "cerrado",
   "potential": "alto",
   "difficulty": "media",
   "timeNeeded": "compromiso de tiempo completo durante la incubación",
@@ -782,57 +797,57 @@
    },
    "potencial": {
     "v": 8.0,
-    "why": "Se destaca el potencial de mejorar la precisión y personalización de la atención sanitaria · Verificador: Alta aplicabilidad clínica en sectores de alto valor añadido.",
+    "why": "Mejora la precisión y personalización de la atención sanitaria · Verificador: Alta aplicabilidad clínica en sectores de alto valor añadido.",
     "evidence": true
    },
    "mercado": {
     "v": 7.0,
-    "why": "Sector sanitario español y europeo con alta demanda de innovación · Verificador: Sector salud con alta demanda de digitalización.",
+    "why": "Sector sanitario español y europeo con alta demanda de innovación · Verificador: Sector salud con demanda constante de innovación tecnológica.",
     "evidence": true
    },
    "equipo": {
-    "v": 5.5,
-    "why": "No se proporcionan datos concretos sobre los equipos fundadores · Verificador: Proyectos seleccionados tras un proceso competitivo, aunque los fundadores individuales no se detallan.",
+    "v": 5.8,
+    "why": "No se proporcionan datos concretos sobre los equipos fundadores · Verificador: Se conocen los nombres de los proyectos, aunque el detalle de los fundadores es limitado.",
     "evidence": false
    },
    "financiacion": {
-    "v": 7.0,
-    "why": "Programa financiado por entidades públicas como IGAPE y XesGalicia · Verificador: Respaldado por fondos públicos regionales (IGAPE/XesGalicia).",
+    "v": 7.5,
+    "why": "Programa financiado por entidades públicas como IGAPE y XesGalicia · Verificador: Respaldado por fondos públicos (IGAPE/XesGalicia).",
     "evidence": true
    },
    "comunidad": {
-    "v": 7.5,
-    "why": "Impulso de clusters y organismos regionales de salud · Verificador: Colaboración estrecha con el Clúster Saúde de Galicia.",
+    "v": 7.8,
+    "why": "Colaboración estrecha con el Clúster Saúde de Galicia · Verificador: Colaboración activa con el Clúster Saúde de Galicia.",
     "evidence": true
    },
    "adopcion": {
     "v": 6.0,
-    "why": "Objetivo de validar soluciones para su adopción clínica, pero sin pruebas de mercado aún · Verificador: Fase de incubación; la adopción clínica requiere validaciones regulatorias largas.",
+    "why": "Objetivo de validar soluciones para su adopción clínica, pero sin pruebas de mercado aún · Verificador: Fase de incubación; la adopción clínica requiere validación regulatoria posterior.",
     "evidence": true
    },
    "competencia": {
     "v": 5.0,
-    "why": "No se describen competidores directos de los proyectos · Verificador: No se han publicado análisis competitivos específicos por proyecto.",
+    "why": "No se describen competidores directos de los proyectos · Verificador: No se detalla el panorama competitivo específico para cada startup.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 5.5,
+    "v": 5.8,
     "why": "Tecnologías emergentes (IA, preservación de órganos) con incertidumbre técnica · Verificador: Alta complejidad técnica en dispositivos médicos y software sanitario.",
     "evidence": true
    },
    "riesgo_financiero": {
     "v": 9.0,
-    "why": "No implica inversión financiera directa del participante · Verificador: No requiere inversión propia del participante.",
+    "why": "No implica inversión financiera directa del participante · Verificador: No requiere inversión propia, es un programa de apoyo público.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9.5,
-    "why": "Programa desarrollado en Galicia, España · Verificador: Programa público español con sede en Santiago de Compostela.",
+    "v": 9.8,
+    "why": "Programa público español con sede en Santiago de Compostela · Verificador: Programa con sede en Santiago de Compostela, Galicia.",
     "evidence": true
    },
    "salida": {
     "v": 5.0,
-    "why": "Salida depende de futuras rondas de inversión o acuerdos comerciales, sin garantía · Verificador: Depende de hitos de desarrollo y rondas futuras.",
+    "why": "Salida depende de futuras rondas de inversión o acuerdos comerciales, sin garantía · Verificador: La salida depende de rondas de inversión futuras o hitos comerciales.",
     "evidence": false
    }
   },
@@ -846,6 +861,16 @@
     "code": "incertidumbre_regulatoria",
     "severity": "alta",
     "detail": "Los proyectos de salud requieren certificaciones (CE/FDA) complejas y costosas para llegar al mercado."
+   },
+   {
+    "code": "incertidumbre_regulatoria",
+    "severity": "alta",
+    "detail": "Los productos sanitarios (SaMD) requieren certificaciones CE bajo el Reglamento (UE) 2017/745, un proceso largo y costoso."
+   },
+   {
+    "code": "dependencia_publica",
+    "severity": "media",
+    "detail": "La continuidad de los proyectos tras la incubación depende de la capacidad de captar capital privado."
    }
   ],
   "distrust": [
@@ -872,9 +897,10 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Es un programa de incubación pública, no un producto financiero ni de inversión, por lo que no requiere registro en CNMV ni MiCA.",
+   "notes": "Es un programa de incubación y aceleración pública. No es un producto financiero ni de inversión, por lo que no está sujeto a supervisión de la CNMV ni registro MiCA.",
    "sources": [
-    "https://bfhc.es/"
+    "https://bfhc.es/",
+    "https://igape.xunta.gal/"
    ]
   },
   "sources": [
@@ -883,7 +909,7 @@
     "url": "https://elreferente.es/actualidad/la-business-factory-healthcare-presenta-los-cinco-proyectos-seleccionados-para-su-primer-programa-de-incubacion/"
    },
    {
-    "title": "Web oficial Business Factory Health&Care",
+    "title": "Business Factory Health&Care - Web Oficial",
     "url": "https://bfhc.es/"
    }
   ],
@@ -895,15 +921,15 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "El programa existe, está promovido por la Xunta de Galicia (IGAPE, XesGalicia) y el Clúster Saúde de Galicia. La información coincide con los registros públicos de la iniciativa Business Factory Health&Care.",
+   "reason": "El programa es una iniciativa pública real impulsada por la Xunta de Galicia (IGAPE, XesGalicia) y el Clúster Saúde de Galicia. La información sobre los proyectos seleccionados y el proceso de incubación es coherente con las fuentes oficiales y medios especializados.",
    "model": "gemini:gemini-3.1-flash-lite",
    "agreementPct": 100
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "web-bfhc-es",
-  "isNew": true,
-  "score": 60,
-  "rawScore": 65.0,
+  "isNew": false,
+  "score": 61,
+  "rawScore": 66.1,
   "tier": "investigar",
   "tierLabel": "Interesante, necesita investigación",
   "humanReview": false,
@@ -922,6 +948,11 @@
     "code": "incertidumbre_regulatoria",
     "severity": "alta",
     "detail": "Los proyectos de salud requieren certificaciones (CE/FDA) complejas y costosas para llegar al mercado."
+   },
+   {
+    "code": "dependencia_publica",
+    "severity": "media",
+    "detail": "La continuidad de los proyectos tras la incubación depende de la capacidad de captar capital privado."
    }
   ],
   "evidenced": 9,
@@ -942,7 +973,7 @@
     "weight": 12,
     "value": 8.0,
     "points": 9.6,
-    "why": "Se destaca el potencial de mejorar la precisión y personalización de la atención sanitaria · Verificador: Alta aplicabilidad clínica en sectores de alto valor añadido.",
+    "why": "Mejora la precisión y personalización de la atención sanitaria · Verificador: Alta aplicabilidad clínica en sectores de alto valor añadido.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -952,7 +983,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Sector sanitario español y europeo con alta demanda de innovación · Verificador: Sector salud con alta demanda de digitalización.",
+    "why": "Sector sanitario español y europeo con alta demanda de innovación · Verificador: Sector salud con demanda constante de innovación tecnológica.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -962,7 +993,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "No se proporcionan datos concretos sobre los equipos fundadores · Verificador: Proyectos seleccionados tras un proceso competitivo, aunque los fundadores individuales no se detallan.",
+    "why": "No se proporcionan datos concretos sobre los equipos fundadores · Verificador: Se conocen los nombres de los proyectos, aunque el detalle de los fundadores es limitado.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -970,9 +1001,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "Programa financiado por entidades públicas como IGAPE y XesGalicia · Verificador: Respaldado por fondos públicos regionales (IGAPE/XesGalicia).",
+    "value": 7.5,
+    "points": 5.2,
+    "why": "Programa financiado por entidades públicas como IGAPE y XesGalicia · Verificador: Respaldado por fondos públicos (IGAPE/XesGalicia).",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -980,9 +1011,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 7.5,
-    "points": 5.2,
-    "why": "Impulso de clusters y organismos regionales de salud · Verificador: Colaboración estrecha con el Clúster Saúde de Galicia.",
+    "value": 7.8,
+    "points": 5.5,
+    "why": "Colaboración estrecha con el Clúster Saúde de Galicia · Verificador: Colaboración activa con el Clúster Saúde de Galicia.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -992,7 +1023,7 @@
     "weight": 9,
     "value": 6.0,
     "points": 5.4,
-    "why": "Objetivo de validar soluciones para su adopción clínica, pero sin pruebas de mercado aún · Verificador: Fase de incubación; la adopción clínica requiere validaciones regulatorias largas.",
+    "why": "Objetivo de validar soluciones para su adopción clínica, pero sin pruebas de mercado aún · Verificador: Fase de incubación; la adopción clínica requiere validación regulatoria posterior.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1002,7 +1033,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "No se describen competidores directos de los proyectos · Verificador: No se han publicado análisis competitivos específicos por proyecto.",
+    "why": "No se describen competidores directos de los proyectos · Verificador: No se detalla el panorama competitivo específico para cada startup.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -1010,8 +1041,8 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 5.5,
-    "points": 4.4,
+    "value": 5.8,
+    "points": 4.6,
     "why": "Tecnologías emergentes (IA, preservación de órganos) con incertidumbre técnica · Verificador: Alta complejidad técnica en dispositivos médicos y software sanitario.",
     "evidence": true,
     "cappedForNoEvidence": false
@@ -1022,17 +1053,17 @@
     "weight": 10,
     "value": 9.0,
     "points": 9.0,
-    "why": "No implica inversión financiera directa del participante · Verificador: No requiere inversión propia del participante.",
+    "why": "No implica inversión financiera directa del participante · Verificador: No requiere inversión propia, es un programa de apoyo público.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "Programa desarrollado en Galicia, España · Verificador: Programa público español con sede en Santiago de Compostela.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "Programa público español con sede en Santiago de Compostela · Verificador: Programa con sede en Santiago de Compostela, Galicia.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1042,7 +1073,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Salida depende de futuras rondas de inversión o acuerdos comerciales, sin garantía · Verificador: Depende de hitos de desarrollo y rondas futuras.",
+    "why": "Salida depende de futuras rondas de inversión o acuerdos comerciales, sin garantía · Verificador: La salida depende de rondas de inversión futuras o hitos comerciales.",
     "evidence": false,
     "cappedForNoEvidence": true
    }
@@ -1116,13 +1147,15 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Business Factory Health&Care Incubation Program\nCATEGORÍA: startups · healthcare\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://bfhc.es/\nENLACE DE PARTICIPACIÓN: https://bfhc.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 60/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: 12 meses\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: acceso a mentorización y recursos de una incubadora pública; potencial de participar en soluciones de salud con alto impacto\nMOTIVOS PARA DESCONFIAR: Falta de información sobre la viabilidad comercial y financiación posterior de los proyectos; Los proyectos de salud requieren certificaciones (CE/FDA) complejas y costosas para llegar al mercado.; poca información pública sobre planes de escalado y financiación post‑incubación\nCÓMO PARTICIPAR: Visitar la página oficial de Business Factory Health&Care; Contactar al programa mediante el correo o formulario indicado; Presentar la candidatura siguiendo los requisitos del proceso de selección\nQUÉ PODRÍA HACERME PERDER EL DINERO: no conseguir financiación tras la incubación; las soluciones no alcanzan la validación clínica necesaria\nFUENTES: https://elreferente.es/actualidad/la-business-factory-healthcare-presenta-los-cinco-proyectos-seleccionados-para-su-primer-programa-de-incubacion/ | https://bfhc.es/",
+  "alertText": "NOMBRE: Business Factory Health&Care Incubation Program\nCATEGORÍA: startups · healthcare\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://bfhc.es/\nENLACE DE PARTICIPACIÓN: https://bfhc.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 61/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: 12 meses\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: acceso a mentorización y recursos de una incubadora pública; potencial de participar en soluciones de salud con alto impacto\nMOTIVOS PARA DESCONFIAR: Falta de información sobre la viabilidad comercial y financiación posterior de los proyectos; Los proyectos de salud requieren certificaciones (CE/FDA) complejas y costosas para llegar al mercado.; La continuidad de los proyectos tras la incubación depende de la capacidad de captar capital privado.; poca información pública sobre planes de escalado y financiación post‑incubación\nCÓMO PARTICIPAR: Visitar la página oficial de Business Factory Health&Care; Contactar al programa mediante el correo o formulario indicado; Presentar la candidatura siguiendo los requisitos del proceso de selección\nQUÉ PODRÍA HACERME PERDER EL DINERO: no conseguir financiación tras la incubación; las soluciones no alcanzan la validación clínica necesaria\nFUENTES: https://elreferente.es/actualidad/la-business-factory-healthcare-presenta-los-cinco-proyectos-seleccionados-para-su-primer-programa-de-incubacion/ | https://bfhc.es/",
   "firstSeenAt": "2026-11-21T08:17:30Z",
-  "lastSeenAt": "2026-11-21T08:17:30Z",
-  "runId": "run-20261121-0817",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
   "aliases": [
    "news-elreferente-es-actualidad-la-business-factory-healthcare-presenta-los-cinco-proyectos"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "OpenComputer",
@@ -7310,6 +7343,392 @@
   ]
  },
  {
+  "name": "Mockreel",
+  "category": "ia_tecnologia",
+  "subcategory": "herramienta",
+  "kind": "pasiva",
+  "description": "Herramienta gratuita que permite grabar la pantalla y visualizarla en un modelo 3D de teléfono. No requiere registro ni pago.",
+  "officialUrl": "https://www.producthunt.com/products/mockreel",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible a través de la web sin restricciones geográficas",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Sin costes adicionales",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No hay inversión, por lo que no hay proceso de salida necesario",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "Herramienta novedosa pero con uso limitado a usuarios que necesiten visualización 3D de grabaciones",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para probar",
+  "subscores": {
+   "novedad": {
+    "v": 5.5,
+    "why": "Formato 3D para grabaciones de pantalla · Verificador: Visualización 3D de grabaciones, concepto existente en herramientas de diseño.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 3.5,
+    "why": "Herramienta gratuita con caso de uso limitado · Verificador: Utilidad limitada para marketing visual, sin modelo de negocio claro.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 3.0,
+    "why": "Mercado nicho de herramientas de grabación de pantalla · Verificador: Mercado saturado de herramientas de edición y mockups.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información sobre desarrolladores o empresa responsable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No hay datos de financiación pública · Verificador: Sin datos de financiación o modelo de monetización.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.5,
+    "why": "Sin datos de comunidad o usuarios activos · Verificador: Sin presencia social o comunidad activa verificable.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.5,
+    "why": "Lanzada recientemente en Product Hunt, adopción incipiente · Verificador: Uso incipiente, sin métricas de adopción.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Existen otras herramientas de grabación de pantalla tradicionales · Verificador: Alta competencia con herramientas como Canva, Kapwing o ScreenStudio.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.5,
+    "why": "Aplicación web sencilla, bajo riesgo técnico · Verificador: Al no conocer el origen ni el tratamiento de datos, existe riesgo de privacidad al subir grabaciones.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No requiere inversión económica · Verificador: No hay inversión monetaria requerida.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8.0,
+    "why": "Accesible globalmente vía web sin restricciones · Verificador: Accesible vía web, sin restricciones geográficas.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "No hay bloqueo, se puede dejar de usar en cualquier momento · Verificador: No hay activos ni capital bloqueado.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre equipo, financiación y comunidad"
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia de términos de servicio, política de privacidad y datos del desarrollador."
+   },
+   {
+    "code": "unverified_source",
+    "severity": "media",
+    "detail": "La URL oficial no dirige a una web de producto, sino a un agregador."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL proporcionada es un enlace de referencia a Product Hunt, no el sitio web oficial del producto. La herramienta carece de transparencia sobre su equipo, términos de servicio o política de privacidad, lo cual es un riesgo de seguridad al procesar grabaciones de pantalla."
+   }
+  ],
+  "distrust": [
+   "poca información disponible"
+  ],
+  "whyInteresting": [
+   "Formato 3D innovador para grabaciones de pantalla",
+   "Servicio gratuito y sin registro"
+  ],
+  "howToParticipate": [
+   "Acceder a https://www.producthunt.com/products/mockreel y usar la herramienta directamente"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un servicio financiero ni de inversión, por lo que no está sujeto a supervisión de la CNMV o MiCA. Sin embargo, debe cumplir con el RGPD al tratar datos de usuario.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/mockreel"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La URL proporcionada es un enlace de referencia a Product Hunt, no el sitio web oficial del producto. La herramienta carece de transparencia sobre su equipo, términos de servicio o política de privacidad, lo cual es un riesgo de seguridad al procesar grabaciones de pantalla.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-producthunt-com-products-mockreel",
+  "isNew": true,
+  "score": 34,
+  "rawScore": 44.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre equipo, financiación y comunidad"
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia de términos de servicio, política de privacidad y datos del desarrollador."
+   },
+   {
+    "code": "unverified_source",
+    "severity": "media",
+    "detail": "La URL oficial no dirige a una web de producto, sino a un agregador."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La URL proporcionada es un enlace de referencia a Product Hunt, no el sitio web oficial del producto. La herramienta carece de transparencia sobre su equipo, términos de servicio o política de privacidad, lo cual es un riesgo de seguridad al procesar grabaciones de pantalla."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Formato 3D para grabaciones de pantalla · Verificador: Visualización 3D de grabaciones, concepto existente en herramientas de diseño.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Herramienta gratuita con caso de uso limitado · Verificador: Utilidad limitada para marketing visual, sin modelo de negocio claro.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado nicho de herramientas de grabación de pantalla · Verificador: Mercado saturado de herramientas de edición y mockups.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No hay información sobre desarrolladores o empresa responsable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay datos de financiación pública · Verificador: Sin datos de financiación o modelo de monetización.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Sin datos de comunidad o usuarios activos · Verificador: Sin presencia social o comunidad activa verificable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.5,
+    "points": 2.2,
+    "why": "Lanzada recientemente en Product Hunt, adopción incipiente · Verificador: Uso incipiente, sin métricas de adopción.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras herramientas de grabación de pantalla tradicionales · Verificador: Alta competencia con herramientas como Canva, Kapwing o ScreenStudio.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 4.5,
+    "points": 3.6,
+    "why": "Aplicación web sencilla, bajo riesgo técnico · Verificador: Al no conocer el origen ni el tratamiento de datos, existe riesgo de privacidad al subir grabaciones.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No requiere inversión económica · Verificador: No hay inversión monetaria requerida.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Accesible globalmente vía web sin restricciones · Verificador: Accesible vía web, sin restricciones geográficas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay bloqueo, se puede dejar de usar en cualquier momento · Verificador: No hay activos ni capital bloqueado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Mockreel\nCATEGORÍA: ia_tecnologia · herramienta\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://www.producthunt.com/products/mockreel\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Herramienta novedosa pero con uso limitado a usuarios que necesiten visualización 3D de grabaciones\nPUNTUACIÓN: 34/100 · Descartar\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Formato 3D innovador para grabaciones de pantalla; Servicio gratuito y sin registro\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre equipo, financiación y comunidad; Ausencia de términos de servicio, política de privacidad y datos del desarrollador.; La URL oficial no dirige a una web de producto, sino a un agregador.; El verificador tiene dudas: La URL proporcionada es un enlace de referencia a Product Hunt, no el sitio web oficial del producto. La herramienta carece de transparencia sobre su equipo, términos de servicio o política de privacidad, lo cual es un riesgo de seguridad al procesar grabaciones de pantalla.; poca información disponible\nCÓMO PARTICIPAR: Acceder a https://www.producthunt.com/products/mockreel y usar la herramienta directamente\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/mockreel",
+  "firstSeenAt": "2026-11-22T08:52:34Z",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
+  "aliases": [
+   "news-www-producthunt-com-products-mockreel"
+  ]
+ },
+ {
   "name": "Zethos",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -8050,6 +8469,394 @@
   "runId": "run-20261121-0822",
   "aliases": [
    "news-www-producthunt-com-products-glassmail"
+  ]
+ },
+ {
+  "name": "DeNotch",
+  "category": "ia_tecnologia",
+  "subcategory": "software|macos",
+  "kind": "pasiva",
+  "description": "Herramienta que permite ocultar la muesca del MacBook y gestionar la barra de menús. Disponible en Product Hunt como proyecto reciente.",
+  "officialUrl": null,
+  "participateUrl": "https://www.producthunt.com/products/denotch",
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "No se ha verificado la compatibilidad o disponibilidad del software en España; la página oficial devuelve error 403.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Versión gratuita disponible; podrían añadirse planes de pago en el futuro",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No hay mecanismo de salida financiero; es software de uso personal.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Bajo a medio, depende de la adopción entre usuarios de MacBook con notch",
+  "difficulty": "baja",
+  "timeNeeded": "Instalación y configuración en pocos minutos",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Ocultar la muesca del MacBook es una funcionalidad poco común en el ecosistema macOS · Verificador: Existen múltiples aplicaciones similares en el mercado desde hace años (ej. TopNotch, Forehead).",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "El mercado está limitado a usuarios de MacBook con notch y la propuesta de valor es marginal · Verificador: Mercado saturado y utilidad marginal para el usuario final.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 2.5,
+    "why": "Base de usuarios reducida y alta competencia de soluciones nativas o de terceros ya existentes · Verificador: Competencia establecida con mayor reputación y soporte.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador o desarrolladores · Verificador: No existe rastro público de los desarrolladores o entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de rondas de inversión o financiación externa · Verificador: Proyecto sin estructura de financiación conocida.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "Poca evidencia de comunidad activa más allá del anuncio en Product Hunt · Verificador: Actividad mínima en Product Hunt sin soporte post-lanzamiento.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.5,
+    "why": "Sin métricas de descargas o usuarios activos disponibles · Verificador: Sin métricas de uso o base de usuarios verificable.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otras apps y extensiones que ofrecen funcionalidades similares · Verificador: Alta competencia en la App Store y repositorios de código abierto. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Software macOS puede presentar incompatibilidades o fallos; no hay auditorías públicas · Verificador: Software sin firma digital verificable o repositorio abierto, riesgo de malware al ejecutar binarios desconocidos.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No implica inversión económica directa; riesgo financiero prácticamente nulo · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4.5,
+    "why": "Desconocida la disponibilidad legal y de soporte en España · Verificador: Al ser software, no tiene restricciones geográficas, pero la falta de web oficial impide su descarga segura.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay inversión que recuperar; simplemente se puede dejar de usar · Verificador: Desinstalación inmediata sin coste.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "No se dispone de página oficial accesible ni datos del equipo y financiación"
+   },
+   {
+    "code": "falta_de_presencia_web",
+    "severity": "alta",
+    "detail": "El dominio oficial devuelve error 403, lo que impide verificar la integridad del software."
+   },
+   {
+    "code": "anonimato_desarrollador",
+    "severity": "media",
+    "detail": "Ausencia total de información sobre quién desarrolla el software, aumentando el riesgo de seguridad."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web oficial activa (error 403 en el dominio), no hay información sobre el equipo desarrollador y la utilidad es puramente estética, lo que impide una verificación de seguridad o fiabilidad técnica."
+   }
+  ],
+  "distrust": [
+   "Falta de transparencia sobre el desarrollador y la hoja de ruta"
+  ],
+  "whyInteresting": [
+   "Ofrece una solución estética para usuarios que no gustan de la muesca del MacBook"
+  ],
+  "howToParticipate": [
+   "Acceder al enlace de Product Hunt, descargar la aplicación desde la página indicada y seguir las instrucciones de instalación"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Posible incompatibilidad con versiones futuras de macOS",
+   "Falta de soporte técnico"
+  ],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una utilidad de software sin servicios financieros, no está sujeta a supervisión de la CNMV o MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/denotch"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto carece de presencia web oficial activa (error 403 en el dominio), no hay información sobre el equipo desarrollador y la utilidad es puramente estética, lo que impide una verificación de seguridad o fiabilidad técnica.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "n-denotch",
+  "isNew": true,
+  "score": 32,
+  "rawScore": 41.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "No se dispone de página oficial accesible ni datos del equipo y financiación"
+   },
+   {
+    "code": "falta_de_presencia_web",
+    "severity": "alta",
+    "detail": "El dominio oficial devuelve error 403, lo que impide verificar la integridad del software."
+   },
+   {
+    "code": "anonimato_desarrollador",
+    "severity": "media",
+    "detail": "Ausencia total de información sobre quién desarrolla el software, aumentando el riesgo de seguridad."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web oficial activa (error 403 en el dominio), no hay información sobre el equipo desarrollador y la utilidad es puramente estética, lo que impide una verificación de seguridad o fiabilidad técnica."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Ocultar la muesca del MacBook es una funcionalidad poco común en el ecosistema macOS · Verificador: Existen múltiples aplicaciones similares en el mercado desde hace años (ej. TopNotch, Forehead).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "El mercado está limitado a usuarios de MacBook con notch y la propuesta de valor es marginal · Verificador: Mercado saturado y utilidad marginal para el usuario final.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Base de usuarios reducida y alta competencia de soluciones nativas o de terceros ya existentes · Verificador: Competencia establecida con mayor reputación y soporte.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información pública sobre el equipo fundador o desarrolladores · Verificador: No existe rastro público de los desarrolladores o entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de rondas de inversión o financiación externa · Verificador: Proyecto sin estructura de financiación conocida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "Poca evidencia de comunidad activa más allá del anuncio en Product Hunt · Verificador: Actividad mínima en Product Hunt sin soporte post-lanzamiento.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.5,
+    "points": 2.2,
+    "why": "Sin métricas de descargas o usuarios activos disponibles · Verificador: Sin métricas de uso o base de usuarios verificable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras apps y extensiones que ofrecen funcionalidades similares · Verificador: Alta competencia en la App Store y repositorios de código abierto. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Software macOS puede presentar incompatibilidades o fallos; no hay auditorías públicas · Verificador: Software sin firma digital verificable o repositorio abierto, riesgo de malware al ejecutar binarios desconocidos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No implica inversión económica directa; riesgo financiero prácticamente nulo · Verificador: No hay inversión monetaria, riesgo financiero nulo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Desconocida la disponibilidad legal y de soporte en España · Verificador: Al ser software, no tiene restricciones geográficas, pero la falta de web oficial impide su descarga segura.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay inversión que recuperar; simplemente se puede dejar de usar · Verificador: Desinstalación inmediata sin coste.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DeNotch\nCATEGORÍA: ia_tecnologia · software|macos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.producthunt.com/products/denotch\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Bajo a medio, depende de la adopción entre usuarios de MacBook con notch\nPUNTUACIÓN: 32/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ofrece una solución estética para usuarios que no gustan de la muesca del MacBook\nMOTIVOS PARA DESCONFIAR: No se dispone de página oficial accesible ni datos del equipo y financiación; El dominio oficial devuelve error 403, lo que impide verificar la integridad del software.; Ausencia total de información sobre quién desarrolla el software, aumentando el riesgo de seguridad.; El verificador tiene dudas: El proyecto carece de presencia web oficial activa (error 403 en el dominio), no hay información sobre el equipo desarrollador y la utilidad es puramente estética, lo que impide una verificación de seguridad o fiabilidad técnica.; Falta de transparencia sobre el desarrollador y la hoja de ruta\nCÓMO PARTICIPAR: Acceder al enlace de Product Hunt, descargar la aplicación desde la página indicada y seguir las instrucciones de instalación\nQUÉ PODRÍA HACERME PERDER EL DINERO: Posible incompatibilidad con versiones futuras de macOS; Falta de soporte técnico\nFUENTES: https://www.producthunt.com/products/denotch",
+  "firstSeenAt": "2026-11-22T08:52:34Z",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
+  "aliases": [
+   "news-www-producthunt-com-products-denotch"
   ]
  },
  {
@@ -14570,62 +15377,62 @@
   "subscores": {
    "novedad": {
     "v": 8.0,
-    "why": "Enfoque basado en IA y simulación para fusión pulsed‑power, poco común en el sector. · Verificador: Enfoque centrado en simulación e IA para fusión pulsed-power.",
+    "why": "Enfoque basado en IA y simulación para fusión pulsed‑power, poco común en el sector. · Verificador: Enfoque centrado en simulación y datos sobre hardware intensivo en fusión pulsed-power.",
     "evidence": true
    },
    "potencial": {
-    "v": 8.5,
-    "why": "Si logra comercializar, la fusión ofrecería energía casi ilimitada y cero emisiones. · Verificador: La fusión nuclear es una tecnología disruptiva de alto impacto.",
+    "v": 8.2,
+    "why": "Si logra comercializar, la fusión ofrecería energía casi ilimitada y cero emisiones. · Verificador: La fusión nuclear es una tecnología disruptiva de alto impacto global.",
     "evidence": true
    },
    "mercado": {
     "v": 7.0,
-    "why": "Mercado energético global de varios billones de euros, pero alta barrera de entrada. · Verificador: Mercado energético global, aunque la viabilidad comercial es incierta.",
+    "why": "Mercado energético global de varios billones de euros, pero alta barrera de entrada. · Verificador: Mercado energético global masivo, pero con barreras de entrada tecnológicas extremas.",
     "evidence": true
    },
    "equipo": {
     "v": 8.0,
-    "why": "Fundador con experiencia en DeepMind, FAIR, Microsoft Research y Pacific Fusion. · Verificador: Fundador con trayectoria en DeepMind y Pacific Fusion.",
+    "why": "Fundador con experiencia en DeepMind, FAIR, Microsoft Research y Pacific Fusion. · Verificador: Fundador con trayectoria relevante en DeepMind y Pacific Fusion.",
     "evidence": true
    },
    "financiacion": {
-    "v": 4.5,
-    "why": "Solo se menciona respaldo de Daniel Ek; no hay datos de rondas ni montos. · Verificador: Respaldo privado confirmado, pero sin rondas públicas ni datos de capital.",
+    "v": 3.8,
+    "why": "Solo se menciona respaldo de Daniel Ek; no hay datos de rondas ni montos. · Verificador: Solo se confirma respaldo de Daniel Ek; sin rondas públicas o montos detallados.",
     "evidence": true
    },
    "comunidad": {
-    "v": 2.0,
-    "why": "Startup stealth, sin comunidad de usuarios o desarrolladores visible. · Verificador: Startup en modo sigilo, sin presencia pública.",
+    "v": 1.5,
+    "why": "Startup stealth, sin comunidad de usuarios o desarrolladores visible. · Verificador: Startup en modo stealth, sin presencia pública ni comunidad.",
     "evidence": false
    },
    "adopcion": {
     "v": 1.0,
-    "why": "Aún en fase de investigación; adopción comercial a medio‑largo plazo. · Verificador: Fase de investigación, sin producto comercial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "why": "Aún en fase de investigación; adopción comercial a medio‑largo plazo. · Verificador: Fase de investigación teórica; sin producto comercial.",
     "evidence": false
    },
    "competencia": {
     "v": 5.0,
-    "why": "Existen varios proyectos de fusión (Tokamak, laser‑fusion) pero pocos con enfoque de simulación‑intensiva. · Verificador: Sector altamente competitivo con actores establecidos.",
+    "why": "Existen varios proyectos de fusión (Tokamak, laser‑fusion) pero pocos con enfoque de simulación‑intensiva. · Verificador: Sector altamente competitivo con actores mejor financiados (Tokamak, etc.).",
     "evidence": true
    },
    "riesgo_tecnico": {
     "v": 2.0,
-    "why": "Fusión comercial aún no probada; alta complejidad de pulsed‑power. · Verificador: La fusión comercial es un reto científico no resuelto.",
+    "why": "Fusión comercial aún no probada; alta complejidad de pulsed‑power. · Verificador: La viabilidad comercial de la fusión sigue siendo un reto científico no resuelto.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 2.5,
-    "why": "Necesidad de capital intensivo y ausencia de ingresos actuales. · Verificador: Alta quema de capital sin ingresos previstos a largo plazo.",
+    "v": 2.2,
+    "why": "Necesidad de capital intensivo y ausencia de ingresos actuales. · Verificador: Dependencia total de capital riesgo en una fase de altísima incertidumbre.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 1.5,
-    "why": "No hay indicios de planes de entrada al mercado español. · Verificador: Sin planes ni operaciones en España.",
+    "v": 1.2,
+    "why": "No hay indicios de planes de entrada al mercado español. · Verificador: No hay indicios de operaciones en España.",
     "evidence": true
    },
    "salida": {
-    "v": 2.5,
-    "why": "Liquidez limitada; salida solo mediante venta privada o IPO futura. · Verificador: Liquidez nula; horizonte de salida muy lejano.",
+    "v": 2.2,
+    "why": "Liquidez limitada; salida solo mediante venta privada o IPO futura. · Verificador: Liquidez nula; salida supeditada a eventos corporativos a muy largo plazo.",
     "evidence": true
    }
   },
@@ -14646,16 +15453,6 @@
     "detail": "Requiere cientos de millones de euros para pasar de prototipo a planta."
    },
    {
-    "code": "falta_de_transparencia",
-    "severity": "alta",
-    "detail": "Empresa en modo sigilo sin web oficial ni información corporativa pública."
-   },
-   {
-    "code": "alto_riesgo_tecnico",
-    "severity": "critica",
-    "detail": "Tecnología de fusión nuclear sin viabilidad comercial demostrada."
-   },
-   {
     "code": "imposibilidad_de_inversion",
     "severity": "alta",
     "detail": "No existen mecanismos para que un inversor minorista participe en esta etapa."
@@ -14663,7 +15460,32 @@
    {
     "code": "verificacion_dudosa",
     "severity": "alta",
-    "detail": "El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' (sigilo) sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España. La información es puramente especulativa basada en reportes de prensa."
+    "detail": "El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España."
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "Startup en modo stealth sin sitio web ni información corporativa pública."
+   },
+   {
+    "code": "imposibilidad_de_inversion",
+    "severity": "critica",
+    "detail": "No existen mecanismos para que un inversor minorista participe en esta etapa."
+   },
+   {
+    "code": "alto_riesgo_tecnico",
+    "severity": "critica",
+    "detail": "Tecnología de fusión en fase de desarrollo conceptual/simulación."
+   },
+   {
+    "code": "dependencia_de_capital_intensivo",
+    "severity": "alta",
+    "detail": "Requiere rondas de financiación masivas para llegar a prototipos físicos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe y cuenta con respaldo de capital privado (Daniel Ek), pero opera en modo 'stealth' absoluto. No existe web oficial, ni mecanismos de inversión para minoristas, ni planes de expansión en España. La información es puramente especulativa basada en reportes de prensa."
    }
   ],
   "distrust": [
@@ -14675,10 +15497,10 @@
    "Potencial de transformar el sector energético y reducir emisiones."
   ],
   "howToParticipate": [
-   "1. Monitorizar plataformas de inversión en startups (Seedrs, AngelList, Crunchbase).",
-   "2. Suscribirse a newsletters de fondos de deep‑tech que puedan abrir rondas de financiación.",
-   "3. Contactar directamente al equipo vía LinkedIn o correo institucional (si se publica).",
-   "4. Evaluar participación en rondas privadas cuando se anuncien."
+   "Monitorizar plataformas de inversión en startups (Seedrs, AngelList, Crunchbase).",
+   "Suscribirse a newsletters de fondos de deep‑tech que puedan abrir rondas de financiación.",
+   "Contactar directamente al equipo vía LinkedIn o correo institucional (si se publica).",
+   "Evaluar participación en rondas privadas cuando se anuncien."
   ],
   "lossCauses": [
    "Fracaso técnico del reactor pulsed‑power.",
@@ -14693,7 +15515,7 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Al no ser una oferta pública de valores ni un servicio financiero abierto al público, no está sujeta a supervisión de la CNMV o registro MiCA actualmente.",
+   "notes": "Al ser una entidad privada en fase de desarrollo sin oferta pública de valores, no está bajo supervisión de la CNMV ni requiere registro MiCA.",
    "sources": [
     "https://www.cnmv.es"
    ]
@@ -14712,15 +15534,15 @@
   },
   "verification": {
    "verdict": "dudosa",
-   "reason": "La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' (sigilo) sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España. La información es puramente especulativa basada en reportes de prensa.",
+   "reason": "La startup existe y cuenta con respaldo de capital privado (Daniel Ek), pero opera en modo 'stealth' absoluto. No existe web oficial, ni mecanismos de inversión para minoristas, ni planes de expansión en España. La información es puramente especulativa basada en reportes de prensa.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 92
+   "agreementPct": 100
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "n-europa-fusion",
-  "isNew": true,
+  "isNew": false,
   "score": 20,
-  "rawScore": 45.5,
+  "rawScore": 43.5,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
@@ -14754,7 +15576,7 @@
    {
     "code": "verificacion_dudosa",
     "severity": "alta",
-    "detail": "El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' (sigilo) sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España. La información es puramente especulativa basada en reportes de prensa."
+    "detail": "El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España."
    }
   ],
   "evidenced": 10,
@@ -14765,7 +15587,7 @@
     "weight": 8,
     "value": 8.0,
     "points": 6.4,
-    "why": "Enfoque basado en IA y simulación para fusión pulsed‑power, poco común en el sector. · Verificador: Enfoque centrado en simulación e IA para fusión pulsed-power.",
+    "why": "Enfoque basado en IA y simulación para fusión pulsed‑power, poco común en el sector. · Verificador: Enfoque centrado en simulación y datos sobre hardware intensivo en fusión pulsed-power.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14773,9 +15595,9 @@
     "key": "potencial",
     "label": "Potencial de crecimiento",
     "weight": 12,
-    "value": 8.5,
-    "points": 10.2,
-    "why": "Si logra comercializar, la fusión ofrecería energía casi ilimitada y cero emisiones. · Verificador: La fusión nuclear es una tecnología disruptiva de alto impacto.",
+    "value": 8.2,
+    "points": 9.8,
+    "why": "Si logra comercializar, la fusión ofrecería energía casi ilimitada y cero emisiones. · Verificador: La fusión nuclear es una tecnología disruptiva de alto impacto global.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14785,7 +15607,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Mercado energético global de varios billones de euros, pero alta barrera de entrada. · Verificador: Mercado energético global, aunque la viabilidad comercial es incierta.",
+    "why": "Mercado energético global de varios billones de euros, pero alta barrera de entrada. · Verificador: Mercado energético global masivo, pero con barreras de entrada tecnológicas extremas.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14795,7 +15617,7 @@
     "weight": 10,
     "value": 8.0,
     "points": 8.0,
-    "why": "Fundador con experiencia en DeepMind, FAIR, Microsoft Research y Pacific Fusion. · Verificador: Fundador con trayectoria en DeepMind y Pacific Fusion.",
+    "why": "Fundador con experiencia en DeepMind, FAIR, Microsoft Research y Pacific Fusion. · Verificador: Fundador con trayectoria relevante en DeepMind y Pacific Fusion.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14803,9 +15625,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 4.5,
-    "points": 3.1,
-    "why": "Solo se menciona respaldo de Daniel Ek; no hay datos de rondas ni montos. · Verificador: Respaldo privado confirmado, pero sin rondas públicas ni datos de capital.",
+    "value": 3.8,
+    "points": 2.7,
+    "why": "Solo se menciona respaldo de Daniel Ek; no hay datos de rondas ni montos. · Verificador: Solo se confirma respaldo de Daniel Ek; sin rondas públicas o montos detallados.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14813,9 +15635,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 2.0,
-    "points": 1.4,
-    "why": "Startup stealth, sin comunidad de usuarios o desarrolladores visible. · Verificador: Startup en modo sigilo, sin presencia pública.",
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Startup stealth, sin comunidad de usuarios o desarrolladores visible. · Verificador: Startup en modo stealth, sin presencia pública ni comunidad.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -14825,7 +15647,7 @@
     "weight": 9,
     "value": 1.0,
     "points": 0.9,
-    "why": "Aún en fase de investigación; adopción comercial a medio‑largo plazo. · Verificador: Fase de investigación, sin producto comercial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "why": "Aún en fase de investigación; adopción comercial a medio‑largo plazo. · Verificador: Fase de investigación teórica; sin producto comercial.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -14835,7 +15657,7 @@
     "weight": 5,
     "value": 5.0,
     "points": 2.5,
-    "why": "Existen varios proyectos de fusión (Tokamak, laser‑fusion) pero pocos con enfoque de simulación‑intensiva. · Verificador: Sector altamente competitivo con actores establecidos.",
+    "why": "Existen varios proyectos de fusión (Tokamak, laser‑fusion) pero pocos con enfoque de simulación‑intensiva. · Verificador: Sector altamente competitivo con actores mejor financiados (Tokamak, etc.).",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14845,7 +15667,7 @@
     "weight": 8,
     "value": 2.0,
     "points": 1.6,
-    "why": "Fusión comercial aún no probada; alta complejidad de pulsed‑power. · Verificador: La fusión comercial es un reto científico no resuelto.",
+    "why": "Fusión comercial aún no probada; alta complejidad de pulsed‑power. · Verificador: La viabilidad comercial de la fusión sigue siendo un reto científico no resuelto.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14853,19 +15675,19 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 2.5,
-    "points": 2.5,
-    "why": "Necesidad de capital intensivo y ausencia de ingresos actuales. · Verificador: Alta quema de capital sin ingresos previstos a largo plazo.",
+    "value": 2.2,
+    "points": 2.2,
+    "why": "Necesidad de capital intensivo y ausencia de ingresos actuales. · Verificador: Dependencia total de capital riesgo en una fase de altísima incertidumbre.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 1.5,
-    "points": 1.2,
-    "why": "No hay indicios de planes de entrada al mercado español. · Verificador: Sin planes ni operaciones en España.",
+    "value": 1.2,
+    "points": 1.0,
+    "why": "No hay indicios de planes de entrada al mercado español. · Verificador: No hay indicios de operaciones en España.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -14873,9 +15695,9 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 2.5,
-    "points": 2.0,
-    "why": "Liquidez limitada; salida solo mediante venta privada o IPO futura. · Verificador: Liquidez nula; horizonte de salida muy lejano.",
+    "value": 2.2,
+    "points": 1.8,
+    "why": "Liquidez limitada; salida solo mediante venta privada o IPO futura. · Verificador: Liquidez nula; salida supeditada a eventos corporativos a muy largo plazo.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -14949,13 +15771,15 @@
    "reason": "Riesgo crítico: no se notifica como oportunidad"
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Europa Fusion\nCATEGORÍA: startups · energia\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Reino Unido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo (10+ años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Respaldo de un emprendedor de alto perfil (Daniel Ek).; Enfoque novedoso que combina IA y simulación para acelerar la fusión.; Potencial de transformar el sector energético y reducir emisiones.\nMOTIVOS PARA DESCONFIAR: Información financiera y de participación no pública.; Tecnología de fusión aún no demostrada a escala comercial.; Requiere cientos de millones de euros para pasar de prototipo a planta.; No existen mecanismos para que un inversor minorista participe en esta etapa.; El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' (sigilo) sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España. La información es puramente especulativa basada en reportes de prensa.; Escasa información pública sobre estructura de capital y roadmap.\nCÓMO PARTICIPAR: 1. Monitorizar plataformas de inversión en startups (Seedrs, AngelList, Crunchbase).; 2. Suscribirse a newsletters de fondos de deep‑tech que puedan abrir rondas de financiación.; 3. Contactar directamente al equipo vía LinkedIn o correo institucional (si se publica).; 4. Evaluar participación en rondas privadas cuando se anuncien.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Fracaso técnico del reactor pulsed‑power.; Retrasos o bloqueos regulatorios en EE.UU. o UE.; Incapacidad para levantar capital adicional.\nFUENTES: https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+  "alertText": "NOMBRE: Europa Fusion\nCATEGORÍA: startups · energia\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Reino Unido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo (10+ años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Respaldo de un emprendedor de alto perfil (Daniel Ek).; Enfoque novedoso que combina IA y simulación para acelerar la fusión.; Potencial de transformar el sector energético y reducir emisiones.\nMOTIVOS PARA DESCONFIAR: Información financiera y de participación no pública.; Tecnología de fusión aún no demostrada a escala comercial.; Requiere cientos de millones de euros para pasar de prototipo a planta.; No existen mecanismos para que un inversor minorista participe en esta etapa.; El verificador tiene dudas: La startup existe y ha recibido respaldo de Daniel Ek, pero es una entidad en fase 'stealth' sin presencia comercial, sin web pública, sin registro de inversión abierto y sin planes operativos en España.; Escasa información pública sobre estructura de capital y roadmap.\nCÓMO PARTICIPAR: Monitorizar plataformas de inversión en startups (Seedrs, AngelList, Crunchbase).; Suscribirse a newsletters de fondos de deep‑tech que puedan abrir rondas de financiación.; Contactar directamente al equipo vía LinkedIn o correo institucional (si se publica).; Evaluar participación en rondas privadas cuando se anuncien.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Fracaso técnico del reactor pulsed‑power.; Retrasos o bloqueos regulatorios en EE.UU. o UE.; Incapacidad para levantar capital adicional.\nFUENTES: https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
   "firstSeenAt": "2026-11-21T12:18:38Z",
-  "lastSeenAt": "2026-11-21T12:18:38Z",
-  "runId": "run-20261121-1218",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
   "aliases": [
    "news-techcrunch-com-2026-11-20-daniel-ek-backs-ai-researchers-fusion-power-startup-heres-w"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "Leonida",
@@ -20957,6 +21781,379 @@
   "runId": "run-20261122-0826",
   "aliases": [
    "news-www-producthunt-com-products-oovi"
+  ]
+ },
+ {
+  "name": "Copy Haste",
+  "category": "ia_tecnologia",
+  "subcategory": "herramientas_productividad",
+  "kind": "pasiva",
+  "description": "Copy Haste es una herramienta de gestión del portapapeles que clasifica el contenido en texto, código, enlaces, medios y más.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad específica en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Versión gratuita disponible; planes premium no especificados",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica para este tipo de producto.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "moderado, depende de la adopción de usuarios y de la integración con flujos de trabajo habituales",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo para probar la herramienta",
+  "subscores": {
+   "novedad": {
+    "v": 3.0,
+    "why": "Clasifica automáticamente el contenido del portapapeles en distintas categorías · Verificador: La gestión de portapapeles es una categoría saturada; la clasificación automática no es una innovación disruptiva. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Valor añadido para usuarios que manejan mucho contenido copiado · Verificador: Sin sitio web ni modelo de negocio claro, el potencial de adopción es mínimo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Existe un mercado amplio de herramientas de productividad, pero con alta competencia · Verificador: Mercado de utilidades de productividad altamente competitivo (ej. Raycast, Alfred, Ditto).",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: No existe información pública sobre los desarrolladores o la empresa detrás del proyecto.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "No hay datos públicos sobre rondas de inversión o financiación · Verificador: No hay registros de financiación o estructura corporativa.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Poca información sobre comunidad de usuarios o soporte activo · Verificador: Inexistente; no hay canales de soporte, redes sociales o comunidad activa. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "Desconocido el número de usuarios activos o tasa de crecimiento · Verificador: No hay métricas de uso ni pruebas de que el software esté siendo utilizado. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.0,
+    "why": "Compite con otras extensiones y apps de gestión del portapapeles · Verificador: La competencia establecida es muy superior en fiabilidad y funciones. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Tecnología sencilla; bajo riesgo de fallos críticos · Verificador: Al no poder verificar el código o el origen, existe riesgo de malware o exfiltración de datos del portapapeles.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "Producto gratuito, sin inversión financiera requerida · Verificador: Al ser un producto gratuito sin inversión, el riesgo financiero directo es nulo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No se ha confirmado disponibilidad o localización para usuarios españoles · Verificador: No hay evidencia de que el producto exista o esté adaptado para el mercado español. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay mecanismo de salida financiero; uso libre · Verificador: Al no haber inversión, la salida es simplemente desinstalar o dejar de usar.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "La herramienta no cuenta con un dominio oficial o página de aterrizaje funcional."
+   },
+   {
+    "code": "SECURITY_RISK",
+    "severity": "media",
+    "detail": "Las herramientas de portapapeles tienen acceso a datos sensibles (contraseñas, claves); sin un desarrollador verificado, el riesgo de privacidad es alto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web oficial verificable, sitio web propio o información sobre el equipo desarrollador. La única referencia es una página de Product Hunt que no redirige a un producto funcional, lo que impide confirmar su existencia real, seguridad o disponibilidad en España."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Gestión avanzada del portapapeles con clasificación automática"
+  ],
+  "howToParticipate": [
+   "Acceder a la página de Product Hunt y seguir el enlace a Copy Haste para registrarse y usar la herramienta"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una herramienta de software local (utilidad de escritorio) y no un servicio financiero, no está sujeta a supervisión de la CNMV o registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/copy-haste"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La herramienta carece de presencia web oficial verificable, sitio web propio o información sobre el equipo desarrollador. La única referencia es una página de Product Hunt que no redirige a un producto funcional, lo que impide confirmar su existencia real, seguridad o disponibilidad en España.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "n-copy-haste",
+  "isNew": true,
+  "score": 12,
+  "rawScore": 21.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "NO_OFFICIAL_SITE",
+    "severity": "alta",
+    "detail": "La herramienta no cuenta con un dominio oficial o página de aterrizaje funcional."
+   },
+   {
+    "code": "SECURITY_RISK",
+    "severity": "media",
+    "detail": "Las herramientas de portapapeles tienen acceso a datos sensibles (contraseñas, claves); sin un desarrollador verificado, el riesgo de privacidad es alto."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de presencia web oficial verificable, sitio web propio o información sobre el equipo desarrollador. La única referencia es una página de Product Hunt que no redirige a un producto funcional, lo que impide confirmar su existencia real, seguridad o disponibilidad en España."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Clasifica automáticamente el contenido del portapapeles en distintas categorías · Verificador: La gestión de portapapeles es una categoría saturada; la clasificación automática no es una innovación disruptiva. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Valor añadido para usuarios que manejan mucho contenido copiado · Verificador: Sin sitio web ni modelo de negocio claro, el potencial de adopción es mínimo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Existe un mercado amplio de herramientas de productividad, pero con alta competencia · Verificador: Mercado de utilidades de productividad altamente competitivo (ej. Raycast, Alfred, Ditto).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información pública sobre el equipo fundador · Verificador: No existe información pública sobre los desarrolladores o la empresa detrás del proyecto.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos públicos sobre rondas de inversión o financiación · Verificador: No hay registros de financiación o estructura corporativa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Poca información sobre comunidad de usuarios o soporte activo · Verificador: Inexistente; no hay canales de soporte, redes sociales o comunidad activa. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Desconocido el número de usuarios activos o tasa de crecimiento · Verificador: No hay métricas de uso ni pruebas de que el software esté siendo utilizado. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Compite con otras extensiones y apps de gestión del portapapeles · Verificador: La competencia establecida es muy superior en fiabilidad y funciones. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología sencilla; bajo riesgo de fallos críticos · Verificador: Al no poder verificar el código o el origen, existe riesgo de malware o exfiltración de datos del portapapeles.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Producto gratuito, sin inversión financiera requerida · Verificador: Al ser un producto gratuito sin inversión, el riesgo financiero directo es nulo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No se ha confirmado disponibilidad o localización para usuarios españoles · Verificador: No hay evidencia de que el producto exista o esté adaptado para el mercado español. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay mecanismo de salida financiero; uso libre · Verificador: Al no haber inversión, la salida es simplemente desinstalar o dejar de usar.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Copy Haste\nCATEGORÍA: ia_tecnologia · herramientas_productividad\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado, depende de la adopción de usuarios y de la integración con flujos de trabajo habituales\nPUNTUACIÓN: 12/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Gestión avanzada del portapapeles con clasificación automática\nMOTIVOS PARA DESCONFIAR: La herramienta no cuenta con un dominio oficial o página de aterrizaje funcional.; Las herramientas de portapapeles tienen acceso a datos sensibles (contraseñas, claves); sin un desarrollador verificado, el riesgo de privacidad es alto.; El verificador tiene dudas: La herramienta carece de presencia web oficial verificable, sitio web propio o información sobre el equipo desarrollador. La única referencia es una página de Product Hunt que no redirige a un producto funcional, lo que impide confirmar su existencia real, seguridad o disponibilidad en España.\nCÓMO PARTICIPAR: Acceder a la página de Product Hunt y seguir el enlace a Copy Haste para registrarse y usar la herramienta\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/copy-haste",
+  "firstSeenAt": "2026-11-22T08:52:34Z",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
+  "aliases": [
+   "news-www-producthunt-com-products-copy-haste"
   ]
  },
  {
@@ -30775,16 +31972,16 @@
   "profitPath": "Comprar CBUCKS en un DEX de Solana y venderlo cuando el precio suba."
  },
  {
-  "name": "Honey‑trap awareness for AI professionals",
-  "category": "ia_tecnologia",
-  "subcategory": "seguridad",
+  "name": "Bending Spoons adquiere Mailchimp por $3.68 B",
+  "category": "startups",
+  "subcategory": "adquisiciones",
   "kind": "pasiva",
-  "description": "Artículo que alerta sobre riesgos de honey‑trap en el sector IA y el uso de IA para crear perfiles falsos.",
-  "officialUrl": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "description": "Bending Spoons compra Mailchimp a Intuit por 3.68 mil millones de dólares, combinando efectivo y acciones. La operación refleja la consolidación de plataformas SaaS y podría afectar el mercado de email marketing en España.",
+  "officialUrl": "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
   "participateUrl": null,
-  "country": "no aplica",
+  "country": "Italia/EE.UU.",
   "spainAvailability": "no",
-  "spainNotes": "No hay oferta comercial dirigida a España.",
+  "spainNotes": "No hay producto o servicio directo disponible para usuarios españoles.",
   "costs": {
    "minEntry": 0,
    "extra": 0,
@@ -30794,124 +31991,117 @@
   },
   "canLoseAll": false,
   "liquidity": "nula",
-  "exitNotes": "No aplica",
-  "horizon": "corto plazo (concienciación inmediata)",
+  "exitNotes": "No aplica, no hay inversión directa que liquidar.",
+  "horizon": "corto plazo (seguimiento de impacto de mercado)",
   "deadline": null,
-  "potential": "alto riesgo de seguridad para profesionales IA",
+  "potential": "bajo (no hay oportunidad de inversión directa)",
   "difficulty": "baja",
-  "timeNeeded": "15 minutos",
+  "timeNeeded": "5 minutos",
   "subscores": {
    "novedad": {
     "v": 7.5,
-    "why": "Artículo de 2026 sobre uso de IA en honey‑trap · Verificador: El artículo aborda el uso de IA generativa para sofisticar ataques de ingeniería social en 2026.",
+    "why": "Adquisición de gran relevancia en el sector SaaS · Verificador: Noticia de alto impacto en el sector tecnológico y SaaS.",
     "evidence": true
    },
    "potencial": {
     "v": 0.0,
-    "why": "Se advierte vulnerabilidad generalizada en el sector IA · Verificador: No es una oportunidad de inversión, es una alerta de seguridad. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "why": "No hay producto o inversión asociada al anuncio · Verificador: No existe vehículo de inversión para el usuario minorista.",
     "evidence": false
    },
    "mercado": {
     "v": 0.0,
-    "why": "No hay producto comercial asociado · Verificador: No existe mercado ni producto comercial asociado. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "why": "No se ofrece un mercado comercial para usuarios · Verificador: No hay mercado de participación disponible.",
     "evidence": false
    },
    "equipo": {
-    "v": 1.0,
-    "why": "No se menciona equipo de producto o startup · Verificador: No hay equipo de producto, solo fuentes periodísticas y expertos citados.",
+    "v": 0.0,
+    "why": "No se menciona equipo de producto para usuarios finales · Verificador: No aplica a la inversión del usuario.",
     "evidence": false
    },
    "financiacion": {
-    "v": 0.5,
-    "why": "No hay información de financiación · Verificador: No hay financiación ni capital de riesgo involucrado.",
+    "v": 0.0,
+    "why": "No hay información de financiación para inversores externos · Verificador: Operación privada de M&A (Fusiones y Adquisiciones).",
     "evidence": false
    },
    "comunidad": {
-    "v": 1.5,
-    "why": "Solo lectores de TechCrunch · Verificador: No hay comunidad de usuarios o inversores, solo lectores de prensa.",
+    "v": 0.0,
+    "why": "Solo lectores de la noticia, sin comunidad de usuarios · Verificador: No hay comunidad de inversores minoristas.",
     "evidence": false
    },
    "adopcion": {
-    "v": 1.0,
-    "why": "No hay adopción de solución concreta · Verificador: No hay adopción de tecnología o solución.",
+    "v": 0.0,
+    "why": "No hay adopción de solución por parte de usuarios finales · Verificador: No hay adopción de producto financiero.",
     "evidence": false
    },
    "competencia": {
     "v": 0.0,
-    "why": "No se identifican competidores directos de solución · Verificador: No aplica al ser un artículo informativo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "why": "No se identifican competidores directos de una oferta al usuario · Verificador: No aplica a la oportunidad de inversión.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 7.0,
-    "why": "Riesgo de uso de IA para crear perfiles falsos y engañar a ejecutivos · Verificador: El riesgo de suplantación mediante IA es real y creciente para profesionales con acceso a datos sensibles.",
-    "evidence": true
+    "v": 0.0,
+    "why": "Posible impacto en integración de productos y servicios SaaS · Verificador: No hay riesgo técnico para el usuario. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
    },
    "riesgo_financiero": {
     "v": 0.0,
-    "why": "No implica inversión financiera directa · Verificador: No hay inversión financiera, por lo tanto no hay riesgo de pérdida de capital. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "why": "No implica inversión financiera directa · Verificador: No hay exposición financiera para el usuario.",
     "evidence": false
    },
    "entrada_espana": {
     "v": 0.0,
-    "why": "No hay oferta local ni disponibilidad en España · Verificador: No es un servicio o producto disponible en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No hay disponibilidad de producto o servicio en España · Verificador: No es un producto financiero disponible en España.",
     "evidence": false
    },
    "salida": {
-    "v": 0.5,
-    "why": "No hay salida de inversión aplicable · Verificador: No hay salida de inversión posible.",
+    "v": 0.0,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No hay mecanismo de salida.",
     "evidence": false
    }
   },
   "redFlags": [
    {
-    "code": "falta_de_producto",
+    "code": "no_producto",
     "severity": "alta",
-    "detail": "No existe producto o inversión asociada al tema"
+    "detail": "No existe producto, servicio o activo en el que el usuario pueda invertir."
+   },
+   {
+    "code": "no_oportunidad_inversion",
+    "severity": "alta",
+    "detail": "La noticia es informativa, no una oportunidad de inversión o participación económica."
    },
    {
     "code": "informacion_limitada",
     "severity": "media",
-    "detail": "Los datos disponibles son solo un artículo de opinión"
+    "detail": "Los datos disponibles se limitan a un artículo de prensa."
    },
    {
-    "code": "no_es_oportunidad",
-    "severity": "alta",
-    "detail": "El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación."
+    "code": "no_oportunidad_inversion",
+    "severity": "critica",
+    "detail": "La noticia es puramente informativa sobre una adquisición corporativa. No existe forma de participar o invertir en esta operación."
    },
    {
-    "code": "falta_de_producto",
+    "code": "no_producto",
     "severity": "alta",
-    "detail": "No existe producto, servicio o plataforma que el usuario pueda utilizar."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea."
+    "detail": "No hay producto financiero ni activo disponible para el usuario."
    }
   ],
   "distrust": [
-   "No se trata de una oportunidad de inversión real"
+   "No es una oportunidad de inversión directa"
   ],
   "whyInteresting": [
-   "Alerta sobre un riesgo emergente en IA que puede afectar a profesionales y empresas"
+   "Indica una consolidación importante en el sector SaaS y puede afectar a proveedores de email marketing en España"
   ],
   "howToParticipate": [
-   "Leer el artículo y difundir buenas prácticas de seguridad",
-   "Implementar políticas de verificación de contactos en la empresa"
+   "Leer la noticia y seguir el desarrollo de la integración de Mailchimp en la oferta de Bending Spoons"
   ],
-  "lossCauses": [
-   "Exposición a ataques de honey‑trap",
-   "Filtración de información confidencial"
-  ],
-  "earlySignals": [
-   "Aumento de intentos de contacto sospechosos",
-   "Uso de IA para generar perfiles falsos"
-  ],
+  "lossCauses": [],
+  "earlySignals": [],
   "signals": {},
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Al no ser una oferta de inversión ni un servicio financiero, no está sujeto a supervisión de la CNMV ni registro MiCA.",
+   "notes": "Al ser una operación de M&A entre empresas privadas, no está sujeta a supervisión de la CNMV para inversores minoristas.",
    "sources": [
     "https://www.cnmv.es"
    ]
@@ -30919,7 +32109,7 @@
   "sources": [
    {
     "title": "TechCrunch Startups",
-    "url": "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/"
+    "url": "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/"
    }
   ],
   "discoveredVia": "TechCrunch Startups",
@@ -30929,47 +32119,42 @@
    "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
-   "verdict": "dudosa",
-   "reason": "La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea.",
+   "verdict": "confirmada",
+   "reason": "La adquisición de Mailchimp por parte de Bending Spoons es un hecho corporativo reportado por medios especializados. No constituye una oportunidad de inversión para particulares, ya que es una operación privada entre empresas.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 58
+   "agreementPct": 92
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "web-techcrunch-com",
   "isNew": false,
   "score": 0,
-  "rawScore": 15.3,
+  "rawScore": 6.0,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
   "caps": [
-   "-15 por 3 riesgo(s) alto(s)"
+   "-10 por 2 riesgo(s) alto(s)"
   ],
   "critical": false,
   "risk": "medio",
   "flags": [
    {
-    "code": "falta_de_producto",
+    "code": "no_producto",
     "severity": "alta",
-    "detail": "No existe producto o inversión asociada al tema"
+    "detail": "No existe producto, servicio o activo en el que el usuario pueda invertir."
+   },
+   {
+    "code": "no_oportunidad_inversion",
+    "severity": "alta",
+    "detail": "La noticia es informativa, no una oportunidad de inversión o participación económica."
    },
    {
     "code": "informacion_limitada",
     "severity": "media",
-    "detail": "Los datos disponibles son solo un artículo de opinión"
-   },
-   {
-    "code": "no_es_oportunidad",
-    "severity": "alta",
-    "detail": "El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea."
+    "detail": "Los datos disponibles se limitan a un artículo de prensa."
    }
   ],
-  "evidenced": 2,
+  "evidenced": 1,
   "breakdown": [
    {
     "key": "novedad",
@@ -30977,7 +32162,7 @@
     "weight": 8,
     "value": 7.5,
     "points": 6.0,
-    "why": "Artículo de 2026 sobre uso de IA en honey‑trap · Verificador: El artículo aborda el uso de IA generativa para sofisticar ataques de ingeniería social en 2026.",
+    "why": "Adquisición de gran relevancia en el sector SaaS · Verificador: Noticia de alto impacto en el sector tecnológico y SaaS.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -30987,7 +32172,7 @@
     "weight": 12,
     "value": 0.0,
     "points": 0.0,
-    "why": "Se advierte vulnerabilidad generalizada en el sector IA · Verificador: No es una oportunidad de inversión, es una alerta de seguridad. · Discrepancia entre modelos (8 vs 0): se toma el valor bajo.",
+    "why": "No hay producto o inversión asociada al anuncio · Verificador: No existe vehículo de inversión para el usuario minorista.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -30997,7 +32182,7 @@
     "weight": 8,
     "value": 0.0,
     "points": 0.0,
-    "why": "No hay producto comercial asociado · Verificador: No existe mercado ni producto comercial asociado. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "why": "No se ofrece un mercado comercial para usuarios · Verificador: No hay mercado de participación disponible.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31005,9 +32190,9 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 1.0,
-    "points": 1.0,
-    "why": "No se menciona equipo de producto o startup · Verificador: No hay equipo de producto, solo fuentes periodísticas y expertos citados.",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona equipo de producto para usuarios finales · Verificador: No aplica a la inversión del usuario.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31015,9 +32200,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 0.5,
-    "points": 0.3,
-    "why": "No hay información de financiación · Verificador: No hay financiación ni capital de riesgo involucrado.",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información de financiación para inversores externos · Verificador: Operación privada de M&A (Fusiones y Adquisiciones).",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31025,9 +32210,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 1.5,
-    "points": 1.1,
-    "why": "Solo lectores de TechCrunch · Verificador: No hay comunidad de usuarios o inversores, solo lectores de prensa.",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Solo lectores de la noticia, sin comunidad de usuarios · Verificador: No hay comunidad de inversores minoristas.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31035,9 +32220,9 @@
     "key": "adopcion",
     "label": "Adopción",
     "weight": 9,
-    "value": 1.0,
-    "points": 0.9,
-    "why": "No hay adopción de solución concreta · Verificador: No hay adopción de tecnología o solución.",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay adopción de solución por parte de usuarios finales · Verificador: No hay adopción de producto financiero.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31047,7 +32232,7 @@
     "weight": 5,
     "value": 0.0,
     "points": 0.0,
-    "why": "No se identifican competidores directos de solución · Verificador: No aplica al ser un artículo informativo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "why": "No se identifican competidores directos de una oferta al usuario · Verificador: No aplica a la oportunidad de inversión.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31055,10 +32240,10 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Riesgo de uso de IA para crear perfiles falsos y engañar a ejecutivos · Verificador: El riesgo de suplantación mediante IA es real y creciente para profesionales con acceso a datos sensibles.",
-    "evidence": true,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Posible impacto en integración de productos y servicios SaaS · Verificador: No hay riesgo técnico para el usuario. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
     "cappedForNoEvidence": false
    },
    {
@@ -31067,17 +32252,17 @@
     "weight": 10,
     "value": 0.0,
     "points": 0.0,
-    "why": "No implica inversión financiera directa · Verificador: No hay inversión financiera, por lo tanto no hay riesgo de pérdida de capital. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "why": "No implica inversión financiera directa · Verificador: No hay exposición financiera para el usuario.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
     "value": 0.0,
     "points": 0.0,
-    "why": "No hay oferta local ni disponibilidad en España · Verificador: No es un servicio o producto disponible en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No hay disponibilidad de producto o servicio en España · Verificador: No es un producto financiero disponible en España.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -31085,9 +32270,9 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 0.5,
-    "points": 0.4,
-    "why": "No hay salida de inversión aplicable · Verificador: No hay salida de inversión posible.",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No hay mecanismo de salida.",
     "evidence": false,
     "cappedForNoEvidence": false
    }
@@ -31167,15 +32352,17 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Honey‑trap awareness for AI professionals\nCATEGORÍA: ia_tecnologia · seguridad\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: no aplica\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto riesgo de seguridad para profesionales IA\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo (concienciación inmediata)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Alerta sobre un riesgo emergente en IA que puede afectar a profesionales y empresas\nMOTIVOS PARA DESCONFIAR: No existe producto o inversión asociada al tema; Los datos disponibles son solo un artículo de opinión; El contenido es un artículo de prensa sobre riesgos de seguridad, no una oportunidad de inversión o participación.; El verificador tiene dudas: La ficha describe un artículo informativo sobre ciberseguridad, no una oportunidad de inversión o producto comercial. El contenido es una advertencia sobre riesgos de ingeniería social (honey-traps) dirigida a profesionales de IA. No existe una plataforma, activo o servicio en el que participar, por lo que la categorización como 'oportunidad' es conceptualmente errónea.; No se trata de una oportunidad de inversión real\nCÓMO PARTICIPAR: Leer el artículo y difundir buenas prácticas de seguridad; Implementar políticas de verificación de contactos en la empresa\nQUÉ PODRÍA HACERME PERDER EL DINERO: Exposición a ataques de honey‑trap; Filtración de información confidencial\nFUENTES: https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "alertText": "NOMBRE: Bending Spoons adquiere Mailchimp por $3.68 B\nCATEGORÍA: startups · adquisiciones\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Italia/EE.UU.\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: bajo (no hay oportunidad de inversión directa)\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo (seguimiento de impacto de mercado)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Indica una consolidación importante en el sector SaaS y puede afectar a proveedores de email marketing en España\nMOTIVOS PARA DESCONFIAR: No existe producto, servicio o activo en el que el usuario pueda invertir.; La noticia es informativa, no una oportunidad de inversión o participación económica.; Los datos disponibles se limitan a un artículo de prensa.; No es una oportunidad de inversión directa\nCÓMO PARTICIPAR: Leer la noticia y seguir el desarrollo de la integración de Mailchimp en la oferta de Bending Spoons\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
   "firstSeenAt": "2026-11-21T12:06:40Z",
-  "lastSeenAt": "2026-11-21T12:26:07Z",
-  "runId": "run-20261121-1226",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
   "aliases": [
    "news-techcrunch-com-2026-11-20-bending-spoons-buys-mailchimp-for-3-68-billion",
    "news-techcrunch-com-2026-11-20-experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-hone",
    "news-techcrunch-com-podcast-the-fallout-from-nvidias-jensen-huang-scandal-continues"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "gitroots",
@@ -31570,6 +32757,405 @@
   "runId": "run-20261121-1226",
   "aliases": [
    "news-www-producthunt-com-products-gitroots"
+  ]
+ },
+ {
+  "name": "Webless Agents",
+  "category": "ia_tecnologia",
+  "subcategory": "startups",
+  "kind": "activa",
+  "description": "Plataforma que permite crear agentes de IA sin necesidad de infraestructura web, orientada a interactuar directamente con clientes.",
+  "officialUrl": "https://www.producthunt.com/products/webless",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se ha encontrado información pública sobre precios; posible modelo freemium o suscripción posterior.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica como inversión financiera; no hay mecanismo de salida monetaria.",
+  "horizon": "corto-medio plazo (producto en fase temprana)",
+  "deadline": null,
+  "potential": "Potencial moderado si logra captar clientes que necesiten agentes IA sin infraestructura propia.",
+  "difficulty": "media",
+  "timeNeeded": "Horas de investigación y registro en la plataforma",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Producto listado en Product Hunt como solución sin backend web · Verificador: El concepto de agentes sin backend es común en el ecosistema actual de IA. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "Falta de datos de adopción y mercado · Verificador: No hay producto, ni equipo, ni modelo de negocio verificable. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Mercado de IA SaaS en crecimiento, pero competencia alta · Verificador: No hay mercado identificable para una entidad inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No se ha encontrado rastro de fundadores o equipo técnico.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos públicos de rondas de inversión · Verificador: Cero actividad de financiación pública o privada.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "Sin métricas de usuarios o comunidad visibles · Verificador: Inexistente.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No hay cifras de usuarios activos · Verificador: Inexistente.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Existen varias plataformas de agentes IA sin backend, pero sin datos comparativos claros · Verificador: No aplica al no existir el producto. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Depende de infraestructuras de IA externas y posibles limitaciones de integración · Verificador: Riesgo máximo: el producto no existe o es inaccesible. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "No implica inversión directa de capital, pero el valor del producto es incierto · Verificador: Riesgo máximo por falta de transparencia y ausencia de entidad legal. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No hay indicios de disponibilidad o soporte local · Verificador: No hay presencia en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay mecanismo de salida financiera para usuarios · Verificador: No hay mecanismo de salida.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "missing_official_website",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar información del producto"
+   },
+   {
+    "code": "non_existent_entity",
+    "severity": "critica",
+    "detail": "No se ha podido verificar la existencia de la empresa o el producto."
+   },
+   {
+    "code": "broken_link",
+    "severity": "alta",
+    "detail": "El enlace oficial redirige a una página sin contenido funcional o bloqueada (403)."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre equipo, sede o términos legales."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El enlace proporcionado es un marcador de posición de Product Hunt que no conduce a un producto funcional ni a una entidad empresarial real. No existe rastro de una empresa llamada 'Webless Agents' en registros mercantiles ni presencia web operativa. La información es insuficiente y carece de verificabilidad."
+   }
+  ],
+  "distrust": [
+   "falta de información oficial y de precios"
+  ],
+  "whyInteresting": [
+   "es una propuesta novedosa de agentes IA sin necesidad de backend propio"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt",
+   "Buscar enlaces a registro o beta en la descripción",
+   "Registrarse y probar la herramienta si está disponible"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "listado reciente en Product Hunt"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "Al no ser una entidad financiera ni un producto de inversión, no está bajo supervisión de la CNMV, pero la falta de datos impide cualquier validación legal.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/webless"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "El enlace proporcionado es un marcador de posición de Product Hunt que no conduce a un producto funcional ni a una entidad empresarial real. No existe rastro de una empresa llamada 'Webless Agents' en registros mercantiles ni presencia web operativa. La información es insuficiente y carece de verificabilidad.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-producthunt-com-products-webless",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 8.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "missing_official_website",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar información del producto"
+   },
+   {
+    "code": "non_existent_entity",
+    "severity": "critica",
+    "detail": "No se ha podido verificar la existencia de la empresa o el producto."
+   },
+   {
+    "code": "broken_link",
+    "severity": "alta",
+    "detail": "El enlace oficial redirige a una página sin contenido funcional o bloqueada (403)."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre equipo, sede o términos legales."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El enlace proporcionado es un marcador de posición de Product Hunt que no conduce a un producto funcional ni a una entidad empresarial real. No existe rastro de una empresa llamada 'Webless Agents' en registros mercantiles ni presencia web operativa. La información es insuficiente y carece de verificabilidad."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Producto listado en Product Hunt como solución sin backend web · Verificador: El concepto de agentes sin backend es común en el ecosistema actual de IA. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Falta de datos de adopción y mercado · Verificador: No hay producto, ni equipo, ni modelo de negocio verificable. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Mercado de IA SaaS en crecimiento, pero competencia alta · Verificador: No hay mercado identificable para una entidad inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No se ha encontrado rastro de fundadores o equipo técnico.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos públicos de rondas de inversión · Verificador: Cero actividad de financiación pública o privada.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin métricas de usuarios o comunidad visibles · Verificador: Inexistente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay cifras de usuarios activos · Verificador: Inexistente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Existen varias plataformas de agentes IA sin backend, pero sin datos comparativos claros · Verificador: No aplica al no existir el producto. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de infraestructuras de IA externas y posibles limitaciones de integración · Verificador: Riesgo máximo: el producto no existe o es inaccesible. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión directa de capital, pero el valor del producto es incierto · Verificador: Riesgo máximo por falta de transparencia y ausencia de entidad legal. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay indicios de disponibilidad o soporte local · Verificador: No hay presencia en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mecanismo de salida financiera para usuarios · Verificador: No hay mecanismo de salida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Webless Agents\nCATEGORÍA: ia_tecnologia · startups\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://www.producthunt.com/products/webless\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Potencial moderado si logra captar clientes que necesiten agentes IA sin infraestructura propia.\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo (producto en fase temprana)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: es una propuesta novedosa de agentes IA sin necesidad de backend propio\nMOTIVOS PARA DESCONFIAR: La página oficial devuelve error 403, impidiendo validar información del producto; No se ha podido verificar la existencia de la empresa o el producto.; El enlace oficial redirige a una página sin contenido funcional o bloqueada (403).; Ausencia total de información sobre equipo, sede o términos legales.; El verificador no pudo confirmar que sea real: El enlace proporcionado es un marcador de posición de Product Hunt que no conduce a un producto funcional ni a una entidad empresarial real. No existe rastro de una empresa llamada 'Webless Agents' en registros mercantiles ni presencia web operativa. La información es insuficiente y carece de verificabilidad.; falta de información oficial y de precios\nCÓMO PARTICIPAR: Visitar la página de Product Hunt; Buscar enlaces a registro o beta en la descripción; Registrarse y probar la herramienta si está disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/webless",
+  "firstSeenAt": "2026-11-22T08:52:34Z",
+  "lastSeenAt": "2026-11-22T08:52:34Z",
+  "runId": "run-20261122-0852",
+  "aliases": [
+   "news-www-producthunt-com-products-webless"
   ]
  }
 ]

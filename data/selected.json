@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-22T08:31:42Z",
+ "generatedAt": "2026-11-22T08:57:38Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,15 +40,15 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 79,
+ "studied": 83,
  "selected": [],
  "nearMisses": [
   {
    "id": "web-focuspyme-emprenemjunts-es",
    "name": "FIT 2026 – Foro de Inversión y Territorio",
    "category": "negocio",
-   "score": 71,
-   "adjustedScore": 71,
+   "score": 73,
+   "adjustedScore": 73,
    "risk": "bajo",
    "officialUrl": "https://focuspyme.emprenemjunts.es/",
    "minEntry": 0,
@@ -78,34 +78,6 @@
    "adjustedScore": 63,
    "risk": "medio",
    "officialUrl": "https://github.com/diggerhq/opencomputer",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 7,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-bfsport-gal",
-   "name": "BF Sport Incubadora 2027",
-   "category": "startups",
-   "score": 62,
-   "adjustedScore": 62,
-   "risk": "medio",
-   "officialUrl": "https://bfsport.gal/",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
@@ -181,6 +153,35 @@
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": false
+  },
+  {
+   "id": "web-bfsport-gal",
+   "name": "BF Sport Incubadora 2027",
+   "category": "startups",
+   "score": 63,
+   "adjustedScore": 63,
+   "risk": "medio",
+   "officialUrl": "https://bfsport.gal/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
   }
  ],
  "manuals": {
@@ -316,149 +317,194 @@
   "web-focuspyme-emprenemjunts-es": {
    "segundaOpinion": {
     "veredicto": "confirmada",
-    "motivo": "No hay contradicciones y la información es coherente",
+    "motivo": "Evento gratuito con alto valor de networking y aprendizaje, sin riesgo financiero.",
     "contradicciones": []
    },
    "viaDeBeneficio": {
     "existe": false,
-    "explicacion": "El evento no ofrece retorno económico directo"
+    "explicacion": "No hay retorno económico directo; el beneficio es la relación y conocimiento adquirido."
    },
-   "resumen": "FIT 2026 es un foro de networking y aprendizaje sobre inversión y territorio en la Comunidad Valenciana. Se celebra el 25 de noviembre de 2026 en Bellver Blue Tech Zone.",
+   "resumen": "Jornada presencial de un día en la Comunidad Valenciana que reúne a inversores, empresarios y expertos para debatir tendencias de financiación, IA y contratación pública.",
    "cuantoPoner": "0 €",
    "antesDeEmpezar": [
-    "Verificar el coste de inscripción en la web oficial",
-    "Confirmar la disponibilidad de plazas",
-    "Planificar transporte y alojamiento si fuera necesario"
+    "Verificar en la web oficial si la inscripción es gratuita o requiere pago",
+    "Confirmar disponibilidad de transporte y alojamiento si fuera necesario"
    ],
    "pasos": [
     {
      "titulo": "Visitar la web oficial",
-     "detalle": "Acceder a https://focuspyme.emprenemjunts.es/ y buscar la sección de registro",
+     "detalle": "Acceder a https://focuspyme.emprenemjunts.es/ y localizar la sección de registro del evento",
      "tiempo": "5 min"
     },
     {
-     "titulo": "Registrarse",
-     "detalle": "Completar el formulario de inscripción o contactar con la Red CEEI",
+     "titulo": "Buscar registro",
+     "detalle": "Revisar la página del evento FIT 2026 y localizar el enlace de inscripción o el contacto de la Red CEEI",
+     "tiempo": "5 min"
+    },
+    {
+     "titulo": "Completar inscripción",
+     "detalle": "Rellenar el formulario o enviar correo a la dirección indicada",
      "tiempo": "10 min"
     },
     {
-     "titulo": "Planificar viaje",
-     "detalle": "Reservar transporte y, si es necesario, alojamiento",
-     "tiempo": "30 min"
+     "titulo": "Preparar agenda",
+     "detalle": "Revisar ponencias, preparar preguntas y contactos a conocer",
+     "tiempo": "15 min"
     },
     {
-     "titulo": "Asistir al evento",
-     "detalle": "Llegar a Bellver Blue Tech Zone el 25 de noviembre de 2026",
+     "titulo": "Asistir el evento",
+     "detalle": "Presentarse a las 09:00 en Bellver Blue Tech Zone y participar en las sesiones",
      "tiempo": "5 h"
     }
    ],
-   "planDeSalida": "No aplica, ya que no hay inversión financiera; simplemente asistir y aprovechar el networking",
+   "planDeSalida": "No aplica, ya que no hay inversión financiera; la salida es la experiencia y contactos obtenidos.",
    "senalesDeAlarma": [
-    "Evento cancelado o pospuesto",
-    "Inscripción con coste inesperado",
-    "Falta de información clara sobre la agenda"
+    "Descubrir un coste inesperado de inscripción",
+    "Cancelación o cambio de fecha del evento"
    ],
    "erroresTipicos": [
-    "No comprobar el coste antes de registrarse",
-    "No planificar el transporte",
-    "No aprovechar las oportunidades de networking"
+    "No preparar preguntas o temas de interés",
+    "No llevar tarjetas de visita",
+    "No seguir la agenda del día"
    ],
-   "fiscalidad": "No hay ingresos sujetos a IRPF; la asistencia no genera obligaciones fiscales. Se recomienda confirmar con un asesor si se generan ingresos indirectos.",
-   "tiempoNecesario": "5 h de evento + 2 h de desplazamiento (aprox.)",
+   "fiscalidad": "No hay ingresos, por lo que no afecta al IRPF. Los gastos de viaje y alojamiento podrían deducirse como gastos de actividad si se justifica.",
+   "tiempoNecesario": "5 h el día del evento, más tiempo previo para preparación",
    "modelo": "groq:openai/gpt-oss-20b",
    "independiente": true,
-   "webLeida": false,
-   "generadoEn": "2026-11-21T08:19:30Z",
-   "fichaScore": 71
+   "webLeida": true,
+   "generadoEn": "2026-11-22T08:57:41Z",
+   "fichaScore": 73
   },
   "web-bfsport-gal": {
    "segundaOpinion": {
-    "veredicto": "confirmada",
-    "motivo": "Es un programa gratuito con mentoría y red de contactos, sin riesgo financiero y con posibilidad de validar un MVP.",
+    "veredicto": "dudosa",
+    "motivo": "El programa es gratuito pero solo para Galicia y con plazas limitadas, lo que reduce la probabilidad de aceptación y no ofrece financiación directa.",
     "contradicciones": []
    },
    "viaDeBeneficio": {
     "existe": false,
-    "explicacion": "No ofrece retorno financiero directo; el beneficio es el acceso a la red y la validación del proyecto."
+    "explicacion": "No hay retorno financiero directo; el beneficio es de tipo no monetario (red, mentoría, sandbox)."
    },
-   "resumen": "BF Sport Incubadora 2027 es un programa de incubación gratuito de 8 semanas para startups deportivas en fase de idea, con mentoría y acceso a una red de expertos en Galicia.",
+   "resumen": "BF Sport es un programa de incubación gratuito de 8 semanas para startups de deporte y bienestar en Galicia. Ofrece mentoría, red de contactos y sandbox para validar ideas, pero no financiamiento directo.",
    "cuantoPoner": "0 €",
    "antesDeEmpezar": [
-    "Verificar que el proyecto esté en fase de definición y que el equipo sea de Galicia, España; leer las Bases Legales del programa; confirmar que la fecha límite es 22/12/2026."
+    "Confirmar que la empresa está ubicada en Galicia y que el proyecto está en fase de idea.",
+    "Verificar que el proyecto cumple con los requisitos de la fase Pre‑seed.",
+    "Revisar la fecha límite de presentación (22/12/2026).",
+    "Preparar la documentación necesaria (descripción del proyecto, objetivo y estado actual).",
+    "Asegurarse de que no existen costes ocultos (por ejemplo, viajes)."
    ],
    "pasos": [
     {
-     "titulo": "Acceder al portal",
-     "detalle": "Ir a https://bfsport.gal/ y buscar la convocatoria Pre‑Seed 2027.",
-     "tiempo": "5 min"
+     "titulo": "Revisar elegibilidad",
+     "detalle": "Comprueba que tu empresa está en Galicia y que tu proyecto está en fase de idea.",
+     "tiempo": "1‑2 h"
+    },
+    {
+     "titulo": "Preparar candidatura",
+     "detalle": "Completa el formulario en el portal oficial y adjunta la descripción del proyecto.",
+     "tiempo": "3‑4 h"
+    },
+    {
+     "titulo": "Enviar solicitud",
+     "detalle": "Sube la candidatura antes del 22 dic 2026.",
+     "tiempo": "30 min"
+    },
+    {
+     "titulo": "Participar en la incubación",
+     "detalle": "Asiste a las sesiones híbridas de 25 ene‑25 mar 2027 y aprovecha el sandbox.",
+     "tiempo": "8 semanas"
+    },
+    {
+     "titulo": "Aprovechar la red",
+     "detalle": "Conecta con mentores, empresas tractoras y participa en eventos de networking.",
+     "tiempo": "Durante la incubación"
     }
    ],
+   "planDeSalida": "Si no eres seleccionado, no hay coste y puedes continuar con tu proyecto. Si lo eres, al finalizar las 8 semanas evalúa el progreso; si no hay tracción, considera pivotar o buscar financiación externa; si sí, utiliza la red para buscar inversores o clientes.",
+   "senalesDeAlarma": [
+    "No ser seleccionado tras la convocatoria.",
+    "Falta de compromiso o asistencia a las sesiones.",
+    "Mentores o contactos que no aportan valor.",
+    "Proyecto que no avanza después de 4 semanas de incubación."
+   ],
+   "erroresTipicos": [
+    "Aplicar sin cumplir los requisitos de ubicación o fase.",
+    "Invertir tiempo en la candidatura sin preparar una propuesta clara.",
+    "No aprovechar el sandbox para validar la idea.",
+    "No seguir el plan de acción tras la incubación."
+   ],
+   "fiscalidad": "Los gastos de participación (si los hubiera) pueden deducirse como gastos de actividad. No hay ingresos que declarar. Se recomienda confirmar con un asesor fiscal sobre la deducción de gastos y la posible obligación de IVA si se generan ingresos posteriores.",
+   "tiempoNecesario": "8 semanas + 10 h",
    "modelo": "groq:openai/gpt-oss-20b",
    "independiente": true,
    "webLeida": true,
-   "generadoEn": "2026-11-21T08:19:42Z",
-   "fichaScore": 62
+   "generadoEn": "2026-11-22T08:57:46Z",
+   "fichaScore": 63
   },
   "web-bfhc-es": {
    "segundaOpinion": {
     "veredicto": "dudosa",
-    "motivo": "El programa no ofrece retorno económico directo y depende de financiación externa post‑incubación",
+    "motivo": "El programa ofrece recursos sin coste, pero la viabilidad comercial y regulatoria es incierta.",
     "contradicciones": []
    },
    "viaDeBeneficio": {
     "existe": false,
-    "explicacion": "No hay mecanismo de ganancia directa; el beneficio es el acceso a recursos y posibles inversores tras la incubación"
+    "explicacion": "No hay pagos ni recompensas; el beneficio es el acceso a mentorización y recursos."
    },
-   "resumen": "Programa de incubación de 12 meses para startups de salud en Galicia, con mentorización y recursos públicos.",
+   "resumen": "Programa de incubación de 12 meses para startups de salud en Galicia, con mentorización y validación clínica.",
    "cuantoPoner": "0 €",
    "antesDeEmpezar": [
-    "Verificar que la startup cumpla con los requisitos de la convocatoria",
-    "Confirmar que la sede sea en Galicia y que la empresa esté registrada en España",
-    "Revisar que no haya costes de participación"
+    "Verificar requisitos de sector sanitario",
+    "Confirmar ausencia de costes ocultos en la web oficial",
+    "Contactar al programa para confirmar disponibilidad y proceso"
    ],
    "pasos": [
     {
-     "titulo": "Visitar web",
-     "detalle": "Acceder a https://bfhc.es/ y leer la convocatoria",
-     "tiempo": "5 min"
+     "titulo": "Visitar la web oficial",
+     "detalle": "Acceder a https://bfhc.es/ y revisar la sección de incubación",
+     "tiempo": "5 min"
     },
     {
-     "titulo": "Contacto",
+     "titulo": "Contactar al programa",
      "detalle": "Enviar correo o rellenar formulario de contacto",
-     "tiempo": "10 min"
+     "tiempo": "10 min"
     },
     {
      "titulo": "Presentar candidatura",
-     "detalle": "Completar la solicitud con la documentación requerida",
-     "tiempo": "30 min"
+     "detalle": "Completar el formulario de solicitud y adjuntar documentación requerida",
+     "tiempo": "30 min"
     }
    ],
-   "planDeSalida": "La salida se produce al finalizar la incubación; la startup puede buscar inversión externa o graduarse sin retorno económico inmediato.",
+   "planDeSalida": "Graduación tras 12 meses y búsqueda de inversión externa; no hay salida automática de capital.",
    "senalesDeAlarma": [
     "No conseguir financiación tras la incubación",
-    "El proyecto no pasa la validación clínica necesaria"
+    "Falta de validación clínica",
+    "No cumplir requisitos regulatorios"
    ],
    "erroresTipicos": [
-    "No preparar un plan de negocio sólido",
-    "Ignorar los requisitos regulatorios de salud",
-    "No seguir el proceso de selección"
+    "No preparar plan de negocio sólido",
+    "Ignorar requisitos de certificación CE/FDA",
+    "Subestimar tiempo de validación clínica"
    ],
-   "fiscalidad": "Si la startup recibe financiación posterior, se considerará ingreso en el IRPF; se recomienda consultar con un asesor fiscal.",
-   "tiempoNecesario": "Compromiso de tiempo completo durante los 12 meses de incubación",
+   "fiscalidad": "Los ingresos de salida se tributarán como rendimientos empresariales en el IRPF; se recomienda confirmar con un asesor fiscal.",
+   "tiempoNecesario": "Compromiso de tiempo completo durante la incubación (12 meses).",
    "modelo": "groq:openai/gpt-oss-20b",
    "independiente": true,
    "webLeida": false,
-   "generadoEn": "2026-11-21T08:19:59Z",
-   "fichaScore": 60
+   "generadoEn": "2026-11-22T08:58:02Z",
+   "fichaScore": 61
   }
  },
  "ai": {
-  "used": 0,
+  "used": 3,
   "errors": [],
-  "calls": {}
+  "calls": {
+   "groq": 3
+  }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-22T08:31:42Z",
+  "at": "2026-11-22T08:58:02Z",
   "status": 200
  }
 }
