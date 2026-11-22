@@ -70,6 +70,8 @@ Devuelve:
  "riesgo_tecnico": {{...}}, "riesgo_financiero": {{...}}, "entrada_espana": {{...}}, "salida": {{...}}}},
 "redFlags": [{{"code": "snake_case", "severity": "critica|alta|media|baja", "detail": "..."}}],
 "distrust": ["..."], "whyInteresting": ["..."], "howToParticipate": ["pasos concretos; el radar no los ejecuta"],
+"actionable": true|false (true solo si el usuario puede obtener un beneficio económico concreto: recompensa, premio, airdrop, venta, ingreso, ahorro o revalorización; un programa gratis, una noticia o un repositorio sin mecanismo de ganancia = false),
+"profitPath": "cómo ganaría dinero exactamente el usuario, en una frase; vacío si actionable es false",
 "lossCauses": ["..."], "earlySignals": ["..."], "signals": {{"métrica": número}},
 "regulatory": {{"checked": false, "status": "desconocido", "notes": "pendiente de verificación", "sources": []}}}}"""
 

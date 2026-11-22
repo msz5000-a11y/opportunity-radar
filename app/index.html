@@ -101,8 +101,8 @@ h3{font-size:15px;font-weight:600}
 .toggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;white-space:nowrap}
 
 /* Navegación inferior */
-nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px 6px calc(env(safe-area-inset-bottom) + 6px);z-index:10}
-nav.tabs button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:11px;color:var(--muted);padding:6px 0;cursor:pointer;border-radius:8px}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(6,1fr);padding:6px 4px calc(env(safe-area-inset-bottom) + 6px);z-index:10}
+nav.tabs button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;color:var(--muted);padding:6px 0;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer;border-radius:8px}
 nav.tabs button[aria-current="page"]{color:var(--accent);background:var(--surface-2)}
 nav.tabs svg{width:22px;height:22px}
 
@@ -142,6 +142,7 @@ td{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
 .toast.show{display:block}
 details summary{cursor:pointer;font-weight:600}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+.cat-head{margin:14px 0 2px;font-size:15px}
 </style>
 </head>
 <body>
@@ -219,6 +220,7 @@ details summary{cursor:pointer;font-weight:600}
         </select>
       </div>
       <div class="row">
+        <label class="toggle"><input type="checkbox" id="fUseful" checked> Solo aprovechables (nota 50+, sin riesgo crítico ni muy alto, con forma clara de ganar dinero)</label>
         <label class="toggle"><input type="checkbox" id="fSpain"> Solo disponibles en España</label>
         <label class="toggle"><input type="checkbox" id="fShowDiscarded"> Mostrar descartadas</label>
       </div>
@@ -228,6 +230,11 @@ details summary{cursor:pointer;font-weight:600}
   </section>
 
   <!-- SEGUIMIENTO -->
+  <section id="v-ideas" class="view" hidden>
+    <h1>Ideas para copiar</h1>
+    <p class="small muted" style="margin-top:-6px">Apps, SaaS, software y negocios que han triunfado hace poco en algún país y se podrían replicar en España, Egipto o el Golfo. Se actualiza cada día.</p>
+    <div id="ideasRoot" class="stack"><div class="empty">Cargando ideas…</div></div>
+  </section>
   <section id="v-track" class="view" hidden>
     <h1>Seguimiento</h1>
     <div class="section">
@@ -342,6 +349,7 @@ details summary{cursor:pointer;font-weight:600}
 <nav class="tabs" aria-label="Secciones">
   <button data-go="radar" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></svg>Radar</button>
   <button data-go="opps"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Oportunidades</button>
+  <button data-go="ideas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg>Ideas</button>
   <button data-go="track"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 3h12v18l-6-4-6 4z"/></svg>Seguimiento</button>
   <button data-go="history"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Historial</button>
   <button data-go="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4.5-6 8-6s7 2 8 6"/></svg>Perfil</button>
@@ -385,7 +393,7 @@ details summary{cursor:pointer;font-weight:600}
   $$("button[data-mode]").forEach(b => b.addEventListener("click", () => applyMode(b.dataset.mode)));
 
   // ---------- navegación ----------
-  const VIEWS = ["radar","opps","track","history","settings"];
+  const VIEWS = ["radar","opps","ideas","track","history","settings"];
   function go(v, push = true) {
     if (!VIEWS.includes(v)) v = "radar";
     VIEWS.forEach(n => { $("#v-" + n).hidden = n !== v; });
@@ -521,8 +529,9 @@ details summary{cursor:pointer;font-weight:600}
   function renderOpps() {
     const q = $("#q").value.trim().toLowerCase();
     const cat = $("#fCat").value, tier = $("#fTier").value, kind = $("#fKind").value, risk = $("#fRisk").value, sort = $("#fSort").value;
-    const spain = $("#fSpain").checked, showDisc = $("#fShowDiscarded").checked;
+    const spain = $("#fSpain").checked, showDisc = $("#fShowDiscarded").checked, useful = $("#fUseful").checked;
     let list = state.opps.filter(o => {
+      if (useful && !showDisc && ((o.score || 0) < 50 || o.critical || o.risk === "muy alto" || o.actionable === false || o.tier === "descartar")) return false;
       const disc = actionOf(o.id) === "descartada";
       if (showDisc ? !disc : disc) return false;
       if (cat && o.category !== cat) return false;
@@ -538,9 +547,13 @@ details summary{cursor:pointer;font-weight:600}
               sort === "cost" ? (a,b) => (+a.costs?.minEntry||0) - (+b.costs?.minEntry||0) :
               (a,b) => (b.score||0) - (a.score||0));
     $("#oppCount").textContent = `${list.length} ${list.length === 1 ? "oportunidad" : "oportunidades"}`;
-    $("#oppList").innerHTML = list.map(oppCard).join("") || `<div class="empty">Nada coincide con estos filtros.</div>`;
+    const groups = Object.keys(CAT).map(c => [c, list.filter(o => o.category === c)]).filter(([, l]) => l.length);
+    const rest = list.filter(o => !CAT[o.category]);
+    $("#oppList").innerHTML = (cat || groups.length < 2 ? list.map(oppCard).join("")
+      : groups.map(([c, l]) => `<h3 class="cat-head">${esc(CAT[c])} <span class="muted small">${l.length}</span></h3>` + l.map(oppCard).join("")).join("") + rest.map(oppCard).join(""))
+      || `<div class="empty">Nada útil con estos filtros. Desmarca «Solo aprovechables» para ver todo.</div>`;
   }
-  ["#q","#fCat","#fTier","#fKind","#fRisk","#fSort","#fSpain","#fShowDiscarded"].forEach(s => $(s).addEventListener("input", renderOpps));
+  ["#q","#fCat","#fTier","#fKind","#fRisk","#fSort","#fSpain","#fShowDiscarded","#fUseful"].forEach(s => $(s).addEventListener("input", renderOpps));
 
   // ---------- render: seguimiento ----------
   function committedTotal() { return Object.values(state.actions).reduce((s, a) => s + (a.action !== "descartada" && +a.committedEur > 0 ? +a.committedEur : 0), 0); }
@@ -898,6 +911,6 @@ details summary{cursor:pointer;font-weight:600}
   setInterval(() => { if (!state.current) loadData(); }, 5 * 60000);
 })();
 </script>
-<script src="selected.js?v=4"></script><script src="markets.js?v=4"></script><script src="i18n.js?v=4"></script>
+<script src="selected.js?v=5"></script><script src="markets.js?v=5"></script><script src="ideas.js?v=5"></script><script src="i18n.js?v=5"></script>
 </body>
 </html>

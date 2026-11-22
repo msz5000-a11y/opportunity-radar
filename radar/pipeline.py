@@ -277,7 +277,7 @@ def scoring_input_keys():
     return {"name", "category", "subcategory", "kind", "description", "officialUrl", "participateUrl", "country",
             "spainAvailability", "spainNotes", "costs", "canLoseAll", "liquidity", "exitNotes", "horizon", "deadline",
             "potential", "difficulty", "timeNeeded", "subscores", "redFlags", "distrust", "whyInteresting",
-            "howToParticipate", "lossCauses", "earlySignals", "market", "signals", "regulatory", "sources",
+            "howToParticipate", "actionable", "profitPath", "lossCauses", "earlySignals", "market", "signals", "regulatory", "sources",
             "discoveredAt", "aiModels", "verification", "securityChecks", "discoveredVia"}
 
 
@@ -358,8 +358,8 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
             srcs["tipo_cambio_BCE"] = st
             if fx:
                 state["usdToEur"] = fx
-            for fn in (collectors.dexscreener_tokens, collectors.geckoterminal_trending, collectors.coingecko_trending,
-                       collectors.hacker_news, collectors.github_rising):
+            # Hacker News y GitHub ya no entran aquí (generaban ruido: software sin forma de ganar dinero); alimentan «Ideas».
+            for fn in (collectors.dexscreener_tokens, collectors.geckoterminal_trending, collectors.coingecko_trending):
                 if fn in (collectors.dexscreener_tokens, collectors.geckoterminal_trending, collectors.coingecko_trending) and "cripto" not in profile["categories"]:
                     continue
                 got, st = fn()
