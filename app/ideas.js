@@ -25,7 +25,9 @@
 
   function card(it) {
     const mv = it.mvp || {}, cost = Array.isArray(mv.costEur) ? mv.costEur : [];
-    const fits = Object.keys(MK).map(m => `<span class="chip ${fit(it, m) >= 7 ? "good" : fit(it, m) >= 5 ? "" : "bad"}">${MK[m]} ${fit(it, m)}/10</span>`).join("");
+    const orig = (m) => !!((it.markets || {})[m] || {}).origin;
+    const fits = Object.keys(MK).map(m => orig(m) ? `<span class="chip">${MK[m]}: ya existe (origen)</span>` : `<span class="chip ${fit(it, m) >= 7 ? "good" : fit(it, m) >= 5 ? "" : "bad"}">${MK[m]} ${fit(it, m)}/10</span>`).join("")
+      + (it.regulated ? `<span class="chip warn">Regulado: licencias</span>` : "");
     const links = (it.links || []).map(l => { const u = safeUrl(l.url); return u ? `<li><a href="${esc(u)}" target="_blank" rel="noopener noreferrer">${esc(l.title)}</a></li>` : ""; }).join("");
     const mk = Object.keys(MK).map(m => { const x = (it.markets || {})[m] || {};
       return `<div class="mk"><strong>${MK[m]} · ${fit(it, m)}/10</strong><br>${esc(x.why || "")}${x.adapt ? `<br><span class="muted">Adaptar: ${esc(x.adapt)}</span>` : ""}${x.competition ? `<br><span class="muted">Competencia: ${esc(x.competition)}</span>` : ""}</div>`; }).join("");
@@ -55,7 +57,7 @@
     const root = $("#ideasRoot"); if (!root) return;
     if (!data || !(data.items || []).length) { root.innerHTML = `<div class="empty">Todavía no hay ideas. La primera tanda aparecerá tras la próxima exploración diaria.</div>`; return; }
     let items = data.items.filter(it => (!type || it.type === type) && (it.score || 0) >= minScore);
-    if (market !== "all") items = items.filter(it => fit(it, market) >= 5).sort((a, b) => fit(b, market) - fit(a, market) || b.score - a.score);
+    if (market !== "all") items = items.filter(it => fit(it, market) >= 5 && !((it.markets || {})[market] || {}).origin).sort((a, b) => fit(b, market) - fit(a, market) || b.score - a.score);
     else items = items.slice().sort((a, b) => b.score - a.score);
     const t = new Date(data.generatedAt);
     root.innerHTML = `<div class="bar">

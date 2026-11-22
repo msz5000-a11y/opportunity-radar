@@ -56,6 +56,9 @@ TEXTO DEL ARTÍCULO (puede estar incompleto):
 {text}
 
 Analiza la idea para replicarla en España (es), Egipto (eg) y el Golfo (gcc). Presupuesto de referencia del usuario: {budget} €.
+Sé realista con el coste del MVP (orientativo): app o servicio sencillo sin programar 500-5.000 €; SaaS B2B 10.000-60.000 €;
+marketplace 15.000-80.000 €; fintech, salud o cualquier negocio regulado 80.000 € o más, además de licencias y meses de trámites.
+Si la empresa ya es de uno de esos mercados, o allí ya hay un competidor fuerte, el encaje de ese mercado debe ser bajo.
 Devuelve exactamente:
 {{"name": "nombre del producto o empresa", "type": "app|saas|software|marketplace|ecommerce|servicio|negocio_local",
 "originCountry": "país", "summary": "qué es y a quién sirve, 2 frases",
@@ -64,6 +67,7 @@ Devuelve exactamente:
 "markets": {{"es": {{"fit": 0-10, "why": "por qué encaja o no", "adapt": "qué adaptar (idioma, pagos, regulación, canal)", "competition": "competidores locales que conozcas o «no consta, verificar»"}},
             "eg": {{"fit": 0-10, "why": "...", "adapt": "...", "competition": "..."}}, "gcc": {{"fit": 0-10, "why": "...", "adapt": "...", "competition": "..."}}}},
 "mvp": {{"costEur": [mínimo, máximo], "weeks": número, "team": "perfiles necesarios", "stack": "tecnología o herramientas no-code", "noCode": true|false}},
+"regulated": true|false (true si necesita licencia o regulación: pagos, banca, seguros, salud, inversión, transporte de personas...),
 "monetization": "cómo gana dinero", "risks": ["riesgos principales"], "firstSteps": ["primeros pasos concretos para validarla"],
 "officialUrl": "web oficial si aparece en el texto, si no null"}}"""
 
@@ -104,14 +108,28 @@ def gather(cfg: dict) -> tuple[list[dict], dict]:
     return out, status
 
 
+ORIGIN = {"es": ("españa", "spain"), "eg": ("egipt", "egypt"),
+          "gcc": ("emirat", "uae", "arabia", "saudi", "catar", "qatar", "kuwait", "bahr", "omán", "oman", "dubai", "abu dhabi", "golfo", "gulf")}
+
+
+def mark_origin(idea: dict) -> None:
+    """Un mercado donde la empresa ya opera no cuenta como oportunidad de copia."""
+    oc = str(idea.get("originCountry") or "").lower()
+    for m, keys in ORIGIN.items():
+        if any(k in oc for k in keys):
+            idea.setdefault("markets", {}).setdefault(m, {})["origin"] = True
+
+
 def score(idea: dict, budget: float) -> int:
-    fits = [float((idea.get("markets") or {}).get(m, {}).get("fit") or 0) for m in MARKETS]
+    mk = idea.get("markets") or {}
+    fits = [float((mk.get(m) or {}).get("fit") or 0) for m in MARKETS if not (mk.get(m) or {}).get("origin")]
     best = max(fits) if fits else 0
     ev = min(len(idea.get("traction") or []), 3) / 3
     cost = (idea.get("mvp") or {}).get("costEur") or [None]
     lo = cost[0] if isinstance(cost, list) and cost and isinstance(cost[0], (int, float)) else None
-    cs = 0.5 if lo is None else 1.0 if lo <= budget else 0.6 if lo <= 5 * budget else 0.3
-    return round(40 * best / 10 + 25 * ev + 20 * cs + 15 * (1.0 if idea.get("verified") else 0.4))
+    cs = 0.4 if lo is None else 1.0 if lo <= budget else 0.6 if lo <= 5 * budget else 0.35 if lo <= 25 * budget else 0.15
+    s = 45 * best / 10 + 20 * ev + 25 * cs + 10 * (1.0 if idea.get("verified") else 0.3) - (12 if idea.get("regulated") else 0)
+    return max(0, min(100, round(s)))
 
 
 def run(data_dir: Path, cfg: dict, force: bool = False, transport=None) -> dict:
@@ -174,12 +192,16 @@ def run(data_dir: Path, cfg: dict, force: bool = False, transport=None) -> dict:
             links.append({"title": f"Buscar «{d['name']}» en Google", "url": "https://www.google.com/search?q=" + re.sub(r"\s+", "+", d["name"])})
             d.update({"id": _norm(d["name"]) or _norm(it["url"]), "officialUrl": off, "links": links, "source": it.get("source"),
                       "foundAt": iso(t), "why": pk.get("why"), "analyst": f"{res['provider']}:{res['model']}"})
+            mark_origin(d)
             d["score"] = score(d, budget)
             known.add(_norm(d["name"]))
             new_ideas.append(d)
         errors = router.errors[-6:]
     seen_urls |= {it.get("url") for it in fresh if it.get("url")}
     all_items = new_ideas + prev.get("items", [])
+    for x in all_items:  # nota recalculada con la fórmula actual
+        mark_origin(x)
+        x["score"] = score(x, budget)
     all_items.sort(key=lambda x: (x.get("foundAt", "")[:10], x.get("score", 0)), reverse=True)
     out = {"generatedAt": iso(t), "items": all_items[:KEEP], "status": status, "aiErrors": errors,
            "seenUrls": list(seen_urls)[-600:], "newCount": len(new_ideas), "studied": len(fresh)}
