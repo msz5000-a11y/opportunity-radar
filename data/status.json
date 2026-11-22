@@ -1,31 +1,31 @@
 {
- "lastRunAt": "2026-11-22T11:44:02Z",
+ "lastRunAt": "2026-11-22T19:56:03Z",
  "lastRunOk": false,
- "lastRunId": "run-20261122-1142",
+ "lastRunId": "run-20261122-1951",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-22T11:42:05+00:00"
+   "at": "2026-11-22T19:51:12+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-22T11:42:09+00:00"
+   "at": "2026-11-22T19:51:16+00:00"
   },
   "geckoterminal_trending": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-22T11:42:09+00:00"
+   "at": "2026-11-22T19:51:17+00:00"
   },
   "coingecko_trending": {
    "ok": true,
    "items": 2,
    "error": null,
-   "at": "2026-11-22T11:42:09+00:00"
+   "at": "2026-11-22T19:51:17+00:00"
   },
   "hacker_news": {
    "ok": true,
@@ -43,37 +43,37 @@
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-22T11:42:09+00:00"
+   "at": "2026-11-22T19:51:17+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-22T11:42:11+00:00"
+   "at": "2026-11-22T19:51:19+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-22T11:42:11+00:00"
+   "at": "2026-11-22T19:51:19+00:00"
   },
   "The Block": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-22T11:42:11+00:00"
+   "at": "2026-11-22T19:51:19+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-22T11:42:29+00:00"
+   "at": "2026-11-22T19:51:36+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 6,
-   "groq": 5
+   "gemini": 10,
+   "groq": 9
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
