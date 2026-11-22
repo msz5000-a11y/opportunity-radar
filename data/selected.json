@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T19:33:35Z",
+ "generatedAt": "2026-11-22T01:29:23Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 68,
+ "studied": 72,
  "selected": [],
  "nearMisses": [
   {
@@ -66,6 +66,34 @@
    },
    "passed": 8,
    "failed": [
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-github-com-diggerhq-opencomputer",
+   "name": "OpenComputer",
+   "category": "ia_tecnologia",
+   "score": 58,
+   "adjustedScore": 63,
+   "risk": "medio",
+   "officialUrl": "https://github.com/diggerhq/opencomputer",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": true
@@ -153,103 +181,56 @@
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": false
-  },
-  {
-   "id": "web-github-com-diggerhq-opencomputer",
-   "name": "OpenComputer",
-   "category": "ia_tecnologia",
-   "score": 60,
-   "adjustedScore": 60,
-   "risk": "medio",
-   "officialUrl": "https://github.com/diggerhq/opencomputer",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
   }
  ],
  "manuals": {
   "web-github-com-diggerhq-opencomputer": {
    "segundaOpinion": {
-    "veredicto": "dudosa",
-    "motivo": "No hay mecanismo de monetización directo y la herramienta es gratuita, por lo que el riesgo es bajo pero el retorno no está garantizado.",
+    "veredicto": "confirmada",
+    "motivo": "Es una herramienta de automatización de software open-source, no un activo financiero, por lo que no hay inversión de capital.",
     "contradicciones": []
    },
    "viaDeBeneficio": {
     "existe": false,
-    "explicacion": "El software es gratuito y no ofrece recompensas ni ventas; el beneficio sería indirecto en productividad."
+    "explicacion": "No es una inversión. El beneficio es indirecto: ahorro de tiempo en tareas de programación mediante la automatización de pull requests."
    },
-   "resumen": "OpenComputer es un agente de código open‑source que genera pull requests desde Slack, más rápido que Devin. Se puede auto‑implementar o usar en la nube con prueba gratuita de 3 días.",
-   "cuantoPoner": "0 €",
+   "resumen": "OpenComputer es un agente de IA de código abierto que automatiza tareas de programación directamente desde Slack. Permite ejecutar flujos de trabajo de desarrollo de forma autónoma, ya sea en tu propia infraestructura o en su nube.",
+   "cuantoPoner": "0 €. No requiere capital inicial, aunque el uso de la versión en la nube o el auto-hosting implica costes operativos variables por consumo de APIs de IA y servidores.",
    "antesDeEmpezar": [
-    "Verificar que tu cuenta de Slack y GitHub estén configuradas y tengan los permisos necesarios.",
-    "Confirmar que tienes acceso a un modelo de IA (Claude, OpenAI, etc.) si vas a usar la versión cloud.",
-    "Asegurarte de que dispones de una máquina virtual con acceso a Internet y, si auto‑hostas, de que el firewall permite solo tráfico saliente.",
-    "Revisar que el repositorio de GitHub tenga al menos un README y un flujo de CI configurado para PRs.",
-    "Confirmar que el presupuesto de 150 € no se usará para suscripciones externas, ya que el software es gratuito."
+    "Revisar la documentación técnica en el repositorio de GitHub para evaluar la complejidad de configuración.",
+    "Verificar los costes de las APIs de modelos de lenguaje (Claude/OpenAI) que planeas conectar.",
+    "Comprobar si tu entorno de trabajo permite la integración de herramientas de terceros en Slack."
    ],
    "pasos": [
     {
-     "titulo": "Clonar el repositorio",
-     "detalle": "git clone https://github.com/diggerhq/opencomputer.git",
-     "tiempo": "5 min"
+     "titulo": "Exploración",
+     "detalle": "Revisar el archivo README.md y SELFHOSTING.md en el repositorio oficial para entender los requisitos técnicos.",
+     "tiempo": "30 minutos"
     },
     {
-     "titulo": "Instalar dependencias",
-     "detalle": "Ejecutar npm install o pip install según el README; instalar Docker y Podman si auto‑hostas",
-     "tiempo": "15 min"
-    },
-    {
-     "titulo": "Configurar Slack y GitHub",
-     "detalle": "Crear una app de Slack, obtener el token, y conectar el repositorio en la configuración de OpenComputer",
-     "tiempo": "20 min"
-    },
-    {
-     "titulo": "Probar en modo cloud",
-     "detalle": "Registrarse en la página oficial, usar la prueba gratuita de 3 días y crear un PR de prueba",
-     "tiempo": "30 min"
-    },
-    {
-     "titulo": "Auto‑hostear (opcional)",
-     "detalle": "Seguir SELFHOSTING.md, crear una VM, configurar firewall y ejecutar el gateway",
-     "tiempo": "2-3 h"
+     "titulo": "Prueba inicial",
+     "detalle": "Registrarse en la versión cloud para probar la funcionalidad básica durante el periodo de prueba gratuito.",
+     "tiempo": "15 minutos"
     }
    ],
-   "planDeSalida": "Puedes dejar de usarlo en cualquier momento; simplemente desinstala el software o cancela la suscripción a la nube si la has activado.",
+   "planDeSalida": "Al no haber inversión financiera, la salida consiste simplemente en desinstalar la aplicación de Slack y detener los servicios en la nube o el servidor auto-hosteado.",
    "senalesDeAlarma": [
-    "Costos inesperados de suscripción a modelos de IA",
-    "Falta de soporte oficial",
-    "Dependencia de APIs externas que puedan cerrarse"
+    "Costes de API de IA superiores a lo previsto.",
+    "Fugas de datos sensibles al conectar repositorios privados a la herramienta.",
+    "Inestabilidad recurrente en la generación de código que requiera más tiempo de corrección que de ahorro."
    ],
    "erroresTipicos": [
-    "No configurar el firewall a solo salida",
-    "No usar rootless Podman y exponer la VM",
-    "No persistir el estado en el git‑backed store",
-    "Ignorar los límites de la prueba gratuita"
+    "No configurar límites de gasto en las APIs de los proveedores de IA (OpenAI/Anthropic).",
+    "Otorgar permisos excesivos a la herramienta sobre repositorios críticos sin auditar el código.",
+    "Confiar ciegamente en el código generado sin revisión humana."
    ],
-   "fiscalidad": "Como no generas ingresos directos con el software, no hay impuestos a declarar. Si vendes servicios que utilizan OpenComputer, esos ingresos se gravan como rendimientos del trabajo en el IRPF. Consulta con un asesor fiscal.",
-   "tiempoNecesario": "≈ 4‑6 h para auto‑implementación, 30‑60 min para usar la versión cloud",
-   "modelo": "groq:openai/gpt-oss-20b",
+   "fiscalidad": "Al ser una herramienta de productividad, no genera rendimientos financieros. Si se usa en un entorno profesional, los costes de suscripción o infraestructura podrían ser deducibles como gasto de actividad económica, consulta con un asesor fiscal.",
+   "tiempoNecesario": "De 1 a 5 horas dependiendo de si optas por la versión SaaS o el auto-hosting.",
+   "modelo": "gemini:gemini-3.1-flash-lite",
    "independiente": true,
    "webLeida": true,
-   "generadoEn": "2026-11-21T08:15:27Z",
-   "fichaScore": 60
+   "generadoEn": "2026-11-22T01:29:32Z",
+   "fichaScore": 58
   },
   "web-factory-mastra-ai": {
    "segundaOpinion": {
@@ -472,12 +453,17 @@
   }
  },
  "ai": {
-  "used": 0,
-  "errors": [],
-  "calls": {}
+  "used": 1,
+  "errors": [
+   "selector/groq: HTTP 400"
+  ],
+  "calls": {
+   "gemini": 1,
+   "groq": 1
+  }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-21T19:33:35Z",
+  "at": "2026-11-22T01:29:32Z",
   "status": 200
  }
 }

@@ -1,79 +1,79 @@
 {
- "lastRunAt": "2026-11-21T19:33:35Z",
+ "lastRunAt": "2026-11-22T01:29:23Z",
  "lastRunOk": false,
- "lastRunId": "run-20261121-1930",
+ "lastRunId": "run-20261122-0126",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-21T19:30:11+00:00"
+   "at": "2026-11-22T01:26:32+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
-   "items": 4,
+   "items": 3,
    "error": null,
-   "at": "2026-11-21T19:30:15+00:00"
+   "at": "2026-11-22T01:26:36+00:00"
   },
   "geckoterminal_trending": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-21T19:30:15+00:00"
+   "at": "2026-11-22T01:26:36+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 4,
+   "items": 1,
    "error": null,
-   "at": "2026-11-21T19:30:15+00:00"
+   "at": "2026-11-22T01:26:36+00:00"
   },
   "hacker_news": {
    "ok": true,
    "items": 2,
    "error": null,
-   "at": "2026-11-21T19:30:16+00:00"
+   "at": "2026-11-22T01:26:36+00:00"
   },
   "github_rising": {
    "ok": true,
    "items": 5,
    "error": null,
-   "at": "2026-11-21T19:30:17+00:00"
+   "at": "2026-11-22T01:26:36+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T19:30:17+00:00"
+   "at": "2026-11-22T01:26:37+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T19:30:19+00:00"
+   "at": "2026-11-22T01:26:38+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T19:30:20+00:00"
+   "at": "2026-11-22T01:26:38+00:00"
   },
   "The Block": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-21T19:30:20+00:00"
+   "at": "2026-11-22T01:26:38+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-21T19:30:37+00:00"
+   "at": "2026-11-22T01:26:55+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 10,
-   "groq": 9
+   "gemini": 7,
+   "groq": 7
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
@@ -82,7 +82,8 @@
   "errors": [
    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
    "searcher/gemini: HTTP 429",
-   "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+   "searcher/gemini: búsqueda de Google sin cupo en Gemini",
+   "analyst/groq: HTTP 429"
   ],
   "googleSearch": false
  },

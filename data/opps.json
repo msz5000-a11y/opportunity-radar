@@ -749,387 +749,6 @@
   ]
  },
  {
-  "name": "OpenComputer",
-  "category": "ia_tecnologia",
-  "subcategory": "software_open_source",
-  "kind": "activa",
-  "description": "OpenComputer es una alternativa open‑source a Devin que permite generar pull requests mediante comandos en Slack. Promete ser 3.3× más rápido que Devin y puede auto‑hostearse o usarse en la nube con una prueba gratuita de 3 días.",
-  "officialUrl": "https://github.com/diggerhq/opencomputer",
-  "participateUrl": null,
-  "country": "desconocido",
-  "spainAvailability": "si",
-  "spainNotes": "Disponible como SaaS y auto‑hosteable, sin restricciones conocidas para España.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "Uso en la nube puede requerir suscripción a modelos de IA (Claude, OpenAI) y costes de infraestructura.",
-   "recommended": 0,
-   "max": 150
-  },
-  "canLoseAll": false,
-  "liquidity": "no aplica",
-  "exitNotes": "No aplica, es software gratuito sin inversión financiera.",
-  "horizon": "corto",
-  "deadline": null,
-  "potential": "alto",
-  "difficulty": "media",
-  "timeNeeded": "varias horas para auto‑host; minutos para usar SaaS",
-  "subscores": {
-   "novedad": {
-    "v": 7,
-    "why": "Benchmark indica 3.3× más rápido que Devin",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 8,
-    "why": "750 estrellas en GitHub y 80 forks demuestran interés",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 6,
-    "why": "Existe mercado de agentes de código en Slack y competidores como Devin",
-    "evidence": true
-   },
-   "equipo": {
-    "v": 5,
-    "why": "No se menciona información del equipo fundador",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 4,
-    "why": "No hay datos públicos de financiación",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 7,
-    "why": "750 estrellas, 22 comentarios en Hacker News y actividad en GitHub",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 6,
-    "why": "3‑day free trial con 600 minutos disponible",
-    "evidence": true
-   },
-   "competencia": {
-    "v": 5,
-    "why": "Compite con Devin y otros agentes de IA como Claude Code",
-    "evidence": true
-   },
-   "riesgo_tecnico": {
-    "v": 6,
-    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 9,
-    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 7,
-    "why": "Accesible vía web y SaaS sin limitaciones geográficas",
-    "evidence": true
-   },
-   "salida": {
-    "v": 9,
-    "why": "No hay inversión financiera que recuperar",
-    "evidence": true
-   }
-  },
-  "redFlags": [
-   {
-    "code": "dependencia_api_externa",
-    "severity": "media",
-    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "distrust": [
-   "falta de información pública sobre el equipo y roadmap"
-  ],
-  "whyInteresting": [
-   "alternativa open‑source más rápida a Devin",
-   "posibilidad de auto‑hostear y controlar datos"
-  ],
-  "howToParticipate": [
-   "Visitar https://github.com/diggerhq/opencomputer",
-   "Leer el README y seguir las instrucciones de self‑hosting",
-   "Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial"
-  ],
-  "lossCauses": [
-   "costes de infraestructura si se auto‑hostea",
-   "dependencia de APIs externas que pueden encarecerse o cerrarse",
-   "ausencia de soporte comercial oficial"
-  ],
-  "earlySignals": [
-   "crecimiento de estrellas en GitHub",
-   "menciones y votos positivos en Hacker News"
-  ],
-  "signals": {
-   "upvotes": 69,
-   "comments": 22
-  },
-  "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
-   "sources": []
-  },
-  "sources": [
-   {
-    "title": "Hacker News",
-    "url": "https://github.com/diggerhq/opencomputer"
-   },
-   {
-    "title": "news.ycombinator.com",
-    "url": "https://news.ycombinator.com/item?id=50581403"
-   }
-  ],
-  "discoveredVia": "Hacker News",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
-  },
-  "verification": {
-   "verdict": "sin verificar",
-   "model": null
-  },
-  "discoveredAt": "2026-11-21",
-  "id": "web-github-com-diggerhq-opencomputer",
-  "isNew": true,
-  "score": 60,
-  "rawScore": 64.5,
-  "tier": "investigar",
-  "tierLabel": "Interesante, necesita investigación",
-  "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
-  ],
-  "critical": false,
-  "risk": "medio",
-  "flags": [
-   {
-    "code": "dependencia_api_externa",
-    "severity": "media",
-    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "evidenced": 10,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Benchmark indica 3.3× más rápido que Devin",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 8.0,
-    "points": 9.6,
-    "why": "750 estrellas en GitHub y 80 forks demuestran interés",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 6.0,
-    "points": 4.8,
-    "why": "Existe mercado de agentes de código en Slack y competidores como Devin",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "No se menciona información del equipo fundador",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "No hay datos públicos de financiación",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "750 estrellas, 22 comentarios en Hacker News y actividad en GitHub",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 6.0,
-    "points": 5.4,
-    "why": "3‑day free trial con 600 minutos disponible",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 5.0,
-    "points": 2.5,
-    "why": "Compite con Devin y otros agentes de IA como Claude Code",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 6.0,
-    "points": 4.8,
-    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 9.0,
-    "points": 9.0,
-    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Accesible vía web y SaaS sin limitaciones geográficas",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "No hay inversión financiera que recuperar",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-21T02:32:23Z",
-    "upvotes": 69.0,
-    "comments": 22.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: OpenComputer\nCATEGORÍA: ia_tecnologia · software_open_source\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://github.com/diggerhq/opencomputer\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 60/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alternativa open‑source más rápida a Devin; posibilidad de auto‑hostear y controlar datos\nMOTIVOS PARA DESCONFIAR: El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; falta de información pública sobre el equipo y roadmap\nCÓMO PARTICIPAR: Visitar https://github.com/diggerhq/opencomputer; Leer el README y seguir las instrucciones de self‑hosting; Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial\nQUÉ PODRÍA HACERME PERDER EL DINERO: costes de infraestructura si se auto‑hostea; dependencia de APIs externas que pueden encarecerse o cerrarse; ausencia de soporte comercial oficial\nFUENTES: https://github.com/diggerhq/opencomputer | https://news.ycombinator.com/item?id=50581403",
-  "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-21T02:32:23Z",
-  "runId": "run-20261121-0232",
-  "aliases": [
-   "web-github-com-diggerhq-opencomputer"
-  ]
- },
- {
   "name": "Business Factory Health&Care Incubation Program",
   "category": "startups",
   "subcategory": "healthcare",
@@ -1503,6 +1122,420 @@
   "runId": "run-20261121-0817",
   "aliases": [
    "news-elreferente-es-actualidad-la-business-factory-healthcare-presenta-los-cinco-proyectos"
+  ]
+ },
+ {
+  "name": "OpenComputer",
+  "category": "ia_tecnologia",
+  "subcategory": "software_open_source",
+  "kind": "activa",
+  "description": "OpenComputer es una alternativa open‑source a Devin que genera pull requests desde Slack. Promete ser 3.3× más rápido que Devin y puede auto‑hostearse o usarse como SaaS con prueba gratuita.",
+  "officialUrl": "https://github.com/diggerhq/opencomputer",
+  "participateUrl": "https://opencomputer.dev",
+  "country": "internacional",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible como SaaS y auto‑hosteable, sin restricciones conocidas para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Uso en la nube puede requerir suscripción a modelos de IA (Claude, OpenAI) y costes de infraestructura.",
+   "recommended": 0,
+   "max": 150
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, es software gratuito sin inversión financiera.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "varias horas para auto‑host; minutos para usar SaaS",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Benchmark indica 3.3× más rápido que Devin · Verificador: Propuesta de valor clara como alternativa open-source a agentes propietarios como Devin.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "1.2k estrellas en GitHub y 117 upvotes en Hacker News demuestran interés · Verificador: Alta tracción en GitHub (1.2k estrellas) y comunidad técnica activa.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Existe mercado de agentes de código en Slack y competidores como Devin · Verificador: Mercado competitivo de agentes de IA para desarrollo de software.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "No se menciona información del equipo fundador · Verificador: Desarrollado por DiggerHQ; aunque el equipo no es público, el repositorio es mantenido activamente.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 4.0,
+    "why": "No hay datos públicos de financiación · Verificador: Proyecto open-source sin datos públicos de rondas de financiación específicas.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 8.0,
+    "why": "1.2k estrellas, 117 upvotes y 36 comentarios indican comunidad activa · Verificador: Actividad visible en GitHub y foros técnicos.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 7.0,
+    "why": "3‑day free trial con 600 minutos disponible y fácil integración Slack · Verificador: Facilidad de despliegue mediante SaaS o auto-hosting.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Compite con Devin y otros agentes de IA como Claude Code · Verificador: Alta competencia con herramientas como Claude Code y Devin.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud · Verificador: Requiere conocimientos de infraestructura para auto-hosting.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas · Verificador: Software gratuito; el riesgo se limita a costes de infraestructura y tokens de API.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 7.0,
+    "why": "Accesible vía web y SaaS sin limitaciones geográficas · Verificador: Sin restricciones geográficas para el uso de software open-source. · Discrepancia entre modelos (7 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.5,
+    "why": "No hay inversión financiera que recuperar · Verificador: Al no ser una inversión, no aplica concepto de salida.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "dependencia_api_externa",
+    "severity": "media",
+    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "dependencia_api_externa",
+    "severity": "media",
+    "detail": "El rendimiento y coste operativo dependen de proveedores externos de modelos (OpenAI/Anthropic)."
+   },
+   {
+    "code": "sin_soporte_comercial",
+    "severity": "baja",
+    "detail": "Al ser un proyecto open-source, no existe garantía de soporte técnico profesional."
+   }
+  ],
+  "distrust": [
+   "falta de información pública sobre el equipo y roadmap"
+  ],
+  "whyInteresting": [
+   "alternativa open‑source más rápida a Devin",
+   "posibilidad de auto‑hostear y controlar datos"
+  ],
+  "howToParticipate": [
+   "Visitar https://github.com/diggerhq/opencomputer",
+   "Leer el README y seguir las instrucciones de self‑hosting",
+   "Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial"
+  ],
+  "lossCauses": [
+   "costes de infraestructura si se auto‑hostea",
+   "dependencia de APIs externas que pueden encarecerse o cerrarse",
+   "ausencia de soporte comercial oficial"
+  ],
+  "earlySignals": [
+   "crecimiento de estrellas en GitHub",
+   "menciones y votos positivos en Hacker News"
+  ],
+  "signals": {
+   "upvotes": 117,
+   "comments": 36
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una herramienta de software, no un producto financiero ni servicio de inversión regulado por la CNMV.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Hacker News",
+    "url": "https://github.com/diggerhq/opencomputer"
+   },
+   {
+    "title": "news.ycombinator.com",
+    "url": "https://news.ycombinator.com/item?id=50581403"
+   },
+   {
+    "title": "Sitio web del proyecto",
+    "url": "https://opencomputer.dev"
+   }
+  ],
+  "discoveredVia": "Hacker News",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El proyecto es un repositorio de código abierto legítimo en GitHub bajo la organización DiggerHQ. No es una entidad financiera ni un servicio de inversión, por lo que no requiere registro en CNMV ni ESMA. La disponibilidad en España es total al ser software distribuido bajo licencia Apache-2.0.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-github-com-diggerhq-opencomputer",
+  "isNew": false,
+  "score": 58,
+  "rawScore": 63.3,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "dependencia_api_externa",
+    "severity": "media",
+    "detail": "El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "sin_soporte_comercial",
+    "severity": "baja",
+    "detail": "Al ser un proyecto open-source, no existe garantía de soporte técnico profesional."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Benchmark indica 3.3× más rápido que Devin · Verificador: Propuesta de valor clara como alternativa open-source a agentes propietarios como Devin.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "1.2k estrellas en GitHub y 117 upvotes en Hacker News demuestran interés · Verificador: Alta tracción en GitHub (1.2k estrellas) y comunidad técnica activa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Existe mercado de agentes de código en Slack y competidores como Devin · Verificador: Mercado competitivo de agentes de IA para desarrollo de software.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se menciona información del equipo fundador · Verificador: Desarrollado por DiggerHQ; aunque el equipo no es público, el repositorio es mantenido activamente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos públicos de financiación · Verificador: Proyecto open-source sin datos públicos de rondas de financiación específicas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 8.0,
+    "points": 5.6,
+    "why": "1.2k estrellas, 117 upvotes y 36 comentarios indican comunidad activa · Verificador: Actividad visible en GitHub y foros técnicos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 7.0,
+    "points": 6.3,
+    "why": "3‑day free trial con 600 minutos disponible y fácil integración Slack · Verificador: Facilidad de despliegue mediante SaaS o auto-hosting.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Compite con Devin y otros agentes de IA como Claude Code · Verificador: Alta competencia con herramientas como Claude Code y Devin.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Requiere VM, Podman y Cloudflare Workers; depende de infra propia o cloud · Verificador: Requiere conocimientos de infraestructura para auto-hosting.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Software gratuito; costes opcionales de infraestructura y APIs externas · Verificador: Software gratuito; el riesgo se limita a costes de infraestructura y tokens de API.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Accesible vía web y SaaS sin limitaciones geográficas · Verificador: Sin restricciones geográficas para el uso de software open-source. · Discrepancia entre modelos (7 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay inversión financiera que recuperar · Verificador: Al no ser una inversión, no aplica concepto de salida.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "upvotes": 69.6,
+    "comments": 63.6
+   },
+   "label": "Crecimiento acelerado",
+   "since": "2026-11-21T02:32:23Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T02:32:23Z",
+    "upvotes": 69.0,
+    "comments": 22.0
+   },
+   {
+    "t": "2026-11-22T01:26:32Z",
+    "upvotes": 117.0,
+    "comments": 36.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: OpenComputer\nCATEGORÍA: ia_tecnologia · software_open_source\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://github.com/diggerhq/opencomputer\nENLACE DE PARTICIPACIÓN: https://opencomputer.dev\nPAÍS: internacional\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 58/100 · Especulativa\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alternativa open‑source más rápida a Devin; posibilidad de auto‑hostear y controlar datos\nMOTIVOS PARA DESCONFIAR: El rendimiento depende de suscripciones a Claude, OpenAI u otros modelos de IA externos.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Al ser un proyecto open-source, no existe garantía de soporte técnico profesional.; falta de información pública sobre el equipo y roadmap\nCÓMO PARTICIPAR: Visitar https://github.com/diggerhq/opencomputer; Leer el README y seguir las instrucciones de self‑hosting; Opcional: registrarse en la versión cloud mediante el enlace de prueba gratuito en la página oficial\nQUÉ PODRÍA HACERME PERDER EL DINERO: costes de infraestructura si se auto‑hostea; dependencia de APIs externas que pueden encarecerse o cerrarse; ausencia de soporte comercial oficial\nFUENTES: https://github.com/diggerhq/opencomputer | https://news.ycombinator.com/item?id=50581403 | https://opencomputer.dev",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
+  "aliases": [
+   "web-github-com-diggerhq-opencomputer"
   ]
  },
  {
@@ -1890,6 +1923,420 @@
   "runId": "run-20261121-1930",
   "aliases": [
    "web-github-com-krisgfx9-wireless-device-battery-monitor"
+  ]
+ },
+ {
+  "name": "blender-ai-mcp-addon",
+  "category": "ia_tecnologia",
+  "subcategory": "Herramientas de productividad 3D",
+  "kind": "activa",
+  "description": "Addon para Blender que integra un servidor MCP (Model Context Protocol) y un asistente de IA para automatizar flujos de trabajo 3D, edición de escenas y scripting mediante lenguaje natural. Permite conectar diversos modelos de lenguaje (LLMs) locales o en la nube para gestionar tareas complejas de diseño.",
+  "officialUrl": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "El software es de código abierto y accesible globalmente; la interfaz incluye soporte para español.",
+  "costs": {
+   "minEntry": 0.0,
+   "extra": 0.0,
+   "extraNotes": "El addon es gratuito (MIT License), pero requiere suscripciones a APIs de terceros (OpenAI, Claude, etc.) o hardware para modelos locales.",
+   "recommended": 0.0,
+   "max": 0.0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "Al ser una herramienta de software, no existe una inversión financiera recuperable, solo el valor del tiempo invertido.",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "Alto para automatización de flujos de trabajo en estudios de diseño 3D.",
+  "difficulty": "media",
+  "timeNeeded": "Curva de aprendizaje moderada para configurar agentes y flujos de trabajo.",
+  "subscores": {
+   "novedad": {
+    "v": 8.0,
+    "why": "Integración nativa de MCP en Blender para agentes autónomos. · Verificador: Integración nativa del Model Context Protocol (MCP) en Blender, algo no documentado en otros addons.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.5,
+    "why": "La automatización de tareas repetitivas en 3D tiene alta demanda. · Verificador: Alta demanda potencial de automatización en 3D, pero sin datos de mercado específicos para este addon.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 6.5,
+    "why": "Mercado creciente de herramientas de IA para creativos. · Verificador: Crecimiento general de herramientas IA para creativos, sin métricas concretas del segmento Blender.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3.0,
+    "why": "Desarrollador individual sin historial público verificado. · Verificador: Desarrollador único (bookwjitchieni1986) sin historial verificable en la comunidad de Blender.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 10.0,
+    "why": "Proyecto open source sin necesidad de capital externo. · Verificador: Proyecto open‑source bajo licencia MIT, sin financiación externa conocida.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6.5,
+    "why": "2445 estrellas en GitHub indican interés temprano. · Verificador: 2.4k estrellas y 34 forks indican interés temprano de la comunidad.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4.5,
+    "why": "Uso incipiente en flujos de trabajo profesionales. · Verificador: Uso incipiente; no hay referencias a adopción en estudios profesionales.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen otros addons de IA para Blender, pero la integración MCP es diferenciadora. · Verificador: Existen otros addons IA para Blender (p.ej., BlenderGPT), aunque la integración MCP es diferenciadora.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Dependencia de APIs externas y estabilidad de la API de Blender (bpy). · Verificador: Depende de APIs externas (OpenAI, Claude, Ollama) y de la estabilidad de la API de Blender (bpy).",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No hay inversión de capital requerida. · Verificador: No requiere inversión de capital, pero el uso de APIs de terceros implica costes variables.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Acceso libre sin restricciones geográficas. · Verificador: Software libre accesible globalmente sin restricciones geográficas.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 10.0,
+    "why": "No aplica, es software gratuito. · Verificador: No aplica; es software gratuito sin mecanismo de salida financiera.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "unknown_developer",
+    "severity": "media",
+    "detail": "El repositorio pertenece a un usuario sin historial previo conocido en la comunidad de Blender."
+   },
+   {
+    "code": "dependency_risk",
+    "severity": "baja",
+    "detail": "Dependencia total de la estabilidad de APIs de terceros y del protocolo MCP."
+   },
+   {
+    "code": "unknown_developer",
+    "severity": "media",
+    "detail": "El repositorio pertenece a un usuario sin historial público verificable en la comunidad de Blender."
+   },
+   {
+    "code": "dependency_risk",
+    "severity": "baja",
+    "detail": "Dependencia total de la estabilidad de APIs de terceros y del protocolo MCP."
+   },
+   {
+    "code": "no_security_audit",
+    "severity": "media",
+    "detail": "No hay auditorías de seguridad públicas del código fuente."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha contiene información correcta sobre la existencia del repositorio y su disponibilidad, pero varios criterios carecen de evidencia verificable (potencial de mercado, adopción, competencia) y el desarrollador es un individuo sin historial público, lo que genera incertidumbre."
+   }
+  ],
+  "distrust": [
+   "Falta de auditoría de seguridad en el código",
+   "Posible inestabilidad en versiones futuras de Blender"
+  ],
+  "whyInteresting": [
+   "Integración de agentes multi-agente en 3D",
+   "Soporte para modelos locales vía Ollama",
+   "Arquitectura basada en estándares abiertos (MCP)"
+  ],
+  "howToParticipate": [
+   "Clonar el repositorio desde GitHub",
+   "Instalar como addon en Blender",
+   "Configurar las claves API de los proveedores de LLM deseados"
+  ],
+  "lossCauses": [
+   "Tiempo perdido en configuración",
+   "Errores en la ejecución de scripts que dañen archivos de escena"
+  ],
+  "earlySignals": [
+   "Crecimiento rápido en estrellas de GitHub",
+   "Soporte multilingüe incluyendo español"
+  ],
+  "signals": {
+   "stars": 2445,
+   "forks": 34
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Software de código abierto sin implicaciones financieras ni de inversión; no requiere autorización de la CNMV ni registro MiCA/ESMA.",
+   "sources": [
+    "https://www.cnmv.es/Portal/FAQ/FAQ.aspx?Id=71",
+    "https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX%3A32022R2554"
+   ]
+  },
+  "sources": [
+   {
+    "title": "github.com",
+    "url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "gemini:gemini-3.1-flash-lite",
+   "verifier": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha contiene información correcta sobre la existencia del repositorio y su disponibilidad, pero varios criterios carecen de evidencia verificable (potencial de mercado, adopción, competencia) y el desarrollador es un individuo sin historial público, lo que genera incertidumbre.",
+   "model": "groq:openai/gpt-oss-120b",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-github-com-bookwjitchieni1986-blender-ai-mcp-addon",
+  "isNew": true,
+  "score": 56,
+  "rawScore": 60.6,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "unknown_developer",
+    "severity": "media",
+    "detail": "El repositorio pertenece a un usuario sin historial previo conocido en la comunidad de Blender."
+   },
+   {
+    "code": "dependency_risk",
+    "severity": "baja",
+    "detail": "Dependencia total de la estabilidad de APIs de terceros y del protocolo MCP."
+   },
+   {
+    "code": "no_security_audit",
+    "severity": "media",
+    "detail": "No hay auditorías de seguridad públicas del código fuente."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha contiene información correcta sobre la existencia del repositorio y su disponibilidad, pero varios criterios carecen de evidencia verificable (potencial de mercado, adopción, competencia) y el desarrollador es un individuo sin historial público, lo que genera incertidumbre."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Integración nativa de MCP en Blender para agentes autónomos. · Verificador: Integración nativa del Model Context Protocol (MCP) en Blender, algo no documentado en otros addons.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "La automatización de tareas repetitivas en 3D tiene alta demanda. · Verificador: Alta demanda potencial de automatización en 3D, pero sin datos de mercado específicos para este addon.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado creciente de herramientas de IA para creativos. · Verificador: Crecimiento general de herramientas IA para creativos, sin métricas concretas del segmento Blender.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Desarrollador individual sin historial público verificado. · Verificador: Desarrollador único (bookwjitchieni1986) sin historial verificable en la comunidad de Blender.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 10.0,
+    "points": 7.0,
+    "why": "Proyecto open source sin necesidad de capital externo. · Verificador: Proyecto open‑source bajo licencia MIT, sin financiación externa conocida.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.5,
+    "points": 4.5,
+    "why": "2445 estrellas en GitHub indican interés temprano. · Verificador: 2.4k estrellas y 34 forks indican interés temprano de la comunidad.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso incipiente en flujos de trabajo profesionales. · Verificador: Uso incipiente; no hay referencias a adopción en estudios profesionales.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros addons de IA para Blender, pero la integración MCP es diferenciadora. · Verificador: Existen otros addons IA para Blender (p.ej., BlenderGPT), aunque la integración MCP es diferenciadora.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Dependencia de APIs externas y estabilidad de la API de Blender (bpy). · Verificador: Depende de APIs externas (OpenAI, Claude, Ollama) y de la estabilidad de la API de Blender (bpy).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No hay inversión de capital requerida. · Verificador: No requiere inversión de capital, pero el uso de APIs de terceros implica costes variables.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Acceso libre sin restricciones geográficas. · Verificador: Software libre accesible globalmente sin restricciones geográficas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "No aplica, es software gratuito. · Verificador: No aplica; es software gratuito sin mecanismo de salida financiera.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-22T01:26:32Z",
+    "stars": 2445.0,
+    "forks": 34.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: blender-ai-mcp-addon\nCATEGORÍA: ia_tecnologia · Herramientas de productividad 3D\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://github.com/bookwjitchieni1986/blender-ai-mcp-addon\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto para automatización de flujos de trabajo en estudios de diseño 3D.\nPUNTUACIÓN: 56/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Integración de agentes multi-agente en 3D; Soporte para modelos locales vía Ollama; Arquitectura basada en estándares abiertos (MCP)\nMOTIVOS PARA DESCONFIAR: El repositorio pertenece a un usuario sin historial previo conocido en la comunidad de Blender.; Dependencia total de la estabilidad de APIs de terceros y del protocolo MCP.; No hay auditorías de seguridad públicas del código fuente.; El verificador tiene dudas: La ficha contiene información correcta sobre la existencia del repositorio y su disponibilidad, pero varios criterios carecen de evidencia verificable (potencial de mercado, adopción, competencia) y el desarrollador es un individuo sin historial público, lo que genera incertidumbre.; Falta de auditoría de seguridad en el código; Posible inestabilidad en versiones futuras de Blender\nCÓMO PARTICIPAR: Clonar el repositorio desde GitHub; Instalar como addon en Blender; Configurar las claves API de los proveedores de LLM deseados\nQUÉ PODRÍA HACERME PERDER EL DINERO: Tiempo perdido en configuración; Errores en la ejecución de scripts que dañen archivos de escena\nFUENTES: https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+  "firstSeenAt": "2026-11-22T01:26:32Z",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
+  "aliases": [
+   "web-github-com-bookwjitchieni1986-blender-ai-mcp-addon"
   ]
  },
  {
@@ -5758,63 +6205,63 @@
   "timeNeeded": "2-3 horas (asistencia al evento)",
   "subscores": {
    "novedad": {
-    "v": 7,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026",
+    "v": 7.0,
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en tendencias actuales de 2026 como IA, talento y confianza.",
     "evidence": true
    },
    "potencial": {
-    "v": 6,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos",
+    "v": 6.0,
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor, aunque el evento ya ha concluido.",
     "evidence": true
    },
    "mercado": {
-    "v": 5,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos",
+    "v": 5.0,
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: Enfoque sectorial sin métricas de mercado específicas.",
     "evidence": false
    },
    "equipo": {
-    "v": 6,
-    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM",
+    "v": 6.5,
+    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
     "evidence": true
    },
    "financiacion": {
-    "v": 4,
-    "why": "No se menciona financiación para los proyectos presentados",
+    "v": 0.0,
+    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de financiación ni inversión. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
     "evidence": false
    },
    "comunidad": {
-    "v": 7,
-    "why": "Participación de universidades, empresas y startups españolas",
+    "v": 7.0,
+    "why": "Participación de universidades, empresas y startups españolas · Verificador: Alta participación de ecosistema académico y empresarial.",
     "evidence": true
    },
    "adopcion": {
-    "v": 5,
-    "why": "No hay datos de adopción de las soluciones presentadas",
+    "v": 5.0,
+    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de divulgación.",
     "evidence": false
    },
    "competencia": {
-    "v": 6,
-    "why": "Existen otros eventos similares en el ecosistema tech español",
+    "v": 6.0,
+    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Existen múltiples eventos tech en Madrid.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 9,
-    "why": "No implica inversión ni desarrollo técnico propio",
+    "v": 9.5,
+    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial informativo.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 9,
-    "why": "No hay inversión económica requerida",
+    "v": 9.5,
+    "why": "No hay inversión económica requerida · Verificador: Riesgo nulo, no requiere inversión.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9,
-    "why": "Evento realizado en Madrid, España",
+    "v": 9.5,
+    "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
     "evidence": true
    },
    "salida": {
-    "v": 9,
-    "why": "No hay salida financiera asociada",
+    "v": 9.5,
+    "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
     "evidence": true
    }
   },
@@ -5823,6 +6270,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "evento_finalizado",
+    "severity": "baja",
+    "detail": "La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026."
    }
   ],
   "distrust": [],
@@ -5839,9 +6291,9 @@
   "earlySignals": [],
   "signals": {},
   "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es un evento de networking y divulgación, no un servicio financiero regulado por la CNMV o MiCA.",
    "sources": []
   },
   "sources": [
@@ -5853,23 +6305,26 @@
   "discoveredVia": "El Referente",
   "aiModels": {
    "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
-   "verdict": "sin verificar",
-   "model": null
+   "verdict": "confirmada",
+   "reason": "El evento ha sido verificado como un encuentro profesional ya finalizado, celebrado el 19 de noviembre de 2026 en Madrid, según la fuente oficial de El Referente. No es una oportunidad de inversión financiera, sino de networking y conocimiento.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
   },
-  "discoveredAt": "2026-11-21",
+  "discoveredAt": "2026-11-22",
   "id": "web-elreferente-es",
-  "isNew": true,
+  "isNew": false,
   "score": 39,
-  "rawScore": 63.0,
+  "rawScore": 63.1,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
   "caps": [
    "-5 por 1 riesgo(s) alto(s)",
-   "Tope 39: no disponible para residentes en España"
+   "Tope 39: no disponible en tu región"
   ],
   "critical": false,
   "risk": "medio",
@@ -5878,6 +6333,11 @@
     "code": "sin_verificacion_independiente",
     "severity": "alta",
     "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "evento_finalizado",
+    "severity": "baja",
+    "detail": "La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026."
    }
   ],
   "evidenced": 8,
@@ -5888,7 +6348,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026",
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en tendencias actuales de 2026 como IA, talento y confianza.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5898,7 +6358,7 @@
     "weight": 12,
     "value": 6.0,
     "points": 7.2,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos",
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor, aunque el evento ya ha concluido.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5908,7 +6368,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos",
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: Enfoque sectorial sin métricas de mercado específicas.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -5916,9 +6376,9 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 6.0,
-    "points": 6.0,
-    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM",
+    "value": 6.5,
+    "points": 6.5,
+    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5926,11 +6386,11 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "No se menciona financiación para los proyectos presentados",
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de financiación ni inversión. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
     "evidence": false,
-    "cappedForNoEvidence": true
+    "cappedForNoEvidence": false
    },
    {
     "key": "comunidad",
@@ -5938,7 +6398,7 @@
     "weight": 7,
     "value": 7.0,
     "points": 4.9,
-    "why": "Participación de universidades, empresas y startups españolas",
+    "why": "Participación de universidades, empresas y startups españolas · Verificador: Alta participación de ecosistema académico y empresarial.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5948,7 +6408,7 @@
     "weight": 9,
     "value": 3.0,
     "points": 2.7,
-    "why": "No hay datos de adopción de las soluciones presentadas",
+    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de divulgación.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -5958,7 +6418,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Existen otros eventos similares en el ecosistema tech español",
+    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Existen múltiples eventos tech en Madrid.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -5966,9 +6426,9 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "No implica inversión ni desarrollo técnico propio",
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial informativo.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5976,19 +6436,19 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 9.0,
-    "points": 9.0,
-    "why": "No hay inversión económica requerida",
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No hay inversión económica requerida · Verificador: Riesgo nulo, no requiere inversión.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
    {
     "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
+    "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "Evento realizado en Madrid, España",
+    "value": 9.5,
+    "points": 7.6,
+    "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -5996,9 +6456,9 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "No hay salida financiera asociada",
+    "value": 9.5,
+    "points": 7.6,
+    "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
     "evidence": true,
     "cappedForNoEvidence": false
    }
@@ -6072,10 +6532,10 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
+  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
   "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-21T02:32:23Z",
-  "runId": "run-20261121-0232",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
   "aliases": [
    "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d"
   ]
@@ -14544,6 +15004,837 @@
   ]
  },
  {
+  "name": "Leonida",
+  "category": "ia_tecnologia",
+  "subcategory": "recompilación_juego",
+  "kind": "pasiva",
+  "description": "Proyecto open‑source que recompila de forma nativa la versión Xbox de Grand Theft Auto VI para PC, traduciendo shaders RDNA2 a SPIR‑V y reutilizando los assets del propio juego.",
+  "officialUrl": "https://github.com/ItsNotRexed/Leonida",
+  "participateUrl": "https://discord.gg/rexed",
+  "country": "desconocido",
+  "spainAvailability": "no_aplicable",
+  "spainNotes": "Requiere poseer una copia legal del juego GTA VI para Xbox; su uso está limitado a usuarios que ya disponen del juego en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 60,
+   "extraNotes": "Necesario comprar una copia del juego GTA VI para Xbox (aprox. 60 €) y disponer de hardware compatible.",
+   "recommended": 0,
+   "max": 2000
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "Puedes dejar de contribuir o usar el software en cualquier momento; no hay inversión financiera que recuperar.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "alto potencial técnico pero con incertidumbre comercial y legal",
+  "difficulty": "alta",
+  "timeNeeded": "varios meses de desarrollo y pruebas técnicas",
+  "subscores": {
+   "novedad": {
+    "v": 8.5,
+    "why": "Recompilación nativa de un título de última generación, traducción de shaders RDNA2 a SPIR‑V · Verificador: Recompilación estática de un título AAA moderno; técnica avanzada de traducción de shaders RDNA2 a SPIR-V.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Podría permitir jugar GTA VI en PC, pero depende de la disponibilidad del juego y de superar barreras legales · Verificador: El potencial es puramente técnico; comercialmente es nulo y altamente probable de ser bloqueado por acciones legales.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "Limitado a propietarios del juego Xbox; nicho de entusiastas y modders · Verificador: No es un producto comercial, es un proyecto de nicho para entusiastas de la preservación. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3.0,
+    "why": "Contribuidores anónimos en GitHub, sin información pública de un equipo formal · Verificador: Desarrolladores anónimos bajo el alias 'ItsNotRexed'. Sin entidad legal ni transparencia.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "Proyecto sin financiación externa conocida, basado en contribuciones voluntarias · Verificador: Proyecto sin ánimo de lucro, sin financiación externa.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7.0,
+    "why": "5.8k estrellas, 411 forks y Discord activo · Verificador: Alta tracción en GitHub (5.8k estrellas) y comunidad activa en Discord.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.5,
+    "why": "Aún en fase temprana, el juego no arranca; adopción limitada · Verificador: Fase experimental; no es funcional para el usuario final promedio.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 7.5,
+    "why": "No existen proyectos similares de recompilación estática de GTA VI · Verificador: Proyecto pionero en la recompilación de este título específico.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.0,
+    "why": "Alta complejidad de recompilación de consola a PC y traducción de shaders · Verificador: Extremadamente alto; requiere conocimientos avanzados de compilación y depuración. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "No se requiere inversión monetaria más allá del juego propio · Verificador: No hay inversión financiera, pero sí riesgo de pérdida de tiempo y posible coste de hardware/juego sin garantía de éxito.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.5,
+    "why": "Uso potencialmente conflictivo con la legislación de derechos de autor en España · Verificador: La legislación española sobre propiedad intelectual es estricta respecto a la ingeniería inversa de software protegido.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "No hay activo financiero que vender; salida consiste solo en dejar de participar · Verificador: No existe mecanismo de salida al no haber activo financiero.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "legal_ambiguity",
+    "severity": "alta",
+    "detail": "El proyecto no incluye el juego ni claves; su uso depende de que el usuario posea una copia legal, lo que puede generar riesgos de infracción de derechos de autor."
+   },
+   {
+    "code": "project_status_early",
+    "severity": "media",
+    "detail": "El juego aún no arranca; el proyecto está en fase de desarrollo temprano y podría ser abandonado."
+   },
+   {
+    "code": "legal_risk",
+    "severity": "critica",
+    "detail": "El proyecto infringe potencialmente los términos de servicio de Rockstar Games y las leyes de propiedad intelectual al realizar ingeniería inversa de un software protegido."
+   },
+   {
+    "code": "cease_and_desist",
+    "severity": "alta",
+    "detail": "Es altamente probable que el titular de los derechos emita una orden de cese y desista contra el repositorio."
+   },
+   {
+    "code": "no_guarantee",
+    "severity": "media",
+    "detail": "El software no garantiza funcionalidad y puede ser abandonado en cualquier momento."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto es un repositorio de código abierto de ingeniería inversa. Aunque el repositorio existe y es legítimo en GitHub, su naturaleza técnica y legal es extremadamente precaria. No es una 'oportunidad' de inversión, sino un proyecto de desarrollo técnico de alto riesgo legal por derechos de autor (copyright) de Take-Two Interactive."
+   }
+  ],
+  "distrust": [
+   "incertidumbre legal sobre la redistribución de assets del juego"
+  ],
+  "whyInteresting": [
+   "Innovadora traducción de shaders RDNA2 a SPIR‑V",
+   "Posibilidad de ejecutar un título de consola de última generación en PC",
+   "Contribución a la preservación y estudio de arquitectura de juegos"
+  ],
+  "howToParticipate": [
+   "1. Comprar una copia legal de GTA VI para Xbox Series.",
+   "2. Clonar el repositorio de GitHub: git clone https://github.com/ItsNotRexed/Leonida",
+   "3. Instalar dependencias (Vulkan SDK, herramientas de compilación, etc.).",
+   "4. Seguir la guía del README para generar los shaders y el runtime.",
+   "5. Probar la compilación y, si funciona, aportar mejoras mediante pull requests.",
+   "6. Unirse al Discord para coordinar con otros desarrolladores."
+  ],
+  "lossCauses": [
+   "Acciones legales por parte del titular de los derechos del juego",
+   "Abandono del proyecto por falta de desarrolladores",
+   "Problemas técnicos insuperables al traducir shaders"
+  ],
+  "earlySignals": [
+   "5.8k estrellas en GitHub",
+   "411 forks",
+   "Actividad en Discord y número de pull requests"
+  ],
+  "signals": {
+   "stars": 5763,
+   "forks": 411
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un producto financiero ni servicio cripto. Se rige por leyes de propiedad intelectual (LPI en España). No está regulado por la CNMV ni MiCA.",
+   "sources": [
+    "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930"
+   ]
+  },
+  "sources": [
+   {
+    "title": "github.com",
+    "url": "https://github.com/ItsNotRexed/Leonida"
+   },
+   {
+    "title": "Ley de Propiedad Intelectual España",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto es un repositorio de código abierto de ingeniería inversa. Aunque el repositorio existe y es legítimo en GitHub, su naturaleza técnica y legal es extremadamente precaria. No es una 'oportunidad' de inversión, sino un proyecto de desarrollo técnico de alto riesgo legal por derechos de autor (copyright) de Take-Two Interactive.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-github-com-itsnotrexed-leonida",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 42.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (legal_risk)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "legal_ambiguity",
+    "severity": "alta",
+    "detail": "El proyecto no incluye el juego ni claves; su uso depende de que el usuario posea una copia legal, lo que puede generar riesgos de infracción de derechos de autor."
+   },
+   {
+    "code": "project_status_early",
+    "severity": "media",
+    "detail": "El juego aún no arranca; el proyecto está en fase de desarrollo temprano y podría ser abandonado."
+   },
+   {
+    "code": "legal_risk",
+    "severity": "critica",
+    "detail": "El proyecto infringe potencialmente los términos de servicio de Rockstar Games y las leyes de propiedad intelectual al realizar ingeniería inversa de un software protegido."
+   },
+   {
+    "code": "cease_and_desist",
+    "severity": "alta",
+    "detail": "Es altamente probable que el titular de los derechos emita una orden de cese y desista contra el repositorio."
+   },
+   {
+    "code": "no_guarantee",
+    "severity": "media",
+    "detail": "El software no garantiza funcionalidad y puede ser abandonado en cualquier momento."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto es un repositorio de código abierto de ingeniería inversa. Aunque el repositorio existe y es legítimo en GitHub, su naturaleza técnica y legal es extremadamente precaria. No es una 'oportunidad' de inversión, sino un proyecto de desarrollo técnico de alto riesgo legal por derechos de autor (copyright) de Take-Two Interactive."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "Recompilación nativa de un título de última generación, traducción de shaders RDNA2 a SPIR‑V · Verificador: Recompilación estática de un título AAA moderno; técnica avanzada de traducción de shaders RDNA2 a SPIR-V.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Podría permitir jugar GTA VI en PC, pero depende de la disponibilidad del juego y de superar barreras legales · Verificador: El potencial es puramente técnico; comercialmente es nulo y altamente probable de ser bloqueado por acciones legales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Limitado a propietarios del juego Xbox; nicho de entusiastas y modders · Verificador: No es un producto comercial, es un proyecto de nicho para entusiastas de la preservación. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Contribuidores anónimos en GitHub, sin información pública de un equipo formal · Verificador: Desarrolladores anónimos bajo el alias 'ItsNotRexed'. Sin entidad legal ni transparencia.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Proyecto sin financiación externa conocida, basado en contribuciones voluntarias · Verificador: Proyecto sin ánimo de lucro, sin financiación externa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "5.8k estrellas, 411 forks y Discord activo · Verificador: Alta tracción en GitHub (5.8k estrellas) y comunidad activa en Discord.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.5,
+    "points": 3.1,
+    "why": "Aún en fase temprana, el juego no arranca; adopción limitada · Verificador: Fase experimental; no es funcional para el usuario final promedio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "No existen proyectos similares de recompilación estática de GTA VI · Verificador: Proyecto pionero en la recompilación de este título específico.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Alta complejidad de recompilación de consola a PC y traducción de shaders · Verificador: Extremadamente alto; requiere conocimientos avanzados de compilación y depuración. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.5,
+    "points": 8.5,
+    "why": "No se requiere inversión monetaria más allá del juego propio · Verificador: No hay inversión financiera, pero sí riesgo de pérdida de tiempo y posible coste de hardware/juego sin garantía de éxito.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Uso potencialmente conflictivo con la legislación de derechos de autor en España · Verificador: La legislación española sobre propiedad intelectual es estricta respecto a la ingeniería inversa de software protegido.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay activo financiero que vender; salida consiste solo en dejar de participar · Verificador: No existe mecanismo de salida al no haber activo financiero.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 60.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": -60.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-22T01:26:32Z",
+    "stars": 5763.0,
+    "forks": 411.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Leonida\nCATEGORÍA: ia_tecnologia · recompilación_juego\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://github.com/ItsNotRexed/Leonida\nENLACE DE PARTICIPACIÓN: https://discord.gg/rexed\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no_aplicable\nCOSTE DE ENTRADA: 0,00 € (+ 60,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial técnico pero con incertidumbre comercial y legal\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovadora traducción de shaders RDNA2 a SPIR‑V; Posibilidad de ejecutar un título de consola de última generación en PC; Contribución a la preservación y estudio de arquitectura de juegos\nMOTIVOS PARA DESCONFIAR: El proyecto no incluye el juego ni claves; su uso depende de que el usuario posea una copia legal, lo que puede generar riesgos de infracción de derechos de autor.; El juego aún no arranca; el proyecto está en fase de desarrollo temprano y podría ser abandonado.; El proyecto infringe potencialmente los términos de servicio de Rockstar Games y las leyes de propiedad intelectual al realizar ingeniería inversa de un software protegido.; Es altamente probable que el titular de los derechos emita una orden de cese y desista contra el repositorio.; El software no garantiza funcionalidad y puede ser abandonado en cualquier momento.; El verificador tiene dudas: El proyecto es un repositorio de código abierto de ingeniería inversa. Aunque el repositorio existe y es legítimo en GitHub, su naturaleza técnica y legal es extremadamente precaria. No es una 'oportunidad' de inversión, sino un proyecto de desarrollo técnico de alto riesgo legal por derechos de autor (copyright) de Take-Two Interactive.; incertidumbre legal sobre la redistribución de assets del juego\nCÓMO PARTICIPAR: 1. Comprar una copia legal de GTA VI para Xbox Series.; 2. Clonar el repositorio de GitHub: git clone https://github.com/ItsNotRexed/Leonida; 3. Instalar dependencias (Vulkan SDK, herramientas de compilación, etc.).; 4. Seguir la guía del README para generar los shaders y el runtime.; 5. Probar la compilación y, si funciona, aportar mejoras mediante pull requests.; 6. Unirse al Discord para coordinar con otros desarrolladores.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Acciones legales por parte del titular de los derechos del juego; Abandono del proyecto por falta de desarrolladores; Problemas técnicos insuperables al traducir shaders\nFUENTES: https://github.com/ItsNotRexed/Leonida | https://www.boe.es/buscar/act.php?id=BOE-A-1996-8930",
+  "firstSeenAt": "2026-11-22T01:26:32Z",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
+  "aliases": [
+   "web-github-com-itsnotrexed-leonida"
+  ]
+ },
+ {
+  "name": "Kalshi",
+  "category": "startups",
+  "subcategory": "exchange_de_eventos",
+  "kind": "activa",
+  "description": "Kalshi es una plataforma regulada en EE. UU. que permite operar contratos de eventos (tipo binary options). Actualmente enfrenta una audiencia en Nueva York por una orden que podría cerrar su intercambio a nivel nacional.",
+  "officialUrl": "https://kalshi.com",
+  "participateUrl": null,
+  "country": "Estados Unidos",
+  "spainAvailability": "no",
+  "spainNotes": "No hay indicios de disponibilidad o registro de la plataforma en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No hay información pública sobre rondas de financiación abiertas al público; la inversión mínima dependería de una posible ronda privada o mercado secundario.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Sin mercado secundario público; la salida dependería de una venta privada o adquisición.",
+  "horizon": "largo plazo (2‑5 años)",
+  "deadline": null,
+  "potential": "alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.",
+  "difficulty": "alta",
+  "timeNeeded": "investigación profunda y contacto con inversores acreditados",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de exchange de eventos regulado (DCM) bajo la CFTC en EE. UU.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.5,
+    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: Mercado de predicción con alta competencia y presión regulatoria estatal",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de consolidación",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "Información pública limitada sobre el equipo fundador y su experiencia · Verificador: Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 4.0,
+    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Respaldada por Sequoia Capital y Charles Schwab · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios estadounidenses",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.0,
+    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Mercado altamente competitivo con actores como Polymarket y PredictIt",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.0,
+    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura robusta bajo supervisión de la CFTC",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 3.0,
+    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo por litigios con la Fiscalía de Nueva York · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay indicios de registro o autorización para operar en España · Verificador: No disponible para residentes en España",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.5,
+    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Sin mercado secundario para inversores minoristas",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "critica",
+    "detail": "Litigio activo con la Fiscalía de Nueva York que amenaza la continuidad operativa"
+   },
+   {
+    "code": "no_disponible_espana",
+    "severity": "alta",
+    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
+   }
+  ],
+  "distrust": [
+   "alta incertidumbre regulatoria en EE. UU."
+  ],
+  "whyInteresting": [
+   "Posible pionero en mercados regulados de predicción de eventos",
+   "Potencial de crecimiento si supera barreras legales"
+  ],
+  "howToParticipate": [
+   "1. Monitorizar la audiencia del 23‑11‑2026 y su resultado",
+   "2. Buscar información sobre rondas de financiación privadas o secondary market de acciones",
+   "3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web)",
+   "4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda"
+  ],
+  "lossCauses": [
+   "Cierre total por orden regulatoria",
+   "Falta de adopción de usuarios",
+   "Problemas de liquidez en el mercado secundario"
+  ],
+  "earlySignals": [
+   "Resultado de la audiencia del 23‑11‑2026",
+   "Declaraciones públicas de la AG de NY"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV.",
+   "sources": [
+    "https://www.cftc.gov",
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813"
+   },
+   {
+    "title": "CFTC Official Website",
+    "url": "https://www.cftc.gov"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-kalshi-com",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 34.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
+   },
+   {
+    "code": "no_disponible_espana",
+    "severity": "alta",
+    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de exchange de eventos regulado (DCM) bajo la CFTC en EE. UU.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.5,
+    "points": 6.6,
+    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: Mercado de predicción con alta competencia y presión regulatoria estatal",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de consolidación",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Información pública limitada sobre el equipo fundador y su experiencia · Verificador: Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Respaldada por Sequoia Capital y Charles Schwab · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios estadounidenses",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Mercado altamente competitivo con actores como Polymarket y PredictIt",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura robusta bajo supervisión de la CFTC",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo por litigios con la Fiscalía de Nueva York · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay indicios de registro o autorización para operar en España · Verificador: No disponible para residentes en España",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Sin mercado secundario para inversores minoristas",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Kalshi\nCATEGORÍA: startups · exchange_de_eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://kalshi.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo (2‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible pionero en mercados regulados de predicción de eventos; Potencial de crecimiento si supera barreras legales\nMOTIVOS PARA DESCONFIAR: Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional; La plataforma bloquea el acceso a usuarios fuera de EE. UU.; El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales.; Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV.; alta incertidumbre regulatoria en EE. UU.\nCÓMO PARTICIPAR: 1. Monitorizar la audiencia del 23‑11‑2026 y su resultado; 2. Buscar información sobre rondas de financiación privadas o secondary market de acciones; 3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web); 4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cierre total por orden regulatoria; Falta de adopción de usuarios; Problemas de liquidez en el mercado secundario\nFUENTES: https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813 | https://www.cftc.gov",
+  "firstSeenAt": "2026-11-22T01:26:32Z",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
+  "aliases": [
+   "news-www-theblock-co-news-regulation-2026-11-21-kalshi-faces-monday-hearing-on-new-york-or"
+  ]
+ },
+ {
   "name": "AI Context Flow MCP",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -16864,6 +18155,426 @@
   "runId": "run-20261121-1158",
   "aliases": [
    "news-www-producthunt-com-products-waitfeed-2"
+  ]
+ },
+ {
+  "name": "Google Ultra Free Trial Script",
+  "category": "ia_tecnologia",
+  "subcategory": "herramientas",
+  "kind": "activa",
+  "description": "Script que automatiza la obtención de la prueba gratuita de 12 meses del plan AI Pro 5 TB de Google One (Ultra) sin coste, mediante la manipulación del proceso de facturación de Play Store.",
+  "officialUrl": "https://github.com/gylive/google-ultra",
+  "participateUrl": null,
+  "country": "EE. UU. (requerido)",
+  "spainAvailability": "no",
+  "spainNotes": "Requiere cuenta de Google configurada para EE. UU. En España solo es posible si se usa una cuenta US o VPN y se cumplen los requisitos de elegibilidad.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Posibles costes de hardware (teléfono Android rooteado) o emulador; sin gasto monetario directo para la suscripción.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No hay salida financiera; la suscripción caduca al terminar el periodo de prueba.",
+  "horizon": "corto plazo (12 meses de prueba)",
+  "deadline": null,
+  "potential": "Permite acceder a 5 TB de almacenamiento AI de Google One sin pagar durante un año, lo que puede suponer un ahorro significativo para usuarios intensivos de IA.",
+  "difficulty": "media",
+  "timeNeeded": "2‑4 horas para preparar entorno y ejecutar el script",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Script que combina Frida y BillingClient para activar ofertas gratuitas no documentadas · Verificador: Uso de BillingClient para forzar ofertas, técnica conocida en entornos de ingeniería inversa.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Acceso gratuito a 5 TB AI Pro durante 12 meses, valor comercial estimado > 100 € · Verificador: El autor confirma que la oferta principal (Ultra) ha sido retirada. · Discrepancia entre modelos (8 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "Interés limitado a usuarios de Google One que necesiten gran capacidad AI · Verificador: Interés decreciente debido a la baja tasa de éxito y riesgo de baneo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No se dispone de información sobre los desarrolladores del repositorio · Verificador: Desarrollador anónimo (gylive).",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "Proyecto sin financiación externa conocida · Verificador: Proyecto personal sin financiación.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.5,
+    "why": "2.6 k estrellas y 79 forks en GitHub indican una comunidad moderada · Verificador: Repositorio con estrellas, pero enfocado en una actividad de riesgo.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Uso restringido por requisitos de cuenta y hardware · Verificador: Muy limitada por requisitos técnicos y geográficos.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Existen pocos scripts similares; la mayoría son casos aislados · Verificador: Existen otros scripts similares en foros de hacking, pero ninguno es un producto legítimo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.0,
+    "why": "Requiere teléfono Android rooteado o emulador y conocimientos de Frida; fallos pueden impedir la activación · Verificador: Requiere entorno root/emulador y manipulación de procesos de pago. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.0,
+    "why": "No implica inversión monetaria directa, pero riesgo de perder la cuenta o la oferta · Verificador: Riesgo crítico de pérdida de acceso a servicios de Google (Gmail, Drive, Fotos) por baneo.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "Necesita cuenta US y posible uso de VPN; no garantizado en España · Verificador: No diseñado para España; requiere configuración de cuenta US y elusión de restricciones.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No aplica a inversión financiera · Verificador: No es una inversión, es una vulneración de TOS.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "tos_violation",
+    "severity": "alta",
+    "detail": "El script manipula el proceso de facturación de Google Play, lo que puede violar los Términos de Servicio y conllevar suspensión de la cuenta."
+   },
+   {
+    "code": "regional_restriction",
+    "severity": "media",
+    "detail": "La oferta solo está disponible para cuentas configuradas en EE. UU; usuarios en España pueden no calificar."
+   },
+   {
+    "code": "tos_violation",
+    "severity": "critica",
+    "detail": "La manipulación de la facturación de Google Play es una violación directa de los TOS y puede resultar en el baneo permanente de la cuenta de Google."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Ejecutar scripts de terceros que interactúan con procesos de pago y requieren permisos root es un riesgo de seguridad grave."
+   },
+   {
+    "code": "service_unavailability",
+    "severity": "media",
+    "detail": "El autor indica explícitamente que la oferta 'Ultra' ya no está disponible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El script utiliza técnicas de manipulación de la API BillingClient de Google Play para acceder a ofertas de suscripción. Esto viola los Términos de Servicio de Google, lo que conlleva un riesgo alto de suspensión permanente de la cuenta de Google del usuario. Además, el propio autor admite en el README que la oferta principal (Ultra) ya no está disponible."
+   }
+  ],
+  "distrust": [
+   "Posible bloqueo de cuenta Google por uso del script"
+  ],
+  "whyInteresting": [
+   "Acceso gratuito a gran capacidad de almacenamiento AI durante un año",
+   "Aprovecha una vulnerabilidad no documentada en el proceso de facturación de Google Play"
+  ],
+  "howToParticipate": [
+   "1. Preparar un teléfono Android rooteado o instalar MuMu Player con permisos root; 2. Instalar Python 3.9+, frida y adb en el PC; 3. Clonar el repositorio https://github.com/gylive/google-ultra; 4. Ejecutar la versión simple (web/index.html) o el script pro.py siguiendo la guía del README; 5. Proveer una cuenta Google configurada para EE. UU que nunca haya suscrito Google One; 6. Confirmar que la oferta mostrada sea \"0 $\" o \"prueba gratuita 12 meses\" y completar la suscripción; 7. Verificar en Play Store que la suscripción está activa."
+  ],
+  "lossCauses": [
+   "Cuenta Google suspendida por violar TOS",
+   "No cumplir los requisitos de elegibilidad (país, historial de suscripciones)",
+   "Fallo del script por cambios en la API de BillingClient"
+  ],
+  "earlySignals": [
+   "Incremento de estrellas y forks en el repositorio",
+   "Menciones en foros de hacking de Android y comunidades de IA"
+  ],
+  "signals": {
+   "stars": 2600,
+   "forks": 79
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "El software promueve la elusión de controles de facturación y términos de servicio de una plataforma comercial. No está regulado por entidades financieras, pero su uso contraviene las políticas de uso aceptable de Google.",
+   "sources": [
+    "https://play.google.com/intl/es_es/about/play-terms/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "github.com",
+    "url": "https://github.com/gylive/google-ultra"
+   }
+  ],
+  "discoveredVia": "GitHub",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El script utiliza técnicas de manipulación de la API BillingClient de Google Play para acceder a ofertas de suscripción. Esto viola los Términos de Servicio de Google, lo que conlleva un riesgo alto de suspensión permanente de la cuenta de Google del usuario. Además, el propio autor admite en el README que la oferta principal (Ultra) ya no está disponible.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-22",
+  "id": "web-github-com-gylive-google-ultra",
+  "isNew": true,
+  "score": 14,
+  "rawScore": 29.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "tos_violation",
+    "severity": "alta",
+    "detail": "El script manipula el proceso de facturación de Google Play, lo que puede violar los Términos de Servicio y conllevar suspensión de la cuenta."
+   },
+   {
+    "code": "regional_restriction",
+    "severity": "media",
+    "detail": "La oferta solo está disponible para cuentas configuradas en EE. UU; usuarios en España pueden no calificar."
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Ejecutar scripts de terceros que interactúan con procesos de pago y requieren permisos root es un riesgo de seguridad grave."
+   },
+   {
+    "code": "service_unavailability",
+    "severity": "media",
+    "detail": "El autor indica explícitamente que la oferta 'Ultra' ya no está disponible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El script utiliza técnicas de manipulación de la API BillingClient de Google Play para acceder a ofertas de suscripción. Esto viola los Términos de Servicio de Google, lo que conlleva un riesgo alto de suspensión permanente de la cuenta de Google del usuario. Además, el propio autor admite en el README que la oferta principal (Ultra) ya no está disponible."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "El software promueve la elusión de controles de facturación y términos de servicio de una plataforma comercial. No está regulado por entidades financieras, pero su uso contraviene las políticas de uso aceptable de Google."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Script que combina Frida y BillingClient para activar ofertas gratuitas no documentadas · Verificador: Uso de BillingClient para forzar ofertas, técnica conocida en entornos de ingeniería inversa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Acceso gratuito a 5 TB AI Pro durante 12 meses, valor comercial estimado > 100 € · Verificador: El autor confirma que la oferta principal (Ultra) ha sido retirada. · Discrepancia entre modelos (8 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Interés limitado a usuarios de Google One que necesiten gran capacidad AI · Verificador: Interés decreciente debido a la baja tasa de éxito y riesgo de baneo. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información sobre los desarrolladores del repositorio · Verificador: Desarrollador anónimo (gylive).",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Proyecto sin financiación externa conocida · Verificador: Proyecto personal sin financiación.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.5,
+    "points": 3.9,
+    "why": "2.6 k estrellas y 79 forks en GitHub indican una comunidad moderada · Verificador: Repositorio con estrellas, pero enfocado en una actividad de riesgo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso restringido por requisitos de cuenta y hardware · Verificador: Muy limitada por requisitos técnicos y geográficos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen pocos scripts similares; la mayoría son casos aislados · Verificador: Existen otros scripts similares en foros de hacking, pero ninguno es un producto legítimo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Requiere teléfono Android rooteado o emulador y conocimientos de Frida; fallos pueden impedir la activación · Verificador: Requiere entorno root/emulador y manipulación de procesos de pago. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "No implica inversión monetaria directa, pero riesgo de perder la cuenta o la oferta · Verificador: Riesgo crítico de pérdida de acceso a servicios de Google (Gmail, Drive, Fotos) por baneo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Necesita cuenta US y posible uso de VPN; no garantizado en España · Verificador: No diseñado para España; requiere configuración de cuenta US y elusión de restricciones.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a inversión financiera · Verificador: No es una inversión, es una vulneración de TOS.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-22T01:26:32Z",
+    "stars": 2600.0,
+    "forks": 79.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Google Ultra Free Trial Script\nCATEGORÍA: ia_tecnologia · herramientas\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://github.com/gylive/google-ultra\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EE. UU. (requerido)\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Permite acceder a 5 TB de almacenamiento AI de Google One sin pagar durante un año, lo que puede suponer un ahorro significativo para usuarios intensivos de IA.\nPUNTUACIÓN: 14/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo (12 meses de prueba)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso gratuito a gran capacidad de almacenamiento AI durante un año; Aprovecha una vulnerabilidad no documentada en el proceso de facturación de Google Play\nMOTIVOS PARA DESCONFIAR: El script manipula el proceso de facturación de Google Play, lo que puede violar los Términos de Servicio y conllevar suspensión de la cuenta.; La oferta solo está disponible para cuentas configuradas en EE. UU; usuarios en España pueden no calificar.; Ejecutar scripts de terceros que interactúan con procesos de pago y requieren permisos root es un riesgo de seguridad grave.; El autor indica explícitamente que la oferta 'Ultra' ya no está disponible.; El verificador tiene dudas: El script utiliza técnicas de manipulación de la API BillingClient de Google Play para acceder a ofertas de suscripción. Esto viola los Términos de Servicio de Google, lo que conlleva un riesgo alto de suspensión permanente de la cuenta de Google del usuario. Además, el propio autor admite en el README que la oferta principal (Ultra) ya no está disponible.; El software promueve la elusión de controles de facturación y términos de servicio de una plataforma comercial. No está regulado por entidades financieras, pero su uso contraviene las políticas de uso aceptable de Google.; Posible bloqueo de cuenta Google por uso del script\nCÓMO PARTICIPAR: 1. Preparar un teléfono Android rooteado o instalar MuMu Player con permisos root; 2. Instalar Python 3.9+, frida y adb en el PC; 3. Clonar el repositorio https://github.com/gylive/google-ultra; 4. Ejecutar la versión simple (web/index.html) o el script pro.py siguiendo la guía del README; 5. Proveer una cuenta Google configurada para EE. UU que nunca haya suscrito Google One; 6. Confirmar que la oferta mostrada sea \"0 $\" o \"prueba gratuita 12 meses\" y completar la suscripción; 7. Verificar en Play Store que la suscripción está activa.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cuenta Google suspendida por violar TOS; No cumplir los requisitos de elegibilidad (país, historial de suscripciones); Fallo del script por cambios en la API de BillingClient\nFUENTES: https://github.com/gylive/google-ultra",
+  "firstSeenAt": "2026-11-22T01:26:32Z",
+  "lastSeenAt": "2026-11-22T01:26:32Z",
+  "runId": "run-20261122-0126",
+  "aliases": [
+   "web-github-com-gylive-google-ultra"
   ]
  },
  {
