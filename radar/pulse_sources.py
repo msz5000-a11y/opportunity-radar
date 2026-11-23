@@ -251,7 +251,7 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
                         act="El interés en búsquedas suele acompañar a movimientos fuertes. Compara con el precio antes de actuar.",
                         act_en="Search interest often comes with strong moves. Compare with price action before acting.",
                         sym=sym, m={"rank": rank, "ch24h": _r(ch), "price": d.get("price"), "cur": "USD"}, s=int(s),
-                        opp=2 if i < 5 else 1, risk="muy_alto" if not rank or rank > 300 else "alto", tags=["tendencia"],
+                        opp=2 if i < 3 else 1, risk="muy_alto" if not rank or rank > 300 else "alto", tags=["tendencia"],
                         url=f"https://www.coingecko.com/es/monedas/{cid}"))
     ctx.setmem("cg_trending_ids", ids)
     for cat in (data.get("categories") or [])[:5]:
@@ -757,7 +757,7 @@ def c_stocktwits(ctx: Ctx) -> list[dict]:
                         why_en="Among the most discussed tickers by retail investors right now; attention brings volatility.",
                         act="Comprueba si hay noticia y cómo se mueve el precio; la euforia de redes dura poco.",
                         act_en="Check for news and price action; social hype fades fast.",
-                        sym=base, s=int(42 + max(0, 20 - i) * 0.8), opp=2 if i < 5 else 1, risk="alto", tags=["redes"],
+                        sym=base, s=int(42 + max(0, 20 - i) * 0.8), opp=1, risk="alto", tags=["redes"],
                         url=f"https://stocktwits.com/symbol/{sym}"))
     ctx.setmem("st_syms", syms[:20])
     return out
@@ -1127,7 +1127,7 @@ def c_bdns(ctx: Ctx) -> list[dict]:
                             why_en=f"Official call registered in Spain's national grants database on {x.get('fechaRecepcion')}.",
                             act="Abre la ficha oficial, revisa quién puede pedirla y el plazo (suele ser corto) y prepara la documentación.",
                             act_en="Open the official page, check eligibility and deadline (often short) and prepare documents.",
-                            m={"nivel": nivel, "org": org, "fecha": x.get("fechaRecepcion")}, s=s, opp=3 if nivel in ("ESTADO", "AUTONOMICA") else 2,
+                            m={"nivel": nivel, "org": org, "fecha": x.get("fechaRecepcion")}, s=s, opp=3 if nivel in ("ESTADO", "AUTONOMICA") else 1,
                             risk="bajo", tags=["ayuda"] + (["local"] if nivel == "LOCAL" else []), also=["negocio"],
                             url=f"https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{num}"))
     return out

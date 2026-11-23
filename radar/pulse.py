@@ -170,6 +170,8 @@ def confirm(items: list[dict], added: list[dict], now: datetime):
                 if "confirmada" not in tags:
                     tags.append("confirmada")
                     g["s"] = min(100, g["s"] + 5)
+                    if g["kind"] in ("social", "trend"):
+                        g["opp"] = max(g.get("opp", 1), 2)  # el ruido de redes cuenta si el precio lo confirma
 
 
 def prune(items: list[dict], seen: dict, now: datetime) -> list[dict]:

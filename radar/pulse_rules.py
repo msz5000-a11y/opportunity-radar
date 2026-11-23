@@ -141,6 +141,8 @@ INTENT = [
     (_kw("short squeeze", "unusual options", "insider buying", "compras de directivos"), 10, 2, "flujo", True),
 ]
 _INTENT_RX = [(_rx(ws), p, lvl, tag, head_only) for ws, p, lvl, tag, head_only in INTENT]
+FUNDING_CTX = _rx(_kw("seed", "series", "round", "ronda", "funding", "financiacion", "investors", "inversores", "venture", "led by",
+                      "backed by", "valuation", "valoracion", "capital riesgo", "vc", "pre-seed", "angel"))
 CRYPTO_CTX = _rx(_kw("crypto", "cripto", "token", "tokens", "wallet", "wallets", "blockchain", "defi", "onchain", "points", "eligible",
                      "claim", "testnet", "mainnet", "protocol", "protocolo", "web3", "dao", "solana", "ethereum", "bitcoin", "layer"))
 RISK_WORDS = [
@@ -206,6 +208,8 @@ def classify(title: str, summary: str, default_cat: str) -> dict:
             continue
         if tag == "airdrop" and not CRYPTO_CTX.search(text.replace("airdrop", "")):
             continue  # AirDrop de Apple, etc.
+        if tag == "ronda" and not FUNDING_CTX.search(text):
+            continue  # "secures a win", "raises money for charity"...
         tags.append(tag)
         pts += p if in_head else p * 0.5
         opp = max(opp, level)

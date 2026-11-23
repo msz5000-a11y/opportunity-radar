@@ -105,7 +105,8 @@
 
   // ------------------------------------------------------------------ datos
   async function getJSON(name) {
-    const r = await fetch(`data/${name}?m=${Math.floor(Date.now() / 60000)}`, {cache: "no-cache"});
+    // revalidación con ETag cada vez (cache: no-cache) y, por si el navegador la ignora, la URL cambia cada 2 minutos
+    const r = await fetch(`data/${name}?m=${Math.floor(Date.now() / 120000)}`, {cache: "no-cache"});
     if (!r.ok) throw new Error(`${name} ${r.status}`);
     return r.json();
   }
@@ -294,8 +295,8 @@
   function chips(list, cur, attr) {
     return `<div class="segs" role="group">${list.map(([k, label, n]) => `<button class="seg" type="button" ${attr}="${esc(k)}" aria-pressed="${k === cur}">${esc(label)}${n != null ? `<span class="n">${n}</span>` : ""}</button>`).join("")}</div>`;
   }
-  function feedBlock(list, emptyMsg) {
-    const shown = (S.useful ? list.filter(useful) : list.filter((x) => !x.h)).sort(byWhen);
+  function feedBlock(list, emptyMsg, showAll = false) {
+    const shown = (S.useful && !showAll ? list.filter(useful) : list.filter((x) => !x.h)).sort(byWhen);
     if (!shown.length) {
       const hidden = list.length - shown.length;
       return `<div class="empty">${esc(emptyMsg || L("Nada nuevo por aquí en las últimas horas. El radar vuelve a mirar cada 5 minutos.", "Nothing new here in the last few hours. The radar checks again every 5 minutes."))}${S.useful && hidden > 0 ? `<br><br><button class="btn" type="button" data-useful="1">${L(`Ver también lo poco relevante (${hidden})`, `Show low-relevance items too (${hidden})`)}</button>` : ""}</div>`;
@@ -360,12 +361,15 @@
     let body = "", showSwitch = true, scope = all;
     const deepCount = deepOpps(cat).length;
     const opts = segs.map(([k, label]) => [k, label, k === "deep" ? deepCount : null]);
-    const pick = (f, empty) => { scope = all.filter(f); body = feedBlock(scope, empty); };
+    const pick = (f, empty, showAll = false) => { scope = all.filter(f); body = feedBlock(scope, empty, showAll); if (showAll) showSwitch = false; };
     switch (seg) {
       case "sig": pick((x) => SIGNAL_KINDS.has(x.kind)); break;
       case "news": pick((x) => x.kind === "news"); break;
       case "social": pick((x) => x.kind === "social" || x.kind === "trend"); break;
-      case "grant": pick((x) => x.kind === "grant", L("Sin convocatorias nuevas de ayudas en los últimos días.", "No new grant calls in recent days.")); break;
+      case "grant":
+        pick((x) => x.kind === "grant", L("Sin convocatorias nuevas de ayudas en los últimos días.", "No new grant calls in recent days."), true);
+        body = `<p class="note">${L("Convocatorias oficiales de la Base de Datos Nacional de Subvenciones. Las municipales y provinciales solo sirven si tu negocio está allí.", "Official calls from Spain's national grants database. Municipal and provincial ones only apply if your business is there.")}</p>` + body;
+        break;
       case "tools": pick((x) => x.kind === "launch" || x.kind === "trend"); break;
       case "listing": pick((x) => x.kind === "listing"); break;
       case "ipo": pick((x) => x.kind === "ipo" || arr(x.tags).includes("ipo"), L("No hay salidas a bolsa previstas en los próximos 14 días.", "No IPOs expected in the next 14 days.")); break;
