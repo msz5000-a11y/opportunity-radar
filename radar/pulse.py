@@ -25,7 +25,7 @@ from . import notify, pulse_rules as R, pulse_sources as S
 from .llm import extract_json
 
 MADRID = ZoneInfo("Europe/Madrid")
-KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 336, "earnings": 72, "insider": 168,
+KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 720, "earnings": 72, "insider": 168,
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
 DEADLINE_S = 170

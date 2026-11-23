@@ -401,7 +401,15 @@ def _exchange_ann(ex: str, name: str, title: str, url: str, rel: datetime | None
         sym = m2.group(1)
     if sym:
         uid = sym
-    if DERIV.search(t) and not ("spot" in t and "will list" in t):
+    spot_listing = "spot" in t and any(w in t for w in ("will list", "to list", "will launch", "adds", "will add", "listing"))
+    if ("bstocks" in t or "tokenized" in t or "xstock" in t) and not DERIV.search(t):
+        return item(f"an:{ex}:{R.h(title)}", "cripto", "context", name, title=title, es=f"{name}: acciones tokenizadas ({title[:90]})", en=title,
+                    why="Pares de acciones tokenizadas: replican el precio de la acción, no son una cripto nueva.",
+                    why_en="Tokenized stock pairs mirror the share price; not a new crypto.",
+                    act="Si te interesa esa empresa, valora comprar la acción real en un bróker regulado.",
+                    act_en="If you like the company, consider the real share via a regulated broker.",
+                    s=42, opp=1, risk="alto", tags=["tokenizadas"], url=url, pub=iso(rel) if rel else None)
+    if DERIV.search(t) and not spot_listing:
         return item(f"an:{ex}:{R.h(title)}", "cripto", "context", name, title=title, es=f"{name}: nuevos derivados ({title[:90]})", en=title,
                     why="Anuncio de productos derivados (futuros, opciones o margen).", why_en="Derivatives product announcement.",
                     act="Los derivados con apalancamiento pueden hacerte perder más de lo que pones: no son para empezar.",
@@ -1052,7 +1060,9 @@ def c_gnews(ctx: Ctx) -> list[dict]:
 
 BDNS_Q = ["emprendedores", "startups", "empresas emergentes", "creación de empresas", "digitalización", "innovación",
           "autónomos", "inteligencia artificial", "comercio electrónico", "internacionalización", "jóvenes empresarios", "I+D"]
-BDNS_BAD = R._kw("nominativa", "concesion directa", "ibi", "bienes inmuebles", "comedor", "a favor de", "convenio con", "club ",
+BDNS_BAD = R._kw("nominativa", "concesion directa", "subv. directa", "subvencion directa", "ubvencion nominativa", "ibi", "bienes inmuebles",
+                 "comedor", "a favor de", "convenio con", "club ", "camara oficial", "camaras de comercio", "a la camara", "a las camaras",
+                 "fondos documentales", "confederacion de empresarios", "organizacion de profesionales",
                  "cofradia", "parroquia", "fiestas", "asociacion de vecinos", "ampa", "transporte escolar", "a la asociacion",
                  "a la fundacion", "al ayuntamiento", "a la federacion", "festival", "cabalgata")
 BDNS_GOOD = R._kw("emprend", "empresa", "pyme", "autonom", "startup", "emergente", "digital", "innovacion", "i+d", "comercio",
@@ -1079,11 +1089,13 @@ def c_bdns(ctx: Ctx) -> list[dict]:
             seen.add(num)
             f = R.fold(desc)
             fecha = parse_date(x.get("fechaRecepcion"))
-            if (fecha and ctx.now - fecha > timedelta(days=10)) or any(w in f for w in BDNS_BAD) or not any(w in f for w in BDNS_GOOD):
+            if (fecha and ctx.now - fecha > timedelta(days=30)) or any(w in f for w in BDNS_BAD) or not any(w in f for w in BDNS_GOOD):
                 continue
             nivel = (x.get("nivel1") or "").upper()
             org = R.clean(x.get("nivel2") or x.get("nivel3") or "")
-            s = {"ESTADO": 72, "AUTONOMICA": 66, "LOCAL": 56}.get(nivel, 58)
+            s = {"ESTADO": 74, "AUTONOMICA": 68, "LOCAL": 50}.get(nivel, 54)
+            if fecha and ctx.now - fecha > timedelta(days=12):
+                s -= 6
             if any(w in f for w in R._kw("emprend", "startup", "emergente", "creacion de empresas", "nuevas empresas")):
                 s += 6
             where = org.title() if org else nivel.title()
@@ -1093,9 +1105,9 @@ def c_bdns(ctx: Ctx) -> list[dict]:
                             why_en=f"Official call registered in Spain's national grants database on {x.get('fechaRecepcion')}.",
                             act="Abre la ficha oficial, revisa quién puede pedirla y el plazo (suele ser corto) y prepara la documentación.",
                             act_en="Open the official page, check eligibility and deadline (often short) and prepare documents.",
-                            m={"nivel": nivel, "org": org, "fecha": x.get("fechaRecepcion")}, s=s, opp=3, risk="bajo",
-                            tags=["ayuda"], also=["negocio"], url=f"https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{num}",
-                            pub=iso(fecha) if fecha else None))
+                            m={"nivel": nivel, "org": org, "fecha": x.get("fechaRecepcion")}, s=s, opp=3 if nivel in ("ESTADO", "AUTONOMICA") else 2,
+                            risk="bajo", tags=["ayuda"] + (["local"] if nivel == "LOCAL" else []), also=["negocio"],
+                            url=f"https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{num}"))
     return out
 
 

@@ -84,6 +84,15 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
+      - name: Esperar a que GitHub registre el artefacto
+        run: sleep 8
       - id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+      - name: Reintentar el despliegue si falló
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 25
+      - id: deploy2
+        if: steps.deploy.outcome == 'failure'
         continue-on-error: true
         uses: actions/deploy-pages@v4
