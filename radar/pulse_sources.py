@@ -299,7 +299,7 @@ EX_URL = {"coinbase": "https://www.coinbase.com/es/price/{b}", "kraken": "https:
           "okx": "https://www.okx.com/es-es/trade-spot/{b}-usdt", "bitget": "https://www.bitget.com/es/spot/{B}USDT",
           "kucoin": "https://www.kucoin.com/es/trade/{B}-USDT"}
 EX_NAME = {"coinbase": "Coinbase", "kraken": "Kraken", "okx": "OKX", "bitget": "Bitget", "kucoin": "KuCoin"}
-EX_SCORE = {"coinbase": 80, "kraken": 76, "okx": 68, "kucoin": 60, "bitget": 58}
+EX_SCORE = {"coinbase": 84, "kraken": 82, "okx": 70, "kucoin": 60, "bitget": 58}
 KRAKEN_ALIAS = {"XBT": "BTC", "XDG": "DOGE"}
 
 
@@ -1115,7 +1115,7 @@ def c_bdns(ctx: Ctx) -> list[dict]:
                 continue
             nivel = (x.get("nivel1") or "").upper()
             org = R.clean(x.get("nivel2") or x.get("nivel3") or "")
-            s = {"ESTADO": 74, "AUTONOMICA": 68, "LOCAL": 50}.get(nivel, 54)
+            s = {"ESTADO": 78, "AUTONOMICA": 68, "LOCAL": 50}.get(nivel, 54)
             if fecha and ctx.now - fecha > timedelta(days=12):
                 s -= 6
             if any(w in f for w in R._kw("emprend", "startup", "emergente", "creacion de empresas", "nuevas empresas")):
