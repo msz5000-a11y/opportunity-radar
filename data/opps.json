@@ -6211,376 +6211,6 @@
   ]
  },
  {
-  "name": "Innovation Day 28DIGITAL 2026",
-  "category": "startups",
-  "subcategory": "eventos",
-  "kind": "pasiva",
-  "description": "Evento presencial en Madrid que reunió a startups y expertos para debatir sobre talento, tecnología y confianza, presentando proyectos como Mential, Sykah y KanzoTech. Sirvió para conectar talento universitario con empresas y mostrar soluciones innovadoras en IA, salud y procesos empresariales.",
-  "officialUrl": "https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
-  "participateUrl": null,
-  "country": "España",
-  "spainAvailability": "no",
-  "spainNotes": "Evento realizado el 19 de noviembre de 2026 en la Fundación PONS, Madrid; ya finalizado.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "No se menciona coste de asistencia",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": false,
-  "liquidity": "nula",
-  "exitNotes": "No aplica",
-  "horizon": "corto plazo",
-  "deadline": null,
-  "potential": "Alto potencial de networking y conocimiento de startups emergentes en IA y salud.",
-  "difficulty": "baja",
-  "timeNeeded": "2-3 horas (asistencia al evento)",
-  "subscores": {
-   "novedad": {
-    "v": 7.0,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en IA, salud y talento, con startups específicas presentadas en 2026.",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 6.0,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor para el ecosistema tech en Madrid.",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 5.0,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: El sector de eventos tech es maduro, pero no hay datos de mercado específicos del evento.",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 6.8,
-    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
-    "evidence": true
-   },
-   "financiacion": {
-    "v": 0.0,
-    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de inversión, sino un evento de divulgación.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 7.0,
-    "why": "Participación de universidades, empresas y startups españolas · Verificador: Conexión clara entre academia, empresas y startups.",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 5.0,
-    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de networking.",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 6.0,
-    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Madrid tiene un ecosistema denso de eventos similares.",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 9.8,
-    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial.",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 9.8,
-    "why": "No hay inversión económica requerida · Verificador: No hay inversión económica requerida.",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 9.8,
-    "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
-    "evidence": true
-   },
-   "salida": {
-    "v": 9.8,
-    "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
-    "evidence": true
-   }
-  },
-  "redFlags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   },
-   {
-    "code": "evento_finalizado",
-    "severity": "baja",
-    "detail": "La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026."
-   },
-   {
-    "code": "evento_finalizado",
-    "severity": "baja",
-    "detail": "La oportunidad ocurrió el 19 de noviembre de 2026 y ya no está vigente."
-   }
-  ],
-  "distrust": [],
-  "whyInteresting": [
-   "Conocer tendencias en IA, talento y confianza",
-   "Networking con startups como Mential, Sykah y KanzoTech"
-  ],
-  "howToParticipate": [
-   "Revisar la agenda del Innovation Day en la web de 28DIGITAL",
-   "Registrarse en la plataforma de eventos (si estuviera abierto)",
-   "Asistir al evento presencial en la Fundación PONS, Madrid"
-  ],
-  "lossCauses": [],
-  "earlySignals": [],
-  "signals": {},
-  "regulatory": {
-   "checked": true,
-   "status": "no_aplica",
-   "notes": "Evento de networking y divulgación sin oferta de valores ni servicios financieros.",
-   "sources": []
-  },
-  "sources": [
-   {
-    "title": "El Referente",
-    "url": "https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/"
-   }
-  ],
-  "discoveredVia": "El Referente",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "confirmada",
-   "reason": "La oportunidad es un evento de networking y divulgación tecnológica ya finalizado. La información coincide con la fuente oficial proporcionada por El Referente. No es una inversión financiera, por lo que no requiere supervisión de la CNMV.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 100
-  },
-  "discoveredAt": "2026-11-23",
-  "id": "web-elreferente-es",
-  "isNew": false,
-  "score": 39,
-  "rawScore": 64.4,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)",
-   "Tope 39: no disponible en tu región"
-  ],
-  "critical": false,
-  "risk": "medio",
-  "flags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   },
-   {
-    "code": "evento_finalizado",
-    "severity": "baja",
-    "detail": "La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026."
-   }
-  ],
-  "evidenced": 8,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en IA, salud y talento, con startups específicas presentadas en 2026.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 6.0,
-    "points": 7.2,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor para el ecosistema tech en Madrid.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: El sector de eventos tech es maduro, pero no hay datos de mercado específicos del evento.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 6.8,
-    "points": 6.8,
-    "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de inversión, sino un evento de divulgación.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "Participación de universidades, empresas y startups españolas · Verificador: Conexión clara entre academia, empresas y startups.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de networking.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Madrid tiene un ecosistema denso de eventos similares.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 9.8,
-    "points": 7.8,
-    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 9.8,
-    "points": 9.8,
-    "why": "No hay inversión económica requerida · Verificador: No hay inversión económica requerida.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 9.8,
-    "points": 7.8,
-    "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 9.8,
-    "points": 7.8,
-    "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
-  "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-23T01:50:15Z",
-  "runId": "run-20261123-0150",
-  "aliases": [
-   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d"
-  ],
-  "actionable": false,
-  "profitPath": ""
- },
- {
   "name": "LoudFlow",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -10652,6 +10282,423 @@
   ]
  },
  {
+  "name": "ORYKSA",
+  "category": "startups",
+  "subcategory": "asistentes_virtuales_ia",
+  "kind": "pasiva",
+  "description": "ORYKSA ofrece a cada pequeña empresa una \"empleada\" de IA con voz, ordenador en la nube e identidad propia, lista para atender, organizar y ejecutar tareas sin necesidad de programación.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "Portugal",
+  "spainAvailability": "no confirmada",
+  "spainNotes": "La startup es portuguesa y no se menciona disponibilidad explícita en España, aunque soporta varios idiomas y plataformas.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Planes pagos no detallados en la fuente",
+   "recommended": 0,
+   "max": 2000
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no hay mecanismo de salida financiero para usuarios",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto potencial para automatizar tareas en pymes y reducir costes de personal",
+  "difficulty": "baja",
+  "timeNeeded": "configuración en minutos mediante entrevista rápida",
+  "subscores": {
+   "novedad": {
+    "v": 7.5,
+    "why": "empleada de IA con voz, ordenador propio e identidad visual · Verificador: Enfoque de 'empleada de IA' con ordenador propio en la nube y voz real.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.5,
+    "why": "91 habilidades y 18 kits preparados para distintos sectores · Verificador: Alta utilidad para pymes, pero la escalabilidad técnica es incierta.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "apunta a pequeñas empresas que necesitan automatización · Verificador: Mercado amplio de pymes, pero alta competencia en agentes de IA.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "fundador Weslley Harakawa mencionado, sin más datos del equipo · Verificador: Solo se menciona al fundador Weslley Harakawa; falta información sobre el equipo técnico.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "no se menciona financiación ni inversores · Verificador: No hay datos públicos sobre rondas de inversión o capital social.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "no hay datos sobre usuarios o comunidad activa · Verificador: No hay métricas de usuarios activos ni presencia social relevante.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.5,
+    "why": "plan gratuito disponible sin tarjeta de crédito · Verificador: Modelo freemium disponible, pero sin casos de éxito verificables.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "existen otros asistentes IA, pero no se citan competidores directos · Verificador: Mercado saturado de asistentes IA (Zapier, OpenAI, agentes autónomos).",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "dependencia de infraestructura cloud y IA, sin datos de fiabilidad · Verificador: Dependencia total de APIs de terceros y cloud; riesgo de privacidad alto.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 7.5,
+    "why": "no requiere inversión inicial, plan gratuito · Verificador: Al ser gratuito, el riesgo de pérdida de capital es bajo, pero el riesgo operativo es alto.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.5,
+    "why": "sin mención clara de disponibilidad en España · Verificador: No hay mención de entidad legal en España ni cumplimiento fiscal específico.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "no hay información de venta, liquidez o retorno financiero · Verificador: No existe mecanismo de salida ni valor patrimonial para el usuario.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_datos_financieros",
+    "severity": "alta",
+    "detail": "No se dispone de información sobre financiación ni modelo de negocio sostenible"
+   },
+   {
+    "code": "dependencia_proveedor_ia",
+    "severity": "media",
+    "detail": "El servicio depende de la infraestructura y disponibilidad de la IA de ORYKSA"
+   },
+   {
+    "code": "falta_transparencia_corporativa",
+    "severity": "alta",
+    "detail": "No se encuentra registro oficial de la empresa en bases de datos europeas."
+   },
+   {
+    "code": "riesgo_privacidad_datos",
+    "severity": "alta",
+    "detail": "El acceso de la IA a portales y webs del cliente implica riesgos críticos de seguridad y cumplimiento RGPD."
+   },
+   {
+    "code": "ausencia_informacion_legal",
+    "severity": "media",
+    "detail": "No hay términos y condiciones ni política de privacidad accesible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe como entidad operativa en Portugal, pero carece de transparencia corporativa, registro mercantil verificable o sede física clara. Aunque afirma cumplir con el RGPD, no hay evidencia de auditorías externas ni presencia oficial en registros de servicios digitales en España."
+   }
+  ],
+  "distrust": [
+   "poca transparencia financiera",
+   "incertidumbre sobre soporte a largo plazo"
+  ],
+  "whyInteresting": [
+   "solución lista para usar sin necesidad de desarrollo",
+   "potencial ahorro de costes de personal para pymes"
+  ],
+  "howToParticipate": [
+   "Visitar la web de ORYKSA (enlace no disponible en la fuente)",
+   "Seleccionar el kit correspondiente al tipo de negocio",
+   "Completar la entrevista rápida de 5 minutos para activar la IA",
+   "Comenzar a usar la IA en los canales de comunicación del negocio"
+  ],
+  "actionable": true,
+  "profitPath": "ahorro en costes de personal al sustituir tareas rutinarias por la IA gratuita",
+  "lossCauses": [
+   "cierre de la startup",
+   "fallos técnicos de la IA",
+   "problemas de privacidad o cumplimiento RGPD"
+  ],
+  "earlySignals": [
+   "adopción inicial en pequeñas empresas portuguesas",
+   "integraciones con Shopify, WordPress y plataformas de mensajería"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No figura en registros de la CNMV ni en el registro de proveedores de servicios de activos virtuales. El cumplimiento RGPD es una autodeclaración sin verificación.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/portugal/startups/oryksa-da-a-cada-negocio-una-empleada-de-ia-con-voz-ordenador-e-identidad-propia/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La startup existe como entidad operativa en Portugal, pero carece de transparencia corporativa, registro mercantil verificable o sede física clara. Aunque afirma cumplir con el RGPD, no hay evidencia de auditorías externas ni presencia oficial en registros de servicios digitales en España.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-oryksa",
+  "isNew": true,
+  "score": 27,
+  "rawScore": 47.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_datos_financieros",
+    "severity": "alta",
+    "detail": "No se dispone de información sobre financiación ni modelo de negocio sostenible"
+   },
+   {
+    "code": "dependencia_proveedor_ia",
+    "severity": "media",
+    "detail": "El servicio depende de la infraestructura y disponibilidad de la IA de ORYKSA"
+   },
+   {
+    "code": "falta_transparencia_corporativa",
+    "severity": "alta",
+    "detail": "No se encuentra registro oficial de la empresa en bases de datos europeas."
+   },
+   {
+    "code": "riesgo_privacidad_datos",
+    "severity": "alta",
+    "detail": "El acceso de la IA a portales y webs del cliente implica riesgos críticos de seguridad y cumplimiento RGPD."
+   },
+   {
+    "code": "ausencia_informacion_legal",
+    "severity": "media",
+    "detail": "No hay términos y condiciones ni política de privacidad accesible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe como entidad operativa en Portugal, pero carece de transparencia corporativa, registro mercantil verificable o sede física clara. Aunque afirma cumplir con el RGPD, no hay evidencia de auditorías externas ni presencia oficial en registros de servicios digitales en España."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "empleada de IA con voz, ordenador propio e identidad visual · Verificador: Enfoque de 'empleada de IA' con ordenador propio en la nube y voz real.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.5,
+    "points": 7.8,
+    "why": "91 habilidades y 18 kits preparados para distintos sectores · Verificador: Alta utilidad para pymes, pero la escalabilidad técnica es incierta.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "apunta a pequeñas empresas que necesitan automatización · Verificador: Mercado amplio de pymes, pero alta competencia en agentes de IA.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 4.0,
+    "points": 4.0,
+    "why": "fundador Weslley Harakawa mencionado, sin más datos del equipo · Verificador: Solo se menciona al fundador Weslley Harakawa; falta información sobre el equipo técnico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "no se menciona financiación ni inversores · Verificador: No hay datos públicos sobre rondas de inversión o capital social.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "no hay datos sobre usuarios o comunidad activa · Verificador: No hay métricas de usuarios activos ni presencia social relevante.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 4.5,
+    "points": 4.0,
+    "why": "plan gratuito disponible sin tarjeta de crédito · Verificador: Modelo freemium disponible, pero sin casos de éxito verificables.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "existen otros asistentes IA, pero no se citan competidores directos · Verificador: Mercado saturado de asistentes IA (Zapier, OpenAI, agentes autónomos).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "dependencia de infraestructura cloud y IA, sin datos de fiabilidad · Verificador: Dependencia total de APIs de terceros y cloud; riesgo de privacidad alto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.5,
+    "points": 7.5,
+    "why": "no requiere inversión inicial, plan gratuito · Verificador: Al ser gratuito, el riesgo de pérdida de capital es bajo, pero el riesgo operativo es alto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "sin mención clara de disponibilidad en España · Verificador: No hay mención de entidad legal en España ni cumplimiento fiscal específico.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "no hay información de venta, liquidez o retorno financiero · Verificador: No existe mecanismo de salida ni valor patrimonial para el usuario.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: ORYKSA\nCATEGORÍA: startups · asistentes_virtuales_ia\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Portugal\nDISPONIBILIDAD EN ESPAÑA: no confirmada\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial para automatizar tareas en pymes y reducir costes de personal\nPUNTUACIÓN: 27/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: solución lista para usar sin necesidad de desarrollo; potencial ahorro de costes de personal para pymes\nMOTIVOS PARA DESCONFIAR: No se dispone de información sobre financiación ni modelo de negocio sostenible; El servicio depende de la infraestructura y disponibilidad de la IA de ORYKSA; No se encuentra registro oficial de la empresa en bases de datos europeas.; El acceso de la IA a portales y webs del cliente implica riesgos críticos de seguridad y cumplimiento RGPD.; No hay términos y condiciones ni política de privacidad accesible.; El verificador tiene dudas: La startup existe como entidad operativa en Portugal, pero carece de transparencia corporativa, registro mercantil verificable o sede física clara. Aunque afirma cumplir con el RGPD, no hay evidencia de auditorías externas ni presencia oficial en registros de servicios digitales en España.; poca transparencia financiera; incertidumbre sobre soporte a largo plazo\nCÓMO PARTICIPAR: Visitar la web de ORYKSA (enlace no disponible en la fuente); Seleccionar el kit correspondiente al tipo de negocio; Completar la entrevista rápida de 5 minutos para activar la IA; Comenzar a usar la IA en los canales de comunicación del negocio\nQUÉ PODRÍA HACERME PERDER EL DINERO: cierre de la startup; fallos técnicos de la IA; problemas de privacidad o cumplimiento RGPD\nFUENTES: https://elreferente.es/portugal/startups/oryksa-da-a-cada-negocio-una-empleada-de-ia-con-voz-ordenador-e-identidad-propia/",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-elreferente-es-portugal-startups-oryksa-da-a-cada-negocio-una-empleada-de-ia-con-voz"
+  ]
+ },
+ {
   "name": "Foolscap",
   "category": "ia_tecnologia",
   "subcategory": "productividad",
@@ -12157,6 +12204,368 @@
   ]
  },
  {
+  "name": "LeanTake",
+  "category": "ia_tecnologia",
+  "subcategory": "grabacion_pantalla",
+  "kind": "pasiva",
+  "description": "LeanTake es una aplicación nativa para macOS que permite grabar la pantalla sin necesidad de esperar a la exportación. Se promociona como una herramienta ligera de 4.1 MB. Actualmente solo se dispone de la ficha de Product Hunt.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se ha verificado disponibilidad específica para España; la herramienta parece ser global.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se dispone de información de precios ni modelo de suscripción.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "Producto de nicho para usuarios de Mac que buscan una grabación rápida y sin pasos de exportación.",
+  "difficulty": "baja",
+  "timeNeeded": "Instalación y uso inmediato.",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Ofrece grabación nativa en Mac sin tiempo de exportación",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Puede atraer a creadores de contenido que usan Mac",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Mercado de software de grabación de pantalla es competitivo",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información del equipo fundador",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4,
+    "why": "Listado en Product Hunt, pero sin métricas de comunidad",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Sin datos de usuarios activos o descargas",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen herramientas consolidadas como OBS, ScreenFlow, etc.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Software nativo para macOS, bajo riesgo técnico percibido",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión de capital",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "Disponible globalmente, pero sin confirmación de soporte local",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9,
+    "why": "No es una inversión que requiera salida",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "No se dispone de datos de precios, equipo, financiación ni métricas de adopción."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Escasa información pública disponible; la página oficial devuelve 403."
+  ],
+  "whyInteresting": [
+   "Herramienta ligera y rápida para grabación de pantalla en Mac, útil para creadores de contenido."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace para descargar la aplicación."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "Listado reciente en Product Hunt."
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/leantake"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-leantake",
+  "isNew": true,
+  "score": 24,
+  "rawScore": 29.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "media",
+    "detail": "No se dispone de datos de precios, equipo, financiación ni métricas de adopción."
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Ofrece grabación nativa en Mac sin tiempo de exportación",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Puede atraer a creadores de contenido que usan Mac",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de software de grabación de pantalla es competitivo",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información del equipo fundador",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos públicos de financiación",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Listado en Product Hunt, pero sin métricas de comunidad",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin datos de usuarios activos o descargas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen herramientas consolidadas como OBS, ScreenFlow, etc.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Software nativo para macOS, bajo riesgo técnico percibido",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión de capital",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Disponible globalmente, pero sin confirmación de soporte local",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No es una inversión que requiera salida",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: LeanTake\nCATEGORÍA: ia_tecnologia · grabacion_pantalla\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Producto de nicho para usuarios de Mac que buscan una grabación rápida y sin pasos de exportación.\nPUNTUACIÓN: 24/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Herramienta ligera y rápida para grabación de pantalla en Mac, útil para creadores de contenido.\nMOTIVOS PARA DESCONFIAR: No se dispone de datos de precios, equipo, financiación ni métricas de adopción.; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Escasa información pública disponible; la página oficial devuelve 403.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace para descargar la aplicación.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/leantake",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-www-producthunt-com-products-leantake"
+  ]
+ },
+ {
   "name": "tinytldr",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -12515,6 +12924,418 @@
   "aliases": [
    "news-www-producthunt-com-products-tinytldr"
   ]
+ },
+ {
+  "name": "Biodex",
+  "category": "startups",
+  "subcategory": "ia_tecnologia",
+  "kind": "activa",
+  "description": "Startup sevillana que ha desarrollado un dispositivo inteligente con IA para identificar animales en zoológicos y ofrecer información interactiva a los visitantes.",
+  "officialUrl": "https://elreferente.es/startups/biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevilla/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Proyecto basado en Sevilla, Andalucía.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se indica coste de inversión o participación en la fase actual.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No se contempla salida financiera en esta fase.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "meses para validar prototipo y buscar financiación",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Dispositivo IA para mejorar visitas a zoológicos · Verificador: Uso de IA para interacción en zoológicos es una propuesta fresca.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "Premio en evento Techstars indica atractivo del concepto · Verificador: Es un proyecto de fin de semana sin validación de mercado real. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Mercado de ocio en zoológicos es limitado pero con potencial de mejora · Verificador: Nicho muy específico con barreras de entrada físicas en zoológicos.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Equipo multidisciplinario de 6 personas con experiencia en tecnología y gestión · Verificador: Equipo formado ad-hoc para un evento, sin trayectoria empresarial conjunta.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No se menciona financiación externa ni ronda de inversión · Verificador: Cero financiación externa; el proyecto no existe como empresa. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "Participación en Startup Weekend y mentores del ecosistema local · Verificador: Visibilidad limitada al ámbito local de SevillaUP.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "Aún en fase de prototipo, sin clientes ni pilotos confirmados · Verificador: No existen clientes ni pilotos confirmados. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Existen apps de realidad aumentada para zoológicos, pero sin información concreta de competidores directos · Verificador: Alta competencia en soluciones de guías digitales y apps de ocio.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Tecnología IA de reconocimiento de animales es viable, aunque depende de entrenamiento de datos · Verificador: Dependencia total de la calidad del entrenamiento de modelos de IA.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "Falta de información sobre financiación y modelo de negocio sólido · Verificador: Riesgo máximo al no haber estructura ni capital. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 8.5,
+    "why": "Proyecto desarrollado en Sevilla, con apoyo institucional regional · Verificador: Proyecto nacido en España, sin barreras geográficas.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "No se describen planes de salida (venta, adquisición, IPO) · Verificador: Inexistente; no hay activos ni empresa que vender.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_financiacion",
+    "severity": "media",
+    "detail": "No se ha anunciado ninguna ronda de inversión ni capital semilla."
+   },
+   {
+    "code": "stage_early",
+    "severity": "baja",
+    "detail": "El proyecto está en fase de prototipo tras un hackathon."
+   },
+   {
+    "code": "proyecto_pre_semilla",
+    "severity": "alta",
+    "detail": "El proyecto es puramente conceptual, nacido en un hackathon de 48 horas."
+   },
+   {
+    "code": "falta_de_entidad_juridica",
+    "severity": "alta",
+    "detail": "No consta registro mercantil ni sociedad constituida."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto es una idea ganadora de un hackathon (Startup Weekend) sin entidad jurídica constituida, sin modelo de negocio operativo ni financiación real. No es una oportunidad de inversión, sino una propuesta académica/emprendedora en fase embrionaria."
+   }
+  ],
+  "distrust": [
+   "poca_traccion_comercial"
+  ],
+  "whyInteresting": [
+   "aplicación innovadora de IA en el sector del ocio zoológico",
+   "premio en evento Techstars Startup Weekend, lo que brinda visibilidad y validación inicial"
+  ],
+  "howToParticipate": [
+   "Seguir a Biodex en sus canales oficiales (LinkedIn, Twitter)",
+   "Contactar directamente al equipo para expresar interés en futuras rondas de inversión",
+   "Monitorizar anuncios de seed funding o aceleradoras que puedan apoyar al proyecto"
+  ],
+  "lossCauses": [
+   "no hay inversión directa disponible en la fase actual",
+   "riesgo de que el proyecto no consiga financiación adicional"
+  ],
+  "earlySignals": [
+   "ganador del 32ª Techstars Startup Weekend Sevilla",
+   "presencia de mentores y jurado con experiencia en venture capital"
+  ],
+  "signals": {
+   "premio": 1
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser una entidad financiera ni ofrecer productos de inversión, no está sujeta a supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/startups/biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevilla/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto es una idea ganadora de un hackathon (Startup Weekend) sin entidad jurídica constituida, sin modelo de negocio operativo ni financiación real. No es una oportunidad de inversión, sino una propuesta académica/emprendedora en fase embrionaria.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 67
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "web-elreferente-es",
+  "isNew": false,
+  "score": 22,
+  "rawScore": 37.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_financiacion",
+    "severity": "media",
+    "detail": "No se ha anunciado ninguna ronda de inversión ni capital semilla."
+   },
+   {
+    "code": "stage_early",
+    "severity": "baja",
+    "detail": "El proyecto está en fase de prototipo tras un hackathon."
+   },
+   {
+    "code": "proyecto_pre_semilla",
+    "severity": "alta",
+    "detail": "El proyecto es puramente conceptual, nacido en un hackathon de 48 horas."
+   },
+   {
+    "code": "falta_de_entidad_juridica",
+    "severity": "alta",
+    "detail": "No consta registro mercantil ni sociedad constituida."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto es una idea ganadora de un hackathon (Startup Weekend) sin entidad jurídica constituida, sin modelo de negocio operativo ni financiación real. No es una oportunidad de inversión, sino una propuesta académica/emprendedora en fase embrionaria."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Dispositivo IA para mejorar visitas a zoológicos · Verificador: Uso de IA para interacción en zoológicos es una propuesta fresca.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Premio en evento Techstars indica atractivo del concepto · Verificador: Es un proyecto de fin de semana sin validación de mercado real. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de ocio en zoológicos es limitado pero con potencial de mejora · Verificador: Nicho muy específico con barreras de entrada físicas en zoológicos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Equipo multidisciplinario de 6 personas con experiencia en tecnología y gestión · Verificador: Equipo formado ad-hoc para un evento, sin trayectoria empresarial conjunta.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No se menciona financiación externa ni ronda de inversión · Verificador: Cero financiación externa; el proyecto no existe como empresa. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 4.0,
+    "points": 2.8,
+    "why": "Participación en Startup Weekend y mentores del ecosistema local · Verificador: Visibilidad limitada al ámbito local de SevillaUP.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Aún en fase de prototipo, sin clientes ni pilotos confirmados · Verificador: No existen clientes ni pilotos confirmados. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen apps de realidad aumentada para zoológicos, pero sin información concreta de competidores directos · Verificador: Alta competencia en soluciones de guías digitales y apps de ocio.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología IA de reconocimiento de animales es viable, aunque depende de entrenamiento de datos · Verificador: Dependencia total de la calidad del entrenamiento de modelos de IA.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Falta de información sobre financiación y modelo de negocio sólido · Verificador: Riesgo máximo al no haber estructura ni capital. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "Proyecto desarrollado en Sevilla, con apoyo institucional regional · Verificador: Proyecto nacido en España, sin barreras geográficas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se describen planes de salida (venta, adquisición, IPO) · Verificador: Inexistente; no hay activos ni empresa que vender.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "premio": 1.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Biodex\nCATEGORÍA: startups · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://elreferente.es/startups/biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevilla/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 22/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: aplicación innovadora de IA en el sector del ocio zoológico; premio en evento Techstars Startup Weekend, lo que brinda visibilidad y validación inicial\nMOTIVOS PARA DESCONFIAR: No se ha anunciado ninguna ronda de inversión ni capital semilla.; El proyecto está en fase de prototipo tras un hackathon.; El proyecto es puramente conceptual, nacido en un hackathon de 48 horas.; No consta registro mercantil ni sociedad constituida.; El verificador tiene dudas: El proyecto es una idea ganadora de un hackathon (Startup Weekend) sin entidad jurídica constituida, sin modelo de negocio operativo ni financiación real. No es una oportunidad de inversión, sino una propuesta académica/emprendedora en fase embrionaria.; poca_traccion_comercial\nCÓMO PARTICIPAR: Seguir a Biodex en sus canales oficiales (LinkedIn, Twitter); Contactar directamente al equipo para expresar interés en futuras rondas de inversión; Monitorizar anuncios de seed funding o aceleradoras que puedan apoyar al proyecto\nQUÉ PODRÍA HACERME PERDER EL DINERO: no hay inversión directa disponible en la fase actual; riesgo de que el proyecto no consiga financiación adicional\nFUENTES: https://elreferente.es/startups/biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevilla/",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d",
+   "news-elreferente-es-startups-biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevil"
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "tripps",
@@ -18609,6 +19430,406 @@
   ]
  },
  {
+  "name": "Tesla Self-Driving V15",
+  "category": "ia_tecnologia",
+  "subcategory": "vehículos_autónomos",
+  "kind": "pasiva",
+  "description": "Versión mejorada del sistema de conducción autónoma de Tesla que actualiza todo el stack de software y hardware. Presentada en Product Hunt, sin información pública adicional disponible.",
+  "officialUrl": "https://www.tesla.com/support/autopilot",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "no",
+  "spainNotes": "No hay información pública sobre disponibilidad o pruebas en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión directa para usar el producto; es una característica de los vehículos Tesla existentes.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión financiera.",
+  "horizon": "corto-medio plazo (lanzamiento y adopción del producto)",
+  "deadline": null,
+  "potential": "Mejora la propuesta de valor de los vehículos Tesla, pero el beneficio económico directo para el usuario es nulo.",
+  "difficulty": "baja",
+  "timeNeeded": "ninguno (no hay proceso de participación)",
+  "subscores": {
+   "novedad": {
+    "v": 0.0,
+    "why": "Actualización completa del stack de conducción autónoma anunciada en Product Hunt · Verificador: El producto 'V15' no existe oficialmente. · Discrepancia entre modelos (7 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "Podría incrementar la competitividad de Tesla, pero sin datos de mercado concreto · Verificador: Al no existir el producto, no hay potencial. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Mercado de vehículos autónomos en expansión, aunque altamente competitivo · Verificador: No hay mercado para un producto inexistente. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 9.0,
+    "why": "Tesla cuenta con un equipo de ingeniería reconocido · Verificador: Tesla es una empresa real, pero no ha lanzado este producto.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 9.5,
+    "why": "Financiación interna de Tesla, empresa cotizada · Verificador: Tesla es una empresa cotizada (TSLA).",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "Comunidad de entusiastas de Product Hunt, pero sin datos de adopción masiva · Verificador: No hay comunidad para este producto específico. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Depende de la aceptación de los usuarios de Tesla y regulaciones locales · Verificador: No existe adopción de algo que no ha sido lanzado. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Competidores como Waymo, Cruise y Baidu tienen soluciones avanzadas · Verificador: No aplica. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 0.0,
+    "why": "Desarrollo de IA y hardware complejo, riesgos de fallos en carretera · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No implica inversión directa del usuario · Verificador: No hay riesgo financiero porque no hay inversión posible.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "Falta de información sobre pruebas o disponibilidad en España · Verificador: No disponible.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay inversión que liquidar · Verificador: No aplica. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre disponibilidad o precios."
+   },
+   {
+    "code": "participacion_nula",
+    "severity": "critica",
+    "detail": "No existe mecanismo de participación o inversión para el usuario final."
+   },
+   {
+    "code": "producto_inexistente",
+    "severity": "critica",
+    "detail": "La versión 'V15' del software de Tesla no existe en los registros oficiales de la compañía."
+   },
+   {
+    "code": "informacion_falsa",
+    "severity": "alta",
+    "detail": "La ficha atribuye un lanzamiento a Product Hunt que no corresponde a un producto real de Tesla."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha describe un producto inexistente como 'Tesla Self-Driving V15'. Tesla utiliza versiones de FSD (Full Self-Driving) numeradas (ej. v12.5), pero no existe un lanzamiento oficial denominado 'V15' en Product Hunt ni en canales oficiales. La información parece ser una alucinación o una confusión con actualizaciones de software estándar de Tesla."
+   }
+  ],
+  "distrust": [
+   "Escasa información pública",
+   "Dependencia de una única empresa"
+  ],
+  "whyInteresting": [
+   "Actualización importante en el campo de la conducción autónoma"
+  ],
+  "howToParticipate": [
+   "No hay pasos de participación; es una característica de los vehículos Tesla"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Tesla FSD no es un producto financiero ni de inversión. La conducción autónoma en España está sujeta a la Ley de Tráfico y normativas de la DGT, no a registros de la CNMV.",
+   "sources": [
+    "https://www.dgt.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/tesla"
+   },
+   {
+    "title": "Tesla Support - Autopilot",
+    "url": "https://www.tesla.com/support/autopilot"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "La ficha describe un producto inexistente como 'Tesla Self-Driving V15'. Tesla utiliza versiones de FSD (Full Self-Driving) numeradas (ej. v12.5), pero no existe un lanzamiento oficial denominado 'V15' en Product Hunt ni en canales oficiales. La información parece ser una alucinación o una confusión con actualizaciones de software estándar de Tesla.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 33
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "web-tesla-com",
+  "isNew": true,
+  "score": 16,
+  "rawScore": 25.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre disponibilidad o precios."
+   },
+   {
+    "code": "participacion_nula",
+    "severity": "critica",
+    "detail": "No existe mecanismo de participación o inversión para el usuario final."
+   },
+   {
+    "code": "producto_inexistente",
+    "severity": "critica",
+    "detail": "La versión 'V15' del software de Tesla no existe en los registros oficiales de la compañía."
+   },
+   {
+    "code": "informacion_falsa",
+    "severity": "alta",
+    "detail": "La ficha atribuye un lanzamiento a Product Hunt que no corresponde a un producto real de Tesla."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha describe un producto inexistente como 'Tesla Self-Driving V15'. Tesla utiliza versiones de FSD (Full Self-Driving) numeradas (ej. v12.5), pero no existe un lanzamiento oficial denominado 'V15' en Product Hunt ni en canales oficiales. La información parece ser una alucinación o una confusión con actualizaciones de software estándar de Tesla."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Actualización completa del stack de conducción autónoma anunciada en Product Hunt · Verificador: El producto 'V15' no existe oficialmente. · Discrepancia entre modelos (7 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Podría incrementar la competitividad de Tesla, pero sin datos de mercado concreto · Verificador: Al no existir el producto, no hay potencial. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Mercado de vehículos autónomos en expansión, aunque altamente competitivo · Verificador: No hay mercado para un producto inexistente. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Tesla cuenta con un equipo de ingeniería reconocido · Verificador: Tesla es una empresa real, pero no ha lanzado este producto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 9.5,
+    "points": 6.7,
+    "why": "Financiación interna de Tesla, empresa cotizada · Verificador: Tesla es una empresa cotizada (TSLA).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Comunidad de entusiastas de Product Hunt, pero sin datos de adopción masiva · Verificador: No hay comunidad para este producto específico. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Depende de la aceptación de los usuarios de Tesla y regulaciones locales · Verificador: No existe adopción de algo que no ha sido lanzado. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Competidores como Waymo, Cruise y Baidu tienen soluciones avanzadas · Verificador: No aplica. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Desarrollo de IA y hardware complejo, riesgos de fallos en carretera · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No implica inversión directa del usuario · Verificador: No hay riesgo financiero porque no hay inversión posible.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Falta de información sobre pruebas o disponibilidad en España · Verificador: No disponible.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay inversión que liquidar · Verificador: No aplica. · Discrepancia entre modelos (9 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Tesla Self-Driving V15\nCATEGORÍA: ia_tecnologia · vehículos_autónomos\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://www.tesla.com/support/autopilot\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Mejora la propuesta de valor de los vehículos Tesla, pero el beneficio económico directo para el usuario es nulo.\nPUNTUACIÓN: 16/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo (lanzamiento y adopción del producto)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Actualización importante en el campo de la conducción autónoma\nMOTIVOS PARA DESCONFIAR: No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre disponibilidad o precios.; No existe mecanismo de participación o inversión para el usuario final.; La versión 'V15' del software de Tesla no existe en los registros oficiales de la compañía.; La ficha atribuye un lanzamiento a Product Hunt que no corresponde a un producto real de Tesla.; El verificador no pudo confirmar que sea real: La ficha describe un producto inexistente como 'Tesla Self-Driving V15'. Tesla utiliza versiones de FSD (Full Self-Driving) numeradas (ej. v12.5), pero no existe un lanzamiento oficial denominado 'V15' en Product Hunt ni en canales oficiales. La información parece ser una alucinación o una confusión con actualizaciones de software estándar de Tesla.; Escasa información pública; Dependencia de una única empresa\nCÓMO PARTICIPAR: No hay pasos de participación; es una característica de los vehículos Tesla\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/tesla | https://www.tesla.com/support/autopilot",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-www-producthunt-com-products-tesla"
+  ]
+ },
+ {
   "name": "WASTED",
   "category": "cripto",
   "subcategory": "memecoin",
@@ -21978,6 +23199,491 @@
   ]
  },
  {
+  "name": "FIONA",
+  "category": "cripto",
+  "subcategory": "defi",
+  "kind": "activa",
+  "description": "FIONA es un token ERC‑20 recién lanzado en la cadena Ethereum. Presenta un precio muy bajo y un volumen de operaciones diario elevado, pero carece de información pública sobre su equipo y auditorías.",
+  "officialUrl": null,
+  "participateUrl": "https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea",
+  "country": "desconocido",
+  "spainAvailability": "no regulado",
+  "spainNotes": "No hay información sobre disponibilidad o restricciones específicas en España.",
+  "costs": {
+   "minEntry": 0.02,
+   "extra": 0.0,
+   "extraNotes": "Comisiones de red y de swap en la plataforma DEX",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "alta",
+  "exitNotes": "Puede venderse en el mismo pool de Geckoterminal con suficiente liquidez.",
+  "horizon": "corto-medio",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "variable, depende de la investigación y del momento de mercado",
+  "subscores": {
+   "novedad": {
+    "v": 4.0,
+    "why": "Token creado hace ~31 horas (ageHours 30.8) · Verificador: Token con menos de 48 horas de vida, alta volatilidad inicial. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4.0,
+    "why": "Volumen 24 h de 2.6 M USD indica interés inicial · Verificador: El volumen es especulativo y típico de esquemas de 'pump and dump'.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Liquidity 304 k USD y volumen 2.6 M USD · Verificador: Liquidez concentrada en un solo pool, alta dependencia de DEX.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se encontró información pública sobre el equipo ni auditorías · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.0,
+    "why": "FDV 13.5 M USD, sin datos de rondas de financiación visibles · Verificador: No existe financiación institucional; es un token de liquidez comunitaria.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "909 holders registrados · Verificador: Número de holders bajo para el volumen reportado, riesgo de concentración.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Buys 2 563 vs sells 467 en 24 h · Verificador: Adopción limitada a especulación en DEX, sin utilidad real.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen muchos tokens similares en el ecosistema DeFi · Verificador: Mercado saturado de tokens ERC-20 sin valor intrínseco.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Contrato nuevo sin auditoría pública · Verificador: Contrato sin auditoría, riesgo de honeypot o funciones maliciosas.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta volatilidad y riesgo de rug‑pull típico en tokens emergentes · Verificador: Probabilidad extrema de pérdida total del capital invertido.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay datos de disponibilidad o regulación específica en España · Verificador: No regulado, sin presencia legal en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 3.0,
+    "why": "Liquidez suficiente para vender sin gran slippage · Verificador: La liquidez puede desaparecer instantáneamente (rug-pull). · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion_equipo",
+    "severity": "alta",
+    "detail": "No se encontró información sobre el equipo ni auditoría del contrato"
+   },
+   {
+    "code": "acceso_web_403",
+    "severity": "media",
+    "detail": "No se pudo acceder a la web oficial (error 403)"
+   },
+   {
+    "code": "falta_de_informacion_equipo",
+    "severity": "critica",
+    "detail": "Anonimato total del equipo emisor."
+   },
+   {
+    "code": "ausencia_auditoria",
+    "severity": "critica",
+    "detail": "El contrato inteligente no ha sido auditado por terceros de confianza."
+   },
+   {
+    "code": "acceso_web_restringido",
+    "severity": "media",
+    "detail": "El dominio oficial devuelve error 403, impidiendo la verificación de la propuesta de valor."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "Alta probabilidad de retirada de liquidez por parte de los creadores."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin equipo conocido, sin auditorías y con acceso web restringido. Presenta riesgos críticos de seguridad técnica y financiera. No existe registro oficial ni cumplimiento normativo bajo MiCA o CNMV."
+   }
+  ],
+  "distrust": [
+   "Desconocimiento del proyecto y ausencia de auditorías"
+  ],
+  "whyInteresting": [
+   "Precio muy bajo permite adquirir gran cantidad con presupuesto limitado",
+   "Alto volumen de compras indica interés inicial del mercado"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.).",
+   "2. Comprar ETH y transferirlo a la wallet.",
+   "3. Acceder a la URL del pool en Geckoterminal: https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea",
+   "4. Intercambiar ETH por FIONA mediante la función swap del DEX.",
+   "5. Guardar los tokens en la wallet y monitorizar el precio."
+  ],
+  "actionable": true,
+  "profitPath": "Comprar FIONA a bajo precio y vender cuando el precio suba, obteniendo ganancia por la revalorización del token",
+  "lossCauses": [
+   "Rug‑pull o código malicioso",
+   "Baja liquidez que impida salida sin gran slippage",
+   "Regulación adversa en España o UE",
+   "Volatilidad extrema que cause pérdida total"
+  ],
+  "earlySignals": [
+   "Buys24h > sells24h",
+   "Volumen 24h > 2 M USD"
+  ],
+  "signals": {
+   "buys24h": 2563,
+   "sells24h": 467,
+   "volume24hUsd": 2647847.75651177
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "El activo no figura en registros de la CNMV ni cumple con el reglamento MiCA. Se trata de un activo cripto no regulado de alto riesgo.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "eth",
+   "tokenAddress": "0x8fd15c6d44747f7f2e1300577f9dcd1c3fa22ed5",
+   "priceUsd": 0.0134755078363426,
+   "liquidityUsd": 304278.4535,
+   "volume24hUsd": 2647847.75651177,
+   "fdvUsd": 13590905.21,
+   "ageHours": 30.8,
+   "buys24h": 2563,
+   "sells24h": 467,
+   "pairUrl": "https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea",
+   "top10Pct": 113.3,
+   "holders": 909
+  },
+  "securityChecks": [
+   {
+    "tool": "GoPlus",
+    "url": "https://gopluslabs.io/token-security/1/0x8fd15c6d44747f7f2e1300577f9dcd1c3fa22ed5"
+   },
+   {
+    "tool": "honeypot.is",
+    "error": "HTTP 404"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea"
+   },
+   {
+    "title": "CNMV - Advertencias",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7f3b8e9a-4c2d-4e1f-8a9b-3c4d5e6f7a8b}"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es un token de muy reciente creación (memecoin) sin equipo conocido, sin auditorías y con acceso web restringido. Presenta riesgos críticos de seguridad técnica y financiera. No existe registro oficial ni cumplimiento normativo bajo MiCA o CNMV.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "tok-eth-0x8fd15c6d44747f7f2e1300577f9dcd1c3fa22ed5",
+  "isNew": true,
+  "score": 13,
+  "rawScore": 27.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_informacion_equipo",
+    "severity": "alta",
+    "detail": "No se encontró información sobre el equipo ni auditoría del contrato"
+   },
+   {
+    "code": "acceso_web_403",
+    "severity": "media",
+    "detail": "No se pudo acceder a la web oficial (error 403)"
+   },
+   {
+    "code": "ausencia_auditoria",
+    "severity": "critica",
+    "detail": "El contrato inteligente no ha sido auditado por terceros de confianza."
+   },
+   {
+    "code": "acceso_web_restringido",
+    "severity": "media",
+    "detail": "El dominio oficial devuelve error 403, impidiendo la verificación de la propuesta de valor."
+   },
+   {
+    "code": "riesgo_rug_pull",
+    "severity": "critica",
+    "detail": "Alta probabilidad de retirada de liquidez por parte de los creadores."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin equipo conocido, sin auditorías y con acceso web restringido. Presenta riesgos críticos de seguridad técnica y financiera. No existe registro oficial ni cumplimiento normativo bajo MiCA o CNMV."
+   },
+   {
+    "code": "posible_wash_trading",
+    "severity": "alta",
+    "detail": "Volumen 24 h 9 veces la liquidez: posible volumen artificial."
+   },
+   {
+    "code": "concentracion_tokens",
+    "severity": "critica",
+    "detail": "Las 10 mayores carteras tienen el 113% del suministro."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token creado hace ~31 horas (ageHours 30.8) · Verificador: Token con menos de 48 horas de vida, alta volatilidad inicial. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 4.0,
+    "points": 4.8,
+    "why": "Volumen 24 h de 2.6 M USD indica interés inicial · Verificador: El volumen es especulativo y típico de esquemas de 'pump and dump'.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Liquidity 304 k USD y volumen 2.6 M USD · Verificador: Liquidez concentrada en un solo pool, alta dependencia de DEX.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se encontró información pública sobre el equipo ni auditorías · Verificador: Anonimato total, sin rastro de desarrolladores o entidad legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "FDV 13.5 M USD, sin datos de rondas de financiación visibles · Verificador: No existe financiación institucional; es un token de liquidez comunitaria.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.5,
+    "points": 2.5,
+    "why": "909 holders registrados · Verificador: Número de holders bajo para el volumen reportado, riesgo de concentración.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Buys 2 563 vs sells 467 en 24 h · Verificador: Adopción limitada a especulación en DEX, sin utilidad real.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen muchos tokens similares en el ecosistema DeFi · Verificador: Mercado saturado de tokens ERC-20 sin valor intrínseco.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Contrato nuevo sin auditoría pública · Verificador: Contrato sin auditoría, riesgo de honeypot o funciones maliciosas.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad y riesgo de rug‑pull típico en tokens emergentes · Verificador: Probabilidad extrema de pérdida total del capital invertido.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay datos de disponibilidad o regulación específica en España · Verificador: No regulado, sin presencia legal en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Liquidez suficiente para vender sin gran slippage · Verificador: La liquidez puede desaparecer instantáneamente (rug-pull). · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3845.58,
+     "exitImpactPct": 2.9,
+     "exitNote": null,
+     "impliedFdvUsd": 27181810
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9184.86,
+     "exitImpactPct": 7.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 67954526
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 16939.44,
+     "exitImpactPct": 14.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 135909052
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 28157.77,
+     "exitImpactPct": 28.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 271818104
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 27486.05,
+     "exitImpactPct": 72.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 679545260
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 1980.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 1359090521,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5940.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 4077271563,
+     "realism": "Exigiría superar 1.000 M$ de valoración total."
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "priceUsd": 0.0134755078363426,
+    "liquidityUsd": 304278.4535,
+    "volume24hUsd": 2647847.75651177,
+    "fdvUsd": 13590905.21,
+    "holders": 909.0,
+    "buys24h": 2563.0,
+    "sells24h": 467.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: FIONA\nCATEGORÍA: cripto · defi\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no regulado\nCOSTE DE ENTRADA: 0,02 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 13/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Precio muy bajo permite adquirir gran cantidad con presupuesto limitado; Alto volumen de compras indica interés inicial del mercado\nMOTIVOS PARA DESCONFIAR: No se encontró información sobre el equipo ni auditoría del contrato; No se pudo acceder a la web oficial (error 403); El contrato inteligente no ha sido auditado por terceros de confianza.; El dominio oficial devuelve error 403, impidiendo la verificación de la propuesta de valor.; Alta probabilidad de retirada de liquidez por parte de los creadores.; El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin equipo conocido, sin auditorías y con acceso web restringido. Presenta riesgos críticos de seguridad técnica y financiera. No existe registro oficial ni cumplimiento normativo bajo MiCA o CNMV.; Volumen 24 h 9 veces la liquidez: posible volumen artificial.; Las 10 mayores carteras tienen el 113% del suministro.; Desconocimiento del proyecto y ausencia de auditorías\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.).; 2. Comprar ETH y transferirlo a la wallet.; 3. Acceder a la URL del pool en Geckoterminal: https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea; 4. Intercambiar ETH por FIONA mediante la función swap del DEX.; 5. Guardar los tokens en la wallet y monitorizar el precio.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rug‑pull o código malicioso; Baja liquidez que impida salida sin gran slippage; Regulación adversa en España o UE; Volatilidad extrema que cause pérdida total\nFUENTES: https://www.geckoterminal.com/eth/pools/0xb80eb6a392d33eb1b014656b31b96edf9aa16c39c0baa5dbf7492435327516ea | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7f3b8e9a-4c2d-4e1f-8a9b-3c4d5e6f7a8b}",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "tok-eth-0x8fd15c6d44747f7f2e1300577f9dcd1c3fa22ed5"
+  ]
+ },
+ {
   "name": "WASTED (WASTED)",
   "category": "cripto",
   "subcategory": null,
@@ -23931,502 +25637,6 @@
   "aliases": [
    "tok-robinhood-0x000de658153f47f23e92973c8eb1e89762703676"
   ]
- },
- {
-  "name": "GTA6CAT (GATO)",
-  "category": "cripto",
-  "subcategory": "gaming_nft",
-  "kind": "activa",
-  "description": "Token $GATO vinculado al proyecto NFT Grand Theft Gato VI en Solana, con juego y coleccionables. Precio bajo y alta volatilidad.",
-  "officialUrl": "https://thegta6cat.com/",
-  "participateUrl": "https://raydium.io/",
-  "country": "desconocido",
-  "spainAvailability": "no autorizada",
-  "spainNotes": "Proyecto internacional sin indicaciones de cumplimiento regulatorio en España.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0.5,
-   "extraNotes": "Comisiones de red y posible compra mínima de NFT 0.5 SOL",
-   "recommended": 150,
-   "max": 2000
-  },
-  "canLoseAll": true,
-  "liquidity": "media",
-  "exitNotes": "Se puede vender en DEXs de Solana, pero el bajo número de pares puede dificultar la salida completa.",
-  "horizon": "corto plazo",
-  "deadline": null,
-  "potential": "alto si el juego gana tracción, pero depende de hype y adopción.",
-  "difficulty": "media",
-  "timeNeeded": "moderado (configuración de wallet y seguimiento de mercado)",
-  "subscores": {
-   "novedad": {
-    "v": 6.0,
-    "why": "Proyecto NFT basado en temática GTA con token propio · Verificador: Uso de temática viral de videojuegos en formato meme-coin/NFT.",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 3.0,
-    "why": "Precio bajo y posible crecimiento con juego y comunidad · Verificador: Dependencia total del hype y riesgo de cese por derechos de autor. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
-    "evidence": false
-   },
-   "mercado": {
-    "v": 4.5,
-    "why": "Token en Solana con liquidez ~180k USD y volumen 24h ~274k USD · Verificador: Liquidez concentrada en DEX, alta volatilidad típica de memecoins.",
-    "evidence": true
-   },
-   "equipo": {
-    "v": 1.5,
-    "why": "No se muestra información del equipo en la web · Verificador: Equipo anónimo, sin rastro de desarrolladores o empresa responsable.",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 1.5,
-    "why": "Financiación no divulgada, depende de venta de NFTs · Verificador: Financiación opaca basada en ventas de NFT y liquidez de mercado.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 4.0,
-    "why": "Presencia en X y sitio web, pero comunidad limitada · Verificador: Comunidad activa en redes sociales, pero centrada en especulación.",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 2.5,
-    "why": "Requiere compra de NFT y juego, adopción incipiente · Verificador: Adopción limitada a usuarios de ecosistema Solana y especuladores.",
-    "evidence": true
-   },
-   "competencia": {
-    "v": 3.5,
-    "why": "Muchos proyectos NFT de juegos compiten por atención · Verificador: Mercado saturado de tokens parodia sin utilidad real.",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 3.0,
-    "why": "Depende de Solana y de infraestructura del juego, posible vulnerabilidad · Verificador: Riesgo inherente a contratos inteligentes no auditados y red Solana.",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 1.5,
-    "why": "Alta volatilidad, posible pérdida total · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 1.5,
-    "why": "Sin información de disponibilidad o cumplimiento regulatorio en España · Verificador: Sin registro en CNMV ni cumplimiento de normativa MiCA.",
-    "evidence": false
-   },
-   "salida": {
-    "v": 4.5,
-    "why": "Liquidez media pero pares limitados en DEXs de Solana · Verificador: Dependiente de la liquidez en DEX (Raydium), sujeta a deslizamiento (slippage).",
-    "evidence": true
-   }
-  },
-  "redFlags": [
-   {
-    "code": "lack_of_transparency",
-    "severity": "alta",
-    "detail": "No se muestra información del equipo ni financiación"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   },
-   {
-    "code": "copyright_infringement",
-    "severity": "critica",
-    "detail": "Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA."
-   },
-   {
-    "code": "lack_of_transparency",
-    "severity": "alta",
-    "detail": "Equipo anónimo y falta de entidad legal identificable."
-   },
-   {
-    "code": "regulatory_risk",
-    "severity": "alta",
-    "detail": "No cumple con normativas de servicios de criptoactivos en España (MiCA)."
-   },
-   {
-    "code": "high_volatility",
-    "severity": "alta",
-    "detail": "Activo altamente especulativo con riesgo de pérdida total."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: El proyecto es una parodia basada en la propiedad intelectual de terceros (GTA VI), lo que conlleva un riesgo legal extremo por infracción de derechos de autor. No existe información sobre el equipo, la entidad legal detrás del token ni cumplimiento regulatorio. Es un activo especulativo de alta volatilidad sin valor intrínseco garantizado."
-   }
-  ],
-  "distrust": [
-   "opacidad del equipo",
-   "dependencia de hype de GTA"
-  ],
-  "whyInteresting": [
-   "relación con marca GTA",
-   "precio bajo del token"
-  ],
-  "howToParticipate": [
-   "Crear una wallet compatible con Solana (ej. Phantom)",
-   "Comprar SOL en exchange",
-   "Conectar la wallet a un DEX de Solana (ej. Raydium)",
-   "Buscar el par $GATO y comprar la cantidad deseada",
-   "Opcional: participar en el mint de NFT pagando 0.5 SOL"
-  ],
-  "lossCauses": [
-   "baja liquidez",
-   "cierre del proyecto",
-   "regulación restrictiva",
-   "hack o vulnerabilidad"
-  ],
-  "earlySignals": [
-   "alto volumen 24h (~274k USD)",
-   "actividad en redes sociales (X)"
-  ],
-  "signals": {
-   "volume24hUsd": 274208.57
-  },
-  "regulatory": {
-   "checked": true,
-   "status": "no_autorizada",
-   "notes": "No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España. El proyecto es una parodia sin respaldo legal.",
-   "sources": [
-    "https://www.cnmv.es"
-   ]
-  },
-  "market": {
-   "chain": "solana",
-   "tokenAddress": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "symbol": "GATO",
-   "name": "GTA6CAT",
-   "priceUsd": 0.002811,
-   "liquidityUsd": 180329.59,
-   "volume24hUsd": 274208.57,
-   "fdvUsd": 2769434,
-   "mcapUsd": 2775229,
-   "ageHours": 2132.0,
-   "buys24h": 2719,
-   "sells24h": 2399,
-   "pairUrl": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
-  },
-  "securityChecks": [
-   {
-    "tool": "RugCheck",
-    "url": "https://rugcheck.xyz/tokens/HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "score": 1
-   }
-  ],
-  "sources": [
-   {
-    "title": "DEX Screener",
-    "url": "https://thegta6cat.com/"
-   },
-   {
-    "title": "Par en DEX",
-    "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
-   },
-   {
-    "title": "RugCheck",
-    "url": "https://rugcheck.xyz/tokens/HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump"
-   }
-  ],
-  "discoveredVia": "DEX Screener",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "dudosa",
-   "reason": "El proyecto es una parodia basada en la propiedad intelectual de terceros (GTA VI), lo que conlleva un riesgo legal extremo por infracción de derechos de autor. No existe información sobre el equipo, la entidad legal detrás del token ni cumplimiento regulatorio. Es un activo especulativo de alta volatilidad sin valor intrínseco garantizado.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 92
-  },
-  "discoveredAt": "2026-11-22",
-  "id": "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump",
-  "isNew": false,
-  "score": 10,
-  "rawScore": 29.8,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-20 por 5 riesgo(s) alto(s)"
-  ],
-  "critical": true,
-  "risk": "crítico",
-  "flags": [
-   {
-    "code": "lack_of_transparency",
-    "severity": "alta",
-    "detail": "No se muestra información del equipo ni financiación"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   },
-   {
-    "code": "copyright_infringement",
-    "severity": "critica",
-    "detail": "Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA."
-   },
-   {
-    "code": "regulatory_risk",
-    "severity": "alta",
-    "detail": "No cumple con normativas de servicios de criptoactivos en España (MiCA)."
-   },
-   {
-    "code": "high_volatility",
-    "severity": "alta",
-    "detail": "Activo altamente especulativo con riesgo de pérdida total."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: El proyecto es una parodia basada en la propiedad intelectual de terceros (GTA VI), lo que conlleva un riesgo legal extremo por infracción de derechos de autor. No existe información sobre el equipo, la entidad legal detrás del token ni cumplimiento regulatorio. Es un activo especulativo de alta volatilidad sin valor intrínseco garantizado."
-   },
-   {
-    "code": "regulatorio",
-    "severity": "critica",
-    "detail": "No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España. El proyecto es una parodia sin respaldo legal."
-   }
-  ],
-  "evidenced": 7,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 6.0,
-    "points": 4.8,
-    "why": "Proyecto NFT basado en temática GTA con token propio · Verificador: Uso de temática viral de videojuegos en formato meme-coin/NFT.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 3.0,
-    "points": 3.6,
-    "why": "Precio bajo y posible crecimiento con juego y comunidad · Verificador: Dependencia total del hype y riesgo de cese por derechos de autor. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 4.5,
-    "points": 3.6,
-    "why": "Token en Solana con liquidez ~180k USD y volumen 24h ~274k USD · Verificador: Liquidez concentrada en DEX, alta volatilidad típica de memecoins.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 1.5,
-    "points": 1.5,
-    "why": "No se muestra información del equipo en la web · Verificador: Equipo anónimo, sin rastro de desarrolladores o empresa responsable.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 1.5,
-    "points": 1.1,
-    "why": "Financiación no divulgada, depende de venta de NFTs · Verificador: Financiación opaca basada en ventas de NFT y liquidez de mercado.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 4.0,
-    "points": 2.8,
-    "why": "Presencia en X y sitio web, pero comunidad limitada · Verificador: Comunidad activa en redes sociales, pero centrada en especulación.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 2.5,
-    "points": 2.2,
-    "why": "Requiere compra de NFT y juego, adopción incipiente · Verificador: Adopción limitada a usuarios de ecosistema Solana y especuladores.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Muchos proyectos NFT de juegos compiten por atención · Verificador: Mercado saturado de tokens parodia sin utilidad real.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Depende de Solana y de infraestructura del juego, posible vulnerabilidad · Verificador: Riesgo inherente a contratos inteligentes no auditados y red Solana.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 1.5,
-    "points": 1.5,
-    "why": "Alta volatilidad, posible pérdida total · Verificador: Probabilidad muy alta de pérdida total del capital invertido.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 1.5,
-    "points": 1.2,
-    "why": "Sin información de disponibilidad o cumplimiento regulatorio en España · Verificador: Sin registro en CNMV ni cumplimiento de normativa MiCA.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 4.5,
-    "points": 3.6,
-    "why": "Liquidez media pero pares limitados en DEXs de Solana · Verificador: Dependiente de la liquidez en DEX (Raydium), sujeta a deslizamiento (slippage).",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 150.0,
-   "extraCostsEur": 0.5,
-   "lossScenarioEur": -150.5,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 300.0,
-     "netEur": 295.41,
-     "exitImpactPct": 0.4,
-     "exitNote": null,
-     "impliedFdvUsd": 5538868
-    },
-    {
-     "multiple": 5,
-     "grossEur": 750.0,
-     "netEur": 735.21,
-     "exitImpactPct": 0.9,
-     "exitNote": null,
-     "impliedFdvUsd": 13847170
-    },
-    {
-     "multiple": 10,
-     "grossEur": 1500.0,
-     "netEur": 1457.35,
-     "exitImpactPct": 1.8,
-     "exitNote": null,
-     "impliedFdvUsd": 27694340
-    },
-    {
-     "multiple": 20,
-     "grossEur": 3000.0,
-     "netEur": 2860.9,
-     "exitImpactPct": 3.7,
-     "exitNote": null,
-     "impliedFdvUsd": 55388680
-    },
-    {
-     "multiple": 50,
-     "grossEur": 7500.0,
-     "netEur": 6745.74,
-     "exitImpactPct": 9.1,
-     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
-     "impliedFdvUsd": 138471700
-    },
-    {
-     "multiple": 100,
-     "grossEur": 15000.0,
-     "netEur": 12134.45,
-     "exitImpactPct": 18.3,
-     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
-     "impliedFdvUsd": 276943400
-    },
-    {
-     "multiple": 300,
-     "grossEur": 45000.0,
-     "netEur": 20114.07,
-     "exitImpactPct": 54.8,
-     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
-     "impliedFdvUsd": 830830200
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "mercado"
-  },
-  "momentum": {
-   "available": true,
-   "changes": {
-    "priceUsd": -14.5,
-    "liquidityUsd": -5.3,
-    "volume24hUsd": -63.7,
-    "fdvUsd": -14.5
-   },
-   "label": "Estable",
-   "since": "2026-11-21T08:10:29Z"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-20T11:41:05Z",
-    "priceUsd": 0.00327,
-    "liquidityUsd": 195698.63,
-    "volume24hUsd": 474396.26,
-    "fdvUsd": 3223564.0
-   },
-   {
-    "t": "2026-11-21T08:10:29Z",
-    "priceUsd": 0.003287,
-    "liquidityUsd": 190499.22,
-    "volume24hUsd": 755198.78,
-    "fdvUsd": 3239454.0
-   },
-   {
-    "t": "2026-11-22T08:26:57Z",
-    "priceUsd": 0.002811,
-    "liquidityUsd": 180329.59,
-    "volume24hUsd": 274208.57,
-    "fdvUsd": 2769434.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: GTA6CAT (GATO)\nCATEGORÍA: cripto · gaming_nft\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://thegta6cat.com/\nENLACE DE PARTICIPACIÓN: https://raydium.io/\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no autorizada\nCOSTE DE ENTRADA: 0,00 € (+ 0,50 € adicionales)\nPRESUPUESTO RECOMENDADO: 150,00 €\nPOTENCIAL: alto si el juego gana tracción, pero depende de hype y adopción.\nPUNTUACIÓN: 10/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: relación con marca GTA; precio bajo del token\nMOTIVOS PARA DESCONFIAR: No se muestra información del equipo ni financiación; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA.; No cumple con normativas de servicios de criptoactivos en España (MiCA).; Activo altamente especulativo con riesgo de pérdida total.; El verificador tiene dudas: El proyecto es una parodia basada en la propiedad intelectual de terceros (GTA VI), lo que conlleva un riesgo legal extremo por infracción de derechos de autor. No existe información sobre el equipo, la entidad legal detrás del token ni cumplimiento regulatorio. Es un activo especulativo de alta volatilidad sin valor intrínseco garantizado.; No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España. El proyecto es una parodia sin respaldo legal.; opacidad del equipo; dependencia de hype de GTA\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (ej. Phantom); Comprar SOL en exchange; Conectar la wallet a un DEX de Solana (ej. Raydium); Buscar el par $GATO y comprar la cantidad deseada; Opcional: participar en el mint de NFT pagando 0.5 SOL\nQUÉ PODRÍA HACERME PERDER EL DINERO: baja liquidez; cierre del proyecto; regulación restrictiva; hack o vulnerabilidad\nFUENTES: https://thegta6cat.com/ | https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m | https://rugcheck.xyz/tokens/HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-  "firstSeenAt": "2026-11-20T11:41:05Z",
-  "lastSeenAt": "2026-11-22T08:26:57Z",
-  "runId": "run-20261122-0826",
-  "aliases": [
-   "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump"
-  ],
-  "actionable": false,
-  "profitPath": ""
  },
  {
   "name": "Codemany",
@@ -26398,6 +27608,387 @@
   ]
  },
  {
+  "name": "Inkling 2 Mini",
+  "category": "ia_tecnologia",
+  "subcategory": "hardware_software",
+  "kind": "activa",
+  "description": "Dispositivo que permite ejecutar un modelo de IA de 26 B parámetros en un portátil, orientado a programadores que buscan capacidad local de inferencia.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre distribución o venta en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se ha encontrado información pública sobre precio; se asume que podría estar por encima de 200 €, pero inferior a 2 000 €.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, al tratarse de un producto físico/servicio sin token ni mercado secundario.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "desconocido",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Modelo de 26 B parámetros ejecutable localmente es inusual, pero la información proviene solo de la ficha de Product Hunt. · Verificador: La premisa técnica es ambigua y no hay evidencia de un producto real. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Sin datos de mercado ni adopción, el potencial es incierto. · Verificador: Sin producto, no hay potencial comercial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "No se dispone de cifras de tamaño de mercado ni de competidores directos. · Verificador: No existe mercado para un producto inexistente.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No hay información sobre el equipo fundador o su experiencia. · Verificador: No se ha identificado ninguna entidad responsable.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No se ha encontrado información sobre rondas de inversión o capital disponible. · Verificador: No hay datos de financiación.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "Solo presencia en Product Hunt; falta comunidad activa conocida. · Verificador: No hay comunidad activa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "No hay datos de usuarios activos ni casos de uso publicados. · Verificador: Adopción nula.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.0,
+    "why": "Existen otras soluciones de IA local, pero sin datos comparativos claros. · Verificador: La competencia real (Ollama, LM Studio) hace que este producto sea irrelevante o inexistente. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Ejecutar un modelo de 26 B en laptop implica desafíos de hardware y optimización. · Verificador: Riesgo máximo al ser un producto no verificado o fantasma. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "Sin precio ni garantía de entrega, el riesgo financiero es moderado. · Verificador: Riesgo de estafa o pérdida total al no haber producto. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "Desconocida la disponibilidad o soporte en territorio español. · Verificador: No hay disponibilidad en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.5,
+    "why": "No hay mercado secundario para revender o liquidar el producto. · Verificador: No aplica.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "PRODUCT_NOT_FOUND",
+    "severity": "critica",
+    "detail": "El producto no existe o la URL proporcionada es incorrecta/inactiva."
+   },
+   {
+    "code": "INCONSISTENT_DATA",
+    "severity": "alta",
+    "detail": "Discrepancia entre el nombre del producto y la URL de referencia."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha original presenta inconsistencias graves: el nombre del producto 'Inkling 2 Mini' no coincide con la URL proporcionada (tinker-2), y la URL de Product Hunt devuelve un error 403 o no existe como producto comercial verificado. No hay rastro de una empresa, hardware o software con ese nombre que permita inferir modelos de 26B en portátiles de forma comercial."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Posibilidad de usar un modelo de IA de gran escala directamente en un portátil, lo que podría abrir nuevas formas de desarrollo local."
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt para obtener el enlace al sitio oficial del producto.",
+   "Buscar información de compra o pre‑pedido en la web del fabricante.",
+   "Evaluar disponibilidad y precio antes de decidir la inversión."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "Publicación en Product Hunt con cierta visibilidad entre entusiastas de IA."
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "Al no existir un producto comercial, no hay registro ni cumplimiento normativo que verificar.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/tinker-2"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "La ficha original presenta inconsistencias graves: el nombre del producto 'Inkling 2 Mini' no coincide con la URL proporcionada (tinker-2), y la URL de Product Hunt devuelve un error 403 o no existe como producto comercial verificado. No hay rastro de una empresa, hardware o software con ese nombre que permita inferir modelos de 26B en portátiles de forma comercial.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-inkling-2-mini",
+  "isNew": true,
+  "score": 9,
+  "rawScore": 14.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "PRODUCT_NOT_FOUND",
+    "severity": "critica",
+    "detail": "El producto no existe o la URL proporcionada es incorrecta/inactiva."
+   },
+   {
+    "code": "INCONSISTENT_DATA",
+    "severity": "alta",
+    "detail": "Discrepancia entre el nombre del producto y la URL de referencia."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha original presenta inconsistencias graves: el nombre del producto 'Inkling 2 Mini' no coincide con la URL proporcionada (tinker-2), y la URL de Product Hunt devuelve un error 403 o no existe como producto comercial verificado. No hay rastro de una empresa, hardware o software con ese nombre que permita inferir modelos de 26B en portátiles de forma comercial."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Modelo de 26 B parámetros ejecutable localmente es inusual, pero la información proviene solo de la ficha de Product Hunt. · Verificador: La premisa técnica es ambigua y no hay evidencia de un producto real. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Sin datos de mercado ni adopción, el potencial es incierto. · Verificador: Sin producto, no hay potencial comercial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se dispone de cifras de tamaño de mercado ni de competidores directos. · Verificador: No existe mercado para un producto inexistente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No hay información sobre el equipo fundador o su experiencia. · Verificador: No se ha identificado ninguna entidad responsable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No se ha encontrado información sobre rondas de inversión o capital disponible. · Verificador: No hay datos de financiación.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Solo presencia en Product Hunt; falta comunidad activa conocida. · Verificador: No hay comunidad activa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "No hay datos de usuarios activos ni casos de uso publicados. · Verificador: Adopción nula.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "Existen otras soluciones de IA local, pero sin datos comparativos claros. · Verificador: La competencia real (Ollama, LM Studio) hace que este producto sea irrelevante o inexistente. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Ejecutar un modelo de 26 B en laptop implica desafíos de hardware y optimización. · Verificador: Riesgo máximo al ser un producto no verificado o fantasma. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Sin precio ni garantía de entrega, el riesgo financiero es moderado. · Verificador: Riesgo de estafa o pérdida total al no haber producto. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Desconocida la disponibilidad o soporte en territorio español. · Verificador: No hay disponibilidad en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay mercado secundario para revender o liquidar el producto. · Verificador: No aplica.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Inkling 2 Mini\nCATEGORÍA: ia_tecnologia · hardware_software\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 9/100 · Descartar\nRIESGO: crítico\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posibilidad de usar un modelo de IA de gran escala directamente en un portátil, lo que podría abrir nuevas formas de desarrollo local.\nMOTIVOS PARA DESCONFIAR: El producto no existe o la URL proporcionada es incorrecta/inactiva.; Discrepancia entre el nombre del producto y la URL de referencia.; El verificador no pudo confirmar que sea real: La ficha original presenta inconsistencias graves: el nombre del producto 'Inkling 2 Mini' no coincide con la URL proporcionada (tinker-2), y la URL de Product Hunt devuelve un error 403 o no existe como producto comercial verificado. No hay rastro de una empresa, hardware o software con ese nombre que permita inferir modelos de 26B en portátiles de forma comercial.\nCÓMO PARTICIPAR: Visitar la página de Product Hunt para obtener el enlace al sitio oficial del producto.; Buscar información de compra o pre‑pedido en la web del fabricante.; Evaluar disponibilidad y precio antes de decidir la inversión.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/tinker-2 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-www-producthunt-com-products-tinker-2"
+  ]
+ },
+ {
   "name": "Take Voyager 1 apart, down to a single memory chip",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -27578,6 +29169,534 @@
   "aliases": [
    "news-www-producthunt-com-products-ulika"
   ]
+ },
+ {
+  "name": "GTA6CAT (GATO)",
+  "category": "cripto",
+  "subcategory": "gaming_nft",
+  "kind": "activa",
+  "description": "Token $GATO vinculado al proyecto NFT Grand Theft Gato VI en Solana, con juego y coleccionables. Precio bajo y alta volatilidad.",
+  "officialUrl": "https://thegta6cat.com/",
+  "participateUrl": "https://raydium.io/",
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "Proyecto internacional sin indicaciones de cumplimiento regulatorio en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0.5,
+   "extraNotes": "Comisiones de red y posible compra mínima de NFT 0.5 SOL",
+   "recommended": 150,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEXs de Solana, pero el bajo número de pares puede dificultar la salida completa.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "alto si el juego gana tracción, pero depende de hype y adopción.",
+  "difficulty": "media",
+  "timeNeeded": "moderado (configuración de wallet y seguimiento de mercado)",
+  "subscores": {
+   "novedad": {
+    "v": 6.0,
+    "why": "Proyecto NFT basado en temática GTA con token propio · Verificador: Uso de temática viral de GTA en ecosistema Solana",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 2.5,
+    "why": "Crecimiento depende del hype y posible acción legal · Verificador: Dependencia total de la especulación y riesgo de cese por derechos de autor",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.2,
+    "why": "Liquidez ~180k USD y volumen 24h ~274k USD en DEX de Solana · Verificador: Liquidez volátil en DEX, alta exposición a manipulación",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.8,
+    "why": "No se muestra información del equipo ni entidad legal · Verificador: Equipo anónimo, sin entidad legal identificable",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.2,
+    "why": "Financiación opaca basada en venta de NFTs y liquidez de mercado · Verificador: Financiación basada en emisión de tokens y NFTs sin transparencia",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "Presencia en X y sitio web, comunidad limitada pero activa · Verificador: Comunidad activa en redes sociales, típica de memecoins",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.2,
+    "why": "Requiere compra de NFT y juego, adopción incipiente en Solana · Verificador: Adopción limitada a usuarios de ecosistema Solana/DEX",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 3.2,
+    "why": "Muchos proyectos NFT de juegos compiten por atención · Verificador: Saturación de proyectos similares en Solana",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.5,
+    "why": "Depende de Solana y contratos no auditados, posible vulnerabilidad · Verificador: Contratos inteligentes no auditados por firmas reconocidas",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 1.2,
+    "why": "Alta volatilidad, riesgo de pérdida total del capital · Verificador: Riesgo de pérdida total del capital (rug pull o caída de valor)",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.2,
+    "why": "No está autorizado ni registrado en la CNMV, incumple MiCA · Verificador: No cumple con MiCA ni está registrado en CNMV",
+    "evidence": true
+   },
+   "salida": {
+    "v": 3.8,
+    "why": "Liquidez media pero pares limitados en DEXs de Solana, riesgo de slippage · Verificador: Dependencia de liquidez en DEX, riesgo de slippage alto",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "No se muestra información del equipo ni financiación"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "copyright_infringement",
+    "severity": "critica",
+    "detail": "Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA."
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "No cumple con normativas de servicios de criptoactivos en España (MiCA)."
+   },
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Activo altamente especulativo con riesgo de pérdida total."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "Riesgo legal extremo por infracción de derechos de autor y falta de entidad legal."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España."
+   },
+   {
+    "code": "copyright_infringement",
+    "severity": "critica",
+    "detail": "Infracción directa de propiedad intelectual de Rockstar Games."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Equipo anónimo y falta de entidad legal."
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "Incumplimiento de normativa MiCA en España."
+   },
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Activo altamente especulativo sin valor intrínseco."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto es una parodia de propiedad intelectual ajena (Rockstar Games/GTA) sin licencia oficial. Presenta riesgos legales, técnicos y financieros extremos. No es una oportunidad de inversión legítima, sino un activo especulativo de alto riesgo."
+   }
+  ],
+  "distrust": [
+   "opacidad del equipo",
+   "dependencia de hype de GTA"
+  ],
+  "whyInteresting": [
+   "relación con marca GTA",
+   "precio bajo del token"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (ej. Phantom)",
+   "Comprar SOL en exchange",
+   "Conectar la wallet a un DEX de Solana (ej. Raydium)",
+   "Buscar el par $GATO y comprar la cantidad deseada",
+   "Opcional: participar en el mint de NFT pagando 0.5 SOL"
+  ],
+  "lossCauses": [
+   "baja liquidez",
+   "cierre del proyecto",
+   "regulación restrictiva",
+   "hack o vulnerabilidad"
+  ],
+  "earlySignals": [
+   "alto volumen 24h (~274k USD)",
+   "actividad en redes sociales (X)"
+  ],
+  "signals": {
+   "volume24hUsd": 274208.57
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "El proyecto no figura en los registros de la CNMV. Al ser un token de utilidad/memecoin sin respaldo, no cuenta con autorización para operar servicios financieros en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "symbol": "GATO",
+   "name": "GTA6CAT",
+   "priceUsd": 0.001842,
+   "liquidityUsd": 148635.14,
+   "volume24hUsd": 135819.81,
+   "fdvUsd": 1814351,
+   "mcapUsd": 1818667,
+   "ageHours": 2160.8,
+   "buys24h": 1154,
+   "sells24h": 1174,
+   "pairUrl": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://thegta6cat.com/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto es una parodia de propiedad intelectual ajena (Rockstar Games/GTA) sin licencia oficial. Presenta riesgos legales, técnicos y financieros extremos. No es una oportunidad de inversión legítima, sino un activo especulativo de alto riesgo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump",
+  "isNew": false,
+  "score": 6,
+  "rawScore": 26.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 5 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "No se muestra información del equipo ni financiación"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "copyright_infringement",
+    "severity": "critica",
+    "detail": "Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA."
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "No cumple con normativas de servicios de criptoactivos en España (MiCA)."
+   },
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Activo altamente especulativo con riesgo de pérdida total."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "Riesgo legal extremo por infracción de derechos de autor y falta de entidad legal."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Proyecto NFT basado en temática GTA con token propio · Verificador: Uso de temática viral de GTA en ecosistema Solana",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.5,
+    "points": 3.0,
+    "why": "Crecimiento depende del hype y posible acción legal · Verificador: Dependencia total de la especulación y riesgo de cese por derechos de autor",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 4.2,
+    "points": 3.4,
+    "why": "Liquidez ~180k USD y volumen 24h ~274k USD en DEX de Solana · Verificador: Liquidez volátil en DEX, alta exposición a manipulación",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.8,
+    "points": 0.8,
+    "why": "No se muestra información del equipo ni entidad legal · Verificador: Equipo anónimo, sin entidad legal identificable",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.2,
+    "points": 0.8,
+    "why": "Financiación opaca basada en venta de NFTs y liquidez de mercado · Verificador: Financiación basada en emisión de tokens y NFTs sin transparencia",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 4.0,
+    "points": 2.8,
+    "why": "Presencia en X y sitio web, comunidad limitada pero activa · Verificador: Comunidad activa en redes sociales, típica de memecoins",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.2,
+    "points": 2.0,
+    "why": "Requiere compra de NFT y juego, adopción incipiente en Solana · Verificador: Adopción limitada a usuarios de ecosistema Solana/DEX",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Muchos proyectos NFT de juegos compiten por atención · Verificador: Saturación de proyectos similares en Solana",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Depende de Solana y contratos no auditados, posible vulnerabilidad · Verificador: Contratos inteligentes no auditados por firmas reconocidas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.2,
+    "points": 1.2,
+    "why": "Alta volatilidad, riesgo de pérdida total del capital · Verificador: Riesgo de pérdida total del capital (rug pull o caída de valor)",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.2,
+    "points": 1.0,
+    "why": "No está autorizado ni registrado en la CNMV, incumple MiCA · Verificador: No cumple con MiCA ni está registrado en CNMV",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.8,
+    "points": 3.0,
+    "why": "Liquidez media pero pares limitados en DEXs de Solana, riesgo de slippage · Verificador: Dependencia de liquidez en DEX, riesgo de slippage alto",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 150.0,
+   "extraCostsEur": 0.5,
+   "lossScenarioEur": -150.5,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 300.0,
+     "netEur": 295.18,
+     "exitImpactPct": 0.4,
+     "exitNote": null,
+     "impliedFdvUsd": 3628702
+    },
+    {
+     "multiple": 5,
+     "grossEur": 750.0,
+     "netEur": 733.77,
+     "exitImpactPct": 1.1,
+     "exitNote": null,
+     "impliedFdvUsd": 9071755
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1500.0,
+     "netEur": 1451.56,
+     "exitImpactPct": 2.2,
+     "exitNote": null,
+     "impliedFdvUsd": 18143510
+    },
+    {
+     "multiple": 20,
+     "grossEur": 3000.0,
+     "netEur": 2837.74,
+     "exitImpactPct": 4.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 36287020
+    },
+    {
+     "multiple": 50,
+     "grossEur": 7500.0,
+     "netEur": 6601.0,
+     "exitImpactPct": 11.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 90717550
+    },
+    {
+     "multiple": 100,
+     "grossEur": 15000.0,
+     "netEur": 11555.5,
+     "exitImpactPct": 22.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 181435100
+    },
+    {
+     "multiple": 300,
+     "grossEur": 45000.0,
+     "netEur": 14903.54,
+     "exitImpactPct": 66.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 544305300
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "priceUsd": -34.5,
+    "liquidityUsd": -17.6,
+    "volume24hUsd": 0.0,
+    "fdvUsd": -34.5
+   },
+   "label": "Estable",
+   "since": "2026-11-22T08:26:57Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-20T11:41:05Z",
+    "priceUsd": 0.00327,
+    "liquidityUsd": 195698.63,
+    "volume24hUsd": 474396.26,
+    "fdvUsd": 3223564.0
+   },
+   {
+    "t": "2026-11-21T08:10:29Z",
+    "priceUsd": 0.003287,
+    "liquidityUsd": 190499.22,
+    "volume24hUsd": 755198.78,
+    "fdvUsd": 3239454.0
+   },
+   {
+    "t": "2026-11-22T08:26:57Z",
+    "priceUsd": 0.002811,
+    "liquidityUsd": 180329.59,
+    "volume24hUsd": 274208.57,
+    "fdvUsd": 2769434.0
+   },
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "priceUsd": 0.001842,
+    "liquidityUsd": 148635.14,
+    "volume24hUsd": 274208.57,
+    "fdvUsd": 1814351.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: GTA6CAT (GATO)\nCATEGORÍA: cripto · gaming_nft\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://thegta6cat.com/\nENLACE DE PARTICIPACIÓN: https://raydium.io/\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,50 € adicionales)\nPRESUPUESTO RECOMENDADO: 150,00 €\nPOTENCIAL: alto si el juego gana tracción, pero depende de hype y adopción.\nPUNTUACIÓN: 6/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: relación con marca GTA; precio bajo del token\nMOTIVOS PARA DESCONFIAR: No se muestra información del equipo ni financiación; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Uso no autorizado de marca y propiedad intelectual de Rockstar Games/GTA.; No cumple con normativas de servicios de criptoactivos en España (MiCA).; Activo altamente especulativo con riesgo de pérdida total.; Riesgo legal extremo por infracción de derechos de autor y falta de entidad legal.; No figura en los registros de la CNMV ni cuenta con autorización para operar servicios financieros en España.; opacidad del equipo; dependencia de hype de GTA\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (ej. Phantom); Comprar SOL en exchange; Conectar la wallet a un DEX de Solana (ej. Raydium); Buscar el par $GATO y comprar la cantidad deseada; Opcional: participar en el mint de NFT pagando 0.5 SOL\nQUÉ PODRÍA HACERME PERDER EL DINERO: baja liquidez; cierre del proyecto; regulación restrictiva; hack o vulnerabilidad\nFUENTES: https://thegta6cat.com/ | https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-20T11:41:05Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "tok-solana-hsprhxbrgivaqdrf3tnknuzztax9juspgmfdakk6pump"
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "Binance hack laundering report",
@@ -38071,6 +40190,1310 @@
   "runId": "run-20261123-0150",
   "aliases": [
    "tok-eth-0xc6acf921fd47757230a05d6d05b686479cdfc87c"
+  ]
+ },
+ {
+  "name": "DogWifJob (JOB)",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "activa",
+  "description": "Memecoin basado en Solana con temática de un perro con empleo. No tiene roadmap ni utilidad financiera y se promociona como un juego de memes. Su token $JOB se negocia en DEXs de Solana y está asociado a la plataforma pump.fun para recompensas.",
+  "officialUrl": "https://dogwifjob.com/",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no regulado",
+  "spainNotes": "El token está en la cadena Solana, accesible globalmente, pero no hay información específica de regulación o restricciones en España.",
+  "costs": {
+   "minEntry": 0.01,
+   "extra": 0.5,
+   "extraNotes": "Comisiones de red Solana y posible coste de intercambio en DEX",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede vender en DEXs de Solana, pero la profundidad del libro es limitada y el precio es muy volátil.",
+  "horizon": "corto plazo especulativo",
+  "deadline": null,
+  "potential": "bajo",
+  "difficulty": "baja",
+  "timeNeeded": "minutos",
+  "subscores": {
+   "novedad": {
+    "v": 3.5,
+    "why": "Token meme con temática de perro y empleo en Solana · Verificador: Temática satírica de oficina aplicada a memecoin, concepto común en Solana.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.5,
+    "why": "Alto volumen pero sin utilidad ni roadmap; capitalización baja · Verificador: Sin roadmap ni utilidad; valor puramente especulativo.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Liquidity $148k y volumen 24h $381k indican actividad pero mercado pequeño · Verificador: Liquidez y volumen presentes pero altamente inestables.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se proporciona información de equipo ni fundadores · Verificador: Equipo anónimo; se presentan como 'HR' (Shiba).",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se describen fuentes de financiación ni reservas · Verificador: No existe financiación institucional ni reservas auditadas.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.0,
+    "why": "Presencia en X y Telegram, sin datos de tamaño de comunidad · Verificador: Presencia en X y Telegram, típica de proyectos de pump.fun.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 0.5,
+    "why": "No hay adopción real ni casos de uso más allá de memes · Verificador: Cero adopción real; es un activo de juego especulativo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.0,
+    "why": "Existen numerosos memecoins similares en Solana · Verificador: Saturación extrema de memecoins en Solana.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.5,
+    "why": "Contrato en Solana sin auditorías públicas; dependencia de pump.fun · Verificador: Contrato sin auditoría externa; dependencia de pump.fun.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "Sin utilidad, alta volatilidad y posible rug pull · Verificador: Alta probabilidad de pérdida total (rug pull o caída de liquidez).",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 5.0,
+    "why": "Accesible vía wallet Solana, pero sin información regulatoria local · Verificador: Accesible técnicamente, pero sin cumplimiento normativo MiCA.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 3.5,
+    "why": "Venta posible en DEX, pero liquidez limitada y precio inestable · Verificador: Dependiente de la liquidez en DEX; riesgo de slippage alto.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "no_roadmap",
+    "severity": "alta",
+    "detail": "El proyecto no publica roadmap ni plan de desarrollo"
+   },
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token no tiene utilidad financiera ni funcionalidad clara"
+   },
+   {
+    "code": "pump_fun_dependency",
+    "severity": "media",
+    "detail": "Recompensas y liquidez dependen de la plataforma pump.fun, que puede detenerse"
+   },
+   {
+    "code": "high_volatility",
+    "severity": "media",
+    "detail": "Volumen alto sin fundamentos, típico de pumps especulativos"
+   },
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token no tiene utilidad financiera ni tecnológica."
+   },
+   {
+    "code": "anonymous_team",
+    "severity": "alta",
+    "detail": "Equipo totalmente anónimo sin responsabilidad legal."
+   },
+   {
+    "code": "pump_fun_dependency",
+    "severity": "media",
+    "detail": "Dependencia total de la plataforma pump.fun para la liquidez."
+   },
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Activo altamente volátil con riesgo de pérdida total de capital."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Proyecto memecoin sin utilidad, sin equipo identificable y con alto riesgo de pérdida total. No está regulado y opera en un entorno de alta volatilidad (pump.fun)."
+   }
+  ],
+  "distrust": [
+   "memecoin sin utilidad real",
+   "ausencia de información de equipo y financiación",
+   "dependencia de pump.fun para recompensas"
+  ],
+  "whyInteresting": [
+   "alto volumen 24h relativo a su capitalización",
+   "posibilidad de ganancias rápidas en movimientos de pump"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Solana (ej. Phantom)",
+   "Comprar SOL en un exchange y transferirlo a la wallet",
+   "Acceder a la DEX indicada en pairUrl y conectar la wallet",
+   "Pegar la dirección del contrato 9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump y swapear SOL por $JOB"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar $JOB a bajo precio y vender cuando el precio suba tras un pump",
+  "lossCauses": [
+   "caída del precio tras el pump",
+   "rug pull del contrato o suspensión de pump.fun",
+   "baja liquidez que impida vender sin gran slippage"
+  ],
+  "earlySignals": [
+   "volumen 24h $381k sin respaldo de producto",
+   "presencia en pump.fun como fuente de recompensas"
+  ],
+  "signals": {
+   "volume24hUsd": 381096.18
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un instrumento financiero regulado. No figura en registros de la CNMV ni ESMA. La inversión en memecoins no cuenta con protección al inversor en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "solana",
+   "tokenAddress": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+   "symbol": "JOB",
+   "name": "DogWifJob",
+   "priceUsd": 0.001977,
+   "liquidityUsd": 148390.37,
+   "volume24hUsd": 381096.18,
+   "fdvUsd": 1926013,
+   "mcapUsd": 1926013,
+   "ageHours": 642.0,
+   "buys24h": 1302,
+   "sells24h": 1682,
+   "pairUrl": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8"
+  },
+  "securityChecks": [
+   {
+    "tool": "RugCheck",
+    "url": "https://rugcheck.xyz/tokens/9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "score": 1
+   }
+  ],
+  "sources": [
+   {
+    "title": "DEX Screener",
+    "url": "https://dogwifjob.com/"
+   },
+   {
+    "title": "Par en DEX",
+    "url": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8"
+   },
+   {
+    "title": "CNMV Advertencias",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d5e8b6a-8f9c-4e3a-9b5d-2c1f8a9b7e6d}"
+   }
+  ],
+  "discoveredVia": "DEX Screener",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "Proyecto memecoin sin utilidad, sin equipo identificable y con alto riesgo de pérdida total. No está regulado y opera en un entorno de alta volatilidad (pump.fun).",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "tok-solana-9pq7alabhdg2ttns22cm6kuyszvczplfe368hwuypump",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 20.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "no_roadmap",
+    "severity": "alta",
+    "detail": "El proyecto no publica roadmap ni plan de desarrollo"
+   },
+   {
+    "code": "no_utility",
+    "severity": "alta",
+    "detail": "El token no tiene utilidad financiera ni funcionalidad clara"
+   },
+   {
+    "code": "pump_fun_dependency",
+    "severity": "media",
+    "detail": "Recompensas y liquidez dependen de la plataforma pump.fun, que puede detenerse"
+   },
+   {
+    "code": "high_volatility",
+    "severity": "media",
+    "detail": "Volumen alto sin fundamentos, típico de pumps especulativos"
+   },
+   {
+    "code": "anonymous_team",
+    "severity": "alta",
+    "detail": "Equipo totalmente anónimo sin responsabilidad legal."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Proyecto memecoin sin utilidad, sin equipo identificable y con alto riesgo de pérdida total. No está regulado y opera en un entorno de alta volatilidad (pump.fun)."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.5,
+    "points": 2.8,
+    "why": "Token meme con temática de perro y empleo en Solana · Verificador: Temática satírica de oficina aplicada a memecoin, concepto común en Solana.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.5,
+    "points": 1.8,
+    "why": "Alto volumen pero sin utilidad ni roadmap; capitalización baja · Verificador: Sin roadmap ni utilidad; valor puramente especulativo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 4.5,
+    "points": 3.6,
+    "why": "Liquidity $148k y volumen 24h $381k indican actividad pero mercado pequeño · Verificador: Liquidez y volumen presentes pero altamente inestables.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se proporciona información de equipo ni fundadores · Verificador: Equipo anónimo; se presentan como 'HR' (Shiba).",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se describen fuentes de financiación ni reservas · Verificador: No existe financiación institucional ni reservas auditadas.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Presencia en X y Telegram, sin datos de tamaño de comunidad · Verificador: Presencia en X y Telegram, típica de proyectos de pump.fun.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "No hay adopción real ni casos de uso más allá de memes · Verificador: Cero adopción real; es un activo de juego especulativo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Existen numerosos memecoins similares en Solana · Verificador: Saturación extrema de memecoins en Solana.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Contrato en Solana sin auditorías públicas; dependencia de pump.fun · Verificador: Contrato sin auditoría externa; dependencia de pump.fun.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "Sin utilidad, alta volatilidad y posible rug pull · Verificador: Alta probabilidad de pérdida total (rug pull o caída de liquidez).",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Accesible vía wallet Solana, pero sin información regulatoria local · Verificador: Accesible técnicamente, pero sin cumplimiento normativo MiCA.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.5,
+    "points": 2.8,
+    "why": "Venta posible en DEX, pero liquidez limitada y precio inestable · Verificador: Dependiente de la liquidez en DEX; riesgo de slippage alto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.5,
+   "lossScenarioEur": -2000.5,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3724.87,
+     "exitImpactPct": 5.9,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 3852026
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 8433.09,
+     "exitImpactPct": 14.8,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 9630065
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 13933.85,
+     "exitImpactPct": 29.6,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 19260130
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 16136.89,
+     "exitImpactPct": 59.2,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 38520260
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 989.5,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 96300650
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 1979.5,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 192601300
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5939.5,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 577803900
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "priceUsd": 0.001977,
+    "liquidityUsd": 148390.37,
+    "volume24hUsd": 381096.18,
+    "fdvUsd": 1926013.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DogWifJob (JOB)\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://dogwifjob.com/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no regulado\nCOSTE DE ENTRADA: 0,01 € (+ 0,50 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: bajo\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo especulativo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alto volumen 24h relativo a su capitalización; posibilidad de ganancias rápidas en movimientos de pump\nMOTIVOS PARA DESCONFIAR: El proyecto no publica roadmap ni plan de desarrollo; El token no tiene utilidad financiera ni funcionalidad clara; Recompensas y liquidez dependen de la plataforma pump.fun, que puede detenerse; Volumen alto sin fundamentos, típico de pumps especulativos; Equipo totalmente anónimo sin responsabilidad legal.; El verificador tiene dudas: Proyecto memecoin sin utilidad, sin equipo identificable y con alto riesgo de pérdida total. No está regulado y opera en un entorno de alta volatilidad (pump.fun).; memecoin sin utilidad real; ausencia de información de equipo y financiación; dependencia de pump.fun para recompensas\nCÓMO PARTICIPAR: Crear una wallet compatible con Solana (ej. Phantom); Comprar SOL en un exchange y transferirlo a la wallet; Acceder a la DEX indicada en pairUrl y conectar la wallet; Pegar la dirección del contrato 9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump y swapear SOL por $JOB\nQUÉ PODRÍA HACERME PERDER EL DINERO: caída del precio tras el pump; rug pull del contrato o suspensión de pump.fun; baja liquidez que impida vender sin gran slippage\nFUENTES: https://dogwifjob.com/ | https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8 | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d5e8b6a-8f9c-4e3a-9b5d-2c1f8a9b7e6d}",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "tok-solana-9pq7alabhdg2ttns22cm6kuyszvczplfe368hwuypump"
+  ]
+ },
+ {
+  "name": "Minelius (MINELIUS)",
+  "category": "cripto",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Token listado en CoinGecko con ranking 880. Se reporta una capitalización de mercado de 2,155 T USD y un volumen de 24 h de 56,984 B USD, aunque no hay información pública sobre su equipo, caso de uso o exchanges donde cotiza.",
+  "officialUrl": "https://www.coingecko.com/es/monedas/minelius",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre regulación o disponibilidad para residentes en España.",
+  "costs": {
+   "minEntry": 0.02,
+   "extra": null,
+   "extraNotes": "Comisiones de exchange y tarifas de red desconocidas",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Volumen 24 h reportado como 56,984 B USD sugiere cierta liquidez, pero no se especifican los exchanges ni la profundidad del order book.",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "Desconocido; el token muestra métricas de mercado elevadas pero carece de información pública sobre su proyecto, equipo o adopción real.",
+  "difficulty": "baja",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Ranking 880 en CoinGecko indica posición media en el ecosistema · Verificador: El token no tiene actividad real ni presencia en el ecosistema más allá de un listado automatizado.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "No hay datos sobre caso de uso, adopción o roadmap · Verificador: Ausencia total de caso de uso, roadmap o propuesta de valor.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Volumen 24 h de 56,984 B USD reportado en la página · Verificador: Los datos de mercado reportados en la ficha son falsos; corresponden al mercado global, no al token. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se encontró información sobre el equipo detrás del proyecto · Verificador: No existe información pública sobre los desarrolladores o fundadores.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos de rondas de financiación o inversores · Verificador: No hay registro de rondas de financiación.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "Ausencia de menciones a comunidad o canales oficiales · Verificador: Inexistencia de canales oficiales o comunidad activa.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Sin indicadores de uso real o adopción por parte de usuarios · Verificador: Sin indicadores de uso o adopción.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.0,
+    "why": "Existe gran cantidad de tokens similares en el mercado cripto · Verificador: No es un proyecto competitivo, sino un activo sin datos.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Falta de auditorías públicas y documentación técnica · Verificador: Falta de auditorías y documentación técnica.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta volatilidad y escasa información de mercado · Verificador: Riesgo extremo de pérdida total por falta de liquidez real y datos engañosos. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.5,
+    "why": "No hay información sobre disponibilidad para residentes españoles · Verificador: No disponible en plataformas reguladas en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "Volumen 24 h alto sugiere liquidez media, pero sin detalle de exchanges · Verificador: No hay liquidez real verificable. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo ni datos claros del proyecto"
+   },
+   {
+    "code": "data_misinterpretation",
+    "severity": "critica",
+    "detail": "Los datos de capitalización y volumen pueden corresponder al mercado global y no al token específico"
+   },
+   {
+    "code": "data_misinterpretation",
+    "severity": "critica",
+    "detail": "Confusión entre métricas globales de mercado y datos específicos del token."
+   },
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "El proyecto carece de sitio web, whitepaper y equipo identificable."
+   },
+   {
+    "code": "scam_potential",
+    "severity": "alta",
+    "detail": "El uso de datos inflados para atraer inversores es una señal de alerta típica de proyectos fraudulentos."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El análisis de la ficha original revela una interpretación errónea crítica de los datos de CoinGecko. Las cifras de '2,155 T USD' de capitalización y '56,984 B USD' de volumen no corresponden al token Minelius, sino que son los datos globales del mercado de criptomonedas (Total Market Cap y Total Volume) que aparecen en la cabecera de la web de CoinGecko. Minelius carece de métricas reales, equipo, sitio web oficial o presencia en exchanges verificables."
+   }
+  ],
+  "distrust": [
+   "falta_de_información",
+   "posible_misinterpretación_de_datos"
+  ],
+  "whyInteresting": [
+   "Ranking 880 en CoinGecko",
+   "Alta capitalización reportada (2,155 T USD)"
+  ],
+  "howToParticipate": [
+   "Buscar exchanges que listan MINELIUS (por ejemplo, mediante la herramienta de búsqueda de CoinGecko)",
+   "Crear una wallet compatible (MetaMask, Trust Wallet, etc.)",
+   "Depositar fondos y comprar MINELIUS en el exchange disponible"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Alta volatilidad del precio",
+   "Falta de información del proyecto y del equipo",
+   "Posible error en los datos de mercado reportados"
+  ],
+  "earlySignals": [
+   "Ranking 880",
+   "Volumen 24 h alto"
+  ],
+  "signals": {
+   "cgRank": 880
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro MiCA de ESMA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "CoinGecko",
+    "url": "https://www.coingecko.com/es/monedas/minelius"
+   },
+   {
+    "title": "CoinGecko Global Market Data",
+    "url": "https://www.coingecko.com/es"
+   },
+   {
+    "title": "CNMV Registro de Proveedores de Servicios de Activos Virtuales",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "CoinGecko",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "El análisis de la ficha original revela una interpretación errónea crítica de los datos de CoinGecko. Las cifras de '2,155 T USD' de capitalización y '56,984 B USD' de volumen no corresponden al token Minelius, sino que son los datos globales del mercado de criptomonedas (Total Market Cap y Total Volume) que aparecen en la cabecera de la web de CoinGecko. Minelius carece de métricas reales, equipo, sitio web oficial o presencia en exchanges verificables.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "web-coingecko-com",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 6.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo ni datos claros del proyecto"
+   },
+   {
+    "code": "data_misinterpretation",
+    "severity": "critica",
+    "detail": "Los datos de capitalización y volumen pueden corresponder al mercado global y no al token específico"
+   },
+   {
+    "code": "scam_potential",
+    "severity": "alta",
+    "detail": "El uso de datos inflados para atraer inversores es una señal de alerta típica de proyectos fraudulentos."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El análisis de la ficha original revela una interpretación errónea crítica de los datos de CoinGecko. Las cifras de '2,155 T USD' de capitalización y '56,984 B USD' de volumen no corresponden al token Minelius, sino que son los datos globales del mercado de criptomonedas (Total Market Cap y Total Volume) que aparecen en la cabecera de la web de CoinGecko. Minelius carece de métricas reales, equipo, sitio web oficial o presencia en exchanges verificables."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro MiCA de ESMA."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Ranking 880 en CoinGecko indica posición media en el ecosistema · Verificador: El token no tiene actividad real ni presencia en el ecosistema más allá de un listado automatizado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "No hay datos sobre caso de uso, adopción o roadmap · Verificador: Ausencia total de caso de uso, roadmap o propuesta de valor.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Volumen 24 h de 56,984 B USD reportado en la página · Verificador: Los datos de mercado reportados en la ficha son falsos; corresponden al mercado global, no al token. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se encontró información sobre el equipo detrás del proyecto · Verificador: No existe información pública sobre los desarrolladores o fundadores.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de rondas de financiación o inversores · Verificador: No hay registro de rondas de financiación.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Ausencia de menciones a comunidad o canales oficiales · Verificador: Inexistencia de canales oficiales o comunidad activa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sin indicadores de uso real o adopción por parte de usuarios · Verificador: Sin indicadores de uso o adopción.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "Existe gran cantidad de tokens similares en el mercado cripto · Verificador: No es un proyecto competitivo, sino un activo sin datos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Falta de auditorías públicas y documentación técnica · Verificador: Falta de auditorías y documentación técnica.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta volatilidad y escasa información de mercado · Verificador: Riesgo extremo de pérdida total por falta de liquidez real y datos engañosos. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay información sobre disponibilidad para residentes españoles · Verificador: No disponible en plataformas reguladas en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Volumen 24 h alto sugiere liquidez media, pero sin detalle de exchanges · Verificador: No hay liquidez real verificable. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3960.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 19800.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 39600.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 99000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 198000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 594000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "cgRank": 880.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Minelius (MINELIUS)\nCATEGORÍA: cripto · None\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://www.coingecko.com/es/monedas/minelius\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,02 € (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Desconocido; el token muestra métricas de mercado elevadas pero carece de información pública sobre su proyecto, equipo o adopción real.\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ranking 880 en CoinGecko; Alta capitalización reportada (2,155 T USD)\nMOTIVOS PARA DESCONFIAR: No se dispone de sitio web oficial, equipo ni datos claros del proyecto; Los datos de capitalización y volumen pueden corresponder al mercado global y no al token específico; El uso de datos inflados para atraer inversores es una señal de alerta típica de proyectos fraudulentos.; El verificador no pudo confirmar que sea real: El análisis de la ficha original revela una interpretación errónea crítica de los datos de CoinGecko. Las cifras de '2,155 T USD' de capitalización y '56,984 B USD' de volumen no corresponden al token Minelius, sino que son los datos globales del mercado de criptomonedas (Total Market Cap y Total Volume) que aparecen en la cabecera de la web de CoinGecko. Minelius carece de métricas reales, equipo, sitio web oficial o presencia en exchanges verificables.; No figura en el registro de proveedores de servicios de activos virtuales de la CNMV ni en el registro MiCA de ESMA.; falta_de_información; posible_misinterpretación_de_datos\nCÓMO PARTICIPAR: Buscar exchanges que listan MINELIUS (por ejemplo, mediante la herramienta de búsqueda de CoinGecko); Crear una wallet compatible (MetaMask, Trust Wallet, etc.); Depositar fondos y comprar MINELIUS en el exchange disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: Alta volatilidad del precio; Falta de información del proyecto y del equipo; Posible error en los datos de mercado reportados\nFUENTES: https://www.coingecko.com/es/monedas/minelius | https://www.coingecko.com/es | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "web-coingecko-com"
+  ]
+ },
+ {
+  "name": "Chat with Work",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "activa",
+  "description": "Plataforma que permite crear y usar bots de IA para tareas laborales en Europa. Los usuarios pueden decidir qué bots utilizar y cómo integrarlos en su flujo de trabajo.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre disponibilidad o soporte específico para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se ha encontrado información sobre costes de suscripción o uso; se asume que el acceso básico es gratuito.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, al no tratarse de un activo financiero negociable.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Posible utilidad para automatizar procesos internos en empresas, aunque su adopción dependerá de la integración con herramientas existentes.",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo para probar la versión pública si está disponible",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Enfocado en bots de IA para entornos laborales en Europa, un segmento aún poco explotado. · Verificador: La propuesta es genérica y no hay evidencia de una implementación técnica real. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Puede generar ahorros de tiempo y costes en tareas repetitivas. · Verificador: Sin producto funcional, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "Mercado de herramientas de productividad y automatización en crecimiento, pero competitivo. · Verificador: El mercado de IA está saturado y este proyecto no muestra diferenciación. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de datos sobre los fundadores o el equipo. · Verificador: No se ha identificado ningún equipo, fundador o entidad legal responsable. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "Sin información pública sobre rondas de inversión o capital disponible. · Verificador: No hay registros de financiación ni modelo de negocio transparente.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Listado en Product Hunt, lo que indica cierto interés inicial. · Verificador: La actividad en Product Hunt es mínima y no hay tracción social. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No hay datos de usuarios activos ni casos de uso publicados. · Verificador: No existen usuarios activos ni casos de uso documentados. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 1.0,
+    "why": "Existen varias soluciones de IA para productividad, pero pocas enfocadas exclusivamente en bots de trabajo en Europa. · Verificador: La competencia real (OpenAI, Anthropic, Microsoft) domina el sector. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Tecnología basada en IA es compleja; depende de la calidad de los modelos y su integración. · Verificador: Riesgo máximo al no poder verificar la infraestructura ni la seguridad de los datos. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.0,
+    "why": "No implica inversión financiera directa, pero el modelo de negocio es incierto. · Verificador: Al no haber inversión, el riesgo financiero es bajo, pero el riesgo de seguridad de datos es alto. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "No hay indicios claros de soporte o presencia local en España. · Verificador: No hay indicios de cumplimiento con el RGPD ni presencia en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "Al no ser un activo negociable, no hay mecanismo de salida financiera. · Verificador: No existe mecanismo de salida al no ser un activo financiero.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "website_unreachable",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar información adicional."
+   },
+   {
+    "code": "website_unreachable",
+    "severity": "critica",
+    "detail": "El dominio oficial devuelve error 403, lo que impide cualquier validación de seguridad o funcionalidad."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre los responsables, ubicación física o registro mercantil."
+   },
+   {
+    "code": "data_privacy_risk",
+    "severity": "alta",
+    "detail": "Al tratar con 'bots de trabajo', la falta de términos de servicio y política de privacidad supone un riesgo crítico para los datos corporativos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma carece de presencia digital verificable, el dominio oficial es inaccesible (error 403) y no existe información corporativa, legal o de equipo que respalde su existencia como entidad operativa. La ficha original se basa únicamente en un listado de Product Hunt sin actividad confirmada."
+   }
+  ],
+  "distrust": [
+   "falta de información pública sobre equipo, financiación y disponibilidad"
+  ],
+  "whyInteresting": [
+   "Innovación en bots de IA para entornos laborales europeos",
+   "Posible reducción de costes operativos"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al producto cuando esté disponible",
+   "Registrarse en la plataforma si abre una beta pública"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "Listado en Product Hunt (2026)"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en registros de la CNMV ni en el registro de proveedores de IA bajo el Reglamento de IA de la UE. La falta de información impide verificar el cumplimiento normativo.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/chat-with-work"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La plataforma carece de presencia digital verificable, el dominio oficial es inaccesible (error 403) y no existe información corporativa, legal o de equipo que respalde su existencia como entidad operativa. La ficha original se basa únicamente en un listado de Product Hunt sin actividad confirmada.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 17
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-chat-with-work",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 10.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "website_unreachable",
+    "severity": "media",
+    "detail": "La página oficial devuelve error 403, impidiendo validar información adicional."
+   },
+   {
+    "code": "lack_of_transparency",
+    "severity": "alta",
+    "detail": "Ausencia total de información sobre los responsables, ubicación física o registro mercantil."
+   },
+   {
+    "code": "data_privacy_risk",
+    "severity": "alta",
+    "detail": "Al tratar con 'bots de trabajo', la falta de términos de servicio y política de privacidad supone un riesgo crítico para los datos corporativos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma carece de presencia digital verificable, el dominio oficial es inaccesible (error 403) y no existe información corporativa, legal o de equipo que respalde su existencia como entidad operativa. La ficha original se basa únicamente en un listado de Product Hunt sin actividad confirmada."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Enfocado en bots de IA para entornos laborales en Europa, un segmento aún poco explotado. · Verificador: La propuesta es genérica y no hay evidencia de una implementación técnica real. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Puede generar ahorros de tiempo y costes en tareas repetitivas. · Verificador: Sin producto funcional, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Mercado de herramientas de productividad y automatización en crecimiento, pero competitivo. · Verificador: El mercado de IA está saturado y este proyecto no muestra diferenciación. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de datos sobre los fundadores o el equipo. · Verificador: No se ha identificado ningún equipo, fundador o entidad legal responsable. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Sin información pública sobre rondas de inversión o capital disponible. · Verificador: No hay registros de financiación ni modelo de negocio transparente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Listado en Product Hunt, lo que indica cierto interés inicial. · Verificador: La actividad en Product Hunt es mínima y no hay tracción social. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de usuarios activos ni casos de uso publicados. · Verificador: No existen usuarios activos ni casos de uso documentados. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 1.0,
+    "points": 0.5,
+    "why": "Existen varias soluciones de IA para productividad, pero pocas enfocadas exclusivamente en bots de trabajo en Europa. · Verificador: La competencia real (OpenAI, Anthropic, Microsoft) domina el sector. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología basada en IA es compleja; depende de la calidad de los modelos y su integración. · Verificador: Riesgo máximo al no poder verificar la infraestructura ni la seguridad de los datos. · Discrepancia entre modelos (5 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No implica inversión financiera directa, pero el modelo de negocio es incierto. · Verificador: Al no haber inversión, el riesgo financiero es bajo, pero el riesgo de seguridad de datos es alto. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay indicios claros de soporte o presencia local en España. · Verificador: No hay indicios de cumplimiento con el RGPD ni presencia en España. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Al no ser un activo negociable, no hay mecanismo de salida financiera. · Verificador: No existe mecanismo de salida al no ser un activo financiero.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Chat with Work\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Posible utilidad para automatizar procesos internos en empresas, aunque su adopción dependerá de la integración con herramientas existentes.\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en bots de IA para entornos laborales europeos; Posible reducción de costes operativos\nMOTIVOS PARA DESCONFIAR: La página oficial devuelve error 403, impidiendo validar información adicional.; Ausencia total de información sobre los responsables, ubicación física o registro mercantil.; Al tratar con 'bots de trabajo', la falta de términos de servicio y política de privacidad supone un riesgo crítico para los datos corporativos.; El verificador tiene dudas: La plataforma carece de presencia digital verificable, el dominio oficial es inaccesible (error 403) y no existe información corporativa, legal o de equipo que respalde su existencia como entidad operativa. La ficha original se basa únicamente en un listado de Product Hunt sin actividad confirmada.; falta de información pública sobre equipo, financiación y disponibilidad\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al producto cuando esté disponible; Registrarse en la plataforma si abre una beta pública\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/chat-with-work | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-23T13:15:25Z",
+  "lastSeenAt": "2026-11-23T13:15:25Z",
+  "runId": "run-20261123-1315",
+  "aliases": [
+   "news-www-producthunt-com-products-chat-with-work"
   ]
  }
 ]

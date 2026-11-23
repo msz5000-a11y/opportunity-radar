@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T01:52:54Z",
+ "generatedAt": "2026-11-23T13:21:28Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 94,
+ "studied": 102,
  "selected": [],
  "nearMisses": [
   {
@@ -502,7 +502,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-23T01:52:54Z",
+  "at": "2026-11-23T13:21:28Z",
   "status": 200
  }
 }

@@ -1,31 +1,31 @@
 {
- "lastRunAt": "2026-11-23T01:52:54Z",
+ "lastRunAt": "2026-11-23T13:21:27Z",
  "lastRunOk": false,
- "lastRunId": "run-20261123-0150",
+ "lastRunId": "run-20261123-1315",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-23T01:50:15+00:00"
+   "at": "2026-11-23T13:15:26+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T01:50:19+00:00"
+   "at": "2026-11-23T13:15:29+00:00"
   },
   "geckoterminal_trending": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-23T01:50:19+00:00"
+   "at": "2026-11-23T13:15:29+00:00"
   },
   "coingecko_trending": {
    "ok": true,
-   "items": 0,
+   "items": 3,
    "error": null,
-   "at": "2026-11-23T01:50:19+00:00"
+   "at": "2026-11-23T13:15:29+00:00"
   },
   "hacker_news": {
    "ok": true,
@@ -43,37 +43,37 @@
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T01:50:19+00:00"
+   "at": "2026-11-23T13:15:30+00:00"
   },
   "El Referente": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T01:50:21+00:00"
+   "at": "2026-11-23T13:15:32+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T01:50:21+00:00"
+   "at": "2026-11-23T13:15:32+00:00"
   },
   "The Block": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T01:50:21+00:00"
+   "at": "2026-11-23T13:15:32+00:00"
   },
   "busqueda_ia": {
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-23T01:50:38+00:00"
+   "at": "2026-11-23T13:15:50+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 9,
-   "groq": 8
+   "gemini": 11,
+   "groq": 10
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
@@ -82,7 +82,8 @@
   "errors": [
    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
    "searcher/gemini: HTTP 429",
-   "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+   "searcher/gemini: búsqueda de Google sin cupo en Gemini",
+   "verifier/gemini: HTTP 503"
   ],
   "googleSearch": false
  },
