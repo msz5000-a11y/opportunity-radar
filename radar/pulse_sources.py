@@ -231,6 +231,8 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
         if not cid or not R.is_plain_coin(sym, name):
             continue
         ids.append(cid)
+        if (it.get("market_cap_rank") or 999) <= 10:
+            continue  # BTC, ETH… siempre están: no aporta
         d = it.get("data") or {}
         ch = (d.get("price_change_percentage_24h") or {}).get("eur")
         rank = it.get("market_cap_rank")
@@ -357,7 +359,7 @@ def listing_collector(ex: str):
 
 def c_binance_ann(ctx: Ctx) -> list[dict]:
     d = get_json("https://www.binance.com/bapi/composite/v1/public/cms/article/list/query",
-                 params={"type": 1, "catalogId": 48, "pageNo": 1, "pageSize": 15}) or {}
+                 params={"type": 1, "catalogId": 48, "pageNo": 1, "pageSize": 15}, headers=EN) or {}
     cats = (d.get("data") or {}).get("catalogs") or []
     arts = [a for c in cats for a in (c.get("articles") or [])]
     out = []
@@ -370,7 +372,8 @@ def c_binance_ann(ctx: Ctx) -> list[dict]:
 
 
 def c_okx_ann(ctx: Ctx) -> list[dict]:
-    d = get_json("https://www.okx.com/api/v5/support/announcements", params={"annType": "announcements-new-listings"}) or {}
+    d = get_json("https://www.okx.com/api/v5/support/announcements", params={"annType": "announcements-new-listings"},
+                 headers={**EN, "locale": "en-US"}) or {}
     rows = [x for blk in (d.get("data") or []) for x in (blk.get("details") or [])]
     out = []
     for x in rows:
@@ -381,12 +384,29 @@ def c_okx_ann(ctx: Ctx) -> list[dict]:
     return out
 
 
+EN = {"Accept-Language": "en-US,en;q=0.9"}
+DERIV = R._rx(R._kw("perpetual", "perpetuals", "futures", "options", "margin", "usds-m", "usdⓢ-m", "usdⓢ-margined", "usd-margined",
+                     "coin-margined", "leverage", "contract", "contracts", "pre-market", "premarket", "tradfi"))
+
+
 def _exchange_ann(ex: str, name: str, title: str, url: str, rel: datetime | None, uid) -> dict:
     t = R.fold(title)
     asset = None
-    m = re.search(r"(?:will list|to list|lists|listing of|adds|introducing|launch(?:es)?|support)\s+(.+?)(?:\s+\(|\s+with|\s+on\b|\s+for\b|[!,.]|$)", title, re.I)
+    m = re.search(r"(?:will list|to list|lists|listing of|will add|adds|introducing|launch(?:es)?|support)\s+(.+?)(?:\s+\(|\s+with|\s+on\b|\s+for\b|[!,.]|$)", title, re.I)
     if m:
         asset = m.group(1).strip()[:40]
+    sym = None
+    m2 = re.search(r"\(([A-Z0-9]{2,12})\)", title) or (re.match(r"([A-Z0-9]{2,12})(?:/|$)", asset or "") if asset else None)
+    if m2:
+        sym = m2.group(1)
+    if sym:
+        uid = sym
+    if DERIV.search(t) and not ("spot" in t and "will list" in t):
+        return item(f"an:{ex}:{R.h(title)}", "cripto", "context", name, title=title, es=f"{name}: nuevos derivados ({title[:90]})", en=title,
+                    why="Anuncio de productos derivados (futuros, opciones o margen).", why_en="Derivatives product announcement.",
+                    act="Los derivados con apalancamiento pueden hacerte perder más de lo que pones: no son para empezar.",
+                    act_en="Leveraged derivatives can lose more than you put in; not for beginners.",
+                    s=40, opp=1, risk="muy_alto", tags=["derivados"], url=url, pub=iso(rel) if rel else None)
     if "delist" in t or "remove" in t or "cease" in t:
         kind, s, opp, es, act = "alert", 55, 1, f"{name} retirará un activo: {title}", "Si tienes ese activo en ese exchange, revisa plazos para retirarlo o venderlo."
     elif "launchpool" in t or "hodler airdrop" in t or "megadrop" in t or "airdrop" in t:
@@ -401,7 +421,7 @@ def _exchange_ann(ex: str, name: str, title: str, url: str, rel: datetime | None
         kind, s, opp, es, act = "context", 44, 1, f"{name}: {title}", "Solo te afecta si tienes ese token en el exchange."
     else:
         kind, s, opp, es, act = "listing", 62, 2, f"{name}: {title}", "Lee el anuncio oficial para ver fechas y pares."
-    return item(f"an:{ex}:{uid}", "lanzamientos", kind, name, title=title, es=es, en=title,
+    return item(f"an:{ex}:{uid}", "lanzamientos", kind, name, title=title, es=es, en=title, sym=sym,
                 why="Anuncio oficial del exchange.", why_en="Official exchange announcement.", act=act,
                 act_en="Read the official announcement for dates and conditions; expect volatility.",
                 s=s, opp=opp, risk="alto", tags=["listado" if kind == "listing" else kind], also=["cripto"], url=url,
@@ -661,8 +681,13 @@ def c_massive_eod(ctx: Ctx) -> list[dict]:
         if len(days) == 2:
             break
         if d.weekday() < 5:
-            r = get_json(f"https://api.massive.com/v2/aggs/grouped/locale/us/market/stocks/{d.isoformat()}",
-                         params={"adjusted": "true", "apiKey": key}, timeout=40) or {}
+            try:
+                r = get_json(f"https://api.massive.com/v2/aggs/grouped/locale/us/market/stocks/{d.isoformat()}",
+                             params={"adjusted": "true", "apiKey": key}, timeout=40) or {}
+            except SourceError as e:
+                if "403" not in str(e):
+                    raise
+                r = {}  # el plan gratuito no da el día en curso: probar el anterior
             res = r.get("results") or []
             if res:
                 days.append(d.isoformat())
@@ -725,6 +750,13 @@ def c_stocktwits(ctx: Ctx) -> list[dict]:
     return out
 
 
+APE_SKIP = {"SPY", "QQQ", "IWM", "DIA", "VOO", "VTI", "TQQQ", "SQQQ", "SPX", "NDX", "VIX", "UVXY", "CIA", "HR", "AM", "ET", "NYT", "AI",
+            "DD", "CEO", "USA", "EU", "UK", "IT", "ON", "ALL", "ARE", "FOR", "NOW", "YOLO", "OPEN", "LOVE", "BIG", "CAN", "HAS", "GO", "SO",
+            "ONE", "REAL", "BE", "RH", "EV", "PM", "AT", "CASH", "FUN", "GOOD", "VERY", "RUN", "EAT", "LOW", "HIGH", "NEW", "FREE", "TV",
+            "TA", "IMO", "ATH", "FOMO", "ELON", "PUMP", "MOON", "WSB", "OR", "IRS", "FBI", "GDP", "CPI", "FED", "SEC", "BTC", "ETH",
+            "USDT", "USDC", "OUT", "BUY", "SELL", "HOLD", "LIFE", "PLAY", "NICE", "WELL", "TOP", "BEST", "JUST", "LINK", "MAIN", "SAFE"}
+
+
 def c_apewisdom(ctx: Ctx) -> list[dict]:
     out, top = [], []
     for kind, cat in (("all-stocks", "bolsa"), ("all-crypto", "cripto")):
@@ -735,6 +767,8 @@ def c_apewisdom(ctx: Ctx) -> list[dict]:
             rank, rank0 = x.get("rank") or 999, x.get("rank_24h_ago") or 999
             if cat == "bolsa" and rank <= 25:
                 top.append(t)
+            if t in APE_SKIP or (cat == "bolsa" and men < 60):
+                continue
             ratio = men / max(1, men0)
             jump = (rank0 - rank) if rank0 and rank0 < 900 else 0
             if men < 40 or not ((ratio >= 3 and men >= 60) or (rank <= 15 and jump >= 20)):
@@ -840,7 +874,8 @@ def c_hn(ctx: Ctx) -> list[dict]:
                             act=("Herramienta nueva con buena acogida: pruébala o úsala como idea de producto." if show
                                  else "Termómetro de lo que interesa en tecnología; útil para detectar tendencias pronto."),
                             act_en="New tool with good reception: try it or use it as a product idea." if show else "Tech pulse; useful to spot trends early.",
-                            m={"points": pts, "comments": x.get("num_comments"), "hn": hn}, s=R.log_score(pts, 60, 1500, 38, 66),
+                            m={"points": pts, "comments": x.get("num_comments"), "hn": hn},
+                            s=R.log_score(pts, 60, 1500, 40, 60) if show else R.log_score(pts, 150, 2000, 34, 54),
                             opp=2 if show or cls["opp"] >= 3 else 1, risk="bajo", tags=["redes"] + cls["tags"][:2],
                             also=[c for c in (cls["also"] + (["lanzamientos"] if show else [])) if c != cat], url=x.get("url") or hn))
     return out
@@ -910,6 +945,19 @@ def news_item(src: str, title: str | None, url: str | None, summary: str | None,
                 srcs=[{"n": src, "u": url}] if url else None) | ({"via": via} if via else {})
 
 
+def decode(r) -> str:
+    """Texto de un feed respetando la codificación declarada en el XML (muchos no la ponen en la cabecera HTTP)."""
+    raw = r.content if hasattr(r, "content") and isinstance(r.content, (bytes, bytearray)) else None
+    if raw is None:
+        return r.text
+    m = re.match(rb"^\s*(?:\xef\xbb\xbf)?<\?xml[^>]*encoding=[\"']([A-Za-z0-9_\-]+)", raw)
+    enc = m.group(1).decode() if m else "utf-8"
+    try:
+        return raw.decode(enc, errors="replace")
+    except LookupError:
+        return raw.decode("utf-8", errors="replace")
+
+
 def parse_feed(xml_text: str) -> list[dict]:
     xml_text = re.sub(r"^\s*<\?xml[^>]*\?>", "", xml_text.lstrip("﻿")).strip()
     root = ET.fromstring(xml_text)
@@ -955,7 +1003,7 @@ def rss_collector(feed: dict):
         if r is None:
             return []
         out = []
-        for x in parse_feed(r.text)[:feed.get("max", 30)]:
+        for x in parse_feed(decode(r))[:feed.get("max", 30)]:
             pub = parse_date(x["date"])
             src = feed["name"]
             title = x["title"]

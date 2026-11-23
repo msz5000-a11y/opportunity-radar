@@ -127,6 +127,14 @@ def test_merge_dedupe_cluster_and_seen():
     assert added2 == [] and items2 == []
 
 
+def test_merge_clusters_cross_language_by_proper_nouns():
+    seen = {}
+    items, _ = pulse.merge([], [news("n:en", "Linamar to acquire Terex's Genie business for $1.4B", src="Seeking Alpha", cat="bolsa")], seen, NOW)
+    items, added = pulse.merge(items, [news("n:es", "Linamar adquirirá el negocio Genie de Terex por 1.400 millones", src="Investing.com", cat="negocio")],
+                               seen, NOW + timedelta(minutes=5))
+    assert added == [] and items[0]["n"] == 2
+
+
 def test_merge_updates_market_item():
     first = {"id": "mv:sol:d:u1", "cat": "cripto", "kind": "move", "src": "CoinGecko", "title": "SOL sube 11%", "es": "SOL sube 11%", "s": 60, "opp": 2,
              "risk": "alto", "m": {"ch24h": 11}}

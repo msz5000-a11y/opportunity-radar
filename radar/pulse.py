@@ -19,8 +19,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import net, notify, pulse_rules as R, pulse_sources as S
-from .llm import Router
+import requests
+
+from . import notify, pulse_rules as R, pulse_sources as S
+from .llm import extract_json
 
 MADRID = ZoneInfo("Europe/Madrid")
 KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 336, "earnings": 72, "insider": 168,
@@ -87,6 +89,7 @@ def merge(old: list[dict], new: list[dict], seen: dict, now: datetime) -> tuple[
     by_id = {it["id"]: it for it in old}
     recent = [it for it in old if it.get("kind") in ("news", "social") and _age_h(it, now) < 36]
     rtok = {it["id"]: R.tokens(it.get("title", "")) for it in recent}
+    rpn = {it["id"]: R.proper_nouns(it.get("title", "")) for it in recent}
     added: list[dict] = []
     best: dict[str, dict] = {}
     for it in new:
@@ -111,10 +114,12 @@ def merge(old: list[dict], new: list[dict], seen: dict, now: datetime) -> tuple[
             continue
         if it["kind"] in ("news", "social") and it.get("title"):
             tk = R.tokens(it["title"])
+            pn = R.proper_nouns(it["title"])
             match = None
             for cand in recent:
-                cats = {cand["cat"], *cand.get("also", [])}
-                if (it["cat"] in cats or it["cat"] == cand["cat"]) and R.similar(tk, rtok.get(cand["id"], set())) >= 0.45:
+                sim = R.similar(tk, rtok.get(cand["id"], set()))
+                shared = len(pn & rpn.get(cand["id"], set()))
+                if sim >= 0.45 or (shared >= 2 and sim >= 0.18) or shared >= 3:
                     match = cand
                     break
             if match:
@@ -131,6 +136,7 @@ def merge(old: list[dict], new: list[dict], seen: dict, now: datetime) -> tuple[
                 continue
             recent.append(it)
             rtok[iid] = tk
+            rpn[iid] = pn
         it["t"] = now_s
         it["w"] = when(it, now_s)
         by_id[iid] = it
@@ -182,31 +188,28 @@ def triage(added: list[dict], state: dict, cfg: dict, now: datetime, transport=N
     if not (os.environ.get("GROQ_API_KEY") or os.environ.get("GEMINI_API_KEY")):
         return info
     cap = int(p.get("llm_daily", 220))
-    cands = [it for it in added if it["kind"] in ("news", "social") and not it.get("ai") and it["s"] >= 38 and it.get("opp", 1) >= 1
-             and it["src"] not in ("Bluesky",)]
+    cands = [it for it in added if it["kind"] in ("news", "social", "launch") and not it.get("ai") and not it.get("es")
+             and it["s"] >= 38 and it.get("opp", 1) >= 1]
     cands.sort(key=lambda x: -x["s"])
     cands = cands[: 12 * int(p.get("llm_per_run", 2))]
     if not cands:
         return info
-    quick = transport or (lambda m, u, **kw: net.request(m, u, **{**kw, "retries": 1, "timeout": 45}))
-    router = Router({"limits": {"max_llm_calls": {"groq": int(p.get("llm_per_run", 2)), "gemini": 1}},
-                     "models": {"triage": ["groq", "gemini"],
-                                "groq_preference": p.get("groq_models") or ["openai/gpt-oss-20b", "qwen/qwen3.8-27b", "openai/gpt-oss-120b"],
-                                "gemini_preference": p.get("gemini_models") or ["gemini-2.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash"]}},
-                    transport=quick)
-    for i in range(0, len(cands), 12):
-        if st["calls"] >= cap:
+    post = transport or _post
+    groq_models = p.get("groq_models") or ["openai/gpt-oss-20b", "qwen/qwen3.8-27b", "openai/gpt-oss-120b"]
+    gem_models = p.get("gemini_models") or ["gemini-3.1-flash-lite", "gemini-2.5-flash", "gemini-3-flash-preview"]
+    for i in range(0, len(cands), 10):
+        if st["calls"] >= cap or info["calls"] >= int(p.get("llm_per_run", 2)):
             break
-        chunk = cands[i:i + 12]
-        rows = [{"i": k, "fuente": it["src"], "titular": it["title"][:200], "extracto": (it.get("sum") or "")[:220], "categoria": it["cat"]}
+        chunk = cands[i:i + 10]
+        rows = [{"i": k, "fuente": it["src"], "titular": it["title"][:200], "extracto": (it.get("sum") or "")[:200], "categoria": it["cat"]}
                 for k, it in enumerate(chunk)]
-        res = router.ask_role("triage", TRIAGE_SYS, json.dumps(rows, ensure_ascii=False))
-        if not res:
-            info["errors"] = router.errors[-2:]
+        data, model, errs = chat_json(TRIAGE_SYS, json.dumps(rows, ensure_ascii=False), groq_models, gem_models, post, state)
+        info["errors"] += errs
+        if data is None:
             break
         st["calls"] += 1
         info["calls"] += 1
-        data = res.get("data") or {}
+        info["model"] = model
         for r in (data.get("items") if isinstance(data, dict) else data) or []:
             try:
                 it = chunk[int(r.get("i"))]
@@ -234,8 +237,68 @@ def triage(added: list[dict], state: dict, cfg: dict, now: datetime, transport=N
             it["ai"] = 1
             info["items"] += 1
             st["items"] = st.get("items", 0) + 1
-    info["model"] = router.chosen
     return info
+
+
+def _post(method: str, url: str, *, json=None, headers=None, timeout: int = 50):
+    r = requests.request(method, url, json=json, headers=headers, timeout=timeout)
+    if r.status_code >= 400:
+        raise RuntimeError(f"HTTP {r.status_code} {r.text[:160]}")
+    return r
+
+
+def chat_json(system: str, prompt: str, groq_models: list[str], gem_models: list[str], post, state: dict):
+    """Llama a Groq (y si falla a Gemini) pidiendo JSON. Devuelve (datos, modelo, errores)."""
+    errs: list[str] = []
+    bad = state.setdefault("llm_bad", {})  # modelos que han fallado de forma permanente hoy
+    today = now_utc().date().isoformat()
+    gk, gm = os.environ.get("GROQ_API_KEY"), os.environ.get("GEMINI_API_KEY")
+    if gk:
+        for model in groq_models:
+            if bad.get(model) == today:
+                continue
+            for json_mode in (True, False):
+                body = {"model": model, "temperature": 0.2, "max_completion_tokens": 2600,
+                        "messages": [{"role": "system", "content": system}, {"role": "user", "content": prompt}]}
+                if json_mode:
+                    body["response_format"] = {"type": "json_object"}
+                if "gpt-oss" in model:
+                    body["reasoning_effort"] = "low"
+                try:
+                    r = post("POST", "https://api.groq.com/openai/v1/chat/completions", json=body,
+                             headers={"Authorization": f"Bearer {gk}", "Content-Type": "application/json"})
+                    text = ((r.json().get("choices") or [{}])[0].get("message") or {}).get("content") or ""
+                    return extract_json(text), f"groq:{model}", errs
+                except Exception as e:  # noqa: BLE001
+                    msg = str(e)[:140]
+                    errs.append(f"groq {model}{'' if json_mode else ' sin JSON'}: {msg}")
+                    if "404" in msg:
+                        bad[model] = today
+                        break
+                    if "429" in msg or "413" in msg:
+                        break
+                    if "400" not in msg:
+                        break
+    if gm:
+        for model in gem_models:
+            if bad.get(model) == today:
+                continue
+            body = {"systemInstruction": {"parts": [{"text": system}]}, "contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                    "generationConfig": {"temperature": 0.2, "responseMimeType": "application/json"}}
+            try:
+                r = post("POST", f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", json=body,
+                         headers={"x-goog-api-key": gm, "Content-Type": "application/json"})
+                cand = (r.json().get("candidates") or [{}])[0]
+                text = "".join(x.get("text", "") for x in ((cand.get("content") or {}).get("parts") or []))
+                return extract_json(text), f"gemini:{model}", errs
+            except Exception as e:  # noqa: BLE001
+                msg = str(e)[:140]
+                errs.append(f"gemini {model}: {msg}")
+                if "404" in msg:
+                    bad[model] = today
+                    continue
+                break
+    return None, None, errs
 
 
 # ------------------------------------------------------------------ avisos al móvil
