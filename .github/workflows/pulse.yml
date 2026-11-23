@@ -4,7 +4,7 @@ name: Pulso en vivo
 # (y a veces retrasa las ejecuciones); la app se refresca sola cada minuto con lo último publicado.
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "2-57/5 * * * *"
   workflow_dispatch:
   push:
     branches: [main]

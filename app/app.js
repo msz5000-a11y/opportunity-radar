@@ -95,7 +95,16 @@
     actions: LS.get("radar-actions", {}), profile: LS.get("radar-profile", null), loaded: false, live: null,
     ideaMk: "all", ideaType: "", oppMin: 45,
   };
-  const items = () => arr(S.feed?.items);
+  let merged = null;
+  const items = () => {
+    if (merged) return merged;
+    const srv = arr(S.feed?.items);
+    const ids = new Set(srv.map((x) => x.id));
+    merged = LIVE.items.filter((x) => !ids.has(x.id)).concat(srv);
+    return merged;
+  };
+  const invalidate = () => { merged = null; };
+  const LIVE = {items: arr(LS.get("radar-live-items", [])).filter((x) => Date.now() - (toDate(x.t) || 0) < 12 * 3600e3), at: null, cgAt: 0, trAt: 0, bnAt: 0};
   const inCat = (it, c) => it.cat === c || arr(it.also).includes(c);
   const useful = (it) => !it.h && (((it.opp ?? 1) >= 2 && (it.s ?? 0) >= 45) || (it.s ?? 0) >= 70);
   const txt = (it) => (LANG === "en" ? it.en || it.title || it.es : it.es || it.title) || "";
@@ -115,7 +124,7 @@
     const [feed, opps, selected, markets, paper, ideas, status] = await Promise.all(
       ["feed.json", "opps.json", "selected.json", "markets.json", "paper.json", "ideas.json", "status.json"].map((n) => getJSON(n).catch(() => null)));
     btn.classList.remove("spin");
-    if (feed) acceptFeed(feed, !S.loaded); else if (!S.feed) S.feed = LS.get("radar-feed-cache", null);
+    if (feed) acceptFeed(feed, !S.loaded); else if (!S.feed) { S.feed = LS.get("radar-feed-cache", null); invalidate(); }
     if (opps) S.opps = arr(opps); if (selected) S.selected = selected; if (markets) S.markets = markets;
     if (paper) S.paper = paper; if (ideas) S.ideas = ideas; if (status) S.status = status;
     S.loaded = true;
@@ -126,7 +135,7 @@
   function acceptFeed(feed, first) {
     const before = new Set(items().map((x) => x.id));
     const prevAt = S.feed?.generatedAt;
-    S.feed = feed;
+    S.feed = feed; invalidate();
     try { LS.set("radar-feed-cache", {...feed, items: arr(feed.items).slice(0, 250)}); } catch {}
     if (first || !prevAt) return 0;
     const added = arr(feed.items).filter((x) => !before.has(x.id));
@@ -167,6 +176,156 @@
     } catch {}
   }
 
+  // ------------------------------------------------------------------ pulso en el navegador
+  // Con la app abierta se miran cada pocos minutos las fuentes que lo permiten desde el móvil (CoinGecko y anuncios de
+  // Binance), con las mismas reglas e identificadores que el motor: así hay novedades aunque GitHub retrase su pulso.
+  const STABLES = new Set("usdt usdc dai fdusd usde tusd pyusd usdd eurc eurs usds usd1 gusd frax lusd susd busd usdp rlusd usdx eure usdtb susde buidl usyc bfusd usdf usdg".split(" "));
+  const WRAPPED = new Set("wbtc weth steth wsteth cbbtc reth weeth ezeth cbeth wbeth meth lbtc solvbtc jitosol msol bnsol rseth tbtc wbnb clbtc fbtc jlp bbsol stkaave oseth pufeth lseth sweth".split(" "));
+  const plainCoin = (sym, name) => {
+    const s = String(sym || "").toLowerCase(), n = String(name || "").toLowerCase();
+    if (STABLES.has(s) || WRAPPED.has(s)) return false;
+    return !["wrapped", "staked", "bridged", "usd coin", "stablecoin", "liquid staking", "restaked", "tokenized", "xstock", "bstocks", "tokenised", "backed ", "(ondo"].some((w) => n.includes(w));
+  };
+  const bucket = (p, steps) => steps.filter((x) => Math.abs(p) >= x).length;
+  const scoreMove = (p, vr, mcap, thr) => {
+    let s = 52 + Math.min(22, (Math.abs(p) - thr) * 1.6);
+    if (vr) s += Math.min(10, Math.max(0, (vr - 0.05) * 60));
+    s += mcap >= 5e9 ? 6 : mcap >= 1e9 ? 3 : mcap >= 2e8 ? 0 : -6;
+    return Math.round(Math.max(0, Math.min(95, s)));
+  };
+  const absPct = (x) => nf(Math.abs(x), 1) + (LANG === "en" ? "%" : " %");
+  function cgMoves(data, day) {
+    const hot = new Set(LIVE.trending || []), out = [];
+    for (const c of data) {
+      const sym = String(c.symbol || "").toUpperCase(), name = c.name || "";
+      const mcap = c.market_cap || 0, vol = c.total_volume || 0;
+      if (!plainCoin(sym, name) || mcap < 1e8 || vol < 5e6) continue;
+      const ch1 = c.price_change_percentage_1h_in_currency, ch24 = c.price_change_percentage_24h_in_currency ?? c.price_change_percentage_24h;
+      const vr = mcap ? vol / mcap : null, isHot = hot.has(c.id);
+      const m = {price: c.current_price, cur: "EUR", ch1h: ch1, ch24h: ch24, vol, mcap, rank: c.market_cap_rank};
+      const url = `https://www.coingecko.com/${LANG === "en" ? "en/coins" : "es/monedas"}/${c.id}`;
+      if (ch24 != null && Math.abs(ch24) >= 10) {
+        const up = ch24 > 0;
+        out.push({id: `mv:${c.id}:${day}:${up ? "u" : "d"}${bucket(ch24, [10, 20, 35, 60])}`, cat: "cripto", kind: "move", src: "CoinGecko", local: 1,
+          title: `${name} (${sym}) ${up ? "sube" : "cae"} un ${nf(Math.abs(ch24), 1)} % en 24 h`,
+          es: `${name} (${sym}) ${up ? "sube" : "cae"} un ${nf(Math.abs(ch24), 1)} % en 24 h`, en: `${name} (${sym}) ${up ? "up" : "down"} ${Math.abs(ch24).toFixed(1)}% in 24h`,
+          why: `Movimiento fuerte con ${big(vol, "EUR")} de volumen en 24 h.` + (isHot ? " Además está entre las más buscadas en CoinGecko." : ""),
+          why_en: "Strong move on heavy 24h volume." + (isHot ? " It is also trending on CoinGecko searches." : ""),
+          act: up ? "Busca la noticia que lo explica antes de entrar. Si compras, que sea poco y con stop." : "No compres a ciegas «porque está barato»: espera a que se estabilice y busca la causa.",
+          act_en: up ? "Find the news behind it before buying. Size small and use a stop." : "Don't buy blindly because it's cheaper: wait for it to stabilise and find the cause.",
+          sym, m, s: scoreMove(ch24, vr, mcap, 10) + (isHot ? 6 : 0), opp: 2, risk: mcap < 3e8 ? "muy_alto" : "alto", url});
+      } else if (ch1 != null && Math.abs(ch1) >= 4 && mcap >= 3e8) {
+        const up = ch1 > 0;
+        out.push({id: `m1:${c.id}:${day}:${up ? "u" : "d"}${bucket(ch1, [4, 8, 12, 20])}`, cat: "cripto", kind: "move", src: "CoinGecko", local: 1,
+          title: `${name} (${sym}) ${up ? "se dispara" : "se desploma"} un ${nf(Math.abs(ch1), 1)} % en la última hora`,
+          es: `${name} (${sym}) ${up ? "se dispara" : "se desploma"} un ${nf(Math.abs(ch1), 1)} % en la última hora`, en: `${name} (${sym}) ${up ? "spikes" : "drops"} ${Math.abs(ch1).toFixed(1)}% in the last hour`,
+          why: "Movimiento brusco en muy poco tiempo: suele haber una noticia o una orden grande detrás.", why_en: "Sharp move in a short time: usually news or a large order behind it.",
+          act: "Mira Noticias y Redes para ver la causa. No entres solo por el impulso.", act_en: "Check News and Social for the cause. Don't chase momentum alone.",
+          sym, m, s: scoreMove(ch1 * 2.2, vr, mcap, 10) + (isHot ? 5 : 0), opp: 2, risk: "alto", url});
+      }
+    }
+    return out;
+  }
+  function cgTrending(data, day) {
+    const out = [], ids = [];
+    arr(data.coins).slice(0, 15).forEach((c, i) => {
+      const it = c.item || {}, sym = String(it.symbol || "").toUpperCase(), name = it.name || "";
+      if (!it.id || !plainCoin(sym, name)) return;
+      ids.push(it.id);
+      const rank = it.market_cap_rank;
+      if ((rank || 999) <= 10) return;
+      const ch = ((it.data || {}).price_change_percentage_24h || {}).eur;
+      let s = 40 + Math.max(0, 15 - i) * 1.4 + (ch != null && Math.abs(ch) >= 10 ? 8 : 0) + (rank && rank <= 100 ? 4 : 0) - (!rank || rank > 600 ? 6 : 0);
+      out.push({id: `tr:cg:${it.id}:${day}`, cat: "cripto", kind: "trend", src: "CoinGecko", local: 1,
+        title: `${name} (${sym}) entre las más buscadas en CoinGecko (#${i + 1})`, es: `${name} (${sym}) entre las más buscadas en CoinGecko (#${i + 1})`,
+        en: `${name} (${sym}) trending on CoinGecko searches (#${i + 1})`,
+        why: "Mucha gente la está buscando ahora" + (ch != null ? `; ${pct(ch)} en 24 h.` : "."), why_en: "Lots of people are searching for it right now" + (ch != null ? `; ${pct(ch)} in 24h.` : "."),
+        act: "El interés en búsquedas suele acompañar a movimientos fuertes. Compara con el precio antes de actuar.", act_en: "Search interest often comes with strong moves. Compare with price action first.",
+        sym, m: {rank, ch24h: ch}, s: Math.round(s), opp: i < 3 ? 2 : 1, risk: !rank || rank > 300 ? "muy_alto" : "alto", url: `https://www.coingecko.com/${LANG === "en" ? "en/coins" : "es/monedas"}/${it.id}`});
+    });
+    LIVE.trending = ids;
+    return out;
+  }
+  const DERIV = /perpetual|futures|options|margin|usd[sⓢ]-m|coin-margined|leverage|contract|pre-market|premarket|tradfi/i;
+  function binanceAnns(d) {
+    const out = [];
+    for (const a of arr((d.data || {}).catalogs).flatMap((c) => arr(c.articles))) {
+      const title = a.title || "", rel = a.releaseDate ? new Date(a.releaseDate) : null;
+      if (!a.code || (rel && Date.now() - rel > 4 * 86400e3)) continue;
+      const t = title.toLowerCase();
+      if (DERIV.test(t) || t.includes("bstocks") || t.includes("tokenized") || /delist|remove|cease/.test(t)) continue;
+      const sym = (title.match(/\(([A-Z0-9]{2,12})\)/) || [])[1];
+      const asset = (title.match(/(?:will list|to list|lists|will add|adds|introducing|launch(?:es)?)\s+(.+?)(?:\s+\(|\s+with|\s+on\b|\s+for\b|[!,.]|$)/i) || [])[1];
+      const pool = /launchpool|hodler airdrop|megadrop|airdrop/.test(t);
+      const listing = /will list|to list|lists|listing|will add|adds/.test(t);
+      if (!pool && !listing) continue;
+      out.push({id: `an:binance:${sym || a.id || a.code}`, cat: "lanzamientos", also: ["cripto"], kind: pool ? "launch" : "listing", src: "Binance", local: 1,
+        title, es: pool ? `Binance: ${t.includes("launchpool") ? "Launchpool" : "airdrop"} de ${asset || L("un nuevo token", "a new token")}` : (asset ? `Binance listará ${asset}` : `Binance: ${title}`), en: title,
+        why: "Anuncio oficial del exchange.", why_en: "Official exchange announcement.",
+        act: pool ? "Si ya tienes los activos requeridos en el exchange, participar no cuesta más que bloquearlos; revisa fechas y condiciones." : "Los anuncios de listado suelen mover el precio antes de que empiece a cotizar; no persigas subidas verticales.",
+        act_en: "Read the official announcement for dates and conditions; expect volatility.",
+        sym, s: pool ? 86 : 82, opp: 3, risk: "alto", tags: [pool ? "launchpool" : "listado"], url: `https://www.binance.com/${LANG === "en" ? "en" : "es"}/support/announcement/${a.code}`,
+        pub: rel ? rel.toISOString() : undefined});
+    }
+    return out;
+  }
+  function liveAdd(list) {
+    const now = new Date().toISOString(), srv = new Set(arr(S.feed?.items).map((x) => x.id));
+    const byId = new Map(LIVE.items.map((x) => [x.id, x]));
+    let added = 0;
+    for (const it of list) {
+      if (srv.has(it.id)) continue;
+      const cur = byId.get(it.id);
+      if (cur) { cur.m = it.m; cur.s = Math.max(cur.s, it.s); cur.es = it.es; cur.en = it.en; continue; }
+      it.t = now; it.w = it.pub && it.pub < now ? it.pub : now;
+      byId.set(it.id, it); S.fresh.add(it.id); added++;
+    }
+    LIVE.items = [...byId.values()].filter((x) => Date.now() - (toDate(x.t) || 0) < 12 * 3600e3).slice(-200);
+    LS.set("radar-live-items", LIVE.items);
+    invalidate();
+    return added;
+  }
+  async function localPulse() {
+    if (document.hidden) return;
+    const now = Date.now(), day = dayKey(new Date()), out = [];
+    const get = async (url) => { const r = await fetch(url, {cache: "no-store"}); if (!r.ok) throw new Error(r.status); return r.json(); };
+    try {
+      if (now - LIVE.trAt > 290e3) { LIVE.trAt = now; out.push(...cgTrending(await get("https://api.coingecko.com/api/v3/search/trending"), day)); }
+    } catch {}
+    try {
+      if (now - LIVE.cgAt > 170e3) {
+        LIVE.cgAt = now;
+        const data = await get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=150&page=1&price_change_percentage=1h,24h,7d");
+        out.push(...cgMoves(data, day));
+        for (const [id, sym] of [["bitcoin", "BTC"], ["ethereum", "ETH"], ["solana", "SOL"]]) {
+          const c = data.find((x) => x.id === id);
+          if (c) liveTicker[sym] = {p: c.current_price, ch: c.price_change_percentage_24h_in_currency ?? c.price_change_percentage_24h, cur: "EUR"};
+        }
+      }
+    } catch {}
+    try {
+      if (now - LIVE.bnAt > 110e3) { LIVE.bnAt = now; out.push(...binanceAnns(await get("https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&catalogId=48&pageNo=1&pageSize=10"))); }
+    } catch {}
+    LIVE.at = new Date().toISOString();
+    const n = liveAdd(out);
+    renderLive(); renderTicker();
+    if (n) { renderTabbar(); if (window.scrollY < 160 && !$("#sheet").classList.contains("open")) render(); else showNewPill(n); }
+  }
+
+  // pedir un pulso nuevo al motor si el feed está viejo (solo con token de GitHub con permiso de Actions)
+  async function nudgeServer() {
+    if (!gh.ready() || document.hidden) return;
+    const age = Date.now() - (toDate(S.feed?.generatedAt) || 0);
+    if (age < 8 * 60e3 || Date.now() - LS.get("radar-nudge-at", 0) < 6 * 60e3) return;
+    LS.set("radar-nudge-at", Date.now());
+    try {
+      const c = gh.cfg();
+      const r = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/actions/workflows/pulse.yml/dispatches`,
+        {method: "POST", headers: {Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json"}, body: JSON.stringify({ref: "main"})});
+      LS.set("radar-nudge-ok", r.status === 204);
+    } catch { LS.set("radar-nudge-ok", false); }
+  }
+
   // ------------------------------------------------------------------ cabecera
   function renderLive() {
     const el = $("#live"), tx = $("#liveTxt");
@@ -174,8 +333,11 @@
     el.classList.remove("ok", "slow", "off");
     if (!at) { el.classList.add("off"); tx.textContent = S.loaded ? L("Esperando el primer pulso", "Waiting for the first pulse") : L("Conectando…", "Connecting…"); return; }
     const mins = (Date.now() - at) / 60000;
-    el.classList.add(mins < 16 ? "ok" : mins < 60 ? "slow" : "off");
-    tx.textContent = (mins < 16 ? L("En vivo · ", "Live · ") : L("Último pulso ", "Last pulse ")) + ago(at.toISOString());
+    const local = toDate(LIVE.at), localFresh = local && Date.now() - local < 3 * 60e3;
+    el.classList.add(mins < 16 || localFresh ? "ok" : mins < 60 ? "slow" : "off");
+    tx.textContent = localFresh && mins >= 6
+      ? L(`En vivo · comprobado ${ago(local.toISOString())}`, `Live · checked ${ago(local.toISOString())}`)
+      : (mins < 16 ? L("En vivo · ", "Live · ") : L("Último pulso ", "Last pulse ")) + ago(at.toISOString());
   }
   function renderTicker() {
     const tk = {...(S.feed?.ticker || {}), ...liveTicker};
@@ -777,7 +939,8 @@
         <p>${L("Android (Chrome): menú ⋮ → «Instalar aplicación». iPhone (Safari): Compartir → «Añadir a pantalla de inicio».", "Android (Chrome): menu ⋮ → “Install app”. iPhone (Safari): Share → “Add to Home Screen”.")}</p>
         <div class="btns"><button class="btn" type="button" id="shareApp">${L("Compartir la app", "Share the app")}</button><button class="btn" type="button" id="installBtn" ${installEvt ? "" : "hidden"}>${L("Instalar", "Install")}</button></div></div>
       <div class="blk"><h3>${L("Sincronización con el motor (opcional)", "Sync with the engine (optional)")}</h3>
-        <p class="fine" style="margin-top:0">${L("Permite que el motor en la nube use tu región, presupuesto y descartes. Necesita un token de GitHub de acceso detallado con permiso «Contents: lectura y escritura» solo para este repositorio.", "Lets the cloud engine use your region, budget and dismissals. Needs a fine-grained GitHub token with “Contents: read and write” on this repository only.")}</p>
+        <p class="fine" style="margin-top:0">${L("Permite que el motor en la nube use tu región, presupuesto y descartes y, si el pulso de GitHub se retrasa, que la app pida uno nuevo al abrirla. Necesita un token de GitHub de acceso detallado, solo para este repositorio, con permisos «Contents» y «Actions» de lectura y escritura.", "Lets the cloud engine use your region, budget and dismissals and, if GitHub's pulse is late, lets the app request a fresh one when opened. Needs a fine-grained GitHub token for this repository only, with read and write “Contents” and “Actions” permissions.")}</p>
+        ${gh.ready() ? `<p class="fine">${LS.get("radar-nudge-ok", null) === false ? L("El token no tiene permiso de Actions: la app no puede pedir pulsos nuevos.", "The token lacks Actions permission: the app can't request new pulses.") : L("Token guardado en este móvil.", "Token saved on this phone.")}</p>` : ""}
         <div class="field"><label for="ghToken">Token</label><input id="ghToken" type="password" autocomplete="off" placeholder="${c.token ? L("Token guardado en este móvil", "Token saved on this phone") : "github_pat_…"}"></div>
         <div class="btns"><button class="btn" type="button" id="saveGh">${L("Conectar", "Connect")}</button><button class="btn" type="button" id="clearGh">${L("Borrar token", "Delete token")}</button></div></div>
       <div class="blk"><h3>${L("Cómo funciona", "How it works")}</h3>
@@ -901,7 +1064,7 @@
     if (S.opps.some((o) => o.id === h)) openOpp(h);
   }
   window.addEventListener("hashchange", () => { if (!sheet.classList.contains("open")) routeHash(); });
-  document.addEventListener("visibilitychange", () => { if (!document.hidden) { pollFeed(); pollPrices(); } });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden) { pollFeed(); pollPrices(); localPulse(); nudgeServer(); } });
 
   // ------------------------------------------------------------------ arranque
   const h0 = decodeURIComponent(location.hash.slice(1));
@@ -915,10 +1078,12 @@
       LS.set("radar-lastseen", S.lastSeen);
     }
     seenTimer = setTimeout(() => markSeen(S.tab), 2500);
+    nudgeServer();
   });
   pollPrices();
+  setTimeout(localPulse, 4000);
   setInterval(pollFeed, 60000);
-  setInterval(pollPrices, 60000);
+  setInterval(() => { pollPrices(); localPulse(); nudgeServer(); }, 60000);
   setInterval(pollSlow, 5 * 60000);
   setInterval(renderLive, 30000);
 })();
