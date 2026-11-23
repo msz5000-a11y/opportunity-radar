@@ -1075,6 +1075,23 @@ BDNS_GOOD = R._kw("emprend", "empresa", "pyme", "autonom", "startup", "emergente
                   "economia social", "agroaliment", "turismo", "energia", "eficiencia")
 
 
+_SMALL = {"de", "del", "la", "las", "los", "el", "y", "e", "en", "a", "al", "por", "para", "con"}
+
+
+def nice_case(text: str) -> str:
+    """Los textos oficiales llegan a menudo EN MAYÚSCULAS: se pasan a tipo frase para que se lean bien."""
+    letters = [c for c in text if c.isalpha()]
+    if letters and sum(c.isupper() for c in letters) / len(letters) > 0.6:
+        t = text.lower()
+        return t[:1].upper() + t[1:]
+    return text
+
+
+def title_place(text: str) -> str:
+    words = (text or "").lower().split()
+    return " ".join(w if (i and w in _SMALL) else w[:1].upper() + w[1:] for i, w in enumerate(words))
+
+
 def c_bdns(ctx: Ctx) -> list[dict]:
     if ctx.region != "es":
         return []
@@ -1088,7 +1105,7 @@ def c_bdns(ctx: Ctx) -> list[dict]:
                      params={"vpd": "GE", "page": 0, "pageSize": 20, "order": "fechaRecepcion", "direccion": "desc", "descripcion": q},
                      timeout=25) or {}
         for x in d.get("content") or []:
-            num, desc = str(x.get("numeroConvocatoria") or ""), R.clean(x.get("descripcion") or "")
+            num, desc = str(x.get("numeroConvocatoria") or ""), nice_case(R.clean(x.get("descripcion") or ""))
             if not num or num in seen:
                 continue
             seen.add(num)
@@ -1103,7 +1120,7 @@ def c_bdns(ctx: Ctx) -> list[dict]:
                 s -= 6
             if any(w in f for w in R._kw("emprend", "startup", "emergente", "creacion de empresas", "nuevas empresas")):
                 s += 6
-            where = org.title() if org else nivel.title()
+            where = title_place(org) if org else nivel.title()
             out.append(item(f"gr:{num}", "startups", "grant", "BDNS", title=desc[:200],
                             es=f"Ayuda pública ({where}): {desc[:170]}", en=f"Public grant in Spain ({where}): {desc[:170]}",
                             why=f"Convocatoria oficial registrada en la Base de Datos Nacional de Subvenciones el {x.get('fechaRecepcion')}.",
