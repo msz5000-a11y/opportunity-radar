@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T13:21:28Z",
+ "generatedAt": "2026-11-23T22:24:50Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 102,
+ "studied": 16,
  "selected": [],
  "nearMisses": [
   {
@@ -71,90 +71,6 @@
    "hasManual": true
   },
   {
-   "id": "web-github-com-diggerhq-opencomputer",
-   "name": "OpenComputer",
-   "category": "ia_tecnologia",
-   "score": 58,
-   "adjustedScore": 63,
-   "risk": "medio",
-   "officialUrl": "https://github.com/diggerhq/opencomputer",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 7,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-factory-mastra-ai",
-   "name": "Mastra Factory",
-   "category": "ia_tecnologia",
-   "score": 53,
-   "adjustedScore": 58,
-   "risk": "medio",
-   "officialUrl": "https://factory.mastra.ai",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 7,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-onurgumus-github-io",
-   "name": "Zero C#",
-   "category": "ia_tecnologia",
-   "score": 54,
-   "adjustedScore": 54,
-   "risk": "medio",
-   "officialUrl": "https://onurgumus.github.io/zero-csharp/index.html",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 7,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
    "id": "web-bfsport-gal",
    "name": "BF Sport Incubadora 2027",
    "category": "startups",
@@ -182,138 +98,97 @@
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": true
+  },
+  {
+   "id": "web-bfhc-es",
+   "name": "Business Factory Health&Care Incubation Program",
+   "category": "startups",
+   "score": 61,
+   "adjustedScore": 61,
+   "risk": "medio",
+   "officialUrl": "https://bfhc.es/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-congress-gov",
+   "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",
+   "category": "cripto",
+   "score": 16,
+   "adjustedScore": 16,
+   "risk": "medio",
+   "officialUrl": "https://www.congress.gov",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": false,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Disponible en tu región",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
+   "id": "web-elreferente-es",
+   "name": "Premios Órbita 2026 – Startups premiadas",
+   "category": "startups",
+   "score": 48,
+   "adjustedScore": 48,
+   "risk": "medio",
+   "officialUrl": "https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": false,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 5,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente",
+    "Web oficial y al menos 2 fuentes",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
   }
  ],
  "manuals": {
-  "web-github-com-diggerhq-opencomputer": {
-   "segundaOpinion": {
-    "veredicto": "confirmada",
-    "motivo": "Es una herramienta de automatización de software open-source, no un activo financiero, por lo que no hay inversión de capital.",
-    "contradicciones": []
-   },
-   "viaDeBeneficio": {
-    "existe": false,
-    "explicacion": "No es una inversión. El beneficio es indirecto: ahorro de tiempo en tareas de programación mediante la automatización de pull requests."
-   },
-   "resumen": "OpenComputer es un agente de IA de código abierto que automatiza tareas de programación directamente desde Slack. Permite ejecutar flujos de trabajo de desarrollo de forma autónoma, ya sea en tu propia infraestructura o en su nube.",
-   "cuantoPoner": "0 €. No requiere capital inicial, aunque el uso de la versión en la nube o el auto-hosting implica costes operativos variables por consumo de APIs de IA y servidores.",
-   "antesDeEmpezar": [
-    "Revisar la documentación técnica en el repositorio de GitHub para evaluar la complejidad de configuración.",
-    "Verificar los costes de las APIs de modelos de lenguaje (Claude/OpenAI) que planeas conectar.",
-    "Comprobar si tu entorno de trabajo permite la integración de herramientas de terceros en Slack."
-   ],
-   "pasos": [
-    {
-     "titulo": "Exploración",
-     "detalle": "Revisar el archivo README.md y SELFHOSTING.md en el repositorio oficial para entender los requisitos técnicos.",
-     "tiempo": "30 minutos"
-    },
-    {
-     "titulo": "Prueba inicial",
-     "detalle": "Registrarse en la versión cloud para probar la funcionalidad básica durante el periodo de prueba gratuito.",
-     "tiempo": "15 minutos"
-    }
-   ],
-   "planDeSalida": "Al no haber inversión financiera, la salida consiste simplemente en desinstalar la aplicación de Slack y detener los servicios en la nube o el servidor auto-hosteado.",
-   "senalesDeAlarma": [
-    "Costes de API de IA superiores a lo previsto.",
-    "Fugas de datos sensibles al conectar repositorios privados a la herramienta.",
-    "Inestabilidad recurrente en la generación de código que requiera más tiempo de corrección que de ahorro."
-   ],
-   "erroresTipicos": [
-    "No configurar límites de gasto en las APIs de los proveedores de IA (OpenAI/Anthropic).",
-    "Otorgar permisos excesivos a la herramienta sobre repositorios críticos sin auditar el código.",
-    "Confiar ciegamente en el código generado sin revisión humana."
-   ],
-   "fiscalidad": "Al ser una herramienta de productividad, no genera rendimientos financieros. Si se usa en un entorno profesional, los costes de suscripción o infraestructura podrían ser deducibles como gasto de actividad económica, consulta con un asesor fiscal.",
-   "tiempoNecesario": "De 1 a 5 horas dependiendo de si optas por la versión SaaS o el auto-hosting.",
-   "modelo": "gemini:gemini-3.1-flash-lite",
-   "independiente": true,
-   "webLeida": true,
-   "generadoEn": "2026-11-22T01:29:32Z",
-   "fichaScore": 58
-  },
-  "web-factory-mastra-ai": {
-   "segundaOpinion": {
-    "veredicto": "confirmada",
-    "motivo": "La herramienta es gratuita y de código abierto, lo que permite iniciarse sin coste, aunque depende de APIs externas que pueden generar costes ocultos.",
-    "contradicciones": [
-     "La ficha indica costos 0€ pero la red flag menciona posibles costes de la versión hosted",
-     "El repositorio es cerrado a contribuciones externas a pesar de ser de código abierto"
-    ]
-   },
-   "viaDeBeneficio": {
-    "existe": false,
-    "explicacion": "Mastra Factory es una herramienta de productividad, no un producto con mecanismo de monetización directa."
-   },
-   "resumen": "Mastra Factory es una fábrica de software de código abierto que orquesta agentes IA mediante tableros Kanban y Slack. Se puede auto‑alojar o usar una versión hosted, aunque la última puede tener costes no especificados.",
-   "cuantoPoner": "0 €",
-   "antesDeEmpezar": [
-    "Verificar que tienes un repositorio GitHub y un workspace de Slack configurados.",
-    "Confirmar que dispones de una cuenta con un proveedor de LLM (Claude, Codex, etc.).",
-    "Instalar Node.js y npm en tu máquina.",
-    "Crear una cuenta en Mastra platform si vas a usar la versión hosted.",
-    "Asegurarte de que puedes generar y guardar una clave de cifrado de credenciales en .env."
-   ],
-   "pasos": [
-    {
-     "titulo": "Preparar entorno",
-     "detalle": "Instala Node.js, Git, y crea un workspace de Slack y un repositorio GitHub.",
-     "tiempo": "1 h"
-    },
-    {
-     "titulo": "Instalar Mastra Factory",
-     "detalle": "Ejecuta `npm create factory@latest <project-name>` y sigue los prompts.",
-     "tiempo": "30 min"
-    },
-    {
-     "titulo": "Configurar cifrado de credenciales",
-     "detalle": "Genera una clave con `openssl rand -base64 32` y añádela a .env como FACTORY_CREDENTIAL_ENCRYPTION_KEY.",
-     "tiempo": "15 min"
-    },
-    {
-     "titulo": "Conectar GitHub",
-     "detalle": "En la UI de Factory, selecciona el repositorio que los agentes deben modificar y concede los permisos necesarios.",
-     "tiempo": "15 min"
-    },
-    {
-     "titulo": "Conectar proveedor de LLM",
-     "detalle": "En la UI, elige tu modelo y provee las credenciales necesarias.",
-     "tiempo": "30 min"
-    },
-    {
-     "titulo": "Ejecutar servidor",
-     "detalle": "Corre `npm run dev` y abre la URL local mostrada.",
-     "tiempo": "15 min"
-    },
-    {
-     "titulo": "Probar flujo",
-     "detalle": "Crea un issue de prueba y verifica que aparece en el tablero y que el agente puede crear un PR.",
-     "tiempo": "15 min"
-    }
-   ],
-   "planDeSalida": "Si después de 4 semanas de uso no se observa mejora en la gestión de PRs o tareas, detén el proyecto y elimina la instalación local. Si optas por la versión hosted y aparecen costes inesperados, cancela la suscripción inmediatamente.",
-   "senalesDeAlarma": [
-    "Aumento inesperado de precios o suspensión de la API del LLM",
-    "La herramienta no se integra con Slack o GitHub",
-    "No hay mejora en el tiempo de cierre de PRs",
-    "Costes ocultos de la versión hosted"
-   ],
-   "erroresTipicos": [
-    "No generar la clave de cifrado de credenciales",
-    "No configurar correctamente .env",
-    "Usar un proveedor de LLM no soportado",
-    "No conectar el repositorio GitHub",
-    "Ignorar los prompts de instalación"
-   ],
-   "fiscalidad": "El uso de la herramienta para fines personales no genera ingresos sujetos a IRPF. Si la utilizas en una actividad empresarial, los costes de software son deducibles. Consulta con un asesor fiscal para confirmar la normativa aplicable.",
-   "tiempoNecesario": "≈ 20‑30 h distribuidas en 4‑6 semanas",
-   "modelo": "groq:openai/gpt-oss-20b",
-   "independiente": true,
-   "webLeida": true,
-   "generadoEn": "2026-11-21T08:15:30Z",
-   "fichaScore": 53
-  },
   "web-focuspyme-emprenemjunts-es": {
    "segundaOpinion": {
     "veredicto": "confirmada",
@@ -502,7 +377,9 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-23T13:21:28Z",
-  "status": 200
+  "at": "2026-11-23T22:24:50Z",
+  "status": 503,
+  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "reason": []
  }
 }

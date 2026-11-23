@@ -1,13 +1,13 @@
 {
- "lastRunAt": "2026-11-23T13:21:27Z",
+ "lastRunAt": "2026-11-23T22:24:49Z",
  "lastRunOk": false,
- "lastRunId": "run-20261123-1315",
+ "lastRunId": "run-20261123-2223",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-23T13:15:26+00:00"
+   "at": "2026-11-23T22:23:41+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
@@ -49,7 +49,7 @@
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-23T13:15:32+00:00"
+   "at": "2026-11-23T22:23:43+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
@@ -67,13 +67,19 @@
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-23T13:15:50+00:00"
+   "at": "2026-11-23T22:24:00+00:00"
+  },
+  "pulso": {
+   "ok": true,
+   "items": 0,
+   "error": null,
+   "at": "2026-11-23T22:23:41+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 11,
-   "groq": 10
+   "gemini": 3,
+   "groq": 2
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
@@ -83,11 +89,12 @@
    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
    "searcher/gemini: HTTP 429",
    "searcher/gemini: búsqueda de Google sin cupo en Gemini",
+   "verifier/gemini: HTTP 503",
    "verifier/gemini: HTTP 503"
   ],
   "googleSearch": false
  },
- "schedule": "Cada 3 horas en GitHub Actions · resumen diario por la tarde · semanal los domingos",
+ "schedule": "Pulso cada 5 minutos · análisis a fondo cada 3 horas · resumen diario por la tarde · semanal los domingos",
  "profile": {
   "budget": 2000.0,
   "budgetAuthorizedAbove150": true,

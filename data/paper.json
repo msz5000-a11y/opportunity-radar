@@ -12,18 +12,18 @@
    "trigger": "Recupera su media de 50 sesiones tras semanas por debajo, con RSI por encima de 50",
    "benchEntry": 59794.875617000005,
    "status": "abierta",
-   "returnPct": 10.3,
-   "last": 25.6,
+   "returnPct": 5.17,
+   "last": 24.41,
    "lastAt": "2026-11-23",
-   "benchPct": 2.24
+   "benchPct": 2.23
   }
  ],
  "summary": {
   "signals": 1,
   "open": 1,
   "closed": 0,
-  "avgReturn": 10.3,
-  "avgBench": 2.24,
+  "avgReturn": 5.17,
+  "avgBench": 2.23,
   "hitRate": null
  }
 }
