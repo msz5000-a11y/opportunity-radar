@@ -28,6 +28,7 @@ MADRID = ZoneInfo("Europe/Madrid")
 KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 720, "earnings": 72, "insider": 168,
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
+EVENT_TAGS = {"ipo", "fusion", "ronda", "listado", "resultados", "alerta", "airdrop", "recompra", "aprobacion", "launchpool", "tge", "etf"}
 PULSE_V = 5
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
@@ -128,7 +129,8 @@ def merge(old: list[dict], new: list[dict], seen: dict, now: datetime) -> tuple[
                     continue
                 sim = R.similar(tk, rtok.get(cand["id"], set()))
                 shared = len(pn & rpn.get(cand["id"], set()))
-                if sim >= 0.45 or (shared >= 2 and sim >= 0.18) or shared >= 3:
+                same_event = bool(EVENT_TAGS & set(it.get("tags") or []) & set(cand.get("tags") or []))
+                if sim >= 0.45 or (shared >= 2 and (sim >= 0.18 or same_event)) or shared >= 3:
                     match = cand
                     break
             if match:

@@ -135,6 +135,15 @@ def test_merge_clusters_cross_language_by_proper_nouns():
     assert added == [] and items[0]["n"] == 2
 
 
+def test_merge_clusters_same_event_same_entities():
+    seen = {}
+    a = dict(news("n:a", "Anthropic raises record $81b in IPO at $1.5t valuation", src="Reuters", cat="lanzamientos"), tags=["ipo"])
+    b = dict(news("n:b", "Anthropic clinches biggest IPO ever with $81 billion offering", src="CNBC", cat="lanzamientos"), tags=["ipo"])
+    c = dict(news("n:c", "Binance Will Launch Stock Options on Anthropic (ANT)", src="Decrypt", cat="lanzamientos"), tags=["listado"])
+    items, added = pulse.merge([], [a, b, c], seen, NOW)
+    assert len(added) == 2 and any(x.get("n") == 2 for x in items)
+
+
 def test_merge_updates_market_item():
     first = {"id": "mv:sol:d:u1", "cat": "cripto", "kind": "move", "src": "CoinGecko", "title": "SOL sube 11%", "es": "SOL sube 11%", "s": 60, "opp": 2,
              "risk": "alto", "m": {"ch24h": 11}}
