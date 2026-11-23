@@ -223,3 +223,73 @@ def test_us_session():
     assert S.us_session(datetime(2026, 11, 23, 15, 0, tzinfo=timezone.utc)) == "open"
     assert S.us_session(datetime(2026, 11, 23, 12, 0, tzinfo=timezone.utc)) == "ext"
     assert S.us_session(datetime(2026, 11, 22, 15, 0, tzinfo=timezone.utc)) == "closed"
+
+
+def test_all_collectors_with_fixtures(monkeypatch):
+    """Cada colector con datos de ejemplo: no debe lanzar excepciones y debe producir elementos válidos."""
+    import time as _t
+    now_ms = int(NOW.timestamp() * 1000)
+    fixtures = {
+        "/quote": {"c": 120.0, "dp": 9.5, "d": 10, "pc": 110},
+        "/news": [{"datetime": int(NOW.timestamp()) - 600, "headline": "Acme to acquire Beta Corp in $2 billion deal", "summary": "Deal", "url": "https://n.example/a", "source": "Reuters"}],
+        "/calendar/ipo": {"ipoCalendar": [{"date": "2026-11-25", "exchange": "NASDAQ", "name": "Gamma Inc", "numberOfShares": 1e7, "price": "15-17", "status": "expected", "symbol": "GMMA", "totalSharesValue": 6e8}]},
+        "/calendar/earnings": {"earningsCalendar": [{"date": "2026-11-23", "epsActual": 1.5, "epsEstimate": 1.2, "hour": "amc", "symbol": "NVDA"},
+                                                    {"date": "2026-11-23", "epsActual": None, "epsEstimate": 2.0, "hour": "bmo", "symbol": "AAPL"}]},
+        "/stock/insider-transactions": {"data": [{"name": "CEO", "change": 10000, "transactionCode": "P", "transactionPrice": 50, "transactionDate": "2026-11-20"},
+                                                 {"name": "CFO", "change": 5000, "transactionCode": "P", "transactionPrice": 50, "transactionDate": "2026-11-19"}]},
+        "llama.fi/protocols": [{"slug": "newfi", "name": "NewFi", "symbol": "-", "category": "Lending", "tvl": 2e7, "change_1d": 30, "change_7d": 80, "listedAt": NOW.timestamp() - 5 * 86400},
+                               {"slug": "big", "name": "Big", "symbol": "BIG", "category": "Dexs", "tvl": 5e8, "change_1d": 25, "change_7d": 30, "listedAt": NOW.timestamp() - 900 * 86400}],
+        "binance.com": {"data": {"catalogs": [{"articles": [{"id": 9, "code": "x1", "title": "Binance Will List Zeta (ZETA) with Seed Tag Applied", "releaseDate": now_ms - 3600000},
+                                                             {"id": 8, "code": "x2", "title": "Binance Futures Will Launch USDⓈ-Margined ABCUSDT Perpetual Contract", "releaseDate": now_ms}]}]}},
+        "okx.com/api/v5/support": {"data": [{"details": [{"title": "OKX will launch GRVT/USD for spot trading", "url": "https://okx.com/a", "pTime": str(now_ms - 7200000)}]}]},
+        "stocktwits": {"symbols": [{"symbol": "HPE", "title": "Hewlett Packard Enterprise"}, {"symbol": "BTC.X", "title": "Bitcoin"}]},
+        "bsky.app/xrpc/app.bsky.unspecced": {"topics": [{"displayName": "Nvidia stock jumps", "description": "Shares surge after news", "link": "/x"}]},
+        "searchPosts": {"posts": [{"uri": "at://x/app.bsky.feed.post/abc", "likeCount": 120, "record": {"text": "Big airdrop for early users of protocol X on Solana, claim now eligible wallets"}, "author": {"handle": "h.bsky.social"}}]},
+        "mastodon.social": [{"title": "Bitcoin rallies as markets cheer", "description": "Crypto markets up", "url": "https://m.example/b", "provider_name": "Example"}],
+        "hn.algolia.com/api/v1/search?": {"hits": [{"objectID": "1", "title": "Big AI model release", "points": 600, "num_comments": 200, "url": "https://x.example"}]},
+        "search_by_date": {"hits": [{"objectID": "2", "title": "Show HN: My tool", "points": 120, "num_comments": 30, "url": "https://t.example"}]},
+        "api.github.com": {"items": [{"full_name": "a/b", "stargazers_count": 2500, "created_at": "2026-11-20T00:00:00Z", "html_url": "https://github.com/a/b", "description": "x"}]},
+        "huggingface.co": [{"id": "org/model", "likes": 500, "downloads": 1000, "trendingScore": 300}],
+        "alternative.me": {"data": [{"value": "12", "value_classification": "Extreme Fear"}]},
+        "massive.com": {"results": [{"T": "NVDA", "c": 130, "v": 5e7}, {"T": "AAPL", "c": 100, "v": 6e7}]},
+        "apewisdom.io": {"results": [{"ticker": "GME", "name": "GameStop", "mentions": 400, "mentions_24h_ago": 50, "rank": 3, "rank_24h_ago": 40}]},
+    }
+
+    def fake_get_json(url, **kw):
+        params = kw.get("params") or {}
+        full = url + "?" + "&".join(f"{k}={v}" for k, v in params.items())
+        if "massive.com" in url:
+            day = url.rsplit("/", 1)[-1]
+            base = {"NVDA": 100, "AAPL": 100}
+            mult = 1.0 if day.endswith("19") or day.endswith("18") else 1.2
+            return {"results": [{"T": t, "c": base[t] * mult, "v": 5e7} for t in base]}
+        for k, v in fixtures.items():
+            if k in full:
+                return v
+        raise S.SourceError("sin fixture: " + full)
+    monkeypatch.setattr(S, "get_json", fake_get_json)
+    monkeypatch.setenv("FINNHUB_API_KEY", "x")
+    monkeypatch.setenv("MASSIVE_API_KEY", "x")
+    fund = {"NVDA": {"name": "Nvidia", "m": {"mcap": 3_000_000}}, "AAPL": {"name": "Apple", "m": {"mcap": 3_500_000}}, "ACME": {"name": "Acme", "m": {"mcap": 20_000}}}
+    open_time = datetime(2026, 11, 23, 16, 0, tzinfo=timezone.utc)  # NY 11:00, lunes
+    c = S.Ctx(open_time, {}, {"profile": {"region": "es"}}, fund=fund, watch=["NVDA", "ACME"])
+    results = {}
+    for name, fn, _ in S.registry({}):
+        if name.startswith("Altas") or name in ("CoinGecko mercado", "CoinGecko tendencias", "Google News", "Ayudas públicas (BDNS)") or fn.__name__.startswith("rss_"):
+            continue
+        out = fn(c)
+        assert isinstance(out, list), name
+        for it in out:
+            assert it["id"] and it["cat"] in R.CATS and it["kind"] and isinstance(it["s"], int) and 0 <= it["s"] <= 100, (name, it)
+        results[name] = out
+    kinds = {name: {x["kind"] for x in out} for name, out in results.items()}
+    assert "ipo" in kinds["Calendario IPO y resultados"] and "earnings" in kinds["Calendario IPO y resultados"]
+    assert any(x["id"].startswith("sm:NVDA") for x in results["Bolsa EE. UU. (cotizaciones)"])
+    assert results["Compras de directivos"] and results["Compras de directivos"][0]["kind"] == "insider"
+    assert {x["id"] for x in results["DefiLlama"]} == {"dn:newfi", "df:big:2026-11-23"}
+    ann = results["Anuncios Binance"]
+    assert any(x["id"] == "an:binance:ZETA" and x["kind"] == "listing" for x in ann) and any(x["kind"] == "context" for x in ann)
+    assert results["Anuncios OKX"][0]["sym"] == "GRVT"
+    assert results["Cierre EE. UU. (Massive)"] and all(x["sym"] in fund for x in results["Cierre EE. UU. (Massive)"])
+    assert results["Noticias Finnhub"] and results["Noticias Finnhub"][0]["via"] == "Finnhub"
+    assert results["Miedo y codicia"][0]["id"].startswith("fg:")
