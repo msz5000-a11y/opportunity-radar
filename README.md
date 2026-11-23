@@ -1,41 +1,53 @@
-# Opportunity Radar AI · v2
+# Opportunity Radar AI · v3
 
-Radar autónomo de oportunidades (cripto, startups, IA, lanzamientos e ideas de negocio) para un residente en España con un presupuesto máximo de 2.000 € por oportunidad.
+Radar autónomo de oportunidades para un residente en España con un presupuesto máximo de 2.000 €. Cubre cripto, bolsa de EE. UU., startups y ayudas, IA, lanzamientos e ideas de negocio. Vigila mercados, noticias y redes sociales casi en tiempo real.
 
-**No compra, no envía dinero, no firma transacciones, no se conecta a wallets y nunca pide frases semilla ni claves.** Solo investiga, analiza y te avisa. Los escenarios 2x-300x son simulaciones matemáticas, no predicciones. Nada de esto es asesoramiento financiero.
+**No compra, no envía dinero, no firma transacciones, no se conecta a wallets y nunca pide frases semilla ni claves.** Solo investiga, analiza y avisa. Nada de esto es asesoramiento financiero.
 
 ## Cómo funciona
 
 ```
-GitHub Actions (cada 3 h, en la nube, con el móvil apagado)
-  ├─ Fuentes directas: DEX Screener, GeckoTerminal, CoinGecko, Hacker News, GitHub, RSS, tipo de cambio del BCE
-  ├─ Búsqueda IA: Gemini con Google Search descubre oportunidades nuevas
-  ├─ Análisis: modelo A (Groq) construye la ficha y puntúa 12 criterios
-  ├─ Verificación: modelo B distinto (Gemini con búsqueda) comprueba dominio, equipo, CNMV/ESMA, España
-  ├─ Consenso: si los modelos discrepan ≥3 puntos se toma el valor bajo y se pierde la evidencia
-  ├─ Seguridad de tokens: GoPlus + honeypot.is (EVM) y RugCheck (Solana)
-  ├─ Puntuación determinista (radar/scoring.py): topes por riesgo crítico, falta de evidencias, España, presupuesto
-  ├─ Alertas push con ntfy (no repite avisos) · resumen diario y semanal
-  └─ Publica la app (PWA) y los datos en GitHub Pages
+Pulso (pulse.yml, cada 5 min: es el mínimo que permite GitHub)
+  ├─ ~60 fuentes gratuitas en paralelo:
+  │    · Mercados: CoinGecko, miedo y codicia, altas de Coinbase/Kraken/OKX/Bitget/KuCoin,
+  │      anuncios de Binance y OKX, DefiLlama
+  │    · Bolsa de EE. UU. (Finnhub, Massive): cotizaciones, noticias, IPO, resultados, compras de directivos
+  │    · Redes: StockTwits, Reddit (vía ApeWisdom), Bluesky, Mastodon, Hacker News, GitHub, Hugging Face
+  │    · Noticias: ~34 RSS + Google News
+  │    · Ayudas públicas: BDNS
+  ├─ Deduplica entre fuentes e idiomas, puntúa con reglas y una IA barata (Groq) filtra y resume en español
+  ├─ Avisa por ntfy solo de lo muy fuerte (máx. 3/h y 18/día; de noche solo lo excepcional)
+  ├─ Guarda el estado en la rama `live` (sin historial)
+  └─ Publica la app y los datos en GitHub Pages (único workflow que despliega)
+
+Análisis profundo (radar.yml, cada 3 h)
+  ├─ Candidatas: lo más accionable del pulso + descubrimiento con IA
+  ├─ Modelo A (Groq) construye la ficha; modelo B distinto (Gemini) la verifica
+  ├─ Selección estricta (9 criterios) con manual paso a paso
+  └─ Mercados (valor + calidad + momento) e «Ideas para copiar», una vez al día
 ```
+
+La app (`app/`) tiene una pestaña por categoría: En vivo, Top, Cripto, Bolsa, Startups, IA, Lanzamientos, Ideas, Noticias y Redes. Muestra lo más reciente arriba y comprueba novedades cada minuto.
 
 ## Secretos (Settings → Secrets and variables → Actions)
 
 | Secreto | Obligatorio | Para qué |
 |---|---|---|
-| `GEMINI_API_KEY` | Sí | Búsqueda web y verificación (aistudio.google.com, gratis) |
-| `GROQ_API_KEY` | Sí | Análisis (console.groq.com, gratis) |
+| `GEMINI_API_KEY` | Sí | Verificación y respaldo de la IA (aistudio.google.com, gratis) |
+| `GROQ_API_KEY` | Sí | Análisis y filtro del pulso (console.groq.com, gratis) |
 | `NTFY_TOPIC` | Sí | Canal privado de alertas en la app ntfy |
+| `FINNHUB_API_KEY` | Recomendado | Bolsa: cotizaciones, noticias, calendarios y fundamentales (gratis) |
+| `MASSIVE_API_KEY` | Recomendado | Cierres diarios de EE. UU. (gratis) |
 | `OPENROUTER_API_KEY` | No | Modelo de respaldo gratuito |
 
 ## Costes
 
-0 € con los niveles gratuitos de GitHub (repositorio público: minutos de Actions ilimitados), Gemini, Groq y ntfy. Los topes de llamadas por ejecución están en `config.json`. No se activa nada de pago.
+0 € con los niveles gratuitos de GitHub (repositorio público), Gemini, Groq, Finnhub, Massive y ntfy. Los límites de uso están en `config.json` (sección `pulse` y `limits`).
 
 ## Pruebas
 
 ```
 pip install -r requirements.txt
 python -m pytest -q tests
-python -m radar.pipeline --mode check
+python -m radar.pulse --live /tmp/live --data data --dry
 ```
