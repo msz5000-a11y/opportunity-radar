@@ -93,7 +93,7 @@
     tab: "vivo", seg: LS.get("radar-segs", {}), chip: {}, useful: LS.get("radar-useful", true), limit: 60,
     lastSeen: LS.get("radar-lastseen", {}), visitFrom: {}, fresh: new Set(), saved: LS.get("radar-saved", {}),
     actions: LS.get("radar-actions", {}), profile: LS.get("radar-profile", null), loaded: false, live: null,
-    ideaMk: "all", ideaType: "", oppMin: 0,
+    ideaMk: "all", ideaType: "", oppMin: 45,
   };
   const items = () => arr(S.feed?.items);
   const inCat = (it, c) => it.cat === c || arr(it.also).includes(c);
@@ -424,7 +424,7 @@
   }
   function viewDeep(cat) {
     const list = deepOpps(cat);
-    const opts = [[0, L("Todas", "All")], [50, "50+"], [65, "65+"]].map(([k, l]) => [String(k), l]);
+    const opts = [[45, "45+"], [60, "60+"], [0, L("Todas", "All")]].map(([k, l]) => [String(k), l]);
     return `<div class="tools">${chips(opts, String(S.oppMin), "data-oppmin")}</div>
       <p class="note">${L("Fichas completas que una IA analiza y otra distinta verifica cada 3 horas. Solo entran candidatas con una vía real de ganar dinero.", "Full write-ups that one AI analyses and a different one verifies every 3 hours. Only candidates with a real way to make money get in.")}</p>
       ${list.length ? grouped(list.map((o) => ({...o, w: o.firstSeenAt})), oppRow) : `<div class="empty">${L("Sin fichas en esta categoría todavía.", "No write-ups in this category yet.")}</div>`}`;
