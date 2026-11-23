@@ -6215,7 +6215,7 @@
   "category": "startups",
   "subcategory": "eventos",
   "kind": "pasiva",
-  "description": "Evento presencial en Madrid que reunió a startups y expertos para debatir sobre talento, tecnología y confianza, presentando proyectos como Mential, Sykah y KanzoTech.",
+  "description": "Evento presencial en Madrid que reunió a startups y expertos para debatir sobre talento, tecnología y confianza, presentando proyectos como Mential, Sykah y KanzoTech. Sirvió para conectar talento universitario con empresas y mostrar soluciones innovadoras en IA, salud y procesos empresariales.",
   "officialUrl": "https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
   "participateUrl": null,
   "country": "España",
@@ -6239,61 +6239,61 @@
   "subscores": {
    "novedad": {
     "v": 7.0,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en tendencias actuales de 2026 como IA, talento y confianza.",
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en IA, salud y talento, con startups específicas presentadas en 2026.",
     "evidence": true
    },
    "potencial": {
     "v": 6.0,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor, aunque el evento ya ha concluido.",
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor para el ecosistema tech en Madrid.",
     "evidence": true
    },
    "mercado": {
     "v": 5.0,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: Enfoque sectorial sin métricas de mercado específicas.",
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: El sector de eventos tech es maduro, pero no hay datos de mercado específicos del evento.",
     "evidence": false
    },
    "equipo": {
-    "v": 6.5,
+    "v": 6.8,
     "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
     "evidence": true
    },
    "financiacion": {
     "v": 0.0,
-    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de financiación ni inversión. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de inversión, sino un evento de divulgación.",
     "evidence": false
    },
    "comunidad": {
     "v": 7.0,
-    "why": "Participación de universidades, empresas y startups españolas · Verificador: Alta participación de ecosistema académico y empresarial.",
+    "why": "Participación de universidades, empresas y startups españolas · Verificador: Conexión clara entre academia, empresas y startups.",
     "evidence": true
    },
    "adopcion": {
     "v": 5.0,
-    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de divulgación.",
+    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de networking.",
     "evidence": false
    },
    "competencia": {
     "v": 6.0,
-    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Existen múltiples eventos tech en Madrid.",
+    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Madrid tiene un ecosistema denso de eventos similares.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 9.5,
-    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial informativo.",
+    "v": 9.8,
+    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 9.5,
-    "why": "No hay inversión económica requerida · Verificador: Riesgo nulo, no requiere inversión.",
+    "v": 9.8,
+    "why": "No hay inversión económica requerida · Verificador: No hay inversión económica requerida.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 9.5,
+    "v": 9.8,
     "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
     "evidence": true
    },
    "salida": {
-    "v": 9.5,
+    "v": 9.8,
     "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
     "evidence": true
    }
@@ -6308,6 +6308,11 @@
     "code": "evento_finalizado",
     "severity": "baja",
     "detail": "La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026."
+   },
+   {
+    "code": "evento_finalizado",
+    "severity": "baja",
+    "detail": "La oportunidad ocurrió el 19 de noviembre de 2026 y ya no está vigente."
    }
   ],
   "distrust": [],
@@ -6326,7 +6331,7 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Es un evento de networking y divulgación, no un servicio financiero regulado por la CNMV o MiCA.",
+   "notes": "Evento de networking y divulgación sin oferta de valores ni servicios financieros.",
    "sources": []
   },
   "sources": [
@@ -6343,15 +6348,15 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "El evento ha sido verificado como un encuentro profesional ya finalizado, celebrado el 19 de noviembre de 2026 en Madrid, según la fuente oficial de El Referente. No es una oportunidad de inversión financiera, sino de networking y conocimiento.",
+   "reason": "La oportunidad es un evento de networking y divulgación tecnológica ya finalizado. La información coincide con la fuente oficial proporcionada por El Referente. No es una inversión financiera, por lo que no requiere supervisión de la CNMV.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 92
+   "agreementPct": 100
   },
-  "discoveredAt": "2026-11-22",
+  "discoveredAt": "2026-11-23",
   "id": "web-elreferente-es",
   "isNew": false,
   "score": 39,
-  "rawScore": 63.1,
+  "rawScore": 64.4,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
@@ -6381,7 +6386,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en tendencias actuales de 2026 como IA, talento y confianza.",
+    "why": "Evento con enfoque triple (Talent, Tech, Trust) y presentación de startups inéditas en 2026 · Verificador: Evento centrado en IA, salud y talento, con startups específicas presentadas en 2026.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6391,7 +6396,7 @@
     "weight": 12,
     "value": 6.0,
     "points": 7.2,
-    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor, aunque el evento ya ha concluido.",
+    "why": "Ofrece acceso a proyectos innovadores y contactos estratégicos · Verificador: Networking de alto valor para el ecosistema tech en Madrid.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6401,7 +6406,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: Enfoque sectorial sin métricas de mercado específicas.",
+    "why": "Sector amplio pero sin datos de tamaño de mercado específicos · Verificador: El sector de eventos tech es maduro, pero no hay datos de mercado específicos del evento.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -6409,8 +6414,8 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 6.5,
-    "points": 6.5,
+    "value": 6.8,
+    "points": 6.8,
     "why": "Organizado por 28DIGITAL con participación de expertos de Bosch, IE University y UPM · Verificador: Organizado por 28DIGITAL con ponentes de Bosch, IE University y UPM.",
     "evidence": true,
     "cappedForNoEvidence": false
@@ -6421,7 +6426,7 @@
     "weight": 7,
     "value": 0.0,
     "points": 0.0,
-    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de financiación ni inversión. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No se menciona financiación para los proyectos presentados · Verificador: No es una oportunidad de inversión, sino un evento de divulgación.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -6431,7 +6436,7 @@
     "weight": 7,
     "value": 7.0,
     "points": 4.9,
-    "why": "Participación de universidades, empresas y startups españolas · Verificador: Alta participación de ecosistema académico y empresarial.",
+    "why": "Participación de universidades, empresas y startups españolas · Verificador: Conexión clara entre academia, empresas y startups.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6441,7 +6446,7 @@
     "weight": 9,
     "value": 3.0,
     "points": 2.7,
-    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de divulgación.",
+    "why": "No hay datos de adopción de las soluciones presentadas · Verificador: No aplica, es un evento de networking.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -6451,7 +6456,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Existen múltiples eventos tech en Madrid.",
+    "why": "Existen otros eventos similares en el ecosistema tech español · Verificador: Madrid tiene un ecosistema denso de eventos similares.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -6459,9 +6464,9 @@
     "key": "riesgo_tecnico",
     "label": "Riesgo técnico (10 = bajo)",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial informativo.",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "No implica inversión ni desarrollo técnico propio · Verificador: Riesgo nulo al ser un evento presencial.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6469,9 +6474,9 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 9.5,
-    "points": 9.5,
-    "why": "No hay inversión económica requerida · Verificador: Riesgo nulo, no requiere inversión.",
+    "value": 9.8,
+    "points": 9.8,
+    "why": "No hay inversión económica requerida · Verificador: No hay inversión económica requerida.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6479,8 +6484,8 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
+    "value": 9.8,
+    "points": 7.8,
     "why": "Evento realizado en Madrid, España · Verificador: Evento realizado en Madrid, España.",
     "evidence": true,
     "cappedForNoEvidence": false
@@ -6489,8 +6494,8 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
+    "value": 9.8,
+    "points": 7.8,
     "why": "No hay salida financiera asociada · Verificador: No aplica, no hay activo financiero.",
     "evidence": true,
     "cappedForNoEvidence": false
@@ -6565,13 +6570,15 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
+  "alertText": "NOMBRE: Innovation Day 28DIGITAL 2026\nCATEGORÍA: startups · eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de networking y conocimiento de startups emergentes en IA y salud.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Conocer tendencias en IA, talento y confianza; Networking con startups como Mential, Sykah y KanzoTech\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; La oportunidad ya no está vigente al haber ocurrido el 19 de noviembre de 2026.\nCÓMO PARTICIPAR: Revisar la agenda del Innovation Day en la web de 28DIGITAL; Registrarse en la plataforma de eventos (si estuviera abierto); Asistir al evento presencial en la Fundación PONS, Madrid\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28digital/",
   "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-22T01:26:32Z",
-  "runId": "run-20261122-0126",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
   "aliases": [
    "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d"
-  ]
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "LoudFlow",
@@ -15739,405 +15746,6 @@
   ]
  },
  {
-  "name": "Kalshi",
-  "category": "startups",
-  "subcategory": "exchange_de_eventos",
-  "kind": "activa",
-  "description": "Kalshi es una plataforma regulada en EE. UU. que permite operar contratos de eventos (tipo binary options). Actualmente enfrenta una audiencia en Nueva York por una orden que podría cerrar su intercambio a nivel nacional.",
-  "officialUrl": "https://kalshi.com",
-  "participateUrl": null,
-  "country": "Estados Unidos",
-  "spainAvailability": "no",
-  "spainNotes": "No hay indicios de disponibilidad o registro de la plataforma en España.",
-  "costs": {
-   "minEntry": null,
-   "extra": null,
-   "extraNotes": "No hay información pública sobre rondas de financiación abiertas al público; la inversión mínima dependería de una posible ronda privada o mercado secundario.",
-   "recommended": null,
-   "max": null
-  },
-  "canLoseAll": true,
-  "liquidity": "baja",
-  "exitNotes": "Sin mercado secundario público; la salida dependería de una venta privada o adquisición.",
-  "horizon": "largo plazo (2‑5 años)",
-  "deadline": null,
-  "potential": "alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.",
-  "difficulty": "alta",
-  "timeNeeded": "investigación profunda y contacto con inversores acreditados",
-  "subscores": {
-   "novedad": {
-    "v": 7.0,
-    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de exchange de eventos regulado (DCM) bajo la CFTC en EE. UU.",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 5.5,
-    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: Mercado de predicción con alta competencia y presión regulatoria estatal",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 5.0,
-    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de consolidación",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 5.0,
-    "why": "Información pública limitada sobre el equipo fundador y su experiencia · Verificador: Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 4.0,
-    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Respaldada por Sequoia Capital y Charles Schwab · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 3.5,
-    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios estadounidenses",
-    "evidence": false
-   },
-   "adopcion": {
-    "v": 4.0,
-    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU.",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 5.5,
-    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Mercado altamente competitivo con actores como Polymarket y PredictIt",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 3.0,
-    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura robusta bajo supervisión de la CFTC",
-    "evidence": false
-   },
-   "riesgo_financiero": {
-    "v": 3.0,
-    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo por litigios con la Fiscalía de Nueva York · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
-    "evidence": false
-   },
-   "entrada_espana": {
-    "v": 1.5,
-    "why": "No hay indicios de registro o autorización para operar en España · Verificador: No disponible para residentes en España",
-    "evidence": false
-   },
-   "salida": {
-    "v": 2.5,
-    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Sin mercado secundario para inversores minoristas",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "riesgo_regulatorio",
-    "severity": "alta",
-    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
-   },
-   {
-    "code": "riesgo_regulatorio",
-    "severity": "critica",
-    "detail": "Litigio activo con la Fiscalía de Nueva York que amenaza la continuidad operativa"
-   },
-   {
-    "code": "no_disponible_espana",
-    "severity": "alta",
-    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
-   }
-  ],
-  "distrust": [
-   "alta incertidumbre regulatoria en EE. UU."
-  ],
-  "whyInteresting": [
-   "Posible pionero en mercados regulados de predicción de eventos",
-   "Potencial de crecimiento si supera barreras legales"
-  ],
-  "howToParticipate": [
-   "1. Monitorizar la audiencia del 23‑11‑2026 y su resultado",
-   "2. Buscar información sobre rondas de financiación privadas o secondary market de acciones",
-   "3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web)",
-   "4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda"
-  ],
-  "lossCauses": [
-   "Cierre total por orden regulatoria",
-   "Falta de adopción de usuarios",
-   "Problemas de liquidez en el mercado secundario"
-  ],
-  "earlySignals": [
-   "Resultado de la audiencia del 23‑11‑2026",
-   "Declaraciones públicas de la AG de NY"
-  ],
-  "signals": {},
-  "regulatory": {
-   "checked": true,
-   "status": "no_autorizada",
-   "notes": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV.",
-   "sources": [
-    "https://www.cftc.gov",
-    "https://www.cnmv.es"
-   ]
-  },
-  "sources": [
-   {
-    "title": "The Block",
-    "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813"
-   },
-   {
-    "title": "CFTC Official Website",
-    "url": "https://www.cftc.gov"
-   }
-  ],
-  "discoveredVia": "The Block",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "dudosa",
-   "reason": "La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 83
-  },
-  "discoveredAt": "2026-11-22",
-  "id": "web-kalshi-com",
-  "isNew": true,
-  "score": 20,
-  "rawScore": 34.6,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-15 por 3 riesgo(s) alto(s)"
-  ],
-  "critical": true,
-  "risk": "crítico",
-  "flags": [
-   {
-    "code": "riesgo_regulatorio",
-    "severity": "alta",
-    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
-   },
-   {
-    "code": "no_disponible_espana",
-    "severity": "alta",
-    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
-   },
-   {
-    "code": "regulatorio",
-    "severity": "critica",
-    "detail": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV."
-   }
-  ],
-  "evidenced": 2,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de exchange de eventos regulado (DCM) bajo la CFTC en EE. UU.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 5.5,
-    "points": 6.6,
-    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: Mercado de predicción con alta competencia y presión regulatoria estatal",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de consolidación",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "Información pública limitada sobre el equipo fundador y su experiencia · Verificador: Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Respaldada por Sequoia Capital y Charles Schwab · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios estadounidenses",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Mercado altamente competitivo con actores como Polymarket y PredictIt",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura robusta bajo supervisión de la CFTC",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo por litigios con la Fiscalía de Nueva York · Discrepancia entre modelos (3 vs 9): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 1.5,
-    "points": 1.2,
-    "why": "No hay indicios de registro o autorización para operar en España · Verificador: No disponible para residentes en España",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 2.5,
-    "points": 2.0,
-    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Sin mercado secundario para inversores minoristas",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": -0.0,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [],
-  "alert": {
-   "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Kalshi\nCATEGORÍA: startups · exchange_de_eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://kalshi.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo (2‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible pionero en mercados regulados de predicción de eventos; Potencial de crecimiento si supera barreras legales\nMOTIVOS PARA DESCONFIAR: Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional; La plataforma bloquea el acceso a usuarios fuera de EE. UU.; El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales.; Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV.; alta incertidumbre regulatoria en EE. UU.\nCÓMO PARTICIPAR: 1. Monitorizar la audiencia del 23‑11‑2026 y su resultado; 2. Buscar información sobre rondas de financiación privadas o secondary market de acciones; 3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web); 4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cierre total por orden regulatoria; Falta de adopción de usuarios; Problemas de liquidez en el mercado secundario\nFUENTES: https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813 | https://www.cftc.gov",
-  "firstSeenAt": "2026-11-22T01:26:32Z",
-  "lastSeenAt": "2026-11-22T01:26:32Z",
-  "runId": "run-20261122-0126",
-  "aliases": [
-   "news-www-theblock-co-news-regulation-2026-11-21-kalshi-faces-monday-hearing-on-new-york-or"
-  ]
- },
- {
   "name": "AI Context Flow MCP",
   "category": "ia_tecnologia",
   "subcategory": null,
@@ -20686,6 +20294,437 @@
   ]
  },
  {
+  "name": "Kalshi",
+  "category": "startups",
+  "subcategory": "exchange_de_eventos",
+  "kind": "activa",
+  "description": "Kalshi es una plataforma regulada en EE. UU. que permite operar contratos de eventos (tipo binary options). Actualmente enfrenta una audiencia en Nueva York por una orden que podría cerrar su intercambio a nivel nacional.",
+  "officialUrl": "https://kalshi.com",
+  "participateUrl": null,
+  "country": "Estados Unidos",
+  "spainAvailability": "no",
+  "spainNotes": "No hay indicios de disponibilidad o registro de la plataforma en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No hay información pública sobre rondas de financiación abiertas al público; la inversión mínima dependería de una posible ronda privada o mercado secundario.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Sin mercado secundario público; la salida dependería de una venta privada o adquisición.",
+  "horizon": "largo plazo (2‑5 años)",
+  "deadline": null,
+  "potential": "alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.",
+  "difficulty": "alta",
+  "timeNeeded": "investigación profunda y contacto con inversores acreditados",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de mercado de predicción regulado como DCM por la CFTC.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4.8,
+    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: El potencial está supeditado a la resolución de litigios regulatorios críticos.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de validación legal.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 5.5,
+    "why": "Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos · Verificador: Fundadores públicos y respaldados por capital riesgo (Sequoia, Charles Schwab).",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 4.5,
+    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Han levantado rondas de capital riesgo, pero no hay acceso público para minoristas.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.2,
+    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios institucionales en EE. UU.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.0,
+    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU. por cumplimiento normativo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.2,
+    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Competencia directa con Polymarket y otros exchanges de derivados.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.0,
+    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura de trading robusta, pero bajo escrutinio constante.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 3.0,
+    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo de cese de operaciones por orden judicial en Nueva York. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.8,
+    "why": "No hay indicios de registro o autorización para operar en España · Verificador: Bloqueo geográfico activo y falta de licencia CNMV.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.8,
+    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Inexistencia de mercado secundario para acciones de la startup.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "critica",
+    "detail": "Litigio activo con la Fiscalía de Nueva York que amenaza la continuidad operativa"
+   },
+   {
+    "code": "no_disponible_espana",
+    "severity": "alta",
+    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV."
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "critica",
+    "detail": "Litigio activo con la Fiscalía de Nueva York que amenaza la continuidad operativa nacional."
+   },
+   {
+    "code": "no_disponible_espana",
+    "severity": "alta",
+    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU. y no tiene licencia en España."
+   },
+   {
+    "code": "inversion_inviable",
+    "severity": "alta",
+    "detail": "No existe canal de inversión para minoristas españoles; la ficha original sugiere erróneamente buscar rondas privadas."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma es una entidad real regulada por la CFTC en EE. UU., pero no es una oportunidad de inversión accesible para un minorista en España. La ficha original presenta la inversión como una posibilidad, cuando en realidad no existe un mecanismo público de inversión para particulares, y la empresa enfrenta un riesgo legal existencial que hace que cualquier intento de inversión privada sea de altísimo riesgo y complejidad técnica."
+   }
+  ],
+  "distrust": [
+   "alta incertidumbre regulatoria en EE. UU."
+  ],
+  "whyInteresting": [
+   "Posible pionero en mercados regulados de predicción de eventos",
+   "Potencial de crecimiento si supera barreras legales"
+  ],
+  "howToParticipate": [
+   "1. Monitorizar la audiencia del 23‑11‑2026 y su resultado",
+   "2. Buscar información sobre rondas de financiación privadas o secondary market de acciones",
+   "3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web)",
+   "4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda"
+  ],
+  "lossCauses": [
+   "Cierre total por orden regulatoria",
+   "Falta de adopción de usuarios",
+   "Problemas de liquidez en el mercado secundario"
+  ],
+  "earlySignals": [
+   "Resultado de la audiencia del 23‑11‑2026",
+   "Declaraciones públicas de la AG de NY"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "Kalshi es un Designated Contract Market (DCM) bajo supervisión de la CFTC en EE. UU. No posee autorización de la CNMV para operar ni captar fondos en España.",
+   "sources": [
+    "https://www.cftc.gov",
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813"
+   },
+   {
+    "title": "CFTC Exchange Registration",
+    "url": "https://www.cftc.gov"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La plataforma es una entidad real regulada por la CFTC en EE. UU., pero no es una oportunidad de inversión accesible para un minorista en España. La ficha original presenta la inversión como una posibilidad, cuando en realidad no existe un mecanismo público de inversión para particulares, y la empresa enfrenta un riesgo legal existencial que hace que cualquier intento de inversión privada sea de altísimo riesgo y complejidad técnica.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "web-kalshi-com",
+  "isNew": false,
+  "score": 13,
+  "rawScore": 32.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional"
+   },
+   {
+    "code": "no_disponible_espana",
+    "severity": "alta",
+    "detail": "La plataforma bloquea el acceso a usuarios fuera de EE. UU."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV."
+   },
+   {
+    "code": "inversion_inviable",
+    "severity": "alta",
+    "detail": "No existe canal de inversión para minoristas españoles; la ficha original sugiere erróneamente buscar rondas privadas."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Plataforma regulada de contratos de eventos en EE. UU., poco común en el ecosistema cripto/fintech · Verificador: Modelo de mercado de predicción regulado como DCM por la CFTC.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 4.8,
+    "points": 5.8,
+    "why": "Mercado de predicción de eventos con demanda creciente, según la cobertura de The Block · Verificador: El potencial está supeditado a la resolución de litigios regulatorios críticos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tamaño del mercado de derivados de eventos no está claramente cuantificado · Verificador: Mercado de derivados de eventos en fase de validación legal.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Fundadores Tarek Mansour y Luana Lopes Lara son públicos y conocidos · Verificador: Fundadores públicos y respaldados por capital riesgo (Sequoia, Charles Schwab).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de datos sobre rondas de financiación recientes o inversores actuales · Verificador: Han levantado rondas de capital riesgo, pero no hay acceso público para minoristas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Baja presencia de comunidad abierta; la plataforma está dirigida a traders institucionales · Verificador: Enfocada en traders profesionales y usuarios institucionales en EE. UU.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción temprana, limitada a usuarios estadounidenses con cuentas reguladas · Verificador: Limitada estrictamente a residentes en EE. UU. por cumplimiento normativo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con otros exchanges de predicción y derivados, pero su estatus regulado es distintivo · Verificador: Competencia directa con Polymarket y otros exchanges de derivados.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo técnico bajo, pero depende de la infraestructura de trading y cumplimiento regulatorio · Verificador: Infraestructura de trading robusta, pero bajo escrutinio constante.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alto riesgo financiero por posible cierre regulatorio y falta de liquidez · Verificador: Riesgo extremo de cese de operaciones por orden judicial en Nueva York. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.8,
+    "points": 0.6,
+    "why": "No hay indicios de registro o autorización para operar en España · Verificador: Bloqueo geográfico activo y falta de licencia CNMV.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.8,
+    "points": 1.4,
+    "why": "Liquidez limitada; salida solo posible mediante venta privada o adquisición · Verificador: Inexistencia de mercado secundario para acciones de la startup.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Kalshi\nCATEGORÍA: startups · exchange_de_eventos\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://kalshi.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de mercado si supera la barrera regulatoria, pero con gran incertidumbre por la orden de NY.\nPUNTUACIÓN: 13/100 · Descartar\nRIESGO: crítico\nPLAZO: largo plazo (2‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible pionero en mercados regulados de predicción de eventos; Potencial de crecimiento si supera barreras legales\nMOTIVOS PARA DESCONFIAR: Orden del fiscal de Nueva York que podría cerrar la plataforma a nivel nacional; La plataforma bloquea el acceso a usuarios fuera de EE. UU.; El verificador tiene dudas: La plataforma no está disponible para residentes en España y carece de autorización de la CNMV. La situación regulatoria en EE. UU. es crítica y la inversión directa para un minorista español es inviable bajo las condiciones actuales.; Kalshi es un Designated Contract Market (DCM) regulado por la CFTC en EE. UU., pero no posee licencia para operar en España ni está registrada en la CNMV.; No existe canal de inversión para minoristas españoles; la ficha original sugiere erróneamente buscar rondas privadas.; alta incertidumbre regulatoria en EE. UU.\nCÓMO PARTICIPAR: 1. Monitorizar la audiencia del 23‑11‑2026 y su resultado; 2. Buscar información sobre rondas de financiación privadas o secondary market de acciones; 3. Contactar con la oficina de relaciones con inversores de Kalshi (email en su web); 4. Evaluar la posibilidad de invertir como inversor acreditado si se abre una ronda\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cierre total por orden regulatoria; Falta de adopción de usuarios; Problemas de liquidez en el mercado secundario\nFUENTES: https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813 | https://www.cftc.gov",
+  "firstSeenAt": "2026-11-22T01:26:32Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-theblock-co-news-regulation-2026-11-21-kalshi-faces-monday-hearing-on-new-york-or"
+  ],
+  "actionable": false,
+  "profitPath": ""
+ },
+ {
   "name": "Hogecoin",
   "category": "cripto",
   "subcategory": "meme",
@@ -24791,6 +24830,404 @@
   ]
  },
  {
+  "name": "Creavit Studio 4.0",
+  "category": "ia_tecnologia",
+  "subcategory": "software|productivity",
+  "kind": "pasiva",
+  "description": "Creavit Studio 4.0 es una herramienta para Mac que permite grabar pantalla, usar la cámara del iPhone y crear demos cinematográficas. Se presentó en Product Hunt como una solución orientada a creadores de contenido y desarrolladores que necesitan presentaciones visuales de alta calidad.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se encontró información pública sobre restricciones o disponibilidad específica en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": null,
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, no es un activo financiero negociable.",
+  "horizon": "desconocido",
+  "deadline": null,
+  "potential": "desconocido",
+  "difficulty": "media",
+  "timeNeeded": "poco tiempo para probar la versión gratuita o de prueba",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Listado en Product Hunt como nueva versión 4.0 · Verificador: El lanzamiento es antiguo y no hay actualizaciones recientes confirmadas.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4.0,
+    "why": "Sin datos de adopción o financiación pública · Verificador: Sin datos de tracción o modelo de negocio claro.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Competencia alta en herramientas de grabación y demo (Camtasia, OBS, etc.) · Verificador: Mercado altamente competitivo con alternativas gratuitas y de código abierto.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No existe información pública sobre los desarrolladores. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No hay datos de rondas de inversión públicas · Verificador: No hay registros de financiación o estructura empresarial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.0,
+    "why": "Poca información sobre comunidad de usuarios o soporte · Verificador: Inexistente en redes sociales o foros técnicos. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Sin métricas de usuarios activos o descargas · Verificador: Sin métricas de uso o testimonios verificables. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.5,
+    "why": "Mercado saturado con soluciones consolidadas · Verificador: Superado por herramientas estándar como OBS o ScreenFlow.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Software para macOS, depende de actualizaciones de Apple y compatibilidad de iPhone · Verificador: Al no haber sitio oficial, el origen del software es incierto (riesgo de malware).",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "No requiere inversión de capital para usar la herramienta · Verificador: No es una inversión, es un software de productividad sin modelo de pago claro.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 5.0,
+    "why": "No se indica restricción geográfica, pero falta confirmación oficial · Verificador: No hay restricciones geográficas, pero tampoco soporte oficial.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay activo que vender o liquidar · Verificador: No es un activo, no tiene valor de reventa. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre precios, equipo y métricas de uso"
+   },
+   {
+    "code": "lack_of_official_website",
+    "severity": "alta",
+    "detail": "No se ha encontrado un dominio oficial funcional para el producto."
+   },
+   {
+    "code": "unverified_software_source",
+    "severity": "alta",
+    "detail": "Descargar software de fuentes no oficiales representa un riesgo de seguridad informática."
+   },
+   {
+    "code": "abandonware_indicators",
+    "severity": "media",
+    "detail": "La falta de actividad en Product Hunt sugiere que el proyecto podría estar abandonado."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de una presencia web corporativa verificable, sitio oficial activo o información sobre el equipo desarrollador. El enlace de Product Hunt redirige a una página sin actividad comercial clara, lo que impide confirmar la legitimidad del software o su disponibilidad real."
+   }
+  ],
+  "distrust": [
+   "poca información disponible en fuentes oficiales"
+  ],
+  "whyInteresting": [
+   "herramienta que combina grabación de pantalla y cámara del iPhone para crear demos de aspecto profesional"
+  ],
+  "howToParticipate": [
+   "Visitar la página de Product Hunt y seguir el enlace al sitio oficial (si está disponible)",
+   "Registrarse para una prueba gratuita o plan de suscripción"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "lanzamiento reciente en Product Hunt"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una herramienta de software de productividad y no un producto financiero, no está sujeto a supervisión de la CNMV ni a la normativa MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/creavit-studio"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La herramienta carece de una presencia web corporativa verificable, sitio oficial activo o información sobre el equipo desarrollador. El enlace de Product Hunt redirige a una página sin actividad comercial clara, lo que impide confirmar la legitimidad del software o su disponibilidad real.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-creavit-studio-4-0",
+  "isNew": true,
+  "score": 10,
+  "rawScore": 24.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "lack_of_information",
+    "severity": "media",
+    "detail": "Escasa información pública sobre precios, equipo y métricas de uso"
+   },
+   {
+    "code": "lack_of_official_website",
+    "severity": "alta",
+    "detail": "No se ha encontrado un dominio oficial funcional para el producto."
+   },
+   {
+    "code": "unverified_software_source",
+    "severity": "alta",
+    "detail": "Descargar software de fuentes no oficiales representa un riesgo de seguridad informática."
+   },
+   {
+    "code": "abandonware_indicators",
+    "severity": "media",
+    "detail": "La falta de actividad en Product Hunt sugiere que el proyecto podría estar abandonado."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La herramienta carece de una presencia web corporativa verificable, sitio oficial activo o información sobre el equipo desarrollador. El enlace de Product Hunt redirige a una página sin actividad comercial clara, lo que impide confirmar la legitimidad del software o su disponibilidad real."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Listado en Product Hunt como nueva versión 4.0 · Verificador: El lanzamiento es antiguo y no hay actualizaciones recientes confirmadas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Sin datos de adopción o financiación pública · Verificador: Sin datos de tracción o modelo de negocio claro.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Competencia alta en herramientas de grabación y demo (Camtasia, OBS, etc.) · Verificador: Mercado altamente competitivo con alternativas gratuitas y de código abierto.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se dispone de información sobre el equipo fundador · Verificador: No existe información pública sobre los desarrolladores. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay datos de rondas de inversión públicas · Verificador: No hay registros de financiación o estructura empresarial. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Poca información sobre comunidad de usuarios o soporte · Verificador: Inexistente en redes sociales o foros técnicos. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Sin métricas de usuarios activos o descargas · Verificador: Sin métricas de uso o testimonios verificables. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.5,
+    "points": 1.2,
+    "why": "Mercado saturado con soluciones consolidadas · Verificador: Superado por herramientas estándar como OBS o ScreenFlow.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Software para macOS, depende de actualizaciones de Apple y compatibilidad de iPhone · Verificador: Al no haber sitio oficial, el origen del software es incierto (riesgo de malware).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No requiere inversión de capital para usar la herramienta · Verificador: No es una inversión, es un software de productividad sin modelo de pago claro.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se indica restricción geográfica, pero falta confirmación oficial · Verificador: No hay restricciones geográficas, pero tampoco soporte oficial.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay activo que vender o liquidar · Verificador: No es un activo, no tiene valor de reventa. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Creavit Studio 4.0\nCATEGORÍA: ia_tecnologia · software|productivity\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 10/100 · Descartar\nRIESGO: medio\nPLAZO: desconocido\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: herramienta que combina grabación de pantalla y cámara del iPhone para crear demos de aspecto profesional\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre precios, equipo y métricas de uso; No se ha encontrado un dominio oficial funcional para el producto.; Descargar software de fuentes no oficiales representa un riesgo de seguridad informática.; La falta de actividad en Product Hunt sugiere que el proyecto podría estar abandonado.; El verificador tiene dudas: La herramienta carece de una presencia web corporativa verificable, sitio oficial activo o información sobre el equipo desarrollador. El enlace de Product Hunt redirige a una página sin actividad comercial clara, lo que impide confirmar la legitimidad del software o su disponibilidad real.; poca información disponible en fuentes oficiales\nCÓMO PARTICIPAR: Visitar la página de Product Hunt y seguir el enlace al sitio oficial (si está disponible); Registrarse para una prueba gratuita o plan de suscripción\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/creavit-studio",
+  "firstSeenAt": "2026-11-23T01:50:15Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-producthunt-com-products-creavit-studio"
+  ]
+ },
+ {
   "name": "Prompt Puncher",
   "category": "ia_tecnologia",
   "subcategory": "juego",
@@ -25573,6 +26010,391 @@
   "runId": "run-20261122-1142",
   "aliases": [
    "news-www-producthunt-com-products-teaserkit"
+  ]
+ },
+ {
+  "name": "Fusionist ACE Bridge (post‑exploit)",
+  "category": "cripto",
+  "subcategory": "bridge",
+  "kind": "activa",
+  "description": "Después de un exploit de $2 M, el puente ACE de Fusionist quedó vacío y algunos traders obtuvieron ganancias rápidas. No hay programa oficial de participación y la actividad está asociada a un hackeo.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No hay información de disponibilidad o regulación en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay coste de entrada oficial, pero cualquier participación implicaría riesgos legales y de pérdida total.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": true,
+  "liquidity": "nula",
+  "exitNotes": "No existe mecanismo de salida oficial; cualquier intento de retirar fondos puede ser bloqueado o confiscado.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "alto potencial de ganancia puntual pero extremadamente riesgoso y probablemente ilegal",
+  "difficulty": "alta",
+  "timeNeeded": "variable, depende de la rapidez del mercado y de la detección de vulnerabilidades",
+  "subscores": {
+   "novedad": {
+    "v": 1.0,
+    "why": "Exploit de gran magnitud que generó un free‑for‑all de $3,7 M · Verificador: El evento es un incidente de seguridad, no una innovación tecnológica. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Ganancias puntuales no sostenibles; depende de vulnerabilidades futuras · Verificador: No hay potencial de inversión, solo riesgo de pérdida total o implicación legal.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Mercado de bridges cripto es limitado y altamente regulado · Verificador: El mercado de puentes hackeados no es un mercado financiero legítimo. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.5,
+    "why": "No hay información pública sobre el equipo detrás del puente · Verificador: El equipo de Fusionist ha sufrido una brecha de seguridad; no hay oferta de participación.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.5,
+    "why": "Financiación desconocida; el proyecto sufrió un hackeo · Verificador: No hay financiación, solo pérdida de fondos.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Comunidad mínima y enfocada en exploits · Verificador: La actividad reportada es de actores maliciosos aprovechando una vulnerabilidad.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.5,
+    "why": "Adopción prácticamente nula tras el exploit · Verificador: El protocolo está comprometido.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Existen otros bridges, pero la seguridad es un factor diferenciador · Verificador: No aplica en un contexto de hackeo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Alta probabilidad de fallos y vulnerabilidades adicionales · Verificador: Riesgo máximo: contrato inteligente explotado. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Posibilidad de pérdida total y sanciones legales · Verificador: Pérdida total garantizada al interactuar con fondos robados. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.5,
+    "why": "Sin claridad regulatoria ni soporte local · Verificador: No es un servicio financiero regulado.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay canales de salida seguros o regulados · Verificador: No existe mecanismo de salida legítimo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "security_exploit",
+    "severity": "critica",
+    "detail": "El proyecto sufrió un exploit de $2 M; participar implica riesgo de fraude y posible ilegalidad"
+   },
+   {
+    "code": "security_exploit",
+    "severity": "critica",
+    "detail": "El protocolo ha sido hackeado. Cualquier interacción es insegura y potencialmente ilegal."
+   },
+   {
+    "code": "no_regulatory_status",
+    "severity": "critica",
+    "detail": "No es una plataforma regulada ni autorizada por la CNMV."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha describe un evento de ciberdelincuencia (exploit/hackeo) como una oportunidad de inversión. No existe un 'Fusionist ACE Bridge' legítimo que ofrezca participación tras un hackeo; interactuar con contratos comprometidos es peligroso y carece de marco legal. La información sobre el evento es un reporte de seguridad, no una propuesta de valor."
+   }
+  ],
+  "distrust": [
+   "Evento de hackeo, no una oportunidad de inversión legítima"
+  ],
+  "whyInteresting": [
+   "Ganancia rápida de $17 700 a partir de $50 en el contexto del exploit"
+  ],
+  "howToParticipate": [
+   "No se recomienda participar; cualquier intento de interacción con el puente tras el hackeo conlleva riesgos legales y de pérdida total"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Pérdida total del capital",
+   "Confiscación de fondos por autoridades",
+   "Sanciones legales"
+  ],
+  "earlySignals": [
+   "Alertas de seguridad en redes cripto",
+   "Bloqueos de direcciones sospechosas"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "El evento es un incidente de ciberseguridad. No figura en registros de la CNMV ni MiCA al ser un protocolo comprometido.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "La ficha describe un evento de ciberdelincuencia (exploit/hackeo) como una oportunidad de inversión. No existe un 'Fusionist ACE Bridge' legítimo que ofrezca participación tras un hackeo; interactuar con contratos comprometidos es peligroso y carece de marco legal. La información sobre el evento es un reporte de seguridad, no una propuesta de valor.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-fusionist-ace-bridge-post-exploit",
+  "isNew": true,
+  "score": 9,
+  "rawScore": 8.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "security_exploit",
+    "severity": "critica",
+    "detail": "El proyecto sufrió un exploit de $2 M; participar implica riesgo de fraude y posible ilegalidad"
+   },
+   {
+    "code": "no_regulatory_status",
+    "severity": "critica",
+    "detail": "No es una plataforma regulada ni autorizada por la CNMV."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: La ficha describe un evento de ciberdelincuencia (exploit/hackeo) como una oportunidad de inversión. No existe un 'Fusionist ACE Bridge' legítimo que ofrezca participación tras un hackeo; interactuar con contratos comprometidos es peligroso y carece de marco legal. La información sobre el evento es un reporte de seguridad, no una propuesta de valor."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Exploit de gran magnitud que generó un free‑for‑all de $3,7 M · Verificador: El evento es un incidente de seguridad, no una innovación tecnológica. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Ganancias puntuales no sostenibles; depende de vulnerabilidades futuras · Verificador: No hay potencial de inversión, solo riesgo de pérdida total o implicación legal.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Mercado de bridges cripto es limitado y altamente regulado · Verificador: El mercado de puentes hackeados no es un mercado financiero legítimo. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "No hay información pública sobre el equipo detrás del puente · Verificador: El equipo de Fusionist ha sufrido una brecha de seguridad; no hay oferta de participación.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "Financiación desconocida; el proyecto sufrió un hackeo · Verificador: No hay financiación, solo pérdida de fondos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Comunidad mínima y enfocada en exploits · Verificador: La actividad reportada es de actores maliciosos aprovechando una vulnerabilidad.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "Adopción prácticamente nula tras el exploit · Verificador: El protocolo está comprometido.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Existen otros bridges, pero la seguridad es un factor diferenciador · Verificador: No aplica en un contexto de hackeo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Alta probabilidad de fallos y vulnerabilidades adicionales · Verificador: Riesgo máximo: contrato inteligente explotado. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Posibilidad de pérdida total y sanciones legales · Verificador: Pérdida total garantizada al interactuar con fondos robados. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "Sin claridad regulatoria ni soporte local · Verificador: No es un servicio financiero regulado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay canales de salida seguros o regulados · Verificador: No existe mecanismo de salida legítimo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Fusionist ACE Bridge (post‑exploit)\nCATEGORÍA: cripto · bridge\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de ganancia puntual pero extremadamente riesgoso y probablemente ilegal\nPUNTUACIÓN: 9/100 · Descartar\nRIESGO: crítico\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Ganancia rápida de $17 700 a partir de $50 en el contexto del exploit\nMOTIVOS PARA DESCONFIAR: El proyecto sufrió un exploit de $2 M; participar implica riesgo de fraude y posible ilegalidad; No es una plataforma regulada ni autorizada por la CNMV.; El verificador no pudo confirmar que sea real: La ficha describe un evento de ciberdelincuencia (exploit/hackeo) como una oportunidad de inversión. No existe un 'Fusionist ACE Bridge' legítimo que ofrezca participación tras un hackeo; interactuar con contratos comprometidos es peligroso y carece de marco legal. La información sobre el evento es un reporte de seguridad, no una propuesta de valor.; Evento de hackeo, no una oportunidad de inversión legítima\nCÓMO PARTICIPAR: No se recomienda participar; cualquier intento de interacción con el puente tras el hackeo conlleva riesgos legales y de pérdida total\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida total del capital; Confiscación de fondos por autoridades; Sanciones legales\nFUENTES: https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
+  "firstSeenAt": "2026-11-23T01:50:15Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-theblock-co-news-defi-2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free"
   ]
  },
  {
@@ -31034,6 +31856,415 @@
   ]
  },
  {
+  "name": "Trump Memecoin Dinner Token",
+  "category": "cripto",
+  "subcategory": "memecoin",
+  "kind": "activa",
+  "description": "Token asociado a un evento de cena con celebridades patrocinado por Donald Trump. El token ha caído un 99 % de su pico y carece de información pública fiable.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre disponibilidad o regulación en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se conocen tarifas ni costes adicionales",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "no aplica",
+  "exitNotes": "Sin datos de mercados secundarios ni exchanges listados; la salida es incierta.",
+  "horizon": "corto plazo (evento próximo)",
+  "deadline": null,
+  "potential": "Bajo, dado el fuerte descenso y la falta de fundamentos.",
+  "difficulty": "alta",
+  "timeNeeded": "poco (solo decidir si comprar)",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "Token vinculado a una cena de celebridades, pero sin información técnica ni roadmap · Verificador: Es un activo especulativo sin valor tecnológico ni roadmap.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Caída del 99 % y ausencia de adopción real · Verificador: Caída del 99% y falta de fundamentos técnicos.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 1.0,
+    "why": "Mercado de memecoins altamente volátil y sin liquidez conocida · Verificador: Inexistencia de liquidez en exchanges centralizados o descentralizados verificables.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.5,
+    "why": "No se identifican desarrolladores ni equipo detrás del token · Verificador: No existe equipo responsable ni entidad legal detrás del token.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.5,
+    "why": "No hay datos de financiación ni respaldo institucional · Verificador: No hay datos de financiación institucional.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.5,
+    "why": "Poca o nula comunidad visible; solo menciones mediáticas · Verificador: Comunidad basada exclusivamente en el hype mediático de celebridades.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.5,
+    "why": "Sin casos de uso ni adopción fuera del evento promocional · Verificador: Cero casos de uso real.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.0,
+    "why": "Existen numerosos memecoins con mayor capitalización y comunidad · Verificador: Mercado saturado de memecoins sin valor.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Código y auditorías desconocidos; posible contrato malicioso · Verificador: Alta probabilidad de contrato malicioso o abandono total.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 0.5,
+    "why": "Pérdida casi total del valor histórico; alta probabilidad de pérdida total · Verificador: Pérdida total del capital altamente probable.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.5,
+    "why": "No hay información de regulaciones ni plataformas españolas que lo ofrezcan · Verificador: No disponible en plataformas reguladas en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.5,
+    "why": "Sin exchanges listados ni liquidez, salida prácticamente imposible · Verificador: Imposibilidad técnica de venta por falta de liquidez.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo identificado ni auditorías de seguridad"
+   },
+   {
+    "code": "falta_de_transparencia",
+    "severity": "critica",
+    "detail": "Ausencia total de whitepaper, equipo y sitio web oficial."
+   },
+   {
+    "code": "riesgo_de_estafa",
+    "severity": "critica",
+    "detail": "Patrones típicos de 'pump and dump' con caída del 99%."
+   },
+   {
+    "code": "falta_de_regulacion",
+    "severity": "critica",
+    "detail": "No cumple con ninguna normativa MiCA ni supervisión de la CNMV."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El activo carece de entidad como proyecto financiero. Se trata de una memecoin sin infraestructura, sin emisor legal identificado y sin presencia en mercados regulados. La ficha original describe un activo sin liquidez y sin utilidad, lo cual es consistente con un esquema de alta especulación o estafa (rug pull). No existe registro en CNMV ni cumplimiento con MiCA."
+   }
+  ],
+  "distrust": [
+   "ausencia de información oficial",
+   "caída del 99 % del precio",
+   "asociación con un meme token sin fundamentos"
+  ],
+  "whyInteresting": [
+   "presencia de figuras públicas (Trump, Mayweather, Kevin O'Leary)",
+   "evento de cena que podría generar hype momentáneo"
+  ],
+  "howToParticipate": [
+   "No hay enlace de participación disponible; el token no está listado en exchanges públicos"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "pérdida total del valor del token",
+   "falta de liquidez para vender",
+   "posible intervención regulatoria"
+  ],
+  "earlySignals": [
+   "anuncio mediático del evento de cena",
+   "cobertura en The Block"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "El activo no está registrado en la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) de España. No cumple con los requisitos de transparencia de MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/ecosystems/2026-11-22-trump-to-host-second-memecoin-dinner-tonight-with-trump-down-99-from-peak-444828"
+   },
+   {
+    "title": "CNMV - Advertencias sobre criptoactivos",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "El activo carece de entidad como proyecto financiero. Se trata de una memecoin sin infraestructura, sin emisor legal identificado y sin presencia en mercados regulados. La ficha original describe un activo sin liquidez y sin utilidad, lo cual es consistente con un esquema de alta especulación o estafa (rug pull). No existe registro en CNMV ni cumplimiento con MiCA.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-trump-memecoin-dinner-token",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 9.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_transparencia",
+    "severity": "alta",
+    "detail": "No se dispone de sitio web oficial, equipo identificado ni auditorías de seguridad"
+   },
+   {
+    "code": "riesgo_de_estafa",
+    "severity": "critica",
+    "detail": "Patrones típicos de 'pump and dump' con caída del 99%."
+   },
+   {
+    "code": "falta_de_regulacion",
+    "severity": "critica",
+    "detail": "No cumple con ninguna normativa MiCA ni supervisión de la CNMV."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El activo carece de entidad como proyecto financiero. Se trata de una memecoin sin infraestructura, sin emisor legal identificado y sin presencia en mercados regulados. La ficha original describe un activo sin liquidez y sin utilidad, lo cual es consistente con un esquema de alta especulación o estafa (rug pull). No existe registro en CNMV ni cumplimiento con MiCA."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "El activo no está registrado en la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) de España. No cumple con los requisitos de transparencia de MiCA."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Token vinculado a una cena de celebridades, pero sin información técnica ni roadmap · Verificador: Es un activo especulativo sin valor tecnológico ni roadmap.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Caída del 99 % y ausencia de adopción real · Verificador: Caída del 99% y falta de fundamentos técnicos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Mercado de memecoins altamente volátil y sin liquidez conocida · Verificador: Inexistencia de liquidez en exchanges centralizados o descentralizados verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "No se identifican desarrolladores ni equipo detrás del token · Verificador: No existe equipo responsable ni entidad legal detrás del token.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.5,
+    "points": 0.3,
+    "why": "No hay datos de financiación ni respaldo institucional · Verificador: No hay datos de financiación institucional.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "Poca o nula comunidad visible; solo menciones mediáticas · Verificador: Comunidad basada exclusivamente en el hype mediático de celebridades.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "Sin casos de uso ni adopción fuera del evento promocional · Verificador: Cero casos de uso real.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Existen numerosos memecoins con mayor capitalización y comunidad · Verificador: Mercado saturado de memecoins sin valor.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Código y auditorías desconocidos; posible contrato malicioso · Verificador: Alta probabilidad de contrato malicioso o abandono total.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 0.5,
+    "points": 0.5,
+    "why": "Pérdida casi total del valor histórico; alta probabilidad de pérdida total · Verificador: Pérdida total del capital altamente probable.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "No hay información de regulaciones ni plataformas españolas que lo ofrezcan · Verificador: No disponible en plataformas reguladas en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.5,
+    "points": 0.4,
+    "why": "Sin exchanges listados ni liquidez, salida prácticamente imposible · Verificador: Imposibilidad técnica de venta por falta de liquidez.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Trump Memecoin Dinner Token\nCATEGORÍA: cripto · memecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Bajo, dado el fuerte descenso y la falta de fundamentos.\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo (evento próximo)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: presencia de figuras públicas (Trump, Mayweather, Kevin O'Leary); evento de cena que podría generar hype momentáneo\nMOTIVOS PARA DESCONFIAR: No se dispone de sitio web oficial, equipo identificado ni auditorías de seguridad; Patrones típicos de 'pump and dump' con caída del 99%.; No cumple con ninguna normativa MiCA ni supervisión de la CNMV.; El verificador no pudo confirmar que sea real: El activo carece de entidad como proyecto financiero. Se trata de una memecoin sin infraestructura, sin emisor legal identificado y sin presencia en mercados regulados. La ficha original describe un activo sin liquidez y sin utilidad, lo cual es consistente con un esquema de alta especulación o estafa (rug pull). No existe registro en CNMV ni cumplimiento con MiCA.; El activo no está registrado en la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) de España. No cumple con los requisitos de transparencia de MiCA.; ausencia de información oficial; caída del 99 % del precio; asociación con un meme token sin fundamentos\nCÓMO PARTICIPAR: No hay enlace de participación disponible; el token no está listado en exchanges públicos\nQUÉ PODRÍA HACERME PERDER EL DINERO: pérdida total del valor del token; falta de liquidez para vender; posible intervención regulatoria\nFUENTES: https://www.theblock.co/news/ecosystems/2026-11-22-trump-to-host-second-memecoin-dinner-tonight-with-trump-down-99-from-peak-444828 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-23T01:50:15Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-theblock-co-news-ecosystems-2026-11-22-trump-to-host-second-memecoin-dinner-tonig"
+  ]
+ },
+ {
   "name": "Trump $1 Coin",
   "category": "cripto",
   "subcategory": "memecoin",
@@ -31486,6 +32717,396 @@
   "runId": "run-20261121-1930",
   "aliases": [
    "tok-solana-2bcchqadi4qehwpkg3w13sicywwqpgkftnioutqvpump"
+  ]
+ },
+ {
+  "name": "Daymaker",
+  "category": "ia_tecnologia",
+  "subcategory": null,
+  "kind": "pasiva",
+  "description": "Daymaker es una herramienta que permite crear regalos personalizados para prospectos, con el objetivo de aumentar la tasa de aceptación de reuniones.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "desconocida",
+  "spainNotes": "No se dispone de información sobre disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión financiera para usar el producto",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión.",
+  "horizon": "n/a",
+  "deadline": null,
+  "potential": "Desconocido, depende de la adopción en ventas B2B.",
+  "difficulty": "baja",
+  "timeNeeded": "Poco, solo registro y uso del servicio.",
+  "subscores": {
+   "novedad": {
+    "v": 4.5,
+    "why": "Producto nuevo listado en Product Hunt · Verificador: Concepto de gifting B2B automatizado, pero sin producto funcional visible.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Sin datos de mercado o tracción · Verificador: Sin tracción, métricas o modelo de negocio claro. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 2.5,
+    "why": "No hay información de tamaño de mercado · Verificador: Mercado de SalesTech saturado, sin diferenciación clara.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.5,
+    "why": "No se dispone de información del equipo · Verificador: No hay perfiles de fundadores o empresa registrados.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.5,
+    "why": "No hay datos de rondas de financiación · Verificador: Sin rondas de inversión ni capital conocido.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.5,
+    "why": "No hay datos de comunidad · Verificador: Inexistente en redes sociales o foros profesionales.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 1.5,
+    "why": "No hay métricas de usuarios · Verificador: Sin usuarios activos ni casos de uso.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.5,
+    "why": "Existen varias soluciones de gifting corporativo · Verificador: Existen competidores establecidos (Sendoso, Reachdesk) con mayor solvencia.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Sin información técnica disponible · Verificador: La falta de acceso a la web sugiere un proyecto abandonado o inexistente. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "No hay inversión requerida · Verificador: Al no ser una inversión, el riesgo financiero es nulo, pero el riesgo de pérdida de tiempo es alto. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "No hay datos de disponibilidad en España · Verificador: Sin presencia ni adaptación legal al mercado español.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "No hay mecanismo de salida para inversores · Verificador: No aplica, no es un activo financiero.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o adopción."
+   },
+   {
+    "code": "falta_de_informacion",
+    "severity": "critica",
+    "detail": "El dominio oficial no resuelve (HTTP 403/404)."
+   },
+   {
+    "code": "ausencia_de_equipo",
+    "severity": "alta",
+    "detail": "No se puede identificar a los responsables del proyecto."
+   },
+   {
+    "code": "riesgo_phishing",
+    "severity": "media",
+    "detail": "La falta de una web oficial segura hace que cualquier interacción sea de alto riesgo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web verificable, equipo público, registro legal o información de contacto. La URL de Product Hunt no redirige a un sitio web funcional, lo que impide cualquier validación de seguridad o cumplimiento normativo."
+   }
+  ],
+  "distrust": [
+   "Falta de información verificable sobre el proyecto"
+  ],
+  "whyInteresting": [
+   "Idea de usar regalos personalizados para mejorar la tasa de aceptación de reuniones de ventas"
+  ],
+  "howToParticipate": [
+   "Registrarse en la página de Product Hunt para seguir el lanzamiento y probar la herramienta cuando esté disponible"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es una entidad financiera ni de inversión. No requiere registro en CNMV, pero carece de cualquier estructura legal verificable.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Product Hunt",
+    "url": "https://www.producthunt.com/products/daymaker"
+   }
+  ],
+  "discoveredVia": "Product Hunt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto carece de presencia web verificable, equipo público, registro legal o información de contacto. La URL de Product Hunt no redirige a un sitio web funcional, lo que impide cualquier validación de seguridad o cumplimiento normativo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "n-daymaker",
+  "isNew": true,
+  "score": 3,
+  "rawScore": 18.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "falta_de_informacion",
+    "severity": "alta",
+    "detail": "No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o adopción."
+   },
+   {
+    "code": "ausencia_de_equipo",
+    "severity": "alta",
+    "detail": "No se puede identificar a los responsables del proyecto."
+   },
+   {
+    "code": "riesgo_phishing",
+    "severity": "media",
+    "detail": "La falta de una web oficial segura hace que cualquier interacción sea de alto riesgo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto carece de presencia web verificable, equipo público, registro legal o información de contacto. La URL de Product Hunt no redirige a un sitio web funcional, lo que impide cualquier validación de seguridad o cumplimiento normativo."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 4.5,
+    "points": 3.6,
+    "why": "Producto nuevo listado en Product Hunt · Verificador: Concepto de gifting B2B automatizado, pero sin producto funcional visible.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Sin datos de mercado o tracción · Verificador: Sin tracción, métricas o modelo de negocio claro. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "No hay información de tamaño de mercado · Verificador: Mercado de SalesTech saturado, sin diferenciación clara.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No se dispone de información del equipo · Verificador: No hay perfiles de fundadores o empresa registrados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de rondas de financiación · Verificador: Sin rondas de inversión ni capital conocido.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.5,
+    "points": 1.1,
+    "why": "No hay datos de comunidad · Verificador: Inexistente en redes sociales o foros profesionales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.5,
+    "points": 1.4,
+    "why": "No hay métricas de usuarios · Verificador: Sin usuarios activos ni casos de uso.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.5,
+    "points": 1.2,
+    "why": "Existen varias soluciones de gifting corporativo · Verificador: Existen competidores establecidos (Sendoso, Reachdesk) con mayor solvencia.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Sin información técnica disponible · Verificador: La falta de acceso a la web sugiere un proyecto abandonado o inexistente. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No hay inversión requerida · Verificador: Al no ser una inversión, el riesgo financiero es nulo, pero el riesgo de pérdida de tiempo es alto. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay datos de disponibilidad en España · Verificador: Sin presencia ni adaptación legal al mercado español.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay mecanismo de salida para inversores · Verificador: No aplica, no es un activo financiero.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Daymaker\nCATEGORÍA: ia_tecnologia · None\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: desconocida\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Desconocido, depende de la adopción en ventas B2B.\nPUNTUACIÓN: 3/100 · Descartar\nRIESGO: medio\nPLAZO: n/a\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Idea de usar regalos personalizados para mejorar la tasa de aceptación de reuniones de ventas\nMOTIVOS PARA DESCONFIAR: No se pudo acceder a la web oficial (HTTP 403) y no hay datos públicos sobre equipo, financiación o adopción.; No se puede identificar a los responsables del proyecto.; La falta de una web oficial segura hace que cualquier interacción sea de alto riesgo.; El verificador tiene dudas: El proyecto carece de presencia web verificable, equipo público, registro legal o información de contacto. La URL de Product Hunt no redirige a un sitio web funcional, lo que impide cualquier validación de seguridad o cumplimiento normativo.; Falta de información verificable sobre el proyecto\nCÓMO PARTICIPAR: Registrarse en la página de Product Hunt para seguir el lanzamiento y probar la herramienta cuando esté disponible\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://www.producthunt.com/products/daymaker",
+  "firstSeenAt": "2026-11-23T01:50:15Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-producthunt-com-products-daymaker"
   ]
  },
  {
@@ -32925,6 +34546,440 @@
   ]
  },
  {
+  "name": "Chainflip Bounty por robo de 122.9 BTC",
+  "category": "cripto",
+  "subcategory": "bounty",
+  "kind": "activa",
+  "description": "Chainflip ha anunciado un bounty del 10 % para quien devuelva los fondos robados tras el hurto de 122.9 BTC, ETH y stablecoins. La recompensa está disponible hasta el lunes siguiente al anuncio.",
+  "officialUrl": "https://chainflip.io/",
+  "participateUrl": null,
+  "country": "internacional",
+  "spainAvailability": "no_aplica",
+  "spainNotes": "No se ha encontrado información sobre elegibilidad específica para residentes en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión financiera, pero sí conocimientos técnicos avanzados.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, la participación consiste en la devolución de fondos y la solicitud de la recompensa.",
+  "horizon": "corto",
+  "deadline": "2026-11-23",
+  "potential": "alto pero incierto",
+  "difficulty": "alta",
+  "timeNeeded": "varios días a semanas, según la capacidad técnica del participante",
+  "subscores": {
+   "novedad": {
+    "v": 7.5,
+    "why": "Oferta de bounty del 10 % tras un gran robo · Verificador: Evento de seguridad reciente y de alto impacto en el ecosistema DeFi.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 1.0,
+    "why": "Recompensa monetaria significativa si se logra la devolución · Verificador: La probabilidad de éxito para un tercero es prácticamente nula; es una negociación entre el protocolo y el atacante. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 1.0,
+    "why": "No hay mercado asociado, solo un programa de recompensa · Verificador: No existe mercado, es una medida de mitigación de daños.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo que gestiona el bounty · Verificador: Chainflip es un protocolo conocido, pero la gestión de este bounty es opaca. · Discrepancia entre modelos (0 vs 5): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se ha divulgado financiación del programa más allá de la propia recompensa · Verificador: No es una inversión, es una pérdida operativa.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Escasa información sobre la comunidad que respalda la iniciativa · Verificador: La comunidad está en alerta por el impacto en la liquidez del protocolo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No hay adopción de producto, es un evento puntual · Verificador: El evento afecta negativamente la adopción del protocolo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "No se identifican competidores directos en este bounty · Verificador: No aplica.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 9.0,
+    "why": "Requiere habilidades avanzadas de recuperación y posible interacción con fondos comprometidos · Verificador: Requiere habilidades de ciberseguridad forense y negociación con actores maliciosos.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No implica inversión de capital propio · Verificador: Riesgo legal extremo al interactuar con fondos robados (posible blanqueo de capitales).",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Desconocido si la oferta es válida para residentes españoles · Verificador: No es un servicio financiero regulado ni accesible.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay mecanismo de salida financiero más allá de la recompensa · Verificador: No hay mecanismo de salida.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "bounty_alto_requerimiento_tecnico",
+    "severity": "alta",
+    "detail": "La recompensa exige habilidades de hacking y recuperación de fondos, lo que implica alto riesgo legal y técnico."
+   },
+   {
+    "code": "informacion_oficial_limitada",
+    "severity": "media",
+    "detail": "La página oficial no es accesible (HTTP 403) y la información proviene de terceros."
+   },
+   {
+    "code": "riesgo_legal_extremo",
+    "severity": "critica",
+    "detail": "Intentar recuperar fondos robados sin autorización legal puede ser interpretado como complicidad o blanqueo de capitales bajo la normativa española (Código Penal)."
+   },
+   {
+    "code": "falta_de_canal_oficial",
+    "severity": "alta",
+    "detail": "No existe una plataforma oficial para participar; el bounty es una comunicación directa al atacante."
+   },
+   {
+    "code": "imposibilidad_de_ejecucion",
+    "severity": "alta",
+    "detail": "El bounty está dirigido al atacante, no al público general."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque el evento del robo es real y reportado por medios especializados, la naturaleza de un 'bounty' para un hacker es una negociación privada y no un producto financiero o inversión abierta al público. La falta de canales oficiales verificables y el riesgo legal extremo para cualquier participante hacen que esta oportunidad no sea apta para inversores minoristas."
+   }
+  ],
+  "distrust": [
+   "falta de información oficial verificable",
+   "incertidumbre sobre la elegibilidad de residentes en España"
+  ],
+  "whyInteresting": [
+   "potencial de recompensa económica significativa",
+   "evento reciente que genera atención en el ecosistema cripto"
+  ],
+  "howToParticipate": [
+   "Revisar los términos del bounty en la página oficial de Chainflip (si se habilita el acceso)",
+   "Preparar herramientas de análisis y rastreo de blockchain",
+   "Intentar identificar y devolver los fondos robados al protocolo",
+   "Presentar evidencia conforme a los requisitos para reclamar el 10 % antes del 2026-11-28"
+  ],
+  "lossCauses": [
+   "no cumplir los requisitos del bounty",
+   "ser detectado y sancionado por actividades ilegales",
+   "no lograr la devolución de fondos"
+  ],
+  "earlySignals": [
+   "anuncio del bounty en The Block",
+   "publicación de la pérdida de 122.9 BTC"
+  ],
+  "signals": {
+   "bountyOffered": 1
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un producto financiero. La CNMV no regula programas de recompensas por recuperación de activos robados. La participación privada en este tipo de eventos conlleva riesgos legales graves.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-22-chainflips-losses-climb-to-12-million-after-protocol-discloses-122-9-btc-theft-offers-hacker-bounty-444829"
+   }
+  ],
+  "discoveredVia": "The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "Aunque el evento del robo es real y reportado por medios especializados, la naturaleza de un 'bounty' para un hacker es una negociación privada y no un producto financiero o inversión abierta al público. La falta de canales oficiales verificables y el riesgo legal extremo para cualquier participante hacen que esta oportunidad no sea apta para inversores minoristas.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "web-chainflip-io",
+  "isNew": false,
+  "score": 1,
+  "rawScore": 20.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "bounty_alto_requerimiento_tecnico",
+    "severity": "alta",
+    "detail": "La recompensa exige habilidades de hacking y recuperación de fondos, lo que implica alto riesgo legal y técnico."
+   },
+   {
+    "code": "informacion_oficial_limitada",
+    "severity": "media",
+    "detail": "La página oficial no es accesible (HTTP 403) y la información proviene de terceros."
+   },
+   {
+    "code": "riesgo_legal_extremo",
+    "severity": "critica",
+    "detail": "Intentar recuperar fondos robados sin autorización legal puede ser interpretado como complicidad o blanqueo de capitales bajo la normativa española (Código Penal)."
+   },
+   {
+    "code": "falta_de_canal_oficial",
+    "severity": "alta",
+    "detail": "No existe una plataforma oficial para participar; el bounty es una comunicación directa al atacante."
+   },
+   {
+    "code": "imposibilidad_de_ejecucion",
+    "severity": "alta",
+    "detail": "El bounty está dirigido al atacante, no al público general."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque el evento del robo es real y reportado por medios especializados, la naturaleza de un 'bounty' para un hacker es una negociación privada y no un producto financiero o inversión abierta al público. La falta de canales oficiales verificables y el riesgo legal extremo para cualquier participante hacen que esta oportunidad no sea apta para inversores minoristas."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Oferta de bounty del 10 % tras un gran robo · Verificador: Evento de seguridad reciente y de alto impacto en el ecosistema DeFi.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 1.0,
+    "points": 1.2,
+    "why": "Recompensa monetaria significativa si se logra la devolución · Verificador: La probabilidad de éxito para un tercero es prácticamente nula; es una negociación entre el protocolo y el atacante. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mercado asociado, solo un programa de recompensa · Verificador: No existe mercado, es una medida de mitigación de daños.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo que gestiona el bounty · Verificador: Chainflip es un protocolo conocido, pero la gestión de este bounty es opaca. · Discrepancia entre modelos (0 vs 5): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se ha divulgado financiación del programa más allá de la propia recompensa · Verificador: No es una inversión, es una pérdida operativa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Escasa información sobre la comunidad que respalda la iniciativa · Verificador: La comunidad está en alerta por el impacto en la liquidez del protocolo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay adopción de producto, es un evento puntual · Verificador: El evento afecta negativamente la adopción del protocolo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se identifican competidores directos en este bounty · Verificador: No aplica.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Requiere habilidades avanzadas de recuperación y posible interacción con fondos comprometidos · Verificador: Requiere habilidades de ciberseguridad forense y negociación con actores maliciosos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.5,
+    "points": 9.5,
+    "why": "No implica inversión de capital propio · Verificador: Riesgo legal extremo al interactuar con fondos robados (posible blanqueo de capitales).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Desconocido si la oferta es válida para residentes españoles · Verificador: No es un servicio financiero regulado ni accesible.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida financiero más allá de la recompensa · Verificador: No hay mecanismo de salida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {},
+   "label": "Estable",
+   "since": "2026-11-22T19:51:12Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-21T15:43:17Z",
+    "priceDropPercent": -34.0
+   },
+   {
+    "t": "2026-11-22T19:51:12Z",
+    "priceDropPercent": -34.0
+   },
+   {
+    "t": "2026-11-23T01:50:15Z",
+    "bountyOffered": 1.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": -1.8,
+  "alertText": "NOMBRE: Chainflip Bounty por robo de 122.9 BTC\nCATEGORÍA: cripto · bounty\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://chainflip.io/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: internacional\nDISPONIBILIDAD EN ESPAÑA: no_aplica\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto pero incierto\nPUNTUACIÓN: 1/100 · Descartar\nRIESGO: crítico\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: potencial de recompensa económica significativa; evento reciente que genera atención en el ecosistema cripto\nMOTIVOS PARA DESCONFIAR: La recompensa exige habilidades de hacking y recuperación de fondos, lo que implica alto riesgo legal y técnico.; La página oficial no es accesible (HTTP 403) y la información proviene de terceros.; Intentar recuperar fondos robados sin autorización legal puede ser interpretado como complicidad o blanqueo de capitales bajo la normativa española (Código Penal).; No existe una plataforma oficial para participar; el bounty es una comunicación directa al atacante.; El bounty está dirigido al atacante, no al público general.; El verificador tiene dudas: Aunque el evento del robo es real y reportado por medios especializados, la naturaleza de un 'bounty' para un hacker es una negociación privada y no un producto financiero o inversión abierta al público. La falta de canales oficiales verificables y el riesgo legal extremo para cualquier participante hacen que esta oportunidad no sea apta para inversores minoristas.; falta de información oficial verificable; incertidumbre sobre la elegibilidad de residentes en España\nCÓMO PARTICIPAR: Revisar los términos del bounty en la página oficial de Chainflip (si se habilita el acceso); Preparar herramientas de análisis y rastreo de blockchain; Intentar identificar y devolver los fondos robados al protocolo; Presentar evidencia conforme a los requisitos para reclamar el 10 % antes del 2026-11-28\nQUÉ PODRÍA HACERME PERDER EL DINERO: no cumplir los requisitos del bounty; ser detectado y sancionado por actividades ilegales; no lograr la devolución de fondos\nFUENTES: https://www.theblock.co/news/defi/2026-11-22-chainflips-losses-climb-to-12-million-after-protocol-discloses-122-9-btc-theft-offers-hacker-bounty-444829",
+  "firstSeenAt": "2026-11-21T15:43:17Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "news-www-theblock-co-news-defi-2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4",
+   "news-www-theblock-co-news-defi-2026-11-22-chainflips-losses-climb-to-12-million-after-prot"
+  ],
+  "actionable": false,
+  "profitPath": ""
+ },
+ {
   "name": "CASHCAT / WETH 0.3% Liquidity Pool",
   "category": "cripto",
   "subcategory": "liquidity_pool",
@@ -33427,467 +35482,6 @@
   ],
   "actionable": false,
   "profitPath": ""
- },
- {
-  "name": "Chainflip (FLIP)",
-  "category": "cripto",
-  "subcategory": "token",
-  "kind": "activa",
-  "description": "El token FLIP de Chainflip sufrió una caída del 34% tras un ataque que drenó 4,86 M $ de su vault, indicando una vulnerabilidad crítica. La falta de información sobre el equipo y la ausencia de regulación en España aumentan la incertidumbre. La liquidez es baja y el riesgo técnico y financiero es muy alto.",
-  "officialUrl": "https://chainflip.io",
-  "participateUrl": "https://chainflip.io",
-  "country": "Descentralizado",
-  "spainAvailability": "no",
-  "spainNotes": "No regulado; no figura en registros de la CNMV ni cumple con MiCA en España.",
-  "costs": {
-   "minEntry": null,
-   "extra": null,
-   "extraNotes": "No hay datos sobre comisiones o requisitos de staking; la inversión mínima dependerá del precio del token en el exchange.",
-   "recommended": 2000,
-   "max": null
-  },
-  "canLoseAll": true,
-  "liquidity": "baja",
-  "exitNotes": "Sin datos claros sobre mercados secundarios; la venta podría verse limitada por la baja confianza tras el hack.",
-  "horizon": "corto plazo",
-  "deadline": null,
-  "potential": "desconocido",
-  "difficulty": "alta",
-  "timeNeeded": "desconocido",
-  "subscores": {
-   "novedad": {
-    "v": 3.0,
-    "why": "El ataque y la caída del precio son eventos recientes y poco comunes en el sector. · Verificador: El hackeo es un evento reciente y de alto impacto en el ecosistema DeFi. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
-    "evidence": false
-   },
-   "potencial": {
-    "v": 1.2,
-    "why": "No hay indicios de crecimiento orgánico; el token está bajo presión negativa. · Verificador: La confianza del mercado está severamente dañada tras el compromiso de claves.",
-    "evidence": false
-   },
-   "mercado": {
-    "v": 2.8,
-    "why": "El mercado cripto es amplio, pero el token FLIP tiene baja capitalización y poca liquidez conocida. · Verificador: La liquidez se ha visto afectada negativamente por la salida masiva de capital tras el exploit.",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 2.0,
-    "why": "Sin información disponible sobre el equipo en la fuente proporcionada. · Verificador: Aunque el proyecto tiene presencia pública, la gestión de la seguridad ha sido deficiente.",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 3.5,
-    "why": "No se citan rondas de financiación ni fondos de inversión en la fuente. · Verificador: El proyecto ha recibido capital de riesgo, pero la pérdida de fondos del vault cuestiona la solvencia técnica.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 2.5,
-    "why": "No se dispone de datos sobre la comunidad o actividad en redes sociales. · Verificador: Sentimiento negativo predominante en redes sociales tras el incidente.",
-    "evidence": false
-   },
-   "adopcion": {
-    "v": 2.2,
-    "why": "El ataque sugiere una adopción limitada y problemas operativos. · Verificador: El incidente de seguridad frena cualquier adopción institucional o minorista a corto plazo.",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 4.8,
-    "why": "Existen varios protocolos de intercambio descentralizado; FLIP no destaca claramente. · Verificador: Existen alternativas más seguras en el sector de puentes cross-chain.",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 0.8,
-    "why": "Compromiso de claves y vulnerabilidad que permitió el robo de 4,86 M $; evidencia directa del riesgo técnico. · Verificador: Compromiso de claves privadas confirmado; vulnerabilidad crítica en el vault.",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 1.0,
-    "why": "Pérdida del 34% del valor del token y posible pérdida total por hack; alto riesgo financiero. · Verificador: Pérdida directa de fondos y alta volatilidad; riesgo de pérdida total del capital.",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 1.5,
-    "why": "Sin información sobre disponibilidad o cumplimiento regulatorio en España. · Verificador: No cumple con MiCA ni está registrado en la CNMV.",
-    "evidence": false
-   },
-   "salida": {
-    "v": 2.2,
-    "why": "Liquidez limitada y posible restricción de exchanges tras el incidente. · Verificador: La liquidez en mercados secundarios puede ser insuficiente ante ventas de pánico.",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "security_breach",
-    "severity": "critica",
-    "detail": "Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves."
-   },
-   {
-    "code": "price_drop_34pct",
-    "severity": "alta",
-    "detail": "Caída del 34 % del precio del token tras el ataque."
-   },
-   {
-    "code": "unregulated",
-    "severity": "alta",
-    "detail": "No figura en registros de la CNMV ni cumple con MiCA en España."
-   },
-   {
-    "code": "price_volatility",
-    "severity": "alta",
-    "detail": "Caída del 34% tras el incidente de seguridad."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca."
-   },
-   {
-    "code": "security_breach",
-    "severity": "critica",
-    "detail": "Hackeo confirmado con drenaje de 12 millones de dólares por compromiso de claves."
-   },
-   {
-    "code": "unregulated",
-    "severity": "alta",
-    "detail": "No registrado en la CNMV ni cumple con el reglamento MiCA en España."
-   },
-   {
-    "code": "high_volatility",
-    "severity": "alta",
-    "detail": "Caída del 34% tras el incidente, indicando inestabilidad extrema."
-   },
-   {
-    "code": "operational_risk",
-    "severity": "alta",
-    "detail": "La arquitectura de seguridad del vault ha demostrado ser vulnerable."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico confirmado (hackeo de 12 millones de dólares, superior a los 4,86 millones citados inicialmente). La falta de transparencia operativa y la ausencia de registro en la CNMV lo convierten en un activo de altísimo riesgo no apto para inversores minoristas en España."
-   }
-  ],
-  "distrust": [
-   "seguridad del protocolo",
-   "confianza de la comunidad"
-  ],
-  "whyInteresting": [
-   "alta volatilidad que podría generar oportunidades de trading a corto plazo",
-   "evento reciente que permite observar la reacción del mercado"
-  ],
-  "howToParticipate": [
-   "1. Verificar que el token FLIP cotiza en un exchange fiable (p.ej., Binance, KuCoin).",
-   "2. Crear una cuenta y completar KYC si es necesario.",
-   "3. Depositar euros y comprar FLIP al precio de mercado.",
-   "4. Guardar los tokens en una wallet segura, preferiblemente hardware, para mitigar riesgos de custodia."
-  ],
-  "lossCauses": [
-   "hack del vault",
-   "compromiso de claves privadas",
-   "baja liquidez que impida venta rápida",
-   "posibles restricciones regulatorias en España"
-  ],
-  "earlySignals": [
-   "caída del 34 % del precio",
-   "anuncio de ataque en medios especializados",
-   "disminución de la actividad en redes sociales del proyecto"
-  ],
-  "signals": {
-   "priceDropPercent": -34
-  },
-  "regulatory": {
-   "checked": true,
-   "status": "no_autorizada",
-   "notes": "No figura en el registro de proveedores de servicios de activos virtuales (VASP) de la CNMV ni cuenta con autorización para operar servicios financieros en España.",
-   "sources": [
-    "https://www.cnmv.es"
-   ]
-  },
-  "sources": [
-   {
-    "title": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
-   }
-  ],
-  "discoveredVia": "The Block",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "dudosa",
-   "reason": "El proyecto ha sufrido un incidente de seguridad crítico confirmado (hackeo de 12 millones de dólares, superior a los 4,86 millones citados inicialmente). La falta de transparencia operativa y la ausencia de registro en la CNMV lo convierten en un activo de altísimo riesgo no apto para inversores minoristas en España.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 92
-  },
-  "discoveredAt": "2026-11-22",
-  "id": "web-chainflip-io",
-  "isNew": false,
-  "score": 0,
-  "rawScore": 20.0,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-20 por 6 riesgo(s) alto(s)"
-  ],
-  "critical": true,
-  "risk": "crítico",
-  "flags": [
-   {
-    "code": "security_breach",
-    "severity": "critica",
-    "detail": "Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves."
-   },
-   {
-    "code": "price_drop_34pct",
-    "severity": "alta",
-    "detail": "Caída del 34 % del precio del token tras el ataque."
-   },
-   {
-    "code": "unregulated",
-    "severity": "alta",
-    "detail": "No figura en registros de la CNMV ni cumple con MiCA en España."
-   },
-   {
-    "code": "price_volatility",
-    "severity": "alta",
-    "detail": "Caída del 34% tras el incidente de seguridad."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca."
-   },
-   {
-    "code": "high_volatility",
-    "severity": "alta",
-    "detail": "Caída del 34% tras el incidente, indicando inestabilidad extrema."
-   },
-   {
-    "code": "operational_risk",
-    "severity": "alta",
-    "detail": "La arquitectura de seguridad del vault ha demostrado ser vulnerable."
-   },
-   {
-    "code": "regulatorio",
-    "severity": "critica",
-    "detail": "No figura en el registro de proveedores de servicios de activos virtuales (VASP) de la CNMV ni cuenta con autorización para operar servicios financieros en España."
-   }
-  ],
-  "evidenced": 2,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "El ataque y la caída del precio son eventos recientes y poco comunes en el sector. · Verificador: El hackeo es un evento reciente y de alto impacto en el ecosistema DeFi. · Discrepancia entre modelos (3 vs 8): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 1.2,
-    "points": 1.4,
-    "why": "No hay indicios de crecimiento orgánico; el token está bajo presión negativa. · Verificador: La confianza del mercado está severamente dañada tras el compromiso de claves.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 2.8,
-    "points": 2.2,
-    "why": "El mercado cripto es amplio, pero el token FLIP tiene baja capitalización y poca liquidez conocida. · Verificador: La liquidez se ha visto afectada negativamente por la salida masiva de capital tras el exploit.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 2.0,
-    "points": 2.0,
-    "why": "Sin información disponible sobre el equipo en la fuente proporcionada. · Verificador: Aunque el proyecto tiene presencia pública, la gestión de la seguridad ha sido deficiente.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "No se citan rondas de financiación ni fondos de inversión en la fuente. · Verificador: El proyecto ha recibido capital de riesgo, pero la pérdida de fondos del vault cuestiona la solvencia técnica.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 2.5,
-    "points": 1.8,
-    "why": "No se dispone de datos sobre la comunidad o actividad en redes sociales. · Verificador: Sentimiento negativo predominante en redes sociales tras el incidente.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 2.2,
-    "points": 2.0,
-    "why": "El ataque sugiere una adopción limitada y problemas operativos. · Verificador: El incidente de seguridad frena cualquier adopción institucional o minorista a corto plazo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Existen varios protocolos de intercambio descentralizado; FLIP no destaca claramente. · Verificador: Existen alternativas más seguras en el sector de puentes cross-chain.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 0.8,
-    "points": 0.6,
-    "why": "Compromiso de claves y vulnerabilidad que permitió el robo de 4,86 M $; evidencia directa del riesgo técnico. · Verificador: Compromiso de claves privadas confirmado; vulnerabilidad crítica en el vault.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 1.0,
-    "points": 1.0,
-    "why": "Pérdida del 34% del valor del token y posible pérdida total por hack; alto riesgo financiero. · Verificador: Pérdida directa de fondos y alta volatilidad; riesgo de pérdida total del capital.",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 1.5,
-    "points": 1.2,
-    "why": "Sin información sobre disponibilidad o cumplimiento regulatorio en España. · Verificador: No cumple con MiCA ni está registrado en la CNMV.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 2.2,
-    "points": 1.8,
-    "why": "Liquidez limitada y posible restricción de exchanges tras el incidente. · Verificador: La liquidez en mercados secundarios puede ser insuficiente ante ventas de pánico.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 2000.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": -2000.0,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 4000.0,
-     "netEur": 3960.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 10000.0,
-     "netEur": 9900.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 20000.0,
-     "netEur": 19800.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 40000.0,
-     "netEur": 39600.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 100000.0,
-     "netEur": 99000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 200000.0,
-     "netEur": 198000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 600000.0,
-     "netEur": 594000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": true,
-   "changes": {},
-   "label": "Estable",
-   "since": "2026-11-21T15:43:17Z"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-21T15:43:17Z",
-    "priceDropPercent": -34.0
-   },
-   {
-    "t": "2026-11-22T19:51:12Z",
-    "priceDropPercent": -34.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Chainflip (FLIP)\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-22\nWEB OFICIAL: https://chainflip.io\nENLACE DE PARTICIPACIÓN: https://chainflip.io\nPAÍS: Descentralizado\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: desconocido\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: alta volatilidad que podría generar oportunidades de trading a corto plazo; evento reciente que permite observar la reacción del mercado\nMOTIVOS PARA DESCONFIAR: Ataque que drenó 4,86 M $ del vault, presumible compromiso de claves.; Caída del 34 % del precio del token tras el ataque.; No figura en registros de la CNMV ni cumple con MiCA en España.; Caída del 34% tras el incidente de seguridad.; El verificador tiene dudas: El proyecto ha sufrido un incidente de seguridad crítico (hackeo de 4,86 M$) que compromete la integridad del protocolo. No existe registro en la CNMV ni en el registro MiCA de ESMA para Chainflip como entidad regulada en España. La información sobre el equipo y la estructura legal es opaca.; Caída del 34% tras el incidente, indicando inestabilidad extrema.; La arquitectura de seguridad del vault ha demostrado ser vulnerable.; No figura en el registro de proveedores de servicios de activos virtuales (VASP) de la CNMV ni cuenta con autorización para operar servicios financieros en España.; seguridad del protocolo; confianza de la comunidad\nCÓMO PARTICIPAR: 1. Verificar que el token FLIP cotiza en un exchange fiable (p.ej., Binance, KuCoin).; 2. Crear una cuenta y completar KYC si es necesario.; 3. Depositar euros y comprar FLIP al precio de mercado.; 4. Guardar los tokens en una wallet segura, preferiblemente hardware, para mitigar riesgos de custodia.\nQUÉ PODRÍA HACERME PERDER EL DINERO: hack del vault; compromiso de claves privadas; baja liquidez que impida venta rápida; posibles restricciones regulatorias en España\nFUENTES: https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804",
-  "firstSeenAt": "2026-11-21T15:43:17Z",
-  "lastSeenAt": "2026-11-22T19:51:12Z",
-  "runId": "run-20261122-1951",
-  "aliases": [
-   "news-www-theblock-co-news-defi-2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4"
-  ],
-  "actionable": true,
-  "profitPath": "Comprar FLIP a precio bajo y vender cuando recupere su valor tras la resolución del hack."
  },
  {
   "name": "CYBER",
@@ -36015,6 +37609,468 @@
   "runId": "run-20261122-0852",
   "aliases": [
    "news-www-producthunt-com-products-webless"
+  ]
+ },
+ {
+  "name": "Claudia",
+  "category": "cripto",
+  "subcategory": "DeFi",
+  "kind": "pasiva",
+  "description": "Claudia es un token ERC‑20 listado en un pool ETH/CLAUDIA en GeckoTerminal. Su precio es muy bajo (≈0,0017 USD) y muestra un volumen de trading elevado en 24 h. No hay información oficial disponible y su equipo es desconocido, lo que eleva el riesgo.",
+  "officialUrl": "desconocido",
+  "participateUrl": "https://www.geckoterminal.com/eth/pools/0xc745bafe87aa0dac53f21e94a62f9d4e40e9f5f7de607976cf535f3ce704aef0",
+  "country": "desconocido",
+  "spainAvailability": "no_recomendado",
+  "spainNotes": "Token sin información clara; posible restricción regulatoria en España",
+  "costs": {
+   "minEntry": 10,
+   "extra": 0,
+   "extraNotes": "Sin costes adicionales más allá del gas y posible slippage",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Puede venderse en el mismo pool, pero el bajo nivel de liquidez y el slippage pueden reducir ganancias",
+  "horizon": "corto‑medio",
+  "deadline": null,
+  "potential": "alto potencial especulativo pero con gran incertidumbre",
+  "difficulty": "baja",
+  "timeNeeded": "monitorizar precios y ejecutar swaps cuando haya señales de alza",
+  "subscores": {
+   "novedad": {
+    "v": 4.0,
+    "why": "Token poco conocido y sin información oficial · Verificador: Token lanzado hace menos de 30 horas. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Precio bajo y alto volumen 24 h indican posible upside · Verificador: Alta probabilidad de pérdida total del capital. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "FDV 1,74 M USD, liquidez 108 k USD, volumen 24 h 928 k USD · Verificador: Liquidez baja y alta dependencia de volumen especulativo.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de datos sobre el equipo · Verificador: Equipo anónimo sin rastro público.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay información pública sobre rondas de financiación · Verificador: Sin rondas de financiación institucionales.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.5,
+    "why": "618 holders registrados en la blockchain · Verificador: Comunidad incipiente y puramente especulativa.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 1.0,
+    "why": "Escasa información de integraciones o usos reales · Verificador: Sin casos de uso reales identificados.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "No se identifican competidores directos en la información disponible · Verificador: No aplica en este tipo de activos especulativos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 1.0,
+    "why": "Smart contract sin auditoría pública conocida · Verificador: Contrato sin auditoría; riesgo de funciones maliciosas. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.0,
+    "why": "Alta volatilidad y posible rug‑pull · Verificador: Riesgo extremo de pérdida total por volatilidad y falta de liquidez. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "Falta de claridad regulatoria y ausencia de información oficial en español · Verificador: No cumple con requisitos MiCA para comercialización en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.0,
+    "why": "Posibilidad de venta en el pool, pero con riesgo de slippage · Verificador: Dependencia total de la liquidez del pool en DEX.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_de_informacion_oficial",
+    "severity": "alta",
+    "detail": "El sitio web oficial no es accesible (HTTP 403) y no hay datos de equipo ni auditorías"
+   },
+   {
+    "code": "ausencia_de_informacion_oficial",
+    "severity": "critica",
+    "detail": "No existe sitio web, whitepaper ni equipo responsable."
+   },
+   {
+    "code": "riesgo_de_rug_pull",
+    "severity": "critica",
+    "detail": "Token sin auditoría, liquidez bloqueada no verificada y anonimato total."
+   },
+   {
+    "code": "falta_de_cumplimiento_mica",
+    "severity": "alta",
+    "detail": "El activo no cuenta con un whitepaper registrado ni emisor legalmente constituido en la UE."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin presencia web, equipo identificado ni auditorías. Presenta características típicas de alta volatilidad y riesgo de estafa (rug-pull). No existe registro oficial ni cumplimiento normativo bajo MiCA."
+   }
+  ],
+  "distrust": [
+   "ausencia de página oficial accesible",
+   "sin auditoría de contrato conocida",
+   "equipo desconocido"
+  ],
+  "whyInteresting": [
+   "precio extremadamente bajo",
+   "alto volumen de trading 24 h",
+   "potencial de revalorización si gana adopción"
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.).",
+   "2. Comprar ETH suficiente para cubrir la inversión y el gas.",
+   "3. Conectar la wallet a la URL del pool en GeckoTerminal.",
+   "4. Intercambiar ETH por tokens CLAUDIA mediante el pool.",
+   "5. Guardar los tokens en la wallet y monitorizar el mercado"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar CLAUDIA a bajo precio y vender cuando el precio suba, obteniendo ganancia por la diferencia",
+  "lossCauses": [
+   "caída del precio del token",
+   "rug‑pull o vulnerabilidad del contrato",
+   "restricciones regulatorias en España",
+   "slippage elevado al vender"
+  ],
+  "earlySignals": [
+   "volumen 24 h superior a 900 k USD",
+   "incremento de holders en las últimas 24 h"
+  ],
+  "signals": {
+   "volume24hUsd": 928881.147315394
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No figura en los registros de la CNMV ni en el registro de proveedores de servicios de activos virtuales (PSAV). No cumple con los requisitos de transparencia de MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "market": {
+   "chain": "eth",
+   "tokenAddress": "0xc6acf921fd47757230a05d6d05b686479cdfc87c",
+   "priceUsd": 0.00173973440528961,
+   "liquidityUsd": 107927.1956,
+   "volume24hUsd": 928881.147315394,
+   "fdvUsd": 1739734.405,
+   "ageHours": 25.5,
+   "buys24h": 1474,
+   "sells24h": 800,
+   "pairUrl": "https://www.geckoterminal.com/eth/pools/0xc745bafe87aa0dac53f21e94a62f9d4e40e9f5f7de607976cf535f3ce704aef0",
+   "top10Pct": 12.9,
+   "holders": 618
+  },
+  "securityChecks": [
+   {
+    "tool": "GoPlus",
+    "url": "https://gopluslabs.io/token-security/1/0xc6acf921fd47757230a05d6d05b686479cdfc87c"
+   },
+   {
+    "tool": "honeypot.is",
+    "error": "HTTP 404"
+   }
+  ],
+  "sources": [
+   {
+    "title": "Par en DEX",
+    "url": "https://www.geckoterminal.com/eth/pools/0xc745bafe87aa0dac53f21e94a62f9d4e40e9f5f7de607976cf535f3ce704aef0"
+   },
+   {
+    "title": "CNMV Registro",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "GeckoTerminal",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El activo es un token de muy reciente creación (memecoin) sin presencia web, equipo identificado ni auditorías. Presenta características típicas de alta volatilidad y riesgo de estafa (rug-pull). No existe registro oficial ni cumplimiento normativo bajo MiCA.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 67
+  },
+  "discoveredAt": "2026-11-23",
+  "id": "tok-eth-0xc6acf921fd47757230a05d6d05b686479cdfc87c",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 17.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_de_informacion_oficial",
+    "severity": "alta",
+    "detail": "El sitio web oficial no es accesible (HTTP 403) y no hay datos de equipo ni auditorías"
+   },
+   {
+    "code": "ausencia_de_informacion_oficial",
+    "severity": "critica",
+    "detail": "No existe sitio web, whitepaper ni equipo responsable."
+   },
+   {
+    "code": "riesgo_de_rug_pull",
+    "severity": "critica",
+    "detail": "Token sin auditoría, liquidez bloqueada no verificada y anonimato total."
+   },
+   {
+    "code": "falta_de_cumplimiento_mica",
+    "severity": "alta",
+    "detail": "El activo no cuenta con un whitepaper registrado ni emisor legalmente constituido en la UE."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin presencia web, equipo identificado ni auditorías. Presenta características típicas de alta volatilidad y riesgo de estafa (rug-pull). No existe registro oficial ni cumplimiento normativo bajo MiCA."
+   },
+   {
+    "code": "posible_wash_trading",
+    "severity": "alta",
+    "detail": "Volumen 24 h 9 veces la liquidez: posible volumen artificial."
+   }
+  ],
+  "evidenced": 3,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token poco conocido y sin información oficial · Verificador: Token lanzado hace menos de 30 horas. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Precio bajo y alto volumen 24 h indican posible upside · Verificador: Alta probabilidad de pérdida total del capital. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "FDV 1,74 M USD, liquidez 108 k USD, volumen 24 h 928 k USD · Verificador: Liquidez baja y alta dependencia de volumen especulativo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de datos sobre el equipo · Verificador: Equipo anónimo sin rastro público.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información pública sobre rondas de financiación · Verificador: Sin rondas de financiación institucionales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "618 holders registrados en la blockchain · Verificador: Comunidad incipiente y puramente especulativa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 1.0,
+    "points": 0.9,
+    "why": "Escasa información de integraciones o usos reales · Verificador: Sin casos de uso reales identificados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se identifican competidores directos en la información disponible · Verificador: No aplica en este tipo de activos especulativos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Smart contract sin auditoría pública conocida · Verificador: Contrato sin auditoría; riesgo de funciones maliciosas. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "Alta volatilidad y posible rug‑pull · Verificador: Riesgo extremo de pérdida total por volatilidad y falta de liquidez. · Discrepancia entre modelos (6 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Falta de claridad regulatoria y ausencia de información oficial en español · Verificador: No cumple con requisitos MiCA para comercialización en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Posibilidad de venta en el pool, pero con riesgo de slippage · Verificador: Dependencia total de la liquidez del pool en DEX.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3637.41,
+     "exitImpactPct": 8.1,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 3479469
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 7883.81,
+     "exitImpactPct": 20.4,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 8698672
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 11735.25,
+     "exitImpactPct": 40.7,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 17397344
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 7340.99,
+     "exitImpactPct": 81.5,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 34794688
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 990.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 86986720
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 1980.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 173973440
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 5940.0,
+     "exitImpactPct": 99.0,
+     "exitNote": "Vender este importe movería el precio de forma significativa con la liquidez actual.",
+     "impliedFdvUsd": 521920322
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "mercado"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T01:50:15Z",
+    "priceUsd": 0.00173973440528961,
+    "liquidityUsd": 107927.1956,
+    "volume24hUsd": 928881.147315394,
+    "fdvUsd": 1739734.405,
+    "holders": 618.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Claudia\nCATEGORÍA: cripto · DeFi\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: desconocido\nENLACE DE PARTICIPACIÓN: https://www.geckoterminal.com/eth/pools/0xc745bafe87aa0dac53f21e94a62f9d4e40e9f5f7de607976cf535f3ce704aef0\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no_recomendado\nCOSTE DE ENTRADA: 10,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: alto potencial especulativo pero con gran incertidumbre\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: corto‑medio\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: precio extremadamente bajo; alto volumen de trading 24 h; potencial de revalorización si gana adopción\nMOTIVOS PARA DESCONFIAR: El sitio web oficial no es accesible (HTTP 403) y no hay datos de equipo ni auditorías; No existe sitio web, whitepaper ni equipo responsable.; Token sin auditoría, liquidez bloqueada no verificada y anonimato total.; El activo no cuenta con un whitepaper registrado ni emisor legalmente constituido en la UE.; El verificador tiene dudas: El activo es un token de muy reciente creación (memecoin) sin presencia web, equipo identificado ni auditorías. Presenta características típicas de alta volatilidad y riesgo de estafa (rug-pull). No existe registro oficial ni cumplimiento normativo bajo MiCA.; Volumen 24 h 9 veces la liquidez: posible volumen artificial.; ausencia de página oficial accesible; sin auditoría de contrato conocida; equipo desconocido\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Ethereum (MetaMask, Trust Wallet, etc.).; 2. Comprar ETH suficiente para cubrir la inversión y el gas.; 3. Conectar la wallet a la URL del pool en GeckoTerminal.; 4. Intercambiar ETH por tokens CLAUDIA mediante el pool.; 5. Guardar los tokens en la wallet y monitorizar el mercado\nQUÉ PODRÍA HACERME PERDER EL DINERO: caída del precio del token; rug‑pull o vulnerabilidad del contrato; restricciones regulatorias en España; slippage elevado al vender\nFUENTES: https://www.geckoterminal.com/eth/pools/0xc745bafe87aa0dac53f21e94a62f9d4e40e9f5f7de607976cf535f3ce704aef0 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-23T01:50:15Z",
+  "lastSeenAt": "2026-11-23T01:50:15Z",
+  "runId": "run-20261123-0150",
+  "aliases": [
+   "tok-eth-0xc6acf921fd47757230a05d6d05b686479cdfc87c"
   ]
  }
 ]
