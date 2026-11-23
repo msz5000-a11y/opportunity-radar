@@ -28,7 +28,7 @@ MADRID = ZoneInfo("Europe/Madrid")
 KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 720, "earnings": 72, "insider": 168,
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
-PULSE_V = 3
+PULSE_V = 4
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
               "ARM", "INTC", "MU", "ORCL", "CRM", "UBER", "SHOP", "SNOW", "BABA", "SOFI", "RIVN", "IONQ", "RGTI", "SOUN", "RDDT", "APP",
