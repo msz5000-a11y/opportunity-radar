@@ -705,10 +705,14 @@ def c_massive_eod(ctx: Ctx) -> list[dict]:
         raise SourceError("sin datos de cierre")
     cur, prev = rows[days[0]], rows[days[1]]
     moves = []
+    close_day = datetime.fromisoformat(days[0]).date()
+    if (t.date() - close_day).days > 4:
+        mem["done"] = last.isoformat()
+        return []  # cierre demasiado viejo: no es noticia
     for sym, x in cur.items():
         p = prev.get(sym)
-        if not p or not p.get("c") or x.get("c", 0) < 5 or "." in sym or len(sym) > 5:
-            continue
+        if not p or not p.get("c") or x.get("c", 0) < 5 or "." in sym or len(sym) > 5 or sym not in ctx.fund:
+            continue  # solo empresas con fundamentales (fuera ETF apalancados y productos raros)
         dv = x["c"] * x.get("v", 0)
         if dv < 3e7:
             continue
@@ -728,7 +732,8 @@ def c_massive_eod(ctx: Ctx) -> list[dict]:
                         act="Busca la causa antes de la próxima sesión; los gaps fuertes suelen continuar o revertir en los días siguientes.",
                         act_en="Find the cause before the next session; big gaps often continue or reverse in the following days.",
                         sym=sym, m={"price": c, "cur": "USD", "ch24h": _r(pct), "dollarVol": dv}, s=int(50 + min(25, (abs(pct) - 8) * 1.2)),
-                        opp=2, risk="alto", tags=["subida" if up else "caida", "cierre"], url=f"https://finance.yahoo.com/quote/{sym}"))
+                        opp=2, risk="alto", tags=["subida" if up else "caida", "cierre"], url=f"https://finance.yahoo.com/quote/{sym}",
+                        pub=iso(datetime(close_day.year, close_day.month, close_day.day, 21, 0, tzinfo=timezone.utc))))
     mem["done"] = days[0]
     return out
 

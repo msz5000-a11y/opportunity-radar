@@ -28,6 +28,7 @@ MADRID = ZoneInfo("Europe/Madrid")
 KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 720, "earnings": 72, "insider": 168,
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
+PULSE_V = 3
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
               "ARM", "INTC", "MU", "ORCL", "CRM", "UBER", "SHOP", "SNOW", "BABA", "SOFI", "RIVN", "IONQ", "RGTI", "SOUN", "RDDT", "APP",
@@ -353,6 +354,9 @@ def run(live: Path, data_dir: Path, cfg: dict, *, now: datetime | None = None, d
     now = now or now_utc()
     state = load(live / "pulse_state.json", {})
     prev = load(live / "feed.json", {})
+    if state.get("v") != PULSE_V:  # reglas nuevas: se rehace el feed (se conservan las listas de exchanges ya conocidas)
+        state = {"v": PULSE_V, "mem": {k: v for k, v in (state.get("mem") or {}).items() if k in ("listings", "eod")}}
+        prev = {"ticker": prev.get("ticker") or {}}
     old_items = prev.get("items") or []
     seen = state.setdefault("seen", {})
     last = state.setdefault("last", {})

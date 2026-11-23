@@ -1,18 +1,20 @@
-// Service worker: la interfaz funciona sin conexión; los datos se piden siempre a la red primero.
-const CACHE = "radar-v2-3";
-const SHELL = ["./", "index.html", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
-self.addEventListener("install", (e) => { e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting())); });
+// Service worker: la app abre sin conexión, pero siempre intenta la red primero para no enseñar datos viejos.
+const CACHE = "radar-v3-1";
+const SHELL = ["./", "index.html", "style.css?v=7", "app.js?v=7", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
+self.addEventListener("install", (e) => {
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));
+});
 self.addEventListener("activate", (e) => {
   e.waitUntil(caches.keys().then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
 });
 self.addEventListener("fetch", (e) => {
-  const url = new URL(e.request.url);
-  if (e.request.method !== "GET" || url.origin !== location.origin) return;
-  if (url.pathname.includes("/data/")) {
-    e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(url.pathname, copy)); return r; })
-      .catch(() => caches.match(url.pathname)));
-    return;
-  }
-  e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); return r; })
-    .catch(() => caches.match(e.request).then((m) => m || caches.match("index.html"))));
+  const req = e.request;
+  const url = new URL(req.url);
+  if (req.method !== "GET" || url.origin !== location.origin) return;
+  const key = url.pathname.includes("/data/") ? url.pathname : req.url;
+  const fresh = req.mode === "navigate" ? fetch(url.href, {cache: "no-cache", credentials: "same-origin"}) : fetch(req, {cache: "no-cache"});
+  e.respondWith(fresh.then((r) => {
+    if (r && r.ok) { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(key, copy)); }
+    return r;
+  }).catch(() => caches.match(key).then((m) => m || (req.mode === "navigate" ? caches.match("index.html") : undefined))));
 });
