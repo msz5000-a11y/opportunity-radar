@@ -12,7 +12,7 @@ on:
         options: [auto, scan, digest, weekly, test-notify]
   push:
     branches: [main]
-    paths: ["app/**", "radar/**", "config.json", ".github/workflows/**"]
+    paths: ["radar/pipeline.py", "radar/selection.py", "radar/scoring.py", "radar/prompts.py", "radar/collectors.py", "radar/markets.py", "radar/ideas.py"]
 
 permissions:
   contents: write
