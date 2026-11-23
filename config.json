@@ -29,7 +29,8 @@
     },
     "page_text_chars": 6000,
     "keep_runs": 120,
-    "prune_discard_days": 30
+    "prune_discard_days": 30,
+    "max_pulse_candidates": 6
   },
   "models": {
     "searcher": [
@@ -93,24 +94,27 @@
   },
   "rss_feeds": [
     {
-      "name": "Product Hunt",
-      "url": "https://www.producthunt.com/feed",
-      "category": "ia_tecnologia"
-    },
-    {
       "name": "El Referente",
       "url": "https://www.elreferente.es/feed/",
       "category": "startups"
-    },
-    {
-      "name": "TechCrunch Startups",
-      "url": "https://techcrunch.com/category/startups/feed/",
-      "category": "startups"
-    },
-    {
-      "name": "The Block",
-      "url": "https://www.theblock.co/rss.xml",
-      "category": "cripto"
     }
-  ]
+  ],
+  "pulse": {
+    "alert_min": 82,
+    "alerts_per_hour": 3,
+    "alerts_per_day": 18,
+    "llm_daily": 220,
+    "llm_per_run": 2,
+    "groq_models": [
+      "openai/gpt-oss-20b",
+      "qwen/qwen3.8-27b",
+      "openai/gpt-oss-120b"
+    ],
+    "gemini_models": [
+      "gemini-2.5-flash-lite",
+      "gemini-3.1-flash-lite",
+      "gemini-2.5-flash"
+    ],
+    "disabled": []
+  }
 }

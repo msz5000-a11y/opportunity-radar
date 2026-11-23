@@ -83,7 +83,7 @@ def fake_request(method, url, **kw):
         body = kw["json"]["messages"][1]["content"]
         f = dict(FICHA)
         if "0xGOOD" in body or "good.example" in body:
-            f = dict(FICHA, name="GOOD token", category="cripto", kind="pasiva", canLoseAll=True,
+            f = dict(FICHA, name="GOOD token", category="cripto", kind="pasiva", canLoseAll=True, officialUrl="https://good.example",
                      costs={"minEntry": 10, "extra": 2, "recommended": 40, "max": 150}, liquidity="media")
         elif "Herramienta X" in body:
             f = dict(FICHA, name="Herramienta X", officialUrl="https://x.example")
@@ -108,6 +108,11 @@ def env(monkeypatch, tmp_path):
     monkeypatch.setenv("APP_URL", "https://user.github.io/radar/")
     monkeypatch.delenv("OPENROUTER_API_KEY", raising=False)
     CALLS.update({"gemini": 0, "groq": 0, "ntfy": []})
+    feed = {"items": [{"id": "n:good", "cat": "lanzamientos", "also": ["cripto"], "kind": "news", "src": "CoinDesk", "s": 80, "opp": 3,
+                       "title": "GOOD protocol opens airdrop points program", "url": "https://good.example/airdrop"},
+                      {"id": "n:low", "cat": "cripto", "kind": "news", "src": "CoinDesk", "s": 40, "opp": 1, "title": "Ruido", "url": "https://x.example/r"}]}
+    (tmp_path / "pulse_feed.json").write_text(json.dumps(feed))
+    monkeypatch.setenv("PULSE_FEED", str(tmp_path / "pulse_feed.json"))
     yield tmp_path
 
 
@@ -124,7 +129,9 @@ def test_full_scan(env):
     assert beta["aiModels"]["analyst"].startswith("groq:") and beta["aiModels"]["verifier"].startswith("gemini:")
     assert beta["verification"]["verdict"] == "confirmada" and beta["regulatory"]["status"] == "no_aplica"
     tok = next(o for o in opps if o["name"] == "GOOD token")
-    assert tok["market"]["holders"] == 5400 and tok["scenarios"]["stakeEur"] == 40
+    assert tok["discoveredVia"].startswith("Pulso") and tok["scenarios"]["stakeEur"] == 40
+    st = json.loads((env / "state.json").read_text())
+    assert "n:good" in st["pulseDone"] and "n:low" not in st["pulseDone"]
     assert log["status"] in ("ok", "parcial") and log["candidates"] >= 3
     status = json.loads((env / "status.json").read_text())
     assert status["sources"]["busqueda_ia"]["ok"] and status["ai"]["calls"]["groq"] >= 3

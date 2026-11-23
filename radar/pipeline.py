@@ -266,6 +266,39 @@ def refresh_token(doc: dict) -> dict | None:
     return cand
 
 
+JUNK_SOURCES = {"Product Hunt", "GitHub", "Hacker News", "DEX Screener", "GeckoTerminal", "CoinGecko"}
+PULSE_KINDS = {"news", "launch", "listing", "grant", "ipo", "defi"}
+PULSE_CATS = {"ia": "ia_tecnologia", "cripto": "cripto", "startups": "startups", "lanzamientos": "lanzamientos", "negocio": "negocio"}
+
+
+def pulse_candidates(path: str, state: dict, categories: list[str], limit: int = 6) -> list[dict]:
+    """Lo más accionable del feed del pulso que aún no se ha analizado a fondo."""
+    try:
+        feed = json.loads(Path(path).read_text(encoding="utf-8")) if path else {}
+    except (OSError, ValueError):
+        feed = {}
+    done = list(state.get("pulseDone") or [])
+    done_set = set(done)
+    picks = []
+    for it in sorted(feed.get("items") or [], key=lambda x: -x.get("s", 0)):
+        if it.get("id") in done_set or it.get("h") or it.get("kind") not in PULSE_KINDS:
+            continue
+        if not (it.get("opp", 0) >= 3 or (it.get("opp", 0) >= 2 and it.get("s", 0) >= 78)) or it.get("s", 0) < 55:
+            continue
+        cat = PULSE_CATS.get(it.get("cat")) or next((PULSE_CATS[c] for c in it.get("also") or [] if c in PULSE_CATS), None)
+        if not cat or cat not in categories:
+            continue
+        picks.append({"source": f"Pulso · {it.get('src')}", "category": cat, "kind": "pulso", "title": it.get("es") or it.get("title"),
+                      "url": it.get("url"), "summary": " ".join(x for x in (it.get("why"), it.get("sum"), it.get("title")) if x)[:700],
+                      "signals": {"pulseScore": it.get("s")}})
+        done.append(it["id"])
+        done_set.add(it["id"])
+        if len(picks) >= limit:
+            break
+    state["pulseDone"] = done[-1500:]
+    return picks
+
+
 def probe_id(it: dict) -> str:
     """Huella del elemento bruto (antes del análisis) para no re-analizar lo mismo."""
     if it.get("kind") == "noticia" and it.get("url"):
@@ -329,6 +362,10 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
     if not profile.get("budgetAuthorizedAbove150"):
         cap = min(cap, 150.0)
     profile["budget"] = min(float(profile.get("budget", cap) or cap), cap)
+    if not state.get("cleanupV3"):  # limpieza única: fuera el ruido antiguo (repos, demos, memecoins) sin acción del usuario
+        for k in [k for k, o in opps.items() if o.get("discoveredVia") in JUNK_SOURCES and not o.get("userAction") and (o.get("score") or 0) < 65]:
+            del opps[k]
+        state["cleanupV3"] = True
     for oid, act in (store.load("actions.json", {}) or {}).items():
         if oid in opps and isinstance(act, dict):
             opps[oid]["userAction"] = act.get("action")
@@ -358,13 +395,11 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
             srcs["tipo_cambio_BCE"] = st
             if fx:
                 state["usdToEur"] = fx
-            # Hacker News y GitHub ya no entran aquí (generaban ruido: software sin forma de ganar dinero); alimentan «Ideas».
-            for fn in (collectors.dexscreener_tokens, collectors.geckoterminal_trending, collectors.coingecko_trending):
-                if fn in (collectors.dexscreener_tokens, collectors.geckoterminal_trending, collectors.coingecko_trending) and "cripto" not in profile["categories"]:
-                    continue
-                got, st = fn()
-                items += got
-                srcs[fn.__name__] = st
+            # Candidatos del pulso (cada 5 min): solo lo accionable de verdad (airdrops, listados, convocatorias, IPO, protocolos
+            # nuevos sin token...). Las memecoins de DEX, Product Hunt, GitHub y Hacker News ya no se analizan aquí: eran ruido.
+            got = pulse_candidates(os.environ.get("PULSE_FEED", ""), state, profile["categories"], cfg["limits"].get("max_pulse_candidates", 6))
+            items += got
+            srcs["pulso"] = collectors._status(True, len(got))
             got, st = collectors.rss([f for f in cfg.get("rss_feeds", []) if f["category"] in profile["categories"]])
             items += got
             srcs.update(st)
@@ -390,7 +425,7 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
                     continue  # analizada hace poco: no gastar IA
                 queue.append((fid, it))
             # prioridad: descubrimientos de IA y tokens con datos, luego el resto
-            queue.sort(key=lambda x: (x[1]["kind"] != "descubrimiento", x[1]["kind"] != "token"))
+            queue.sort(key=lambda x: (x[1]["kind"] != "descubrimiento", x[1]["kind"] != "pulso", -(x[1].get("signals") or {}).get("pulseScore", 0)))
             queue = queue[: cfg["limits"]["max_candidates_per_run"]]
             candidates = []
             for fid, it in queue:
@@ -489,7 +524,7 @@ def run(mode: str, data_dir: Path, dry: bool = False, transport=None) -> dict:
     runs = runs[: cfg["limits"]["keep_runs"]]
     status = {"lastRunAt": log["finishedAt"], "lastRunOk": log["status"] == "ok", "lastRunId": run_id,
               "sources": {**status.get("sources", {}), **log["sources"]}, "ai": log["ai"],
-              "schedule": "Cada 3 horas en GitHub Actions · resumen diario por la tarde · semanal los domingos",
+              "schedule": "Pulso cada 5 minutos · análisis a fondo cada 3 horas · resumen diario por la tarde · semanal los domingos",
               "profile": profile, "version": 2}
     store.save("opps.json", sorted(opps.values(), key=lambda o: -o.get("score", 0)))
     store.save("runs.json", runs)

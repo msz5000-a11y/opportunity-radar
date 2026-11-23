@@ -1,0 +1,89 @@
+name: Pulso en vivo
+
+# Vigila mercados, noticias y redes. GitHub no permite programar más a menudo que cada 5 minutos
+# (y a veces retrasa las ejecuciones); la app se refresca sola cada minuto con lo último publicado.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["app/**", "radar/pulse*.py", ".github/workflows/pulse.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pulse
+  cancel-in-progress: false
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Estado anterior (rama live)
+        run: |
+          mkdir -p live
+          if git fetch -q --depth=1 origin live 2>/dev/null; then git archive FETCH_HEAD | tar -x -C live; fi
+          ls -la live
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -q requests==2.32.3
+
+      - name: Pulso (mercados, noticias y redes)
+        timeout-minutes: 6
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          GITHUB_TOKEN: ${{ github.token }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python -m radar.pulse --live live --data data
+
+      - name: Guardar estado (rama live, sin historial)
+        continue-on-error: true
+        run: |
+          cd live
+          rm -f *.tmp
+          git init -q -b live
+          git config user.name "opportunity-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Pulso $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3; do git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" live && break; sleep 3; done
+
+      - name: Preparar la web
+        run: |
+          mkdir -p _site/data
+          cp -r app/* _site/
+          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json ideas.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/ || true; done
+          [ -f live/feed.json ] && cp live/feed.json _site/data/feed.json || echo '{"items":[]}' > _site/data/feed.json
+          [ -f _site/data/opps.json ] || echo "[]" > _site/data/opps.json
+
+      - uses: actions/configure-pages@v5
+        continue-on-error: true
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
