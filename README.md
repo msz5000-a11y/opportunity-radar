@@ -17,6 +17,14 @@ Para ti (brief.yml, cada mañana a las 07:30 de Madrid; el pulso lo lanza si Git
   ├─ Sin clave de Claude, decide un modelo gratuito (Gemini, Groq u OpenRouter) sin búsqueda
   └─ data/brief.json → pestaña «Para ti» y un aviso por ntfy si cambia
 
+Desde casa (dentro de brief.yml, cada 3 días por perfil, o al pedir «más ideas» o cambiar el perfil)
+  ├─ Historias reales de negocios desde casa (Google News en 5 idiomas, según los intereses; solo titulares
+  │  que son un caso concreto) y pequeños negocios con ingresos verificados (TrustMRR)
+  ├─ Claude busca más casos en la web y desarrolla 1-3 ideas nuevas: casos enlazados, por qué encaja, cómo
+  │  empezar semana a semana, coste, precio, primeras clientas, ingresos posibles, horas, trámites, ayudas y riesgos
+  ├─ Una idea sin caso comprobado no se publica; el texto de cada caso sale de la fuente
+  └─ Ayudas para emprender de su ayuntamiento, diputación, comunidad autónoma y del Estado (BDNS)
+
 Pulso (pulse.yml, cada 5 min: es el mínimo que permite GitHub)
   ├─ ~60 fuentes gratuitas en paralelo:
   │    · Mercados: CoinGecko, miedo y codicia, altas de Coinbase/Kraken/OKX/Bitget/KuCoin,
@@ -37,7 +45,9 @@ Análisis profundo (radar.yml, cada 3 h)
   └─ Mercados (valor + calidad + momento) e «Ideas para copiar», una vez al día
 ```
 
-La app (`app/`) abre en «Para ti» (con selector de perfil: España o Egipto) y tiene además En vivo, Cripto, Bolsa, Startups e Ideas. Muestra lo más reciente arriba y comprueba novedades cada minuto. Los perfiles están en `config.json` → `profiles`.
+La app (`app/`) abre en la pestaña que prefiera cada perfil: «Para ti» o «Desde casa». Tiene además En vivo, Cripto, Bolsa, Startups e Ideas. Muestra lo más reciente arriba y comprueba novedades cada minuto.
+
+Los perfiles de cada persona están en `data/profiles.json` (ahora Él, Ella y Egipto). Recogen dónde vive, a qué se dedica, intereses, capital, horas, qué secciones quiere y la pestaña de inicio. Se editan desde la app con «Personalizar»: con el token guardado en Ajustes se suben al repositorio y Claude rehace lo de ese perfil. El repositorio es público, así que los perfiles se pueden ver.
 
 ## Secretos (Settings → Secrets and variables → Actions)
 
@@ -56,7 +66,7 @@ La app (`app/`) abre en «Para ti» (con selector de perfil: España o Egipto) y
 
 0 € con los niveles gratuitos de GitHub (repositorio público), Gemini, Groq, Finnhub, Massive y ntfy. Los límites de uso están en `config.json` (sección `pulse` y `limits`).
 
-«Para ti» con Claude es de pago por uso: con Opus 5.5 (4 $ por millón de tokens de entrada y 20 $ de salida; 10 $ por cada 1.000 búsquedas) cada informe cuesta unos 0,25-0,40 $ por perfil, unos 0,6 $ al día con los dos perfiles (≈ 18 $ al mes). Si los candidatos no han cambiado, no se llama a Claude. Hay un tope diario (`brief.daily_usd_cap`, 1 $) y se puede bajar el gasto a la mitad con `brief.model: claude-sonnet-5-5`.
+«Para ti» con Claude es de pago por uso: con Opus 5.5 (4 $ por millón de tokens de entrada y 20 $ de salida; 10 $ por cada 1.000 búsquedas) cada informe cuesta unos 0,25-0,40 $ por perfil y cada tanda de ideas «Desde casa» unos 0,35 $; con los tres perfiles, unos 0,8 $ al día (≈ 25 $ al mes). Si los candidatos no han cambiado, no se llama a Claude. Hay un tope diario (`brief.daily_usd_cap`, 1,5 $) y se puede bajar el gasto a la mitad con `brief.model: claude-sonnet-5-5`.
 
 ## Pruebas
 
