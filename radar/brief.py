@@ -938,7 +938,8 @@ def casa_due(old: dict, prof: dict, now: datetime, force: bool = False, every_h:
     if old.get("profile_hash") != profile_hash(prof):
         return True
     last = parse_iso(old.get("checkedAt") or old.get("generatedAt"))
-    return not last or now - last >= timedelta(hours=every_h)
+    # margen del 25 %: el cron cada 3 h y los pulsos no caen justo a la hora; así no se salta una tanda entera
+    return not last or now - last >= timedelta(hours=every_h * 0.75)
 
 
 # ------------------------------------------------------------------ orquestación
