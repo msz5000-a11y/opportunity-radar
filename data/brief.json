@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T20:23:46Z",
- "checkedAt": "2026-11-24T20:23:46Z",
- "attemptedAt": "2026-11-24T20:23:46Z",
+ "generatedAt": "2026-11-24T20:26:57Z",
+ "checkedAt": "2026-11-24T20:26:57Z",
+ "attemptedAt": "2026-11-24T20:26:57Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -177,29 +177,76 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-24T20:23:46Z",
-    "checkedAt": "2026-11-24T20:23:46Z",
+    "generatedAt": "2026-11-24T20:26:57Z",
+    "checkedAt": "2026-11-24T20:26:57Z",
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
     "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
-    "descartadas": 0,
+    "nuevas": 1,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 0,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He descartado ideas de comida preparada por la complejidad de la normativa sanitaria (registro sanitario obligatorio en cocina doméstica) y me he centrado en servicios digitales y de organización que aprovechan tus habilidades sin stock.",
+    "nota": "He descartado ideas de venta de comida física por la complejidad de la normativa sanitaria en España (registro sanitario, cocina industrial), enfocándome en servicios digitales de planificación y curaduría.",
     "oportunidades_locales": [],
     "ayudas": [],
     "ideas": [
      {
+      "id": "cf6fa3f4f",
+      "fecha": "2026-11-24T20:26:57Z",
+      "nueva": true,
+      "titulo": "Creación de 'Menús Semanales Saludables' para Familias Ocupadas",
+      "gancho": "Diseña planes de alimentación personalizados y listas de la compra para familias de tu zona.",
+      "que_es": "Ofreces un servicio digital de planificación de menús semanales adaptados a las necesidades de familias (niños, alergias, presupuesto). No cocinas, solo diseñas la estrategia de ahorro y salud.",
+      "casos": [
+       {
+        "quien": "The Economic Times",
+        "pais": "",
+        "resultado": "She worked at TCS and Accenture, then started a business from home with ₹11,000. Now the Gurugram woman ea",
+        "url": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNcFFJVGJqWjR3RWw4bWQwYlBIZHpaWmZ1c0Vta1JwY21VMk9nOThRbTg4NURjcHdxZVM3R0d4TkZsY29TTWtKeWY1MmVCMEtDaG0zSXhFQml2TUM3M3VnYzUyRkVDYms5TUs0WTJaTC1BSTFhaHFLcW9Ublp2YVI1RXJ0WHRaMGZ3azVpMXNUREJLaTRaSF9MWnRmdnNHTFZZSGlxTUhYRmJRNnRERUljdERJWTZ3YVJfWGhBeUtqQUVVejdra0ZmaU9KdmVDUXJwT1NlY2ZTYjVhNnlzMFg0QVBzVlJ2RmpxWkhJdlVBNDc3VzJ6SHdpTkNWUkQ4dlNGSjdDZGdvaXB0X09Jd0lNeXgwTGxIMU5wcmg1eFpLTERBZXBrT2M2NDlGSdIBpAJBVV95cUxNeG05dWI1REloczUtNUx2eU4walJnMXVQUFgtT19LQlB4RlVXTE9nWVdZWktIb1BvRWZTQWl2YVdPa19tbFMxOFVyTXV5VFdLT2ZrVHktWUdSOXg0c09laFRUVHVLb0VMSkR4dlJzMzlWaWFxSFh0UWZsOFVmVFM0M2xBdVFyaVMtVWJzeXVON0tHdDVWSkE0V1JPdUhNeXpNRlRCWW1QWHNYc1Y1c3pGd2puMm5IZ3dTajE3cm10UERFb2piNDJiODlCLTNIYl9BdTQtQVZ5RkNOMXBhcDRBeHNCMlMzc19JLXZFS3VGTllfc1ZBU3gwZE8tQk1WLWJJQnZQb2RlM1pjYzV1WENBRWtxMnAzMTlWMURFelJnSEhmUHpV?oc=5"
+       }
+      ],
+      "por_que_tu": "Aprovecha tu interés por la cocina y tu conocimiento de las necesidades de las familias.",
+      "como_empezar": [
+       "Semana 1: Crea 3 plantillas de menús (ej. ahorro, infantil, rápido).",
+       "Semana 2: Publica en grupos de Facebook de Riba-roja y Valencia ofreciendo una semana de prueba gratuita.",
+       "Semana 3: Recopila testimonios y ajusta tus precios.",
+       "Semana 4: Lanza un servicio de suscripción mensual por 29 €/mes."
+      ],
+      "coste_inicial": "0 €.",
+      "herramientas": [
+       "Canva",
+       "Google Sheets",
+       "WhatsApp"
+      ],
+      "precio": "29 €/mes por suscripción o 10 € por plan semanal único.",
+      "primeras_clientas": [
+       "Madres/padres en grupos de WhatsApp del colegio",
+       "Vecinos de Riba-roja"
+      ],
+      "ingresos_posibles": "Estimación: 300-500 €/mes con 15-20 suscriptores recurrentes.",
+      "horas_semana": "8 horas.",
+      "tramites": [
+       "Alta en Hacienda (IAE) cuando los ingresos sean regulares.",
+       "Protección de datos (RGPD) al manejar información de clientes."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Baja retención de clientes.",
+       "Competencia de apps gratuitas de IA.",
+       "Dificultad para cobrar suscripciones pequeñas."
+      ],
+      "confianza": "media"
+     },
+     {
       "id": "cde125ca1",
       "fecha": "2026-11-24T20:23:46Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Creación de Kits de Actividades Educativas 'Print & Play'",
       "gancho": "Diseña y vende materiales didácticos imprimibles para niños que los padres descargan y usan en casa.",
       "que_es": "Consiste en crear archivos PDF con juegos, manualidades o fichas educativas temáticas (ej. 'aprender los números con arte'). Los padres compran el archivo, lo imprimen y lo usan, eliminando costes de envío y stock.",
@@ -247,7 +294,7 @@
      {
       "id": "c4ee3ce08",
       "fecha": "2026-11-24T20:23:46Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Consultoría de 'Organización de Cocinas' (Home Organizing)",
       "gancho": "Ayuda a familias a optimizar su cocina para que sea funcional, estética y eficiente.",
       "que_es": "Un servicio presencial en tu zona (Riba-roja/Valencia) donde reorganizas armarios, despensas y zonas de trabajo. Combina tu pasión por la cocina con el diseño de interiores.",
@@ -594,7 +641,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 40,
+   "n": 10,
    "err": null
   }
  },
