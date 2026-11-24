@@ -16,7 +16,9 @@ CASE_SIGNAL = re.compile(r"[$€£₹]\s?\d|\d+\s?(k|mil|million|millones|figure
                          r"convirti[oó]|empez[oó]|lanz[oó]|fund[oó]|launched|started|founded|quit (her|his) job|dej[oó] su trabajo", re.I)
 CASE_BIZ = re.compile(r"business|negocio|shop|tienda|brand|marca|company|empresa|startup|hustle|emprend|entrepreneur|etsy|store|sells|vende|selling|"
                       r"entreprise|attivit|negócio|boutique|bakery|panader|studio|estudio|course|curso|clases|classes", re.I)
-LISTICLE = re.compile(r"^\s*(the\s+)?\d+\s+\w+|\bideas\b|\bways to\b|\bformas de\b|\btips\b|\bconsejos\b|\bguía\b|\bguide\b|\bbest\b|\bmejores\b", re.I)
+LISTICLE = re.compile(r"^\s*(the\s+)?\d+\s+\w+|\bideas\b|\bways to\b|\bformas de\b|\btips\b|\bconsejos\b|\bguía\b|\bguide\b|\bbest\b|\bmejores\b|"
+                      r"\b\d+\s+(claves|trucos|pasos|maneras|items|things|recipes|recetas|side hustles|apps|jobs|trabajos)\b|\bhere are\b|\bhere's how\b|"
+                      r"\bhow to\b|\branked\b|\bcould (pay|earn|make)\b|\bsuggests?\b|\bsurveys?\b|\bencuestas?\b|\bshould you\b|\bdebería", re.I)
 
 
 def fold(s: str) -> str:

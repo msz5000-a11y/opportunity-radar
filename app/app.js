@@ -91,12 +91,12 @@
     tab: "parati", seg: LS.get("radar-segs", {}), chip: {}, useful: LS.get("radar-useful", true), limit: 60,
     lastSeen: LS.get("radar-lastseen", {}), visitFrom: {}, fresh: new Set(), saved: LS.get("radar-saved", {}),
     actions: LS.get("radar-actions", {}), profile: LS.get("radar-profile", null), loaded: false, live: null,
-    ideaMk: "all", ideaType: "", oppMin: 45,
+    ideaMk: "all", ideaType: "", oppMin: 45, casaTema: LS.get("radar-casa-tema", "all"),
   };
   let merged = null;
   const items = () => {
     if (merged) return merged;
-    const srv = arr(S.feed?.items);
+    const srv = arr(S.feed?.items).filter((x) => x.cat !== "casa");  // lo de «Desde casa» va en su pestaña
     const ids = new Set(srv.map((x) => x.id));
     merged = LIVE.items.filter((x) => !ids.has(x.id)).concat(srv);
     return merged;
@@ -138,14 +138,17 @@
     routeHash();
   }
   function acceptFeed(feed, first) {
-    const before = new Set(items().map((x) => x.id));
+    const before = new Set([...arr(S.feed?.items), ...LIVE.items].map((x) => x.id));
     const prevAt = S.feed?.generatedAt;
     S.feed = feed; invalidate();
-    try { LS.set("radar-feed-cache", {...feed, items: arr(feed.items).slice(0, 250)}); } catch {}
+    try {
+      const all = arr(feed.items);
+      LS.set("radar-feed-cache", {...feed, items: [...all.filter((x) => x.cat !== "casa").slice(0, 250), ...all.filter((x) => x.cat === "casa").slice(0, 80)]});
+    } catch {}
     if (first || !prevAt) return 0;
     const added = arr(feed.items).filter((x) => !before.has(x.id));
     added.forEach((x) => S.fresh.add(x.id));
-    return added.length;
+    return added.filter((x) => (x.cat === "casa") === (S.tab === "casa")).length;  // el aviso «↑ nuevas», solo con lo de esta pestaña
   }
   async function pollFeed() {
     if (document.hidden) return;
@@ -459,7 +462,12 @@
   }
   function newCount(id) {
     if (id === "parati") return S.brief?.generatedAt && S.brief.generatedAt > LS.get("radar-brief-seen", "") ? 1 : 0;
-    if (id === "casa") { const c = curProfile()?.casa; return c?.generatedAt && c.nuevas && c.generatedAt > LS.get("radar-casa-seen", "") ? c.nuevas : 0; }
+    if (id === "casa") {  // ideas y novedades que han llegado desde la última visita
+      const cur = curProfile(), since = S.lastSeen.casa;
+      if (!cur?.profile?.casa) return 0;
+      if (!since) return arr(cur.casa?.ideas).filter((i) => i.nueva).length;
+      return arr(cur.casa?.ideas).filter((i) => (i.fecha || "") > since).length + casaFeed(cur.profile.id).filter((x) => (x.t || "") > since).length;
+    }
     const since = S.lastSeen[id];
     if (!since) return 0;
     return tabItems(id).filter((x) => useful(x) && (x.t || "") > since).length;
@@ -648,7 +656,7 @@
     const sw = profSwitch(profs, cur);
     const secs = cur.secciones || {};
     if (!cur.secciones) {
-      return `${sw}<div class="empty">${cur.profile.casa ? L("Este perfil se centra en «Desde casa»: ahí tienes tus ideas y las ayudas para emprender.", "This profile focuses on “From home”: your ideas and grants are there.") + `<br><br><button class="btn" type="button" data-tab="casa">🏡 ${L("Ir a Desde casa", "Go to From home")}</button>` : L("Aún no hay informe para este perfil. Llega con el próximo análisis.", "No brief for this profile yet. It arrives with the next analysis.")}</div>`;
+      return `${sw}${liveMore(cur)}<div class="empty">${cur.profile.casa ? L("Este perfil se centra en «Desde casa»: ahí tienes tus ideas y las ayudas para emprender.", "This profile focuses on “From home”: your ideas and grants are there.") + `<br><br><button class="btn" type="button" data-tab="casa">🏡 ${L("Ir a Desde casa", "Go to From home")}</button>` : L("Aún no hay informe para este perfil. Llega con el próximo análisis.", "No brief for this profile yet. It arrives with the next analysis.")}</div>`;
     }
     const body = BRIEF_SECS.map(([k, e, color, title]) => {
       if (!secs[k]) return "";  // sección que este perfil no ha pedido
@@ -666,26 +674,60 @@
       <p class="brief-meta">${esc(meta)}${gh.ready() ? ` · <button class="linkbtn" type="button" data-brief-run="1">${L("actualizar", "refresh")}</button>` : ""}</p>
       ${free ? `<p class="note">${L("Ahora decide un modelo gratuito porque falta la clave de Claude (o se llegó al tope de gasto de hoy). Con la clave, decide Claude y comprueba en la web.", "A free model is deciding because the Claude key is missing (or today's spending cap was reached). With the key, Claude decides and checks the web.")}</p>` : ""}
       ${body}
+      ${liveMore(cur)}
       ${cur.descartado ? `<p class="note">🧹 ${esc(cur.descartado)}</p>` : ""}
       <p class="disclaimer">${L("No es asesoramiento financiero. Nada se compra ni se vende solo: Claude analiza y tú decides. Invierte solo lo que puedas perder.", "Not financial advice. Nothing is bought or sold automatically: Claude analyses and you decide. Only invest what you can afford to lose.")}</p>
       ${saved.length ? `<div class="section-h"><h2>🔖 ${L("Guardadas", "Saved")}</h2><span>${saved.length}</span></div><div class="rows">${saved.map(row).join("")}</div>` : ""}`;
   }
 
-  // ---------- Desde casa: negocios pequeños que ya funcionan fuera, desarrollados por Claude para cada perfil
+  // ---------- Desde casa: ideas desarrolladas por Claude y novedades al momento para cada perfil
   const bullets = (title, a) => (arr(a).length ? `<p class="lbl">${esc(title)}</p><ul class="risks">${a.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "");
-  function homeIdea(it, c) {
+  // palabras con las que se reconoce cada interés cuando la idea o la noticia no trae su tema
+  const TEMA_WORDS = {inmobiliaria: "inmobil|vivienda|pisos?\\b|alquiler|staging|real estate|propert|realtor|airbnb", arte: "arte\\b|art\\b|artist|pintur|acuarel|laminas?\\b|ilustr|cuadros?\\b|painting|ceramic",
+    diseno: "diseno|design|grafic|branding|logos?\\b|plantilla|template|canva|printable|imprimible", ninos: "ninos?\\b|infantil|kids?\\b|child|bebes?\\b|baby|toddler|crianza|escolar|juguete|toys?\\b",
+    cocina: "cocina|receta|recipe|menus?\\b|comida|tartas?\\b|reposter|baker|bakes?\\b|baking|cook|food|meal|chef|pasteler|catering|obrador|galletas|cookies|kitchen"};
+  const temaRe = {};
+  // ideas: manda el tema que puso Claude; novedades: mandan las palabras del titular (la IA barata tiende a poner el primer interés)
+  function temasOf(x, ints, wordsFirst = false) {
+    const given = [...arr(x.temas), x.tema].filter(Boolean).map(_fold);
+    const hit = ints.filter((i) => given.includes(_fold(i)));
+    const text = _fold([x.titulo, x.gancho, x.es, x.title].filter(Boolean).join(" "));
+    const words = () => ints.filter((i) => {
+      const k = _fold(i);
+      temaRe[k] = temaRe[k] || new RegExp(`(^|[^a-z])(${TEMA_WORDS[k] || k.replace(/[^a-z0-9 ]/g, "")})`);
+      return temaRe[k].test(text);
+    });
+    if (wordsFirst) { const w = words(); return w.length ? w : hit; }
+    return hit.length || given.includes("otros") ? hit : words();
+  }
+  const casaFeed = (pid) => arr(S.feed?.items).filter((x) => x.cat === "casa" && !x.h && arr(x.pf).includes(pid)).sort(byWhen);
+  const capWord = (w) => String(w).charAt(0).toUpperCase() + String(w).slice(1);
+  function novRow(it) {
+    const isNew = S.visitFrom.casa && (it.t || "") > S.visitFrom.casa;
+    const u = safeUrl(it.url);
+    const tm = temasOf(it, arr(curProfile()?.profile?.interests), true).map(capWord).join(", ");
+    const meta = [it.src, it.kind === "local" ? L("En tu zona", "Near you") : L("Historia real", "Real story"), tm].filter(Boolean);
+    return `<a class="row nov${S.fresh.has(it.id) ? " fresh" : ""}" href="${esc(u || "#")}" target="_blank" rel="noopener noreferrer" style="--cc:var(--c-casa)">
+      <span class="when">${whenCol(when(it))}</span>
+      <span class="body"><span class="ttl">${esc(txt(it))}</span>${why(it) ? `<span class="why">${esc(why(it))}</span>` : ""}
+        <span class="meta">${meta.map((m, i) => `<span${i === 0 ? ' class="src"' : ""}>${esc(m)}</span>`).join("")}</span></span>
+      ${isNew ? `<span class="dot-new" title="${L("Nueva", "New")}"></span>` : ""}</a>`;
+  }
+  function homeIdea(it, c, open) {
     const grants = Object.fromEntries(arr(c.ayudas).map((g) => [g.id, g]));
     const facts = [[L("Para empezar", "To start"), it.coste_inicial], [L("Horas a la semana", "Hours a week"), it.horas_semana],
       [L("Qué cobrar", "What to charge"), it.precio], [L("Ingresos posibles", "Possible income"), it.ingresos_posibles]].filter((f) => f[1]);
     const cases = arr(it.casos).filter((k) => safeUrl(k.url));
     const gl = arr(it.ayudas).map((id) => grants[id]).filter(Boolean);
-    return `<article class="pick home" style="--pc:var(--c-casa)">
-      ${it.nueva ? `<span class="tag new">${L("Nueva", "New")}</span>` : ""}
-      <h3>${esc(it.titulo)}</h3>
-      ${it.gancho ? `<p class="hook">${esc(it.gancho)}</p>` : ""}
+    const isNew = S.visitFrom.casa ? (it.fecha || "") > S.visitFrom.casa : it.nueva;
+    return `<article class="pick home" style="--pc:var(--c-casa)"><details class="idea"${open ? " open" : ""}>
+      <summary>${isNew ? `<span class="tag new">${L("Nueva", "New")}</span>` : ""}
+        <h3>${esc(it.titulo)}</h3>
+        ${it.gancho ? `<p class="hook">${esc(it.gancho)}</p>` : ""}
+        <span class="idea-more">${L("Ver la idea completa", "See the full idea")}</span></summary>
       ${it.que_es ? `<p>${esc(it.que_es)}</p>` : ""}
       ${cases.length ? `<div class="cases"><p class="lbl">${L("Ya funciona en", "Already working in")}</p>${cases.map((k) => `<a href="${esc(k.url)}" target="_blank" rel="noopener">
-        <b>${esc([k.pais, k.quien].filter(Boolean).join(", "))}</b>${k.resultado ? `<span>${esc(k.resultado)}</span>` : ""}</a>`).join("")}</div>` : ""}
+        <b>${esc([k.pais, k.quien].filter(Boolean).join(", "))}</b>${k.resultado ? `<span>${esc((LANG === "es" && k.resultado_es) || k.resultado)}</span>` : ""}</a>`).join("")}</div>` : ""}
       ${it.por_que_tu ? `<p class="pwhy"><b>${L("Por qué tú", "Why you")}:</b> ${esc(it.por_que_tu)}</p>` : ""}
       ${facts.length ? `<ul class="facts">${facts.map(([k, v]) => `<li>${esc(k)}<b>${esc(v)}</b></li>`).join("")}</ul>` : ""}
       ${arr(it.como_empezar).length ? `<p class="lbl">${L("Cómo empezar", "How to start")}</p><ol>${it.como_empezar.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}
@@ -697,7 +739,8 @@
         ${bullets(L("Riesgos", "Risks"), it.riesgos)}
         ${it.confianza ? `<p><b>${L("Confianza", "Confidence")}:</b> <span class="conf-${esc(it.confianza)}">${esc({alta: L("alta", "high"), media: L("media", "medium"), baja: L("baja", "low")}[it.confianza] || it.confianza)}</span></p>` : ""}
       </details>
-    </article>`;
+      <p class="fine">${esc([it.fecha && L("Propuesta ", "Suggested ") + ago(it.fecha), arr(it.temas).map(capWord).join(", ")].filter(Boolean).join(" · "))}</p>
+    </details></article>`;
   }
   function viewHome() {
     const profs = allProfiles();
@@ -710,25 +753,76 @@
         <br><br><button class="btn" type="button" data-pedit="${esc(id)}">${L("Personalizar perfil", "Personalise profile")}</button></div>`;
     }
     const c = cur.casa || {};
-    if (c.generatedAt) LS.set("radar-casa-seen", c.generatedAt);
-    const ideas = arr(c.ideas);
-    const meta = [c.generatedAt && L("Actualizado ", "Updated ") + ago(c.generatedAt), modelName(c) && L("desarrollado por ", "developed by ") + modelName(c),
-      L("ideas nuevas cada 3 días", "new ideas every 3 days")].filter(Boolean).join(" · ");
+    const ints = arr(cur.profile.interests);
+    const since = S.visitFrom.casa;
+    const ideas = arr(c.ideas).map((it) => ({it, t: temasOf(it, ints)}));
+    const novs = casaFeed(id).map((it) => ({it, t: temasOf(it, ints, true)}));
     const grants = arr(c.ayudas);
     const local = arr(c.oportunidades_locales).filter((o) => safeUrl(o.url));
-    const where = cur.profile.municipality ? L(` en ${cur.profile.municipality} y alrededores`, ` around ${cur.profile.municipality}`) : "";
+    const nearNovs = novs.filter((o) => o.it.kind === "local");
+    const seg = ["ideas", "nov", "zona"].includes(S.seg.casa) ? S.seg.casa : "ideas";
+    const newIdeas = ideas.filter((o) => (since ? (o.it.fecha || "") > since : o.it.nueva)).length;
+    const newNovs = since ? novs.filter((o) => (o.it.t || "") > since).length : 0;
+    const tag = (n, fresh) => (fresh ? `${n} · ${fresh} ${L(fresh === 1 ? "nueva" : "nuevas", "new")}` : n);
+    const segs = chips([["ideas", `💡 ${L("Ideas", "Ideas")}`, tag(ideas.length, newIdeas)], ["nov", `⚡ ${L("Al momento", "Live")}`, tag(novs.length, newNovs)],
+      ["zona", `📍 ${L("Tu zona y ayudas", "Near you & grants")}`, local.length + nearNovs.length + grants.length]], seg, "data-seg");
+    const tema = S.casaTema || "all";
+    const pool = seg === "ideas" ? ideas : novs;
+    const match = (o, k) => k === "all" || (k === "otros" ? !o.t.length : o.t.some((x) => _fold(x) === _fold(k)));
+    const temaChips = ints.length && pool.length ? chips([["all", L("Todos los temas", "All topics"), pool.length],
+      ...ints.map((i) => [i, capWord(i), pool.filter((o) => match(o, i)).length]).filter((x) => x[2]),
+      ...(pool.some((o) => !o.t.length) ? [["otros", L("Otros", "Other"), pool.filter((o) => !o.t.length).length]] : [])], tema, "data-ctema") : "";
+    const meta = [c.generatedAt && L("Ideas: ", "Ideas: ") + ago(c.generatedAt), modelName(c) && L("desarrolladas por ", "developed by ") + modelName(c),
+      L("3 nuevas cada 3 horas", "3 new every 3 hours"), S.feed?.generatedAt && L("novedades: ", "news: ") + ago(S.feed.generatedAt)].filter(Boolean).join(" · ");
+    let body = "";
+    if (seg === "ideas") {
+      const shown = ideas.filter((o) => match(o, tema));
+      const openN = Math.max(1, Math.min(3, shown.filter((o) => (since ? (o.it.fecha || "") > since : o.it.nueva)).length));
+      body = shown.length ? shown.map((o, i) => homeIdea(o.it, c, i < openN)).join("")
+        : `<p class="note">${esc(c.error && !ideas.length ? L("No se han podido preparar ideas esta vez; se reintenta en la próxima tanda.", "Ideas couldn't be prepared this time; it will retry with the next batch.")
+          : ideas.length ? L("Aún no hay ideas de este tema. Llegan 3 nuevas cada 3 horas.", "No ideas on this topic yet. 3 new ones arrive every 3 hours.") : L("Claude está buscando las primeras ideas para ti. Llegan en la próxima tanda.", "Claude is looking for your first ideas. They arrive with the next batch."))}</p>`;
+    } else if (seg === "nov") {
+      const shown = novs.filter((o) => match(o, tema)).map((o) => o.it);
+      body = `<p class="note">${L("Historias reales de gente que gana dinero desde casa y oportunidades en tu zona, de todo el mundo. El radar las busca cada 15 minutos y una IA las traduce y quita lo que no sirve. Toca para abrir la noticia.", "Real stories of people earning from home and opportunities near you, from around the world. The radar looks every 15 minutes and an AI translates them and drops what isn't useful. Tap to open the story.")}</p>
+        ${shown.length ? grouped(shown, novRow) : `<div class="empty">${L("Todavía no hay novedades: el radar las está buscando. Vuelve en un rato.", "No news yet: the radar is looking. Check back soon.")}</div>`}`;
+    } else {
+      const where = cur.profile.municipality ? L(` en ${cur.profile.municipality} y alrededores`, ` around ${cur.profile.municipality}`) : "";
+      body = `${nearNovs.length ? `<div class="section-h"><h2>📰 ${L("Novedades en tu zona", "News near you")}</h2><span>${nearNovs.length}</span></div><div class="rows">${nearNovs.slice(0, 12).map((o) => novRow(o.it)).join("")}</div>` : ""}
+        ${local.length ? `<div class="section-h"><h2>📍 ${L("Programas y recursos", "Programmes and resources")}</h2><span>${local.length}</span></div>
+          <div class="pick plain">${local.map((o) => `<p><a href="${esc(o.url)}" target="_blank" rel="noopener"><b>${esc(o.titulo)}</b></a>${o.que_es ? `<br>${esc(o.que_es)}` : ""}</p>`).join("")}</div>` : ""}
+        ${grants.length ? `<div class="section-h"><h2>🏛️ ${L("Ayudas para emprender", "Grants to start up")}${esc(where)}</h2><span>${grants.length}</span></div>
+          <div class="pick plain">${grants.map((g) => `<p><a href="${esc(safeUrl(g.url) || "#")}" target="_blank" rel="noopener"><b>${esc(g.titulo)}</b></a><br>
+            <span class="muted">${esc([g.donde, g.solicitud?.hasta && L("hasta el ", "until ") + g.solicitud.hasta].filter(Boolean).join(" · "))}</span></p>`).join("")}</div>`
+          : `<p class="note">${L("Ahora mismo no hay ayudas abiertas para emprender que encajen contigo en tu ayuntamiento, la diputación, la Generalitat ni el Estado. Se revisa cada día.", "No open start-up grants that fit you right now from your town, province, region or the State. Checked every day.")}</p>`}`;
+    }
     return `${sw}
-      <p class="brief-sum">${L("Negocios pequeños que ya funcionan en otros países, desarrollados para que puedas empezar desde casa con poco dinero.", "Small businesses that already work in other countries, developed so you can start from home with little money.")}</p>
-      <p class="brief-meta">${esc(meta)}${gh.ready() ? ` · <button class="linkbtn" type="button" data-casa-run="${esc(id)}">${L("pedir más ideas", "more ideas")}</button>` : ""}</p>
-      ${c.provider && c.provider !== "anthropic" ? `<p class="note">${L("Ahora las desarrolla un modelo gratuito porque falta la clave de Claude. Con ella, Claude busca más casos reales en la web.", "A free model is developing them because the Claude key is missing. With it, Claude finds more real cases on the web.")}</p>` : ""}
-      ${ideas.length ? ideas.map((it) => homeIdea(it, c)).join("") : `<p class="note">${esc(c.error ? L("No se han podido preparar ideas esta vez; se reintenta en el próximo análisis.", "Ideas couldn't be prepared this time; it will retry on the next analysis.") : L("Claude está buscando las primeras ideas para ti. Llegan con el próximo análisis.", "Claude is looking for your first ideas. They arrive with the next analysis."))}</p>`}
-      ${local.length ? `<div class="section-h"><h2>📍 ${L("Oportunidades en tu zona", "Opportunities near you")}</h2><span>${local.length}</span></div>
-        <div class="pick plain">${local.map((o) => `<p><a href="${esc(o.url)}" target="_blank" rel="noopener"><b>${esc(o.titulo)}</b></a>${o.que_es ? `<br>${esc(o.que_es)}` : ""}</p>`).join("")}</div>` : ""}
-      ${grants.length ? `<div class="section-h"><h2>🏛️ ${L("Ayudas para emprender", "Grants to start up")}${esc(where)}</h2><span>${grants.length}</span></div>
-        <div class="pick plain">${grants.map((g) => `<p><a href="${esc(safeUrl(g.url) || "#")}" target="_blank" rel="noopener"><b>${esc(g.titulo)}</b></a><br>
-          <span class="muted">${esc([g.donde, g.solicitud?.hasta && L("hasta el ", "until ") + g.solicitud.hasta].filter(Boolean).join(" · "))}</span></p>`).join("")}</div>` : ""}
-      ${c.nota ? `<p class="note">🔎 ${esc(c.nota)}</p>` : ""}
+      <p class="brief-sum">${L("Negocios pequeños que ya funcionan en otros países, desarrollados para que puedas empezar desde casa con poco dinero, y novedades al momento.", "Small businesses that already work in other countries, developed so you can start from home with little money, plus live news.")}</p>
+      <p class="brief-meta">${esc(meta)}${gh.ready() ? ` · <button class="linkbtn" type="button" data-casa-run="${esc(id)}">${L("pedir más ideas ahora", "more ideas now")}</button>` : ""}</p>
+      ${c.provider && c.provider !== "anthropic" && seg === "ideas" ? `<p class="note">${L("Ahora las desarrolla un modelo gratuito porque falta la clave de Claude. Con ella, Claude busca más casos reales en la web.", "A free model is developing them because the Claude key is missing. With it, Claude finds more real cases on the web.")}</p>` : ""}
+      <div class="tools">${segs}</div>
+      ${seg !== "zona" && temaChips ? `<div class="tools">${temaChips}</div>` : ""}
+      ${body}
+      ${c.nota && seg === "ideas" ? `<p class="note">🔎 ${esc(c.nota)}</p>` : ""}
       <p class="disclaimer">${L("Antes de empezar, confirma los trámites (autónomos, IVA, registro sanitario si vendes comida) con tu gestoría o en la oficina de empleo y desarrollo local de tu ayuntamiento.", "Before you start, confirm the paperwork (self-employment, VAT, food-safety registration if you sell food) with an adviser or your town's local development office.")}</p>`;
+  }
+
+  // ---------- Para ti: además de lo que elige Claude, lo más fuerte del radar al momento que encaja con el perfil
+  const SEC_CATS = {startups: ["startups"], clonar: ["negocio", "ia"], accion: ["bolsa"], extra: ["cripto", "lanzamientos", "ia", "negocio"]};
+  function liveMore(cur) {
+    const secs = Object.keys(cur.secciones || {});
+    const cats = new Set(secs.flatMap((k) => SEC_CATS[k] || []));
+    const picked = new Set(Object.values(cur.secciones || {}).flatMap((sec) => arr(sec.picks)).flatMap((p) => [p.ref, safeUrl(p.enlace)]).filter(Boolean));
+    const since = Date.now() - 24 * 3600e3;
+    const list = items().filter((x) => !x.h && (x.opp ?? 1) >= 2 && (x.s ?? 0) >= 70 && (toDate(x.t) || 0) > since && !picked.has(x.id) && !picked.has(safeUrl(x.url))
+      && ([...cats].some((c) => inCat(x, c)) || (secs.includes("ayudas") && x.kind === "grant")))
+      .sort((a, b) => (b.s ?? 0) - (a.s ?? 0) || byWhen(a, b)).slice(0, 8);
+    const home = cur.profile.casa ? casaFeed(cur.profile.id).slice(0, 5) : [];
+    if (!list.length && !home.length) return "";
+    return `<div class="section-h"><h2>⚡ ${L("Más oportunidades al momento", "More live opportunities")}</h2><span>${list.length + home.length}</span></div>
+      <p class="note">${L("Lo más fuerte del radar en las últimas 24 horas que encaja con tu perfil. Se actualiza cada pocos minutos; Claude no lo ha revisado.", "The strongest radar items of the last 24 hours that fit your profile. Updated every few minutes; not reviewed by Claude.")}</p>
+      ${list.length ? `<div class="rows">${list.map(row).join("")}</div>` : ""}
+      ${home.length ? `${list.length ? `<p class="lbl" style="padding:10px var(--pad) 0">🏡 ${L("Desde casa", "From home")}</p>` : ""}<div class="rows">${home.map(novRow).join("")}</div>
+        <p style="padding:8px var(--pad)"><button class="linkbtn" type="button" data-tab="casa">${L("Ver todo en Desde casa", "See everything in From home")}</button></p>` : ""}`;
   }
 
   // ---------- editor de perfil (cada persona el suyo)
@@ -1281,6 +1375,7 @@
     const ps = t.closest("[data-psave]"); if (ps) { ps.disabled = true; await saveProfileForm(ps.dataset.psave); return; }
     const cr = t.closest("[data-casa-run]"); if (cr) { cr.disabled = true; cr.textContent = await ghDispatch("brief.yml", {perfil: cr.dataset.casaRun, solo: "casa", force: "true"}) ? L("pedidas: llegan en unos minutos", "requested: a few minutes") : L("no se pudo pedir (revisa el token)", "could not request (check the token)"); return; }
     const br = t.closest("[data-brief-run]"); if (br) { br.disabled = true; br.textContent = await runBrief() ? L("Pedido: llega en unos minutos", "Requested: a few minutes") : L("No se pudo pedir (revisa el token)", "Could not request it (check the token)"); return; }
+    const ct = t.closest("[data-ctema]"); if (ct) { S.casaTema = ct.dataset.ctema; LS.set("radar-casa-tema", S.casaTema); S.limit = 60; render(); return; }
     const chip = t.closest("[data-chip]"); if (chip) { S.chip[S.tab] = chip.dataset.chip; S.limit = 60; render(); return; }
     const seg = t.closest("[data-seg]"); if (seg) { S.seg[S.tab] = seg.dataset.seg; LS.set("radar-segs", S.seg); S.limit = 60; render(); return; }
     const om = t.closest("[data-oppmin]"); if (om) { S.oppMin = +om.dataset.oppmin; render(); return; }

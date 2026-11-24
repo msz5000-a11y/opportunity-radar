@@ -1243,7 +1243,11 @@ CASA_PER_RUN = 5
 CASA_MAX_AGE = {"story": 21, "local": 30}  # días; menos que lo que se guardan en el feed, para que no vuelvan como nuevas
 LOCAL_OK = R._kw("emprend", "autonom", "comerci", "ayuda", "subvenc", "curso", "taller", "formacion", "mercado", "feria", "artesan",
                  "negocio", "empresa", "empleo", "programa", "jornada", "convocatoria", "mujer", "digital")
-LOCAL_OFF = R._kw("accidente", "incendio", "detenido", "muere", "fallece", "sucesos", "trafico", "futbol", "partido", "lluvia", "dana")
+LOCAL_OFF = R._kw("accidente", "incendio", "detenido", "muere", "fallece", "sucesos", "trafico", "futbol", "partido", "lluvia", "dana",
+                  # ya pasado o no es para una persona que empieza: resueltas, premios, estadísticas, reivindicaciones, grandes empresas
+                  "resuelve", "resuelto", "resolucion", "concede", "conceden", "premia", "premio", "galardon", "record", "cifras", "afiliacion",
+                  "reivindica", "exige", "denuncia", "critica", "reclama", "alumnado", "estudiantes", "tfg", "tfm", "mid-caps", "industrial",
+                  "multinacional", "cotiza", "bolsa", "pleno", "oposicion", "elecciones")
 
 
 def _places(prof: dict) -> set[str]:
