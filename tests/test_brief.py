@@ -207,15 +207,21 @@ def test_run_pause_turn_is_continued(monkeypatch, tmp_path):
 
 def test_fallback_without_key_and_over_cap(monkeypatch, tmp_path):
     cfg, transport, calls, sent = _setup(monkeypatch, tmp_path, key=False)
-    seen = {}
+    seen = []
+    monkeypatch.setenv("GEMINI_API_KEY", "g")
+    monkeypatch.setenv("GROQ_API_KEY", "q")
+    cfg["limits"] = {"max_llm_calls": {"gemini": 40, "groq": 60}}
+    cfg["models"] = {"gemini_preference": ["gemini-a", "gemini-b"]}
 
-    def fake_ask_role(self, role, system, prompt, **kw):
-        seen["role"], seen["providers"] = role, self.models_cfg.get(role)
-        return {"data": REPLY, "model": "gemini-3.1-flash-lite", "provider": "gemini"}
-    monkeypatch.setattr(B.Router, "ask_role", fake_ask_role)
+    def fake_ask(self, provider, system, prompt, **kw):
+        seen.append((provider, self.chosen.get(provider), len(system)))
+        if provider == "gemini" and self.chosen["gemini"] == "gemini-a":
+            raise RuntimeError("HTTP 503")  # sobrecargado: prueba el siguiente modelo
+        return {"data": REPLY, "model": self.chosen.get(provider) or provider, "provider": provider}
+    monkeypatch.setattr(B.Router, "ask", fake_ask)
     out = B.run(tmp_path, cfg, now=NOW, transport=transport)
     p = out["profiles"]["es"]
-    assert p["provider"] == "gemini" and p["cost_usd"] == 0 and seen == {"role": "brief", "providers": ["gemini", "groq", "openrouter"]}
+    assert p["provider"] == "gemini" and p["model"] == "gemini-b" and p["cost_usd"] == 0 and [x[:2] for x in seen] == [("gemini", "gemini-a"), ("gemini", "gemini-b")]
     assert p["secciones"]["startups"]["picks"][0]["fuentes"] == []  # sin búsqueda: no hay enlaces de fuera que validar
     assert not calls
     # con clave pero el tope de hoy ya gastado → respaldo gratuito
@@ -225,6 +231,21 @@ def test_fallback_without_key_and_over_cap(monkeypatch, tmp_path):
     (tmp_path / "brief.json").write_text(json.dumps(data))
     out = B.run(tmp_path, cfg, now=NOW.replace(hour=19), transport=transport, force=True)
     assert out["profiles"]["es"]["provider"] == "gemini" and "tope diario" in out["profiles"]["es"]["error"] and not calls
+
+
+def test_free_fallback_uses_short_prompt_for_groq(monkeypatch, tmp_path):
+    cfg, transport, calls, sent = _setup(monkeypatch, tmp_path, key=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.setenv("GROQ_API_KEY", "q")
+    cfg["limits"] = {"max_llm_calls": {"groq": 60}}
+    seen = []
+
+    def fake_ask(self, provider, system, prompt, **kw):
+        seen.append((provider, system))
+        return {"data": REPLY, "model": "openai/gpt-oss-120b", "provider": provider}
+    monkeypatch.setattr(B.Router, "ask", fake_ask)
+    out = B.run(tmp_path, cfg, now=NOW, transport=transport)
+    assert out["profiles"]["es"]["provider"] == "groq" and seen[0][0] == "groq" and "CANDIDATOS (resumidos)" in seen[0][1]
 
 
 def test_breakout_signal():

@@ -229,7 +229,7 @@ def rounds() -> list[dict]:
 _SEASON = {"winter": 1, "spring": 2, "summer": 3, "fall": 4}
 
 
-def yc_recent(n: int = 45) -> list[dict]:
+def yc_recent(n: int = 25) -> list[dict]:
     meta = net.get_json("https://yc-oss.github.io/api/meta.json", timeout=30) or {}
     batches = []
     for k, b in (meta.get("batches") or {}).items():
@@ -253,7 +253,7 @@ def yc_recent(n: int = 45) -> list[dict]:
     return out
 
 
-def trustmrr(n: int = 30) -> list[dict]:
+def trustmrr(n: int = 20) -> list[dict]:
     t = _get("https://trustmrr.com/").replace('\\"', '"')
     seen, rows = set(), []
     for m in re.finditer(r'"name":"([^"]{1,80})","icon":"[^"]*","description":"([^"]{0,400})"(.{0,900}?)"slug":"([a-z0-9\-]+)"(.{0,900})', t):
@@ -278,7 +278,7 @@ def trustmrr(n: int = 30) -> list[dict]:
     return rows[:n]
 
 
-def producthunt(n: int = 15) -> list[dict]:
+def producthunt(n: int = 10) -> list[dict]:
     raw = _get("https://www.producthunt.com/feed")
     out = []
     for e in re.findall(r"<entry>(.*?)</entry>", raw, re.S)[:n]:
@@ -604,6 +604,43 @@ def shared_block(pool: dict, now: datetime) -> str:
             f"## PULSO — lo más fuerte de las últimas 36 h\n{j(pool['extra'])}")
 
 
+def compact_block(pool: dict, now: datetime) -> str:
+    """Candidatos recortados para los modelos gratuitos (Groq corta las peticiones de más de ~8.000 tokens)."""
+    pick = lambda r, ks: {k: r.get(k) for k in ks if r.get(k) not in (None, "", [])}  # noqa: E731
+    by_src = lambda tag, n: [r for r in pool["clonar"] if tag in (r.get("fuente") or "")][:n]  # noqa: E731
+    small = {
+        "startups": [pick(r, ("id", "plataforma", "empresa", "titulo", "tipo", "sector", "objetivo_eur", "objetivo_max_eur", "completado_pct",
+                              "cierre", "ticket_min_eur")) for r in pool["startups"][:8]],
+        "clonar": [pick(r, ("id", "fuente", "nombre", "que_hace", "ingresos_30d_usd", "pais_origen", "encaje"))
+                   for r in by_src("Ideas", 8) + by_src("TrustMRR", 6) + by_src("Combinator", 6)],
+        "accion": [pick(x, ("id", "nombre", "sector", "precio_usd", "nota_radar", "senal", "cuchillo_cayendo", "valor_razonable_usd"))
+                   | {"per": (x.get("metricas") or {}).get("pe"), "stop": (x.get("tecnico") or {}).get("stop")} for x in pool["accion"][:6]],
+        "extra": [pick(x, ("id", "titular", "nota")) for x in pool["extra"][:6]],
+    }
+    local = now.astimezone(MADRID)
+    return f"FECHA: {local:%Y-%m-%d %H:%M} (Madrid)\n\nCANDIDATOS (resumidos):\n" + json.dumps(small, ensure_ascii=False, separators=(",", ":"))
+
+
+def ask_free(cfg: dict, shared: str, small: str, user: str, transport=None) -> tuple[dict | None, list[str]]:
+    """Respaldo gratuito: Gemini (hasta 3 modelos, porque a veces responde 503) con todo; Groq u OpenRouter con lo resumido."""
+    router = Router(cfg, transport=transport)
+    errs: list[str] = []
+    if router.available("gemini"):
+        for m in ((cfg.get("models") or {}).get("gemini_preference") or ["gemini-2.5-flash"])[:3]:
+            router.chosen["gemini"] = m
+            try:
+                return router.ask("gemini", RULES + "\n\n" + shared, user), errs
+            except Exception as e:  # noqa: BLE001
+                errs.append(f"gemini {m}: {str(e)[:90]}")
+    for p in ("groq", "openrouter"):
+        if router.available(p):
+            try:
+                return router.ask(p, RULES + "\n\n" + small, user), errs
+            except Exception as e:  # noqa: BLE001
+                errs.append(f"{p}: {str(e)[:90]}")
+    return None, errs or ["sin claves de modelos gratuitos"]
+
+
 def user_block(profile: dict, grants_list: list[dict]) -> str:
     pub = {k: v for k, v in profile.items() if k not in ("notify",)}
     lang = "español de España" if profile.get("language", "es") == "es" else "English"
@@ -665,6 +702,7 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
     spend = prev.get("spend") if (prev.get("spend") or {}).get("date") == today else {"date": today, "usd": 0.0}
     pool = gather(data_dir, feed_path, now)
     shared = shared_block(pool, now)
+    small = compact_block(pool, now)
     out = {"version": 1, "generatedAt": prev.get("generatedAt"), "checkedAt": iso(now), "attemptedAt": iso(now), "spend": spend,
            "profiles": dict(prev.get("profiles") or {}), "sources": STATUS, "model": bcfg["model"]}
     has_key = bool(os.environ.get("ANTHROPIC_API_KEY", "").strip())
@@ -702,13 +740,11 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
         elif has_key:
             err = f"tope diario de {bcfg['daily_usd_cap']} $ alcanzado"
         if res is None:
-            router = Router({**cfg, "models": {**(cfg.get("models") or {}), "brief": bcfg.get("fallback") or ["gemini", "groq", "openrouter"]}},
-                            transport=transport)
-            r2 = router.ask_role("brief", RULES + "\n\n" + shared, user)
+            r2, ferrs = ask_free(cfg, shared, small, user, transport=transport)
             if r2:
                 res = {"data": r2["data"], "usage": {}, "urls": set(), "model": r2.get("model"), "provider": r2.get("provider"), "cost": 0.0}
             else:
-                err = (err + " · " if err else "") + "respaldo sin respuesta: " + "; ".join(router.errors[-3:])
+                err = (err + " · " if err else "") + "respaldo sin respuesta: " + "; ".join(ferrs[-4:])
         if res is None:
             out["profiles"][pid] = {**old, "ok": bool(old.get("ok")), "error": err, "checkedAt": iso(now)}
             continue
