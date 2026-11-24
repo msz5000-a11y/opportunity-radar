@@ -164,7 +164,8 @@
   }
   let liveTicker = {};
   const num = (v) => { const x = parseFloat(String(v ?? "").replace(/[,%+\s]/g, "")); return isNaN(x) ? null : x; };
-  const MACRO = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER"};
+  const MACRO = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER", "XAU=": "GOLD_SPOT", "XAG=": "SILVER_SPOT"};
+  const qTime = (s) => { s = String(s || ""); if (s.length <= 10) return null; const d = new Date(s.replace(/([+-]\d{2})(\d{2})$/, "$1:$2")); return isNaN(d) ? null : d; };
   async function pollPrices() {
     if (document.hidden) return;
     const crypto = (async () => {
@@ -176,23 +177,31 @@
       }
     })().catch(() => {});
     const macro = (async () => {
-      let got = 0;
+      const got = {};
       try {
         const r = await fetch("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + encodeURIComponent(Object.keys(MACRO).join("|")) +
           "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1", {cache: "no-store"});
         if (r.ok) {
-          const d = await r.json();
+          const d = await r.json(), now = Date.now();
           for (const q of arr(d?.FormattedQuoteResult?.FormattedQuote)) {
-            const k = MACRO[q.symbol], p = num(q.last);
-            if (k && p != null) { liveTicker[k] = {p, ch: num(q.change_pct), chg: num(q.change), cur: "USD"}; got++; }
+            const k = MACRO[q.symbol], p = num(q.last), t = qTime(q.last_time);
+            if (!k || !(p > 0)) continue;
+            if (t && (t - now > 10 * 60e3 || now - t > 5 * 864e5)) continue;  // registro de otra sesión o con hora imposible
+            got[k] = {p, ch: num(q.change_pct), chg: num(q.change), cur: "USD"};
           }
         }
       } catch {}
-      if (got < 2) {  // respaldo para oro y plata
-        await Promise.all([["GOLD", "XAU"], ["SILVER", "XAG"]].map(async ([k, sym]) => {
-          try { const r = await fetch(`https://api.gold-api.com/price/${sym}`, {cache: "no-store"}); const d = r.ok ? await r.json() : null; if (d?.price) liveTicker[k] = {...(liveTicker[k] || {}), p: d.price, cur: "USD"}; } catch {}
-        }));
+      for (const [k, tol] of [["GOLD", 1.5], ["SILVER", 2.5]]) {  // el futuro se contrasta con el contado
+        const f = got[k], s = got[k + "_SPOT"];
+        delete got[k + "_SPOT"];
+        if (f && s && f.ch != null && s.ch != null && Math.abs(f.ch - s.ch) > tol) delete got[k];  // no cuadran: queda el dato del servidor
+        else if (!f && s) got[k] = s;
       }
+      Object.assign(liveTicker, got);
+      const tk = S.feed?.ticker || {};
+      await Promise.all([["GOLD", "XAU"], ["SILVER", "XAG"]].filter(([k]) => !liveTicker[k] && !tk[k]).map(async ([k, sym]) => {
+        try { const r = await fetch(`https://api.gold-api.com/price/${sym}`, {cache: "no-store"}); const d = r.ok ? await r.json() : null; if (d?.price) liveTicker[k] = {p: d.price, cur: "USD"}; } catch {}
+      }));
     })();
     await Promise.all([crypto, macro]);
     renderTicker();

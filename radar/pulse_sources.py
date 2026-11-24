@@ -272,8 +272,13 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
 
 # ------------------------------------------------------------------ macro: índices, bono a 10 años, Brent, oro y plata
 CNBC = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
-MACRO_SYMS = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER"}
+# Futuros del primer vencimiento (lo que enseñan CNBC o Yahoo como «oro», «plata» o «Brent») y el contado del oro y la plata para contrastar.
+MACRO_SYMS = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER",
+              "XAU=": "GOLD_SPOT", "XAG=": "SILVER_SPOT"}
 YAHOO_SYMS = {"SPX": "^GSPC", "IXIC": "^IXIC", "US10Y": "^TNX", "BRENT": "BZ=F", "GOLD": "GC=F", "SILVER": "SI=F"}
+FUTURES = ("BRENT", "GOLD", "SILVER")
+METAL_TOL = {"GOLD": 1.5, "SILVER": 2.5}  # puntos de diferencia admitidos entre el cambio diario del futuro y el del contado
+FRESH = timedelta(hours=4)  # solo se avisa de movimientos con cotización reciente (mercado abierto)
 
 
 def _num(v):
@@ -285,26 +290,60 @@ def _num(v):
         return None
 
 
-def macro_quotes() -> dict:
-    """Cotizaciones en dólares (rentabilidad en % para el bono): CNBC primero; gold-api.com y Yahoo de respaldo."""
+def _qtime(s) -> datetime | None:
+    """Hora de una cotización en UTC; None si solo trae la fecha (sesión cerrada) o no se entiende."""
+    if isinstance(s, (int, float)):
+        return parse_date(s)
+    s = str(s or "").strip()
+    if len(s) <= 10:
+        return None
+    try:
+        d = datetime.fromisoformat(re.sub(r"([+-]\d{2})(\d{2})$", r"\1:\2", s.replace("Z", "+00:00")))
+    except ValueError:
+        return None
+    return d.astimezone(timezone.utc) if d.tzinfo else d.replace(tzinfo=timezone.utc)
+
+
+def _quote(p, ch, chg, qt, src, now, raw_at=None) -> dict:
+    return {"p": p, "ch": ch, "chg": chg, "at": iso(qt) if qt else raw_at, "src": src,
+            "fresh": bool(qt and -timedelta(minutes=10) <= now - qt <= FRESH)}
+
+
+def macro_quotes(now: datetime | None = None) -> dict:
+    """Cotizaciones en dólares (rentabilidad en % para el bono). CNBC primero, con controles: se descartan registros con una
+    hora imposible o de hace días (su caché a veces sirve el de otra sesión), el oro y la plata se contrastan con el contado
+    (CNBC y gold-api.com) y, si algo no cuadra, se enseña el precio sin cambio diario. Yahoo solo de respaldo."""
+    now = now or datetime.now(timezone.utc)
     out: dict = {}
     try:
         d = get_json(CNBC, params={"symbols": "|".join(MACRO_SYMS), "requestMethod": "itv", "noform": 1, "partnerId": 2, "fund": 1,
                                    "exthrs": 1, "output": "json", "events": 1}, timeout=15) or {}
         for q in (d.get("FormattedQuoteResult") or {}).get("FormattedQuote") or []:
             k, p = MACRO_SYMS.get(q.get("symbol")), _num(q.get("last"))
-            if k and p is not None:
-                out[k] = {"p": p, "ch": _r(_num(q.get("change_pct"))), "chg": _r(_num(q.get("change")), 4), "at": q.get("last_time"), "src": "CNBC"}
+            if not k or not p or p <= 0:
+                continue
+            qt = _qtime(q.get("last_time"))
+            if qt and not (now - timedelta(days=5) <= qt <= now + timedelta(minutes=10)):
+                continue
+            out[k] = _quote(p, _r(_num(q.get("change_pct"))), _r(_num(q.get("change")), 4), qt, "CNBC", now, q.get("last_time"))
     except (SourceError, ValueError, AttributeError):
         pass
     for k, sym in (("GOLD", "XAU"), ("SILVER", "XAG")):
-        if k not in out:
-            try:
-                d = get_json(f"https://api.gold-api.com/price/{sym}", timeout=12) or {}
-                if d.get("price"):
-                    out[k] = {"p": _r(d["price"], 3), "ch": None, "chg": None, "at": d.get("updatedAt"), "src": "gold-api.com"}
-            except (SourceError, ValueError, AttributeError):
-                pass
+        fut, spot = out.get(k), out.pop(f"{k}_SPOT", None)
+        ref = ref_t = None
+        try:
+            g = get_json(f"https://api.gold-api.com/price/{sym}", timeout=12) or {}
+            ref, ref_t = _num(g.get("price")), _qtime(g.get("updatedAt"))
+        except (SourceError, ValueError, AttributeError):
+            pass
+        q = fut or spot
+        if fut and spot and fut["ch"] is not None and spot["ch"] is not None and abs(fut["ch"] - spot["ch"]) > METAL_TOL[k]:
+            q = min((fut, spot), key=lambda x: abs(x["p"] - ref)) if ref else fut
+            q = {**q, "ch": None, "chg": None, "fresh": False}
+        if ref and ref > 0 and (not q or abs(q["p"] / ref - 1) > 0.025):
+            q = {**_quote(_r(ref, 3 if k == "SILVER" else 2), None, None, ref_t, "gold-api.com", now), "fresh": False}
+        if q:
+            out[k] = q
     for k, ysym in YAHOO_SYMS.items():
         if k in out:
             continue
@@ -312,9 +351,12 @@ def macro_quotes() -> dict:
             d = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{quote_plus(ysym)}", params={"range": "1d", "interval": "15m"}, timeout=12) or {}
             meta = ((d.get("chart") or {}).get("result") or [{}])[0].get("meta") or {}
             p, prev = meta.get("regularMarketPrice"), meta.get("chartPreviousClose") or meta.get("previousClose")
-            if p is not None:
-                out[k] = {"p": p, "ch": _r((p / prev - 1) * 100) if prev else None, "chg": _r(p - prev, 4) if prev else None, "src": "Yahoo"}
-        except (SourceError, ValueError, IndexError, AttributeError):
+            if p:
+                # en futuros, Yahoo empalma vencimientos y el «cambio» puede ser el salto de contrato: solo el precio
+                ok = bool(prev) and k not in FUTURES
+                out[k] = _quote(p, _r((p / prev - 1) * 100) if ok else None, _r(p - prev, 4) if ok else None,
+                                _qtime(meta.get("regularMarketTime")), "Yahoo", now)
+        except (SourceError, ValueError, IndexError, AttributeError, ZeroDivisionError):
             pass
     return out
 
@@ -341,14 +383,14 @@ MACRO_TEXT = {
 
 
 def c_macro(ctx: Ctx) -> list[dict]:
-    quotes = macro_quotes()
+    quotes = macro_quotes(ctx.now)
     if not quotes:
         raise SourceError("sin cotizaciones")
     ctx.share["macro"] = quotes
     out = []
     for k, (es, en, steps, kind, why, why_en, act, act_en) in MACRO_TEXT.items():
         q = quotes.get(k)
-        if not q or q.get("ch") is None or abs(q["ch"]) < steps[0]:
+        if not q or not q.get("fresh") or q.get("ch") is None or abs(q["ch"]) < steps[0]:
             continue
         up, b = q["ch"] > 0, R.move_bucket(q["ch"], steps)
         level = R.fmt_price(q["p"], "$") if kind == "price" else f"{q['p']:,.0f}".replace(",", ".")
@@ -360,7 +402,7 @@ def c_macro(ctx: Ctx) -> list[dict]:
                         m={"price": q["p"], "cur": "USD", "ch24h": q["ch"]}, s=int(56 + min(16, (abs(q["ch"]) - steps[0]) * 4)), opp=2,
                         risk="medio", tags=["macro", "subida" if up else "caida"], url="https://www.cnbc.com/markets/"))
     y = quotes.get("US10Y")
-    if y and y.get("chg") is not None and abs(y["chg"]) >= 0.08:
+    if y and y.get("fresh") and y.get("chg") is not None and abs(y["chg"]) >= 0.08:
         up, bp = y["chg"] > 0, round(abs(y["chg"]) * 100)
         lvl = f"{y['p']:.2f}".replace(".", ",")
         out.append(item(f"mc:us10y:{ctx.today}:{'u' if up else 'd'}{1 if bp < 15 else 2}", "bolsa", "move", y.get("src") or "CNBC",

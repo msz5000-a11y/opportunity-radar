@@ -234,25 +234,71 @@ def test_us_session():
     assert S.us_session(datetime(2026, 11, 22, 15, 0, tzinfo=timezone.utc)) == "closed"
 
 
+T_OK = "2026-11-23T09:50:00.000-0500"  # 10 minutos antes de NOW
 CNBC_FIX = {"FormattedQuoteResult": {"FormattedQuote": [
-    {"symbol": ".SPX", "last": "7,237.17", "change": "+326.78", "change_pct": "+4.73%"},
-    {"symbol": ".IXIC", "last": "24,089.558", "change": "+1,471.825", "change_pct": "+6.51%"},
-    {"symbol": "US10Y", "last": "4.906%", "change": "-0.114", "change_pct": "-2.28%"},
-    {"symbol": "@LCO.1", "last": "89.08", "change": "-0.29", "change_pct": "-0.32%"},
-    {"symbol": "@GC.1", "last": "3,622.50", "change": "-28.90", "change_pct": "-0.79%"},
-    {"symbol": "@SI.1", "last": "41.825", "change": "-1.35", "change_pct": "-3.13%"}]}}
+    {"symbol": ".SPX", "last": "7,237.17", "change": "+326.78", "change_pct": "+4.73%", "last_time": T_OK},
+    {"symbol": ".IXIC", "last": "24,089.558", "change": "+1,471.825", "change_pct": "+6.51%", "last_time": T_OK},
+    {"symbol": "US10Y", "last": "4.906%", "change": "-0.114", "change_pct": "-2.28%", "last_time": T_OK},
+    {"symbol": "@LCO.1", "last": "89.08", "change": "-0.29", "change_pct": "-0.32%", "last_time": "2026-11-23T15:45:00.000+0100"},
+    {"symbol": "@GC.1", "last": "3,622.50", "change": "-28.90", "change_pct": "-0.79%", "last_time": T_OK},
+    {"symbol": "@SI.1", "last": "41.825", "change": "-1.35", "change_pct": "-3.13%", "last_time": T_OK},
+    {"symbol": "XAU=", "last": "3,622.99", "change": "-8.69", "change_pct": "-0.24%", "last_time": T_OK},
+    {"symbol": "XAG=", "last": "42.0054", "change": "-1.0545", "change_pct": "-2.4489%", "last_time": T_OK}]}}
+
+
+def _cnbc(**over):
+    """CNBC_FIX con algunos registros cambiados: over = {símbolo: {campo: valor}}."""
+    return {"FormattedQuoteResult": {"FormattedQuote": [{**q, **over.get(q["symbol"], {})} for q in CNBC_FIX["FormattedQuoteResult"]["FormattedQuote"]]}}
+
+
+def _fake_macro(cnbc, gold=3620.15, silver=41.78):
+    def fake(url, **kw):
+        if "cnbc" in url:
+            return cnbc
+        if "gold-api" in url:
+            return {"price": gold if url.endswith("XAU") else silver, "updatedAt": "2026-11-23T14:59:00Z"}
+        raise S.SourceError("x")
+    return fake
 
 
 def test_macro_quotes_and_moves(monkeypatch):
-    monkeypatch.setattr(S, "get_json", lambda url, **kw: CNBC_FIX if "cnbc" in url else (_ for _ in ()).throw(S.SourceError("x")))
+    monkeypatch.setattr(S, "get_json", _fake_macro(CNBC_FIX))
     c = ctx()
     out = S.c_macro(c)
     q = c.share["macro"]
     assert q["GOLD"]["p"] == 3622.5 and q["SPX"]["p"] == 7237.17 and q["US10Y"]["p"] == 4.906 and q["US10Y"]["chg"] == -0.114
+    assert "GOLD_SPOT" not in q and q["GOLD"]["at"] == "2026-11-23T14:50:00Z" and q["BRENT"]["fresh"]
     ids = {x["id"] for x in out}
     assert ids == {"mc:spx:2026-11-23:u2", "mc:ixic:2026-11-23:u3", "mc:silver:2026-11-23:d1", "mc:us10y:2026-11-23:d1"}
     y = next(x for x in out if x["id"].startswith("mc:us10y"))
     assert "11 pb" in y["es"] and "4,91 %" in y["es"]
+
+
+def test_macro_stale_or_odd_records_never_make_moves(monkeypatch):
+    # el fallo real: registro de otra sesión con hora futura (+4,55 % en el oro) → se descarta y manda el contado
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{"@GC.1": {"last": "3,675.40", "change": "+160.00", "change_pct": "+4.55%",
+                                                                       "last_time": "2026-11-23T11:20:39.000-0500"}})))
+    c = ctx()
+    out = S.c_macro(c)
+    assert c.share["macro"]["GOLD"]["p"] == 3622.99 and c.share["macro"]["GOLD"]["ch"] == -0.24
+    assert not any(x["id"].startswith("mc:gold") for x in out)
+    # misma sesión pero el cambio del futuro no cuadra con el del contado → precio sin cambio y sin aviso
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{"@GC.1": {"change": "+160.00", "change_pct": "+4.55%"}})))
+    c = ctx()
+    out = S.c_macro(c)
+    g = c.share["macro"]["GOLD"]
+    assert g["ch"] is None and not g["fresh"] and not any(x["id"].startswith("mc:gold") for x in out)
+    # precio muy lejos del contado de gold-api → se enseña el de gold-api
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{"@SI.1": {"last": "48.10"}, "XAG=": {"last": "48.00"}})))
+    c = ctx()
+    S.c_macro(c)
+    assert c.share["macro"]["SILVER"] == {**c.share["macro"]["SILVER"], "p": 41.78, "src": "gold-api.com", "ch": None}
+    # sesión cerrada (solo fecha) o cotización de hace horas → en la cinta sí, pero sin avisos
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{".SPX": {"last_time": "2026-11-20"}, ".IXIC": {"last_time": "2026-11-23T03:00:00.000-0500"}})))
+    c = ctx()
+    out = S.c_macro(c)
+    assert c.share["macro"]["SPX"]["p"] == 7237.17 and c.share["macro"]["SPX"]["at"] == "2026-11-20"
+    assert not any(x["id"].startswith(("mc:spx", "mc:ixic")) for x in out)
 
 
 def test_macro_fallbacks(monkeypatch):
@@ -262,11 +308,13 @@ def test_macro_fallbacks(monkeypatch):
         if "gold-api" in url:
             return {"price": 3600.1 if url.endswith("XAU") else 41.0, "updatedAt": "2026-11-24T10:00:00Z"}
         if "yahoo" in url:
-            return {"chart": {"result": [{"meta": {"regularMarketPrice": 89.0, "chartPreviousClose": 88.0}}]}}
+            return {"chart": {"result": [{"meta": {"regularMarketPrice": 89.0, "chartPreviousClose": 88.0, "regularMarketTime": 1795514700}}]}}
         raise S.SourceError("x")
     monkeypatch.setattr(S, "get_json", fake)
-    q = S.macro_quotes()
-    assert q["GOLD"]["src"] == "gold-api.com" and q["BRENT"]["src"] == "Yahoo" and round(q["BRENT"]["ch"], 2) == 1.14
+    q = S.macro_quotes(NOW)
+    assert q["GOLD"]["src"] == "gold-api.com" and q["GOLD"]["p"] == 3600.1 and q["GOLD"]["ch"] is None
+    assert q["BRENT"]["src"] == "Yahoo" and q["BRENT"]["p"] == 89.0 and q["BRENT"]["ch"] is None  # futuros: solo precio
+    assert round(q["SPX"]["ch"], 2) == 1.14 and q["SPX"]["at"].startswith("2026-")
 
 
 def test_migration_to_usd(tmp_path, monkeypatch):
@@ -280,7 +328,23 @@ def test_migration_to_usd(tmp_path, monkeypatch):
     monkeypatch.setattr(S, "registry", lambda cfg: [])
     feed = pulse.run(live, data, {}, now=NOW)
     st = json.loads((live / "pulse_state.json").read_text())
-    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 6 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 7 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
+
+
+def test_migration_drops_old_macro_moves(tmp_path, monkeypatch):
+    live, data = tmp_path / "live", tmp_path / "data"
+    live.mkdir()
+    bad = {"id": "mc:gold:2026-11-23:u2", "cat": "bolsa", "kind": "move", "src": "CNBC", "title": "El oro sube un 4,5 %", "s": 66, "opp": 2,
+           "risk": "medio", "m": {"cur": "USD", "price": 3675.4}, "t": "2026-11-23T14:00:00Z", "w": "2026-11-23T14:00:00Z"}
+    keep = dict(news("n:keep", "Una noticia cualquiera de hoy"), t="2026-11-23T14:00:00Z", w="2026-11-23T14:00:00Z")
+    (live / "feed.json").write_text(json.dumps({"items": [bad, keep], "ticker": {"GOLD": {"p": 3675.4, "ch": 4.55}, "BTC": {"p": 1, "cur": "USD"}}}))
+    (live / "pulse_state.json").write_text(json.dumps({"v": 6, "seen": {bad["id"]: "x", "n:keep": "x"}, "mem": {},
+                                                       "last": {"Índices, bono, Brent, oro y plata": "2026-11-23T14:59:00Z"}}))
+    monkeypatch.setattr(S, "registry", lambda cfg: [])
+    feed = pulse.run(live, data, {}, now=NOW)
+    st = json.loads((live / "pulse_state.json").read_text())
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 7 and bad["id"] not in st["seen"]
+    assert "GOLD" not in feed["ticker"] and "BTC" in feed["ticker"] and "Índices, bono, Brent, oro y plata" not in st.get("last", {})
 
 
 def test_all_collectors_with_fixtures(monkeypatch):

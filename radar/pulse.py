@@ -29,7 +29,7 @@ KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ip
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
 EVENT_TAGS = {"ipo", "fusion", "ronda", "listado", "resultados", "alerta", "airdrop", "recompra", "aprobacion", "launchpool", "tge", "etf"}
-PULSE_V = 6
+PULSE_V = 7
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
               "ARM", "INTC", "MU", "ORCL", "CRM", "UBER", "SHOP", "SNOW", "BABA", "SOFI", "RIVN", "IONQ", "RGTI", "SOUN", "RDDT", "APP",
@@ -365,14 +365,21 @@ def run(live: Path, data_dir: Path, cfg: dict, *, now: datetime | None = None, d
     now = now or now_utc()
     state = load(live / "pulse_state.json", {})
     prev = load(live / "feed.json", {})
-    if state.get("v") == 5 and PULSE_V == 6:  # paso a dólares: fuera los movimientos de cripto en euros (se vuelven a detectar)
-        drop = {it["id"] for it in prev.get("items") or [] if (it.get("m") or {}).get("cur") == "EUR"}
+    def _drop(pred, tick=()):
+        drop = {it["id"] for it in prev.get("items") or [] if pred(it)}
         prev["items"] = [it for it in prev.get("items") or [] if it["id"] not in drop]
         for k in drop:
             (state.get("seen") or {}).pop(k, None)
-        for k in ("BTC", "ETH", "SOL"):
+        for k in tick:
             (prev.get("ticker") or {}).pop(k, None)
-        state["v"] = PULSE_V
+
+    if state.get("v") == 5:  # paso a dólares: fuera los movimientos de cripto en euros (se vuelven a detectar)
+        _drop(lambda it: (it.get("m") or {}).get("cur") == "EUR", ("BTC", "ETH", "SOL"))
+        state["v"] = 6
+    if state.get("v") == 6:  # controles nuevos en oro, plata, índices y bono: fuera los movimientos macro anteriores
+        _drop(lambda it: it["id"].startswith("mc:"), ("SPX", "IXIC", "US10Y", "BRENT", "GOLD", "SILVER"))
+        (state.get("last") or {}).pop("Índices, bono, Brent, oro y plata", None)
+        state["v"] = 7
     if state.get("v") != PULSE_V:  # reglas nuevas: se rehace el feed (se conservan las listas de exchanges ya conocidas)
         state = {"v": PULSE_V, "mem": {k: v for k, v in (state.get("mem") or {}).items() if k in ("listings", "eod")}}
         prev = {"ticker": prev.get("ticker") or {}}
@@ -383,7 +390,7 @@ def run(live: Path, data_dir: Path, cfg: dict, *, now: datetime | None = None, d
     ctx = S.Ctx(now, state, cfg, fund=fund, watch=watchlist(data_dir, state))
     regs = S.registry(cfg)
     due = [(n, f, e) for n, f, e in regs if (only is None or n in only)
-           and (not last.get(n) or (now - S.parse_date(last[n])).total_seconds() >= e * 60 - 50)]
+           and (not last.get(n) or (now - S.parse_date(last[n])).total_seconds() >= e * 60 * 0.8)]
     sources = dict(prev.get("sources") or {})
     collected: list[dict] = []
     ex = ThreadPoolExecutor(max_workers=10)
