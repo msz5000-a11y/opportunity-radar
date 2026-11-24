@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T20:32:30Z",
- "checkedAt": "2026-11-24T20:32:30Z",
- "attemptedAt": "2026-11-24T20:32:30Z",
+ "generatedAt": "2026-11-24T21:48:42Z",
+ "checkedAt": "2026-11-24T21:48:42Z",
+ "attemptedAt": "2026-11-24T21:48:42Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -17,6 +17,12 @@
     "language": "es",
     "country": "ES",
     "municipality": "Riba-roja de Túria",
+    "interests": [
+     "startups",
+     "SaaS",
+     "bolsa",
+     "cripto"
+    ],
     "sections": [
      "startups",
      "clonar",
@@ -149,6 +155,13 @@
     "language": "es",
     "country": "ES",
     "municipality": "Riba-roja de Túria",
+    "interests": [
+     "inmobiliaria",
+     "arte",
+     "diseño",
+     "niños",
+     "cocina"
+    ],
     "sections": [
      "ayudas"
     ],
@@ -177,8 +190,9 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-24T20:32:30Z",
-    "checkedAt": "2026-11-24T20:32:30Z",
+    "generatedAt": "2026-11-24T21:48:42Z",
+    "checkedAt": "2026-11-24T21:48:42Z",
+    "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
     "model": "gemini-3.6-flash",
@@ -186,20 +200,133 @@
     "searches": 0,
     "error": null,
     "nuevas": 2,
-    "descartadas": 0,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 0,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado modelos de negocio basados en diseño inmobiliario e intermediación/curaduría online adaptados a tus gustos por la inmobiliaria, el arte y los niños, descartando opciones de alta inversión o venta física con local.",
+    "nota": "He buscado modelos de negocio probados desde casa con baja inversión que combinen inmobiliaria, arte y diseño visual. He descartado la reventa física de stock pesado o la elaboración de comida que requiera tramitar un registro sanitario industrial complejo desde la vivienda.",
     "oportunidades_locales": [],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c9ab4966e",
+      "fecha": "2026-11-24T21:48:42Z",
+      "nueva": true,
+      "titulo": "Servicio de Redacción y Marca Personal en LinkedIn para Agentes Inmobiliarios",
+      "gancho": "Ayuda a agentes e inmobiliarias locales a captar propiedades redactando su contenido profesional desde casa.",
+      "que_es": "Creas y gestionas la estrategia de contenidos en LinkedIn para agentes inmobiliarios y pequeñas agencias. Escribes publicaciones sobre tendencias del mercado local, casos de éxito de ventas e historias reales, acompañadas de gráficos limpios diseñados en Canva. El objetivo es que los agentes generen confianza y reciban llamadas de propietarios que quieren vender sus casas.",
+      "casos": [
+       {
+        "quien": "Redak",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 19.189 $ en 30 días",
+        "url": "https://trustmrr.com/startup/redak"
+       },
+       {
+        "quien": "Entrepreneur",
+        "pais": "",
+        "resultado": "I Turned a Simple Observation Into a LinkedIn-Based Side Hustle That Makes $9,000 to $12,000 a Month",
+        "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeHJNalhlWXcwbFRWRFNOb0NHZ0tQWnFJWkJaRWhCR3NRaDNSVzVUTHc0MjFQVTNseXRKalM4WXBHNHp6Y1RRalVCTDBxenpRdzZ2eC1KUENFWUJfaW9CY29BZXBiZV94V0RnbXJjcHdhc19HTjBBa0lCblM2bzYweW1GTzY5V09PcVlIa24yVG5nRnVhNnlRazM5LTlJM2k2eXFFaVVFWnROdDJEVEVNLVRTQk1QMGloQjBpUjRqMmlDQjdFZEc3YVZ3VG9ONG5aR1hz?oc=5"
+       }
+      ],
+      "por_que_tu": "Combinas tu experiencia previa en el sector inmobiliario con tu gusto por el diseño. Conoces perfectamente las preocupaciones de los compradores y vendedores de viviendas en la zona de Valencia.",
+      "como_empezar": [
+       "Semana 1: Diseña tu propia propuesta con un dossier en PDF y 3 plantillas de publicaciones inmobiliarias de muestra en Canva.",
+       "Semana 2: Prepara una lista de 30 agentes inmobiliarios independientes de Valencia, Camp de Túria y alrededores con perfil activo en LinkedIn.",
+       "Semana 3: Contacta por mensaje directo ofreciendo una auditoría gratuita de su perfil o 1 publicación de prueba sin compromiso.",
+       "Semana 4: Cierra tus 2 primeros clientes mensuales con un paquete básico de prueba de 30 días."
+      ],
+      "coste_inicial": "0 € - 30 € (suscripción a Canva Pro o herramienta de programación tipo Publer/Buffer opcional).",
+      "herramientas": [
+       "LinkedIn",
+       "Canva",
+       "ChatGPT / Claude (para apoyo de borradores)",
+       "Google Drive"
+      ],
+      "precio": "Suscripción mensual de 250 € a 450 € por cliente (incluye 8 a 12 publicaciones mensuales escritas y diseñadas).",
+      "primeras_clientas": [
+       "Contacta directamente por LinkedIn con APIs y agentes independientes de la provincia de Valencia ofertando un post de prueba gratuito.",
+       "Visita agencias locales en Riba-roja, Manises o Llíria y habla con el director comercial sobre cómo atraer captaciones exclusivas por redes."
+      ],
+      "ingresos_posibles": "Estimación de 500 € a 1.200 €/mes en los primeros 3 meses (con 2 a 4 clientes fijos). Basado en la cuota habitual de servicios B2B en España.",
+      "horas_semana": "8 a 12 horas a la semana.",
+      "tramites": [
+       "Alta en el Régimen Especial de Trabajadores Autónomos (RETA) al consolidar ingresos habituales (Tarifa Plana de 80 €/mes el primer año).",
+       "Alta en el censo IAE (Epígrafe 844 o 774 de servicios publicitarios/redacción).",
+       "Facturación con IVA (21%) y retención IRPF (15% o 7% para nuevas autónomas).",
+       "Cumplimiento de la RGPD para el tratamiento de datos de clientes."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Lenta respuesta inicial si los perfiles prospectados no usan LinkedIn a diario.",
+       "Necesidad de mantenerse al día con el algoritmo de LinkedIn.",
+       "Riesgo de cancelación si el cliente no mide el valor a largo plazo."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria",
+       "diseño"
+      ]
+     },
+     {
+      "id": "c491d1ef9",
+      "fecha": "2026-11-24T21:48:42Z",
+      "nueva": true,
+      "titulo": "Gestión de Canales de Pinterest para Tiendas Online y Marcas de Decoración",
+      "gancho": "Ayuda a pequeñas marcas de e-commerce a multiplicar su tráfico visual y ventas mediante tableros y pines optimizados.",
+      "que_es": "Pinterest funciona como un buscador visual muy potente para el sector del hogar, moda, cocina y eventos. Creas pines atractivos, programas contenido diario y optimizas el perfil de marcas de comercio electrónico o blogs para derivar tráfico cualificado a sus webs de venta.",
+      "casos": [
+       {
+        "quien": "Yahoo Finance",
+        "pais": "",
+        "resultado": "Pinterest Side Hustle: How I Make $2K a Month With Just 2 Hours a Week",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUTJCYklnMFFvWXNBY0huLXF5Ulp2aVlWUE5aRzZLckJlWjVTR2Z5dDRXeTdiaHZEOUNGem5KVS1wLUpiUWEtelhxb0toZW56bExGX1FPZ0hmT2NsbEVUcDRDRl96UXV0QXR6OTBTWFl3R3kwOVRBZGlOV1dFc0dfRFJ6enQ1UVlFZHRIeWNBelVDSTU1WnJpY1YwNA?oc=5"
+       }
+      ],
+      "por_que_tu": "Tienes un perfil muy enfocado a lo visual (arte, decoración, cocina, niños) y puedes trabajar 100% online desde tu casa en Riba-roja gestionando clientes de toda España.",
+      "como_empezar": [
+       "Semana 1: Completa la certificación gratuita de Pinterest Academy y crea plantillas de pines en Canva.",
+       "Semana 2: Crea un perfil propio de prueba ('Portfolio') enfocado en una temática específica (decoración de interiores o recetas familiares).",
+       "Semana 3: Prospecta tiendas online españolas de decoración, productos infantiles o moda artesanal con perfiles débiles en Pinterest.",
+       "Semana 4: Presenta un plan de 30 días de prueba a precio reducido para demostrar el aumento en impresiones y clics."
+      ],
+      "coste_inicial": "0 € - 40 € (herramienta de programación como Tailwind o Canva Pro).",
+      "herramientas": [
+       "Canva",
+       "Pinterest Business",
+       "Tailwind / Publer",
+       "Google Analytics"
+      ],
+      "precio": "Paquete mensual por cliente de 200 € a 400 € (incluye creación de 30 a 60 pines al mes y gestión de tableros).",
+      "primeras_clientas": [
+       "Contacta directamente con artesanas y pequeñas marcas de decoración o papelería en Instagram que no tengan su canal de Pinterest explotado.",
+       "Publica tutoriales cortos en LinkedIn o Instagram sobre 'Cómo aumentar tus ventas online con Pinterest'."
+      ],
+      "ingresos_posibles": "Estimación de 400 € a 1.000 €/mes con 2 a 3 clientes recurrentes. Basado en tarifas medias de asistentes virtuales especializadas en Pinterest en España.",
+      "horas_semana": "8 a 12 horas a la semana.",
+      "tramites": [
+       "Alta en Autónomos (RETA) y censo IAE correspondiente a marketing/publicidad.",
+       "Emisión de facturas con IVA y retención de IRPF.",
+       "Contrato simple de prestación de servicios digitales para regular la colaboración."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Los resultados de tráfico orgánico en Pinterest suelen tardar entre 2 y 3 meses en verse reflejados.",
+       "Cambios en los algoritmos de búsqueda visual.",
+       "Dependencia del material fotográfico inicial que proporcione el cliente."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "diseño",
+       "otros"
+      ]
+     },
+     {
       "id": "c2f0774a8",
       "fecha": "2026-11-24T20:32:30Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Kits de Visual Staging y Marketing Gráfico para Inmobiliarias Locales",
       "gancho": "Ayuda a agencias e independientes a vender pisos más rápido diseñando dossiers visuales y staging virtual sin hacer obras.",
       "que_es": "Consiste en ofrecer paquetes express de maquetación visual (Home Staging digital) y plantillas promocionales para portales como Idealista o Fotocasa. Transformas fotos de pisos vacíos o desordenados en imágenes atractivas y preparas dossiers de venta en 48 horas.",
@@ -248,7 +375,7 @@
      {
       "id": "ccda2b54c",
       "fecha": "2026-11-24T20:32:30Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Curaduría y Reventa de Moda Infantil Seleccionada (Vinted / Wallapop)",
       "gancho": "Convierte tu buen ojo para el diseño y el interés por los niños en una tienda rentable de ropa infantil de segunda mano curada.",
       "que_es": "Consiste en comprar lotes de ropa infantil de marcas reconocidas a bajo coste, ponerlas a punto, fotografiarlas con una estética muy cuidada y venderlas agrupadas o por piezas en plataformas online como Vinted o Wallapop.",
@@ -362,6 +489,11 @@
     "language": "en",
     "country": "EG",
     "municipality": null,
+    "interests": [
+     "SaaS",
+     "apps",
+     "startups"
+    ],
     "sections": [
      "startups",
      "clonar",
@@ -546,7 +678,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 11,
+   "n": 23,
    "err": null
   }
  },
