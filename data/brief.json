@@ -340,55 +340,6 @@
        "Dificultad para cobrar suscripciones pequeñas."
       ],
       "confianza": "media"
-     },
-     {
-      "id": "c7ca958ee",
-      "fecha": "2026-11-24T20:16:29Z",
-      "nueva": false,
-      "titulo": "Diseño de Stencils Personalizados para Artesanos",
-      "gancho": "Crea plantillas digitales únicas para artistas y artesanos locales usando herramientas de IA.",
-      "que_es": "Utiliza IA para convertir bocetos o fotos en diseños de plantillas (stencils) listos para imprimir o cortar. Es un servicio B2B para tatuadores, artistas de murales o artesanos de muebles que necesitan precisión.",
-      "casos": [
-       {
-        "quien": "Stencil AI",
-        "pais": "Global",
-        "resultado": "Genera más de 50.000 USD mensuales automatizando la creación de stencils para profesionales.",
-        "url": "https://trustmrr.com/startup/stencil-ai"
-       }
-      ],
-      "por_que_tu": "Combina tu experiencia en diseño y arte con una herramienta tecnológica que hace el trabajo pesado por ti.",
-      "como_empezar": [
-       "Semana 1: Aprende a usar herramientas de IA generativa de imágenes (ej. Midjourney o Canva Magic Studio) para crear vectores.",
-       "Semana 2: Crea un portafolio digital con 10 diseños de muestra.",
-       "Semana 3: Contacta por Instagram a 20 estudios de tatuaje o talleres de manualidades en Valencia.",
-       "Semana 4: Ofrece un diseño gratuito a cambio de un testimonio y empieza a cobrar por encargo."
-      ],
-      "coste_inicial": "50-100 EUR (suscripción a herramientas de diseño y marketing básico).",
-      "herramientas": [
-       "Canva Pro",
-       "Midjourney o Adobe Firefly",
-       "Instagram para captación"
-      ],
-      "precio": "15-30 EUR por diseño, cobrado vía transferencia o Bizum tras entrega del archivo digital.",
-      "primeras_clientas": [
-       "Estudios de tatuaje en Valencia capital y alrededores",
-       "Grupos de Facebook de artesanos en la Comunidad Valenciana",
-       "Tiendas de bellas artes locales"
-      ],
-      "ingresos_posibles": "300-600 EUR/mes (estimación basada en 10-20 encargos mensuales a tiempo parcial).",
-      "horas_semana": "10-15 horas",
-      "tramites": [
-       "Alta en Hacienda (modelo 036/037) cuando los ingresos sean recurrentes.",
-       "Alta en RETA (autónomos) si los ingresos superan el SMI, o usar la cuota reducida/tarifa plana.",
-       "Cumplimiento RGPD para datos de clientes."
-      ],
-      "ayudas": [],
-      "riesgos": [
-       "Dependencia de herramientas de terceros",
-       "Saturación del mercado de diseño digital",
-       "Dificultad para cobrar a clientes nuevos"
-      ],
-      "confianza": "alta"
      }
     ]
    },
