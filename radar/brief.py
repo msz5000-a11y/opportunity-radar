@@ -462,15 +462,16 @@ def grants(profile: dict, now: datetime, ids: dict | None = None, n: int = 15) -
             if num not in found or ORIGIN_RANK[origin] < ORIGIN_RANK[found[num][1]]:
                 found[num] = (x, origin)
 
+    # ventanas largas: hay programas anuales que siguen abiertos meses después de publicarse (la ficha dice si lo están)
     if ids.get("ayuntamiento"):
-        collect({"organos": ids["ayuntamiento"]}, "municipal", size=40, days=240)
+        collect({"organos": ids["ayuntamiento"]}, "municipal", size=50, days=365)
     if ids.get("diputacion"):
-        collect({"organos": ids["diputacion"]}, "provincial", size=40, days=180)
+        collect({"organos": ids["diputacion"]}, "provincial", size=50, days=365)
     if ids.get("region"):
         for q in GRANT_Q_REGION:
-            collect({"regiones": ids["region"], "tipoAdministracion": "A"}, "autonomica", q, size=15, days=180)
+            collect({"regiones": ids["region"], "tipoAdministracion": "A"}, "autonomica", q, size=20, days=365)
     for q in GRANT_Q:
-        collect({}, "estatal", q, size=20, days=90, nivel="ESTADO")
+        collect({}, "estatal", q, size=20, days=180, nivel="ESTADO")
     out, today = [], now.astimezone(MADRID).date().isoformat()
     st = {"encontradas": len(found), "sin_relacion": 0, "directa": 0, "no_para_ti": 0, "cerradas": 0}
     cands = []
@@ -850,15 +851,21 @@ def clean_ideas(raw: dict, *, allowed_urls: set[str], grant_ids: set[str], prev_
     seen = {_norm(t) for t in prev_titles}
     ok_url = lambda u: isinstance(u, str) and u.startswith("http") and _ukey(u) in allowed  # noqa: E731
     lst = lambda v, n, k=200: [_s(x, k) for x in (v or []) if isinstance(x, (str, int, float)) and _s(x, k)][:n]  # noqa: E731
-    ideas, dropped = [], 0
+    ideas, dropped, why = [], 0, {"repetida": 0, "sin_caso": 0, "vacia": 0}
     for it in (raw.get("ideas") or [])[:5]:
-        if not isinstance(it, dict) or not _s(it.get("titulo"), 120) or _norm(it.get("titulo")) in seen:
+        if not isinstance(it, dict) or not _s(it.get("titulo"), 120):
             dropped += 1
+            why["vacia"] += 1
+            continue
+        if _norm(it.get("titulo")) in seen:
+            dropped += 1
+            why["repetida"] += 1
             continue
         casos = [{"quien": _s(c.get("quien"), 120), "pais": _s(c.get("pais"), 40), "resultado": _s(c.get("resultado"), 240), "url": c["url"].strip()}
                  for c in (it.get("casos") or []) if isinstance(c, dict) and ok_url(c.get("url"))][:3]
         if not casos:  # «que ya haya funcionado en otro país»: sin un caso con enlace comprobado, fuera
             dropped += 1
+            why["sin_caso"] += 1
             continue
         conf = _s(it.get("confianza"), 10).lower()
         ideas.append({"id": "c" + hashlib.sha1(_norm(it["titulo"]).encode()).hexdigest()[:8], "fecha": iso(now), "nueva": True,
@@ -874,7 +881,7 @@ def clean_ideas(raw: dict, *, allowed_urls: set[str], grant_ids: set[str], prev_
             break
     local = [{"titulo": _s(o.get("titulo"), 120), "que_es": _s(o.get("que_es"), 240), "url": o["url"].strip()}
              for o in (raw.get("oportunidades_locales") or []) if isinstance(o, dict) and _s(o.get("titulo"), 120) and ok_url(o.get("url"))][:5]
-    return {"ideas": ideas, "oportunidades_locales": local, "nota": _s(raw.get("nota"), 300), "descartadas": dropped}
+    return {"ideas": ideas, "oportunidades_locales": local, "nota": _s(raw.get("nota"), 300), "descartadas": dropped, "motivos": why}
 
 
 def profile_hash(prof: dict) -> str:
@@ -1112,7 +1119,7 @@ def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budge
     st = res["usage"].get("server_tool_use") or {}
     return {"generatedAt": iso(now), "checkedAt": iso(now), "profile_hash": profile_hash(prof), "provider": res["provider"], "model": res["model"],
             "cost_usd": res.get("cost", 0.0), "searches": st.get("web_search_requests", 0), "error": err,
-            "nuevas": len(got["ideas"]), "descartadas": got["descartadas"], "nota": got["nota"],
+            "nuevas": len(got["ideas"]), "descartadas": got["descartadas"], "motivos": got.get("motivos"), "nota": got["nota"],
             "oportunidades_locales": got["oportunidades_locales"] or old.get("oportunidades_locales") or [],
             "ayudas": [{k: g.get(k) for k in ("id", "titulo", "donde", "ambito", "presupuesto_eur", "solicitud", "finalidad", "url", "sede")} for g in gl[:8]],
             "ideas": lib}
