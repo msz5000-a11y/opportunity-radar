@@ -1,21 +1,34 @@
-"""Diagnóstico puntual: BDNS, anuncios de exchanges en inglés y Groq con JSON."""
-import os, json, requests
-UA = {"User-Agent": "OpportunityRadarAI/3.0", "Accept-Language": "en-US,en;q=0.9"}
-for q in ["emprendedores", "startups", "digitalización", "creación de empresas"]:
-    r = requests.get("https://www.infosubvenciones.es/bdnstrans/api/convocatorias/busqueda", headers=UA, timeout=30,
-                     params={"vpd": "GE", "page": 0, "pageSize": 8, "order": "fechaRecepcion", "direccion": "desc", "descripcion": q})
-    d = r.json()
-    print("### BDNS", q, r.status_code, d.get("totalElements"))
-    for x in d.get("content", [])[:8]:
-        print("   ", x.get("fechaRecepcion"), x.get("nivel1"), "|", (x.get("nivel2") or "")[:25], "|", (x.get("descripcion") or "")[:110])
-r = requests.get("https://www.okx.com/api/v5/support/announcements", params={"annType": "announcements-new-listings"}, headers={**UA, "locale": "en-US"}, timeout=20)
-print("### OKX", [x["title"] for b in r.json().get("data", []) for x in b.get("details", [])][:8])
-r = requests.get("https://www.binance.com/bapi/composite/v1/public/cms/article/list/query", params={"type": 1, "catalogId": 48, "pageNo": 1, "pageSize": 10}, headers=UA, timeout=20)
-print("### BINANCE", [a["title"] for c in r.json()["data"]["catalogs"] for a in c.get("articles", [])][:10])
-k = os.environ.get("GROQ_API_KEY")
-body = {"model": "openai/gpt-oss-20b", "temperature": 0.2, "max_completion_tokens": 2600, "reasoning_effort": "low",
-        "response_format": {"type": "json_object"},
-        "messages": [{"role": "system", "content": "Devuelve JSON {\"items\":[{\"i\":0,\"t\":\"titular en español\"}]}"},
-                     {"role": "user", "content": json.dumps([{"i": 0, "titular": "Binance will list FooCoin (FOO)"}, {"i": 1, "titular": "Fed holds rates"}])}]}
-r = requests.post("https://api.groq.com/openai/v1/chat/completions", json=body, headers={"Authorization": f"Bearer {k}"}, timeout=60)
-print("### GROQ json", r.status_code, r.text[:400])
+"""Diagnóstico puntual: fuentes gratuitas para Brent, bono de EE. UU. a 10 años, oro y plata (y CORS)."""
+import os, json, time, requests
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) OpportunityRadarAI/3.0", "Origin": "https://msz5000-a11y.github.io", "Accept": "*/*"}
+FH = os.environ.get("FINNHUB_API_KEY", "")
+URLS = [
+ ("cnbc", "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=US10Y%7C%40LCO.1%7C%40GC.1%7C%40SI.1&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1"),
+ ("yahoo_bz", "https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?range=1d&interval=15m"),
+ ("yahoo_tnx", "https://query2.finance.yahoo.com/v8/finance/chart/%5ETNX?range=1d&interval=15m"),
+ ("yahoo_gc", "https://query1.finance.yahoo.com/v8/finance/chart/GC=F?range=1d&interval=15m"),
+ ("goldapi_xau", "https://api.gold-api.com/price/XAU"),
+ ("goldapi_xag", "https://api.gold-api.com/price/XAG"),
+ ("goldprice_org", "https://data-asg.goldprice.org/dbXRates/USD"),
+ ("fh_oanda_xau", f"https://finnhub.io/api/v1/quote?symbol=OANDA:XAU_USD&token={FH}"),
+ ("fh_oanda_bco", f"https://finnhub.io/api/v1/quote?symbol=OANDA:BCO_USD&token={FH}"),
+ ("fh_forex_rates", f"https://finnhub.io/api/v1/forex/rates?base=USD&token={FH}"),
+ ("fh_gld", f"https://finnhub.io/api/v1/quote?symbol=GLD&token={FH}"),
+ ("fh_bno", f"https://finnhub.io/api/v1/quote?symbol=BNO&token={FH}"),
+ ("fred_dgs10", "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10"),
+ ("fred_brent", "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILBRENTEU"),
+ ("stooq", "https://stooq.com/q/l/?s=cb.f,gc.f,si.f,10usy.b&f=sd2t2ohlcp&h&e=csv"),
+ ("treasury", "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv"),
+ ("cg_simple_usd", "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana,pax-gold,tether-gold,kinesis-silver&vs_currencies=usd&include_24hr_change=true"),
+ ("marketwatch_tmubmusd10y", "https://www.marketwatch.com/investing/bond/tmubmusd10y?countrycode=bx"),
+ ("investing_api", "https://api.investing.com/api/financialdata/8833/historical/chart/?period=P1D&interval=PT15M&pointscount=60"),
+]
+for name, url in URLS:
+    t = time.time()
+    try:
+        r = requests.get(url, headers=UA, timeout=25)
+        body = r.text[:420].replace("\n", " ")
+        if FH: body = body.replace(FH, "***")
+        print(f"### {name}: st={r.status_code} kb={len(r.content)//1024} s={round(time.time()-t,1)} cors={r.headers.get('access-control-allow-origin')} | {body}")
+    except Exception as e:
+        print(f"### {name}: ERR {str(e)[:150]}")
