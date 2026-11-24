@@ -345,7 +345,7 @@ def test_migration_to_usd(tmp_path, monkeypatch):
     monkeypatch.setattr(S, "registry", lambda cfg: [])
     feed = pulse.run(live, data, {}, now=NOW)
     st = json.loads((live / "pulse_state.json").read_text())
-    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 7 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 8 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
 
 
 def test_migration_drops_old_macro_moves(tmp_path, monkeypatch):
@@ -355,12 +355,12 @@ def test_migration_drops_old_macro_moves(tmp_path, monkeypatch):
            "risk": "medio", "m": {"cur": "USD", "price": 3675.4}, "t": "2026-11-23T14:00:00Z", "w": "2026-11-23T14:00:00Z"}
     keep = dict(news("n:keep", "Una noticia cualquiera de hoy"), t="2026-11-23T14:00:00Z", w="2026-11-23T14:00:00Z")
     (live / "feed.json").write_text(json.dumps({"items": [bad, keep], "ticker": {"GOLD": {"p": 3675.4, "ch": 4.55}, "BTC": {"p": 1, "cur": "USD"}}}))
-    (live / "pulse_state.json").write_text(json.dumps({"v": 6, "seen": {bad["id"]: "x", "n:keep": "x"}, "mem": {},
+    (live / "pulse_state.json").write_text(json.dumps({"v": 7, "seen": {bad["id"]: "x", "n:keep": "x"}, "mem": {},
                                                        "last": {"Índices, bono, Brent, oro y plata": "2026-11-23T14:59:00Z"}}))
     monkeypatch.setattr(S, "registry", lambda cfg: [])
     feed = pulse.run(live, data, {}, now=NOW)
     st = json.loads((live / "pulse_state.json").read_text())
-    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 7 and bad["id"] not in st["seen"]
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 8 and bad["id"] not in st["seen"]
     assert "GOLD" not in feed["ticker"] and "BTC" in feed["ticker"] and "Índices, bono, Brent, oro y plata" not in st.get("last", {})
 
 

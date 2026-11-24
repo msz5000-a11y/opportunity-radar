@@ -29,7 +29,7 @@ KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ip
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
 MAX_ITEMS = 1100
 EVENT_TAGS = {"ipo", "fusion", "ronda", "listado", "resultados", "alerta", "airdrop", "recompra", "aprobacion", "launchpool", "tge", "etf"}
-PULSE_V = 7
+PULSE_V = 8
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
               "ARM", "INTC", "MU", "ORCL", "CRM", "UBER", "SHOP", "SNOW", "BABA", "SOFI", "RIVN", "IONQ", "RGTI", "SOUN", "RDDT", "APP",
@@ -376,10 +376,10 @@ def run(live: Path, data_dir: Path, cfg: dict, *, now: datetime | None = None, d
     if state.get("v") == 5:  # paso a dólares: fuera los movimientos de cripto en euros (se vuelven a detectar)
         _drop(lambda it: (it.get("m") or {}).get("cur") == "EUR", ("BTC", "ETH", "SOL"))
         state["v"] = 6
-    if state.get("v") == 6:  # controles nuevos en oro, plata, índices y bono: fuera los movimientos macro anteriores
+    if state.get("v") in (6, 7):  # controles nuevos en oro (al contado), plata, índices y bono: fuera los movimientos macro anteriores
         _drop(lambda it: it["id"].startswith("mc:"), ("SPX", "IXIC", "US10Y", "BRENT", "GOLD", "SILVER"))
         (state.get("last") or {}).pop("Índices, bono, Brent, oro y plata", None)
-        state["v"] = 7
+        state["v"] = 8
     if state.get("v") != PULSE_V:  # reglas nuevas: se rehace el feed (se conservan las listas de exchanges ya conocidas)
         state = {"v": PULSE_V, "mem": {k: v for k, v in (state.get("mem") or {}).items() if k in ("listings", "eod")}}
         prev = {"ticker": prev.get("ticker") or {}}
