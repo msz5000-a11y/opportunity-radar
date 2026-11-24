@@ -1,22 +1,322 @@
 {
  "version": 1,
- "generatedAt": null,
- "checkedAt": "2026-11-24T12:20:42Z",
- "attemptedAt": "2026-11-24T12:20:42Z",
+ "generatedAt": "2026-11-24T12:25:20Z",
+ "checkedAt": "2026-11-24T12:25:20Z",
+ "attemptedAt": "2026-11-24T12:25:20Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
  },
  "profiles": {
   "es": {
-   "ok": false,
-   "error": "respaldo sin respuesta: brief/gemini: HTTP 503; brief/groq: HTTP 413",
-   "checkedAt": "2026-11-24T12:20:42Z"
+   "profile": {
+    "id": "es",
+    "name": "España",
+    "flag": "🇪🇸",
+    "language": "es",
+    "country": "ES",
+    "currency": "EUR",
+    "capital": 2000
+   },
+   "generatedAt": "2026-11-24T12:25:20Z",
+   "checkedAt": "2026-11-24T12:25:20Z",
+   "ok": true,
+   "error": null,
+   "fingerprint": "51af194a07d26961",
+   "provider": "gemini",
+   "model": "gemini-3.6-flash",
+   "cost_usd": 0.0,
+   "searches": 0,
+   "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "candidates": {
+    "startups": 8,
+    "clonar": 67,
+    "accion": 12,
+    "ayudas": 1,
+    "extra": 14
+   },
+   "resumen": "Hemos seleccionado dos oportunidades en startups reguladas adaptadas a tu ticket máximo de 1.000 € y dos modelos de negocio con alto potencial para clonar en España usando herramientas no-code. En bolsa no hay señales claras de ruptura al alza, pero destacamos compras relevantes de directivos en Intel y Boeing.",
+   "descartado": "Se descartaron startups con tickets mínimos inasumibles (>1.000 €) y todas las acciones del radar al carecer de señal técnica de ruptura en un entorno de mercado bajista.",
+   "secciones": {
+    "startups": {
+     "picks": [
+      {
+       "ref": "st6",
+       "titulo": "e-miRgency (Capital Cell)",
+       "resumen": "Plataforma de diagnóstico precoz y monitorización de cáncer mediante biopsia líquida (análisis de sangre).",
+       "por_que": "Su ticket mínimo de 1.000 € se ajusta exactamente a tu presupuesto máximo y cotiza en una plataforma regulada con más del 92% completado.",
+       "pasos": [
+        "Abre cuenta en Capital Cell y revisa la documentación de la ronda.",
+        "Analiza la valoración pre-money de 5,88 M€ y la previsión de desinversión.",
+        "Realiza la aportación de 1.000 € antes de que finalice el plazo."
+       ],
+       "coste": "1.000 € (ticket mínimo)",
+       "plazo": "Quedan 33 días",
+       "potencial": "Retorno por venta corporativa o salida a bolsa prevista hacia 2030",
+       "riesgos": [
+        "Iliquidez del capital invertido hasta el evento de salida",
+        "Riesgo de validación en ensayos clínicos",
+        "Pérdida total de la inversión si la tecnología no se comercializa"
+       ],
+       "confianza": "media",
+       "datos": {
+        "ticket_minimo": "1.000 €",
+        "valoracion_pre": "5.889.050 €",
+        "completado": "92,3%"
+       },
+       "fuentes": [
+        "https://capitalcell.com/campaign/e-mirgency/"
+       ],
+       "enlace": "https://capitalcell.com/campaign/e-mirgency/"
+      },
+      {
+       "ref": "st1",
+       "titulo": "Bono Microwd 2026 (Startupxplore)",
+       "resumen": "Emisión de bonos de impacto social para la financiación de microcréditos con rendimiento fijo.",
+       "por_que": "Ofrece una estructura de rendimiento periódico del 10% con un ticket de entrada de 1.000 € accesible.",
+       "pasos": [
+        "Regístrate en Startupxplore y completa el perfil de inversor.",
+        "Consulta el folleto de emisión del bono y sus condiciones de reembolso.",
+        "Suscribe 1.000 € desde la plataforma."
+       ],
+       "coste": "1.000 € (ticket mínimo)",
+       "plazo": "Cierre 02/03/2028",
+       "potencial": "Pago del cupón fijo del 10% anualizado",
+       "riesgos": [
+        "Riesgo de crédito e impago en la cartera de micropréstamos",
+        "Falta de mercado secundario para vender antes del vencimiento"
+       ],
+       "confianza": "media",
+       "datos": {
+        "tipo": "Bono",
+        "cupon": "10%",
+        "ticket_minimo": "1.000 €"
+       },
+       "fuentes": [
+        "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
+       ],
+       "enlace": "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
+      }
+     ],
+     "nota": "Se descartan proyectos como Mygocu por exigir un ticket mínimo de 5.000 €, superior a tu capital disponible."
+    },
+    "clonar": {
+     "picks": [
+      {
+       "ref": "cl55",
+       "titulo": "Agente de voz por IA para reformas y gremios (inspirado en Rezora IO)",
+       "resumen": "Asistente telefónico con IA que responde llamadas de clientes para autónomos de reformas, califica el trabajo y agende citas 24/7.",
+       "por_que": "Los pequeños instaladores y profesionales en España pierden encargos por no atender el teléfono mientras trabajan; puedes crearlo sin programar mediante plataformas como Vapi o Retell AI.",
+       "pasos": [
+        "Configura un flujo de llamada telefónica en español con Vapi/Retell AI conectado a Google Calendar mediante Make.",
+        "Prueba el agente realizando llamadas de prueba en tu propio móvil.",
+        "Ofrece la solución a fontaneros, electricistas o cerrajeros locales con una prueba gratuita de 7 días.",
+        "Cobra una suscripción mensual fija de 50 € a 90 €/mes por cliente."
+       ],
+       "coste": "100 € - 200 € en minutos de prueba de telefonía e integración",
+       "plazo": "Despliegue de MVP en 2 semanas",
+       "potencial": "Ingresos recurrentes con márgenes brutos elevados",
+       "riesgos": [
+        "Rechazo si la pronunciación en español no suena completamente natural",
+        "Falta de hábito tecnológico en autónomos tradicionales"
+       ],
+       "confianza": "alta",
+       "datos": {
+        "origen": "USA (YC F26)",
+        "ejecucion": "No-Code (Vapi + Make)"
+       },
+       "fuentes": [
+        "https://rezora.io/"
+       ],
+       "enlace": "https://www.ycombinator.com/companies/rezora-io"
+      },
+      {
+       "ref": "cl5",
+       "titulo": "Facturación electrónica simplificada para microempresas (inspirado en invoiceQ)",
+       "resumen": "SaaS hiperenfocado en emitir y enviar facturas electrónicas adaptadas a la nueva normativa española (VeriFactu / Ley Crea y Crece).",
+       "por_que": "La obligación legal inminente en España creará una enorme demanda de herramientas sencillas para autónomos que no quieren software contable complejo.",
+       "pasos": [
+        "Define los campos mínimos exigidos por la Ley Crea y Crece para facturación.",
+        "Contrata un desarrollador freelance o usa una plantilla no-code para estructurar la web app.",
+        "Ofrece la herramienta a comercios y autónomos locales.",
+        "Establece una cuota recurrente de 10 € a 15 €/mes."
+       ],
+       "coste": "500 € - 1.200 € para montaje de MVP no-code / freelance",
+       "plazo": "Lanzamiento en 1 mes",
+       "potencial": "Captación masiva impulsada por la obligación regulatoria estatal",
+       "riesgos": [
+        "Competencia con software de contabilidad tradicional consolidado",
+        "Cambios de plazos normativos en la aplicación de la ley"
+       ],
+       "confianza": "alta",
+       "datos": {
+        "origen": "Jordania",
+        "catalizador": "Ley Crea y Crece / VeriFactu"
+       },
+       "fuentes": [
+        "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
+       ],
+       "enlace": "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
+      }
+     ],
+     "nota": "Oportunidades con validación internacional y ejecución viables con bajo capital y sin programar."
+    },
+    "accion": {
+     "picks": [],
+     "nota": "No hay acciones en el radar con señal confirmada de ruptura al alza y el índice general cotiza por debajo de su media de 200 sesiones. Se desaconseja entrar en renta variable en este momento."
+    },
+    "ayudas": {
+     "picks": [
+      {
+       "ref": "gr941478",
+       "titulo": "Programa de Apoyo a la Digitalización FEDER",
+       "resumen": "Subvenciones a fondo perdido para la digitalización e innovación en pymes y trabajadores autónomos.",
+       "por_que": "Cubre costes de adopción de software y transformación digital en concurrencia competitiva.",
+       "pasos": [
+        "Comprueba los requisitos de domicilio social o actividad en la convocatoria.",
+        "Prepara la memoria técnica y el presupuesto de digitalización.",
+        "Presenta la solicitud en la sede electrónica correspondiente antes del cierre."
+       ],
+       "coste": "Gratuito",
+       "plazo": "Hasta 20/01/2027",
+       "potencial": "Subvención directa a fondo perdido sobre gastos elegibles",
+       "riesgos": [
+        "Convocatoria de ámbito autonómico (Castilla-La Mancha)",
+        "Revisión y baremación competitiva de expedientes"
+       ],
+       "confianza": "media",
+       "datos": {
+        "presupuesto": "3.000.000 €",
+        "regimen": "Concurrencia competitiva"
+       },
+       "fuentes": [
+        "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941478"
+       ],
+       "enlace": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941478"
+      }
+     ],
+     "nota": "Prioriza verificar el ámbito territorial de la convocatoria antes de preparar la documentación."
+    },
+    "extra": {
+     "picks": [
+      {
+       "ref": "in:INTC:2026-W48",
+       "titulo": "Compras masivas de directivos en Intel (INTC)",
+       "resumen": "Altos ejecutivos de Intel han comprado 9,7 millones de dólares en acciones de la empresa con su propio dinero.",
+       "por_que": "Es una señal de acumulación relevante; los directivos solo compran en bloque cuando consideran que la acción está infravalorada.",
+       "pasos": [
+        "Añade el valor a tu lista de seguimiento.",
+        "Espera a una confirmación de suelo técnico antes de realizar compras parciales."
+       ],
+       "coste": "Según importe a invertir en tu bróker",
+       "plazo": "Sin plazo",
+       "potencial": "Recuperación por valoración fundamental a medio plazo",
+       "riesgos": [
+        "Incertidumbre en la reestructuración del negocio de chips",
+        "Alta volatilidad del sector tecnológico"
+       ],
+       "confianza": "alta",
+       "datos": {
+        "compras_insiders": "9,7 M$",
+        "ventana": "Últimos 30 días"
+       },
+       "fuentes": [
+        "https://finance.yahoo.com/quote/INTC/insider-transactions"
+       ],
+       "enlace": "https://finance.yahoo.com/quote/INTC/insider-transactions"
+      },
+      {
+       "ref": "in:BA:2026-W48",
+       "titulo": "Compras coordinadas de insiders en Boeing (BA)",
+       "resumen": "Tres directivos de Boeing han adquirido un total de 2,0 millones de dólares en acciones de la compañía.",
+       "por_que": "Las compras simultáneas de múltiples directivos suelen indicar convicción interna sobre la estabilización del negocio.",
+       "pasos": [
+        "Monitoriza el nivel de soporte técnico del título.",
+        "Establece una gestión estricta del riesgo si decides tomar posición."
+       ],
+       "coste": "Según importe a invertir en tu bróker",
+       "plazo": "Sin plazo",
+       "potencial": "Rebote tras correcciones prolongadas",
+       "riesgos": [
+        "Elevada carga de deuda",
+        "Riesgo operativo en entregas de aviación comercial"
+       ],
+       "confianza": "media",
+       "datos": {
+        "compras_insiders": "2,0 M$",
+        "directivos": "3 personas"
+       },
+       "fuentes": [
+        "https://finance.yahoo.com/quote/BA/insider-transactions"
+       ],
+       "enlace": "https://finance.yahoo.com/quote/BA/insider-transactions"
+      }
+     ],
+     "nota": "Alertas de movimiento de dinero inteligente directo desde las cúpulas directivas."
+    }
+   },
+   "descartados_por_validacion": 0
   },
   "eg": {
-   "ok": false,
-   "error": "respaldo sin respuesta: brief/gemini: HTTP 503; brief/groq: HTTP 413",
-   "checkedAt": "2026-11-24T12:20:42Z"
+   "profile": {
+    "id": "eg",
+    "name": "Egipto",
+    "flag": "🇪🇬",
+    "language": "en",
+    "country": "EG",
+    "currency": "USD",
+    "capital": 2000
+   },
+   "generatedAt": "2026-11-24T12:25:20Z",
+   "checkedAt": "2026-11-24T12:25:20Z",
+   "ok": true,
+   "error": null,
+   "fingerprint": "5a7f7ccc6b5afb24",
+   "provider": "gemini",
+   "model": "gemini-3.5-flash-lite",
+   "cost_usd": 0.0,
+   "searches": 0,
+   "tokens": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_input_tokens": 0
+   },
+   "candidates": {
+    "startups": 8,
+    "clonar": 67,
+    "accion": 12,
+    "ayudas": 0,
+    "extra": 14
+   },
+   "resumen": "No investment opportunities meet all criteria today: startup platforms lack local Egyptian regulation for small tickets, cloning ideas require higher initial capital than available, and stock signals do not offer a safe entry without a falling knife risk.",
+   "descartado": "Se han descartado todas las opciones de criptomonedas, apalancamiento y startups sin regulación adecuada para evitar riesgos excesivos y pérdidas de capital.",
+   "secciones": {
+    "startups": {
+     "picks": [],
+     "nota": "Regulated startup platforms with low tickets are not available or legal for retail investors residing in Egypt within the requested risk profile."
+    },
+    "clonar": {
+     "picks": [],
+     "nota": "The viable B2B SaaS and fintech concepts found require MVP budgets starting at $10,000, which exceeds the user's capital limit."
+    },
+    "accion": {
+     "picks": [],
+     "nota": "No stocks from the filtered radar combine a clear breakout signal with a safe entry price away from downward pressure."
+    },
+    "ayudas": {
+     "picks": [],
+     "nota": "No regional or international public grants are available for this profile in the current period."
+    },
+    "extra": {
+     "picks": [],
+     "nota": "Market pulses in crypto and earnings do not align with a medium risk profile focused on structured business or equity growth."
+    }
+   },
+   "descartados_por_validacion": 0
   }
  },
  "sources": {
@@ -42,17 +342,17 @@
   },
   "trustmrr": {
    "ok": true,
-   "n": 30,
+   "n": 20,
    "err": null
   },
   "ycombinator": {
    "ok": true,
-   "n": 45,
+   "n": 25,
    "err": null
   },
   "producthunt": {
    "ok": true,
-   "n": 15,
+   "n": 10,
    "err": null
   },
   "acciones": {
