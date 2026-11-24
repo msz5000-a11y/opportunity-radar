@@ -793,11 +793,24 @@ def home_stories(profile: dict, n: int = 40) -> list[dict]:
             if src and title.endswith(" - " + src):
                 title = title[: -len(src) - 3]
             k = _norm(title)[:60]
-            if not title or not link or k in seen:
+            if not title or not link or k in seen or not looks_like_case(title):
                 continue
             seen.add(k)
             out.append({"id": f"hs{len(out) + 1}", "titular": _cut(title, 170), "medio": src, "fecha": date, "idioma": lang, "url": link})
     return out[:n]
+
+
+CASE_SIGNAL = re.compile(r"[$€£]\s?\d|\d+\s?(k|mil|million|millones|figures|cifras)\b|a month|per month|al mes|par mois|al mese|por mês|six[- ]figure|"
+                         r"from home|desde casa|depuis chez|da casa|de casa|home[- ]based|kitchen table|side hustle|etsy|sold out|turned .{3,40} into|"
+                         r"convirti[oó]|empez[oó]|lanz[oó]|fund[oó]|launched|started|founded|quit (her|his) job|dej[oó] su trabajo", re.I)
+CASE_BIZ = re.compile(r"business|negocio|shop|tienda|brand|marca|company|empresa|startup|hustle|emprend|entrepreneur|etsy|store|sells|vende|selling|"
+                      r"entreprise|attivit|negócio|boutique|bakery|panader|studio|estudio|course|curso|clases|classes", re.I)
+LISTICLE = re.compile(r"^\s*(the\s+)?\d+\s+\w+|\bideas\b|\bways to\b|\bformas de\b|\btips\b|\bconsejos\b|\bguía\b|\bguide\b|\bbest\b|\bmejores\b", re.I)
+
+
+def looks_like_case(title: str) -> bool:
+    """Titular de una historia concreta (alguien que montó algo y le funciona), no una lista de ideas ni una entrevista corporativa."""
+    return bool(CASE_SIGNAL.search(title) and CASE_BIZ.search(title)) and not LISTICLE.search(title)
 
 
 def trust_for(profile: dict, n: int = 12) -> list[dict]:
@@ -954,7 +967,8 @@ def ask_free(cfg: dict, shared: str, small: str, user: str, transport=None, rule
     router = Router(cfg, transport=transport)
     errs: list[str] = []
     if router.available("gemini"):
-        for m in ((cfg.get("models") or {}).get("gemini_preference") or ["gemini-2.5-flash"])[:3]:
+        prefs = (cfg.get("brief") or {}).get("free_models") or ["gemini-3.8-flash", "gemini-3.6-flash", "gemini-2.5-flash", "gemini-3.1-flash-lite"]
+        for m in prefs[:4]:
             router.chosen["gemini"] = m
             try:
                 return router.ask("gemini", RULES_ + "\n\n" + shared, user), errs
