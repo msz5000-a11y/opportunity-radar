@@ -473,3 +473,103 @@ def test_migration_drops_noise(tmp_path, monkeypatch):
     feed = pulse.run(live, data, {}, now=NOW)
     state = json.loads((live / "pulse_state.json").read_text())
     assert [x["id"] for x in feed["items"]] == ["n:keep"] and state["v"] == 9 and grant["id"] not in state["seen"]
+
+
+ELLA = {"id": "ella", "casa": True, "interests": ["cocina", "arte"], "municipality": "Riba-roja de Túria", "province": "Valencia",
+        "region_name": "Comunitat Valenciana"}
+CASA_RSS = """<rss><channel>
+<item><title>Mum turns her kitchen into a $8K a month baking business - BBC</title><link>https://news.google.com/rss/articles/a1</link>
+<pubDate>Sun, 22 Nov 2026 09:00:00 GMT</pubDate><source url="https://bbc.com">BBC</source></item>
+<item><title>10 ideas de negocio desde casa para 2027 - Blog</title><link>https://news.google.com/rss/articles/a2</link>
+<pubDate>Sun, 22 Nov 2026 09:00:00 GMT</pubDate><source url="https://b.example">Blog</source></item>
+<item><title>Riba-roja de Túria abre un curso gratuito de comercio electrónico para emprendedoras - Levante-EMV</title>
+<link>https://news.google.com/rss/articles/a3</link><pubDate>Fri, 20 Nov 2026 09:00:00 GMT</pubDate><source url="https://levante-emv.com">Levante-EMV</source></item>
+<item><title>Accidente de tráfico en Riba-roja de Túria - Levante-EMV</title><link>https://news.google.com/rss/articles/a4</link>
+<pubDate>Sun, 22 Nov 2026 09:00:00 GMT</pubDate><source url="https://levante-emv.com">Levante-EMV</source></item>
+<item><title>She started an Etsy shop from home and now earns $3,000 a month - CNBC</title><link>https://news.google.com/rss/articles/a5</link>
+<pubDate>Mon, 05 Oct 2026 09:00:00 GMT</pubDate><source url="https://cnbc.com">CNBC</source></item>
+</channel></rss>"""
+
+
+def test_casa_collector_stories_local_and_rotation(monkeypatch):
+    urls = []
+
+    class Resp:
+        text = CASA_RSS
+
+    def fake_fetch(url, **kw):
+        urls.append(url)
+        return Resp()
+    monkeypatch.setattr(S, "fetch", fake_fetch)
+    c = ctx()
+    assert S.c_casa(c) == []  # sin perfiles con «Desde casa», nada
+    c.profiles = [ELLA, {"id": "es", "casa": False}]
+    got = {}
+    for _ in range(8):  # da la vuelta a todas las búsquedas (historias e «en su zona»)
+        for it in S.c_casa(c):
+            got[it["id"]] = it
+    assert len(urls) == 8 * S.CASA_PER_RUN and any("Riba-roja" in u or "Riba-roja".replace("-", "%2D") in u or "Riba" in u for u in urls)
+    titles = {it["title"]: it for it in got.values()}
+    story = titles["Mum turns her kitchen into a $8K a month baking business"]
+    assert story["cat"] == "casa" and story["kind"] == "story" and story["pf"] == ["ella"] and story["src"] == "BBC" and 58 <= story["s"] <= 80
+    local = titles["Riba-roja de Túria abre un curso gratuito de comercio electrónico para emprendedoras"]
+    assert local["kind"] == "local" and local["s"] > story["s"] - 10
+    assert not any("10 ideas" in t or "Accidente" in t or "Etsy" in t for t in titles)  # lista, suceso y noticia de hace 7 semanas: fuera
+    assert all(it["cat"] == "casa" and it["opp"] == 2 and it.get("pub") for it in got.values())
+
+
+def casa_it(id_, title, pf=("ella",), kind="story", w="2026-11-22T09:00:00Z", s=62):
+    return {"id": id_, "cat": "casa", "kind": kind, "src": "BBC", "title": title, "url": f"https://news.google.com/{id_}", "s": s, "opp": 2,
+            "risk": "bajo", "pf": list(pf), "pub": w}
+
+
+def test_merge_casa_profiles_seen_and_quota():
+    seen = {}
+    items, added = pulse.merge([], [casa_it("hc:1", "Mum turns her kitchen into a baking business earning $8K a month")], seen, NOW)
+    assert len(added) == 1
+    items, added = pulse.merge(items, [casa_it("hc:1", "Mum turns her kitchen into a baking business earning $8K a month", pf=("eg",))], seen, NOW)
+    assert not added and items[0]["pf"] == ["eg", "ella"]
+    # ya no está en el feed pero la fuente la sigue dando: no vuelve como nueva y su «visto» se renueva
+    seen["hc:1"] = "2026-11-12T00:00:00Z"
+    items, added = pulse.merge([], [casa_it("hc:1", "Mum turns her kitchen into a baking business earning $8K a month")], seen, NOW)
+    assert not added and seen["hc:1"] == S.iso(NOW)
+    # cupo propio: las noticias de mercado no desplazan lo de «Desde casa»
+    many = [{**news(f"n:{i}", f"Market headline number {i}"), "t": S.iso(NOW - timedelta(minutes=i)), "w": S.iso(NOW - timedelta(minutes=i))}
+            for i in range(pulse.MAX_ITEMS + 50)]
+    casa = [{**casa_it(f"hc:{i}", f"Story {i}"), "t": S.iso(NOW), "w": "2026-11-10T09:00:00Z"} for i in range(5)]
+    kept = pulse.prune(many + casa, {}, NOW)
+    assert sum(1 for x in kept if x["cat"] == "casa") == 5 and sum(1 for x in kept if x["cat"] != "casa") == pulse.MAX_ITEMS
+    old = {**casa_it("hc:old", "Old story"), "t": "2026-10-01T00:00:00Z", "w": "2026-10-01T00:00:00Z"}
+    assert not pulse.prune([old], {}, NOW)  # más de 30 días: fuera
+
+
+def test_triage_casa_translates_and_hides(monkeypatch):
+    monkeypatch.setenv("GROQ_API_KEY", "x")
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    sent = []
+
+    class R_:
+        def __init__(self, data):
+            self._d = data
+
+        def json(self):
+            return self._d
+
+    def transport(method, url, **kw):
+        if url.endswith("/models"):
+            return R_({"data": [{"id": "openai/gpt-oss-20b"}]})
+        sent.append(kw["json"]["messages"][-1]["content"])
+        body = {"items": [{"i": 0, "ok": True, "t": "Una madre convierte su cocina en un obrador que factura 8.000 dólares al mes",
+                           "p": "Con tu mano para la cocina podrías empezar con encargos de tartas para cumpleaños.", "tema": "cocina"},
+                          {"i": 1, "ok": False, "t": "Gran empresa compra otra", "p": "-", "tema": "otros"}]}
+        return R_({"choices": [{"message": {"content": json.dumps(body)}}]})
+    a = [casa_it("hc:1", "Mum turns her kitchen into a $8K a month baking business", s=70),
+         casa_it("hc:2", "Big company acquires another company in $2bn deal", s=60), news("n:1", "Binance lists FOO")]
+    info = pulse.triage_casa(a, [ELLA], {}, {}, NOW, transport=transport)
+    assert info["calls"] == 1 and info["items"] == 2 and "cocina" in sent[0] and "Binance" not in sent[0]
+    assert a[0]["es"].startswith("Una madre") and a[0]["tema"] == "cocina" and a[0]["ai"] == 1 and not a[0].get("h")
+    assert a[1]["h"] == 1 and a[1]["s"] == 35 and not a[2].get("ai")
+    assert pulse.triage_casa(a, [ELLA], {}, {}, NOW, transport=transport)["calls"] == 0  # ya filtradas: no se repiten
+    # y nunca salta una alerta de mercado por algo de «Desde casa»
+    hot = {**casa_it("hc:9", "Woman earns $20K a month from home bakery"), "s": 99}
+    assert pulse.alerts([hot], {}, {"pulse": {"alert_min": 80}}, NOW) == 0

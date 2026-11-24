@@ -33,6 +33,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import net, notify
+from .casa_rules import HL, en as _en, local_queries, looks_like_case, story_queries
 from .llm import Router, extract_json
 
 MADRID = ZoneInfo("Europe/Madrid")
@@ -45,8 +46,8 @@ PRICES = {"claude-opus-5-5": (4.0, 20.0, 0.20, 5.0), "claude-sonnet-5-5": (2.0, 
 SEARCH_USD = 0.01  # 10 $ por cada 1.000 búsquedas
 SECTIONS = {"startups": 2, "clonar": 2, "accion": 1, "ayudas": 3, "extra": 2}
 BREAKOUT = ("ruptura", "media50")  # «rompiendo al alza»: máximo de 6-12 meses con volumen o recuperación de la media de 50
-DEFAULTS = {"model": "claude-opus-5-5", "effort": "medium", "max_searches": 3, "casa_searches": 5, "max_tokens": 16000,
-            "daily_usd_cap": 1.5, "times": ["07:30"]}
+DEFAULTS = {"model": "claude-opus-5-5", "effort": "medium", "max_searches": 3, "casa_model": "claude-haiku-5-5", "casa_searches": 4,
+            "casa_every_hours": 3, "max_tokens": 16000, "daily_usd_cap": 1.5, "times": ["07:30"]}
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
       "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"}
 STATUS: dict = {}
@@ -612,9 +613,11 @@ def _post(body: dict, headers: dict, transport=None) -> dict:
 
 def ask_claude(shared: str, user: str, *, model: str, effort: str, max_searches: int, max_tokens: int, transport=None, rules: str | None = None) -> dict:
     key = os.environ.get("ANTHROPIC_API_KEY", "").strip()
-    body = {"model": model, "max_tokens": max_tokens, "output_config": {"effort": effort},
+    body = {"model": model, "max_tokens": max_tokens,
             "system": [{"type": "text", "text": rules or RULES}, {"type": "text", "text": shared, "cache_control": {"type": "ephemeral"}}],
             "messages": [{"role": "user", "content": user}]}
+    if effort:
+        body["output_config"] = {"effort": effort}
     if max_searches > 0:
         body["tools"] = [{"type": "web_search_20250305", "name": "web_search", "max_uses": max_searches}]
     headers = {"x-api-key": key, "anthropic-version": API_VERSION, "content-type": "application/json"}
@@ -755,29 +758,18 @@ def plain_summary(brief: dict, es: bool = True) -> str:
 
 
 # ------------------------------------------------------------------ «Desde casa»: negocios pequeños que ya funcionan fuera
-INTEREST_EN = {"inmobiliaria": "real estate", "arte": "art", "diseno": "design", "ninos": "kids", "cocina": "cooking", "reposteria": "baking",
-               "fotografia": "photography", "moda": "fashion", "educacion": "education", "musica": "music", "jardineria": "gardening",
-               "manualidades": "crafts", "belleza": "beauty", "salud": "wellness", "mascotas": "pets", "viajes": "travel", "idiomas": "languages",
-               "costura": "sewing", "ilustracion": "illustration", "decoracion": "home decor", "bienestar": "wellness", "yoga": "yoga"}
-HL = {"en": ("en-US", "US", "US:en"), "es": ("es", "ES", "ES:es"), "fr": ("fr", "FR", "FR:fr"), "it": ("it", "IT", "IT:it"), "pt": ("pt-BR", "BR", "BR:pt-419")}
-CASA_EVERY_DAYS = 3
-CASA_MAX = 12
+CASA_EVERY_HOURS = 3
+CASA_MAX = 40
 
 
-def _en(word: str) -> str:
-    return INTEREST_EN.get(_fold(word).strip(), word)
-
-
-def home_stories(profile: dict, n: int = 40) -> list[dict]:
-    """Historias reales de negocios desde casa (Google News, varios idiomas) según los intereses del perfil."""
+def home_stories(profile: dict, n: int = 40, rot: int = 0) -> list[dict]:
+    """Historias reales de negocios desde casa (Google News, varios idiomas) según los intereses del perfil.
+    `rot` cambia el orden de las búsquedas en cada tanda, para que no salgan siempre las mismas historias."""
     from urllib.parse import quote_plus
-    ints = [i for i in (profile.get("interests") or []) if i][:6]
-    qs = []
-    for i in ints:
-        qs += [("en", f'"from home" {_en(i)} business (earns OR revenue OR "a month" OR success)'), ("es", f'"desde casa" {i} negocio (éxito OR factura OR clientes)')]
-    qs += [("en", '"home-based business" success story "a month"'), ("en", 'started a business from home "now earns"'),
-           ("es", 'emprendedora "desde casa" factura'), ("fr", '"depuis chez elle" entreprise succès'), ("it", '"da casa" attività guadagna'),
-           ("pt", '"de casa" negócio fatura')]
+    qs = story_queries(profile)
+    if qs:
+        k = (rot * 5) % len(qs)
+        qs = qs[k:] + qs[:k]
     out, seen = [], set()
     for lang, q in qs:
         hl = HL[lang]
@@ -800,17 +792,35 @@ def home_stories(profile: dict, n: int = 40) -> list[dict]:
     return out[:n]
 
 
-CASE_SIGNAL = re.compile(r"[$€£]\s?\d|\d+\s?(k|mil|million|millones|figures|cifras)\b|a month|per month|al mes|par mois|al mese|por mês|six[- ]figure|"
-                         r"from home|desde casa|depuis chez|da casa|de casa|home[- ]based|kitchen table|side hustle|etsy|sold out|turned .{3,40} into|"
-                         r"convirti[oó]|empez[oó]|lanz[oó]|fund[oó]|launched|started|founded|quit (her|his) job|dej[oó] su trabajo", re.I)
-CASE_BIZ = re.compile(r"business|negocio|shop|tienda|brand|marca|company|empresa|startup|hustle|emprend|entrepreneur|etsy|store|sells|vende|selling|"
-                      r"entreprise|attivit|negócio|boutique|bakery|panader|studio|estudio|course|curso|clases|classes", re.I)
-LISTICLE = re.compile(r"^\s*(the\s+)?\d+\s+\w+|\bideas\b|\bways to\b|\bformas de\b|\btips\b|\bconsejos\b|\bguía\b|\bguide\b|\bbest\b|\bmejores\b", re.I)
+def feed_home(feed_path: Path | None, prof: dict, n: int = 30) -> tuple[list[dict], list[dict]]:
+    """Novedades «Desde casa» que el pulso ya ha encontrado y filtrado para este perfil: historias y oportunidades en su zona."""
+    if not feed_path or not Path(feed_path).exists():
+        return [], []
+    try:
+        feed = json.loads(Path(feed_path).read_text(encoding="utf-8")) or {}
+    except ValueError:
+        return [], []
+    rows = [it for it in feed.get("items") or [] if it.get("cat") == "casa" and prof["id"] in (it.get("pf") or []) and not it.get("h") and it.get("url")]
+    rows.sort(key=lambda it: it.get("w") or it.get("t") or "", reverse=True)
+    stories = [{k: v for k, v in {"id": f"hp{i + 1}", "titular": _cut(it["title"], 170),
+                                  "titular_es": _cut(it["es"], 170) if it.get("es") and it.get("es") != it["title"] else None,
+                                  "medio": it.get("src"), "fecha": (it.get("pub") or it.get("w") or it.get("t") or "")[:10], "idioma": it.get("lang"),
+                                  "url": it["url"]}.items() if v}
+               for i, it in enumerate([r for r in rows if r.get("kind") == "story"][:n])]
+    local = [{k: v for k, v in {"id": f"hl{i + 1}", "titulo": _cut(it.get("es") or it["title"], 170), "medio": it.get("src"),
+                                "fecha": (it.get("pub") or it.get("w") or it.get("t") or "")[:10], "por_que": _cut(it.get("why"), 200), "url": it["url"]}.items() if v}
+             for i, it in enumerate([r for r in rows if r.get("kind") == "local"][:12])]
+    return stories, local
 
 
-def looks_like_case(title: str) -> bool:
-    """Titular de una historia concreta (alguien que montó algo y le funciona), no una lista de ideas ni una entrevista corporativa."""
-    return bool(CASE_SIGNAL.search(title) and CASE_BIZ.search(title)) and not LISTICLE.search(title)
+def casa_focus(prof: dict, prev: list[dict], rot: int) -> list[str]:
+    """Los dos intereses con menos ideas en la biblioteca (rotando los empates), para que cada tanda toque temas distintos."""
+    ints = [i for i in prof.get("interests") or [] if i]
+    if not ints:
+        return []
+    has = [{_fold(t) for t in p.get("temas") or []} for p in prev]
+    cnt = {i: sum(1 for h in has if _fold(i) in h) for i in ints}
+    return sorted(ints, key=lambda i: (cnt[i], (ints.index(i) - rot) % len(ints)))[:2]
 
 
 def trust_for(profile: dict, n: int = 12) -> list[dict]:
@@ -828,7 +838,7 @@ Reglas:
 - Desarrolla cada idea para que pueda empezar esta semana: qué vender exactamente, a quién, a qué precio, con qué herramientas, cómo conseguir las primeras clientas (por internet y en su zona), cuánto cuesta empezar y cuántas horas lleva.
 - Ten en cuenta la normativa española cuando viva en España: alta de autónoma (cuándo hace falta, tarifa plana o cuota cero si existe), IVA, registro sanitario para vender comida hecha en casa, seguros y protección de menores si hay niños, derechos de autor, protección de datos y licencias.
 - Prioriza ideas sin local ni stock grande, que se puedan validar con menos de 300 € y crecer por internet. Puedes salirte de sus intereses si encuentras algo claramente mejor para ella.
-- Propón entre 1 y 3 ideas NUEVAS, que no estén en IDEAS ANTERIORES.
+- Propón 3 ideas NUEVAS y distintas entre sí, que no estén en IDEAS ANTERIORES (varía de tema: no repitas el mismo tipo de negocio).
 - «ayudas»: ids de las AYUDAS de la lista que encajen con la idea (o lista vacía).
 - «oportunidades_locales»: programas de apoyo, formación gratuita, mercados, ferias o redes de su municipio, provincia o comunidad que encuentres con la búsqueda web y le sirvan, con enlace.
 - Escribe en el idioma del perfil, claro y cercano, en frases cortas para leer en el móvil.
@@ -840,21 +850,25 @@ IDEA = {"titulo": "...", "gancho": "una frase que lo explique", "que_es": "en qu
         "por_que_tu": "...", "como_empezar": ["Semana 1: ...", "Semana 2: ...", "Semana 3: ...", "Semana 4: ..."], "coste_inicial": "...",
         "herramientas": ["..."], "precio": "qué cobrar y cómo", "primeras_clientas": ["dónde y cómo conseguirlas"],
         "ingresos_posibles": "estimación prudente y en qué se basa", "horas_semana": "...", "tramites": ["..."], "ayudas": ["gr…"],
-        "riesgos": ["máx. 3"], "confianza": "alta|media|baja"}"""
+        "riesgos": ["máx. 3"], "confianza": "alta|media|baja", "temas": ["de sus intereses, tal cual, u «otros»"]}"""
 
 
-def casa_blocks(profile: dict, stories: list[dict], trust: list[dict], gl: list[dict], prev: list[dict], now: datetime) -> tuple[str, str, str]:
+def casa_blocks(profile: dict, stories: list[dict], trust: list[dict], gl: list[dict], prev: list[dict], now: datetime,
+                local: list[dict] | None = None, focus: list[str] | None = None) -> tuple[str, str, str]:
     j = lambda x: json.dumps(x, ensure_ascii=False, separators=(",", ":"))  # noqa: E731
-    local = now.astimezone(MADRID)
-    shared = (f"FECHA: {local:%Y-%m-%d} (hora de Madrid)\n\nCANDIDATOS: historias reales de negocios desde casa (noticias de los últimos 6 meses, "
+    day = now.astimezone(MADRID)
+    shared = (f"FECHA: {day:%Y-%m-%d} (hora de Madrid)\n\nCANDIDATOS: historias reales de negocios desde casa (noticias recientes y de los últimos meses, "
               f"varios países) y pequeños negocios por internet con ingresos verificados (TrustMRR).\n\n## HISTORIAS\n{j(stories)}\n\n## INGRESOS VERIFICADOS\n{j(trust)}")
-    small = f"FECHA: {local:%Y-%m-%d}\n\nCANDIDATOS (resumidos):\n" + j({"historias": [{k: x.get(k) for k in ("id", "titular", "medio")} for x in stories[:20]],
+    small = f"FECHA: {day:%Y-%m-%d}\n\nCANDIDATOS (resumidos):\n" + j({"historias": [{k: x.get(k) for k in ("id", "titular", "medio")} for x in stories[:20]],
                                                                           "ingresos": [{k: x.get(k) for k in ("id", "nombre", "que_hace", "ingresos_30d_usd")} for x in trust[:6]]})
     pub = {k: v for k, v in profile.items() if k not in ("notify", "sections", "start_tab", "casa", "emoji")}
     lang = "español de España" if profile.get("language", "es") == "es" else "English"
+    foc = (f"ESTA TANDA: al menos una idea relacionada con «{focus[0]}»" + (f" y otra con «{focus[1]}»" if len(focus) > 1 else "")
+           + "; la tercera, la mejor que encuentres de cualquier tema.\n\n") if focus else ""
+    zona = f"## EN SU ZONA (novedades recientes; úsalas en «oportunidades_locales» si le sirven)\n{j(local)}\n\n" if local else ""
     user = (f"PERFIL:\n{j(pub)}\n\nIdioma de la respuesta: {lang}.\n\nIDEAS ANTERIORES (no las repitas):\n{j([p['titulo'] for p in prev])}\n\n"
-            f"## AYUDAS abiertas que podría pedir\n{j([{k: g.get(k) for k in ('id', 'titulo', 'donde', 'presupuesto_eur', 'solicitud', 'finalidad')} for g in gl])}\n\n"
-            "Busca y desarrolla las mejores ideas para ella y responde con el JSON pedido.")
+            f"{foc}## AYUDAS abiertas que podría pedir\n{j([{k: g.get(k) for k in ('id', 'titulo', 'donde', 'presupuesto_eur', 'solicitud', 'finalidad')} for g in gl])}\n\n"
+            f"{zona}Busca y desarrolla las mejores ideas para ella y responde con el JSON pedido.")
     return shared, small, user
 
 
@@ -888,7 +902,8 @@ def clean_ideas(raw: dict, *, allowed_urls: set[str], grant_ids: set[str], prev_
                       "precio": _s(it.get("precio"), 240), "primeras_clientas": lst(it.get("primeras_clientas"), 5, 220),
                       "ingresos_posibles": _s(it.get("ingresos_posibles"), 260), "horas_semana": _s(it.get("horas_semana"), 80),
                       "tramites": lst(it.get("tramites"), 6, 220), "ayudas": [g for g in (it.get("ayudas") or []) if g in grant_ids][:3],
-                      "riesgos": lst(it.get("riesgos"), 3, 200), "confianza": conf if conf in ("alta", "media", "baja") else "media"})
+                      "riesgos": lst(it.get("riesgos"), 3, 200), "confianza": conf if conf in ("alta", "media", "baja") else "media",
+                      "temas": lst(it.get("temas"), 3, 30)})
         seen.add(_norm(it["titulo"]))
         if len(ideas) >= 3:
             break
@@ -917,13 +932,13 @@ def profile_hash(prof: dict) -> str:
     return hashlib.sha1(json.dumps({k: prof.get(k) for k in keys}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
 
 
-def casa_due(old: dict, prof: dict, now: datetime, force: bool = False) -> bool:
+def casa_due(old: dict, prof: dict, now: datetime, force: bool = False, every_h: float = CASA_EVERY_HOURS) -> bool:
     if force or not old.get("ideas"):
         return True
     if old.get("profile_hash") != profile_hash(prof):
         return True
-    last = parse_iso(old.get("generatedAt"))
-    return not last or now - last >= timedelta(days=CASA_EVERY_DAYS)
+    last = parse_iso(old.get("checkedAt") or old.get("generatedAt"))
+    return not last or now - last >= timedelta(hours=every_h)
 
 
 # ------------------------------------------------------------------ orquestación
@@ -1052,7 +1067,13 @@ def check_due(data_dir: Path, cfg: dict, now: datetime | None = None) -> bool:
     tried = parse_iso(prev.get("attemptedAt"))
     if tried and now - tried < timedelta(minutes=45):
         return False
-    return slots_due(parse_iso(prev.get("checkedAt") or prev.get("generatedAt")), now, bcfg["times"])
+    if slots_due(parse_iso(prev.get("checkedAt") or prev.get("generatedAt")), now, bcfg["times"]):
+        return True
+    for prof in load_profiles(data_dir, cfg):  # ¿le toca a alguien una tanda de ideas «Desde casa»?
+        if prof.get("casa") and casa_due(((prev.get("profiles") or {}).get(prof["id"]) or {}).get("casa") or {}, prof, now,
+                                         every_h=float(bcfg["casa_every_hours"])):
+            return True
+    return False
 
 
 def load_profiles(data_dir: Path, cfg: dict) -> list[dict]:
@@ -1071,7 +1092,7 @@ def load_profiles(data_dir: Path, cfg: dict) -> list[dict]:
 
 
 def public_profile(prof: dict) -> dict:
-    return {k: prof.get(k) for k in ("id", "name", "emoji", "flag", "language", "country", "municipality", "sections", "casa", "start_tab")}
+    return {k: prof.get(k) for k in ("id", "name", "emoji", "flag", "language", "country", "municipality", "interests", "sections", "casa", "start_tab")}
 
 
 class Budget:
@@ -1087,16 +1108,25 @@ class Budget:
         self.spend["usd"] = round(self.spend["usd"] + usd, 4)
 
 
-def decide(cfg: dict, bcfg: dict, budget: Budget, *, rules: str, shared: str, small: str, user: str, searches: int, reserve: float,
-           transport=None) -> tuple[dict | None, str | None]:
+RESERVE = {"opus": 0.5, "sonnet": 0.25, "haiku": 0.08, "fable": 0.9}
+
+
+def reserve_for(model: str) -> float:
+    return next((v for k, v in RESERVE.items() if k in model), 0.5)
+
+
+def decide(cfg: dict, bcfg: dict, budget: Budget, *, rules: str, shared: str, small: str, user: str, searches: int, reserve: float | None = None,
+           transport=None, model: str | None = None, effort: str | None = None) -> tuple[dict | None, str | None]:
     """Claude si hay clave y queda presupuesto; si no, el respaldo gratuito."""
     res, err = None, None
+    model = model or bcfg["model"]
+    reserve = reserve if reserve is not None else reserve_for(model)
     if os.environ.get("ANTHROPIC_API_KEY", "").strip():
         if budget.allows(reserve):
             try:
-                res = ask_claude(shared, user, model=bcfg["model"], effort=bcfg["effort"], max_searches=searches,
+                res = ask_claude(shared, user, model=model, effort=effort if effort is not None else bcfg["effort"], max_searches=searches,
                                  max_tokens=int(bcfg["max_tokens"]), transport=transport, rules=rules)
-                res["cost"] = cost_usd(bcfg["model"], res["usage"], bcfg.get("prices"))
+                res["cost"] = cost_usd(model, res["usage"], bcfg.get("prices"))
                 budget.add(res["cost"])
             except Exception as e:  # noqa: BLE001
                 err, res = f"Claude: {str(e)[:200]}", None
@@ -1111,33 +1141,48 @@ def decide(cfg: dict, bcfg: dict, budget: Budget, *, rules: str, shared: str, sm
     return res, err
 
 
-def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budget: Budget, now: datetime, transport=None) -> dict:
+def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budget: Budget, now: datetime, transport=None,
+             feed_path: Path | None = None) -> dict:
     """Una tanda de ideas «Desde casa» (1-3 nuevas) que se suman a la biblioteca del perfil."""
+    rot = int(now.timestamp() // (3600 * float(bcfg.get("casa_every_hours", CASA_EVERY_HOURS))))
+    prev = sanitize_library(old.get("ideas") or [])
+    fresh, local = feed_home(feed_path, prof)
     try:
-        stories = home_stories(prof)
-        _ok(f"casa_historias_{prof['id']}", len(stories))
+        found = home_stories(prof, rot=rot)
     except Exception as e:  # noqa: BLE001
-        stories = []
+        found = []
         _ok(f"casa_historias_{prof['id']}", 0, e)
+    used = {_ukey(k.get("url") or "") for p in prev for k in p.get("casos") or []}
+    stories, keys = [], set()
+    for x in fresh + found:  # primero lo más reciente del pulso; fuera las historias ya usadas como caso
+        k, t = _ukey(x["url"]), _norm(x.get("titular"))[:60]
+        if k in used or k in keys or t in keys:
+            continue
+        keys |= {k, t}
+        stories.append({**x, "id": f"h{len(stories) + 1}"})
+    stories = stories[:40]
+    _ok(f"casa_historias_{prof['id']}", len(stories))
     try:
         trust = trust_for(prof)
     except Exception:  # noqa: BLE001
         trust = []
-    prev = sanitize_library(old.get("ideas") or [])
-    shared, small, user = casa_blocks(prof, stories, trust, gl, prev, now)
-    res, err = decide(cfg, bcfg, budget, rules=RULES_CASA, shared=shared, small=small, user=user,
-                      searches=int(bcfg.get("casa_searches", 5)), reserve=0.5, transport=transport)
+    shared, small, user = casa_blocks(prof, stories, trust, gl, prev, now, local=local, focus=casa_focus(prof, prev, rot))
+    cm = bcfg.get("casa_model") or bcfg["model"]
+    res, err = decide(cfg, bcfg, budget, rules=RULES_CASA, shared=shared, small=small, user=user, searches=int(bcfg.get("casa_searches", 5)),
+                      transport=transport, model=cm, effort=bcfg.get("casa_effort", "" if "haiku" in cm else bcfg["effort"]))
     if res is None:
         return {**old, "error": err, "checkedAt": iso(now)}
-    allowed = {x["url"] for x in stories + trust if x.get("url")} | res["urls"]
+    allowed = {x["url"] for x in stories + trust + local if x.get("url")} | res["urls"]
     got = clean_ideas(res["data"], allowed_urls=allowed, grant_ids={g["id"] for g in gl}, prev_titles=[p["titulo"] for p in prev], now=now)
     src = {_ukey(x["url"]): x for x in stories + trust if x.get("url")}
     es = (prof.get("language") or "es") == "es"
     for idea in got["ideas"]:
         for k in idea["casos"]:
             c = src.get(_ukey(k["url"]))
-            if c and c.get("titular"):  # noticia: titular y medio tal cual
+            if c and c.get("titular"):  # noticia: titular y medio tal cual (y su traducción, si la hay)
                 k.update(quien=c.get("medio") or k["quien"], resultado=c["titular"], pais="")
+                if c.get("titular_es"):
+                    k["resultado_es"] = c["titular_es"]
             elif c and c.get("ingresos_30d_usd"):  # TrustMRR: ingresos verificados
                 k.update(quien=c.get("nombre") or k["quien"], pais="",
                          resultado=(f"Ingresos verificados en TrustMRR: {_money(c['ingresos_30d_usd'], '$')} en 30 días" if es
@@ -1146,7 +1191,8 @@ def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budge
         p["nueva"] = False
     lib = (got["ideas"] + prev)[:CASA_MAX]
     st = res["usage"].get("server_tool_use") or {}
-    return {"generatedAt": iso(now), "checkedAt": iso(now), "profile_hash": profile_hash(prof), "provider": res["provider"], "model": res["model"],
+    return {"generatedAt": iso(now) if got["ideas"] else (old.get("generatedAt") or iso(now)), "checkedAt": iso(now), "notifiedAt": old.get("notifiedAt"),
+            "profile_hash": profile_hash(prof), "provider": res["provider"], "model": res["model"],
             "cost_usd": res.get("cost", 0.0), "searches": st.get("web_search_requests", 0), "error": err,
             "nuevas": len(got["ideas"]), "descartadas": got["descartadas"], "motivos": got.get("motivos"), "nota": got["nota"],
             "oportunidades_locales": got["oportunidades_locales"] or old.get("oportunidades_locales") or [],
@@ -1156,7 +1202,7 @@ def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budge
 
 def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str | None = None, force: bool = False,
         now: datetime | None = None, transport=None, mode: str = "todo") -> dict:
-    """mode: «todo» (informe diario y, si toca, ideas desde casa), «parati» o «casa»."""
+    """mode: «auto» (lo que toque: el informe a su hora y las ideas cada pocas horas), «todo», «parati» o «casa»."""
     now = now or now_utc()
     bcfg = {**DEFAULTS, **(cfg.get("brief") or {})}
     profiles = load_profiles(data_dir, cfg)
@@ -1168,7 +1214,16 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
     today = now.astimezone(MADRID).date().isoformat()
     spend = prev.get("spend") if (prev.get("spend") or {}).get("date") == today else {"date": today, "usd": 0.0}
     budget = Budget(spend, bcfg["daily_usd_cap"])
-    need_pool = mode in ("todo", "parati") and any((not only or p["id"] == only) and p.get("sections", list(SECTIONS)) for p in profiles)
+    olds = prev.get("profiles") or {}
+
+    def parati_now(p: dict) -> bool:
+        if mode in ("todo", "parati"):
+            return True
+        if mode != "auto":
+            return False
+        o = olds.get(p["id"]) or {}
+        return slots_due(parse_iso(o.get("checkedAt") or o.get("generatedAt")), now, bcfg["times"])
+    need_pool = any((not only or p["id"] == only) and p.get("sections", list(SECTIONS)) and parati_now(p) for p in profiles)
     pool = gather(data_dir, feed_path, now) if need_pool else {"startups": [], "clonar": [], "accion": [], "accion_ctx": {}, "extra": []}
     out = {"version": 2, "generatedAt": prev.get("generatedAt"), "checkedAt": iso(now), "attemptedAt": iso(now), "spend": spend,
            "profiles": {}, "sources": STATUS, "model": bcfg["model"]}
@@ -1181,6 +1236,12 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
         if only and pid != only:
             out["profiles"][pid] = entry
             continue
+        secs = [x for x in (prof.get("sections") if prof.get("sections") is not None else list(SECTIONS)) if x in SECTIONS]
+        do_casa = bool(prof.get("casa")) and mode in ("todo", "casa", "auto") and casa_due(
+            old.get("casa") or {}, prof, now, force=force and mode in ("casa", "todo"), every_h=float(bcfg["casa_every_hours"]))
+        if not ((parati_now(prof) and secs) or do_casa):  # a este perfil no le toca nada ahora (modo automático)
+            out["profiles"][pid] = entry
+            continue
         try:
             ids = bdns_ids(prof, data_dir)
             gl = grants(prof, now, ids)
@@ -1189,9 +1250,8 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
         except Exception as e:  # noqa: BLE001
             gl = []
             _ok(f"ayudas_{pid}", 0, e)
-        secs = [x for x in (prof.get("sections") if prof.get("sections") is not None else list(SECTIONS)) if x in SECTIONS]
         # ---- informe diario «Para ti»
-        if mode in ("todo", "parati") and secs:
+        if parati_now(prof) and secs:
             fp = fingerprint({k: (pool[k] if k in secs else []) for k in ("startups", "clonar", "accion")} | {"extra": pool["extra"]},
                              gl if "ayudas" in secs else [], prof)
             fresh = parse_iso(old.get("generatedAt"))
@@ -1237,11 +1297,11 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
             else:
                 entry["checkedAt"] = iso(now)
         # ---- ideas «Desde casa»
-        if prof.get("casa") and mode in ("todo", "casa") and casa_due(old.get("casa") or {}, prof, now, force=force and mode == "casa"):
-            entry["casa"] = run_casa(prof, old.get("casa") or {}, gl, cfg, bcfg, budget, now, transport=transport)
+        if do_casa:
+            entry["casa"] = run_casa(prof, old.get("casa") or {}, gl, cfg, bcfg, budget, now, transport=transport, feed_path=feed_path)
             if entry["casa"].get("nuevas"):
                 changed_any = True
-                notify_casa(prof, entry["casa"])
+                notify_casa(prof, entry["casa"], now)
                 out["generatedAt"] = iso(now)
         out["profiles"][pid] = entry
     out["spend"] = budget.spend
@@ -1251,14 +1311,27 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
     return out
 
 
-def notify_casa(prof: dict, casa: dict) -> None:
+CASA_NOTIFY_EVERY_H = 8
+
+
+def notify_casa(prof: dict, casa: dict, now: datetime | None = None) -> None:
+    """Aviso de ideas nuevas, como mucho uno cada 8 horas y de 8 a 22 h (las tandas llegan cada pocas horas)."""
     env = prof.get("notify")
     topic = os.environ.get(env or "", "").strip() if env else ""
     if not topic:
         return
+    now = now or datetime.now(timezone.utc)
+    last = parse_iso(casa.get("notifiedAt"))
+    if not 8 <= now.astimezone(MADRID).hour < 22 or (last and now - last < timedelta(hours=CASA_NOTIFY_EVERY_H)):
+        return
     es = (prof.get("language") or "es") == "es"
-    new = [i for i in casa.get("ideas") or [] if i.get("nueva")]
-    msg = "\n".join(f"• {i['titulo']}: {i.get('gancho', '')}" for i in new[:3])
+    new = [i for i in casa.get("ideas") or [] if (parse_iso(i.get("fecha")) or now) > (last or now - timedelta(days=2))]
+    if not new:
+        return
+    casa["notifiedAt"] = iso(now)
+    more = len(new) - 3
+    msg = "\n".join(f"• {i['titulo']}: {i.get('gancho', '')}" for i in new[:3]) + (
+        (f"\n… y {more} más" if es else f"\n… and {more} more") if more > 0 else "")
     app = os.environ.get("APP_URL") or ""
     old = os.environ.get("NTFY_TOPIC")
     try:
@@ -1308,7 +1381,7 @@ def main(argv=None):
     ap.add_argument("--perfil", default=None)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--check-due", action="store_true")
-    ap.add_argument("--solo", default="todo", choices=["todo", "parati", "casa"], help="qué preparar")
+    ap.add_argument("--solo", default="auto", choices=["auto", "todo", "parati", "casa"], help="qué preparar")
     a = ap.parse_args(argv)
     cfg = json.loads(Path(a.config).read_text(encoding="utf-8")) if Path(a.config).exists() else {}
     data_dir = Path(a.data)

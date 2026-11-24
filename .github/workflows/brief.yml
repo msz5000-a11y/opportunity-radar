@@ -1,11 +1,13 @@
 name: Para ti (Claude)
 
 # Claude estudia todo lo que recoge el radar y elige lo poco que de verdad sirve a cada perfil (data/brief.json).
-# Cada mañana a las 07:30 de Madrid (config.json → brief.times). El programador de GitHub falla en esta cuenta, así que
-# el pulso también lo lanza cuando toca. Si los candidatos no han cambiado, no se llama a Claude (no cuesta nada).
+# «Para ti»: cada mañana a las 07:30 de Madrid (config.json → brief.times). Ideas «Desde casa»: una tanda nueva cada
+# 3 horas (brief.casa_every_hours). El programador de GitHub falla en esta cuenta, así que el pulso también lo lanza
+# cuando toca. Si los candidatos no han cambiado, no se llama a Claude (no cuesta nada).
 on:
   schedule:
     - cron: "37 6 * * *"
+    - cron: "11 */3 * * *"
   workflow_dispatch:
     inputs:
       force:
@@ -17,9 +19,9 @@ on:
         required: false
         default: ""
       solo:
-        description: "Qué preparar: todo, parati o casa"
+        description: "Qué preparar: auto (lo que toque), todo, parati o casa"
         required: false
-        default: "todo"
+        default: "auto"
 
 permissions:
   contents: write
@@ -57,13 +59,14 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOPIC_EG: ${{ secrets.NTFY_TOPIC_EG }}
+          NTFY_TOPIC_ELLA: ${{ secrets.NTFY_TOPIC_ELLA }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
           APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
           FORCE: ${{ github.event.inputs.force }}
           PERFIL: ${{ github.event.inputs.perfil }}
           SOLO: ${{ github.event.inputs.solo }}
         run: |
-          ARGS="--data data --feed /tmp/pulse_feed.json --solo ${SOLO:-todo}"
+          ARGS="--data data --feed /tmp/pulse_feed.json --solo ${SOLO:-auto}"
           if [ "$FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
           if [ -n "$PERFIL" ]; then ARGS="$ARGS --perfil $PERFIL"; fi
           python -m radar.brief $ARGS

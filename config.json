@@ -122,7 +122,8 @@
       "Mastodon",
       "GitHub",
       "Hugging Face modelos"
-    ]
+    ],
+    "casa_llm_daily": 80
   },
   "profiles": [
     {
@@ -197,6 +198,9 @@
       "gemini-3.6-flash",
       "gemini-2.5-flash",
       "gemini-3.1-flash-lite"
-    ]
+    ],
+    "casa_model": "claude-haiku-5-5",
+    "casa_every_hours": 3,
+    "casa_searches": 4
   }
 }
