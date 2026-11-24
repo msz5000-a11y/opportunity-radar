@@ -355,6 +355,21 @@ GRANT_BAD = ("nominativa", "concesion directa", "subvencion directa", "a favor d
              "federacion", "fundacion", "aportacion extraordinaria")
 OK_BENEF = ("PERSONAS FÍSICAS", "PERSONAS FISICAS", "PYME")
 ORIGIN_RANK = {"municipal": 0, "provincial": 1, "autonomica": 2, "estatal": 3}
+# Para qué sirve la ayuda: solo las que sirven para emprender, trabajar por cuenta propia o hacer crecer un negocio
+GRANT_GOOD = ("emprend", "autonom", "empresa", "empresari", "comerci", "pyme", "negocio", "digitaliz", "emple", "contrataci", "innova",
+              "artesan", "startup", "inicio de actividad", "actividad economica", "trabajo autonomo", "cuenta propia", "creacion de",
+              "economia social", "cooperativ", "turism", "industria", "internacionaliz", "kit digital", "transformacion digital")
+GRANT_GOOD_FIN = ("comercio", "pymes", "empleo", "industria", "investigacion", "innovacion", "turismo", "otras actuaciones de caracter economico")
+GRANT_OFF = ("premio", "beca", "memoria democratica", "deport", "fiesta", "vivienda", "alquiler", "cooperacion internacional", "comedor",
+             "escolar", "transporte", "violencia", "dependencia", "investigador", "doctorad", "festival", "musica", "banda", "teatro")
+STATS: dict = {}
+
+
+def grant_relevant(title: str, finalidad: str | None) -> bool:
+    t, f = _fold(title), _fold(finalidad or "")
+    good = any(w in t for w in GRANT_GOOD) or any(w in f for w in GRANT_GOOD_FIN)
+    off = any(w in t for w in GRANT_OFF) and not any(w in t for w in ("emprend", "empresa", "comerci", "autonom"))
+    return good and not off
 
 
 def _fold(s: str) -> str:
@@ -457,7 +472,14 @@ def grants(profile: dict, now: datetime, ids: dict | None = None, n: int = 15) -
     for q in GRANT_Q:
         collect({}, "estatal", q, size=20, days=90, nivel="ESTADO")
     out, today = [], now.astimezone(MADRID).date().isoformat()
-    for num, (x, origin) in sorted(found.items(), key=lambda kv: (ORIGIN_RANK[kv[1][1]], kv[1][0].get("fechaRecepcion") or ""))[:70]:
+    st = {"encontradas": len(found), "sin_relacion": 0, "directa": 0, "no_para_ti": 0, "cerradas": 0}
+    cands = []
+    for num, (x, origin) in found.items():
+        if grant_relevant(x.get("descripcion") or "", None):
+            cands.append((num, x, origin))
+        else:
+            st["sin_relacion"] += 1
+    for num, x, origin in sorted(cands, key=lambda c: (ORIGIN_RANK[c[2]], c[1].get("fechaRecepcion") or ""))[:60]:
         try:
             det = net.get_json(BDNS, params={"numConv": num, "vpd": "GE"}, timeout=30) or {}
         except Exception:  # noqa: BLE001
@@ -465,11 +487,14 @@ def grants(profile: dict, now: datetime, ids: dict | None = None, n: int = 15) -
         tipo = det.get("tipoConvocatoria") or ""
         benef = [b.get("descripcion", "") for b in det.get("tiposBeneficiarios") or []]
         fin, ini = det.get("fechaFinSolicitud"), det.get("fechaInicioSolicitud")
-        if "directa" in _fold(tipo) or not any(any(k in b.upper() for k in OK_BENEF) for b in benef):
+        if "directa" in _fold(tipo):
+            st["directa"] += 1
             continue
-        if fin and fin < today:
+        if not any(any(k in b.upper() for k in OK_BENEF) for b in benef) or not grant_relevant(det.get("descripcion") or "", det.get("descripcionFinalidad")):
+            st["no_para_ti"] += 1
             continue
-        if not fin and det.get("abierto") is False and not (ini and ini > today):
+        if (fin and fin < today) or (not fin and det.get("abierto") is False and not (ini and ini > today)):
+            st["cerradas"] += 1
             continue
         org = det.get("organo") or {}
         where = {"municipal": ids.get("ayuntamiento_name") or org.get("nivel3"), "provincial": ids.get("diputacion_name") or org.get("nivel2"),
@@ -483,6 +508,8 @@ def grants(profile: dict, now: datetime, ids: dict | None = None, n: int = 15) -
                     "url": f"https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/{num}",
                     "sede": det.get("sedeElectronica"), "bases": det.get("urlBasesReguladoras")})
     out.sort(key=lambda g: (ORIGIN_RANK[g["ambito"]], g["solicitud"]["hasta"] or "9999"))
+    st["abiertas"] = len(out)
+    STATS[key] = st
     _GRANT_CACHE[key] = out
     return out[:n]
 
@@ -1068,6 +1095,17 @@ def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budge
         return {**old, "error": err, "checkedAt": iso(now)}
     allowed = {x["url"] for x in stories + trust if x.get("url")} | res["urls"]
     got = clean_ideas(res["data"], allowed_urls=allowed, grant_ids={g["id"] for g in gl}, prev_titles=[p["titulo"] for p in prev], now=now)
+    src = {_ukey(x["url"]): x for x in stories + trust if x.get("url")}
+    es = (prof.get("language") or "es") == "es"
+    for idea in got["ideas"]:
+        for k in idea["casos"]:
+            c = src.get(_ukey(k["url"]))
+            if c and c.get("titular"):  # noticia: titular y medio tal cual
+                k.update(quien=c.get("medio") or k["quien"], resultado=c["titular"], pais="")
+            elif c and c.get("ingresos_30d_usd"):  # TrustMRR: ingresos verificados
+                k.update(quien=c.get("nombre") or k["quien"], pais="",
+                         resultado=(f"Ingresos verificados en TrustMRR: {_money(c['ingresos_30d_usd'], '$')} en 30 días" if es
+                                    else f"Verified revenue on TrustMRR: {_money(c['ingresos_30d_usd'], '$')} in 30 days"))
     for p in prev:
         p["nueva"] = False
     lib = (got["ideas"] + prev)[:CASA_MAX]
@@ -1108,8 +1146,10 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
             out["profiles"][pid] = entry
             continue
         try:
-            gl = grants(prof, now, bdns_ids(prof, data_dir))
+            ids = bdns_ids(prof, data_dir)
+            gl = grants(prof, now, ids)
             _ok(f"ayudas_{pid}", len(gl))
+            STATUS[f"ayudas_{pid}"]["filtro"] = STATS.get(json.dumps(ids, sort_keys=True))
         except Exception as e:  # noqa: BLE001
             gl = []
             _ok(f"ayudas_{pid}", 0, e)

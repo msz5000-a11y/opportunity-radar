@@ -397,6 +397,8 @@ def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
     assert systems == ["brief", "casa"] and set(p["secciones"]) == {"ayudas", "extra"}  # la sección no pedida no aparece
     assert p["profile"]["start_tab"] == "casa" and p["casa"]["nuevas"] == 1 and p["casa"]["ideas"][0]["ayudas"] == ["gr5"]
     assert p["casa"]["oportunidades_locales"][0]["url"] == "https://camara.example/p" and p["casa"]["ayudas"][0]["id"] == "gr5"
+    case = p["casa"]["ideas"][0]["casos"][0]
+    assert case["resultado"] == "Teacher earns $10k selling printables" and case["pais"] == ""  # el texto del caso sale de la fuente
     assert any("Ideas nuevas desde casa" in t for t, m in sent)
     # al día siguiente sin cambios: ni informe ni ideas nuevas (cada 3 días); con «Más ideas» (modo casa + force) sí
     B.run(tmp_path, cfg, now=NOW.replace(day=25), transport=t3)
@@ -406,3 +408,11 @@ def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
     assert systems == ["brief", "casa", "casa"]
     ideas = out["profiles"]["ella"]["casa"]["ideas"]
     assert [i["titulo"] for i in ideas] == ["Menús semanales para familias", "Láminas infantiles personalizadas"] and not ideas[1]["nueva"]
+
+
+def test_grant_relevance():
+    assert not B.grant_relevant("MH Convocatoria Premio María la Jabalina de Memoria Democrática 2027", "Justicia")
+    assert not B.grant_relevant("Subvenciones a clubes deportivos 2026", "Deportes")
+    assert B.grant_relevant("Ayudas al fomento del emprendimiento 2026", None)
+    assert B.grant_relevant("Premio a la empresa emprendedora del año", None)
+    assert B.grant_relevant("Convocatoria Go Digital Comarcas 2026", "Comercio, Turismo y Pymes")
