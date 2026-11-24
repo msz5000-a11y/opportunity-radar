@@ -1,0 +1,135 @@
+{
+ "version": 1,
+ "updatedAt": "2026-11-24T20:10:00Z",
+ "profiles": [
+  {
+   "id": "es",
+   "name": "Él",
+   "emoji": "📈",
+   "language": "es",
+   "country": "ES",
+   "region": "ES52",
+   "region_name": "Comunitat Valenciana",
+   "province": "Valencia",
+   "municipality": "Riba-roja de Túria",
+   "currency": "EUR",
+   "capital": 2000,
+   "max_ticket": 1000,
+   "risk": "medio",
+   "hours_week": null,
+   "about": "Vive en Riba-roja de Túria (Valencia). Solo usa el móvil, no tiene ordenador, y no programa: para montar un SaaS o una app necesita un socio técnico, un freelance o herramientas sin código.",
+   "interests": [
+    "startups",
+    "SaaS",
+    "bolsa",
+    "cripto"
+   ],
+   "wants": [
+    "startups con poco capital y potencial",
+    "SaaS o apps que funcionan fuera y se pueden clonar en España",
+    "acciones infravaloradas que rompen al alza",
+    "ayudas públicas para emprender"
+   ],
+   "avoid": [
+    "memecoins",
+    "apalancamiento",
+    "trading diario",
+    "esquemas de referidos",
+    "plataformas sin licencia"
+   ],
+   "sections": [
+    "startups",
+    "clonar",
+    "accion",
+    "ayudas",
+    "extra"
+   ],
+   "casa": false,
+   "start_tab": "parati",
+   "notify": "NTFY_TOPIC"
+  },
+  {
+   "id": "ella",
+   "name": "Ella",
+   "emoji": "🏡",
+   "language": "es",
+   "country": "ES",
+   "region": "ES52",
+   "region_name": "Comunitat Valenciana",
+   "province": "Valencia",
+   "municipality": "Riba-roja de Túria",
+   "currency": "EUR",
+   "capital": 1000,
+   "risk": "bajo",
+   "hours_week": null,
+   "about": "Vive en Riba-roja de Túria (Valencia). Se dedica a la inmobiliaria, el arte, el diseño, los niños y la cocina. Busca generar ingresos desde casa con poca inversión, sobre todo por internet.",
+   "interests": [
+    "inmobiliaria",
+    "arte",
+    "diseño",
+    "niños",
+    "cocina"
+   ],
+   "wants": [
+    "ideas de negocio desde casa con poco capital que ya funcionen en otros países",
+    "ayudas y subvenciones para emprender en España, Comunitat Valenciana y Riba-roja de Túria",
+    "oportunidades online"
+   ],
+   "avoid": [
+    "esquemas de referidos o multinivel",
+    "cursos milagro",
+    "apalancamiento",
+    "trading"
+   ],
+   "sections": [
+    "ayudas",
+    "extra"
+   ],
+   "casa": true,
+   "start_tab": "casa",
+   "notify": "NTFY_TOPIC_ELLA"
+  },
+  {
+   "id": "eg",
+   "name": "Egipto",
+   "emoji": "🇪🇬",
+   "language": "en",
+   "country": "EG",
+   "region": null,
+   "region_name": null,
+   "province": null,
+   "municipality": null,
+   "currency": "USD",
+   "capital": 2000,
+   "max_ticket": 1000,
+   "risk": "medio",
+   "hours_week": null,
+   "about": "Emprendedor en Egipto. Capacidad técnica y capital por confirmar: asume un equipo pequeño con poco capital.",
+   "interests": [
+    "SaaS",
+    "apps",
+    "startups"
+   ],
+   "wants": [
+    "SaaS or apps that work abroad and can be cloned in Egypt",
+    "startups to invest in with little capital",
+    "undervalued stocks breaking out"
+   ],
+   "avoid": [
+    "memecoins",
+    "leverage",
+    "day trading",
+    "unlicensed platforms"
+   ],
+   "sections": [
+    "startups",
+    "clonar",
+    "accion",
+    "extra"
+   ],
+   "casa": false,
+   "start_tab": "parati",
+   "notify": "NTFY_TOPIC_EG"
+  }
+ ]
+}

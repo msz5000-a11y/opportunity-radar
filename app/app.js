@@ -68,6 +68,7 @@
   // Menos pestañas: «Para ti» (lo que elige Claude) primero; IA, lanzamientos, noticias y redes siguen en «En vivo»
   const TABS = [
     {id: "parati", e: "🎯", es: "Para ti", en: "For you", c: "var(--c-top)"},
+    {id: "casa", e: "🏡", es: "Desde casa", en: "From home", c: "var(--c-casa)"},
     {id: "vivo", e: "⚡", es: "En vivo", en: "Live", c: "var(--c-vivo)"},
     {id: "cripto", e: "🪙", es: "Cripto", en: "Crypto", c: "var(--c-cripto)"},
     {id: "bolsa", e: "📈", es: "Bolsa", en: "Stocks", c: "var(--c-bolsa)"},
@@ -118,15 +119,21 @@
   }
   async function loadAll(manual = false) {
     const btn = $("#refreshBtn"); btn.classList.add("spin");
-    const [feed, opps, selected, markets, paper, ideas, status, brief] = await Promise.all(
-      ["feed.json", "opps.json", "selected.json", "markets.json", "paper.json", "ideas.json", "status.json", "brief.json"].map((n) => getJSON(n).catch(() => null)));
+    const [feed, opps, selected, markets, paper, ideas, status, brief, profiles] = await Promise.all(
+      ["feed.json", "opps.json", "selected.json", "markets.json", "paper.json", "ideas.json", "status.json", "brief.json", "profiles.json"].map((n) => getJSON(n).catch(() => null)));
     if (brief) S.brief = brief;
+    if (profiles) S.profiles = profiles;
     btn.classList.remove("spin");
     if (feed) acceptFeed(feed, !S.loaded); else if (!S.feed) { S.feed = LS.get("radar-feed-cache", null); invalidate(); }
     if (opps) S.opps = arr(opps); if (selected) S.selected = selected; if (markets) S.markets = markets;
     if (paper) S.paper = paper; if (ideas) S.ideas = ideas; if (status) S.status = status;
     S.loaded = true;
     if (manual) toast(feed ? L("Actualizado", "Updated") : L("Sin conexión: se muestran los últimos datos guardados", "Offline: showing the last saved data"));
+    if (S.autoTab) {  // sin enlace concreto: abre la pestaña que prefiera el perfil de este móvil
+      S.autoTab = false;
+      const st = curProfile()?.profile?.start_tab;
+      if (st && TAB_IDS.includes(st) && st !== S.tab) S.tab = st;
+    }
     render(); renderLive(); renderTicker(); renderTabbar();
     routeHash();
   }
@@ -154,10 +161,11 @@
   }
   async function pollSlow() {
     if (document.hidden) return;
-    const [opps, selected, markets, ideas, status, paper] = await Promise.all(
-      ["opps.json", "selected.json", "markets.json", "ideas.json", "status.json", "paper.json"].map((n) => getJSON(n).catch(() => null)));
+    const [opps, selected, markets, ideas, status, paper, brief, profiles] = await Promise.all(
+      ["opps.json", "selected.json", "markets.json", "ideas.json", "status.json", "paper.json", "brief.json", "profiles.json"].map((n) => getJSON(n).catch(() => null)));
     if (opps) S.opps = arr(opps); if (selected) S.selected = selected; if (markets) S.markets = markets;
     if (ideas) S.ideas = ideas; if (status) S.status = status; if (paper) S.paper = paper;
+    if (brief) S.brief = brief; if (profiles) S.profiles = profiles;
     if (!["vivo", "noticias", "redes"].includes(S.tab) && window.scrollY < 160 && !$("#sheet").classList.contains("open")) render();
   }
   let liveTicker = {};
@@ -372,13 +380,29 @@
     } catch { LS.set("radar-nudge-ok", false); }
   }
 
-  async function runBrief() {
+  async function ghDispatch(wf, inputs = {}) {
     if (!gh.ready()) return false;
     try {
       const c = gh.cfg();
-      const r = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/actions/workflows/brief.yml/dispatches`,
-        {method: "POST", headers: {Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json"}, body: JSON.stringify({ref: "main"})});
+      const r = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/actions/workflows/${wf}/dispatches`,
+        {method: "POST", headers: {Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json"}, body: JSON.stringify({ref: "main", inputs})});
       return r.status === 204;
+    } catch { return false; }
+  }
+  const runBrief = () => ghDispatch("brief.yml");
+  async function ghPutFile(path, text, message) {
+    if (!gh.ready()) return false;
+    const c = gh.cfg();
+    const api = `https://api.github.com/repos/${c.owner}/${c.repo}/contents/${path}`;
+    const h = {Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json"};
+    try {
+      const cur = await fetch(api + "?ref=main", {headers: h, cache: "no-store"});
+      const sha = cur.ok ? (await cur.json()).sha : undefined;
+      const bytes = new TextEncoder().encode(text);
+      let bin = "";
+      for (let i = 0; i < bytes.length; i += 4096) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 4096));
+      const r = await fetch(api, {method: "PUT", headers: h, body: JSON.stringify({message, content: btoa(bin), sha, branch: "main"})});
+      return r.ok;
     } catch { return false; }
   }
 
@@ -430,11 +454,12 @@
     if (id === "top") return all.filter((x) => (x.s ?? 0) >= 72 && (x.opp ?? 1) >= 2);
     if (id === "noticias") return all.filter((x) => x.kind === "news");
     if (id === "redes") return all.filter((x) => x.kind === "social" || x.kind === "trend");
-    if (id === "ideas" || id === "parati") return [];
+    if (id === "ideas" || id === "parati" || id === "casa") return [];
     return all.filter((x) => inCat(x, id));
   }
   function newCount(id) {
     if (id === "parati") return S.brief?.generatedAt && S.brief.generatedAt > LS.get("radar-brief-seen", "") ? 1 : 0;
+    if (id === "casa") { const c = curProfile()?.casa; return c?.generatedAt && c.nuevas && c.generatedAt > LS.get("radar-casa-seen", "") ? c.nuevas : 0; }
     const since = S.lastSeen[id];
     if (!since) return 0;
     return tabItems(id).filter((x) => useful(x) && (x.t || "") > since).length;
@@ -547,6 +572,7 @@
     let html;
     switch (S.tab) {
       case "parati": html = viewForYou(); break;
+      case "casa": html = viewHome(); break;
       case "vivo": html = viewLive(); break;
       case "top": html = viewTop(); break;
       case "ideas": html = viewIdeas(); break;
@@ -596,18 +622,37 @@
       ${link ? `<a class="btn go" href="${esc(link)}" target="_blank" rel="noopener">${L("Abrir", "Open")} ↗</a>` : ""}
     </article>`;
   }
+  const allProfiles = () => {  // en el orden de data/profiles.json
+    const order = arr(S.profiles?.profiles).map((p) => p.id);
+    const pos = (id) => (order.includes(id) ? order.indexOf(id) : 99);
+    return Object.values(S.brief?.profiles || {}).filter((p) => p?.profile && (!order.length || order.includes(p.profile.id)))
+      .sort((a, b) => pos(a.profile.id) - pos(b.profile.id));
+  };
+  function curProfile() {
+    const profs = allProfiles();
+    return profs.find((p) => p.profile.id === S.prof) || profs[0] || null;
+  }
+  const profLabel = (p) => `${p.emoji || p.flag || ""} ${p.name}`.trim();
+  function profSwitch(profs, cur) {
+    return `<div class="tools">${profs.length > 1 ? chips(profs.map((p) => [p.profile.id, profLabel(p.profile)]), cur.profile.id, "data-prof") : ""}
+      <button class="linkbtn" type="button" data-pedit="${esc(cur.profile.id)}">${L("Personalizar", "Personalise")}</button></div>`;
+  }
   function viewForYou() {
-    const profs = Object.values(S.brief?.profiles || {}).filter((p) => p?.profile);
+    const profs = allProfiles();
     if (!profs.length) {
       return `<div class="empty">${L("Claude está preparando tu primer informe: startups en las que entrar con poco dinero, negocios que funcionan fuera para clonar, la acción infravalorada que rompe al alza y ayudas que puedes pedir. Llega en unos minutos.", "Claude is preparing your first brief: startups you can back with little money, businesses that work abroad and can be cloned, the undervalued stock breaking out and grants you can apply for. It will be here in a few minutes.")}
         ${gh.ready() ? `<br><br><button class="btn" type="button" data-brief-run="1">${L("Pedirlo ahora", "Request it now")}</button>` : ""}</div>`;
     }
-    const cur = profs.find((p) => p.profile.id === S.prof) || profs[0];
+    const cur = curProfile();
     LS.set("radar-brief-seen", S.brief.generatedAt || "");
-    const sw = profs.length > 1 ? `<div class="tools">${chips(profs.map((p) => [p.profile.id, `${p.profile.flag || ""} ${p.profile.name}`.trim()]), cur.profile.id, "data-prof")}</div>` : "";
+    const sw = profSwitch(profs, cur);
     const secs = cur.secciones || {};
+    if (!cur.secciones) {
+      return `${sw}<div class="empty">${cur.profile.casa ? L("Este perfil se centra en «Desde casa»: ahí tienes tus ideas y las ayudas para emprender.", "This profile focuses on “From home”: your ideas and grants are there.") + `<br><br><button class="btn" type="button" data-tab="casa">🏡 ${L("Ir a Desde casa", "Go to From home")}</button>` : L("Aún no hay informe para este perfil. Llega con el próximo análisis.", "No brief for this profile yet. It arrives with the next analysis.")}</div>`;
+    }
     const body = BRIEF_SECS.map(([k, e, color, title]) => {
-      const sec = secs[k] || {picks: []};
+      if (!secs[k]) return "";  // sección que este perfil no ha pedido
+      const sec = secs[k];
       if (k === "ayudas" && !arr(sec.picks).length && (cur.profile.country || "") !== "ES") return "";
       const picks = arr(sec.picks);
       return `<div class="section-h"><h2>${e} ${esc(title(cur.profile))}</h2><span>${picks.length || ""}</span></div>
@@ -625,6 +670,128 @@
       <p class="disclaimer">${L("No es asesoramiento financiero. Nada se compra ni se vende solo: Claude analiza y tú decides. Invierte solo lo que puedas perder.", "Not financial advice. Nothing is bought or sold automatically: Claude analyses and you decide. Only invest what you can afford to lose.")}</p>
       ${saved.length ? `<div class="section-h"><h2>🔖 ${L("Guardadas", "Saved")}</h2><span>${saved.length}</span></div><div class="rows">${saved.map(row).join("")}</div>` : ""}`;
   }
+
+  // ---------- Desde casa: negocios pequeños que ya funcionan fuera, desarrollados por Claude para cada perfil
+  const bullets = (title, a) => (arr(a).length ? `<p class="lbl">${esc(title)}</p><ul class="risks">${a.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : "");
+  function homeIdea(it, c) {
+    const grants = Object.fromEntries(arr(c.ayudas).map((g) => [g.id, g]));
+    const facts = [[L("Para empezar", "To start"), it.coste_inicial], [L("Horas a la semana", "Hours a week"), it.horas_semana],
+      [L("Qué cobrar", "What to charge"), it.precio], [L("Ingresos posibles", "Possible income"), it.ingresos_posibles]].filter((f) => f[1]);
+    const cases = arr(it.casos).filter((k) => safeUrl(k.url));
+    const gl = arr(it.ayudas).map((id) => grants[id]).filter(Boolean);
+    return `<article class="pick home" style="--pc:var(--c-casa)">
+      ${it.nueva ? `<span class="tag new">${L("Nueva", "New")}</span>` : ""}
+      <h3>${esc(it.titulo)}</h3>
+      ${it.gancho ? `<p class="hook">${esc(it.gancho)}</p>` : ""}
+      ${it.que_es ? `<p>${esc(it.que_es)}</p>` : ""}
+      ${cases.length ? `<div class="cases"><p class="lbl">${L("Ya funciona en", "Already working in")}</p>${cases.map((k) => `<a href="${esc(k.url)}" target="_blank" rel="noopener">
+        <b>${esc([k.pais, k.quien].filter(Boolean).join(", "))}</b>${k.resultado ? `<span>${esc(k.resultado)}</span>` : ""}</a>`).join("")}</div>` : ""}
+      ${it.por_que_tu ? `<p class="pwhy"><b>${L("Por qué tú", "Why you")}:</b> ${esc(it.por_que_tu)}</p>` : ""}
+      ${facts.length ? `<ul class="facts">${facts.map(([k, v]) => `<li>${esc(k)}<b>${esc(v)}</b></li>`).join("")}</ul>` : ""}
+      ${arr(it.como_empezar).length ? `<p class="lbl">${L("Cómo empezar", "How to start")}</p><ol>${it.como_empezar.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}
+      <details><summary>${L("Herramientas, primeras clientas, trámites y riesgos", "Tools, first customers, paperwork and risks")}</summary>
+        ${bullets(L("Herramientas", "Tools"), it.herramientas)}
+        ${bullets(L("Primeras clientas", "First customers"), it.primeras_clientas)}
+        ${bullets(L("Trámites", "Paperwork"), it.tramites)}
+        ${gl.length ? `<p class="lbl">${L("Ayudas que encajan", "Matching grants")}</p><ul class="risks">${gl.map((g) => `<li><a href="${esc(safeUrl(g.url) || "#")}" target="_blank" rel="noopener">${esc(g.titulo)}</a></li>`).join("")}</ul>` : ""}
+        ${bullets(L("Riesgos", "Risks"), it.riesgos)}
+        ${it.confianza ? `<p><b>${L("Confianza", "Confidence")}:</b> <span class="conf-${esc(it.confianza)}">${esc({alta: L("alta", "high"), media: L("media", "medium"), baja: L("baja", "low")}[it.confianza] || it.confianza)}</span></p>` : ""}
+      </details>
+    </article>`;
+  }
+  function viewHome() {
+    const profs = allProfiles();
+    const cur = curProfile();
+    if (!cur) return `<div class="empty">${L("Claude está preparando las primeras ideas. Llegan en unos minutos.", "Claude is preparing the first ideas. They'll be here in a few minutes.")}</div>`;
+    const sw = profSwitch(profs, cur);
+    const id = cur.profile.id;
+    if (!cur.profile.casa) {
+      return `${sw}<div class="empty">${L("«Desde casa» no está activado en este perfil. Actívalo en Personalizar y Claude buscará negocios pequeños que ya funcionan en otros países, adaptados a lo que sabes hacer.", "“From home” is off for this profile. Turn it on in Personalise and Claude will look for small businesses that already work in other countries, adapted to your skills.")}
+        <br><br><button class="btn" type="button" data-pedit="${esc(id)}">${L("Personalizar perfil", "Personalise profile")}</button></div>`;
+    }
+    const c = cur.casa || {};
+    if (c.generatedAt) LS.set("radar-casa-seen", c.generatedAt);
+    const ideas = arr(c.ideas);
+    const meta = [c.generatedAt && L("Actualizado ", "Updated ") + ago(c.generatedAt), modelName(c) && L("desarrollado por ", "developed by ") + modelName(c),
+      L("ideas nuevas cada 3 días", "new ideas every 3 days")].filter(Boolean).join(" · ");
+    const grants = arr(c.ayudas);
+    const local = arr(c.oportunidades_locales).filter((o) => safeUrl(o.url));
+    const where = cur.profile.municipality ? L(` en ${cur.profile.municipality} y alrededores`, ` around ${cur.profile.municipality}`) : "";
+    return `${sw}
+      <p class="brief-sum">${L("Negocios pequeños que ya funcionan en otros países, desarrollados para que puedas empezar desde casa con poco dinero.", "Small businesses that already work in other countries, developed so you can start from home with little money.")}</p>
+      <p class="brief-meta">${esc(meta)}${gh.ready() ? ` · <button class="linkbtn" type="button" data-casa-run="${esc(id)}">${L("pedir más ideas", "more ideas")}</button>` : ""}</p>
+      ${c.provider && c.provider !== "anthropic" ? `<p class="note">${L("Ahora las desarrolla un modelo gratuito porque falta la clave de Claude. Con ella, Claude busca más casos reales en la web.", "A free model is developing them because the Claude key is missing. With it, Claude finds more real cases on the web.")}</p>` : ""}
+      ${ideas.length ? ideas.map((it) => homeIdea(it, c)).join("") : `<p class="note">${esc(c.error ? L("No se han podido preparar ideas esta vez; se reintenta en el próximo análisis.", "Ideas couldn't be prepared this time; it will retry on the next analysis.") : L("Claude está buscando las primeras ideas para ti. Llegan con el próximo análisis.", "Claude is looking for your first ideas. They arrive with the next analysis."))}</p>`}
+      ${local.length ? `<div class="section-h"><h2>📍 ${L("Oportunidades en tu zona", "Opportunities near you")}</h2><span>${local.length}</span></div>
+        <div class="pick plain">${local.map((o) => `<p><a href="${esc(o.url)}" target="_blank" rel="noopener"><b>${esc(o.titulo)}</b></a>${o.que_es ? `<br>${esc(o.que_es)}` : ""}</p>`).join("")}</div>` : ""}
+      ${grants.length ? `<div class="section-h"><h2>🏛️ ${L("Ayudas para emprender", "Grants to start up")}${esc(where)}</h2><span>${grants.length}</span></div>
+        <div class="pick plain">${grants.map((g) => `<p><a href="${esc(safeUrl(g.url) || "#")}" target="_blank" rel="noopener"><b>${esc(g.titulo)}</b></a><br>
+          <span class="muted">${esc([g.donde, g.solicitud?.hasta && L("hasta el ", "until ") + g.solicitud.hasta].filter(Boolean).join(" · "))}</span></p>`).join("")}</div>` : ""}
+      ${c.nota ? `<p class="note">🔎 ${esc(c.nota)}</p>` : ""}
+      <p class="disclaimer">${L("Antes de empezar, confirma los trámites (autónomos, IVA, registro sanitario si vendes comida) con tu gestoría o en la oficina de empleo y desarrollo local de tu ayuntamiento.", "Before you start, confirm the paperwork (self-employment, VAT, food-safety registration if you sell food) with an adviser or your town's local development office.")}</p>`;
+  }
+
+  // ---------- editor de perfil (cada persona el suyo)
+  const NUTS_ES = [["ES61", "Andalucía"], ["ES24", "Aragón"], ["ES12", "Asturias"], ["ES53", "Illes Balears"], ["ES70", "Canarias"], ["ES13", "Cantabria"],
+    ["ES41", "Castilla y León"], ["ES42", "Castilla-La Mancha"], ["ES51", "Cataluña"], ["ES52", "Comunitat Valenciana"], ["ES43", "Extremadura"],
+    ["ES11", "Galicia"], ["ES30", "Comunidad de Madrid"], ["ES62", "Región de Murcia"], ["ES22", "Navarra"], ["ES21", "País Vasco"], ["ES23", "La Rioja"],
+    ["ES63", "Ceuta"], ["ES64", "Melilla"]];
+  const SEC_NAMES = () => ({casa: L("Ideas de negocio desde casa", "Work-from-home business ideas"), startups: L("Invertir en startups con poco dinero", "Investing in startups with little money"),
+    clonar: L("Negocios para clonar en tu país", "Businesses to clone in your country"), accion: L("Acción infravalorada que rompe al alza", "Undervalued stock breaking out"),
+    ayudas: L("Ayudas y subvenciones", "Grants and subsidies"), extra: L("Otras oportunidades del día", "Other opportunities of the day")});
+  const splitList = (v) => String(v || "").split(",").map((x) => x.trim()).filter(Boolean).slice(0, 12);
+  function openProfileEditor(pid) {
+    const list = arr(S.profiles?.profiles);
+    const p = list.find((x) => x.id === pid) || {id: "", name: "", emoji: "🙂", language: LANG, country: "ES", sections: ["ayudas", "extra"], casa: true, start_tab: "casa"};
+    const on = new Set([...arr(p.sections), ...(p.casa ? ["casa"] : [])]);
+    const opt = (v, cur, label) => `<option value="${esc(v)}" ${String(cur ?? "") === String(v) ? "selected" : ""}>${esc(label)}</option>`;
+    openSheet(`<div class="d-head"><h2 class="d-title">${p.id ? L("Tu perfil: ", "Your profile: ") + esc(p.name) : L("Nuevo perfil", "New profile")}</h2>
+        <p class="muted">${L("Claude lo usa para elegir y desarrollar lo que te enseña. Cada persona puede tener el suyo.", "Claude uses it to choose and develop what it shows you. Everyone can have their own.")}</p></div>
+      <div class="blk">
+        <div class="field"><label for="pName">${L("Nombre", "Name")}</label><input id="pName" maxlength="30" value="${esc(p.name || "")}"></div>
+        <div class="field"><label for="pEmoji">${L("Icono (un emoji)", "Icon (one emoji)")}</label><input id="pEmoji" maxlength="4" value="${esc(p.emoji || p.flag || "")}"></div>
+        <div class="field"><label for="pLang">${L("Idioma", "Language")}</label><select id="pLang">${opt("es", p.language, "Español")}${opt("en", p.language, "English")}</select></div>
+        <div class="field"><label for="pCountry">${L("País", "Country")}</label><select id="pCountry">${opt("ES", p.country, "España")}${opt("EG", p.country, "Egipto / Egypt")}${opt("", p.country, L("Otro", "Other"))}</select></div>
+        <div class="field"><label for="pRegion">${L("Comunidad autónoma", "Region (Spain)")}</label><select id="pRegion">${opt("", p.region, "—")}${NUTS_ES.map(([k, n]) => opt(k, p.region, n)).join("")}</select></div>
+        <div class="field"><label for="pProv">${L("Provincia", "Province")}</label><input id="pProv" value="${esc(p.province || "")}"></div>
+        <div class="field"><label for="pMuni">${L("Municipio", "Town")}</label><input id="pMuni" value="${esc(p.municipality || "")}"></div>
+        <div class="field"><label for="pAbout">${L("A qué te dedicas y qué sabes hacer", "What you do and what you're good at")}</label><textarea id="pAbout" rows="4">${esc(p.about || "")}</textarea></div>
+        <div class="field"><label for="pInt">${L("Intereses, separados por comas", "Interests, comma-separated")}</label><input id="pInt" value="${esc(arr(p.interests).join(", "))}"></div>
+        <div class="field"><label for="pCap">${L("Dinero que podrías invertir (€)", "Money you could invest (€)")}</label><input id="pCap" type="number" min="0" step="50" value="${esc(p.capital ?? "")}"></div>
+        <div class="field"><label for="pHours">${L("Horas a la semana que puedes dedicar", "Hours a week you can put in")}</label><input id="pHours" type="number" min="0" max="80" value="${esc(p.hours_week ?? "")}"></div>
+        <fieldset class="field checks"><legend>${L("Qué quieres que te busque Claude", "What you want Claude to look for")}</legend>
+          ${Object.entries(SEC_NAMES()).map(([k, l]) => `<label class="chk"><input type="checkbox" value="${k}" ${on.has(k) ? "checked" : ""}> ${esc(l)}</label>`).join("")}</fieldset>
+        <div class="field"><label for="pAvoid">${L("Lo que no quieres, separado por comas", "What you don't want, comma-separated")}</label><input id="pAvoid" value="${esc(arr(p.avoid).join(", "))}"></div>
+        <div class="field"><label for="pStart">${L("Pestaña al abrir la app", "Tab when opening the app")}</label><select id="pStart">${opt("parati", p.start_tab, "Para ti")}${opt("casa", p.start_tab, "Desde casa")}${opt("vivo", p.start_tab, "En vivo")}</select></div>
+        <p class="fine">${gh.ready() ? L("Al guardar, Claude prepara resultados nuevos para este perfil en unos minutos.", "When you save, Claude prepares new results for this profile in a few minutes.") : L("Para que Claude use los cambios hay que guardarlos en el radar con el token de GitHub (Ajustes → Sincronización). Sin token se quedan solo en este móvil.", "For Claude to use the changes they must be saved to the radar with the GitHub token (Settings → Sync). Without it they stay on this phone only.")}</p>
+        <div class="btns"><button class="btn primary" type="button" data-psave="${esc(p.id || "")}">${L("Guardar", "Save")}</button>${p.id ? `<button class="btn" type="button" data-pedit="__new">${L("Crear otro perfil", "Create another profile")}</button>` : ""}</div>
+      </div>`);
+  }
+  async function saveProfileForm(pid) {
+    const v = (id) => ($("#" + id)?.value || "").trim();
+    const doc = JSON.parse(JSON.stringify(S.profiles || {version: 1, profiles: []}));
+    doc.profiles = arr(doc.profiles);
+    let p = doc.profiles.find((x) => x.id === pid);
+    if (!p) {
+      let base = (_fold(v("pName")).replace(/[^a-z0-9]+/g, "") || "perfil").slice(0, 12), nid = base, i = 2;
+      while (doc.profiles.some((x) => x.id === nid)) nid = base + i++;
+      p = {id: nid, currency: "EUR", risk: "bajo"}; doc.profiles.push(p);
+    }
+    const checked = [...document.querySelectorAll("#sheetBody .checks input:checked")].map((x) => x.value);
+    const region = v("pRegion");
+    Object.assign(p, {name: v("pName") || p.name || L("Perfil", "Profile"), emoji: v("pEmoji") || p.emoji, language: v("pLang") || "es", country: v("pCountry") || null,
+      region: region || null, region_name: (NUTS_ES.find(([k]) => k === region) || [])[1] || null, province: v("pProv") || null, municipality: v("pMuni") || null,
+      about: v("pAbout"), interests: splitList(v("pInt")), capital: v("pCap") ? +v("pCap") : null, hours_week: v("pHours") ? +v("pHours") : null,
+      sections: checked.filter((x) => x !== "casa"), casa: checked.includes("casa"), avoid: splitList(v("pAvoid")), start_tab: v("pStart") || "parati"});
+    doc.updatedAt = new Date().toISOString();
+    S.profiles = doc; S.prof = p.id; LS.set("radar-prof", p.id); LS.set("radar-profiles-draft", doc);
+    if (!gh.ready()) { toast(L("Guardado en este móvil", "Saved on this phone")); closeSheet(); render(); return; }
+    const ok = await ghPutFile("data/profiles.json", JSON.stringify(doc, null, 1) + "\n", `Perfil «${p.name}» actualizado desde la app`);
+    if (ok) await ghDispatch("brief.yml", {perfil: p.id, force: "true", solo: "todo"});
+    toast(ok ? L("Guardado. Claude prepara lo nuevo en unos minutos.", "Saved. Claude is preparing new results.") : L("No se pudo guardar en el radar: revisa el token.", "Couldn't save to the radar: check the token."));
+    closeSheet(); render();
+  }
+  const _fold = (x) => String(x || "").normalize("NFKD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
   function viewLive() {
     const c = S.chip.vivo || "all";
@@ -1071,7 +1238,10 @@
       <div class="blk"><h3>${L("Idioma y aspecto", "Language and look")}</h3>
         <div class="field"><label for="sLang">${L("Idioma", "Language")}</label><select id="sLang"><option value="es" ${LANG === "es" ? "selected" : ""}>Español</option><option value="en" ${LANG === "en" ? "selected" : ""}>English</option></select></div>
         <div class="field"><label for="sTheme">${L("Tema", "Theme")}</label><select id="sTheme">${[["auto", L("Automático", "Automatic")], ["dark", L("Oscuro", "Dark")], ["light", L("Claro", "Light")]].map(([k, l]) => `<option value="${k}" ${theme === k ? "selected" : ""}>${l}</option>`).join("")}</select></div></div>
-      <div class="blk"><h3>${L("Tu perfil para el análisis", "Your profile for the analysis")}</h3>
+      <div class="blk"><h3>${L("Perfiles de cada persona", "Each person's profile")}</h3>
+        <p>${L("«Para ti» y «Desde casa» se preparan para cada perfil: dónde vive, a qué se dedica, qué le interesa y cuánto puede invertir. Elige el tuyo arriba en esas pestañas.", "“For you” and “From home” are prepared for each profile: where they live, what they do, their interests and how much they can invest. Pick yours at the top of those tabs.")}</p>
+        <div class="btns"><button class="btn primary" type="button" data-pedit="${esc(curProfile()?.profile?.id || "")}">${L("Editar mi perfil", "Edit my profile")}</button><button class="btn" type="button" data-pedit="__new">${L("Crear otro perfil", "Create another profile")}</button></div></div>
+      <div class="blk"><h3>${L("Análisis profundo: región y capital", "Deep analysis: region and capital")}</h3>
         <div class="field"><label for="sRegion">${L("Región donde buscar oportunidades", "Region to search for opportunities")}</label><select id="sRegion">${[["es", "España"], ["eu", L("Unión Europea", "European Union")], ["uk", L("Reino Unido", "United Kingdom")], ["us", L("Estados Unidos", "United States")], ["latam", "Latinoamérica"], ["global", "Global"]].map(([k, l]) => `<option value="${k}" ${p.region === k ? "selected" : ""}>${l}</option>`).join("")}</select></div>
         <div class="field"><label for="sBudget">${L("Capital máximo (€)", "Maximum capital (€)")}</label><input id="sBudget" type="number" min="0" max="2000" step="1" value="${esc(p.budget ?? 2000)}"></div>
         <p class="fine" style="margin-top:8px">${gh.ready() ? L("Se envía al radar con la sincronización.", "Sent to the radar through sync.") : L("Se guarda en este móvil. Para que el motor en la nube lo use, conecta la sincronización (abajo).", "Saved on this phone. Connect sync (below) for the cloud engine to use it.")}</p>
@@ -1106,7 +1276,10 @@
     const mkEl = t.closest("[data-mk]"); if (mkEl) { const [k, s] = mkEl.dataset.mk.split("|"); openMk(k, s); return; }
     const ideaEl = t.closest("[data-idea]"); if (ideaEl) { openIdea(ideaEl.dataset.idea); return; }
     const man = t.closest("[data-manual]"); if (man) { openManual(man.dataset.manual); return; }
-    const pf = t.closest("[data-prof]"); if (pf) { S.prof = pf.dataset.prof; LS.set("radar-prof", S.prof); render(); return; }
+    const pf = t.closest("[data-prof]"); if (pf) { S.prof = pf.dataset.prof; LS.set("radar-prof", S.prof); render(); renderTabbar(); return; }
+    const pe = t.closest("[data-pedit]"); if (pe) { openProfileEditor(pe.dataset.pedit === "__new" ? "" : pe.dataset.pedit); return; }
+    const ps = t.closest("[data-psave]"); if (ps) { ps.disabled = true; await saveProfileForm(ps.dataset.psave); return; }
+    const cr = t.closest("[data-casa-run]"); if (cr) { cr.disabled = true; cr.textContent = await ghDispatch("brief.yml", {perfil: cr.dataset.casaRun, solo: "casa", force: "true"}) ? L("pedidas: llegan en unos minutos", "requested: a few minutes") : L("no se pudo pedir (revisa el token)", "could not request (check the token)"); return; }
     const br = t.closest("[data-brief-run]"); if (br) { br.disabled = true; br.textContent = await runBrief() ? L("Pedido: llega en unos minutos", "Requested: a few minutes") : L("No se pudo pedir (revisa el token)", "Could not request it (check the token)"); return; }
     const chip = t.closest("[data-chip]"); if (chip) { S.chip[S.tab] = chip.dataset.chip; S.limit = 60; render(); return; }
     const seg = t.closest("[data-seg]"); if (seg) { S.seg[S.tab] = seg.dataset.seg; LS.set("radar-segs", S.seg); S.limit = 60; render(); return; }
@@ -1214,6 +1387,7 @@
   // ------------------------------------------------------------------ arranque
   const h0 = decodeURIComponent(location.hash.slice(1));
   S.tab = TAB_IDS.includes(h0) ? h0 : "parati";
+  S.autoTab = !h0;
   if (!Object.keys(S.lastSeen).length) S.lastSeen = {};
   S.visitFrom[S.tab] = S.lastSeen[S.tab] || null;
   render(); renderTabbar(); renderTicker();

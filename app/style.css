@@ -5,7 +5,7 @@
   --ink:#e8eff6; --muted:#93a7be; --dim:#5d7591;
   --gold:#ffc861; --sky:#7cc9f2; --good:#3ddc97; --bad:#ff7070; --warn:#ffb547;
   --c-vivo:#ff7070; --c-top:#ffc861; --c-cripto:#fb9a4b; --c-bolsa:#3ddc97; --c-startups:#b39dfa; --c-ia:#4cc3f7;
-  --c-lanzamientos:#f57ab9; --c-negocio:#f2d04b; --c-ideas:#f2d04b; --c-noticias:#a9b9cb; --c-redes:#36d6c3;
+  --c-lanzamientos:#f57ab9; --c-negocio:#f2d04b; --c-ideas:#f2d04b; --c-noticias:#a9b9cb; --c-redes:#36d6c3; --c-casa:#ff9f80;
   --font:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --cond:"Barlow Condensed","Barlow","Arial Narrow",system-ui,sans-serif;
   --pad:14px;
@@ -16,7 +16,7 @@
   --ink:#0f1b2b; --muted:#56677d; --dim:#8a9bb0;
   --gold:#b7790a; --sky:#1f7fb8; --good:#14915a; --bad:#cc3333; --warn:#b26b00;
   --c-vivo:#d23c3c; --c-top:#b7790a; --c-cripto:#d36a12; --c-bolsa:#14915a; --c-startups:#6d4fd6; --c-ia:#127fb5;
-  --c-lanzamientos:#c23b84; --c-negocio:#9a7b00; --c-ideas:#9a7b00; --c-noticias:#56677d; --c-redes:#0e8f80;
+  --c-lanzamientos:#c23b84; --c-negocio:#9a7b00; --c-ideas:#9a7b00; --c-noticias:#56677d; --c-redes:#0e8f80; --c-casa:#c4502c;
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -187,3 +187,21 @@ th:first-child,td:first-child{text-align:left} th{color:var(--muted);font-weight
 .pick .go{margin-top:10px}
 .conf-alta{color:var(--c-bolsa)} .conf-media{color:var(--c-top)} .conf-baja{color:var(--c-vivo)}
 .disclaimer{margin:20px var(--pad) 10px;font-size:12.5px;color:var(--dim);line-height:1.45}
+
+/* «Desde casa» */
+.pick.home{position:relative}
+.pick.home .tag.new{position:absolute;top:12px;right:12px;background:color-mix(in srgb,var(--c-casa) 22%,transparent);color:var(--c-casa)}
+.pick.home h3{padding-right:58px}
+.pick .hook{color:var(--ink);font-weight:500;font-size:15.5px}
+.pick .lbl{margin:12px 0 4px;font:600 13px/1.2 var(--font);color:var(--pc)}
+.cases a{display:block;margin:6px 0;padding:8px 10px;border-radius:10px;background:color-mix(in srgb,var(--pc) 8%,transparent);text-decoration:none;color:var(--ink)}
+.cases a b{display:block;font-weight:600;font-size:14px}
+.cases a span{display:block;font-size:13.5px;color:var(--muted);margin-top:2px}
+.pick.plain{border-left-color:var(--line-2)}
+.pick.plain p{color:var(--ink)}
+.pick.plain a{color:var(--ink)}
+.field textarea{padding:10px 12px;border-radius:10px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:inherit;resize:vertical}
+.field.checks{border:0;padding:0;margin:14px 0 0}
+.field.checks legend{font-size:14px;color:var(--muted);margin-bottom:4px}
+.chk{display:flex;align-items:center;gap:10px;padding:7px 0;font-size:15px;color:var(--ink)}
+.chk input{width:20px;height:20px;accent-color:var(--c-casa)}

@@ -78,19 +78,90 @@ def _detail(num, tipo="Concurrencia competitiva - canónica", benef="PYME Y PERS
 def test_grants_only_open_competitive_for_people_or_smes(monkeypatch):
     details = {"1": _detail("1"), "2": _detail("2", tipo="Concesión directa - instrumental"),
                "3": _detail("3", benef="PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"),
-               "4": _detail("4", fin="2026-11-01"), "5": _detail("5", nivel="LOCAL", region="ES41 - CASTILLA Y LEÓN"),
-               "6": _detail("6", nivel="AUTONOMICA", region="ES30 - COMUNIDAD DE MADRID")}
+               "4": _detail("4", fin="2026-11-01"),
+               "6": _detail("6", nivel="AUTONOMICA", region="ES52 - COMUNIDAD VALENCIANA"),
+               "7": _detail("7", nivel="LOCAL", region="ES523 - Valencia / València", fin="2026-12-10"),
+               "8": _detail("8", nivel="LOCAL", region="ES523 - Valencia / València", fin="2026-12-20")}
+    rows = lambda nums: {"content": [{"numeroConvocatoria": n, "descripcion": f"Ayudas a emprendedores {n}", "fechaRecepcion": "2026-11-20",  # noqa: E731
+                                      "nivel1": details[n]["organo"]["nivel1"]} for n in nums]}
+
     def fake(url, params=None, **kw):
         if url.endswith("/busqueda"):
-            return {"content": [{"numeroConvocatoria": n, "descripcion": f"Ayudas a emprendedores {n}", "fechaRecepcion": "2026-11-20",
-                                 "nivel1": details[n]["organo"]["nivel1"]} for n in details]}
+            if params.get("organos") == 2611:
+                return rows(["7"])
+            if params.get("organos") == 638:
+                return rows(["8"])
+            if params.get("regiones") == 54:
+                return rows(["6"])
+            return rows(["1", "2", "3", "4", "6", "7"])  # la búsqueda general: solo cuentan las del Estado
         return details[params["numConv"]]
     monkeypatch.setattr(B.net, "get_json", fake)
+    B._GRANT_CACHE.clear()
     g = B.grants({"country": "ES"}, NOW)
-    assert [x["id"] for x in g] == ["gr1", "gr6"] and g[0]["ambito"] == "estatal"
-    g = B.grants({"country": "ES", "subregion": "Castilla y León"}, NOW)
-    assert {x["id"] for x in g} == {"gr1", "gr5", "gr6"}
+    assert [x["id"] for x in g] == ["gr1"] and g[0]["ambito"] == "estatal"
+    B._GRANT_CACHE.clear()
+    ids = {"region": 54, "diputacion": 638, "diputacion_name": "DIPUTACIÓN PROVINCIAL DE VALENCIA",
+           "ayuntamiento": 2611, "ayuntamiento_name": "AYUNTAMIENTO DE RIBA-ROJA DE TÚRIA"}
+    g = B.grants({"country": "ES"}, NOW, ids)
+    assert [x["id"] for x in g] == ["gr7", "gr8", "gr6", "gr1"]
+    assert [x["ambito"] for x in g] == ["municipal", "provincial", "autonomica", "estatal"] and g[0]["donde"] == "AYUNTAMIENTO DE RIBA-ROJA DE TÚRIA"
     assert B.grants({"country": "EG"}, NOW) == []
+
+
+def test_bdns_ids_resolve_and_cache(monkeypatch, tmp_path):
+    regs = [{"id": 1, "descripcion": "ES - ESPAÑA ", "children": [{"id": 50, "descripcion": "ES5 - ESTE", "children": [
+        {"id": 54, "descripcion": "ES52 - COMUNIDAD VALENCIANA", "children": [{"id": 57, "descripcion": "ES523 - Valencia / València"}]}]}]}]
+    orgs = [{"id": 99, "descripcion": "VALÈNCIA / VALENCIA", "children": [
+        {"id": 2774, "descripcion": "RIBA-ROJA DE TÚRIA", "children": [{"id": 2611, "descripcion": "AYUNTAMIENTO DE RIBA-ROJA DE TÚRIA"}]}]},
+        {"id": 2559, "descripcion": "DIPUTACIÓN PROV. DE VALENCIA", "children": [{"id": 638, "descripcion": "DIPUTACIÓN PROVINCIAL DE VALENCIA"}]}]
+    calls = []
+
+    def fake(url, params=None, **kw):
+        calls.append(url)
+        return regs if url.endswith("/regiones") else orgs
+    monkeypatch.setattr(B.net, "get_json", fake)
+    prof = {"country": "ES", "region": "ES52", "province": "Valencia", "municipality": "Riba-roja de Túria"}
+    ids = B.bdns_ids(prof, tmp_path)
+    assert (ids["region"], ids["diputacion"], ids["ayuntamiento"]) == (54, 638, 2611)
+    assert B.bdns_ids(prof, tmp_path) == ids and len(calls) == 2  # la segunda vez sale de data/bdns_ids.json
+    assert B.bdns_ids({"country": "EG"}, tmp_path) == {}
+
+
+RSS = """<rss><channel><item><title>How a Former Math Teacher Reached $10,000 a Month Selling Printables on Etsy - StreetInsider</title>
+<link>https://news.google.com/rss/articles/abc</link><pubDate>Tue, 17 Nov 2026 10:00:00 GMT</pubDate><source url="https://streetinsider.com">StreetInsider</source></item>
+<item><title>How a Former Math Teacher Reached $10,000 a Month Selling Printables on Etsy - Otro</title><link>https://news.google.com/rss/articles/dup</link>
+<pubDate>Tue, 17 Nov 2026 10:00:00 GMT</pubDate><source url="https://x">Otro</source></item></channel></rss>"""
+
+
+def test_home_stories_and_ideas(monkeypatch):
+    seen_q = []
+    monkeypatch.setattr(B, "_get", lambda url, **kw: seen_q.append(url) or RSS)
+    st = B.home_stories({"interests": ["diseño", "niños"]})
+    assert [x["titular"] for x in st] == ["How a Former Math Teacher Reached $10,000 a Month Selling Printables on Etsy"]
+    assert st[0]["medio"] == "StreetInsider" and st[0]["url"] == "https://news.google.com/rss/articles/abc"
+    assert any("design" in q for q in seen_q) and any("kids" in q for q in seen_q)
+    raw = {"ideas": [{"titulo": "Láminas imprimibles para habitaciones infantiles", "gancho": "Diseña una vez, vende mil veces",
+                      "casos": [{"quien": "Profesora en Izmir", "pais": "Turquía", "resultado": "10.000 $ en un mes en Etsy", "url": "https://news.google.com/rss/articles/abc"},
+                                {"quien": "Inventada", "pais": "X", "resultado": "1M", "url": "https://inventado.example"}],
+                      "como_empezar": ["Semana 1: abre la tienda"], "ayudas": ["gr1", "gr999"], "confianza": "alta"},
+                     {"titulo": "Idea sin casos", "casos": []},
+                     {"titulo": "Repetida", "casos": [{"url": "https://news.google.com/rss/articles/abc"}]}],
+           "oportunidades_locales": [{"titulo": "Mercado artesano", "url": "https://inventado.example/m"}], "nota": "ok"}
+    got = B.clean_ideas(raw, allowed_urls={"https://news.google.com/rss/articles/abc"}, grant_ids={"gr1"}, prev_titles=["Repetida"], now=NOW)
+    assert [i["titulo"] for i in got["ideas"]] == ["Láminas imprimibles para habitaciones infantiles"]
+    i = got["ideas"][0]
+    assert len(i["casos"]) == 1 and i["ayudas"] == ["gr1"] and i["nueva"] and got["oportunidades_locales"] == [] and got["descartadas"] == 2
+
+
+def test_casa_due_and_profiles(tmp_path):
+    prof = {"id": "ella", "interests": ["arte"], "casa": True}
+    assert B.casa_due({}, prof, NOW)
+    old = {"ideas": [{"titulo": "x"}], "generatedAt": "2026-11-23T07:00:00Z", "profile_hash": B.profile_hash(prof)}
+    assert not B.casa_due(old, prof, NOW)
+    assert B.casa_due(old, {**prof, "interests": ["arte", "cocina"]}, NOW)  # perfil cambiado: ideas nuevas
+    assert B.casa_due({**old, "generatedAt": "2026-11-20T07:00:00Z"}, prof, NOW)
+    (tmp_path / "profiles.json").write_text(json.dumps({"profiles": [{"id": "es"}, {"id": "off", "off": True}, {"id": "ella"}]}))
+    assert [p["id"] for p in B.load_profiles(tmp_path, {})] == ["es", "ella"]
 
 
 def test_clean_brief_drops_invented_things():
@@ -288,3 +359,50 @@ def test_stock_needs_a_real_breakout_and_facts_come_from_the_source(monkeypatch,
     out = B.run(tmp_path, cfg, now=NOW, transport=t2, force=True)
     a = out["profiles"]["es"]["secciones"]["accion"]["picks"][0]
     assert a["datos"]["Señal"].startswith("Rompe su máximo") and a["datos"]["Stop"] == "46.1 $" and a["datos"]["Valor razonable"] == "60-70 $"
+
+
+def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
+    cfg, transport, calls, sent = _setup(monkeypatch, tmp_path)
+    monkeypatch.setenv("NTFY_TOPIC_ELLA", "radar-ella")
+    (tmp_path / "profiles.json").write_text(json.dumps({"profiles": [
+        {"id": "ella", "name": "Ella", "emoji": "🏡", "language": "es", "country": "ES", "interests": ["diseño", "niños"],
+         "sections": ["ayudas", "extra"], "casa": True, "start_tab": "casa", "notify": "NTFY_TOPIC_ELLA"}]}))
+    monkeypatch.setattr(B, "bdns_ids", lambda prof, d: {})
+    monkeypatch.setattr(B, "grants", lambda prof, now, ids=None: [{"id": "gr5", "titulo": "Ayuda a emprendedoras", "url": "https://www.infosubvenciones.es/x/5",
+                                                                    "donde": "Estado", "ambito": "estatal", "solicitud": {"hasta": "2026-12-31"}}])
+    monkeypatch.setattr(B, "home_stories", lambda prof: [{"id": "hs1", "titular": "Teacher earns $10k selling printables", "url": "https://news.example/story"}])
+    monkeypatch.setattr(B, "trust_for", lambda prof: [])
+    idea_reply = {"ideas": [{"titulo": "Láminas infantiles personalizadas", "gancho": "Diseño a medida para habitaciones",
+                             "casos": [{"quien": "Profesora", "pais": "Turquía", "resultado": "10.000 $ en un mes", "url": "https://news.example/story"}],
+                             "como_empezar": ["Semana 1: 5 diseños"], "ayudas": ["gr5"], "confianza": "alta"}],
+                  "oportunidades_locales": [{"titulo": "Programa de la Cámara", "url": "https://camara.example/p"}], "nota": "ok"}
+    brief_reply = {"resumen": "Una ayuda.", "secciones": {"ayudas": {"picks": [{"ref": "gr5", "titulo": "Ayuda a emprendedoras"}], "nota": ""},
+                                                          "extra": {"picks": [], "nota": ""}, "accion": {"picks": [{"ref": "STNG", "titulo": "no pedida"}]}}}
+    systems = []
+
+    def t3(method, url, headers=None, json=None, **kw):
+        sysx = json["system"][0]["text"]
+        systems.append("casa" if sysx == B.RULES_CASA else "brief")
+        reply = idea_reply if sysx == B.RULES_CASA else brief_reply
+        content = [{"type": "web_search_tool_result", "content": [{"url": "https://camara.example/p"}]},
+                   {"type": "text", "text": __import__("json").dumps(reply)}]
+        if sysx == B.RULES_CASA:
+            assert json["tools"][0]["max_uses"] == 5 and "IDEAS ANTERIORES" in json["messages"][0]["content"]
+        else:
+            assert "## STARTUPS" not in json["system"][1]["text"] and "## PULSO" in json["system"][1]["text"]
+        calls.append(json)
+        return FakeResp({"type": "message", "content": content, "stop_reason": "end_turn", "usage": {"input_tokens": 9000, "output_tokens": 4000}})
+    out = B.run(tmp_path, cfg, now=NOW, transport=t3)
+    p = out["profiles"]["ella"]
+    assert systems == ["brief", "casa"] and set(p["secciones"]) == {"ayudas", "extra"}  # la sección no pedida no aparece
+    assert p["profile"]["start_tab"] == "casa" and p["casa"]["nuevas"] == 1 and p["casa"]["ideas"][0]["ayudas"] == ["gr5"]
+    assert p["casa"]["oportunidades_locales"][0]["url"] == "https://camara.example/p" and p["casa"]["ayudas"][0]["id"] == "gr5"
+    assert any("Ideas nuevas desde casa" in t for t, m in sent)
+    # al día siguiente sin cambios: ni informe ni ideas nuevas (cada 3 días); con «Más ideas» (modo casa + force) sí
+    B.run(tmp_path, cfg, now=NOW.replace(day=25), transport=t3)
+    assert systems == ["brief", "casa"]
+    idea_reply["ideas"][0]["titulo"] = "Menús semanales para familias"
+    out = B.run(tmp_path, cfg, now=NOW.replace(day=25, hour=12), transport=t3, mode="casa", force=True)
+    assert systems == ["brief", "casa", "casa"]
+    ideas = out["profiles"]["ella"]["casa"]["ideas"]
+    assert [i["titulo"] for i in ideas] == ["Menús semanales para familias", "Láminas infantiles personalizadas"] and not ideas[1]["nueva"]

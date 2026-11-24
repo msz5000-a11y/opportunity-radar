@@ -118,9 +118,11 @@ jobs:
         run: |
           mkdir -p _site/data
           cp -r app/* _site/
-          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json ideas.json brief.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/ || true; done
-          # el informe «Para ti» más reciente aunque se haya guardado después de empezar este pulso
-          if git fetch -q --depth=1 origin main 2>/dev/null; then git show FETCH_HEAD:data/brief.json > /tmp/brief.json 2>/dev/null && cp /tmp/brief.json _site/data/brief.json || true; fi
+          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json ideas.json brief.json profiles.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/ || true; done
+          # el informe «Para ti» y los perfiles más recientes aunque se hayan guardado después de empezar este pulso
+          if git fetch -q --depth=1 origin main 2>/dev/null; then
+            for f in brief.json profiles.json; do git show "FETCH_HEAD:data/$f" > "/tmp/$f" 2>/dev/null && cp "/tmp/$f" "_site/data/$f" || true; done
+          fi
           [ -f live/feed.json ] && cp live/feed.json _site/data/feed.json || echo '{"items":[]}' > _site/data/feed.json
           [ -f _site/data/opps.json ] || echo "[]" > _site/data/opps.json
 
