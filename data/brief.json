@@ -1,0 +1,80 @@
+{
+ "version": 1,
+ "generatedAt": null,
+ "checkedAt": "2026-11-24T12:20:42Z",
+ "attemptedAt": "2026-11-24T12:20:42Z",
+ "spend": {
+  "date": "2026-11-24",
+  "usd": 0.0
+ },
+ "profiles": {
+  "es": {
+   "ok": false,
+   "error": "respaldo sin respuesta: brief/gemini: HTTP 503; brief/groq: HTTP 413",
+   "checkedAt": "2026-11-24T12:20:42Z"
+  },
+  "eg": {
+   "ok": false,
+   "error": "respaldo sin respuesta: brief/gemini: HTTP 503; brief/groq: HTTP 413",
+   "checkedAt": "2026-11-24T12:20:42Z"
+  }
+ },
+ "sources": {
+  "startupxplore": {
+   "ok": true,
+   "n": 4,
+   "err": null
+  },
+  "capitalcell": {
+   "ok": true,
+   "n": 3,
+   "err": null
+  },
+  "dozen": {
+   "ok": true,
+   "n": 1,
+   "err": null
+  },
+  "ideas": {
+   "ok": true,
+   "n": 12,
+   "err": null
+  },
+  "trustmrr": {
+   "ok": true,
+   "n": 30,
+   "err": null
+  },
+  "ycombinator": {
+   "ok": true,
+   "n": 45,
+   "err": null
+  },
+  "producthunt": {
+   "ok": true,
+   "n": 15,
+   "err": null
+  },
+  "acciones": {
+   "ok": true,
+   "n": 12,
+   "err": null
+  },
+  "pulso": {
+   "ok": true,
+   "n": 14,
+   "err": null
+  },
+  "ayudas_es": {
+   "ok": true,
+   "n": 1,
+   "err": null
+  },
+  "ayudas_eg": {
+   "ok": true,
+   "n": 0,
+   "err": null
+  }
+ },
+ "model": "claude-opus-5-5"
+}
