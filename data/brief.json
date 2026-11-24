@@ -1,8 +1,8 @@
 {
  "version": 1,
- "generatedAt": "2026-11-24T12:30:35Z",
- "checkedAt": "2026-11-24T12:30:35Z",
- "attemptedAt": "2026-11-24T12:30:35Z",
+ "generatedAt": "2026-11-24T12:40:56Z",
+ "checkedAt": "2026-11-24T12:40:56Z",
+ "attemptedAt": "2026-11-24T12:40:56Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -16,13 +16,13 @@
     "language": "es",
     "country": "ES"
    },
-   "generatedAt": "2026-11-24T12:30:35Z",
-   "checkedAt": "2026-11-24T12:30:35Z",
+   "generatedAt": "2026-11-24T12:40:56Z",
+   "checkedAt": "2026-11-24T12:40:56Z",
    "ok": true,
    "error": null,
-   "fingerprint": "842278b66458a165",
-   "provider": "groq",
-   "model": "openai/gpt-oss-120b",
+   "fingerprint": "2b4fc823ffb4a503",
+   "provider": "gemini",
+   "model": "gemini-3.6-flash",
    "cost_usd": 0.0,
    "searches": 0,
    "tokens": {
@@ -32,177 +32,211 @@
    },
    "candidates": {
     "startups": 8,
-    "clonar": 67,
+    "clonar": 69,
     "accion": 12,
     "ayudas": 1,
     "extra": 14
    },
-   "resumen": "Con 2000 €, ticket máximo 1000 € y riesgo medio, hay dos startups de bonos accesibles, dos SaaS que puedes replicar con herramientas sin código, una acción energética con señal de ruptura y una ayuda regional de digitalización. Además, dos oportunidades de bajo coste en cripto y bolsa.",
-   "descartado": "",
+   "resumen": "Hoy para ti: 2 rondas abiertas que encajan contigo, 2 ideas para clonar, ninguna acción infravalorada rompe al alza, 1 ayuda que puedes pedir.",
+   "descartado": "Se han descartado la startup Mygocu por exigir un ticket mínimo superior a tu límite (5.000 €), así como alertas de airdrops cripto y acciones cíclicas sin señal clara de ruptura.",
    "secciones": {
     "startups": {
      "picks": [
       {
        "ref": "st1",
-       "titulo": "Bono Microwd 2026",
-       "resumen": "Bono de impacto social en Startupxplore, con objetivo 5 M €, 11,7 % financiado, cierre 02‑03‑2028.",
-       "por_que": "Ticket mínimo 1000 € coincide con tu límite y el sector social tiene volatilidad moderada.",
+       "titulo": "Bono Microwd 2026 (Startupxplore)",
+       "resumen": "Emisión de renta fija (bono) de microcréditos de impacto social con un cupón anual del 10 %.",
+       "por_que": "Encaja exactamente con tu ticket máximo de 1.000 € y ofrece una rentabilidad fija predecible frente al riesgo de renta variable pura.",
        "pasos": [
-        "Regístrate en Startupxplore.",
-        "Verifica tu identidad (KYC).",
-        "Invierte 1000 € en el bono.",
-        "Mantén el bono hasta el vencimiento para recibir intereses."
+        "Crear o acceder a tu cuenta verificada en Startupxplore.",
+        "Revisar el folleto de la emisión y las garantías de reembolso.",
+        "Suscribir el ticket mínimo de 1.000 € antes del cierre de la ronda."
        ],
-       "coste": "1000 €",
-       "plazo": "02‑03‑2028 (vencimiento)",
-       "potencial": "Rendimiento estimado 5‑7 % anual, bajo riesgo de crédito.",
+       "coste": "1.000 €",
+       "plazo": "2028-03-02",
+       "potencial": "Cupón anual del 10 % hasta el vencimiento.",
        "riesgos": [
-        "Riesgo de impago del emisor.",
-        "Liquidez limitada antes del vencimiento.",
-        "Posible dilución si se emiten más bonos."
+        "Riesgo de crédito e impago de los microcréditos subyacentes.",
+        "Falta de liquidez del bono en mercado secundario."
        ],
        "confianza": "media",
        "datos": {
-        "Ticket mínimo": "1000 €",
+        "Plataforma": "Startupxplore",
+        "Ticket mínimo": "1.000 €",
         "Tipo": "bono",
-        "Sector": "impacto‑social",
-        "Plataforma": "Startupxplore"
+        "Cierre": "2028-03-02",
+        "Completado": "11.7 %"
        },
-       "fuentes": [],
+       "fuentes": [
+        "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
+       ],
        "enlace": "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
       },
       {
-       "ref": "st5",
-       "titulo": "Nanogrow Biotech – Acciones",
-       "resumen": "Ronda de equity en Capital Cell para biotecnología oncológica, 92,8 % financiado, cierre en 54 días.",
-       "por_que": "Ticket mínimo 1000 € y alta expectativa de crecimiento, aunque con mayor volatilidad que el bono.",
+       "ref": "st6",
+       "titulo": "e-miRgency (Capital Cell)",
+       "resumen": "Biotech enfocada en la monitorización temprana del cáncer mediante biopsia líquida (análisis molecular en sangre).",
+       "por_que": "Permite entrar en el sector biomédico con el ticket justo de 1.000 € en una plataforma española regulada.",
        "pasos": [
-        "Crea cuenta en Capital Cell.",
-        "Completa el proceso KYC.",
-        "Suscríbete 1000 € a la ronda.",
-        "Sigue la evolución de la empresa y decide venta futura."
+        "Registrarse en Capital Cell y completar la acreditación de inversor.",
+        "Estudiar el plan de negocio y la estimación de salida (2030).",
+        "Invertir 1.000 € mediante transferencia o tarjeta antes del cierre de la ronda."
        ],
-       "coste": "1000 €",
-       "plazo": "54 días (cierre de ronda)",
-       "potencial": "Posible revalorización superior al 30 % si la biotech avanza, pero alta incertidumbre.",
+       "coste": "1.000 €",
+       "plazo": "Quedan 33 días",
+       "potencial": "Multiplicador de valoración si consigue licenciamiento farmacéutico.",
        "riesgos": [
-        "Alta volatilidad del sector biotech.",
-        "Riesgo de dilución futura.",
-        "Liquidez limitada del título."
+        "Riesgo regulatorio y ensayos clínicos fallidos.",
+        "Pérdida total del capital invertido."
        ],
-       "confianza": "baja",
+       "confianza": "media",
        "datos": {
-        "Ticket mínimo": "1000 €",
+        "Plataforma": "Capital Cell",
+        "Ticket mínimo": "1.000 €",
         "Tipo": "acciones",
-        "Sector": "biotecnología",
-        "Plataforma": "Capital Cell"
+        "Cierre": "quedan 33 días",
+        "Completado": "92.3 %",
+        "Valoración pre-money": "5,88 M€"
        },
-       "fuentes": [],
-       "enlace": "https://capitalcell.com/campaign/nanogrow-biotech/"
+       "fuentes": [
+        "https://capitalcell.com/campaign/e-mirgency/"
+       ],
+       "enlace": "https://capitalcell.com/campaign/e-mirgency/"
       }
      ],
-     "nota": "Se eligen solo bonos y una equity con ticket dentro de tu límite; se evita inversión en préstamos convertibles que requieren mayor capital."
+     "nota": "Se han filtrado solo las startups con ticket mínimo igual o menor a tu presupuesto de 1.000 € en plataformas españolas autorizadas por la CNMV."
     },
     "clonar": {
      "picks": [
       {
-       "ref": "cl1",
-       "titulo": "Unsiloed AI",
-       "resumen": "SaaS que extrae y estructura datos de documentos complejos (PDF, formularios) para alimentar IA.",
-       "por_que": "Alta demanda en sectores regulados en España y puedes lanzar un MVP con herramientas sin código como Parabola o Zapier.",
+       "ref": "cl57",
+       "titulo": "Recepcionista IA para pymes de servicios (Clon de Rezora IO)",
+       "resumen": "Agentes de voz con IA que responden llamadas, cualifican clientes y agendan citas para fontaneros, cerrajeros o técnicos de climatización en España.",
+       "por_que": "El sector de reformas y servicios del hogar en España pierde muchas llamadas por estar trabajando; puedes montarlo sin programar uniendo plataformas no-code.",
        "pasos": [
-        "Valida el problema con 5‑10 empresas locales.",
-        "Crea un prototipo usando Airtable + Integromat.",
-        "Lanza una versión beta y cobra suscripción mensual.",
-        "Escala contratando un freelance para mejorar el OCR."
+        "Crear un prototipo de agente de voz en español usando Vapi.ai o Retell AI conectado a Google Calendar mediante Make.",
+        "Ofrecer una prueba gratuita de 7 días a 5 negocios locales de tu zona.",
+        "Cobrar una suscripción mensual fija de 50 € a 150 € por mantenimiento y minutos consumidos."
        ],
-       "coste": "≈3000 € (licencias no‑code y marketing inicial)",
-       "plazo": "Sin plazo (MVP en 2‑3 meses)",
-       "potencial": "Ingresos de 10 000‑30 000 € al año tras 12 meses si se consigue 20 clientes.",
+       "coste": "100 € - 300 € (licencias no-code iniciales)",
+       "plazo": "Sin plazo",
+       "potencial": "Ingresos recurrentes (MRR) con altos márgenes una vez configurada la plantilla.",
        "riesgos": [
-        "Competencia de grandes proveedores de IA.",
-        "Dependencia de APIs de terceros.",
-        "Necesidad de datos de calidad."
-       ],
-       "confianza": "media",
-       "datos": {
-        "Modelo de negocio": "SaaS B2B",
-        "Ticket medio cliente": "500‑1000 €/mes"
-       },
-       "fuentes": [],
-       "enlace": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/"
-      },
-      {
-       "ref": "cl2",
-       "titulo": "Archer – IA para reclutamiento",
-       "resumen": "Plataforma que automatiza búsqueda, calificación y presentación de candidatos usando IA.",
-       "por_que": "El mercado de reclutamiento en España está fragmentado; puedes ofrecer una solución low‑code a pymes.",
-       "pasos": [
-        "Contacta 3 agencias de empleo para validar interés.",
-        "Construye un flujo con Bubble + OpenAI para generar descripciones y filtrar CV.",
-        "Ofrece pruebas gratuitas a 2 clientes piloto.",
-        "Monetiza con suscripción mensual o comisión por contratación."
-       ],
-       "coste": "≈2500 € (herramientas no‑code y pruebas piloto)",
-       "plazo": "Sin plazo (MVP en 2 meses)",
-       "potencial": "Facturación de 5 000‑15 000 € al año con 10 clientes.",
-       "riesgos": [
-        "Regulación de datos personales (RGPD).",
-        "Competencia de plataformas consolidadas (LinkedIn, Indeed).",
-        "Calidad de los algoritmos de matching."
-       ],
-       "confianza": "media",
-       "datos": {
-        "Modelo de negocio": "SaaS B2B",
-        "Ticket medio cliente": "300‑800 €/mes"
-       },
-       "fuentes": [],
-       "enlace": "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/"
-      }
-     ],
-     "nota": "Se seleccionan ideas con alta nota en España y que pueden lanzarse sin programar, usando socios técnicos o freelancers."
-    },
-    "accion": {
-     "picks": [
-      {
-       "ref": "STNG",
-       "titulo": "Scorpio Tankers Inc. (STNG)",
-       "resumen": "Transportista de petróleo con PER 4,2 y señal de ruptura al alza.",
-       "por_que": "Valor razonable 100‑110 $, precio actual 78 $, stop 72,33 $, buena relación riesgo/beneficio para riesgo medio.",
-       "pasos": [
-        "Abre cuenta en bróker que opere en NYSE.",
-        "Deposita al menos 100 € (para cubrir comisión).",
-        "Compra 1 acción a 78 $ (≈70 €).",
-        "Coloca stop loss en 72,33 $ y objetivo en 105 $."
-       ],
-       "coste": "≈70 € + comisiones",
-       "plazo": "Sin plazo (seguimiento mensual)",
-       "potencial": "Posible ganancia de 30‑40 % si alcanza objetivo.",
-       "riesgos": [
-        "Volatilidad del sector energético.",
-        "Impacto de regulaciones medioambientales.",
-        "Riesgo de caída del precio del crudo."
+        "Rechazo del cliente final si la voz suena robótica.",
+        "Competencia de centralitas tradicionales."
        ],
        "confianza": "alta",
        "datos": {
-        "Precio actual": "78,06 $",
-        "PER": "4,2",
-        "Stop loss": "72,33 $",
-        "Objetivo": "105 $"
+        "Fuente": "Y Combinator Fall 2026",
+        "Coste MVP": "Bajo (herramientas no-code)",
+        "Dificultad técnica": "Sin código",
+        "Modelo": "SaaS / Cuota mensual B2B"
        },
-       "fuentes": [],
-       "enlace": "https://finance.yahoo.com/quote/STNG"
+       "fuentes": [
+        "https://rezora.io/"
+       ],
+       "enlace": "https://www.ycombinator.com/companies/rezora-io"
+      },
+      {
+       "ref": "cl5",
+       "titulo": "CRM ultrasimple en archivos locales para autónomos (Clon de Hermit CRM)",
+       "resumen": "Gestor de clientes y ventas ligero que almacena los datos en archivos de texto locales sin depender de la nube ni pagar suscripciones complejas.",
+       "por_que": "Muchos autónomos en España huyen de los CRM pesados como Salesforce o HubSpot y buscan sencillez extrema.",
+       "pasos": [
+        "Contratar un desarrollador freelance en Fiverr/Upwork para crear un MVP sobre Electron o una extensión Web básica.",
+        "Lanzar en comunidades de autónomos y freelancers ofreciendo un pago único (Lifetime Deal).",
+        "Empaquetar la solución con plantillas de gestión comercial prontas para usar."
+       ],
+       "coste": "500 € - 1.500 € (desarrollo freelance)",
+       "plazo": "Sin plazo",
+       "potencial": "Ventas directas con pago único que financien desarrollo posterior.",
+       "riesgos": [
+        "Techo de ingresos bajo al no ser suscripción recurrente.",
+        "Soporte técnico continuo a usuarios no técnicos."
+       ],
+       "confianza": "media",
+       "datos": {
+        "Fuente": "Ideas del radar",
+        "Coste MVP": "500 € - 1.500 €",
+        "Perfil objetivo": "Autónomos / Freelancers"
+       },
+       "fuentes": [
+        "https://hermitcrm.io/"
+       ],
+       "enlace": "https://hermitcrm.io/"
       }
      ],
-     "nota": ""
+     "nota": "Modelos B2B adaptados al mercado español ejecutables desde el móvil o contratando apoyo puntual de bajo coste."
+    },
+    "accion": {
+     "picks": [],
+     "nota": "Ninguna de las acciones del radar muestra hoy una señal clara de ruptura con confirmación técnica. La mayoría son empresas cíclicas (navieras y energía) cotizando con múltiplos aparentemente bajos pero expuestas a corrección."
     },
     "ayudas": {
-     "picks": [],
-     "nota": ""
+     "picks": [
+      {
+       "ref": "gr941478",
+       "titulo": "Programa de Apoyo a la Digitalización (FEDER)",
+       "resumen": "Subvención en concurrencia competitiva para impulsar la transformación digital e innovación tecnológica en PYMEs y autónomos.",
+       "por_que": "Permite recuperar parte de los costes de implantación de software y servicios de digitalización.",
+       "pasos": [
+        "Comprobar el cumplimiento de requisitos de persona física o autónomo.",
+        "Redactar la memoria del proyecto digital antes del plazo.",
+        "Presentar la solicitud electrónica a través de la sede del organismo."
+       ],
+       "coste": "Tramitación gratuita (posible coste de gestoría)",
+       "plazo": "2027-01-20",
+       "potencial": "Cofinanciación parcial o total del gasto digital subvencionable.",
+       "riesgos": [
+        "Proceso de concurrencia competitiva sin concesión garantizada.",
+        "Demora en la resolución del pago de la subvención."
+       ],
+       "confianza": "media",
+       "datos": {
+        "Plazo": "2027-01-20",
+        "Presupuesto": "3.000.000 €",
+        "Organismo": "CASTILLA-LA MANCHA · DIRECCIÓN GENERAL DE EMPRESAS",
+        "Ámbito": "autonómica",
+        "Presupuesto total": "3.000.000 €",
+        "Fin de plazo": "20 de enero de 2027"
+       },
+       "fuentes": [
+        "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941478"
+       ],
+       "enlace": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/941478"
+      }
+     ],
+     "nota": "Se incluye la convocatoria activa más relevante. Si resides fuera de dicha comunidad autónoma, mantén el radar abierto para convocatorias estatales de alcance general."
     },
     "extra": {
-     "picks": [],
-     "nota": ""
+     "picks": [
+      {
+       "ref": "in:BA:2026-W48",
+       "titulo": "Compras de insiders en Boeing (BA)",
+       "resumen": "3 directivos de Boeing han comprado acciones en el mercado abierto por valor de 2,0 millones de dólares en los últimos 30 días.",
+       "por_que": "Las compras masivas con dinero propio de altos ejecutivos señalan confianza interna a medio plazo sin necesidad de apalancamiento.",
+       "pasos": [
+        "Seguir la evolución técnica de la acción en tu bróker habitual.",
+        "Evaluar una posición al contado si se ajusta a tu horizonte temporal sin usar apalancamiento."
+       ],
+       "coste": "Según tu presupuesto disponible",
+       "plazo": "Sin plazo",
+       "potencial": "Recuperación de cotización impulsada por la directiva.",
+       "riesgos": [
+        "Volatilidad del sector aeronáutico y problemas operativos continuados."
+       ],
+       "confianza": "media",
+       "datos": {
+        "Volumen insider": "2,0 M$",
+        "Directivos compradores": "3"
+       },
+       "fuentes": [
+        "https://finance.yahoo.com/quote/BA/insider-transactions"
+       ],
+       "enlace": "https://finance.yahoo.com/quote/BA/insider-transactions"
+      }
+     ],
+     "nota": "Se descartan las alertas de trading de alta frecuencia, memecoins y airdrops sin garantías regulatorias."
     }
    },
    "descartados_por_validacion": 0
@@ -213,15 +247,13 @@
     "name": "Egipto",
     "flag": "🇪🇬",
     "language": "en",
-    "country": "EG",
-    "currency": "USD",
-    "capital": 2000
+    "country": "EG"
    },
-   "generatedAt": "2026-11-24T12:25:20Z",
-   "checkedAt": "2026-11-24T12:30:35Z",
+   "generatedAt": "2026-11-24T12:40:56Z",
+   "checkedAt": "2026-11-24T12:40:56Z",
    "ok": true,
-   "error": "respaldo sin respuesta: gemini gemini-3.1-flash-lite: HTTP 503; gemini gemini-3.5-flash-lite: HTTP 503; gemini gemini-3.6-flash: HTTP 503; groq: HTTP 429",
-   "fingerprint": "5a7f7ccc6b5afb24",
+   "error": null,
+   "fingerprint": "25ae10d1c80119e8",
    "provider": "gemini",
    "model": "gemini-3.5-flash-lite",
    "cost_usd": 0.0,
@@ -233,36 +265,121 @@
    },
    "candidates": {
     "startups": 8,
-    "clonar": 67,
+    "clonar": 69,
     "accion": 12,
     "ayudas": 0,
     "extra": 14
    },
-   "resumen": "No investment opportunities meet all criteria today: startup platforms lack local Egyptian regulation for small tickets, cloning ideas require higher initial capital than available, and stock signals do not offer a safe entry without a falling knife risk.",
-   "descartado": "Se han descartado todas las opciones de criptomonedas, apalancamiento y startups sin regulación adecuada para evitar riesgos excesivos y pérdidas de capital.",
+   "resumen": "Today for you: no round that fits, 2 ideas to clone, no undervalued stock breaking out.",
+   "descartado": "Discarded high-risk crypto tokens, day-trading alerts, and unverified regional startups due to your medium risk profile and capital limits.",
    "secciones": {
     "startups": {
      "picks": [],
-     "nota": "Regulated startup platforms with low tickets are not available or legal for retail investors residing in Egypt within the requested risk profile."
+     "nota": "No regulated platforms with suitable ticket sizes for international participation met your criteria today."
     },
     "clonar": {
-     "picks": [],
-     "nota": "The viable B2B SaaS and fintech concepts found require MVP budgets starting at $10,000, which exceeds the user's capital limit."
+     "picks": [
+      {
+       "ref": "cl37",
+       "titulo": "Luminary",
+       "resumen": "AI CEO that leads human and agent teams on company-wide missions, creating a complete infrastructure for an AI-native company.",
+       "por_que": "High potential for the MENA region to build local lean operations managed by AI agents with minimal initial headcount.",
+       "pasos": [
+        "Validate demand among local tech startups in Cairo",
+        "Build a lightweight wrapper leveraging frontier LLM APIs",
+        "Test with 3 beta clients as an internal pilot"
+       ],
+       "coste": "1000 USD - 5000 USD",
+       "plazo": "sin plazo",
+       "potencial": "SaaS recurring revenue scaling regionally",
+       "riesgos": [
+        "High dependency on underlying frontier AI models",
+        "Rapid market replication by global players"
+       ],
+       "confianza": "media",
+       "datos": {
+        "Source": "Y Combinator Winter 2027",
+        "Sector": "AI Assistant",
+        "Team size": "2 founders"
+       },
+       "fuentes": [
+        "https://meetluminary.ai/"
+       ],
+       "enlace": "https://www.ycombinator.com/companies/luminary"
+      },
+      {
+       "ref": "cl57",
+       "titulo": "Rezora IO",
+       "resumen": "Shopify for AI voice agents: self-improving AI receptionists for home services that live in 10 minutes.",
+       "por_que": "Can be easily localized for Egyptian service businesses (clinics, maintenance) needing automated inbound calls in Arabic/English.",
+       "pasos": [
+        "Identify local service providers (clinics, maintenance)",
+        "Integrate voice AI APIs (like Retell or ElevenLabs)",
+        "Offer a 10-minute setup wizard"
+       ],
+       "coste": "500 USD - 3000 USD",
+       "plazo": "sin plazo",
+       "potencial": "High recurring monthly subscription fees from local SMBs",
+       "riesgos": [
+        "Telephony and voice API costs in local currency",
+        "Local competition or customer resistance to AI calls"
+       ],
+       "confianza": "media",
+       "datos": {
+        "Source": "Y Combinator Fall 2026",
+        "Sector": "Conversational AI / Home Services",
+        "Team size": "5 founders"
+       },
+       "fuentes": [
+        "https://rezora.io/"
+       ],
+       "enlace": "https://www.ycombinator.com/companies/rezora-io"
+      }
+     ],
+     "nota": "Selected top Y Combinator agentic SaaS models with low initial development costs and clear regional adaptation potential."
     },
     "accion": {
      "picks": [],
-     "nota": "No stocks from the filtered radar combine a clear breakout signal with a safe entry price away from downward pressure."
+     "nota": "Only one stock passed filters with acceptable quality metrics without being a falling knife."
     },
     "ayudas": {
      "picks": [],
-     "nota": "No regional or international public grants are available for this profile in the current period."
+     "nota": "No active public grants matched your current profile location and criteria."
     },
     "extra": {
-     "picks": [],
-     "nota": "Market pulses in crypto and earnings do not align with a medium risk profile focused on structured business or equity growth."
+     "picks": [
+      {
+       "ref": "in:INTC:2026-W48",
+       "titulo": "Intel (INTC) Insider Buying",
+       "resumen": "Corporate insiders purchased 9.7M USD worth of shares over a 30-day period.",
+       "por_que": "Strong signal of management confidence (\"smart money\") backing the turnaround strategy.",
+       "pasos": [
+        "Review Intel's latest earnings and turnaround plan",
+        "Monitor price action before opening any position"
+       ],
+       "coste": "Variable per share",
+       "plazo": "sin plazo",
+       "potencial": "Medium-term recovery alongside semiconductor sector catalysts",
+       "riesgos": [
+        "High turnaround execution risk",
+        "Intense competition in foundry and chip design"
+       ],
+       "confianza": "media",
+       "datos": {
+        "Signal type": "Insider Buying",
+        "Volume": "9.7 M USD",
+        "Ticker": "INTC"
+       },
+       "fuentes": [
+        "https://finance.yahoo.com/quote/INTC/insider-transactions"
+       ],
+       "enlace": "https://finance.yahoo.com/quote/INTC/insider-transactions"
+      }
+     ],
+     "nota": "Selected the most relevant pulse item indicating significant insider accumulation."
     }
    },
-   "descartados_por_validacion": 0
+   "descartados_por_validacion": 1
   }
  },
  "sources": {
@@ -283,7 +400,7 @@
   },
   "ideas": {
    "ok": true,
-   "n": 12,
+   "n": 14,
    "err": null
   },
   "trustmrr": {
