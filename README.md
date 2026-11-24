@@ -18,7 +18,7 @@ Para ti (brief.yml, cada mañana a las 07:30 de Madrid; el pulso lo lanza si Git
   └─ data/brief.json → pestaña «Para ti» y un aviso por ntfy si cambia
 
 Desde casa
-  ├─ Novedades al momento (en el pulso, cada 15 min): historias reales de negocios desde casa (Google News en
+  ├─ Novedades al momento (en el pulso, cada 10 min): historias reales de negocios desde casa (Google News en
   │  5 idiomas, búsquedas que rotan por sus intereses; solo titulares que son un caso concreto) y oportunidades
   │  en su zona (cursos, programas, mercados, ferias y ayudas de su municipio, provincia y comunidad). Una IA
   │  gratuita las traduce, dice qué idea le puede dar cada una y oculta lo que no sirve

@@ -1291,8 +1291,11 @@ def c_casa(ctx: Ctx) -> list[dict]:
         return []
     mem = ctx.mem("casa_q")
     start = int(mem.get("i", 0)) % len(jobs)
-    pick = [jobs[(start + k) % len(jobs)] for k in range(min(CASA_PER_RUN, len(jobs)))]
-    mem["i"] = (start + CASA_PER_RUN) % len(jobs)
+    per = min(CASA_PER_RUN if mem.get("vueltas") else 2 * CASA_PER_RUN, len(jobs))  # la primera vuelta, más deprisa
+    pick = [jobs[(start + k) % len(jobs)] for k in range(per)]
+    mem["i"] = (start + per) % len(jobs)
+    if start + per >= len(jobs):
+        mem["vueltas"] = int(mem.get("vueltas", 0)) + 1
     out: dict[str, dict] = {}
     for prof, lang, q, kind in pick:
         hl = CASA_HL[lang]
@@ -1468,7 +1471,7 @@ def registry(cfg: dict) -> list[tuple[str, object, int]]:
     p = cfg.get("pulse") or {}
     feeds = p.get("rss") or DEFAULT_FEEDS
     regs = [("CoinGecko mercado", c_cg_markets, 5), ("CoinGecko tendencias", c_cg_trending, 10), ("Miedo y codicia", c_fng, 60),
-            ("Índices, bono, Brent, oro y plata", c_macro, 5), ("Desde casa: historias y oportunidades", c_casa, 15),
+            ("Índices, bono, Brent, oro y plata", c_macro, 5), ("Desde casa: historias y oportunidades", c_casa, 10),
             ("Anuncios Binance", c_binance_ann, 10), ("Anuncios OKX", c_okx_ann, 10),
             ("DefiLlama", c_defillama, 30), ("Bolsa EE. UU. (cotizaciones)", c_fh_quotes, 5), ("Noticias Finnhub", c_fh_news, 10),
             ("Calendario IPO y resultados", c_fh_calendar, 60), ("Compras de directivos", c_fh_insider, 30),

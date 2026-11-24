@@ -508,7 +508,7 @@ def test_casa_collector_stories_local_and_rotation(monkeypatch):
     for _ in range(8):  # da la vuelta a todas las búsquedas (historias e «en su zona»)
         for it in S.c_casa(c):
             got[it["id"]] = it
-    assert len(urls) == 8 * S.CASA_PER_RUN and any("Riba-roja" in u or "Riba-roja".replace("-", "%2D") in u or "Riba" in u for u in urls)
+    assert c.state["mem"]["casa_q"]["vueltas"] >= 1 and len(urls) > 8 * S.CASA_PER_RUN and any("Riba-roja" in u or "Riba-roja".replace("-", "%2D") in u or "Riba" in u for u in urls)
     titles = {it["title"]: it for it in got.values()}
     story = titles["Mum turns her kitchen into a $8K a month baking business"]
     assert story["cat"] == "casa" and story["kind"] == "story" and story["pf"] == ["ella"] and story["src"] == "BBC" and 58 <= story["s"] <= 80

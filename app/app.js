@@ -784,7 +784,7 @@
           : ideas.length ? L("Aún no hay ideas de este tema. Llegan 3 nuevas cada 3 horas.", "No ideas on this topic yet. 3 new ones arrive every 3 hours.") : L("Claude está buscando las primeras ideas para ti. Llegan en la próxima tanda.", "Claude is looking for your first ideas. They arrive with the next batch."))}</p>`;
     } else if (seg === "nov") {
       const shown = novs.filter((o) => match(o, tema)).map((o) => o.it);
-      body = `<p class="note">${L("Historias reales de gente que gana dinero desde casa y oportunidades en tu zona, de todo el mundo. El radar las busca cada 15 minutos y una IA las traduce y quita lo que no sirve. Toca para abrir la noticia.", "Real stories of people earning from home and opportunities near you, from around the world. The radar looks every 15 minutes and an AI translates them and drops what isn't useful. Tap to open the story.")}</p>
+      body = `<p class="note">${L("Historias reales de gente que gana dinero desde casa y oportunidades en tu zona, de todo el mundo. El radar las busca cada 10 minutos y una IA las traduce y quita lo que no sirve. Toca para abrir la noticia.", "Real stories of people earning from home and opportunities near you, from around the world. The radar looks every 10 minutes and an AI translates them and drops what isn't useful. Tap to open the story.")}</p>
         ${shown.length ? grouped(shown, novRow) : `<div class="empty">${L("Todavía no hay novedades: el radar las está buscando. Vuelve en un rato.", "No news yet: the radar is looking. Check back soon.")}</div>`}`;
     } else {
       const where = cur.profile.municipality ? L(` en ${cur.profile.municipality} y alrededores`, ` around ${cur.profile.municipality}`) : "";
