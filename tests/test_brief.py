@@ -282,7 +282,7 @@ def test_fallback_without_key_and_over_cap(monkeypatch, tmp_path):
     monkeypatch.setenv("GEMINI_API_KEY", "g")
     monkeypatch.setenv("GROQ_API_KEY", "q")
     cfg["limits"] = {"max_llm_calls": {"gemini": 40, "groq": 60}}
-    cfg["models"] = {"gemini_preference": ["gemini-a", "gemini-b"]}
+    cfg["brief"] = {**cfg.get("brief", {}), "free_models": ["gemini-a", "gemini-b"]}
 
     def fake_ask(self, provider, system, prompt, **kw):
         seen.append((provider, self.chosen.get(provider), len(system)))

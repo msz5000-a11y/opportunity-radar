@@ -897,6 +897,17 @@ def clean_ideas(raw: dict, *, allowed_urls: set[str], grant_ids: set[str], prev_
     return {"ideas": ideas, "oportunidades_locales": local, "nota": _s(raw.get("nota"), 300), "descartadas": dropped, "motivos": why}
 
 
+def sanitize_library(ideas: list[dict]) -> list[dict]:
+    """Quita de la biblioteca los casos que no sean un caso real (titulares sueltos o textos que no salen de la fuente)."""
+    out = []
+    for i in ideas:
+        cases = [k for k in i.get("casos") or [] if "trustmrr.com" in k.get("url", "") or "news.google.com" not in k.get("url", "")
+                 or looks_like_case(k.get("resultado") or "")]
+        if cases:
+            out.append({**i, "casos": cases})
+    return out
+
+
 def profile_hash(prof: dict) -> str:
     keys = ("language", "country", "region", "province", "municipality", "capital", "risk", "hours_week", "about", "interests", "wants", "avoid", "sections")
     return hashlib.sha1(json.dumps({k: prof.get(k) for k in keys}, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
@@ -1108,7 +1119,7 @@ def run_casa(prof: dict, old: dict, gl: list[dict], cfg: dict, bcfg: dict, budge
         trust = trust_for(prof)
     except Exception:  # noqa: BLE001
         trust = []
-    prev = list(old.get("ideas") or [])
+    prev = sanitize_library(old.get("ideas") or [])
     shared, small, user = casa_blocks(prof, stories, trust, gl, prev, now)
     res, err = decide(cfg, bcfg, budget, rules=RULES_CASA, shared=shared, small=small, user=user,
                       searches=int(bcfg.get("casa_searches", 5)), reserve=0.5, transport=transport)
