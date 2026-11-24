@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-24T21:48:42Z",
- "checkedAt": "2026-11-24T21:48:42Z",
- "attemptedAt": "2026-11-24T21:48:42Z",
+ "checkedAt": "2026-11-24T21:59:35Z",
+ "attemptedAt": "2026-11-24T21:59:35Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -662,25 +662,6 @@
    "descartados_por_validacion": 1
   }
  },
- "sources": {
-  "ayudas_ella": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": {
-    "encontradas": 70,
-    "sin_relacion": 37,
-    "directa": 7,
-    "no_para_ti": 11,
-    "cerradas": 15,
-    "abiertas": 0
-   }
-  },
-  "casa_historias_ella": {
-   "ok": true,
-   "n": 23,
-   "err": null
-  }
- },
+ "sources": {},
  "model": "claude-opus-5-5"
 }
