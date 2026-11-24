@@ -44,8 +44,8 @@ PRICES = {"claude-opus-5-5": (4.0, 20.0, 0.20, 5.0), "claude-sonnet-5-5": (2.0, 
           "claude-haiku-5-5": (0.10, 0.50, 0.01, 0.125), "claude-fable-5-2": (8.0, 40.0, 0.20, 10.0)}
 SEARCH_USD = 0.01  # 10 $ por cada 1.000 búsquedas
 SECTIONS = {"startups": 2, "clonar": 2, "accion": 1, "ayudas": 3, "extra": 2}
-DEFAULTS = {"model": "claude-opus-5-5", "effort": "medium", "max_searches": 4, "max_tokens": 16000, "daily_usd_cap": 1.5,
-            "times": ["07:30", "19:00"]}
+DEFAULTS = {"model": "claude-opus-5-5", "effort": "medium", "max_searches": 3, "max_tokens": 16000, "daily_usd_cap": 1.0,
+            "times": ["07:30"]}
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
       "Accept-Language": "es-ES,es;q=0.9,en;q=0.8"}
 STATUS: dict = {}
@@ -455,7 +455,7 @@ Responde SOLO con un objeto JSON, sin texto antes ni después:
  "descartado": "una frase: qué has descartado y por qué"}
 PICK = {"ref": "id o null", "titulo": "...", "resumen": "qué es, 1-2 frases", "por_que": "por qué es para esta persona", "pasos": ["qué hacer, paso a paso (máx. 4)"],
         "coste": "cuánto hace falta", "plazo": "fecha límite o «sin plazo»", "potencial": "qué se puede ganar, con prudencia", "riesgos": ["máx. 3"],
-        "confianza": "alta|media|baja", "datos": {"etiqueta corta": "valor"}, "fuentes": ["url"]}"""
+        "confianza": "alta|media|baja", "datos": {"Etiqueta corta en lenguaje normal (p. ej. «Ticket mínimo»)": "valor"}, "fuentes": ["url"]}"""
 
 
 def price_of(model: str, cfg_prices: dict | None = None) -> tuple:
@@ -650,9 +650,11 @@ def user_block(profile: dict, grants_list: list[dict]) -> str:
 
 
 def fingerprint(pool: dict, grants_list: list[dict]) -> str:
-    ids = [r.get("url") for r in pool["startups"]] + [r.get("url") for r in pool["clonar"][:25]] + \
-          [f"{s['ticker']}:{s.get('tipo_senal')}" for s in pool["accion"]] + [g["id"] for g in grants_list]
-    return hashlib.sha1("|".join(str(i) for i in ids).encode()).hexdigest()[:16]
+    top_clone = [r.get("url") for src in ("Ideas", "TrustMRR", "Combinator", "Product Hunt")
+                 for r in [x for x in pool["clonar"] if src in (x.get("fuente") or "")][:10]]
+    ids = sorted({str(i) for i in [r.get("url") for r in pool["startups"]] + top_clone +
+                  [f"{s['ticker']}:{s.get('tipo_senal')}" for s in pool["accion"][:8]] + [g["id"] for g in grants_list]})
+    return hashlib.sha1("|".join(ids).encode()).hexdigest()[:16]
 
 
 def slots_due(last: datetime | None, now: datetime, times: list[str]) -> bool:
@@ -755,7 +757,7 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
                 c = by_ref.get(pk["ref"] or "")
                 pk["enlace"] = (c.get("url") if c else None) or (pk["fuentes"][0] if pk["fuentes"] else None)
         st = res["usage"].get("server_tool_use") or {}
-        entry = {"profile": {k: prof.get(k) for k in ("id", "name", "flag", "language", "country", "currency", "capital")},
+        entry = {"profile": {k: prof.get(k) for k in ("id", "name", "flag", "language", "country")},
                  "generatedAt": iso(now), "checkedAt": iso(now), "ok": True, "error": err, "fingerprint": fp,
                  "provider": res["provider"], "model": res["model"], "cost_usd": res.get("cost", 0.0), "searches": st.get("web_search_requests", 0),
                  "tokens": {k: res["usage"].get(k, 0) for k in ("input_tokens", "output_tokens", "cache_read_input_tokens")},

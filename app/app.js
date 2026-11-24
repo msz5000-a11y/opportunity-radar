@@ -569,8 +569,10 @@
   const modelName = (p) => {
     if (!p?.model) return "";
     if (p.provider === "anthropic") return String(p.model).replace(/^claude-/, "Claude ").replace(/-(\d+)-(\d+)$/, " $1.$2").replace(/(^|\s)([a-z])/g, (m, a, b) => a + b.toUpperCase());
-    return L(`${p.provider} (gratis)`, `${p.provider} (free)`);
+    const n = {gemini: "Gemini", groq: "Groq", openrouter: "OpenRouter"}[p.provider] || p.provider;
+    return L(`${n} (gratis)`, `${n} (free)`);
   };
+  const prettyKey = (k) => { const t = String(k).replace(/_/g, " ").trim(); return t.charAt(0).toUpperCase() + t.slice(1); };
   function pickCard(p, color) {
     const facts = [[L("Cuánto hace falta", "What it takes"), p.coste], [L("Plazo", "Deadline"), p.plazo],
       [L("Confianza", "Confidence"), p.confianza ? `<span class="conf-${esc(p.confianza)}">${esc({alta: L("alta", "high"), media: L("media", "medium"), baja: L("baja", "low")}[p.confianza] || p.confianza)}</span>` : ""]]
@@ -587,7 +589,7 @@
       ${arr(p.pasos).length ? `<ol>${p.pasos.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}
       ${more ? `<details><summary>${L("Datos, riesgos y fuentes", "Data, risks and sources")}</summary>
         ${p.potencial ? `<p><b>${L("Potencial", "Upside")}:</b> ${esc(p.potencial)}</p>` : ""}
-        ${datos.length ? `<dl class="kv">${datos.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
+        ${datos.length ? `<dl class="kv">${datos.map(([k, v]) => `<dt>${esc(prettyKey(k))}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
         ${arr(p.riesgos).length ? `<p><b>${L("Riesgos", "Risks")}:</b></p><ul class="risks">${p.riesgos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
         ${srcs.length ? `<p class="src">${srcs.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 60))}</a>`).join("<br>")}</p>` : ""}
       </details>` : ""}

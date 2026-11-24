@@ -1,12 +1,11 @@
 name: Para ti (Claude)
 
 # Claude estudia todo lo que recoge el radar y elige lo poco que de verdad sirve a cada perfil (data/brief.json).
-# Horas: 07:30 y 19:00 de Madrid. El programador de GitHub falla en esta cuenta, así que el pulso también lo lanza
-# cuando toca. Si los candidatos no han cambiado desde el último informe, no se llama a Claude (no cuesta nada).
+# Cada mañana a las 07:30 de Madrid (config.json → brief.times). El programador de GitHub falla en esta cuenta, así que
+# el pulso también lo lanza cuando toca. Si los candidatos no han cambiado, no se llama a Claude (no cuesta nada).
 on:
   schedule:
     - cron: "37 6 * * *"
-    - cron: "7 18 * * *"
   workflow_dispatch:
     inputs:
       force:

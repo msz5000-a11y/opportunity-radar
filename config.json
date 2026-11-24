@@ -183,10 +183,9 @@
     "effort": "medium",
     "max_searches": 3,
     "max_tokens": 16000,
-    "daily_usd_cap": 1.5,
+    "daily_usd_cap": 1.0,
     "times": [
-      "07:30",
-      "19:00"
+      "07:30"
     ],
     "fallback": [
       "gemini",

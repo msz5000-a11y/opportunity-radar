@@ -7,7 +7,7 @@ Radar autónomo de oportunidades para un residente en España con un presupuesto
 ## Cómo funciona
 
 ```
-Para ti (brief.yml, 07:30 y 19:00 de Madrid; el pulso lo lanza si GitHub no lo hace)
+Para ti (brief.yml, cada mañana a las 07:30 de Madrid; el pulso lo lanza si GitHub no lo hace)
   ├─ Candidatos: rondas abiertas (Startupxplore, Capital Cell, Dozen), negocios para clonar (ideas del radar,
   │  TrustMRR con ingresos verificados, últimas tandas de Y Combinator, Product Hunt), acciones del radar de
   │  mercados (con la señal de ruptura), ayudas BDNS abiertas para personas o pymes y lo mejor del pulso
@@ -56,7 +56,7 @@ La app (`app/`) abre en «Para ti» (con selector de perfil: España o Egipto) y
 
 0 € con los niveles gratuitos de GitHub (repositorio público), Gemini, Groq, Finnhub, Massive y ntfy. Los límites de uso están en `config.json` (sección `pulse` y `limits`).
 
-«Para ti» con Claude es de pago por uso: con Opus 5.5 (4 $ por millón de tokens de entrada y 20 $ de salida; 10 $ por cada 1.000 búsquedas) cada informe cuesta unos 0,25-0,40 $. Si los candidatos no han cambiado, no se llama a Claude. Hay un tope diario (`brief.daily_usd_cap`, 1,5 $) y se puede bajar el gasto a la mitad con `brief.model: claude-sonnet-5-5`.
+«Para ti» con Claude es de pago por uso: con Opus 5.5 (4 $ por millón de tokens de entrada y 20 $ de salida; 10 $ por cada 1.000 búsquedas) cada informe cuesta unos 0,25-0,40 $ por perfil, unos 0,6 $ al día con los dos perfiles (≈ 18 $ al mes). Si los candidatos no han cambiado, no se llama a Claude. Hay un tope diario (`brief.daily_usd_cap`, 1 $) y se puede bajar el gasto a la mitad con `brief.model: claude-sonnet-5-5`.
 
 ## Pruebas
 
