@@ -100,9 +100,9 @@
     }
   ],
   "pulse": {
-    "alert_min": 82,
-    "alerts_per_hour": 3,
-    "alerts_per_day": 18,
+    "alert_min": 86,
+    "alerts_per_hour": 2,
+    "alerts_per_day": 8,
     "llm_daily": 220,
     "llm_per_run": 2,
     "groq_models": [
@@ -115,6 +115,83 @@
       "gemini-3.1-flash-lite",
       "gemini-2.5-flash"
     ],
-    "disabled": []
+    "disabled": [
+      "StockTwits",
+      "Reddit (ApeWisdom)",
+      "Bluesky",
+      "Mastodon",
+      "GitHub",
+      "Hugging Face modelos"
+    ]
+  },
+  "profiles": [
+    {
+      "id": "es",
+      "name": "España",
+      "flag": "🇪🇸",
+      "language": "es",
+      "country": "ES",
+      "subregion": null,
+      "currency": "EUR",
+      "capital": 2000,
+      "max_ticket": 1000,
+      "risk": "medio",
+      "about": "Vive en España. Solo usa el móvil, no tiene ordenador, y no programa: para montar un SaaS o una app necesita un socio técnico, un freelance o herramientas sin código.",
+      "wants": [
+        "startups con poco capital y potencial",
+        "SaaS o apps que funcionan fuera y se pueden clonar en España",
+        "acciones infravaloradas que rompen al alza",
+        "ayudas públicas para emprender"
+      ],
+      "avoid": [
+        "memecoins",
+        "apalancamiento",
+        "trading diario",
+        "esquemas de referidos",
+        "plataformas sin licencia"
+      ],
+      "notify": "NTFY_TOPIC"
+    },
+    {
+      "id": "eg",
+      "name": "Egipto",
+      "flag": "🇪🇬",
+      "language": "en",
+      "country": "EG",
+      "subregion": null,
+      "currency": "USD",
+      "capital": 2000,
+      "max_ticket": 1000,
+      "risk": "medio",
+      "about": "Emprendedor en Egipto. Capacidad técnica y capital por confirmar: asume un equipo pequeño con poco capital.",
+      "wants": [
+        "SaaS or apps that work abroad and can be cloned in Egypt",
+        "startups to invest in with little capital",
+        "undervalued stocks breaking out"
+      ],
+      "avoid": [
+        "memecoins",
+        "leverage",
+        "day trading",
+        "unlicensed platforms"
+      ],
+      "notify": "NTFY_TOPIC_EG"
+    }
+  ],
+  "brief": {
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "max_searches": 3,
+    "max_tokens": 16000,
+    "daily_usd_cap": 1.5,
+    "times": [
+      "07:30",
+      "19:00"
+    ],
+    "fallback": [
+      "gemini",
+      "groq",
+      "openrouter"
+    ]
   }
 }

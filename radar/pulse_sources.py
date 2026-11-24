@@ -1265,9 +1265,36 @@ def title_place(text: str) -> str:
     return " ".join(w if (i and w in _SMALL) else w[:1].upper() + w[1:] for i, w in enumerate(words))
 
 
+def bdns_useful(num: str, ctx: Ctx, checked: list) -> bool:
+    """Mira la ficha de la convocatoria (una vez; se recuerda): fuera las de concesión directa, las que no puede pedir una
+    persona, un autónomo o una pyme y las ya cerradas. Como mucho 6 fichas nuevas por pasada; el resto, en la siguiente."""
+    verdicts = ctx.mem("bdns_ok")
+    if num in verdicts:
+        return verdicts[num]
+    if len(checked) >= 6:
+        return False
+    checked.append(num)
+    try:
+        det = get_json("https://www.infosubvenciones.es/bdnstrans/api/convocatorias", params={"numConv": num, "vpd": "GE"}, timeout=25) or {}
+    except SourceError:
+        checked.pop()
+        return False
+    tipo = R.fold(det.get("tipoConvocatoria") or "")
+    benef = " ".join(b.get("descripcion", "") for b in det.get("tiposBeneficiarios") or []).upper()
+    fin = det.get("fechaFinSolicitud")
+    ok = "directa" not in tipo and ("PERSONAS FÍSICAS" in benef or "PERSONAS FISICAS" in benef or "PYME" in benef) \
+        and not (fin and fin < ctx.now.astimezone(ZoneInfo("Europe/Madrid")).date().isoformat())
+    verdicts[num] = ok
+    if len(verdicts) > 600:
+        for k in list(verdicts)[:200]:
+            verdicts.pop(k, None)
+    return ok
+
+
 def c_bdns(ctx: Ctx) -> list[dict]:
     if ctx.region != "es":
         return []
+    checked: list = []
     mem = ctx.mem("bdns")
     i = mem.get("i", 0)
     qs = [BDNS_Q[(i + k) % len(BDNS_Q)] for k in range(4)]
@@ -1285,6 +1312,8 @@ def c_bdns(ctx: Ctx) -> list[dict]:
             f = R.fold(desc)
             fecha = parse_date(x.get("fechaRecepcion"))
             if (fecha and ctx.now - fecha > timedelta(days=30)) or any(w in f for w in BDNS_BAD) or not any(w in f for w in BDNS_GOOD):
+                continue
+            if not bdns_useful(num, ctx, checked):
                 continue
             nivel = (x.get("nivel1") or "").upper()
             org = R.clean(x.get("nivel2") or x.get("nivel3") or "")

@@ -27,9 +27,9 @@ from .llm import extract_json
 MADRID = ZoneInfo("Europe/Madrid")
 KEEP_H = {"news": 72, "move": 36, "social": 48, "trend": 48, "listing": 168, "ipo": 336, "grant": 720, "earnings": 72, "insider": 168,
           "defi": 96, "launch": 240, "context": 48, "alert": 96}
-MAX_ITEMS = 1100
+MAX_ITEMS = 600
 EVENT_TAGS = {"ipo", "fusion", "ronda", "listado", "resultados", "alerta", "airdrop", "recompra", "aprobacion", "launchpool", "tge", "etf"}
-PULSE_V = 8
+PULSE_V = 9
 DEADLINE_S = 170
 BASE_WATCH = ["NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "TSLA", "AMD", "AVGO", "NFLX", "PLTR", "COIN", "MSTR", "HOOD", "SMCI",
               "ARM", "INTC", "MU", "ORCL", "CRM", "UBER", "SHOP", "SNOW", "BABA", "SOFI", "RIVN", "IONQ", "RGTI", "SOUN", "RDDT", "APP",
@@ -380,6 +380,11 @@ def run(live: Path, data_dir: Path, cfg: dict, *, now: datetime | None = None, d
         _drop(lambda it: it["id"].startswith("mc:"), ("SPX", "IXIC", "US10Y", "BRENT", "GOLD", "SILVER"))
         (state.get("last") or {}).pop("Índices, bono, Brent, oro y plata", None)
         state["v"] = 8
+    if state.get("v") == 8:  # menos ruido: fuera las ayudas sin revisar su ficha y las redes que ya no se vigilan
+        noisy = ("StockTwits", "Reddit", "Bluesky", "Mastodon", "GitHub", "Hugging Face")
+        _drop(lambda it: it.get("kind") == "grant" or str(it.get("src") or "").startswith(noisy))
+        (state.get("last") or {}).pop("Ayudas públicas (BDNS)", None)
+        state["v"] = 9
     if state.get("v") != PULSE_V:  # reglas nuevas: se rehace el feed (se conservan las listas de exchanges ya conocidas)
         state = {"v": PULSE_V, "mem": {k: v for k, v in (state.get("mem") or {}).items() if k in ("listings", "eod")}}
         prev = {"ticker": prev.get("ticker") or {}}

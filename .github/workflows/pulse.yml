@@ -118,7 +118,9 @@ jobs:
         run: |
           mkdir -p _site/data
           cp -r app/* _site/
-          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json ideas.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/ || true; done
+          for f in opps.json status.json runs.json digests.json selected.json markets.json paper.json ideas.json brief.json; do [ -f "data/$f" ] && cp "data/$f" _site/data/ || true; done
+          # el informe «Para ti» más reciente aunque se haya guardado después de empezar este pulso
+          if git fetch -q --depth=1 origin main 2>/dev/null; then git show FETCH_HEAD:data/brief.json > /tmp/brief.json 2>/dev/null && cp /tmp/brief.json _site/data/brief.json || true; fi
           [ -f live/feed.json ] && cp live/feed.json _site/data/feed.json || echo '{"items":[]}' > _site/data/feed.json
           [ -f _site/data/opps.json ] || echo "[]" > _site/data/opps.json
 
@@ -139,6 +141,19 @@ jobs:
         if: steps.deploy.outcome == 'failure'
         continue-on-error: true
         uses: actions/deploy-pages@v4
+
+      - name: ¿Toca el informe «Para ti»?
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/briefcheck
+          git show FETCH_HEAD:data/brief.json > /tmp/briefcheck/brief.json 2>/dev/null || true
+          if python -m radar.brief --data /tmp/briefcheck --check-due; then
+            RUNNING=$(gh run list -R "$GITHUB_REPOSITORY" -w brief.yml -L 5 --json status --jq '[.[] | select(.status != "completed")] | length' || echo 1)
+            if [ "${RUNNING:-1}" = "0" ]; then gh workflow run brief.yml -R "$GITHUB_REPOSITORY" --ref main && echo "Informe lanzado"; else echo "Ya hay un informe en marcha"; fi
+          fi
 
       - name: Encadenar el siguiente pulso
         if: ${{ !cancelled() }}

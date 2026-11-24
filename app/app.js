@@ -65,17 +65,14 @@
   }[k] || k || "");
   const oppName = (o) => [L("Ruido", "Noise"), L("Contexto", "Context"), L("Interesante", "Worth watching"), L("Accionable", "Actionable")][Math.max(0, Math.min(3, o ?? 1))];
   const riskName = (r) => ({bajo: L("bajo", "low"), medio: L("medio", "medium"), alto: L("alto", "high"), muy_alto: L("muy alto", "very high")}[r] || r || "");
+  // Menos pestañas: «Para ti» (lo que elige Claude) primero; IA, lanzamientos, noticias y redes siguen en «En vivo»
   const TABS = [
+    {id: "parati", e: "🎯", es: "Para ti", en: "For you", c: "var(--c-top)"},
     {id: "vivo", e: "⚡", es: "En vivo", en: "Live", c: "var(--c-vivo)"},
-    {id: "top", e: "⭐", es: "Top", en: "Top", c: "var(--c-top)"},
     {id: "cripto", e: "🪙", es: "Cripto", en: "Crypto", c: "var(--c-cripto)"},
     {id: "bolsa", e: "📈", es: "Bolsa", en: "Stocks", c: "var(--c-bolsa)"},
     {id: "startups", e: "🚀", es: "Startups", en: "Startups", c: "var(--c-startups)"},
-    {id: "ia", e: "🤖", es: "IA", en: "AI", c: "var(--c-ia)"},
-    {id: "lanzamientos", e: "🎁", es: "Lanzamientos", en: "Launches", c: "var(--c-lanzamientos)"},
     {id: "ideas", e: "💡", es: "Ideas", en: "Ideas", c: "var(--c-ideas)"},
-    {id: "noticias", e: "📰", es: "Noticias", en: "News", c: "var(--c-noticias)"},
-    {id: "redes", e: "💬", es: "Redes", en: "Social", c: "var(--c-redes)"},
   ];
   const TAB_IDS = TABS.map((t) => t.id);
   const SIGNAL_KINDS = new Set(["move", "trend", "listing", "defi", "launch", "context", "alert", "earnings", "insider", "ipo", "grant"]);
@@ -89,8 +86,8 @@
 
   // ------------------------------------------------------------------ estado
   const S = {
-    feed: null, opps: [], selected: null, markets: null, paper: null, ideas: null, status: null,
-    tab: "vivo", seg: LS.get("radar-segs", {}), chip: {}, useful: LS.get("radar-useful", true), limit: 60,
+    feed: null, opps: [], selected: null, markets: null, paper: null, ideas: null, status: null, brief: null, prof: LS.get("radar-prof", null),
+    tab: "parati", seg: LS.get("radar-segs", {}), chip: {}, useful: LS.get("radar-useful", true), limit: 60,
     lastSeen: LS.get("radar-lastseen", {}), visitFrom: {}, fresh: new Set(), saved: LS.get("radar-saved", {}),
     actions: LS.get("radar-actions", {}), profile: LS.get("radar-profile", null), loaded: false, live: null,
     ideaMk: "all", ideaType: "", oppMin: 45,
@@ -106,7 +103,7 @@
   const invalidate = () => { merged = null; };
   const LIVE = {items: arr(LS.get("radar-live-items", [])).filter((x) => Date.now() - (toDate(x.t) || 0) < 12 * 3600e3 && (x.m || {}).cur !== "EUR"), at: null, cgAt: 0, trAt: 0, bnAt: 0};
   const inCat = (it, c) => it.cat === c || arr(it.also).includes(c);
-  const useful = (it) => !it.h && (((it.opp ?? 1) >= 2 && (it.s ?? 0) >= 45) || (it.s ?? 0) >= 70);
+  const useful = (it) => !it.h && (((it.opp ?? 1) >= 2 && (it.s ?? 0) >= 55) || (it.s ?? 0) >= 78);
   const txt = (it) => (LANG === "en" ? it.en || it.title || it.es : it.es || it.title) || "";
   const why = (it) => (LANG === "en" ? it.why_en || it.why : it.why) || "";
   const act = (it) => (LANG === "en" ? it.act_en || it.act : it.act) || "";
@@ -121,8 +118,9 @@
   }
   async function loadAll(manual = false) {
     const btn = $("#refreshBtn"); btn.classList.add("spin");
-    const [feed, opps, selected, markets, paper, ideas, status] = await Promise.all(
-      ["feed.json", "opps.json", "selected.json", "markets.json", "paper.json", "ideas.json", "status.json"].map((n) => getJSON(n).catch(() => null)));
+    const [feed, opps, selected, markets, paper, ideas, status, brief] = await Promise.all(
+      ["feed.json", "opps.json", "selected.json", "markets.json", "paper.json", "ideas.json", "status.json", "brief.json"].map((n) => getJSON(n).catch(() => null)));
+    if (brief) S.brief = brief;
     btn.classList.remove("spin");
     if (feed) acceptFeed(feed, !S.loaded); else if (!S.feed) { S.feed = LS.get("radar-feed-cache", null); invalidate(); }
     if (opps) S.opps = arr(opps); if (selected) S.selected = selected; if (markets) S.markets = markets;
@@ -374,6 +372,16 @@
     } catch { LS.set("radar-nudge-ok", false); }
   }
 
+  async function runBrief() {
+    if (!gh.ready()) return false;
+    try {
+      const c = gh.cfg();
+      const r = await fetch(`https://api.github.com/repos/${c.owner}/${c.repo}/actions/workflows/brief.yml/dispatches`,
+        {method: "POST", headers: {Authorization: `Bearer ${c.token}`, Accept: "application/vnd.github+json"}, body: JSON.stringify({ref: "main"})});
+      return r.status === 204;
+    } catch { return false; }
+  }
+
   // ------------------------------------------------------------------ cabecera
   function renderLive() {
     const el = $("#live"), tx = $("#liveTxt");
@@ -422,10 +430,11 @@
     if (id === "top") return all.filter((x) => (x.s ?? 0) >= 72 && (x.opp ?? 1) >= 2);
     if (id === "noticias") return all.filter((x) => x.kind === "news");
     if (id === "redes") return all.filter((x) => x.kind === "social" || x.kind === "trend");
-    if (id === "ideas") return [];
+    if (id === "ideas" || id === "parati") return [];
     return all.filter((x) => inCat(x, id));
   }
   function newCount(id) {
+    if (id === "parati") return S.brief?.generatedAt && S.brief.generatedAt > LS.get("radar-brief-seen", "") ? 1 : 0;
     const since = S.lastSeen[id];
     if (!since) return 0;
     return tabItems(id).filter((x) => useful(x) && (x.t || "") > since).length;
@@ -441,7 +450,7 @@
   }
   let seenTimer = null;
   function go(tab, {push = true, keepScroll = false} = {}) {
-    if (!TAB_IDS.includes(tab)) tab = "vivo";
+    if (!TAB_IDS.includes(tab)) tab = "parati";
     markSeen(S.tab);
     S.tab = tab; S.limit = 60;
     S.visitFrom[tab] = S.lastSeen[tab] || null;
@@ -537,6 +546,7 @@
     if (!S.loaded) { v.innerHTML = `<div class="empty">${L("Cargando el radar…", "Loading the radar…")}</div>`; return; }
     let html;
     switch (S.tab) {
+      case "parati": html = viewForYou(); break;
       case "vivo": html = viewLive(); break;
       case "top": html = viewTop(); break;
       case "ideas": html = viewIdeas(); break;
@@ -546,6 +556,72 @@
     }
     v.innerHTML = html;
     setTimeout(() => S.fresh.clear(), 2700);
+  }
+
+  // ---------- Para ti (lo elige Claude para cada perfil)
+  const BRIEF_SECS = [
+    ["startups", "🚀", "var(--c-startups)", () => L("Invertir en una startup", "Invest in a startup")],
+    ["clonar", "🧬", "var(--c-ideas)", (p) => L(`Clonar en ${p?.name || "tu país"}`, `Clone in ${p?.name === "Egipto" ? "Egypt" : p?.name === "España" ? "Spain" : p?.name || "your country"}`)],
+    ["accion", "📈", "var(--c-bolsa)", () => L("Acción del día", "Stock of the day")],
+    ["ayudas", "🏛️", "var(--c-negocio)", () => L("Ayudas para ti", "Grants for you")],
+    ["extra", "⚡", "var(--c-vivo)", () => L("Además", "Also worth a look")],
+  ];
+  const modelName = (p) => {
+    if (!p?.model) return "";
+    if (p.provider === "anthropic") return String(p.model).replace(/^claude-/, "Claude ").replace(/-(\d+)-(\d+)$/, " $1.$2").replace(/(^|\s)([a-z])/g, (m, a, b) => a + b.toUpperCase());
+    return L(`${p.provider} (gratis)`, `${p.provider} (free)`);
+  };
+  function pickCard(p, color) {
+    const facts = [[L("Cuánto hace falta", "What it takes"), p.coste], [L("Plazo", "Deadline"), p.plazo],
+      [L("Confianza", "Confidence"), p.confianza ? `<span class="conf-${esc(p.confianza)}">${esc({alta: L("alta", "high"), media: L("media", "medium"), baja: L("baja", "low")}[p.confianza] || p.confianza)}</span>` : ""]]
+      .filter((f) => f[1]);
+    const datos = Object.entries(p.datos || {});
+    const link = safeUrl(p.enlace);
+    const srcs = arr(p.fuentes).map(safeUrl).filter(Boolean).filter((u) => u !== link);
+    const more = datos.length || arr(p.riesgos).length || p.potencial || srcs.length;
+    return `<article class="pick" style="--pc:${color}">
+      <h3>${esc(p.titulo)}</h3>
+      ${p.resumen ? `<p>${esc(p.resumen)}</p>` : ""}
+      ${p.por_que ? `<p class="pwhy"><b>${L("Por qué para ti", "Why for you")}:</b> ${esc(p.por_que)}</p>` : ""}
+      ${facts.length ? `<ul class="facts">${facts.map(([k, v]) => `<li>${esc(k)}<b>${k === L("Confianza", "Confidence") ? v : esc(v)}</b></li>`).join("")}</ul>` : ""}
+      ${arr(p.pasos).length ? `<ol>${p.pasos.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}
+      ${more ? `<details><summary>${L("Datos, riesgos y fuentes", "Data, risks and sources")}</summary>
+        ${p.potencial ? `<p><b>${L("Potencial", "Upside")}:</b> ${esc(p.potencial)}</p>` : ""}
+        ${datos.length ? `<dl class="kv">${datos.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join("")}</dl>` : ""}
+        ${arr(p.riesgos).length ? `<p><b>${L("Riesgos", "Risks")}:</b></p><ul class="risks">${p.riesgos.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+        ${srcs.length ? `<p class="src">${srcs.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/, "").slice(0, 60))}</a>`).join("<br>")}</p>` : ""}
+      </details>` : ""}
+      ${link ? `<a class="btn go" href="${esc(link)}" target="_blank" rel="noopener">${L("Abrir", "Open")} ↗</a>` : ""}
+    </article>`;
+  }
+  function viewForYou() {
+    const profs = Object.values(S.brief?.profiles || {}).filter((p) => p?.profile);
+    if (!profs.length) {
+      return `<div class="empty">${L("Claude está preparando tu primer informe: startups en las que entrar con poco dinero, negocios que funcionan fuera para clonar, la acción infravalorada que rompe al alza y ayudas que puedes pedir. Llega en unos minutos.", "Claude is preparing your first brief: startups you can back with little money, businesses that work abroad and can be cloned, the undervalued stock breaking out and grants you can apply for. It will be here in a few minutes.")}
+        ${gh.ready() ? `<br><br><button class="btn" type="button" data-brief-run="1">${L("Pedirlo ahora", "Request it now")}</button>` : ""}</div>`;
+    }
+    const cur = profs.find((p) => p.profile.id === S.prof) || profs[0];
+    LS.set("radar-brief-seen", S.brief.generatedAt || "");
+    const sw = profs.length > 1 ? `<div class="tools">${chips(profs.map((p) => [p.profile.id, `${p.profile.flag || ""} ${p.profile.name}`.trim()]), cur.profile.id, "data-prof")}</div>` : "";
+    const secs = cur.secciones || {};
+    const body = BRIEF_SECS.map(([k, e, color, title]) => {
+      const sec = secs[k] || {picks: []};
+      if (k === "ayudas" && !arr(sec.picks).length && (cur.profile.country || "") !== "ES") return "";
+      const picks = arr(sec.picks);
+      return `<div class="section-h"><h2>${e} ${esc(title(cur.profile))}</h2><span>${picks.length || ""}</span></div>
+        ${picks.length ? picks.map((p) => pickCard(p, color)).join("") : `<p class="note">${esc(sec.nota || L("Hoy nada que merezca la pena.", "Nothing worth it today."))}</p>`}`;
+    }).join("");
+    const free = cur.provider && cur.provider !== "anthropic";
+    const meta = [L("Actualizado ", "Updated ") + ago(cur.generatedAt), modelName(cur) && L("analizado por ", "analysed by ") + modelName(cur)].filter(Boolean).join(" · ");
+    const saved = Object.values(S.saved).sort(byWhen);
+    return `${sw}
+      ${cur.resumen ? `<p class="brief-sum">${esc(cur.resumen)}</p>` : ""}
+      <p class="brief-meta">${esc(meta)}${gh.ready() ? ` · <button class="linkbtn" type="button" data-brief-run="1">${L("actualizar", "refresh")}</button>` : ""}</p>
+      ${free ? `<p class="note">${L("Ahora decide un modelo gratuito porque falta la clave de Claude (o se llegó al tope de gasto de hoy). Con la clave, decide Claude y comprueba en la web.", "A free model is deciding because the Claude key is missing (or today's spending cap was reached). With the key, Claude decides and checks the web.")}</p>` : ""}
+      ${body}
+      ${cur.descartado ? `<p class="note">🧹 ${esc(cur.descartado)}</p>` : ""}
+      <p class="disclaimer">${L("No es asesoramiento financiero. Nada se compra ni se vende solo: Claude analiza y tú decides. Invierte solo lo que puedas perder.", "Not financial advice. Nothing is bought or sold automatically: Claude analyses and you decide. Only invest what you can afford to lose.")}</p>
+      ${saved.length ? `<div class="section-h"><h2>🔖 ${L("Guardadas", "Saved")}</h2><span>${saved.length}</span></div><div class="rows">${saved.map(row).join("")}</div>` : ""}`;
   }
 
   function viewLive() {
@@ -1028,6 +1104,8 @@
     const mkEl = t.closest("[data-mk]"); if (mkEl) { const [k, s] = mkEl.dataset.mk.split("|"); openMk(k, s); return; }
     const ideaEl = t.closest("[data-idea]"); if (ideaEl) { openIdea(ideaEl.dataset.idea); return; }
     const man = t.closest("[data-manual]"); if (man) { openManual(man.dataset.manual); return; }
+    const pf = t.closest("[data-prof]"); if (pf) { S.prof = pf.dataset.prof; LS.set("radar-prof", S.prof); render(); return; }
+    const br = t.closest("[data-brief-run]"); if (br) { br.disabled = true; br.textContent = await runBrief() ? L("Pedido: llega en unos minutos", "Requested: a few minutes") : L("No se pudo pedir (revisa el token)", "Could not request it (check the token)"); return; }
     const chip = t.closest("[data-chip]"); if (chip) { S.chip[S.tab] = chip.dataset.chip; S.limit = 60; render(); return; }
     const seg = t.closest("[data-seg]"); if (seg) { S.seg[S.tab] = seg.dataset.seg; LS.set("radar-segs", S.seg); S.limit = 60; render(); return; }
     const om = t.closest("[data-oppmin]"); if (om) { S.oppMin = +om.dataset.oppmin; render(); return; }
@@ -1125,7 +1203,7 @@
     if (TAB_IDS.includes(h)) { if (S.tab !== h) go(h, {push: false}); return; }
     if (h.startsWith("item=")) { openItem(h.slice(5)); return; }
     if (h === "mercados") { S.seg.bolsa = "value"; go("bolsa", {push: false}); return; }
-    if (h === "seleccion") { go("top", {push: false}); return; }
+    if (h === "seleccion" || h === "top") { go("parati", {push: false}); return; }
     if (S.opps.some((o) => o.id === h)) openOpp(h);
   }
   window.addEventListener("hashchange", () => { if (!sheet.classList.contains("open")) routeHash(); });
@@ -1133,7 +1211,7 @@
 
   // ------------------------------------------------------------------ arranque
   const h0 = decodeURIComponent(location.hash.slice(1));
-  S.tab = TAB_IDS.includes(h0) ? h0 : "vivo";
+  S.tab = TAB_IDS.includes(h0) ? h0 : "parati";
   if (!Object.keys(S.lastSeen).length) S.lastSeen = {};
   S.visitFrom[S.tab] = S.lastSeen[S.tab] || null;
   render(); renderTabbar(); renderTicker();

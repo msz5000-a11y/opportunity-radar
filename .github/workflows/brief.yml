@@ -1,0 +1,82 @@
+name: Para ti (Claude)
+
+# Claude estudia todo lo que recoge el radar y elige lo poco que de verdad sirve a cada perfil (data/brief.json).
+# Horas: 07:30 y 19:00 de Madrid. El programador de GitHub falla en esta cuenta, así que el pulso también lo lanza
+# cuando toca. Si los candidatos no han cambiado desde el último informe, no se llama a Claude (no cuesta nada).
+on:
+  schedule:
+    - cron: "37 6 * * *"
+    - cron: "7 18 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Rehacer aunque no haya cambios (true/false)"
+        required: false
+        default: "false"
+      perfil:
+        description: "Solo este perfil (es, eg); vacío = todos"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -q requests==2.32.3
+
+      - name: Feed del pulso
+        run: git fetch -q --depth=1 origin live && git show FETCH_HEAD:feed.json > /tmp/pulse_feed.json || echo '{}' > /tmp/pulse_feed.json
+
+      - name: Informe «Para ti»
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOPIC_EG: ${{ secrets.NTFY_TOPIC_EG }}
+          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          APP_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+          FORCE: ${{ github.event.inputs.force }}
+          PERFIL: ${{ github.event.inputs.perfil }}
+        run: |
+          ARGS="--data data --feed /tmp/pulse_feed.json"
+          if [ "$FORCE" = "true" ]; then ARGS="$ARGS --force"; fi
+          if [ -n "$PERFIL" ]; then ARGS="$ARGS --perfil $PERFIL"; fi
+          python -m radar.brief $ARGS
+
+      - name: Guardar
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "opportunity-radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/brief.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -q -m "Para ti $(date -u +%Y-%m-%dT%H:%MZ)"
+          for i in 1 2 3 4; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
+
+      - name: Publicar en la web (lo despliega el pulso)
+        if: ${{ !cancelled() }}
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pulse.yml -R "$GITHUB_REPOSITORY" --ref main

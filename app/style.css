@@ -163,3 +163,27 @@ th:first-child,td:first-child{text-align:left} th{color:var(--muted);font-weight
 .fits{display:flex;flex-wrap:wrap;gap:6px}
 @media (min-width:700px){.ttl{font-size:16.5px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* «Para ti»: lo que elige Claude para cada perfil */
+.brief-sum{margin:14px var(--pad) 4px;font:500 17px/1.45 var(--font);color:var(--ink)}
+.brief-meta{margin:2px var(--pad) 4px;font-size:12.5px;color:var(--muted)}
+.linkbtn{background:none;border:0;padding:0;color:var(--c-top);font:inherit;text-decoration:underline;cursor:pointer}
+.pick{margin:8px var(--pad) 14px;padding:14px 15px 13px 16px;background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--pc,var(--c-top));border-radius:12px}
+.pick h3{margin:0 0 4px;font:700 19px/1.2 var(--cond);letter-spacing:.1px}
+.pick p{margin:6px 0;font-size:14.5px;line-height:1.45;color:var(--muted)}
+.pick .pwhy{color:var(--ink)}
+.pick .pwhy b{color:var(--pc);font-weight:600}
+.pick .facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px 14px;margin:10px 0 6px;padding:10px 0 0;list-style:none;border-top:1px solid var(--line)}
+.pick .facts li{font-size:12.5px;color:var(--muted);line-height:1.25}
+.pick .facts li b{display:block;margin-top:2px;color:var(--ink);font-weight:600;font-size:14.5px}
+.pick ol{margin:8px 0 2px;padding-left:20px;font-size:14.5px;line-height:1.45;color:var(--ink)}
+.pick ol li{margin:4px 0}
+.pick ol li::marker{color:var(--pc);font-weight:700}
+.pick details{margin-top:8px;font-size:13.5px;color:var(--muted)}
+.pick summary{cursor:pointer;color:var(--ink);font-weight:500;padding:4px 0}
+.pick .kv{margin:8px 0}
+.pick .risks{margin:4px 0 6px;padding-left:18px;line-height:1.45}
+.pick .src a{color:var(--muted);word-break:break-all;font-size:12.5px}
+.pick .go{margin-top:10px}
+.conf-alta{color:var(--c-bolsa)} .conf-media{color:var(--c-top)} .conf-baja{color:var(--c-vivo)}
+.disclaimer{margin:20px var(--pad) 10px;font-size:12.5px;color:var(--dim);line-height:1.45}

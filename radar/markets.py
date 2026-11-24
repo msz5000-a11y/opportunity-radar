@@ -68,9 +68,46 @@ def atr(h, l, c, n=14):
     return sum(tr[-n:]) / n
 
 
-def detect_trigger(c, h=None, l=None, v=None):
-    """Señal de giro: recupera la media de 50 sesiones tras semanas por debajo, o rebota en una media de 200 creciente."""
+def _es(x: float, d: int = 2) -> str:
+    return f"{x:,.{d}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def detect_breakout(c, h=None, v=None, look: int = 126):
+    """Ruptura al alza: en las 3 últimas sesiones cierra por encima del máximo de los 6 meses anteriores (o del año) con
+    volumen de al menos 1,4 veces la media de 20 sesiones, sigue por encima del nivel roto y no está ya muy estirada."""
     n = len(c)
+    if n < look + 25:
+        return None
+    h = h or c
+    last = n - 1
+    r = rsi(c) or 50
+    for k in range(3):
+        i = last - k
+        level = max(h[i - look:i])
+        if c[i] <= level:
+            continue
+        avg = sum(v[i - 20:i]) / 20 if v and len(v) == n else 0
+        vx = v[i] / avg if avg else None
+        if vx is not None and vx < 1.4:
+            continue
+        if c[last] < level * 0.98 or c[last] > level * 1.10 or r > 80:
+            return None  # la ruptura ha fallado o ya está demasiado estirada para entrar
+        year = n >= 253 and c[i] > max(h[i - 252:i])
+        txt = ("rompe su máximo de un año" if year else "rompe su máximo de 6 meses") + f" ({_es(level)} $)"
+        if vx:
+            txt += f" con {_es(vx, 1)} veces el volumen medio"
+        return {"type": "ruptura", "level": round(level, 2), "volx": round(vx, 1) if vx else None, "year": bool(year),
+                "daysAgo": k, "text": txt[0].upper() + txt[1:]}
+    return None
+
+
+def detect_trigger(c, h=None, l=None, v=None):
+    """Señal: ruptura al alza (máximo de 6 meses o de un año con volumen), recuperación de la media de 50 sesiones tras
+    semanas por debajo, o rebote en una media de 200 creciente."""
+    n = len(c)
+    b = detect_breakout(c, h, v)
+    if b:
+        return b
     if n < 230:
         return None
     h, l = h or c, l or c

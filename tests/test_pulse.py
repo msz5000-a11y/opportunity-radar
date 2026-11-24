@@ -106,10 +106,31 @@ def test_bdns_filters(monkeypatch):
         {"numeroConvocatoria": "1", "descripcion": "Ayudas para emprendedores y creación de empresas 2027", "fechaRecepcion": "2026-11-22", "nivel1": "AUTONOMICA", "nivel2": "MADRID"},
         {"numeroConvocatoria": "2", "descripcion": "Subvención nominativa a la asociación de empresarios X", "fechaRecepcion": "2026-11-22", "nivel1": "LOCAL"},
         {"numeroConvocatoria": "3", "descripcion": "Ayudas para el pago del IBI", "fechaRecepcion": "2026-11-22", "nivel1": "LOCAL"},
-        {"numeroConvocatoria": "4", "descripcion": "Ayudas a la digitalización de pymes", "fechaRecepcion": "2026-10-01", "nivel1": "ESTADO"}]}
-    monkeypatch.setattr(S, "get_json", lambda *a, **k: rows)
-    out = S.c_bdns(ctx())
+        {"numeroConvocatoria": "4", "descripcion": "Ayudas a la digitalización de pymes", "fechaRecepcion": "2026-10-01", "nivel1": "ESTADO"},
+        {"numeroConvocatoria": "5", "descripcion": "Subvención para la digitalización de la asistencia jurídica gratuita", "fechaRecepcion": "2026-11-22", "nivel1": "AUTONOMICA"},
+        {"numeroConvocatoria": "6", "descripcion": "Ayudas a empresas emergentes innovadoras", "fechaRecepcion": "2026-11-22", "nivel1": "ESTADO"}]}
+    details = {"1": {"tipoConvocatoria": "Concurrencia competitiva - canónica", "fechaFinSolicitud": "2026-12-31",
+                     "tiposBeneficiarios": [{"descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"}]},
+               "5": {"tipoConvocatoria": "Concesión directa - instrumental", "fechaFinSolicitud": "2026-12-15",
+                     "tiposBeneficiarios": [{"descripcion": "PERSONAS JURÍDICAS QUE NO DESARROLLAN ACTIVIDAD ECONÓMICA"}]},
+               "6": {"tipoConvocatoria": "Concurrencia competitiva - canónica", "fechaFinSolicitud": "2026-11-01",
+                     "tiposBeneficiarios": [{"descripcion": "PYME Y PERSONAS FÍSICAS QUE DESARROLLAN ACTIVIDAD ECONÓMICA"}]}}
+    calls = []
+
+    def fake(url, params=None, **k):
+        if url.endswith("/busqueda"):
+            return rows
+        calls.append(params["numConv"])
+        return details[params["numConv"]]
+    monkeypatch.setattr(S, "get_json", fake)
+    c = ctx()
+    out = S.c_bdns(c)
+    # la 5 es de concesión directa para una entidad sin actividad económica y la 6 ya cerró: solo queda la 1
     assert [x["id"] for x in out] == ["gr:1"] and out[0]["s"] >= 70 and out[0]["opp"] == 3
+    assert c.state["mem"]["bdns_ok"] == {"1": True, "5": False, "6": False}
+    n = len(calls)
+    S.c_bdns(c)
+    assert len(calls) == n  # las fichas ya vistas no se vuelven a pedir
 
 
 def news(id_, title, src="CoinDesk", s=55, cat="cripto"):
@@ -345,7 +366,7 @@ def test_migration_to_usd(tmp_path, monkeypatch):
     monkeypatch.setattr(S, "registry", lambda cfg: [])
     feed = pulse.run(live, data, {}, now=NOW)
     st = json.loads((live / "pulse_state.json").read_text())
-    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 8 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 9 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
 
 
 def test_migration_drops_old_macro_moves(tmp_path, monkeypatch):
@@ -360,7 +381,7 @@ def test_migration_drops_old_macro_moves(tmp_path, monkeypatch):
     monkeypatch.setattr(S, "registry", lambda cfg: [])
     feed = pulse.run(live, data, {}, now=NOW)
     st = json.loads((live / "pulse_state.json").read_text())
-    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 8 and bad["id"] not in st["seen"]
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 9 and bad["id"] not in st["seen"]
     assert "GOLD" not in feed["ticker"] and "BTC" in feed["ticker"] and "Índices, bono, Brent, oro y plata" not in st.get("last", {})
 
 
@@ -436,3 +457,19 @@ def test_all_collectors_with_fixtures(monkeypatch):
     assert results["Noticias Finnhub"] and results["Noticias Finnhub"][0]["via"] == "Finnhub"
     assert results["Miedo y codicia"][0]["id"].startswith("fg:")
     assert c.share["macro"]["BRENT"]["p"] == 89.08
+
+
+def test_migration_drops_noise(tmp_path, monkeypatch):
+    live, data = tmp_path / "live", tmp_path / "data"
+    live.mkdir()
+    grant = {"id": "gr:938656", "cat": "startups", "kind": "grant", "src": "BDNS", "title": "Subvención directa", "s": 78, "opp": 3, "risk": "bajo",
+             "t": "2026-11-23T14:00:00Z", "w": "2026-11-23T14:00:00Z"}
+    st = {"id": "st:hpe", "cat": "bolsa", "kind": "social", "src": "StockTwits", "title": "HPE en tendencia", "s": 50, "opp": 1, "risk": "alto",
+          "t": "2026-11-23T14:00:00Z", "w": "2026-11-23T14:00:00Z"}
+    keep = dict(news("n:keep", "Una noticia cualquiera de hoy"), t="2026-11-23T14:00:00Z", w="2026-11-23T14:00:00Z")
+    (live / "feed.json").write_text(json.dumps({"items": [grant, st, keep], "ticker": {}}))
+    (live / "pulse_state.json").write_text(json.dumps({"v": 8, "seen": {grant["id"]: "x", st["id"]: "x", "n:keep": "x"}, "mem": {}}))
+    monkeypatch.setattr(S, "registry", lambda cfg: [])
+    feed = pulse.run(live, data, {}, now=NOW)
+    state = json.loads((live / "pulse_state.json").read_text())
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and state["v"] == 9 and grant["id"] not in state["seen"]
