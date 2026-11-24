@@ -1158,6 +1158,387 @@
   "profitPath": ""
  },
  {
+  "name": "Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)",
+  "category": "negocio",
+  "subcategory": "Fiscalidad e Incentivos I+D",
+  "kind": "pasiva",
+  "description": "Nueva normativa que amplía las deducciones fiscales por innovación tecnológica y mejora la monetización de créditos fiscales para empresas. Permite a las compañías innovadoras reducir su carga impositiva o solicitar el abono de deducciones con límites conjuntos más flexibles.",
+  "officialUrl": "https://www.boe.es/eli/es/rdl/2026/11/20/40",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Aplicable a empresas con actividad en España sujeta al Impuesto sobre Sociedades.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Requiere gastos en proyectos de I+D+i y, opcionalmente, costes de certificación o informes motivados.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "baja",
+  "exitNotes": "El beneficio se materializa mediante ahorro fiscal en el Impuesto sobre Sociedades o abono directo de deducciones.",
+  "horizon": "Anual",
+  "deadline": null,
+  "potential": "Reducción directa de costes operativos y fiscales para empresas innovadoras.",
+  "difficulty": "alta",
+  "timeNeeded": "Gestión contable y técnica continua",
+  "subscores": {
+   "novedad": {
+    "v": 9.0,
+    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 modifica recientemente la normativa fiscal, creando una novedad legislativa.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: Se amplían los límites de monetización y se incluyen nuevas actividades deducibles, aumentando el potencial de ahorro.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: Existe un mercado consolidado de incentivos fiscales para I+D+i en España.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 10.0,
+    "why": "Regulado por el CDTI y el Ministerio de Ciencia. · Verificador: El incentivo está regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 7.0,
+    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación proviene del presupuesto estatal, sin necesidad de capital externo.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Ecosistema de empresas innovadoras y consultoras fiscales. · Verificador: Se menciona un ecosistema de empresas y consultoras, pero no hay fuentes que lo confirmen.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Requiere adaptación de procesos contables internos. · Verificador: Requiere adaptación de procesos contables internos; no hay evidencia documental específica.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Alta competencia por fondos públicos y deducciones. · Verificador: Alta competencia por los fondos públicos, aunque no se citan datos concretos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8.0,
+    "why": "Riesgo bajo si se cumplen los requisitos de certificación. · Verificador: Riesgo bajo siempre que se cumplan los requisitos de certificación, pero falta evidencia directa.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo bajo al ser un incentivo estatal, sin embargo no hay fuentes que cuantifiquen el riesgo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Normativa nacional española. · Verificador: La normativa es de ámbito nacional español.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 7.0,
+    "why": "Ahorro fiscal directo. · Verificador: El beneficio se materializa como ahorro fiscal directo, aunque no hay fuentes que lo detallen.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "compliance_risk",
+    "severity": "alta",
+    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+   },
+   {
+    "code": "compliance_risk",
+    "severity": "alta",
+    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y de la obtención de informes motivados."
+   }
+  ],
+  "distrust": [
+   "Dependencia de la burocracia ministerial",
+   "Necesidad de auditoría externa para asegurar la deducción"
+  ],
+  "whyInteresting": [
+   "Aumento del límite de monetización de 1 a 3 millones de euros",
+   "Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos"
+  ],
+  "howToParticipate": [
+   "Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2",
+   "Contratar asesoría fiscal especializada para preparar el informe motivado",
+   "Aplicar la deducción en la declaración del Impuesto sobre Sociedades"
+  ],
+  "actionable": true,
+  "profitPath": "El usuario obtiene un beneficio económico mediante el ahorro directo en el pago de impuestos o el cobro de deducciones monetizables.",
+  "lossCauses": [
+   "Incumplimiento de los requisitos de reinversión",
+   "Rechazo del informe motivado por parte de la administración"
+  ],
+  "earlySignals": [
+   "Publicación del RDL 40/2026 en el BOE"
+  ],
+  "signals": {
+   "métrica": 0
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Incentivo fiscal regulado por normativa tributaria; no requiere autorización de la CNMV ni está sujeto a MiCA.",
+   "sources": [
+    "https://www.boe.es/eli/es/rdl/2026/11/20/40",
+    "https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/"
+   },
+   {
+    "title": "Real Decreto‑ley 40/2026, de 20 de noviembre, de medidas urgentes para el impulso de la competitividad y la soberanía te",
+    "url": "https://www.boe.es/eli/es/rdl/2026/11/20/40"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "gemini:gemini-3.1-flash-lite",
+   "verifier": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El Real Decreto‑ley 40/2026, publicado en el BOE el 20 de noviembre de 2026, introduce la nueva redacción del artículo 35.2 de la Ley del Impuesto sobre Sociedades que amplía las deducciones por innovación tecnológica. La información de la ficha coincide con la normativa y con la noticia de El Referente, aunque la URL oficial debe apuntar al BOE.",
+   "model": "groq:openai/gpt-oss-120b",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "web-boe-es",
+  "isNew": true,
+  "score": 54,
+  "rawScore": 59.4,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "compliance_risk",
+    "severity": "alta",
+    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 modifica recientemente la normativa fiscal, creando una novedad legislativa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: Se amplían los límites de monetización y se incluyen nuevas actividades deducibles, aumentando el potencial de ahorro.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: Existe un mercado consolidado de incentivos fiscales para I+D+i en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "Regulado por el CDTI y el Ministerio de Ciencia. · Verificador: El incentivo está regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación proviene del presupuesto estatal, sin necesidad de capital externo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Ecosistema de empresas innovadoras y consultoras fiscales. · Verificador: Se menciona un ecosistema de empresas y consultoras, pero no hay fuentes que lo confirmen.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Requiere adaptación de procesos contables internos. · Verificador: Requiere adaptación de procesos contables internos; no hay evidencia documental específica.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Alta competencia por fondos públicos y deducciones. · Verificador: Alta competencia por los fondos públicos, aunque no se citan datos concretos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo bajo si se cumplen los requisitos de certificación. · Verificador: Riesgo bajo siempre que se cumplan los requisitos de certificación, pero falta evidencia directa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo bajo al ser un incentivo estatal, sin embargo no hay fuentes que cuantifiquen el riesgo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Normativa nacional española. · Verificador: La normativa es de ámbito nacional español.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Ahorro fiscal directo. · Verificador: El beneficio se materializa como ahorro fiscal directo, aunque no hay fuentes que lo detallen.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T02:22:40Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)\nCATEGORÍA: negocio · Fiscalidad e Incentivos I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://www.boe.es/eli/es/rdl/2026/11/20/40\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Reducción directa de costes operativos y fiscales para empresas innovadoras.\nPUNTUACIÓN: 54/100 · Especulativa\nRIESGO: medio\nPLAZO: Anual\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Aumento del límite de monetización de 1 a 3 millones de euros; Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos\nMOTIVOS PARA DESCONFIAR: La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados.; Dependencia de la burocracia ministerial; Necesidad de auditoría externa para asegurar la deducción\nCÓMO PARTICIPAR: Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2; Contratar asesoría fiscal especializada para preparar el informe motivado; Aplicar la deducción en la declaración del Impuesto sobre Sociedades\nQUÉ PODRÍA HACERME PERDER EL DINERO: Incumplimiento de los requisitos de reinversión; Rechazo del informe motivado por parte de la administración\nFUENTES: https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/ | https://www.boe.es/eli/es/rdl/2026/11/20/40",
+  "firstSeenAt": "2026-11-24T02:22:40Z",
+  "lastSeenAt": "2026-11-24T02:22:40Z",
+  "runId": "run-20261124-0222",
+  "aliases": [
+   "news-elreferente-es-actualidad-el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comis"
+  ]
+ },
+ {
   "name": "Premios Órbita 2026 – Startups premiadas",
   "category": "startups",
   "subcategory": "aceleradora",
@@ -1530,6 +1911,361 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
+  "category": "startups",
+  "subcategory": "salud_genómica",
+  "kind": "activa",
+  "description": "Convocatoria del Ministerio de Asuntos Exteriores, UE y Cooperación para financiar proyectos de innovación genómica aplicados a la salud. No requiere inversión inicial y está abierta a entidades españolas.",
+  "officialUrl": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
+  "participateUrl": "https://sede.administracion.gob.es/",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Convocatoria gestionada por un organismo español, dirigida a solicitantes con sede en España",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere aporte económico por parte del solicitante",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica salida financiera; el beneficio es la obtención de la subvención",
+  "horizon": "corto-medio plazo",
+  "deadline": null,
+  "potential": "alto potencial de financiación pública para proyectos de salud genómica",
+  "difficulty": "media",
+  "timeNeeded": "varias semanas a meses para preparar y presentar la solicitud",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Enfoque en innovación genómica para salud · Verificador: Enfoque en innovación genómica aplicada a salud en cooperación internacional",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "Financiación pública puede impulsar desarrollo del proyecto · Verificador: Financiación pública no reembolsable para proyectos de I+D",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Sector de salud y genómica en crecimiento a nivel global · Verificador: Sector biotecnológico con alta demanda de soluciones genómicas",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "La convocatoria no especifica requisitos de equipo · Verificador: Depende de la capacidad técnica del solicitante",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 9.5,
+    "why": "Subvención sin coste para el beneficiario · Verificador: Subvención pública, riesgo financiero nulo para el beneficiario",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "No se menciona comunidad de usuarios o adopción previa · Verificador: No aplica, es una relación administrativa con el Estado",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "Dependerá de la ejecución y resultados del proyecto · Verificador: Depende de la ejecución del proyecto subvencionado",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 6.0,
+    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Concurrencia competitiva estándar en ayudas públicas",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Tecnología genómica con riesgos técnicos moderados · Verificador: La complejidad técnica es inherente a la genómica",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 9.5,
+    "why": "No hay inversión directa, riesgo financiero bajo · Verificador: No hay inversión de capital, riesgo financiero inexistente",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 9.5,
+    "why": "Convocatoria gestionada por organismo español · Verificador: Convocatoria oficial del Estado español",
+    "evidence": true
+   },
+   "salida": {
+    "v": 5.0,
+    "why": "Beneficio es la obtención de la subvención, no hay salida financiera directa · Verificador: El beneficio es la ejecución del proyecto, no una salida financiera",
+    "evidence": false
+   }
+  },
+  "redFlags": [],
+  "distrust": [],
+  "whyInteresting": [
+   "Financiación pública sin coste para proyectos de innovación genómica en salud, alineada con tendencias de biotecnología"
+  ],
+  "howToParticipate": [
+   "Revisar la convocatoria en la URL oficial",
+   "Descargar y leer los requisitos y bases de la ayuda",
+   "Preparar la documentación requerida (plan de proyecto, presupuesto, CVs, etc.)",
+   "Presentar la solicitud antes de la fecha límite indicada en la convocatoria",
+   "Esperar la evaluación y, en caso de ser seleccionado, gestionar la firma del convenio de subvención"
+  ],
+  "actionable": true,
+  "profitPath": "Obtener financiación pública que cubra los costes del proyecto de innovación genómica, sin necesidad de inversión propia",
+  "lossCauses": [
+   "Rechazo de la solicitud por no cumplir requisitos",
+   "Incumplimiento de los hitos y condiciones de la subvención"
+  ],
+  "earlySignals": [
+   "pulseScore 78 indica interés institucional"
+  ],
+  "signals": {
+   "pulseScore": 78
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una subvención pública, no está sujeta a regulación financiera (MiCA/CNMV) sino a la Ley General de Subvenciones.",
+   "sources": [
+    "https://www.infosubvenciones.es/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · BDNS",
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124"
+   }
+  ],
+  "discoveredVia": "Pulso · BDNS",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La convocatoria existe en la Base de Datos Nacional de Subvenciones (BDNS) bajo el ID 943124. Es una ayuda pública oficial gestionada por el Ministerio de Asuntos Exteriores, UE y Cooperación. No es una inversión financiera, sino una subvención pública.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "web-infosubvenciones-es",
+  "isNew": true,
+  "score": 35,
+  "rawScore": 35.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "bajo",
+  "flags": [],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Enfoque en innovación genómica para salud · Verificador: Enfoque en innovación genómica aplicada a salud en cooperación internacional",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Financiación pública puede impulsar desarrollo del proyecto · Verificador: Financiación pública no reembolsable para proyectos de I+D",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sector de salud y genómica en crecimiento a nivel global · Verificador: Sector biotecnológico con alta demanda de soluciones genómicas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "La convocatoria no especifica requisitos de equipo · Verificador: Depende de la capacidad técnica del solicitante",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Subvención sin coste para el beneficiario · Verificador: Subvención pública, riesgo financiero nulo para el beneficiario",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona comunidad de usuarios o adopción previa · Verificador: No aplica, es una relación administrativa con el Estado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Dependerá de la ejecución y resultados del proyecto · Verificador: Depende de la ejecución del proyecto subvencionado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Concurrencia competitiva estándar en ayudas públicas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Tecnología genómica con riesgos técnicos moderados · Verificador: La complejidad técnica es inherente a la genómica",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No hay inversión directa, riesgo financiero bajo · Verificador: No hay inversión de capital, riesgo financiero inexistente",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "Convocatoria gestionada por organismo español · Verificador: Convocatoria oficial del Estado español",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Beneficio es la obtención de la subvención, no hay salida financiera directa · Verificador: El beneficio es la ejecución del proyecto, no una salida financiera",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T02:22:40Z",
+    "pulseScore": 78.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica\nCATEGORÍA: startups · salud_genómica\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124\nENLACE DE PARTICIPACIÓN: https://sede.administracion.gob.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de financiación pública para proyectos de salud genómica\nPUNTUACIÓN: 35/100 · Descartar\nRIESGO: bajo\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Financiación pública sin coste para proyectos de innovación genómica en salud, alineada con tendencias de biotecnología\nMOTIVOS PARA DESCONFIAR: ninguno detectado (eso no significa que no existan)\nCÓMO PARTICIPAR: Revisar la convocatoria en la URL oficial; Descargar y leer los requisitos y bases de la ayuda; Preparar la documentación requerida (plan de proyecto, presupuesto, CVs, etc.); Presentar la solicitud antes de la fecha límite indicada en la convocatoria; Esperar la evaluación y, en caso de ser seleccionado, gestionar la firma del convenio de subvención\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rechazo de la solicitud por no cumplir requisitos; Incumplimiento de los hitos y condiciones de la subvención\nFUENTES: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
+  "firstSeenAt": "2026-11-24T02:22:40Z",
+  "lastSeenAt": "2026-11-24T02:22:40Z",
+  "runId": "run-20261124-0222",
+  "aliases": [
+   "web-infosubvenciones-es"
+  ]
  },
  {
   "name": "ORYKSA",
@@ -2778,6 +3514,822 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "OpenAI OpenWorks AI Evangelist Program",
+  "category": "ia_tecnologia",
+  "subcategory": "evangelismo_ia",
+  "kind": "activa",
+  "description": "OpenAI ofrece pagar hasta 8.000 USD al mes a personas que ayuden a pymes locales a integrar y usar ChatGPT. El programa, llamado OpenWorks, busca crear evangelistas de IA que impulsen la adopción en negocios de barrio. No requiere inversión de capital, pero sí habilidades de venta y conocimiento técnico de la herramienta.",
+  "officialUrl": "https://openai.com",
+  "participateUrl": null,
+  "country": "EE.UU.",
+  "spainAvailability": "no confirmada",
+  "spainNotes": "El anuncio no menciona explícitamente que residentes españoles puedan participar; podría requerir presencia física en EE.UU. o trabajar con negocios locales en EE.UU.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay costes de inscripción conocidos; la única inversión es tiempo y posibles gastos de marketing propio.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No hay activo que vender; los ingresos dependen de la continuidad del programa y del cumplimiento de los objetivos mensuales.",
+  "horizon": "corto‑medio plazo (meses) mientras dure el programa",
+  "deadline": null,
+  "potential": "Alto potencial de ingresos si se consigue una cartera de pymes que paguen por la consultoría de IA.",
+  "difficulty": "media",
+  "timeNeeded": "varias horas semanales para contactar, formar y asistir a pymes locales",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Programa nuevo anunciado en noviembre 2026 por Decrypt · Verificador: Anuncio reciente en medios digitales en noviembre 2026.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4.0,
+    "why": "Pago mensual de hasta 8.000 USD, sin inversión inicial · Verificador: Ingresos teóricos altos pero sin respaldo oficial ni contrato visible. · Discrepancia entre modelos (8 vs 4): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.5,
+    "why": "Mercado de pymes locales amplio pero fragmentado · Verificador: El mercado de consultoría IA es real, pero el programa no está validado.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "OpenAI es el patrocinador; no se detallan equipos locales · Verificador: No hay confirmación de que OpenAI gestione este programa. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "Financiado directamente por OpenAI, sin necesidad de capital externo · Verificador: No hay evidencia de presupuesto asignado por OpenAI para este fin. · Discrepancia entre modelos (9 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "Aún no existe comunidad de evangelistas; programa recién lanzado · Verificador: No existe comunidad ni registros de participantes. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Depende de la disposición de pymes a adoptar IA · Verificador: Depende de un programa que no parece existir oficialmente. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Otros consultores de IA pueden ofrecer servicios similares · Verificador: Alta competencia en servicios de consultoría IA independiente.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.5,
+    "why": "Requiere conocimientos básicos de ChatGPT; bajo riesgo técnico · Verificador: Bajo riesgo técnico, pero alto riesgo de estafa o pérdida de tiempo.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Ingresos no garantizados; dependen del cumplimiento de metas · Verificador: Alto riesgo de trabajar sin remuneración al no existir el programa. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "No se indica si el programa acepta participantes españoles · Verificador: Sin confirmación de disponibilidad en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.5,
+    "why": "No hay activo que liquidar; la salida es dejar de recibir pagos · Verificador: No hay activo ni contrato que liquidar.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "availability_spain_unknown",
+    "severity": "media",
+    "detail": "No se confirma que residentes en España puedan aplicar al programa"
+   },
+   {
+    "code": "dependencia_openai",
+    "severity": "baja",
+    "detail": "Los ingresos dependen exclusivamente de la continuidad del programa de OpenAI"
+   },
+   {
+    "code": "no_official_confirmation",
+    "severity": "critica",
+    "detail": "El programa no aparece en los canales oficiales de OpenAI (openai.com)."
+   },
+   {
+    "code": "potential_scam_or_misinformation",
+    "severity": "alta",
+    "detail": "La falta de una URL oficial y la naturaleza del anuncio sugieren una posible campaña de clickbait o desinformación."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información proviene de una única fuente mediática (Decrypt) sin confirmación oficial en los canales de OpenAI. No existe rastro de un programa llamado 'OpenWorks' en el sitio web oficial de OpenAI, lo que sugiere una posible confusión, desinformación o una campaña de marketing no verificada. La disponibilidad en España es inexistente según los términos estándar de programas de consultoría de OpenAI."
+   }
+  ],
+  "distrust": [
+   "falta de claridad sobre requisitos de elegibilidad y proceso de pago"
+  ],
+  "whyInteresting": [
+   "Posibilidad de obtener ingresos significativos sin inversión de capital",
+   "Acceso a soporte y branding de una empresa líder en IA"
+  ],
+  "howToParticipate": [
+   "Visitar la página oficial de OpenWorks de OpenAI (enlace no disponible en la fuente)",
+   "Crear una cuenta y completar el formulario de solicitud",
+   "Demostrar experiencia o capacidad para ayudar a pymes locales con ChatGPT",
+   "Cumplir con los objetivos mensuales establecidos por OpenAI"
+  ],
+  "actionable": true,
+  "profitPath": "Recibir pagos mensuales de OpenAI (hasta 8.000 USD) por prestar servicios de evangelismo y consultoría de IA a pequeñas empresas",
+  "lossCauses": [
+   "No alcanzar los objetivos de adopción requeridos",
+   "Cancelación del programa por parte de OpenAI",
+   "Incapacidad para encontrar pymes dispuestas a pagar"
+  ],
+  "earlySignals": [
+   "Anuncio reciente en Decrypt (23‑nov‑2026)",
+   "PulseScore 70"
+  ],
+  "signals": {
+   "pulseScore": 70
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No hay registro de este programa en la CNMV ni en el registro MiCA. Al no existir confirmación oficial, no se puede aplicar marco regulatorio.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Decrypt",
+    "url": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses"
+   },
+   {
+    "title": "OpenAI Official Website",
+    "url": "https://openai.com"
+   }
+  ],
+  "discoveredVia": "Pulso · Decrypt",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La información proviene de una única fuente mediática (Decrypt) sin confirmación oficial en los canales de OpenAI. No existe rastro de un programa llamado 'OpenWorks' en el sitio web oficial de OpenAI, lo que sugiere una posible confusión, desinformación o una campaña de marketing no verificada. La disponibilidad en España es inexistente según los términos estándar de programas de consultoría de OpenAI.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "web-openai-com",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 30.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "availability_spain_unknown",
+    "severity": "media",
+    "detail": "No se confirma que residentes en España puedan aplicar al programa"
+   },
+   {
+    "code": "dependencia_openai",
+    "severity": "baja",
+    "detail": "Los ingresos dependen exclusivamente de la continuidad del programa de OpenAI"
+   },
+   {
+    "code": "no_official_confirmation",
+    "severity": "critica",
+    "detail": "El programa no aparece en los canales oficiales de OpenAI (openai.com)."
+   },
+   {
+    "code": "potential_scam_or_misinformation",
+    "severity": "alta",
+    "detail": "La falta de una URL oficial y la naturaleza del anuncio sugieren una posible campaña de clickbait o desinformación."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información proviene de una única fuente mediática (Decrypt) sin confirmación oficial en los canales de OpenAI. No existe rastro de un programa llamado 'OpenWorks' en el sitio web oficial de OpenAI, lo que sugiere una posible confusión, desinformación o una campaña de marketing no verificada. La disponibilidad en España es inexistente según los términos estándar de programas de consultoría de OpenAI."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Programa nuevo anunciado en noviembre 2026 por Decrypt · Verificador: Anuncio reciente en medios digitales en noviembre 2026.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Pago mensual de hasta 8.000 USD, sin inversión inicial · Verificador: Ingresos teóricos altos pero sin respaldo oficial ni contrato visible. · Discrepancia entre modelos (8 vs 4): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de pymes locales amplio pero fragmentado · Verificador: El mercado de consultoría IA es real, pero el programa no está validado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "OpenAI es el patrocinador; no se detallan equipos locales · Verificador: No hay confirmación de que OpenAI gestione este programa. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Financiado directamente por OpenAI, sin necesidad de capital externo · Verificador: No hay evidencia de presupuesto asignado por OpenAI para este fin. · Discrepancia entre modelos (9 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "Aún no existe comunidad de evangelistas; programa recién lanzado · Verificador: No existe comunidad ni registros de participantes. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Depende de la disposición de pymes a adoptar IA · Verificador: Depende de un programa que no parece existir oficialmente. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Otros consultores de IA pueden ofrecer servicios similares · Verificador: Alta competencia en servicios de consultoría IA independiente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Requiere conocimientos básicos de ChatGPT; bajo riesgo técnico · Verificador: Bajo riesgo técnico, pero alto riesgo de estafa o pérdida de tiempo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Ingresos no garantizados; dependen del cumplimiento de metas · Verificador: Alto riesgo de trabajar sin remuneración al no existir el programa. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se indica si el programa acepta participantes españoles · Verificador: Sin confirmación de disponibilidad en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No hay activo que liquidar; la salida es dejar de recibir pagos · Verificador: No hay activo ni contrato que liquidar.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T02:22:40Z",
+    "pulseScore": 70.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: OpenAI OpenWorks AI Evangelist Program\nCATEGORÍA: ia_tecnologia · evangelismo_ia\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://openai.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EE.UU.\nDISPONIBILIDAD EN ESPAÑA: no confirmada\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de ingresos si se consigue una cartera de pymes que paguen por la consultoría de IA.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: corto‑medio plazo (meses) mientras dure el programa\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posibilidad de obtener ingresos significativos sin inversión de capital; Acceso a soporte y branding de una empresa líder en IA\nMOTIVOS PARA DESCONFIAR: No se confirma que residentes en España puedan aplicar al programa; Los ingresos dependen exclusivamente de la continuidad del programa de OpenAI; El programa no aparece en los canales oficiales de OpenAI (openai.com).; La falta de una URL oficial y la naturaleza del anuncio sugieren una posible campaña de clickbait o desinformación.; El verificador tiene dudas: La información proviene de una única fuente mediática (Decrypt) sin confirmación oficial en los canales de OpenAI. No existe rastro de un programa llamado 'OpenWorks' en el sitio web oficial de OpenAI, lo que sugiere una posible confusión, desinformación o una campaña de marketing no verificada. La disponibilidad en España es inexistente según los términos estándar de programas de consultoría de OpenAI.; falta de claridad sobre requisitos de elegibilidad y proceso de pago\nCÓMO PARTICIPAR: Visitar la página oficial de OpenWorks de OpenAI (enlace no disponible en la fuente); Crear una cuenta y completar el formulario de solicitud; Demostrar experiencia o capacidad para ayudar a pymes locales con ChatGPT; Cumplir con los objetivos mensuales establecidos por OpenAI\nQUÉ PODRÍA HACERME PERDER EL DINERO: No alcanzar los objetivos de adopción requeridos; Cancelación del programa por parte de OpenAI; Incapacidad para encontrar pymes dispuestas a pagar\nFUENTES: https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses | https://openai.com",
+  "firstSeenAt": "2026-11-24T02:22:40Z",
+  "lastSeenAt": "2026-11-24T02:22:40Z",
+  "runId": "run-20261124-0222",
+  "aliases": [
+   "web-decrypt-co"
+  ]
+ },
+ {
+  "name": "GateToken Launchpool",
+  "category": "lanzamientos",
+  "subcategory": "cripto",
+  "kind": "activa",
+  "description": "GateToken ha subido un 4,56 % tras anunciar incentivos en su Launchpool. Participar requiere una inversión mínima y permite obtener recompensas por staking. Es una oportunidad de corto plazo dentro del ecosistema de Gate.io.",
+  "officialUrl": "https://www.gate.io",
+  "participateUrl": "https://www.gate.io/startup",
+  "country": "Global (Seychelles/Cayman Islands)",
+  "spainAvailability": "no_autorizada_por_bde",
+  "spainNotes": "No se dispone de información específica sobre restricciones para residentes en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Los requisitos mínimos de staking varían según el pool; suele ser bajo (pocos dólares).",
+   "recommended": null,
+   "max": 2000.0
+  },
+  "canLoseAll": true,
+  "liquidity": "media",
+  "exitNotes": "Se puede retirar el stake y vender GATE en exchanges, pero la liquidez depende del volumen del token.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "unos minutos",
+  "subscores": {
+   "novedad": {
+    "v": 4.0,
+    "why": "Launchpool es una mecánica ya usada en varios exchanges · Verificador: Los Launchpools son una funcionalidad estándar y recurrente en exchanges centralizados.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "El token subió 4,56 % tras el anuncio de incentivos · Verificador: La rentabilidad depende de la volatilidad del token GATE y la dilución del pool.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Información limitada sobre el tamaño del mercado de GateToken · Verificador: GateToken tiene capitalización de mercado, pero su utilidad está muy centralizada en el ecosistema Gate.io.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.5,
+    "why": "No se dispone de datos sobre el equipo detrás del token · Verificador: La estructura corporativa de Gate.io es opaca y no hay transparencia sobre los desarrolladores del token.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.5,
+    "why": "No hay datos públicos de financiación externa · Verificador: No existen datos auditados de financiación externa para el token.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Actividad limitada a la comunidad de Gate.io · Verificador: Gate.io posee una base de usuarios activa a nivel global.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.0,
+    "why": "Uso restringido al ecosistema Gate.io · Verificador: Uso limitado principalmente a incentivos dentro de la plataforma.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otros launchpools similares en el sector cripto · Verificador: Alta competencia con otros exchanges (Binance, Bybit) que ofrecen productos similares.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Riesgo de fallos en contratos inteligentes y vulnerabilidades · Verificador: Riesgo inherente a la custodia centralizada y contratos de staking.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 7.5,
+    "why": "Alta volatilidad del precio del token · Verificador: Alta volatilidad del token y riesgo de pérdida total si el valor cae por debajo del coste de oportunidad.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "No se ha confirmado si hay restricciones regulatorias en España · Verificador: El exchange no está registrado en el Banco de España como VASP. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5.5,
+    "why": "Posible venta en exchanges con liquidez media · Verificador: Liquidez aceptable en el mercado secundario de Gate.io.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "NO_VASP_REGISTRATION",
+    "severity": "alta",
+    "detail": "Gate.io no figura en el registro de proveedores de servicios de activos virtuales del Banco de España."
+   },
+   {
+    "code": "CENTRALIZED_RISK",
+    "severity": "media",
+    "detail": "Los fondos quedan bajo custodia del exchange, sin protección de fondos de garantía de depósitos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Gate.io no figura en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España ni cuenta con autorización de la CNMV para prestar servicios de inversión. Aunque es un exchange global, su operativa en España carece de supervisión regulatoria directa bajo el marco MiCA/nacional, lo que implica un riesgo elevado para el usuario residente."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Incentivos de Launchpool pueden generar ganancias rápidas"
+  ],
+  "howToParticipate": [
+   "Crear cuenta en Gate.io",
+   "Depositar GATE o stablecoins",
+   "Acceder a la sección Launchpool",
+   "Seleccionar GateToken y stakear la cantidad mínima requerida",
+   "Reclamar recompensas al finalizar el periodo"
+  ],
+  "actionable": true,
+  "profitPath": "Stakear GateToken en el Launchpool y recibir recompensas en tokens o beneficios por la apreciación del precio",
+  "lossCauses": [
+   "Caída del precio del token",
+   "Fallo del contrato inteligente",
+   "Cierre anticipado del programa"
+  ],
+  "earlySignals": [
+   "Incremento del precio del 4,56 % tras el anuncio",
+   "Interés creciente en la comunidad de Gate.io"
+  ],
+  "signals": {
+   "pulseScore": 70
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en el registro de VASP del Banco de España. La CNMV no ha emitido advertencia específica sobre Gate.io, pero opera sin registro en España.",
+   "sources": [
+    "https://www.bde.es/wbe/es/para-el-ciudadano/proveedores-servicios-activos-virtuales/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · CoinMarketCap",
+    "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1DMGx5dnFBNGd2S2t1SDRWS0RhbGdHZmlLNkNpaXV3QzRnSDAxZ1hFZGdnOEFkcmJ1NUw2WDFCT1lkSTQ4TE90VUZKZ3RDb3gzVDI1WXVsaVJjVjRULVAwQWFrV0dJbnl0eC1Wel9Cc3I?oc=5"
+   },
+   {
+    "title": "Registro de proveedores de servicios de activos virtuales - Banco de España",
+    "url": "https://www.bde.es/wbe/es/para-el-ciudadano/proveedores-servicios-activos-virtuales/"
+   },
+   {
+    "title": "Gate.io Official Website",
+    "url": "https://www.gate.io"
+   }
+  ],
+  "discoveredVia": "Pulso · CoinMarketCap",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "Gate.io no figura en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España ni cuenta con autorización de la CNMV para prestar servicios de inversión. Aunque es un exchange global, su operativa en España carece de supervisión regulatoria directa bajo el marco MiCA/nacional, lo que implica un riesgo elevado para el usuario residente.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "web-gate-io",
+  "isNew": true,
+  "score": 18,
+  "rawScore": 28.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "NO_VASP_REGISTRATION",
+    "severity": "alta",
+    "detail": "Gate.io no figura en el registro de proveedores de servicios de activos virtuales del Banco de España."
+   },
+   {
+    "code": "CENTRALIZED_RISK",
+    "severity": "media",
+    "detail": "Los fondos quedan bajo custodia del exchange, sin protección de fondos de garantía de depósitos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Gate.io no figura en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España ni cuenta con autorización de la CNMV para prestar servicios de inversión. Aunque es un exchange global, su operativa en España carece de supervisión regulatoria directa bajo el marco MiCA/nacional, lo que implica un riesgo elevado para el usuario residente."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Launchpool es una mecánica ya usada en varios exchanges · Verificador: Los Launchpools son una funcionalidad estándar y recurrente en exchanges centralizados.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "El token subió 4,56 % tras el anuncio de incentivos · Verificador: La rentabilidad depende de la volatilidad del token GATE y la dilución del pool.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Información limitada sobre el tamaño del mercado de GateToken · Verificador: GateToken tiene capitalización de mercado, pero su utilidad está muy centralizada en el ecosistema Gate.io.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.5,
+    "points": 2.5,
+    "why": "No se dispone de datos sobre el equipo detrás del token · Verificador: La estructura corporativa de Gate.io es opaca y no hay transparencia sobre los desarrolladores del token.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "No hay datos públicos de financiación externa · Verificador: No existen datos auditados de financiación externa para el token.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Actividad limitada a la comunidad de Gate.io · Verificador: Gate.io posee una base de usuarios activa a nivel global.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso restringido al ecosistema Gate.io · Verificador: Uso limitado principalmente a incentivos dentro de la plataforma.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros launchpools similares en el sector cripto · Verificador: Alta competencia con otros exchanges (Binance, Bybit) que ofrecen productos similares.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo de fallos en contratos inteligentes y vulnerabilidades · Verificador: Riesgo inherente a la custodia centralizada y contratos de staking.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alta volatilidad del precio del token · Verificador: Alta volatilidad del token y riesgo de pérdida total si el valor cae por debajo del coste de oportunidad.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se ha confirmado si hay restricciones regulatorias en España · Verificador: El exchange no está registrado en el Banco de España como VASP. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Posible venta en exchanges con liquidez media · Verificador: Liquidez aceptable en el mercado secundario de Gate.io.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T02:22:40Z",
+    "pulseScore": 70.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: GateToken Launchpool\nCATEGORÍA: lanzamientos · cripto\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://www.gate.io\nENLACE DE PARTICIPACIÓN: https://www.gate.io/startup\nPAÍS: Global (Seychelles/Cayman Islands)\nDISPONIBILIDAD EN ESPAÑA: no_autorizada_por_bde\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 18/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Incentivos de Launchpool pueden generar ganancias rápidas\nMOTIVOS PARA DESCONFIAR: Gate.io no figura en el registro de proveedores de servicios de activos virtuales del Banco de España.; Los fondos quedan bajo custodia del exchange, sin protección de fondos de garantía de depósitos.; El verificador tiene dudas: Gate.io no figura en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España ni cuenta con autorización de la CNMV para prestar servicios de inversión. Aunque es un exchange global, su operativa en España carece de supervisión regulatoria directa bajo el marco MiCA/nacional, lo que implica un riesgo elevado para el usuario residente.\nCÓMO PARTICIPAR: Crear cuenta en Gate.io; Depositar GATE o stablecoins; Acceder a la sección Launchpool; Seleccionar GateToken y stakear la cantidad mínima requerida; Reclamar recompensas al finalizar el periodo\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio del token; Fallo del contrato inteligente; Cierre anticipado del programa\nFUENTES: https://news.google.com/rss/articles/CBMicEFVX3lxTE1DMGx5dnFBNGd2S2t1SDRWS0RhbGdHZmlLNkNpaXV3QzRnSDAxZ1hFZGdnOEFkcmJ1NUw2WDFCT1lkSTQ4TE90VUZKZ3RDb3gzVDI1WXVsaVJjVjRULVAwQWFrV0dJbnl0eC1Wel9Cc3I?oc=5 | https://www.bde.es/wbe/es/para-el-ciudadano/proveedores-servicios-activos-virtuales/ | https://www.gate.io",
+  "firstSeenAt": "2026-11-24T02:22:40Z",
+  "lastSeenAt": "2026-11-24T02:22:40Z",
+  "runId": "run-20261124-0222",
+  "aliases": [
+   "web-news-google-com"
+  ]
  },
  {
   "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",

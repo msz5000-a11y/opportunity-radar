@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-23T22:24:50Z",
+ "generatedAt": "2026-11-24T02:24:08Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 16,
+ "studied": 20,
  "selected": [],
  "nearMisses": [
   {
@@ -67,6 +67,33 @@
    "passed": 8,
    "failed": [
     "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
+  {
+   "id": "web-boe-es",
+   "name": "Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)",
+   "category": "negocio",
+   "score": 54,
+   "adjustedScore": 54,
+   "risk": "medio",
+   "officialUrl": "https://www.boe.es/eli/es/rdl/2026/11/20/40",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": true,
+    "vigente": true
+   },
+   "passed": 8,
+   "failed": [
+    "Nota del radar de 70/100 o más"
    ],
    "hasManual": true
   },
@@ -129,47 +156,18 @@
    "hasManual": true
   },
   {
-   "id": "web-congress-gov",
-   "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",
-   "category": "cripto",
-   "score": 16,
-   "adjustedScore": 16,
-   "risk": "medio",
-   "officialUrl": "https://www.congress.gov",
+   "id": "web-infosubvenciones-es",
+   "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
+   "category": "startups",
+   "score": 35,
+   "adjustedScore": 35,
+   "risk": "bajo",
+   "officialUrl": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
     "nota": false,
     "verificada": true,
-    "riesgos": true,
-    "espana": false,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Disponible en tu región",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
-   "id": "web-elreferente-es",
-   "name": "Premios Órbita 2026 – Startups premiadas",
-   "category": "startups",
-   "score": 48,
-   "adjustedScore": 48,
-   "risk": "medio",
-   "officialUrl": "https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
     "riesgos": true,
     "espana": true,
     "presupuesto": true,
@@ -178,10 +176,9 @@
     "beneficio": false,
     "vigente": true
    },
-   "passed": 5,
+   "passed": 6,
    "failed": [
     "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
     "Web oficial y al menos 2 fuentes",
     "Vía clara y legal para ganar dinero"
    ],
@@ -369,17 +366,80 @@
    "webLeida": false,
    "generadoEn": "2026-11-22T08:58:02Z",
    "fichaScore": 61
+  },
+  "web-boe-es": {
+   "segundaOpinion": {
+    "veredicto": "confirmada",
+    "motivo": "El Real Decreto-ley 40/2026 es una normativa vigente publicada en el BOE.",
+    "contradicciones": [
+     "El texto oficial no menciona costes de certificación o informes motivados, aunque la ficha los indica."
+    ]
+   },
+   "viaDeBeneficio": {
+    "existe": true,
+    "explicacion": "La deducción se aplica en la declaración del Impuesto sobre Sociedades, reduciendo la carga fiscal o aboniéndose directamente las deducciones monetizadas."
+   },
+   "resumen": "El RDL 40/2026 amplía las deducciones fiscales por I+D+i, permitiendo a las empresas reducir su impuesto sobre sociedades o recibir abono directo de las deducciones. Se aplica a actividades de I+D+i dentro de la actividad empresarial en España.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que la empresa realice actividades de I+D+i según el artículo 35.2 del RDL.",
+    "Consultar el texto oficial del RDL 40/2026 para confirmar los requisitos y límites.",
+    "Reunir la documentación técnica y financiera que justifique la actividad de I+D+i.",
+    "Preparar un informe motivado que describa la actividad y los resultados esperados.",
+    "Confirmar con la Agencia Tributaria que el informe cumple los requisitos de la normativa."
+   ],
+   "pasos": [
+    {
+     "titulo": "Evaluar actividades de I+D+i",
+     "detalle": "Identificar los proyectos que cumplen con el artículo 35.2 y documentar los costes y resultados.",
+     "tiempo": "1-2 semanas"
+    },
+    {
+     "titulo": "Preparar informe motivado",
+     "detalle": "Redactar el informe con la descripción técnica, costes y justificación de la deducción.",
+     "tiempo": "2-4 semanas"
+    },
+    {
+     "titulo": "Presentar informe a la Agencia Tributaria",
+     "detalle": "Enviar el informe motivado junto con la documentación de soporte.",
+     "tiempo": "1 semana"
+    },
+    {
+     "titulo": "Aplicar deducción en la declaración",
+     "detalle": "Incluir la deducción en la declaración del Impuesto sobre Sociedades del ejercicio fiscal correspondiente.",
+     "tiempo": "1 semana"
+    }
+   ],
+   "planDeSalida": "El beneficio se materializa al presentar la declaración del Impuesto sobre Sociedades del ejercicio fiscal en el que se aplica la deducción; si se opta por abono, se recibe el importe directamente tras la aprobación del informe.",
+   "senalesDeAlarma": [
+    "Rechazo del informe motivado por la Agencia Tributaria.",
+    "Incumplimiento de los requisitos de reinversión o de la actividad de I+D+i.",
+    "Auditoría que detecte documentación insuficiente o incorrecta."
+   ],
+   "erroresTipicos": [
+    "No documentar adecuadamente la actividad de I+D+i.",
+    "Presentar un informe motivado incompleto o sin la información técnica requerida.",
+    "No cumplir con los requisitos de reinversión de los fondos deducidos.",
+    "No incluir la deducción en la declaración del Impuesto sobre Sociedades."
+   ],
+   "fiscalidad": "La deducción reduce la base imponible del Impuesto sobre Sociedades. No afecta directamente al IRPF, salvo que la empresa distribuya dividendos de los beneficios reducidos. Se recomienda confirmar con un asesor fiscal la aplicación específica a la situación de la empresa.",
+   "tiempoNecesario": "Estimado total de 2-3 meses de gestión continua, con revisiones periódicas de la documentación y cumplimiento de los requisitos.",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-24T02:24:12Z",
+   "fichaScore": 54
   }
  },
  "ai": {
-  "used": 0,
+  "used": 1,
   "errors": [],
-  "calls": {}
+  "calls": {
+   "groq": 1
+  }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-23T22:24:50Z",
-  "status": 503,
-  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "reason": []
+  "at": "2026-11-24T02:24:12Z",
+  "status": 200
  }
 }
