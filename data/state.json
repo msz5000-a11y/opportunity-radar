@@ -1,6 +1,6 @@
 {
  "usdToEur": 0.91416,
- "discoveryCursor": 0,
+ "discoveryCursor": 2,
  "lastDaily": "2026-11-22",
  "lastWeekly": "2026-11-22",
  "cleanupV3": true,
@@ -10,6 +10,12 @@
   "gr:942033",
   "n:6f3f956ffa71",
   "n:64175f7ae73b",
-  "gr:943076"
+  "gr:943076",
+  "n:cca5f077ca63",
+  "n:4419f81343e9",
+  "n:448b9775394b",
+  "gr:944165",
+  "gr:942536",
+  "gr:942572"
  ]
 }

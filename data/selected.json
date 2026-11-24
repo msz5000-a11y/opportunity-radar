@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T02:24:08Z",
+ "generatedAt": "2026-11-24T12:23:51Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 20,
+ "studied": 22,
  "selected": [],
  "nearMisses": [
   {
@@ -156,30 +156,30 @@
    "hasManual": true
   },
   {
-   "id": "web-infosubvenciones-es",
-   "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
+   "id": "web-octo-health",
+   "name": "Octo Health",
    "category": "startups",
-   "score": 35,
-   "adjustedScore": 35,
-   "risk": "bajo",
-   "officialUrl": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
-   "minEntry": 0,
+   "score": 39,
+   "adjustedScore": 39,
+   "risk": "medio",
+   "officialUrl": "https://octo.health/",
+   "minEntry": 8,
    "canLoseAll": false,
    "checks": {
     "nota": false,
     "verificada": true,
     "riesgos": true,
-    "espana": true,
+    "espana": false,
     "presupuesto": true,
     "riesgo_global": true,
-    "fuentes": false,
+    "fuentes": true,
     "beneficio": false,
     "vigente": true
    },
    "passed": 6,
    "failed": [
     "Nota del radar de 70/100 o más",
-    "Web oficial y al menos 2 fuentes",
+    "Disponible en tu región",
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": false
@@ -432,14 +432,14 @@
   }
  },
  "ai": {
-  "used": 1,
+  "used": 0,
   "errors": [],
-  "calls": {
-   "groq": 1
-  }
+  "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-24T02:24:12Z",
-  "status": 200
+  "at": "2026-11-24T12:23:51Z",
+  "status": 503,
+  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "reason": []
  }
 }

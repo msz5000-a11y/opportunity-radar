@@ -1,6 +1,582 @@
 {
- "generatedAt": "2026-11-23T22:41:07Z",
+ "generatedAt": "2026-11-24T12:36:32Z",
  "items": [
+  {
+   "name": "Hermit CRM",
+   "type": "software",
+   "originCountry": null,
+   "summary": "Hermit CRM is a free, open‑source local CRM for solopreneurs that stores data as plain‑text markdown files on the user's computer. It targets founders, freelancers and anyone managing their own sales pipeline on Mac or Linux.",
+   "traction": [
+    "No traction data (financing, revenue, users) provided in the source, verify"
+   ],
+   "whyItWorked": [
+    "Open‑source and free, removing price barrier",
+    "Data stored locally, appealing to privacy‑concerned users",
+    "AI‑assisted outreach and dashboard creation adds productivity",
+    "Simple markdown + git workflow makes it easy to back up and version",
+    "Focused on a niche (solo founders) reduces competition"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "High adoption of freelancers and solo entrepreneurs in Spain; local data storage aligns with GDPR concerns.",
+     "adapt": "Translate UI to Spanish, integrate with local email providers (e.g., Outlook, Gmail), support Euro currency in reports.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 5,
+     "why": "Growing freelance community, but lower Mac/Linux penetration; still attractive for privacy‑aware users.",
+     "adapt": "Arabic UI translation, support Arabic date formats, ensure compatibility with Windows (optional) as many Egyptian users use Windows.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 6,
+     "why": "High‑value solo consultants and boutique agencies value data sovereignty; GDPR‑like regulations in GCC make local storage appealing.",
+     "adapt": "Arabic UI, support Gulf Arabic dialect, integrate with regional email services, ensure compliance with local data‑residency expectations.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     500,
+     5000
+    ],
+    "weeks": 6,
+    "team": "1 full‑stack developer (Rust/Go/Python), 1 UI/UX designer, 1 AI prompt engineer (optional)",
+    "stack": "Electron or Tauri for cross‑platform desktop app, markdown + git for storage, OpenAI/Claude API for AI features, no‑code tools for UI prototyping (e.g., Figma).",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "Freemium model: core CRM remains free, charge for premium AI‑assisted features, custom integrations, and paid support plans.",
+   "risks": [
+    "Limited differentiation once larger CRMs add local‑storage options",
+    "Dependence on third‑party AI APIs could raise costs",
+    "Low Mac/Linux market share in target regions",
+    "Open‑source community could fork the product"
+   ],
+   "firstSteps": [
+    "Conduct surveys/interviews with 20‑30 freelancers in each target market to validate pain points.",
+    "Build a minimal desktop prototype (basic contacts, pipeline, markdown storage).",
+    "Release a beta on GitHub and collect feedback.",
+    "Add AI outreach draft feature using a free tier of an LLM API.",
+    "Iterate UI localization for Spanish and Arabic."
+   ],
+   "officialUrl": "https://hermitcrm.io/",
+   "verified": false,
+   "id": "hermitcrm",
+   "links": [
+    {
+     "title": "Hacker News: Hermit CRM – Free open-source CRM for solopreneurs",
+     "url": "https://hermitcrm.io/"
+    },
+    {
+     "title": "Web oficial",
+     "url": "https://hermitcrm.io/"
+    },
+    {
+     "title": "Buscar «Hermit CRM» en Google",
+     "url": "https://www.google.com/search?q=Hermit+CRM"
+    }
+   ],
+   "source": "Hacker News",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "Hermit CRM es un CRM open‑source gratuito para solopreneurs; aunque no hay datos de usuarios o ingresos, su naturaleza libre y modular lo hace fácil de replicar y monetizar localmente.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 66
+  },
+  {
+   "name": "LightSprint.ai",
+   "type": "saas",
+   "originCountry": "no consta, verificar",
+   "summary": "Plataforma colaborativa que permite a product managers, diseñadores e ingenieros trabajar en sesiones en tiempo real para crear y lanzar cambios de código con IA. Sirve a equipos de desarrollo de empresas que buscan trazabilidad y velocidad.",
+   "traction": [
+    "Desde abril de 2026 trabaja con más de 100 compañías.",
+    "Los no‑ingenieros han enviado miles de pull requests con una tasa de merge promedio superior al 80%."
+   ],
+   "whyItWorked": [
+    "Enfoque \"spec‑first\" con trazabilidad de requisitos a pruebas.",
+    "Entorno multijugador que permite a todos los roles participar simultáneamente.",
+    "Control de ingenieros mediante flujos de GitHub y sandbox en la nube.",
+    "Integración con agentes de codificación IA existentes."
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "Alta adopción de transformación digital y equipos de producto en empresas españolas; necesidad de acelerar entregas sin perder control.",
+     "adapt": "Localizar la UI al español, cumplir con RGPD y conectar con proveedores de nube locales (Azure España).",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 5,
+     "why": "Mercado en crecimiento de software empresarial, pero menor madurez en IA y posible resistencia a datos en la nube extranjera.",
+     "adapt": "Traducción al árabe, cumplimiento con Ley de Protección de Datos Egipcia y posible uso de centros de datos locales.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 6,
+     "why": "Grandes inversiones en tecnología y adopción de IA en el sector público y privado; sin embargo, requisitos estrictos de soberanía de datos.",
+     "adapt": "Soporte en árabe e inglés, cumplimiento con normas de seguridad de datos de cada emirato y posible despliegue en nubes locales (e.g., AWS Middle East).",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     15000,
+     30000
+    ],
+    "weeks": 16,
+    "team": "product manager, UI/UX designer, backend developer, AI/ML engineer, QA tester",
+    "stack": "React frontend, Node.js backend, OpenAI/GPT API, GitHub Actions, AWS/GCP cloud",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "Modelo de suscripción SaaS por usuario/mes o por número de sesiones de colaboración.",
+   "risks": [
+    "Resistencia de equipos de ingeniería a ceder control a IA.",
+    "Cumplimiento de normativas de datos y soberanía en GCC y Egipto.",
+    "Dependencia de proveedores externos de modelos LLM.",
+    "Competencia de plataformas de desarrollo colaborativo ya establecidas."
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con 5‑10 empresas de software en España para validar necesidad de colaboración multijugador.",
+    "Construir un prototipo de integración con GitHub usando herramientas no‑code (p. ej. Zapier + OpenAI) para demostrar flujo básico.",
+    "Obtener feedback y ajustar especificaciones de trazabilidad y seguridad.",
+    "Buscar un socio local de nube para pruebas piloto en Egipto y GCC.",
+    "Definir modelo de precios y preparar material de venta en español y árabe."
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "lightsprintai",
+   "links": [
+    {
+     "title": "YourStory: Beyond tickets: How LightSprint.ai is building a multiplayer software factory where PMs an",
+     "url": "https://yourstory.com/2026/11/lightsprintai-software-factory-pms-designers-engineers"
+    },
+    {
+     "title": "Buscar «LightSprint.ai» en Google",
+     "url": "https://www.google.com/search?q=LightSprint.ai"
+    }
+   ],
+   "source": "YourStory",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "LightSprint.ai ofrece una fábrica de software colaborativa con IA; aunque no se citan datos de financiación o usuarios, el modelo SaaS es replicable con un equipo pequeño en España o el Golfo.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 57
+  },
+  {
+   "name": "SparrowDesk Phone Calls",
+   "type": "saas",
+   "originCountry": null,
+   "summary": "SparrowDesk Phone Calls es una solución que permite gestionar llamadas telefónicas junto con email, chat y WhatsApp desde una única bandeja de entrada. Está dirigida a equipos de soporte y atención al cliente que buscan centralizar la comunicación.",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 6,
+     "why": "Los equipos de atención al cliente en España demandan cada vez más canales integrados; la propuesta multicanal encaja con esa necesidad.",
+     "adapt": "Traducción al español, integración con proveedores locales de telefonía y métodos de pago SEPA.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 5,
+     "why": "En Egipto el soporte omnicanal está en crecimiento, pero el uso de WhatsApp y llamadas es alto, lo que favorece la adopción.",
+     "adapt": "Localizar al árabe, integrar con operadores locales y considerar pagos móviles (e‑wallet).",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 5,
+     "why": "En el Golfo la atención al cliente premium es clave; la integración de voz y mensajería puede ser atractiva para empresas B2B.",
+     "adapt": "Traducción al árabe, cumplimiento de normas de protección de datos locales y conexión con operadores del GCC.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     500,
+     5000
+    ],
+    "weeks": 6,
+    "team": "Product manager, diseñador UI/UX, especialista no‑code (Zapier/Make), integrador de telecomunicaciones (Twilio)",
+    "stack": "Twilio, Zapier/Make, Airtable o Google Sheets, Softr o Bubble (para la UI)",
+    "noCode": true
+   },
+   "regulated": false,
+   "monetization": "Suscripción mensual por usuario/mesa de ayuda (plan básico y premium con funcionalidades avanzadas).",
+   "risks": [
+    "Dependencia de la calidad de la integración telefónica (Twilio u otro proveedor)",
+    "Competencia de plataformas de CRM con módulos de voz integrados",
+    "Cumplimiento de normativas de protección de datos en cada mercado",
+    "Costes variables de telefonía que pueden afectar el margen"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas a responsables de soporte en pymes de cada mercado para validar la necesidad de un inbox multicanal",
+    "Construir un prototipo rápido usando Twilio + Zapier + una interfaz no‑code (Softr)",
+    "Lanzar una prueba piloto con 5‑10 empresas y medir uso y satisfacción",
+    "Ajustar precios y funcionalidades según feedback antes de escalar"
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "sparrowdeskphonecalls",
+   "links": [
+    {
+     "title": "Product Hunt: SparrowDesk Phone Calls",
+     "url": "https://www.producthunt.com/products/sparrowdesk"
+    },
+    {
+     "title": "Buscar «SparrowDesk Phone Calls» en Google",
+     "url": "https://www.google.com/search?q=SparrowDesk+Phone+Calls"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "SparrowDesk integra llamadas telefónicas en la bandeja de entrada junto a email, chat y WhatsApp; no hay datos de ingresos o usuarios, pero es un SaaS de soporte que puede lanzarse rápidamente.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 55
+  },
+  {
+   "name": "Juncts",
+   "type": "saas",
+   "originCountry": "no consta, verificar",
+   "summary": "Juncts es una herramienta que utiliza IA para priorizar y redactar mensajes en tus conversaciones directas. Está dirigida a profesionales que gestionan gran volumen de DMs y buscan eficiencia.",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 4,
+     "why": "El concepto es genérico y no hay evidencia de demanda local ni de competidores directos en España.",
+     "adapt": "Traducción al español, integración con plataformas de mensajería populares en España y adaptación a métodos de pago locales.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 3,
+     "why": "El mercado egipcio tiene menor adopción de herramientas de IA para DMs y la infraestructura de pago es limitada.",
+     "adapt": "Localización al árabe, cumplimiento de normativas de datos locales y adaptación a métodos de pago egipcios.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 3,
+     "why": "En el Golfo la privacidad en mensajería es sensible y la adopción de IA aún está emergiendo.",
+     "adapt": "Traducción al árabe, cumplimiento de regulaciones de protección de datos del GCC y adaptación a sistemas de pago regionales.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 16,
+    "team": "desarrollador backend, desarrollador frontend, diseñador UI/UX, ingeniero de IA, product manager",
+    "stack": "Node.js, React, OpenAI API, PostgreSQL",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "suscripción mensual por usuario o por equipo",
+   "risks": [
+    "dependencia de APIs de IA externas",
+    "competencia de grandes plataformas de mensajería que añadan funciones similares",
+    "resistencia de usuarios por preocupaciones de privacidad"
+   ],
+   "firstSteps": [
+    "Validar la necesidad mediante entrevistas a profesionales que gestionan DMs (ventas, community managers).",
+    "Crear un prototipo de bajo coste usando herramientas no‑code (por ejemplo, Bubble + integración con OpenAI).",
+    "Lanzar una beta cerrada en España para medir adopción y recopilar feedback.",
+    "Iterar el producto y definir precios de suscripción.",
+    "Expandir pruebas a Egipto y GCC adaptando idioma y métodos de pago."
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "juncts",
+   "links": [
+    {
+     "title": "Product Hunt: Juncts",
+     "url": "https://www.producthunt.com/products/juncts"
+    },
+    {
+     "title": "Buscar «Juncts» en Google",
+     "url": "https://www.google.com/search?q=Juncts"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "Juncts actúa como un superhumano para DMs con IA que triagea y redacta mensajes; no se citan métricas, pero el producto SaaS de gestión de comunicaciones es de bajo coste.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 36
+  },
+  {
+   "name": "Claude Ship",
+   "type": "saas",
+   "originCountry": "no consta, verificar",
+   "summary": "Claude Ship es una herramienta que permite enviar código rápidamente a entornos de producción o revisión. Está dirigida a desarrolladores y equipos de ingeniería que buscan acelerar el ciclo de despliegue.",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 3,
+     "why": "El mercado español de desarrollo de software está creciendo, pero sin datos de tracción es incierto el encaje.",
+     "adapt": "Localizar la interfaz y documentación al español; integrar pasarelas de pago locales.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 2,
+     "why": "Egipto tiene una comunidad de desarrolladores emergente, pero la falta de información dificulta estimar la demanda.",
+     "adapt": "Traducción al árabe, adaptación a métodos de pago locales y considerar infraestructura de hosting regional.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 2,
+     "why": "En el Golfo la adopción de herramientas SaaS es alta, pero sin evidencia de uso local el encaje es bajo.",
+     "adapt": "Soporte en árabe e inglés, cumplimiento con normativas de datos locales y opciones de pago regionales.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 12,
+    "team": "Product manager, desarrollador backend, desarrollador frontend, diseñador UI/UX, ingeniero DevOps",
+    "stack": "Node.js, React, PostgreSQL, AWS o alternativa low-code como Bubble para prototipo rápido",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "Modelo de suscripción mensual o anual por usuario/equipo",
+   "risks": [
+    "Falta de diferenciación frente a competidores establecidos",
+    "Dependencia de integración con múltiples plataformas de despliegue",
+    "Adopción limitada sin pruebas de concepto claras"
+   ],
+   "firstSteps": [
+    "Crear una landing page en español, inglés y árabe para captar interés",
+    "Realizar entrevistas con desarrolladores en España, Egipto y GCC para validar necesidad",
+    "Desarrollar un prototipo mínimo funcional usando herramientas low-code para probar el flujo de envío de código",
+    "Obtener feedback y ajustar funcionalidades antes de invertir en desarrollo completo"
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "claudeship",
+   "links": [
+    {
+     "title": "Product Hunt: Claude Ship",
+     "url": "https://www.producthunt.com/products/claude-code"
+    },
+    {
+     "title": "Buscar «Claude Ship» en Google",
+     "url": "https://www.google.com/search?q=Claude+Ship"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "Claude Ship permite enviar código tan rápido como se escribe; sin datos de financiación o usuarios, pero el enfoque de herramienta de productividad para desarrolladores es replicable.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 32
+  },
+  {
+   "name": "tday.com",
+   "type": "software",
+   "originCountry": "no consta, verificar",
+   "summary": "no consta, verificar",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 0,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 0,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 0,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     500,
+     5000
+    ],
+    "weeks": 8,
+    "team": "desarrollador front‑end, diseñador UI/UX, product manager",
+    "stack": "Webflow / Bubble / Zapier",
+    "noCode": true
+   },
+   "regulated": false,
+   "monetization": "no consta, verificar",
+   "risks": [
+    "falta de información clara sobre el producto",
+    "incertidumbre sobre el modelo de negocio",
+    "posible competencia desconocida"
+   ],
+   "firstSteps": [
+    "Verificar la existencia y descripción oficial de tday.com",
+    "Contactar al creador o al equipo para obtener más detalles del producto y métricas",
+    "Realizar entrevistas a usuarios potenciales en España, Egipto y GCC para validar necesidad"
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "tdaycom",
+   "links": [
+    {
+     "title": "Product Hunt: tday.com",
+     "url": "https://www.producthunt.com/products/tday"
+    },
+    {
+     "title": "Buscar «tday.com» en Google",
+     "url": "https://www.google.com/search?q=tday.com"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "tday.com ofrece demos narradas de funcionalidades mediante un agente de codificación; la fuente no indica métricas de crecimiento, pero el producto de IA para documentación es fácil de replicar.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 28
+  },
+  {
+   "name": "Granular.Build",
+   "type": "saas",
+   "originCountry": "no consta, verificar",
+   "summary": "Granular.Build es una plataforma visual que permite poner agentes de IA a trabajar en un espacio gráfico. Está dirigida a desarrolladores y equipos que construyen flujos de trabajo basados en IA.",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 2,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 2,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 2,
+     "why": "no consta, verificar",
+     "adapt": "no consta, verificar",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 16,
+    "team": "product manager, UI/UX designer, front‑end developer, back‑end developer, AI specialist",
+    "stack": "React, Node.js, OpenAI API, AWS",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "no consta, verificar",
+   "risks": [
+    "baja adopción de herramientas de IA visuales",
+    "competencia de plataformas establecidas",
+    "costes de infraestructura en la nube"
+   ],
+   "firstSteps": [
+    "Crear una landing page simple para captar interés y validar la necesidad.",
+    "Realizar entrevistas con potenciales usuarios (desarrolladores, equipos de IA) en España, Egipto y GCC.",
+    "Construir un prototipo mínimo usando herramientas no‑code (p. ej., Bubble) para demostrar la interfaz visual."
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "granularbuild",
+   "links": [
+    {
+     "title": "Product Hunt: Granular.Build",
+     "url": "https://www.producthunt.com/products/granular-build"
+    },
+    {
+     "title": "Buscar «Granular.Build» en Google",
+     "url": "https://www.google.com/search?q=Granular.Build"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "Granular.Build pone agentes de IA a trabajar en un espacio visual; la noticia no menciona tracción, pero el modelo de plataforma de IA visual es adaptable a mercados locales.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 27
+  },
+  {
+   "name": "distribution.dev",
+   "type": "saas",
+   "originCountry": "no consta, verificar",
+   "summary": "Plataforma que permite a empresas anunciarse a desarrolladores en múltiples sitios con una única campaña. Está dirigida a equipos de marketing y product managers que buscan alcanzar a audiencias técnicas de forma eficiente.",
+   "traction": [],
+   "whyItWorked": [],
+   "markets": {
+    "es": {
+     "fit": 0,
+     "why": "No hay datos de adopción ni referencias locales; el encaje es incierto.",
+     "adapt": "Traducir la interfaz al español, adaptar los canales de publicación a sitios populares entre desarrolladores españoles.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 0,
+     "why": "Falta información sobre presencia o demanda en Egipto; el mercado de desarrolladores es más limitado.",
+     "adapt": "Localizar al árabe, considerar métodos de pago locales y plataformas de publicación relevantes en Egipto.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 0,
+     "why": "Sin evidencia de uso o socios en la región del Golfo; la regulación publicitaria y los canales pueden diferir.",
+     "adapt": "Traducción al árabe, integración con redes publicitarias locales y cumplimiento de normas de privacidad del GCC.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 12,
+    "team": "Product manager, backend developer, frontend developer, UI/UX designer, marketer",
+    "stack": "Node.js / React / PostgreSQL o alternativa low‑code (Bubble) para validar rápidamente",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "Modelo de suscripción mensual o pago por campaña (CPC/CPM) a los anunciantes.",
+   "risks": [
+    "Baja adopción por parte de los desarrolladores si los sitios de publicación no son relevantes.",
+    "Competencia de plataformas publicitarias ya establecidas (Google Ads, LinkedIn Ads).",
+    "Dificultad para integrar y mantener conexiones con múltiples sitios de terceros."
+   ],
+   "firstSteps": [
+    "Crear una landing page en español, árabe e inglés describiendo la propuesta de valor.",
+    "Realizar entrevistas con al menos 10 equipos de marketing de empresas tech en España, Egipto y GCC.",
+    "Diseñar y lanzar una campaña piloto con un presupuesto reducido en 2‑3 sitios de desarrollo populares.",
+    "Recopilar métricas de clics, conversiones y feedback para validar el modelo de negocio."
+   ],
+   "officialUrl": null,
+   "verified": false,
+   "id": "distributiondev",
+   "links": [
+    {
+     "title": "Product Hunt: distribution.dev",
+     "url": "https://www.producthunt.com/products/distribution-dev"
+    },
+    {
+     "title": "Buscar «distribution.dev» en Google",
+     "url": "https://www.google.com/search?q=distribution.dev"
+    }
+   ],
+   "source": "Product Hunt",
+   "foundAt": "2026-11-24T12:36:32Z",
+   "why": "distribution.dev permite anunciarse a desarrolladores en múltiples sitios con una sola campaña; sin cifras de tracción en la fuente, pero el concepto de marketplace de publicidad es escalable y de bajo capital.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 18
+  },
   {
    "name": "Far Eye",
    "type": "saas",
@@ -998,217 +1574,249 @@
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:08+00:00"
+   "at": "2026-11-24T12:36:32+00:00"
   },
   "TechCrunch Venture": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:09+00:00"
+   "at": "2026-11-24T12:36:33+00:00"
   },
   "Crunchbase News": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:09+00:00"
+   "at": "2026-11-24T12:36:33+00:00"
   },
   "EU-Startups": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:09+00:00"
+   "at": "2026-11-24T12:36:34+00:00"
   },
   "Tech.eu": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-23T22:41:10+00:00"
+   "at": "2026-11-24T12:36:34+00:00"
   },
   "Sifted": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:10+00:00"
+   "at": "2026-11-24T12:36:35+00:00"
   },
   "YourStory": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:10+00:00"
+   "at": "2026-11-24T12:36:35+00:00"
   },
   "TechCabal": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:11+00:00"
+   "at": "2026-11-24T12:36:37+00:00"
   },
   "Disrupt Africa": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:12+00:00"
+   "at": "2026-11-24T12:36:37+00:00"
   },
   "Wamda": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:12+00:00"
+   "at": "2026-11-24T12:36:38+00:00"
   },
   "Rest of World": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:12+00:00"
+   "at": "2026-11-24T12:36:38+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-23T22:41:12+00:00"
+   "at": "2026-11-24T12:37:05+00:00"
   },
   "Hacker News": {
    "ok": true,
-   "items": 2,
+   "items": 3,
    "error": null,
-   "at": "2026-11-23T22:41:13+00:00"
+   "at": "2026-11-24T12:37:05+00:00"
   }
  },
- "aiErrors": [],
+ "aiErrors": [
+  "verifier/gemini: HTTP 503",
+  "verifier/gemini: HTTP 503"
+ ],
  "seenUrls": [
-  "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/",
-  "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
-  "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://www.producthunt.com/products/dog-translator-supertranslator",
-  "https://techcabal.com/2026/11/20/gtco-revives-737-brand-with-new-ap/",
-  "https://sifted.eu/articles/european-angels-anthropic-ipo/",
-  "https://www.eu-startups.com/2026/11/german-startup-playbook-secures-e8-million-to-help-pharma-companies-deploy-ai-safely/",
-  "https://yourstory.com/2026/11/bill-gates-book-recommendations-2026",
-  "https://news.crunchbase.com/startups/blue-economy-technology-defense-energy-onetti-mind-the-bridge/",
-  "https://techcabal.com/2026/11/23/mzansis-power-moves/",
-  "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
-  "https://techcabal.com/2026/11/20/afrilabs-2026-benin-innovation/",
-  "https://www.producthunt.com/products/chat-with-work",
-  "https://yourstory.com/2026/11/karnataka-cm-to-lead-delegation-to-japan-to-explore-investments",
-  "https://old.disruptafrica.com/2024/01/20/third-episode-of-new-disrupt-podcast-series-shines-light-on-africas-ed-tech-space/",
-  "https://onurgumus.github.io/zero-csharp/index.html",
-  "https://www.wamda.com/2026/11/egypt-chipverse-secures-pre-seed-funding-double-gpu-capacity",
-  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
-  "https://www.eu-startups.com/2026/11/building-in-the-uk-key-changes-and-deadlines-founders-need-to-know/",
-  "https://techcabal.com/2026/11/20/techcabal-daily-kuda-cuts-jobs-again/",
-  "https://www.producthunt.com/products/mai-image-2-3",
-  "https://techcabal.com/2026/11/23/first-circle-capital-ask-an-investor/",
-  "https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
-  "https://news.crunchbase.com/venture/unicorn-startup-current-valuations-thinking-machines-sierra-crunchbase/",
-  "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/",
-  "https://yourstory.com/2026/11/sarvam-clarifies-ai-strategy-amid-debate-over-hosting-chinese-models",
-  "https://techcabal.com/2026/11/23/high-cost-building-ai-africa/",
-  "https://old.disruptafrica.com/2024/01/20/5-top-trending-altcoins-to-buy-now-can-these-altcoins-explode-after-the-bitcoin-halving-apemax-arbitrum-polkadot-skale-maverick-protocol/",
-  "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
-  "https://www.producthunt.com/products/ashwa",
-  "https://www.producthunt.com/products/journalistic-tech",
-  "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
-  "https://techcabal.com/2026/11/22/africa-instant-payment-systems-maturity/",
-  "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/",
-  "https://yourstory.com/2026/11/what-it-takes-for-indian-startups-to-win-when-building-is-no-longer-the-hard-part",
-  "https://news.crunchbase.com/venture/data-recruiting-job-hunting-hr-ai-startups-mercor/",
-  "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
-  "https://www.wamda.com/2026/11/tamara-expands-debt-financing-facilities-400-million-global-banks",
-  "https://www.wamda.com/2026/11/finbursa-names-angelica-tigan-cro-lead-global-expansion",
-  "https://www.eu-startups.com/2026/11/theseus-robotics-secures-e455k-to-put-robots-to-work-in-supermarkets-across-europe-and-us/",
-  "https://www.producthunt.com/products/leantake",
-  "https://techcabal.com/2026/11/20/huang-cross-border-payments-africa/",
-  "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
-  "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/",
-  "https://sifted.eu/articles/black-forest-labs-nvidia-a16z-andreas-blattmann-interview/",
-  "https://yourstory.com/2026/11/sarvam-new-model-make-ai-assistants-cheaper-to-run",
-  "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco",
-  "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
-  "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a",
-  "https://www.producthunt.com/products/open-source-solana-wallet",
-  "https://techcabal.com/2026/11/23/lupa-robotics-1-67-million-seed-raise/",
-  "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
-  "https://techcabal.com/2026/11/23/ericsson-sa-5g-growth-mines-ports/",
-  "https://www.wamda.com/2026/11/500-global-sanabil-investments-select-seven-startups-accelerators-12th-cohort",
-  "https://www.producthunt.com/products/orpheus-2",
-  "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://github.com/tamnd/riemann-handbook",
-  "https://www.wamda.com/2026/11/19-dirham-question-facing-morocco-consumer-startups",
-  "https://yourstory.com/2026/11/cii-15-financial-sector-reforms-boost-long-term-growth-ambitions",
-  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
-  "https://sifted.eu/articles/sign-up-for-the-first-london-tech-chess-night-brnd/",
-  "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
-  "https://techcabal.com/2026/11/20/ex-banker-cherotich-rutto-tawi-fresh/",
-  "https://www.eu-startups.com/2026/11/uk-startup-clarity-sensors-receives-e2-2-million-nihr-award-to-make-advanced-medical-imaging-more-accessible/",
-  "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
+  "https://techcrunch.com/2026/11/23/figma-employee-sues-alleging-company-forced-her-to-confront-harassers/",
+  "https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
   "https://news.crunchbase.com/venture/interesting-startup-deals-ai-solar-healthcare-space-tech/",
-  "https://sifted.eu/articles/hoplite-raise-stripe-founders/",
-  "https://www.producthunt.com/products/plango",
+  "https://techcabal.com/2026/11/23/mzansis-power-moves/",
+  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+  "https://www.eu-startups.com/2026/11/building-in-the-uk-key-changes-and-deadlines-founders-need-to-know/",
+  "https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
   "https://news.crunchbase.com/venture/biggest-startup-rounds-science-neurotech-model-ml-galvanize-therapeutics/",
-  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-  "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-  "https://www.producthunt.com/products/hydrilla",
-  "https://old.disruptafrica.com/2024/01/22/undp-launches-timbuktoo-financing-initiative-for-african-startups/",
+  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+  "https://www.producthunt.com/products/chat-with-work",
+  "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+  "https://news.crunchbase.com/startups/blue-economy-technology-defense-energy-onetti-mind-the-bridge/",
+  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+  "https://www.producthunt.com/products/claude-code",
+  "https://yourstory.com/2026/11/sarvam-new-model-make-ai-assistants-cheaper-to-run",
+  "https://techcabal.com/2026/11/23/lupa-robotics-1-67-million-seed-raise/",
+  "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
+  "https://news.crunchbase.com/workplace/ai-bias-in-hr-hiring-job-applications/",
+  "https://techcabal.com/2026/11/24/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-hello-from-the-absa-side/",
+  "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
+  "https://sifted.eu/articles/black-forest-labs-nvidia-a16z-andreas-blattmann-interview/",
+  "https://www.eu-startups.com/2026/11/bcomp-secures-e20-million-from-eib-to-scale-flax-fibre-based-alternatives-to-carbon-fibre-glass-fibre-and-plastics/",
+  "https://yourstory.com/2026/11/7-bryan-johnson-longevity-habits-anyone-can-afford",
+  "https://yourstory.com/2026/11/7-habits-that-make-you-a-better-listener",
+  "https://yourstory.com/2026/11/what-it-takes-for-indian-startups-to-win-when-building-is-no-longer-the-hard-part",
+  "https://yourstory.com/2026/11/cii-15-financial-sector-reforms-boost-long-term-growth-ambitions",
+  "https://techcabal.com/2026/11/23/ericsson-sa-5g-growth-mines-ports/",
+  "https://old.disruptafrica.com/2024/01/20/which-meme-coins-to-buy-in-2024-top-meme-coins-by-market-capitalization-and-new-trending-coins-including-apemax-dogecoin-shiba-inu-pepe-coin-floki-memecoin-by-9gag-and-bonk/",
+  "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/",
+  "https://sifted.eu/articles/acorda-pre-seed/",
+  "https://techcabal.com/2026/11/22/africa-instant-payment-systems-maturity/",
+  "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/",
+  "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
   "https://yourstory.com/2026/11/gta-6-is-rated-17-what-indian-parents-should-know-before-letting-their-children-play",
   "https://yourstory.com/2026/11/upi-was-never-free-but-is-its-new-merchant-fee-fair",
-  "https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-  "https://www.eu-startups.com/2026/11/is-silicon-valley-turning-its-back-on-europe-plug-and-plays-thomas-bigagli-weighs-in/",
-  "https://www.producthunt.com/products/motionflare",
-  "https://techcrunch.com/2026/11/17/stripe-backer-atomico-calls-for-europe-to-own-its-success-stories/",
-  "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://www.producthunt.com/products/modem",
-  "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
-  "https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://restofworld.org/2026/chinese-ai-labs-hire-silicon-valley-engineers-openai-anthropic/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/",
-  "https://techcabal.com/2026/11/20/nigeria-1-trillion-stock-market-startups/",
-  "https://yourstory.com/2026/11/8-carl-jung-ideas-that-explain-why-you-repeat-mistakes",
-  "https://news.crunchbase.com/ai/anthropic-ant-ipo-revenue-growth-risks-s1-analysis/",
-  "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
-  "https://yourstory.com/2026/11/content-ai-empowerment-business-creativity-entrepreneur-quiz",
-  "https://www.wamda.com/2026/11/shaffra-establishes-saudi-headquarters-ai-workforce-deployments-grow",
-  "https://www.eu-startups.com/2026/11/following-e1-billion-funding-round-quantum-systems-commits-over-e10-million-to-expand-drone-support-in-ukraine/",
-  "https://www.eu-startups.com/2026/11/dutch-startup-gradyent-lands-e20-million-eib-loan-to-expand-digital-twin-technology-across-europes-heating-networks/",
-  "https://old.disruptafrica.com/2024/01/20/which-meme-coins-to-buy-in-2024-top-meme-coins-by-market-capitalization-and-new-trending-coins-including-apemax-dogecoin-shiba-inu-pepe-coin-floki-memecoin-by-9gag-and-bonk/",
+  "https://www.wamda.com/2026/11/dubai-bring-global-startup-investment-leaders-doers-summit-2026",
   "https://techcabal.com/2026/11/23/techcabal-daily-dangotes-encore/",
-  "https://www.wamda.com/2026/11/saudi-arabia-oori-partners-oumla-digitise-private-market-investments",
-  "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
-  "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
-  "https://www.eu-startups.com/2026/11/opinion-europes-rearmament-risks-creating-empty-factories/",
-  "https://sifted.eu/articles/slush-20u20-2026/",
-  "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
-  "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent",
-  "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
-  "https://old.disruptafrica.com/2024/01/23/how-egyptian-prop-tech-startup-partment-enables-hassle-free-2nd-home-ownership/",
-  "https://techcabal.com/2026/11/23/why-african-must-prepare-for-quantum/",
-  "https://www.eu-startups.com/2026/11/uk-based-agon-raises-e63-98-million-at-e411-3-million-valuation-to-build-europes-sovereign-defence-ai-infrastructure/",
-  "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
-  "https://sifted.eu/articles/acorda-pre-seed/",
-  "https://outpostracer.com",
-  "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
-  "https://old.disruptafrica.com/2024/01/23/announcing-the-5m-core-africa-innovation-fund-empowering-local-web3-builders/",
-  "https://yourstory.com/2026/11/taking-a-personal-loan-with-variable-income-heres-how-to-plan-your-emi-smartly",
-  "https://techcabal.com/2026/11/21/moniepoint-northern-regional-headquarters/",
-  "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series",
-  "https://sifted.eu/articles/why-ai-startups-should-build-governance-early-brnd/",
-  "https://yourstory.com/2026/11/7-bryan-johnson-longevity-habits-anyone-can-afford",
-  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-  "https://restofworld.org/2026/ai-government-ethics-bias-risk/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://www.wamda.com/2026/11/ziina-offers-new-feature-split-simplify-shared-payments",
-  "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
-  "https://www.producthunt.com/products/gauth-ai-course",
-  "https://yourstory.com/2026/11/pidg-invests-117m-nepra-dry-waste-recycling-company",
-  "https://github.com/gulivan/worker755",
-  "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+  "https://www.producthunt.com/products/open-source-solana-wallet",
+  "https://www.wamda.com/2026/11/shaffra-establishes-saudi-headquarters-ai-workforce-deployments-grow",
+  "https://yourstory.com/2026/11/8-carl-jung-ideas-that-explain-why-you-repeat-mistakes",
   "https://old.disruptafrica.com/2024/01/22/10-startups-selected-for-africa-tech-summit-nairobi-investment-showcase/",
-  "https://restofworld.org/2026/taiwan-labor-strike-ai-profits/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
-  "https://www.eu-startups.com/2026/11/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-nov-16-nov-20/",
-  "https://www.eu-startups.com/2026/11/opinion-ai-will-favour-the-companies-built-for-ai-not-adapted-to-it/",
-  "https://sifted.eu/articles/agon-raise-northzone-lakestar-defence/",
+  "https://www.eu-startups.com/2026/11/frankfurt-based-commerzventures-closes-e50-million-fund-iv-betting-on-early-stage-fintech-and-ai/",
+  "https://sifted.eu/articles/hoplite-raise-stripe-founders/",
+  "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.producthunt.com/products/plango",
+  "https://yourstory.com/2026/11/bill-gates-book-recommendations-2026",
+  "https://techcabal.com/2026/11/23/first-circle-capital-ask-an-investor/",
+  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+  "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
   "https://sifted.eu/articles/plural-fund-ai-podcast/",
-  "https://techcabal.com/2026/11/21/gulf-capital-digital-nomads/"
+  "https://techcabal.com/2026/11/24/francophone-weekly-by-techcabal-049/",
+  "https://news.crunchbase.com/startups/startup-name-trends-2026-ai/",
+  "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
+  "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent",
+  "https://techcabal.com/2026/11/20/ex-banker-cherotich-rutto-tawi-fresh/",
+  "https://old.disruptafrica.com/2024/01/22/undp-launches-timbuktoo-financing-initiative-for-african-startups/",
+  "https://github.com/tamnd/riemann-handbook",
+  "https://www.producthunt.com/products/ashwa",
+  "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
+  "https://old.disruptafrica.com/2024/01/20/third-episode-of-new-disrupt-podcast-series-shines-light-on-africas-ed-tech-space/",
+  "https://techcabal.com/2026/11/20/afrilabs-2026-benin-innovation/",
+  "https://www.producthunt.com/products/granular-build",
+  "https://sifted.eu/articles/why-ai-startups-should-build-governance-early-brnd/",
+  "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+  "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
+  "https://www.producthunt.com/products/tendor",
+  "https://www.eu-startups.com/2026/11/is-silicon-valley-turning-its-back-on-europe-plug-and-plays-thomas-bigagli-weighs-in/",
+  "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+  "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco",
+  "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://restofworld.org/2026/chinese-ai-labs-hire-silicon-valley-engineers-openai-anthropic/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://techcabal.com/2026/11/20/gtco-revives-737-brand-with-new-ap/",
+  "https://sifted.eu/articles/european-angels-anthropic-ipo/",
+  "https://restofworld.org/2026/taiwan-labor-strike-ai-profits/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.producthunt.com/products/distribution-dev",
+  "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/",
+  "https://techcabal.com/2026/11/23/why-african-must-prepare-for-quantum/",
+  "https://www.producthunt.com/products/motionflare",
+  "https://www.eu-startups.com/2026/11/uk-based-agon-raises-e63-98-million-at-e411-3-million-valuation-to-build-europes-sovereign-defence-ai-infrastructure/",
+  "https://hermitcrm.io/",
+  "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
+  "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
+  "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/",
+  "https://www.wamda.com/2026/11/egypt-chipverse-secures-pre-seed-funding-double-gpu-capacity",
+  "https://yourstory.com/2026/11/google-cloud-confirms-30-role-cuts-in-india-rejects-claims-of-wider-layoffs",
+  "https://www.eu-startups.com/2026/11/opinion-europes-rearmament-risks-creating-empty-factories/",
+  "https://techcabal.com/2026/11/21/moniepoint-northern-regional-headquarters/",
+  "https://www.producthunt.com/products/dog-translator-supertranslator",
+  "https://www.producthunt.com/products/sparrowdesk",
+  "https://www.producthunt.com/products/modem",
+  "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series",
+  "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a",
+  "https://yourstory.com/2026/11/mha-warns-whatsapp-web-users-of-account-hijacking-advises-logging-out-after-every-session",
+  "https://yourstory.com/2026/11/karnataka-cm-to-lead-delegation-to-japan-to-explore-investments",
+  "https://outpostracer.com",
+  "https://onurgumus.github.io/zero-csharp/index.html",
+  "https://restofworld.org/2026/ai-government-ethics-bias-risk/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://yourstory.com/2026/11/6-must-read-indian-historical-fiction-books-to-explore",
+  "https://www.eu-startups.com/2026/11/german-startup-playbook-secures-e8-million-to-help-pharma-companies-deploy-ai-safely/",
+  "https://techcabal.com/2026/11/24/banks-card-raid-safaricom-airtel-talent/",
+  "https://yourstory.com/2026/11/content-ai-empowerment-business-creativity-entrepreneur-quiz",
+  "https://yourstory.com/2026/11/sarvam-clarifies-ai-strategy-amid-debate-over-hosting-chinese-models",
+  "https://techcabal.com/2026/11/24/nigeria-data-protection-500000-jobs/",
+  "https://www.producthunt.com/products/tday",
+  "https://sifted.eu/articles/starlings-next-ceo/",
+  "https://www.producthunt.com/products/journalistic-tech",
+  "https://yourstory.com/2026/11/pidg-invests-117m-nepra-dry-waste-recycling-company",
+  "https://www.eu-startups.com/2026/11/uk-startup-clarity-sensors-receives-e2-2-million-nihr-award-to-make-advanced-medical-imaging-more-accessible/",
+  "https://www.wamda.com/2026/11/ziina-offers-new-feature-split-simplify-shared-payments",
+  "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+  "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+  "https://www.wamda.com/2026/11/finbursa-names-angelica-tigan-cro-lead-global-expansion",
+  "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "https://techcrunch.com/2026/11/17/stripe-backer-atomico-calls-for-europe-to-own-its-success-stories/",
+  "https://techcabal.com/2026/11/21/gulf-capital-digital-nomads/",
+  "https://sifted.eu/articles/agon-raise-northzone-lakestar-defence/",
+  "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+  "https://www.eu-startups.com/2026/11/following-e1-billion-funding-round-quantum-systems-commits-over-e10-million-to-expand-drone-support-in-ukraine/",
+  "https://www.producthunt.com/products/juncts",
+  "https://old.disruptafrica.com/2024/01/23/how-egyptian-prop-tech-startup-partment-enables-hassle-free-2nd-home-ownership/",
+  "https://www.eu-startups.com/2026/11/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-nov-16-nov-20/",
+  "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
+  "https://news.crunchbase.com/venture/data-recruiting-job-hunting-hr-ai-startups-mercor/",
+  "https://sifted.eu/articles/cybersecurity-startups-mapped-108-companies-guarding-europes-digital-frontline/",
+  "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+  "https://www.eu-startups.com/2026/11/theseus-robotics-secures-e455k-to-put-robots-to-work-in-supermarkets-across-europe-and-us/",
+  "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/",
+  "https://yourstory.com/2026/11/lightsprintai-software-factory-pms-designers-engineers",
+  "https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://old.disruptafrica.com/2024/01/20/5-top-trending-altcoins-to-buy-now-can-these-altcoins-explode-after-the-bitcoin-halving-apemax-arbitrum-polkadot-skale-maverick-protocol/",
+  "https://www.wamda.com/2026/11/19-dirham-question-facing-morocco-consumer-startups",
+  "https://techcabal.com/2026/11/20/techcabal-daily-kuda-cuts-jobs-again/",
+  "https://techcabal.com/2026/11/20/nigeria-1-trillion-stock-market-startups/",
+  "https://www.producthunt.com/products/hydrilla",
+  "https://news.crunchbase.com/ai/anthropic-ant-ipo-revenue-growth-risks-s1-analysis/",
+  "https://www.producthunt.com/products/gauth-ai-course",
+  "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
+  "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://old.disruptafrica.com/2024/01/23/announcing-the-5m-core-africa-innovation-fund-empowering-local-web3-builders/",
+  "https://www.producthunt.com/products/mai-image-2-3",
+  "https://sifted.eu/articles/slush-20u20-2026/",
+  "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
+  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+  "https://github.com/gulivan/worker755",
+  "https://www.wamda.com/2026/11/tamara-expands-debt-financing-facilities-400-million-global-banks",
+  "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+  "https://www.wamda.com/2026/11/500-global-sanabil-investments-select-seven-startups-accelerators-12th-cohort",
+  "https://www.producthunt.com/products/finer-screenshot",
+  "https://github.com/stass/type-c",
+  "https://news.crunchbase.com/venture/unicorn-startup-current-valuations-thinking-machines-sierra-crunchbase/",
+  "https://techcabal.com/2026/11/20/huang-cross-border-payments-africa/",
+  "https://www.producthunt.com/products/leantake",
+  "https://yourstory.com/2026/11/taking-a-personal-loan-with-variable-income-heres-how-to-plan-your-emi-smartly",
+  "https://sifted.eu/articles/sign-up-for-the-first-london-tech-chess-night-brnd/",
+  "https://techcabal.com/2026/11/23/high-cost-building-ai-africa/",
+  "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
+  "https://www.eu-startups.com/2026/11/adyens-co-founder-pieter-van-der-does-to-retire-as-co-ceo-ingo-uytdehaage-to-become-sole-ceo/",
+  "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+  "https://www.producthunt.com/products/orpheus-2",
+  "https://www.eu-startups.com/2026/11/opinion-ai-will-favour-the-companies-built-for-ai-not-adapted-to-it/",
+  "https://www.wamda.com/2026/11/saudi-arabia-oori-partners-oumla-digitise-private-market-investments",
+  "https://www.eu-startups.com/2026/11/dutch-startup-gradyent-lands-e20-million-eib-loan-to-expand-digital-twin-technology-across-europes-heating-networks/"
  ],
- "newCount": 2,
- "studied": 22
+ "newCount": 8,
+ "studied": 29
 }

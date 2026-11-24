@@ -1913,6 +1913,397 @@
   "profitPath": ""
  },
  {
+  "name": "Octo Health",
+  "category": "startups",
+  "subcategory": "healthtech",
+  "kind": "pasiva",
+  "description": "Plataforma que centraliza datos de salud y permite análisis de sangre de más de 110 biomarcadores, ofreciendo recomendaciones personalizadas. Disponible en Portugal (8 €/mes o 199 €/año).",
+  "officialUrl": "https://octo.health/",
+  "participateUrl": "https://octo.health/",
+  "country": "Portugal, Estados Unidos",
+  "spainAvailability": "no",
+  "spainNotes": "La oferta solo se menciona para Portugal; no hay información de disponibilidad en España.",
+  "costs": {
+   "minEntry": 8,
+   "extra": 0,
+   "extraNotes": "Suscripción mensual; no se requieren costes adicionales para el uso básico.",
+   "recommended": 199,
+   "max": 199
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No hay mecanismo de salida para usuarios; la inversión directa no está disponible.",
+  "horizon": "mediano plazo (2‑5 años) para posible expansión a España.",
+  "deadline": null,
+  "potential": "Alto potencial de crecimiento si logra escalar en mercados europeos y EE.UU., aprovechando la tendencia de salud digital.",
+  "difficulty": "media",
+  "timeNeeded": "poco (suscripción y uso inmediato).",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico integrado.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.0,
+    "why": "Recaudó 2,7 M€ en ronda pre‑seed · Verificador: Ronda pre-seed de 2,7M€ valida el interés del mercado.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.5,
+    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud preventiva en crecimiento, aunque altamente competitivo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, liderada por Catarina Kemper.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 7.0,
+    "why": "Financiación pre‑seed de 2,7 M€ liderada por 3xP Global · Verificador: Ronda liderada por 3xP Global confirmada.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase de lanzamiento, comunidad aún no consolidada.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.5,
+    "why": "Solo disponible en Portugal; fase temprana · Verificador: Mercado limitado a Portugal y EE.UU. actualmente.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen múltiples apps de salud y wearables · Verificador: Alta competencia con apps de salud y laboratorios directos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Tecnología descrita como funcional y basada en análisis de sangre · Verificador: Dependencia de integraciones con laboratorios y dispositivos.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 7.0,
+    "why": "Startup en fase pre‑seed, riesgo inherente alto · Verificador: No es una inversión, es un gasto de consumo (suscripción).",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.5,
+    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes confirmados de expansión a España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay ruta clara de salida para usuarios · Verificador: No aplica, es un servicio de suscripción, no un activo financiero. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "limited_market",
+    "severity": "media",
+    "detail": "Solo disponible en Portugal, sin información de expansión a España."
+   },
+   {
+    "code": "no_investment",
+    "severity": "baja",
+    "detail": "El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero."
+   },
+   {
+    "code": "limited_market",
+    "severity": "media",
+    "detail": "No disponible en España actualmente."
+   }
+  ],
+  "distrust": [
+   "Escasa información pública sobre usuarios activos y métricas de adopción."
+  ],
+  "whyInteresting": [
+   "Oferta única de más de 110 biomarcadores integrados",
+   "Financiación reciente indica confianza de inversores",
+   "Potencial de expansión a mercados con alta demanda de salud digital"
+  ],
+  "howToParticipate": [
+   "1. Visitar la página oficial o la app de Octo Health",
+   "2. Suscribirse al plan mensual (8 €/mes) o anual (199 €/año)",
+   "3. Utilizar la plataforma para centralizar datos de salud",
+   "4. Seguir noticias de la empresa para posibles rondas de inversión futuras"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "No hay inversión directa; la pérdida económica se limitaría al coste de suscripción si el servicio no satisface expectativas."
+  ],
+  "earlySignals": [
+   "Ronda de financiación pre‑seed de 2,7 M€",
+   "Lanzamiento en Portugal y EE.UU."
+  ],
+  "signals": {
+   "funding_round": 1
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una empresa de servicios de salud digital (HealthTech). No requiere registro en la CNMV como plataforma de inversión ni bajo MiCA al no ofrecer servicios financieros o criptoactivos.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/portugal/inversiones/octo-health-recauda-27-millones-de-euros/"
+   },
+   {
+    "title": "Octo Health Official Website",
+    "url": "https://octo.health/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La startup existe, ha cerrado una ronda pre-seed de 2,7M€ y opera en Portugal y EE.UU. La ficha es correcta en su descripción, aunque es un servicio de salud digital (SaaS) y no una oportunidad de inversión financiera directa para el usuario.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "web-octo-health",
+  "isNew": true,
+  "score": 39,
+  "rawScore": 47.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "Tope 39: no disponible en tu región"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "limited_market",
+    "severity": "media",
+    "detail": "Solo disponible en Portugal, sin información de expansión a España."
+   },
+   {
+    "code": "no_investment",
+    "severity": "baja",
+    "detail": "El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico integrado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Recaudó 2,7 M€ en ronda pre‑seed · Verificador: Ronda pre-seed de 2,7M€ valida el interés del mercado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud preventiva en crecimiento, aunque altamente competitivo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, liderada por Catarina Kemper.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Financiación pre‑seed de 2,7 M€ liderada por 3xP Global · Verificador: Ronda liderada por 3xP Global confirmada.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase de lanzamiento, comunidad aún no consolidada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Solo disponible en Portugal; fase temprana · Verificador: Mercado limitado a Portugal y EE.UU. actualmente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen múltiples apps de salud y wearables · Verificador: Alta competencia con apps de salud y laboratorios directos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Tecnología descrita como funcional y basada en análisis de sangre · Verificador: Dependencia de integraciones con laboratorios y dispositivos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "Startup en fase pre‑seed, riesgo inherente alto · Verificador: No es una inversión, es un gasto de consumo (suscripción).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes confirmados de expansión a España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay ruta clara de salida para usuarios · Verificador: No aplica, es un servicio de suscripción, no un activo financiero. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 199.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 398.0,
+     "netEur": 398.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 995.0,
+     "netEur": 995.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1990.0,
+     "netEur": 1990.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 3980.0,
+     "netEur": 3980.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 9950.0,
+     "netEur": 9950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 19900.0,
+     "netEur": 19900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 59700.0,
+     "netEur": 59700.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T12:20:34Z",
+    "funding_round": 1.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Octo Health\nCATEGORÍA: startups · healthtech\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://octo.health/\nENLACE DE PARTICIPACIÓN: https://octo.health/\nPAÍS: Portugal, Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 8,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 199,00 €\nPOTENCIAL: Alto potencial de crecimiento si logra escalar en mercados europeos y EE.UU., aprovechando la tendencia de salud digital.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: mediano plazo (2‑5 años) para posible expansión a España.\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Oferta única de más de 110 biomarcadores integrados; Financiación reciente indica confianza de inversores; Potencial de expansión a mercados con alta demanda de salud digital\nMOTIVOS PARA DESCONFIAR: Solo disponible en Portugal, sin información de expansión a España.; El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero.; Escasa información pública sobre usuarios activos y métricas de adopción.\nCÓMO PARTICIPAR: 1. Visitar la página oficial o la app de Octo Health; 2. Suscribirse al plan mensual (8 €/mes) o anual (199 €/año); 3. Utilizar la plataforma para centralizar datos de salud; 4. Seguir noticias de la empresa para posibles rondas de inversión futuras\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay inversión directa; la pérdida económica se limitaría al coste de suscripción si el servicio no satisface expectativas.\nFUENTES: https://elreferente.es/portugal/inversiones/octo-health-recauda-27-millones-de-euros/ | https://octo.health/",
+  "firstSeenAt": "2026-11-24T12:20:34Z",
+  "lastSeenAt": "2026-11-24T12:20:34Z",
+  "runId": "run-20261124-1220",
+  "aliases": [
+   "news-elreferente-es-portugal-inversiones-octo-health-recauda-27-millones-de-euros"
+  ]
+ },
+ {
   "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
   "category": "startups",
   "subcategory": "salud_genómica",
@@ -3930,6 +4321,414 @@
   "runId": "run-20261124-0222",
   "aliases": [
    "web-decrypt-co"
+  ]
+ },
+ {
+  "name": "Aerya",
+  "category": "startups",
+  "subcategory": "ia_tecnologia",
+  "kind": "pasiva",
+  "description": "Aerya es una startup gallega que ofrece una plataforma de comercio agéntico basada en IA, capaz de atender consultas, gestionar solicitudes y ejecutar ventas de forma autónoma 24/7. Gestiona alrededor de 1.000 casos diarios y genera 35.000 € en ventas mensuales sin intervención humana, y cuenta con acuerdos de integración con Yummy y Bravo Passenger Solution.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Startup con sede en Galicia, España",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Desconocido",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Posible salida mediante venta a inversor o adquisición, pero sin mercado secundario definido",
+  "horizon": "mediano a largo plazo (3‑5 años)",
+  "deadline": null,
+  "potential": "Alto potencial de crecimiento en automatización B2B con IA",
+  "difficulty": "media",
+  "timeNeeded": "Requiere seguimiento continuo del desarrollo y métricas",
+  "subscores": {
+   "novedad": {
+    "v": 8.0,
+    "why": "Plataforma de empleados digitales con IA que gestionan ventas y atención 24/7 · Verificador: Plataforma de comercio agéntico con IA para automatización B2B.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.0,
+    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas (1.000 casos/día, 35k€ ventas/mes).",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector B2B SaaS de automatización altamente competitivo.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No hay información pública sobre los fundadores o su trayectoria.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.5,
+    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Premio SeedRocket confirmado, pero sin ronda de inversión abierta al público general.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 5.5,
+    "why": "Participó en el Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus de Emprendedores de SeedRocket.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Acuerdos con Yummy (5 M usuarios) y Bravo Passenger Solution, 1.000 casos diarios gestionados · Verificador: Acuerdos con Yummy y Bravo Passenger Solution mencionados en prensa.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Alta saturación en soluciones de IA para atención al cliente.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia crítica de integraciones con terceros.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase muy temprana, riesgo de iliquidez total.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8.0,
+    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Startup gallega, operativa en España.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 3.5,
+    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario ni estrategia de salida clara para inversores minoristas.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_datos_financieros",
+    "severity": "media",
+    "detail": "No se dispone de información sobre ingresos netos, burn rate ni valoración actual"
+   },
+   {
+    "code": "falta_transparencia_financiera",
+    "severity": "alta",
+    "detail": "No existen estados financieros auditados ni información sobre la valoración de la empresa."
+   },
+   {
+    "code": "imposibilidad_inversion_minorista",
+    "severity": "critica",
+    "detail": "No existe un canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal."
+   },
+   {
+    "code": "ausencia_web_oficial",
+    "severity": "media",
+    "detail": "No se ha podido verificar una URL oficial funcional para la empresa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional."
+   }
+  ],
+  "distrust": [
+   "Información limitada sobre equipo y métricas financieras"
+  ],
+  "whyInteresting": [
+   "IA aplicada a comercio automatizado con casos de uso reales y acuerdos con plataformas de gran escala",
+   "Premio y potencial financiación de SeedRocket que valida la solidez del proyecto"
+  ],
+  "howToParticipate": [
+   "1. Contactar directamente con Aerya a través de su página web o correo de contacto.",
+   "2. Consultar oportunidades de inversión en rondas seed mediante plataformas de equity crowdfunding o redes de business angels vinculadas a SeedRocket.",
+   "3. Evaluar los términos de inversión y aportar capital dentro del presupuesto disponible (máximo 2.000 €)"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Falta de adopción del producto",
+   "Retrasos técnicos en la integración con clientes",
+   "Agotamiento de fondos antes de alcanzar rentabilidad",
+   "Competencia fuerte en el sector IA B2B"
+  ],
+  "earlySignals": [
+   "Crecimiento del número de casos gestionados",
+   "Expansión de acuerdos con nuevos clientes",
+   "Anuncio de rondas de financiación"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un producto financiero regulado bajo MiCA ni CNMV; es una inversión en capital riesgo (equity) de una sociedad limitada privada.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/startups/aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de-seedrocket/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "n-aerya",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 56.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (imposibilidad_inversion_minorista)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "falta_datos_financieros",
+    "severity": "media",
+    "detail": "No se dispone de información sobre ingresos netos, burn rate ni valoración actual"
+   },
+   {
+    "code": "falta_transparencia_financiera",
+    "severity": "alta",
+    "detail": "No existen estados financieros auditados ni información sobre la valoración de la empresa."
+   },
+   {
+    "code": "imposibilidad_inversion_minorista",
+    "severity": "critica",
+    "detail": "No existe un canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal."
+   },
+   {
+    "code": "ausencia_web_oficial",
+    "severity": "media",
+    "detail": "No se ha podido verificar una URL oficial funcional para la empresa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Plataforma de empleados digitales con IA que gestionan ventas y atención 24/7 · Verificador: Plataforma de comercio agéntico con IA para automatización B2B.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas (1.000 casos/día, 35k€ ventas/mes).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector B2B SaaS de automatización altamente competitivo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No hay información pública sobre los fundadores o su trayectoria.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 5.5,
+    "points": 3.9,
+    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Premio SeedRocket confirmado, pero sin ronda de inversión abierta al público general.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.5,
+    "points": 3.9,
+    "why": "Participó en el Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus de Emprendedores de SeedRocket.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Acuerdos con Yummy (5 M usuarios) y Bravo Passenger Solution, 1.000 casos diarios gestionados · Verificador: Acuerdos con Yummy y Bravo Passenger Solution mencionados en prensa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Alta saturación en soluciones de IA para atención al cliente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia crítica de integraciones con terceros.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase muy temprana, riesgo de iliquidez total.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Startup gallega, operativa en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario ni estrategia de salida clara para inversores minoristas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Aerya\nCATEGORÍA: startups · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de crecimiento en automatización B2B con IA\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano a largo plazo (3‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IA aplicada a comercio automatizado con casos de uso reales y acuerdos con plataformas de gran escala; Premio y potencial financiación de SeedRocket que valida la solidez del proyecto\nMOTIVOS PARA DESCONFIAR: No se dispone de información sobre ingresos netos, burn rate ni valoración actual; No existen estados financieros auditados ni información sobre la valoración de la empresa.; No existe un canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal.; No se ha podido verificar una URL oficial funcional para la empresa.; El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional.; Información limitada sobre equipo y métricas financieras\nCÓMO PARTICIPAR: 1. Contactar directamente con Aerya a través de su página web o correo de contacto.; 2. Consultar oportunidades de inversión en rondas seed mediante plataformas de equity crowdfunding o redes de business angels vinculadas a SeedRocket.; 3. Evaluar los términos de inversión y aportar capital dentro del presupuesto disponible (máximo 2.000 €)\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de adopción del producto; Retrasos técnicos en la integración con clientes; Agotamiento de fondos antes de alcanzar rentabilidad; Competencia fuerte en el sector IA B2B\nFUENTES: https://elreferente.es/startups/aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de-seedrocket/",
+  "firstSeenAt": "2026-11-24T12:20:34Z",
+  "lastSeenAt": "2026-11-24T12:20:34Z",
+  "runId": "run-20261124-1220",
+  "aliases": [
+   "news-elreferente-es-startups-aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de"
   ]
  },
  {
