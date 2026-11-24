@@ -123,6 +123,8 @@ jobs:
           if [ "${{ github.event.inputs.encadenado }}" != "true" ] || [ -z "$LEFT" ]; then LEFT=6; fi
           LEFT=$((LEFT-1))
           if [ "$LEFT" -le 0 ]; then echo "Fin de la cadena: el siguiente pulso llegará con el próximo disparo."; exit 0; fi
+          LAST_SCHED=$(gh run list -R "$GITHUB_REPOSITORY" -w pulse.yml -e schedule -L 1 --json createdAt --jq '.[0].createdAt // ""')
+          if [ -n "$LAST_SCHED" ] && [ $(( $(date +%s) - $(date -d "$LAST_SCHED" +%s) )) -lt 900 ]; then echo "El programado de GitHub ya funciona: no hace falta encadenar."; exit 0; fi
           WAITING=$(gh run list -R "$GITHUB_REPOSITORY" -w pulse.yml -L 20 --json status,databaseId --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.status==\"queued\" or .status==\"pending\" or .status==\"waiting\" or .status==\"requested\" or .status==\"in_progress\")] | length")
           if [ "${WAITING:-0}" != "0" ]; then echo "Ya hay otro pulso en marcha o en cola: no se encadena."; exit 0; fi
           gh workflow run pulse.yml -R "$GITHUB_REPOSITORY" --ref main -f saltos="$LEFT" -f encadenado=true && echo "Encadenado (quedan $LEFT)"
