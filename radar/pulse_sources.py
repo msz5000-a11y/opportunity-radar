@@ -11,7 +11,7 @@ import re
 import threading
 import time
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from urllib.parse import quote_plus, urlparse
 from zoneinfo import ZoneInfo
@@ -272,13 +272,13 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
 
 # ------------------------------------------------------------------ macro: índices, bono a 10 años, Brent, oro y plata
 CNBC = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
-# Futuros del primer vencimiento (lo que enseñan CNBC o Yahoo como «oro», «plata» o «Brent») y el contado del oro y la plata para contrastar.
+# Índices, bono a 10 años, Brent (futuro del primer vencimiento) y oro y plata al contado, con sus futuros para contrastar.
 MACRO_SYMS = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER",
               "XAU=": "GOLD_SPOT", "XAG=": "SILVER_SPOT"}
 YAHOO_SYMS = {"SPX": "^GSPC", "IXIC": "^IXIC", "US10Y": "^TNX", "BRENT": "BZ=F", "GOLD": "GC=F", "SILVER": "SI=F"}
 FUTURES = ("BRENT", "GOLD", "SILVER")
 METAL_TOL = {"GOLD": 1.5, "SILVER": 2.5}  # puntos de diferencia admitidos entre el cambio diario del futuro y el del contado
-FRESH = timedelta(hours=4)  # solo se avisa de movimientos con cotización reciente (mercado abierto)
+FRESH = timedelta(minutes=45)  # solo se avisa de movimientos con cotización reciente (mercado abierto)
 
 
 def _num(v):
@@ -306,14 +306,29 @@ def _qtime(s) -> datetime | None:
 
 def _quote(p, ch, chg, qt, src, now, raw_at=None) -> dict:
     return {"p": p, "ch": ch, "chg": chg, "at": iso(qt) if qt else raw_at, "src": src,
-            "fresh": bool(qt and -timedelta(minutes=10) <= now - qt <= FRESH)}
+            "fresh": bool(qt and -timedelta(minutes=3) <= now - qt <= FRESH)}
 
 
-def macro_quotes(now: datetime | None = None) -> dict:
-    """Cotizaciones en dólares (rentabilidad en % para el bono). CNBC primero, con controles: se descartan registros con una
-    hora imposible o de hace días (su caché a veces sirve el de otra sesión), el oro y la plata se contrastan con el contado
-    (CNBC y gold-api.com) y, si algo no cuadra, se enseña el precio sin cambio diario. Yahoo solo de respaldo."""
+def _bdays(a: str, b: str) -> int:
+    """Días laborables (lunes a viernes) desde la fecha a hasta la b."""
+    try:
+        d, end = date.fromisoformat(a[:10]), date.fromisoformat(b[:10])
+    except (TypeError, ValueError):
+        return 0
+    n = 0
+    while d < end and n < 9:
+        d += timedelta(days=1)
+        n += d.weekday() < 5
+    return n
+
+
+def macro_quotes(now: datetime | None = None, mem: dict | None = None) -> dict:
+    """Cotizaciones en dólares (rentabilidad en % para el bono). CNBC primero, con controles, porque su caché a veces sirve el
+    registro de otra sesión con la fecha de hoy: se descartan los que traen una hora futura, de hace días o más vieja que la del
+    último registro bueno (o un cierre de referencia anterior); si el cierre de referencia es de hace más de una sesión, se enseña
+    el precio sin cambio diario. Oro y plata, al contado, contrastados con el futuro y con gold-api.com. Yahoo solo de respaldo."""
     now = now or datetime.now(timezone.utc)
+    seen = mem if mem is not None else {}
     out: dict = {}
     try:
         d = get_json(CNBC, params={"symbols": "|".join(MACRO_SYMS), "requestMethod": "itv", "noform": 1, "partnerId": 2, "fund": 1,
@@ -322,24 +337,34 @@ def macro_quotes(now: datetime | None = None) -> dict:
             k, p = MACRO_SYMS.get(q.get("symbol")), _num(q.get("last"))
             if not k or not p or p <= 0:
                 continue
-            qt = _qtime(q.get("last_time"))
-            if qt and not (now - timedelta(days=5) <= qt <= now + timedelta(minutes=10)):
+            qt, settle = _qtime(q.get("last_time")), str(q.get("settleDate") or "")[:10] or None
+            prev = seen.get(k) or {}
+            pt, ps = _qtime(prev.get("t")), prev.get("settle")
+            if qt and not (now - timedelta(days=5) <= qt <= now + timedelta(minutes=3)):
                 continue
-            out[k] = _quote(p, _r(_num(q.get("change_pct"))), _r(_num(q.get("change")), 4), qt, "CNBC", now, q.get("last_time"))
+            newer = bool(settle and ps and settle > ps)
+            if not newer and ((qt and pt and qt < pt - timedelta(minutes=2)) or (settle and ps and settle < ps)):
+                continue
+            rec = _quote(p, _r(_num(q.get("change_pct"))), _r(_num(q.get("change")), 4), qt, "CNBC", now, q.get("last_time"))
+            if settle:
+                rec["settle"] = settle
+                if _bdays(settle, str(q.get("last_time") or "")) > 1:
+                    rec.update(ch=None, chg=None, fresh=False)
+            out[k] = rec
+            seen[k] = {"t": iso(qt) if qt else prev.get("t"), "settle": settle or ps}
     except (SourceError, ValueError, AttributeError):
         pass
     for k, sym in (("GOLD", "XAU"), ("SILVER", "XAG")):
-        fut, spot = out.get(k), out.pop(f"{k}_SPOT", None)
+        fut, spot = out.pop(k, None), out.pop(f"{k}_SPOT", None)
         ref = ref_t = None
         try:
             g = get_json(f"https://api.gold-api.com/price/{sym}", timeout=12) or {}
             ref, ref_t = _num(g.get("price")), _qtime(g.get("updatedAt"))
         except (SourceError, ValueError, AttributeError):
             pass
-        q = fut or spot
+        q = spot or fut
         if fut and spot and fut["ch"] is not None and spot["ch"] is not None and abs(fut["ch"] - spot["ch"]) > METAL_TOL[k]:
-            q = min((fut, spot), key=lambda x: abs(x["p"] - ref)) if ref else fut
-            q = {**q, "ch": None, "chg": None, "fresh": False}
+            q = {**spot, "ch": None, "chg": None, "fresh": False}
         if ref and ref > 0 and (not q or abs(q["p"] / ref - 1) > 0.025):
             q = {**_quote(_r(ref, 3 if k == "SILVER" else 2), None, None, ref_t, "gold-api.com", now), "fresh": False}
         if q:
@@ -383,7 +408,7 @@ MACRO_TEXT = {
 
 
 def c_macro(ctx: Ctx) -> list[dict]:
-    quotes = macro_quotes(ctx.now)
+    quotes = macro_quotes(ctx.now, ctx.mem("macro_last"))
     if not quotes:
         raise SourceError("sin cotizaciones")
     ctx.share["macro"] = quotes

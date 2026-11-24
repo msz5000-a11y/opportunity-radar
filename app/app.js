@@ -166,6 +166,15 @@
   const num = (v) => { const x = parseFloat(String(v ?? "").replace(/[,%+\s]/g, "")); return isNaN(x) ? null : x; };
   const MACRO = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER", "XAU=": "GOLD_SPOT", "XAG=": "SILVER_SPOT"};
   const qTime = (s) => { s = String(s || ""); if (s.length <= 10) return null; const d = new Date(s.replace(/([+-]\d{2})(\d{2})$/, "$1:$2")); return isNaN(d) ? null : d; };
+  const bdays = (a, b) => {  // días laborables entre dos fechas AAAA-MM-DD
+    let d = new Date(a.slice(0, 10) + "T12:00:00Z"), n = 0; const e = new Date(String(b).slice(0, 10) + "T12:00:00Z");
+    if (isNaN(d) || isNaN(e)) return 0;
+    while (d < e && n < 9) { d = new Date(+d + 864e5); const w = d.getUTCDay(); if (w > 0 && w < 6) n++; }
+    return n;
+  };
+  // La caché de CNBC a veces devuelve el registro de otra sesión con la fecha de hoy: se guarda la hora y el cierre de
+  // referencia del último registro bueno de cada símbolo y se descarta lo que sea más viejo (mismas reglas que el servidor).
+  const lastGood = {};
   async function pollPrices() {
     if (document.hidden) return;
     const crypto = (async () => {
@@ -182,20 +191,28 @@
         const r = await fetch("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + encodeURIComponent(Object.keys(MACRO).join("|")) +
           "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1", {cache: "no-store"});
         if (r.ok) {
-          const d = await r.json(), now = Date.now();
+          const d = await r.json(), now = Date.now(), tk = S.feed?.ticker || {};
+          for (const k of ["SPX", "IXIC", "US10Y", "BRENT"]) {  // lo ya validado por el servidor sirve de punto de partida
+            const t = qTime(tk[k]?.at);
+            if (t && !lastGood[k]) lastGood[k] = {t: +t, settle: tk[k].settle || null};
+          }
           for (const q of arr(d?.FormattedQuoteResult?.FormattedQuote)) {
-            const k = MACRO[q.symbol], p = num(q.last), t = qTime(q.last_time);
+            const k = MACRO[q.symbol], p = num(q.last), t = qTime(q.last_time), settle = String(q.settleDate || "").slice(0, 10) || null, g = lastGood[k] || {};
             if (!k || !(p > 0)) continue;
-            if (t && (t - now > 10 * 60e3 || now - t > 5 * 864e5)) continue;  // registro de otra sesión o con hora imposible
-            got[k] = {p, ch: num(q.change_pct), chg: num(q.change), cur: "USD"};
+            if (t && (t - now > 3 * 60e3 || now - t > 5 * 864e5)) continue;
+            const newer = settle && g.settle && settle > g.settle;
+            if (!newer && ((t && g.t && t < g.t - 120e3) || (settle && g.settle && settle < g.settle))) continue;
+            const rec = {p, ch: num(q.change_pct), chg: num(q.change), cur: "USD"};
+            if (settle && bdays(settle, q.last_time) > 1) rec.ch = rec.chg = null;  // cierre de referencia de hace más de una sesión
+            got[k] = rec;
+            lastGood[k] = {t: t ? +t : g.t, settle: settle || g.settle || null};
           }
         }
       } catch {}
-      for (const [k, tol] of [["GOLD", 1.5], ["SILVER", 2.5]]) {  // el futuro se contrasta con el contado
+      for (const [k, tol] of [["GOLD", 1.5], ["SILVER", 2.5]]) {  // oro y plata al contado, contrastados con el futuro
         const f = got[k], s = got[k + "_SPOT"];
         delete got[k + "_SPOT"];
-        if (f && s && f.ch != null && s.ch != null && Math.abs(f.ch - s.ch) > tol) delete got[k];  // no cuadran: queda el dato del servidor
-        else if (!f && s) got[k] = s;
+        if (s) got[k] = f && f.ch != null && s.ch != null && Math.abs(f.ch - s.ch) > tol ? {...s, ch: null, chg: null} : s;
       }
       Object.assign(liveTicker, got);
       const tk = S.feed?.ticker || {};

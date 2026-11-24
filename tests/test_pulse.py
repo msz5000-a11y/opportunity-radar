@@ -266,10 +266,12 @@ def test_macro_quotes_and_moves(monkeypatch):
     c = ctx()
     out = S.c_macro(c)
     q = c.share["macro"]
-    assert q["GOLD"]["p"] == 3622.5 and q["SPX"]["p"] == 7237.17 and q["US10Y"]["p"] == 4.906 and q["US10Y"]["chg"] == -0.114
+    assert q["GOLD"]["p"] == 3622.99 and q["SILVER"]["p"] == 42.0054  # oro y plata al contado
+    assert q["SPX"]["p"] == 7237.17 and q["US10Y"]["p"] == 4.906 and q["US10Y"]["chg"] == -0.114
     assert "GOLD_SPOT" not in q and q["GOLD"]["at"] == "2026-11-23T14:50:00Z" and q["BRENT"]["fresh"]
     ids = {x["id"] for x in out}
-    assert ids == {"mc:spx:2026-11-23:u2", "mc:ixic:2026-11-23:u3", "mc:silver:2026-11-23:d1", "mc:us10y:2026-11-23:d1"}
+    assert ids == {"mc:spx:2026-11-23:u2", "mc:ixic:2026-11-23:u3", "mc:us10y:2026-11-23:d1"}
+    assert c.state["mem"]["macro_last"]["BRENT"]["t"] == "2026-11-23T14:45:00Z"
     y = next(x for x in out if x["id"].startswith("mc:us10y"))
     assert "11 pb" in y["es"] and "4,91 %" in y["es"]
 
@@ -299,6 +301,21 @@ def test_macro_stale_or_odd_records_never_make_moves(monkeypatch):
     out = S.c_macro(c)
     assert c.share["macro"]["SPX"]["p"] == 7237.17 and c.share["macro"]["SPX"]["at"] == "2026-11-20"
     assert not any(x["id"].startswith(("mc:spx", "mc:ixic")) for x in out)
+
+
+def test_macro_rejects_records_from_another_session(monkeypatch):
+    # cierre de referencia de hace dos sesiones (jueves → lunes): precio sí, cambio diario no
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{"@LCO.1": {"settleDate": "2026-11-19"}})))
+    q = S.macro_quotes(NOW, {})
+    assert q["BRENT"]["p"] == 89.08 and q["BRENT"]["ch"] is None and not q["BRENT"]["fresh"] and q["BRENT"]["settle"] == "2026-11-19"
+    monkeypatch.setattr(S, "get_json", _fake_macro(_cnbc(**{"@LCO.1": {"settleDate": "2026-11-20"}})))
+    assert S.macro_quotes(NOW, {})["BRENT"]["ch"] == -0.32  # viernes → lunes: una sesión
+    # más viejo que el último registro bueno → fuera
+    assert "BRENT" not in S.macro_quotes(NOW, {"BRENT": {"t": "2026-11-23T14:55:00Z", "settle": "2026-11-20"}})
+    # cierre de referencia anterior al ya visto → fuera; uno más reciente manda aunque la hora sea anterior
+    assert "BRENT" not in S.macro_quotes(NOW, {"BRENT": {"t": "2026-11-23T14:00:00Z", "settle": "2026-11-23"}})
+    mem = {"BRENT": {"t": "2026-11-23T14:55:00Z", "settle": "2026-11-19"}}
+    assert S.macro_quotes(NOW, mem)["BRENT"]["p"] == 89.08 and mem["BRENT"] == {"t": "2026-11-23T14:45:00Z", "settle": "2026-11-20"}
 
 
 def test_macro_fallbacks(monkeypatch):
