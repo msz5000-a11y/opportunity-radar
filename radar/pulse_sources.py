@@ -1250,6 +1250,17 @@ LOCAL_OFF = R._kw("accidente", "incendio", "detenido", "muere", "fallece", "suce
                   "multinacional", "cotiza", "bolsa", "pleno", "oposicion", "elecciones")
 
 
+# historias que no le sirven aunque parezcan un caso: programas o instituciones de otro país y negocios que pierden dinero
+FOREIGN_INST = re.compile(r"city hall|city council|county|government|federal|state (grant|program)|grants?\b|nonprofit|chamber of commerce|"
+                          r"\bsba\b|mairie|comune|prefeitura|governo", re.I)
+LOSS = re.compile(r"\b(lost|losing|loses)\s+(\W?\d|money|everything|thousands|my savings|it all)|\bin debt\b|\bscam(med)?\b|\bestafa|"
+                  r"\bperd[ií]\s+(\d|dinero|todo|mis ahorros)|\bd[eé]ficit\b|\bdown \W?\d", re.I)
+
+
+def casa_story_bad(title: str, lang: str | None) -> bool:
+    return bool(LOSS.search(title or "") or (lang and lang != "es" and FOREIGN_INST.search(title or "")))
+
+
 def _places(prof: dict) -> set[str]:
     """Cómo puede aparecer su zona en un titular: municipio (y variantes), provincia y comunidad."""
     out = set()
@@ -1312,7 +1323,7 @@ def c_casa(ctx: Ctx) -> list[dict]:
             if not title or not x.get("url") or not pub or ctx.now - pub > timedelta(days=CASA_MAX_AGE[kind]):
                 continue
             f = cfold(title)
-            if kind == "story" and not looks_like_case(title):
+            if kind == "story" and (not looks_like_case(title) or casa_story_bad(title, lang)):
                 continue
             if kind == "local" and (not any(w in f for w in LOCAL_OK) or any(w in f for w in LOCAL_OFF) or LISTY.search(title)
                                     or not any(pl in f for pl in _places(prof))):

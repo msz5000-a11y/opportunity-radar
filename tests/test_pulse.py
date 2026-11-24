@@ -573,3 +573,13 @@ def test_triage_casa_translates_and_hides(monkeypatch):
     # y nunca salta una alerta de mercado por algo de «Desde casa»
     hot = {**casa_it("hc:9", "Woman earns $20K a month from home bakery"), "s": 99}
     assert pulse.alerts([hot], {}, {"pulse": {"alert_min": 80}}, NOW) == 0
+
+
+def test_casa_story_bad_and_prune_cleanup():
+    assert S.casa_story_bad("Have a side hustle or a big idea? City Hall offers free help starting a business", "en")
+    assert S.casa_story_bad("I'm a single mum-of-6 - online side hustle has left me down £3k before Christmas", "en")
+    assert not S.casa_story_bad("Aussie dad quits job as side hustle blows up to $20,000 a month", "en")
+    assert not S.casa_story_bad("El Ayuntamiento de Riba-roja abre un curso para emprendedoras", "es")  # lo de aquí sí vale
+    bad = {**casa_it("hc:b", "City Hall offers free help starting a business earning $5K a month"), "lang": "en", "t": S.iso(NOW), "w": S.iso(NOW)}
+    good = {**casa_it("hc:g", "Mum turns her kitchen into a $8K a month baking business"), "lang": "en", "t": S.iso(NOW), "w": S.iso(NOW)}
+    assert [x["id"] for x in pulse.prune([bad, good], {}, NOW)] == ["hc:g"]
