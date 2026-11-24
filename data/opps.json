@@ -1539,6 +1539,381 @@
   ]
  },
  {
+  "name": "PhoneBox",
+  "category": "ia_tecnologia",
+  "subcategory": "software|dashboard|IoT",
+  "kind": "pasiva",
+  "description": "Herramienta gratuita y de código abierto que convierte tablets Android antiguas en paneles de control personalizables para PC y hogar inteligente.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "si",
+  "spainNotes": "No requiere servicios específicos de España",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Solo necesita un tablet Android compatible y un PC",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "Puede desinstalar en cualquier momento sin coste",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "menos de una hora para instalación",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Permite reutilizar tablets Android como dashboards, con 131 widgets disponibles",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5,
+    "why": "Ahorro potencial al evitar compra de hardware dedicado",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4,
+    "why": "Mercado limitado a usuarios con dispositivos Android antiguos",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 3,
+    "why": "Desarrollador(es) no identificados en el artículo",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "Proyecto gratuito, sin financiación conocida",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "Código MIT, disponible en GitHub, 131 widgets en el catálogo",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Uso anecdótico descrito en artículo, sin métricas de usuarios",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otras soluciones de dashboards, pero PhoneBox es open source",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Requiere ADB y Android 5+, posible obsolescencia del software",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "Software gratuito, sin inversión monetaria",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8,
+    "why": "No hay restricciones geográficas",
+    "evidence": true
+   },
+   "salida": {
+    "v": 8,
+    "why": "Puede desinstalar sin coste",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "dependencia_hardware_antiguo",
+    "severity": "media",
+    "detail": "Funciona solo con tablets Android compatibles, limitando su utilidad"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Aprovecha hardware que ya posees, reduciendo gasto en dispositivos de control"
+  ],
+  "howToParticipate": [
+   "1. Identificar tablet Android 5+ disponible",
+   "2. Activar modo desarrollador y habilitar ADB",
+   "3. Descargar script de instalación desde el repositorio oficial (GitHub)",
+   "4. Ejecutar el script en un PC Linux conectado por USB",
+   "5. Configurar widgets mediante la interfaz web del PC"
+  ],
+  "actionable": true,
+  "profitPath": "Ahorro al reutilizar dispositivos Android antiguos como paneles de control, evitando la compra de hardware nuevo",
+  "lossCauses": [
+   "Falta de compatibilidad con versiones muy antiguas de Android",
+   "Posibles vulnerabilidades de seguridad al sideloadear APK",
+   "Obsolescencia del proyecto si deja de recibir actualizaciones"
+  ],
+  "earlySignals": [
+   "Creciente interés en reutilización de hardware y soluciones de código abierto"
+  ],
+  "signals": {
+   "pulseScore": 58
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Pulso · Ars Technica",
+    "url": "https://arstechnica.com/gadgets/2026/11/one-terminal-command-gave-my-forgotten-android-device-a-desk-job/"
+   }
+  ],
+  "discoveredVia": "Pulso · Ars Technica",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-24",
+  "id": "n-phonebox",
+  "isNew": true,
+  "score": 49,
+  "rawScore": 53.7,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "dependencia_hardware_antiguo",
+    "severity": "media",
+    "detail": "Funciona solo con tablets Android compatibles, limitando su utilidad"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Permite reutilizar tablets Android como dashboards, con 131 widgets disponibles",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Ahorro potencial al evitar compra de hardware dedicado",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado limitado a usuarios con dispositivos Android antiguos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Desarrollador(es) no identificados en el artículo",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "Proyecto gratuito, sin financiación conocida",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Código MIT, disponible en GitHub, 131 widgets en el catálogo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Uso anecdótico descrito en artículo, sin métricas de usuarios",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Existen otras soluciones de dashboards, pero PhoneBox es open source",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Requiere ADB y Android 5+, posible obsolescencia del software",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "Software gratuito, sin inversión monetaria",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "No hay restricciones geográficas",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Puede desinstalar sin coste",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T13:58:19Z",
+    "pulseScore": 58.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: PhoneBox\nCATEGORÍA: ia_tecnologia · software|dashboard|IoT\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 49/100 · Especulativa\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Aprovecha hardware que ya posees, reduciendo gasto en dispositivos de control\nMOTIVOS PARA DESCONFIAR: Funciona solo con tablets Android compatibles, limitando su utilidad; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Identificar tablet Android 5+ disponible; 2. Activar modo desarrollador y habilitar ADB; 3. Descargar script de instalación desde el repositorio oficial (GitHub); 4. Ejecutar el script en un PC Linux conectado por USB; 5. Configurar widgets mediante la interfaz web del PC\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de compatibilidad con versiones muy antiguas de Android; Posibles vulnerabilidades de seguridad al sideloadear APK; Obsolescencia del proyecto si deja de recibir actualizaciones\nFUENTES: https://arstechnica.com/gadgets/2026/11/one-terminal-command-gave-my-forgotten-android-device-a-desk-job/",
+  "firstSeenAt": "2026-11-24T13:58:19Z",
+  "lastSeenAt": "2026-11-24T13:58:19Z",
+  "runId": "run-20261124-1358",
+  "aliases": [
+   "web-arstechnica-com"
+  ]
+ },
+ {
   "name": "Premios Órbita 2026 – Startups premiadas",
   "category": "startups",
   "subcategory": "aceleradora",
