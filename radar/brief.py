@@ -901,8 +901,12 @@ def sanitize_library(ideas: list[dict]) -> list[dict]:
     """Quita de la biblioteca los casos que no sean un caso real (titulares sueltos o textos que no salen de la fuente)."""
     out = []
     for i in ideas:
-        cases = [k for k in i.get("casos") or [] if "trustmrr.com" in k.get("url", "") or "news.google.com" not in k.get("url", "")
-                 or looks_like_case(k.get("resultado") or "")]
+        def real(k: dict) -> bool:
+            u, r = k.get("url", ""), k.get("resultado") or ""
+            if "trustmrr.com" in u:
+                return r.startswith(("Ingresos verificados en TrustMRR", "Verified revenue on TrustMRR"))
+            return "news.google.com" not in u or looks_like_case(r)
+        cases = [k for k in i.get("casos") or [] if real(k)]
         if cases:
             out.append({**i, "casos": cases})
     return out
