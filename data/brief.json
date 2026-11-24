@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T20:20:50Z",
- "checkedAt": "2026-11-24T20:20:50Z",
- "attemptedAt": "2026-11-24T20:20:50Z",
+ "generatedAt": "2026-11-24T20:23:46Z",
+ "checkedAt": "2026-11-24T20:23:46Z",
+ "attemptedAt": "2026-11-24T20:23:46Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -177,20 +177,122 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-24T20:20:50Z",
-    "checkedAt": "2026-11-24T20:20:50Z",
+    "generatedAt": "2026-11-24T20:23:46Z",
+    "checkedAt": "2026-11-24T20:23:46Z",
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
     "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 0,
-    "descartadas": 2,
-    "nota": "He buscado ideas que aprovechen tu experiencia inmobiliaria y creativa, descartando servicios de comida a domicilio por la complejidad de la normativa sanitaria en España.",
+    "nuevas": 2,
+    "descartadas": 0,
+    "motivos": {
+     "repetida": 0,
+     "sin_caso": 0,
+     "vacia": 0
+    },
+    "nota": "He descartado ideas de comida preparada por la complejidad de la normativa sanitaria (registro sanitario obligatorio en cocina doméstica) y me he centrado en servicios digitales y de organización que aprovechan tus habilidades sin stock.",
     "oportunidades_locales": [],
     "ayudas": [],
     "ideas": [
+     {
+      "id": "cde125ca1",
+      "fecha": "2026-11-24T20:23:46Z",
+      "nueva": true,
+      "titulo": "Creación de Kits de Actividades Educativas 'Print & Play'",
+      "gancho": "Diseña y vende materiales didácticos imprimibles para niños que los padres descargan y usan en casa.",
+      "que_es": "Consiste en crear archivos PDF con juegos, manualidades o fichas educativas temáticas (ej. 'aprender los números con arte'). Los padres compran el archivo, lo imprimen y lo usan, eliminando costes de envío y stock.",
+      "casos": [
+       {
+        "quien": "Daily Bulldog",
+        "pais": "",
+        "resultado": "Rural Routes: Women Entrepreneurs of Franklin County Featuring Saskia Reinholt: Artist, Founder, & Teacher",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWG9zSS1YYlJid3RHZWRiV09PYnhvZ0luam9FbDlTbUZSbjV4TkNBeE4ybkI3M0huanZPaXdkZlVVek5lLVo3Sk9ZTG1QVzhNVGVWR0dwdDdBTkw0b2dIQWc2QU9KYlJiZFBPTGFKZ2Jfak5RUlg4RTNfWGtYRnd1WVRsUXg4aU5tQTNtV2k5SlE5akhQSWlqMi1aa3Q2Z1pfRmlRcXI3SEZIa0w2QS15RTVOWTJ3Q1JXaWY2M05WbUdGaTlEU3pBOFNCbjBsaTA2"
+       }
+      ],
+      "por_que_tu": "Aprovecha tu experiencia con niños, tu habilidad en diseño y tu interés por el arte para crear productos digitales escalables.",
+      "como_empezar": [
+       "Semana 1: Define 3 temáticas (ej. 'Arte para niños', 'Cocina divertida') y diseña el primer PDF en Canva.",
+       "Semana 2: Crea una tienda sencilla en Etsy o Gumroad para vender los archivos.",
+       "Semana 3: Publica en redes sociales (Instagram/Pinterest) fotos de los materiales impresos y usados.",
+       "Semana 4: Recopila feedback de las primeras ventas y lanza un pack temático nuevo."
+      ],
+      "coste_inicial": "0 € (usando versión gratuita de Canva y plataformas de venta con comisión).",
+      "herramientas": [
+       "Canva",
+       "Etsy o Gumroad",
+       "Instagram"
+      ],
+      "precio": "Entre 3 € y 7 € por pack descargable.",
+      "primeras_clientas": [
+       "Grupos de Facebook de madres/padres en Valencia",
+       "Instagram usando hashtags de crianza respetuosa y educación infantil"
+      ],
+      "ingresos_posibles": "Estimación de 100-300 €/mes iniciales, escalable según volumen de diseños y tráfico web.",
+      "horas_semana": "8-10 horas.",
+      "tramites": [
+       "Alta en Hacienda (modelo 036/037) como autónoma cuando los ingresos sean recurrentes.",
+       "Cumplimiento RGPD si captas emails.",
+       "IVA: aplicar IVA en facturas a clientes en España."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Baja barrera de entrada (mucha competencia).",
+       "Necesidad de marketing constante.",
+       "Protección de derechos de autor de tus diseños."
+      ],
+      "confianza": "alta"
+     },
+     {
+      "id": "c4ee3ce08",
+      "fecha": "2026-11-24T20:23:46Z",
+      "nueva": true,
+      "titulo": "Consultoría de 'Organización de Cocinas' (Home Organizing)",
+      "gancho": "Ayuda a familias a optimizar su cocina para que sea funcional, estética y eficiente.",
+      "que_es": "Un servicio presencial en tu zona (Riba-roja/Valencia) donde reorganizas armarios, despensas y zonas de trabajo. Combina tu pasión por la cocina con el diseño de interiores.",
+      "casos": [
+       {
+        "quien": "Capital Analytics Associates",
+        "pais": "",
+        "resultado": "Spotlight On: Leigh Anne Lanier, SVP – Customer Success, Verizon",
+        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbzlWRGZFbzNKa0ZCQWJXdy1QU2RweEs4R1AyYTNPU29fRFRiOUNYSVlvOHhSVHRFQ1kzcWpqUlhheUV5RWxfa2V4UVRwQWpwOGdpdXRQNHZ6VW1QRWdna29ZWUN3Z3BMWEdFTHBZa3MzaWZFaGFJWDdUZzNMLTg2ZTdNRzI1MlV2OWtzUkVHYw"
+       }
+      ],
+      "por_que_tu": "Conoces la dinámica de una cocina real y tienes el ojo estético para el diseño, ideal para clientes que quieren espacios 'instagrameables' y funcionales.",
+      "como_empezar": [
+       "Semana 1: Crea un portafolio con tu propia cocina (fotos 'antes' y 'después').",
+       "Semana 2: Ofrece 2 sesiones gratuitas a conocidas para obtener testimonios y fotos.",
+       "Semana 3: Crea un perfil en Google Business y anuncia en grupos locales de Facebook/WhatsApp de Riba-roja.",
+       "Semana 4: Define tus tarifas por hora o por proyecto (cocina completa)."
+      ],
+      "coste_inicial": "50 € (materiales básicos de organización para mostrar como ejemplo).",
+      "herramientas": [
+       "Instagram (para mostrar el trabajo)",
+       "Google Business Profile",
+       "WhatsApp Business"
+      ],
+      "precio": "25-40 €/hora o presupuesto cerrado por cocina (ej. 150 €).",
+      "primeras_clientas": [
+       "Vecinos de Riba-roja",
+       "Grupos de Facebook de 'Vecinos de Valencia'",
+       "Recomendaciones boca a boca"
+      ],
+      "ingresos_posibles": "Estimación de 200-500 €/mes trabajando fines de semana o tardes.",
+      "horas_semana": "5-10 horas.",
+      "tramites": [
+       "Alta en el RETA (autónomos).",
+       "Seguro de responsabilidad civil (recomendable).",
+       "Facturación con IVA."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Desplazamiento físico.",
+       "Dependencia de la confianza del cliente para entrar en su casa.",
+       "Límite geográfico inicial."
+      ],
+      "confianza": "media"
+     },
      {
       "id": "c7ca958ee",
       "fecha": "2026-11-24T20:16:29Z",
@@ -477,61 +579,16 @@
   }
  },
  "sources": {
-  "startupxplore": {
-   "ok": true,
-   "n": 4,
-   "err": null
-  },
-  "capitalcell": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "dozen": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
-  "ideas": {
-   "ok": true,
-   "n": 14,
-   "err": null
-  },
-  "trustmrr": {
-   "ok": true,
-   "n": 20,
-   "err": null
-  },
-  "ycombinator": {
-   "ok": true,
-   "n": 25,
-   "err": null
-  },
-  "producthunt": {
-   "ok": true,
-   "n": 10,
-   "err": null
-  },
-  "acciones": {
-   "ok": true,
-   "n": 12,
-   "err": null
-  },
-  "pulso": {
-   "ok": true,
-   "n": 23,
-   "err": null
-  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
    "err": null,
    "filtro": {
-    "encontradas": 42,
-    "sin_relacion": 23,
-    "directa": 6,
-    "no_para_ti": 4,
-    "cerradas": 9,
+    "encontradas": 70,
+    "sin_relacion": 37,
+    "directa": 7,
+    "no_para_ti": 11,
+    "cerradas": 15,
     "abiertas": 0
    }
   },
