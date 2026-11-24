@@ -144,14 +144,14 @@ jobs:
         continue-on-error: true
         uses: actions/deploy-pages@v4
 
-      - name: ¿Toca el informe «Para ti»?
+      - name: ¿Toca el informe «Para ti» o una tanda de ideas «Desde casa»?
         if: ${{ !cancelled() }}
         continue-on-error: true
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p /tmp/briefcheck
-          git show FETCH_HEAD:data/brief.json > /tmp/briefcheck/brief.json 2>/dev/null || true
+          for f in brief.json profiles.json; do git show "FETCH_HEAD:data/$f" > "/tmp/briefcheck/$f" 2>/dev/null || rm -f "/tmp/briefcheck/$f"; done
           if python -m radar.brief --data /tmp/briefcheck --check-due; then
             RUNNING=$(gh run list -R "$GITHUB_REPOSITORY" -w brief.yml -L 5 --json status --jq '[.[] | select(.status != "completed")] | length' || echo 1)
             if [ "${RUNNING:-1}" = "0" ]; then gh workflow run brief.yml -R "$GITHUB_REPOSITORY" --ref main && echo "Informe lanzado"; else echo "Ya hay un informe en marcha"; fi

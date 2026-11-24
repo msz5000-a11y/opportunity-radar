@@ -1,7 +1,7 @@
 """Pruebas del informe «Para ti» (radar/brief.py) y de la señal de ruptura del radar de mercados."""
 import json
 import random
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -156,10 +156,10 @@ def test_home_stories_and_ideas(monkeypatch):
 def test_casa_due_and_profiles(tmp_path):
     prof = {"id": "ella", "interests": ["arte"], "casa": True}
     assert B.casa_due({}, prof, NOW)
-    old = {"ideas": [{"titulo": "x"}], "generatedAt": "2026-11-23T07:00:00Z", "profile_hash": B.profile_hash(prof)}
-    assert not B.casa_due(old, prof, NOW)
+    old = {"ideas": [{"titulo": "x"}], "generatedAt": "2026-11-23T07:00:00Z", "checkedAt": "2026-11-24T05:30:00Z", "profile_hash": B.profile_hash(prof)}
+    assert not B.casa_due(old, prof, NOW)  # la última tanda fue hace hora y media: aún no toca (cada 3 h)
     assert B.casa_due(old, {**prof, "interests": ["arte", "cocina"]}, NOW)  # perfil cambiado: ideas nuevas
-    assert B.casa_due({**old, "generatedAt": "2026-11-20T07:00:00Z"}, prof, NOW)
+    assert B.casa_due({**old, "checkedAt": "2026-11-24T03:30:00Z"}, prof, NOW)
     (tmp_path / "profiles.json").write_text(json.dumps({"profiles": [{"id": "es"}, {"id": "off", "off": True}, {"id": "ella"}]}))
     assert [p["id"] for p in B.load_profiles(tmp_path, {})] == ["es", "ella"]
 
@@ -370,7 +370,8 @@ def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
     monkeypatch.setattr(B, "bdns_ids", lambda prof, d: {})
     monkeypatch.setattr(B, "grants", lambda prof, now, ids=None: [{"id": "gr5", "titulo": "Ayuda a emprendedoras", "url": "https://www.infosubvenciones.es/x/5",
                                                                     "donde": "Estado", "ambito": "estatal", "solicitud": {"hasta": "2026-12-31"}}])
-    monkeypatch.setattr(B, "home_stories", lambda prof: [{"id": "hs1", "titular": "Teacher earns $10k selling printables", "url": "https://news.example/story"}])
+    monkeypatch.setattr(B, "home_stories", lambda prof, **kw: [{"id": "hs1", "titular": "Teacher earns $10k selling printables", "url": "https://news.example/story"},
+                                                                {"id": "hs2", "titular": "Mum launched meal plans business, now earns $4k a month", "url": "https://news.example/meals"}])
     monkeypatch.setattr(B, "trust_for", lambda prof: [])
     idea_reply = {"ideas": [{"titulo": "Láminas infantiles personalizadas", "gancho": "Diseño a medida para habitaciones",
                              "casos": [{"quien": "Profesora", "pais": "Turquía", "resultado": "10.000 $ en un mes", "url": "https://news.example/story"}],
@@ -387,7 +388,8 @@ def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
         content = [{"type": "web_search_tool_result", "content": [{"url": "https://camara.example/p"}]},
                    {"type": "text", "text": __import__("json").dumps(reply)}]
         if sysx == B.RULES_CASA:
-            assert json["tools"][0]["max_uses"] == 5 and "IDEAS ANTERIORES" in json["messages"][0]["content"]
+            assert json["tools"][0]["max_uses"] == 4 and "IDEAS ANTERIORES" in json["messages"][0]["content"]
+            assert json["model"] == "claude-haiku-5-5" and "output_config" not in json  # tandas frecuentes con el modelo barato
         else:
             assert "## STARTUPS" not in json["system"][1]["text"] and "## PULSO" in json["system"][1]["text"]
         calls.append(json)
@@ -400,12 +402,15 @@ def test_run_with_home_ideas_profile(monkeypatch, tmp_path):
     case = p["casa"]["ideas"][0]["casos"][0]
     assert case["resultado"] == "Teacher earns $10k selling printables" and case["pais"] == ""  # el texto del caso sale de la fuente
     assert any("Ideas nuevas desde casa" in t for t, m in sent)
-    # al día siguiente sin cambios: ni informe ni ideas nuevas (cada 3 días); con «Más ideas» (modo casa + force) sí
-    B.run(tmp_path, cfg, now=NOW.replace(day=25), transport=t3)
+    # una hora después en modo automático: ni informe (ya es de hoy) ni ideas (cada 3 h)
+    B.run(tmp_path, cfg, now=NOW.replace(hour=8), transport=t3, mode="auto")
     assert systems == ["brief", "casa"]
+    # con «Más ideas» (modo casa + force) sí, aunque no hayan pasado 3 h
     idea_reply["ideas"][0]["titulo"] = "Menús semanales para familias"
-    out = B.run(tmp_path, cfg, now=NOW.replace(day=25, hour=12), transport=t3, mode="casa", force=True)
-    assert systems == ["brief", "casa", "casa"]
+    out = B.run(tmp_path, cfg, now=NOW.replace(hour=9), transport=t3, mode="casa", force=True)
+    assert systems == ["brief", "casa", "casa"] and out["profiles"]["ella"]["casa"]["motivos"]["sin_caso"] == 1  # el caso ya usado no vale otra vez
+    idea_reply["ideas"][0]["casos"][0]["url"] = "https://news.example/meals"
+    out = B.run(tmp_path, cfg, now=NOW.replace(hour=9, minute=30), transport=t3, mode="casa", force=True)
     ideas = out["profiles"]["ella"]["casa"]["ideas"]
     assert [i["titulo"] for i in ideas] == ["Menús semanales para familias", "Láminas infantiles personalizadas"] and not ideas[1]["nueva"]
 
@@ -416,3 +421,62 @@ def test_grant_relevance():
     assert B.grant_relevant("Ayudas al fomento del emprendimiento 2026", None)
     assert B.grant_relevant("Premio a la empresa emprendedora del año", None)
     assert B.grant_relevant("Convocatoria Go Digital Comarcas 2026", "Comercio, Turismo y Pymes")
+
+
+def test_auto_mode_runs_ideas_every_few_hours(monkeypatch, tmp_path):
+    cfg, transport, calls, sent = _setup(monkeypatch, tmp_path)
+    (tmp_path / "profiles.json").write_text(json.dumps({"profiles": [{"id": "ella", "language": "es", "country": "ES", "interests": ["arte"],
+                                                                      "sections": [], "casa": True}]}))
+    monkeypatch.setattr(B, "bdns_ids", lambda prof, d: {})
+    monkeypatch.setattr(B, "grants", lambda prof, now, ids=None: [])
+    monkeypatch.setattr(B, "home_stories", lambda prof, **kw: [{"id": f"hs{i}", "titular": f"Story {i}", "url": f"https://news.example/s{i}"} for i in (1, 2)])
+    monkeypatch.setattr(B, "trust_for", lambda prof: [])
+    n = {"calls": 0}
+
+    def t(method, url, headers=None, json=None, **kw):
+        n["calls"] += 1
+        reply = {"ideas": [{"titulo": f"Idea {n['calls']}", "casos": [{"url": f"https://news.example/s{n['calls']}"}], "temas": ["arte"]}]}
+        return FakeResp({"type": "message", "content": [{"type": "text", "text": __import__("json").dumps(reply)}], "stop_reason": "end_turn", "usage": {}})
+    B.run(tmp_path, cfg, now=NOW, transport=t, mode="auto")
+    assert n["calls"] == 1 and not B.check_due(tmp_path, cfg, NOW.replace(hour=8))
+    assert B.check_due(tmp_path, cfg, NOW.replace(hour=10, minute=5))  # tres horas después toca otra tanda
+    out = B.run(tmp_path, cfg, now=NOW.replace(hour=10, minute=5), transport=t, mode="auto")
+    ideas = out["profiles"]["ella"]["casa"]["ideas"]
+    assert n["calls"] == 2 and [i["titulo"] for i in ideas] == ["Idea 2", "Idea 1"] and ideas[0]["temas"] == ["arte"]
+
+
+def test_feed_home_and_focus(tmp_path):
+    feed = {"items": [
+        {"id": "hc:1", "cat": "casa", "kind": "story", "pf": ["ella"], "title": "Mum earns $5k a month from home bakery", "es": "Una madre gana 5.000 dólares al mes con su obrador en casa",
+         "src": "BBC", "url": "https://news.google.com/a", "w": "2026-11-23T10:00:00Z", "pub": "2026-11-23T10:00:00Z", "lang": "en"},
+        {"id": "hc:2", "cat": "casa", "kind": "local", "pf": ["ella"], "title": "Riba-roja abre un curso gratuito de comercio online", "src": "Levante",
+         "url": "https://news.google.com/b", "w": "2026-11-22T10:00:00Z", "why": "Formación gratis cerca de casa"},
+        {"id": "hc:3", "cat": "casa", "kind": "story", "pf": ["eg"], "title": "Other profile", "url": "https://news.google.com/c", "w": "2026-11-23T11:00:00Z"},
+        {"id": "hc:4", "cat": "casa", "kind": "story", "pf": ["ella"], "h": 1, "title": "Hidden", "url": "https://news.google.com/d", "w": "2026-11-23T12:00:00Z"},
+        {"id": "n:1", "cat": "cripto", "kind": "news", "title": "BTC", "url": "https://x"}]}
+    fp = tmp_path / "feed.json"
+    fp.write_text(json.dumps(feed))
+    stories, local = B.feed_home(fp, {"id": "ella"})
+    assert [x["url"] for x in stories] == ["https://news.google.com/a"] and stories[0]["titular_es"].startswith("Una madre") and stories[0]["medio"] == "BBC"
+    assert local == [{"id": "hl1", "titulo": "Riba-roja abre un curso gratuito de comercio online", "medio": "Levante", "fecha": "2026-11-22",
+                      "por_que": "Formación gratis cerca de casa", "url": "https://news.google.com/b"}]
+    prof = {"interests": ["inmobiliaria", "arte", "cocina"]}
+    prev = [{"temas": ["inmobiliaria"]}, {"temas": ["Inmobiliaria", "arte"]}]
+    assert B.casa_focus(prof, prev, 0) == ["cocina", "arte"]
+    assert B.casa_focus(prof, [], 1) == ["arte", "cocina"] and B.casa_focus(prof, [], 2) == ["cocina", "inmobiliaria"]  # empates: va rotando
+
+
+def test_notify_casa_throttled(monkeypatch):
+    monkeypatch.setenv("NTFY_TOPIC_ELLA", "radar-ella")
+    sent = []
+    monkeypatch.setattr(B.notify, "send", lambda title, msg, **kw: sent.append((title, msg)) or True)
+    prof = {"id": "ella", "name": "Ella", "notify": "NTFY_TOPIC_ELLA"}
+    casa = {"ideas": [{"titulo": f"Idea {i}", "gancho": "g", "fecha": B.iso(NOW)} for i in range(5)]}
+    B.notify_casa(prof, casa, NOW)
+    assert len(sent) == 1 and "… y 2 más" in sent[0][1] and casa["notifiedAt"] == B.iso(NOW)
+    B.notify_casa(prof, casa, NOW + timedelta(hours=3))  # otra tanda a las 3 horas: sin aviso
+    casa["ideas"].insert(0, {"titulo": "Idea nueva", "gancho": "g", "fecha": B.iso(NOW + timedelta(hours=9))})
+    B.notify_casa(prof, casa, NOW + timedelta(hours=9))
+    assert len(sent) == 2 and "Idea nueva" in sent[1][1] and "Idea 0" not in sent[1][1]
+    B.notify_casa(prof, {"ideas": casa["ideas"]}, NOW.replace(hour=23))  # de noche, nunca
+    assert len(sent) == 2

@@ -19,6 +19,7 @@ from zoneinfo import ZoneInfo
 import requests
 
 from . import pulse_rules as R
+from .casa_rules import HL as CASA_HL, LISTICLE as LISTY, en as cen, fold as cfold, local_queries, looks_like_case, story_queries
 
 UA = "OpportunityRadarAI/3.0 (+https://github.com/msz5000-a11y/opportunity-radar; personal research)"
 CG = "https://api.coingecko.com/api/v3"
@@ -149,6 +150,7 @@ class Ctx:
         self.fund = fund or {}
         self.watch = watch or []
         self.share: dict = {}
+        self.profiles: list[dict] = []
         self.etags = state.setdefault("etags", {})
         self.region = (cfg.get("profile") or {}).get("region", "es")
 
@@ -1236,6 +1238,89 @@ def c_gnews(ctx: Ctx) -> list[dict]:
     return out
 
 
+# ------------------------------------------------------------------ «Desde casa»: novedades al momento para cada perfil
+CASA_PER_RUN = 5
+CASA_MAX_AGE = {"story": 21, "local": 30}  # días; menos que lo que se guardan en el feed, para que no vuelvan como nuevas
+LOCAL_OK = R._kw("emprend", "autonom", "comerci", "ayuda", "subvenc", "curso", "taller", "formacion", "mercado", "feria", "artesan",
+                 "negocio", "empresa", "empleo", "programa", "jornada", "convocatoria", "mujer", "digital")
+LOCAL_OFF = R._kw("accidente", "incendio", "detenido", "muere", "fallece", "sucesos", "trafico", "futbol", "partido", "lluvia", "dana")
+
+
+def _places(prof: dict) -> set[str]:
+    """Cómo puede aparecer su zona en un titular: municipio (y variantes), provincia y comunidad."""
+    out = set()
+    for v in (prof.get("municipality"), prof.get("province"), prof.get("region_name")):
+        f = cfold(v or "").strip()
+        if len(f) < 4:
+            continue
+        out |= {f, f.replace("-", ""), f.replace("-", " ")}
+        head = re.split(r"\s+de(l)?\s+", f)[0]
+        if len(head) >= 5:
+            out |= {head, head.replace("-", "")}
+        last = f.split()[-1]
+        if len(last) >= 6:
+            out.add(last)
+    return {x for x in out if x and x not in ("comunidad", "comunitat", "region", "provincia", "ciudad", "comarca", "islas", "principado")}
+
+
+def _casa_score(title: str, kind: str, prof: dict, pub: datetime | None, now: datetime) -> int:
+    f = cfold(title)
+    s = 62 if kind == "local" else 58
+    if re.search(r"[$€£₹]\s?\d|\d+\s?(k|mil|million|millones)\b|a month|al mes|per month", title, re.I):
+        s += 8
+    if any(cfold(i) in f or cfold(cen(i)) in f for i in prof.get("interests") or []):
+        s += 5
+    if kind == "local" and prof.get("municipality") and cfold(prof["municipality"]) in f:
+        s += 8
+    if pub and now - pub <= timedelta(days=3):
+        s += 4
+    return min(s, 80)
+
+
+def c_casa(ctx: Ctx) -> list[dict]:
+    """Historias reales de negocios desde casa (varios idiomas, según los intereses) y oportunidades en la zona de cada perfil
+    con «Desde casa». Rota por las búsquedas: CASA_PER_RUN por pasada."""
+    profs = [p for p in ctx.profiles if p.get("casa") and not p.get("off")]
+    jobs = [(p, lang, q, "story") for p in profs for lang, q in story_queries(p)] + \
+           [(p, lang, q, "local") for p in profs for lang, q in local_queries(p)]
+    if not jobs:
+        return []
+    mem = ctx.mem("casa_q")
+    start = int(mem.get("i", 0)) % len(jobs)
+    pick = [jobs[(start + k) % len(jobs)] for k in range(min(CASA_PER_RUN, len(jobs)))]
+    mem["i"] = (start + CASA_PER_RUN) % len(jobs)
+    out: dict[str, dict] = {}
+    for prof, lang, q, kind in pick:
+        hl = CASA_HL[lang]
+        try:
+            r = fetch(f"https://news.google.com/rss/search?q={quote_plus(q + ' when:30d')}&hl={hl[0]}&gl={hl[1]}&ceid={hl[2]}", timeout=20)
+            rows = parse_feed(r.text) if r is not None else []
+        except (SourceError, ET.ParseError):
+            continue
+        for x in rows[:10]:
+            title, src = R.clean(x["title"]), (x.get("source") or "").strip()
+            if src and title.endswith(" - " + src):
+                title = title[: -len(src) - 3].strip()
+            pub = parse_date(x.get("date"))
+            if not title or not x.get("url") or not pub or ctx.now - pub > timedelta(days=CASA_MAX_AGE[kind]):
+                continue
+            f = cfold(title)
+            if kind == "story" and not looks_like_case(title):
+                continue
+            if kind == "local" and (not any(w in f for w in LOCAL_OK) or any(w in f for w in LOCAL_OFF) or LISTY.search(title)
+                                    or not any(pl in f for pl in _places(prof))):
+                continue
+            iid = "hc:" + R.h(cfold(title))
+            it = out.get(iid) or item(iid, "casa", kind, src or "Google News", title=title, url=x["url"], s=_casa_score(title, kind, prof, pub, ctx.now),
+                                      opp=2, risk="bajo", tags=["casa", lang], pub=iso(pub) if pub else None)
+            it.setdefault("pf", [])
+            if prof["id"] not in it["pf"]:
+                it["pf"].append(prof["id"])
+            it["lang"] = lang
+            out[iid] = it
+    return list(out.values())
+
+
 BDNS_Q = ["emprendedores", "startups", "empresas emergentes", "creación de empresas", "digitalización", "innovación",
           "autónomos", "inteligencia artificial", "comercio electrónico", "internacionalización", "jóvenes empresarios", "I+D"]
 BDNS_BAD = R._kw("nominativa", "concesion directa", "subv. directa", "subvencion directa", "ubvencion nominativa", "ibi", "bienes inmuebles",
@@ -1379,7 +1464,7 @@ def registry(cfg: dict) -> list[tuple[str, object, int]]:
     p = cfg.get("pulse") or {}
     feeds = p.get("rss") or DEFAULT_FEEDS
     regs = [("CoinGecko mercado", c_cg_markets, 5), ("CoinGecko tendencias", c_cg_trending, 10), ("Miedo y codicia", c_fng, 60),
-            ("Índices, bono, Brent, oro y plata", c_macro, 5),
+            ("Índices, bono, Brent, oro y plata", c_macro, 5), ("Desde casa: historias y oportunidades", c_casa, 15),
             ("Anuncios Binance", c_binance_ann, 10), ("Anuncios OKX", c_okx_ann, 10),
             ("DefiLlama", c_defillama, 30), ("Bolsa EE. UU. (cotizaciones)", c_fh_quotes, 5), ("Noticias Finnhub", c_fh_news, 10),
             ("Calendario IPO y resultados", c_fh_calendar, 60), ("Compras de directivos", c_fh_insider, 30),
