@@ -1,9 +1,12 @@
 name: Pulso en vivo
 
 # Vigila mercados, noticias y redes. GitHub no permite programar más a menudo que cada 5 minutos y en
-# esta cuenta retrasa mucho las ejecuciones programadas; por eso cada pulso encadena unos pocos más
-# (uno cada ~5 min durante ~30 min) y después para hasta el siguiente disparo (programado, análisis
-# profundo, cambio en el código o la app). La app se refresca sola cada minuto con lo último publicado.
+# esta cuenta apenas ejecuta los programados, así que cada pulso lanza el siguiente:
+#  · Si el entorno «pulso-espera» tiene un temporizador (Settings → Environments → pulso-espera →
+#    Wait timer = 2 min), la espera la hace GitHub sin ocupar ninguna máquina y la cadena no se corta:
+#    un pulso cada ~5 min, como un cron que funciona.
+#  · Sin temporizador, la pausa se hace dentro del trabajo y la cadena para tras ~1 hora (12 pulsos).
+# Cualquier disparo (programado, fin del análisis profundo, cambios en el código, la app) la reanuda.
 on:
   schedule:
     - cron: "2-57/5 * * * *"
@@ -12,7 +15,7 @@ on:
       saltos:
         description: "Pulsos encadenados que quedan"
         required: false
-        default: "5"
+        default: "12"
       encadenado:
         description: "true si lo lanza el pulso anterior"
         required: false
@@ -32,7 +35,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  espera:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.encadenado == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    environment: pulso-espera
+    steps:
+      - run: echo "Pausa entre pulsos (temporizador del entorno pulso-espera)"
+
   pulse:
+    needs: espera
+    if: ${{ !cancelled() && needs.espera.result != 'failure' }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     environment:
@@ -40,8 +53,15 @@ jobs:
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - name: Pausa entre pulsos encadenados
+        id: pausa
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.encadenado == 'true'
-        run: sleep 200
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          CREATED=$(gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID" --jq .created_at || date -u +%Y-%m-%dT%H:%M:%SZ)
+          ELAPSED=$(( $(date +%s) - $(date -d "$CREATED" +%s) ))
+          echo "Segundos desde que se lanzó este pulso: $ELAPSED"
+          if [ "$ELAPSED" -ge 100 ]; then echo "temporizador=1" >> "$GITHUB_OUTPUT"; echo "El temporizador del entorno ya ha hecho la pausa."; else sleep $((200 - ELAPSED)); fi
 
       - uses: actions/checkout@v4
         with:
@@ -120,11 +140,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           LEFT="${{ github.event.inputs.saltos }}"
-          if [ "${{ github.event.inputs.encadenado }}" != "true" ] || [ -z "$LEFT" ]; then LEFT=6; fi
-          LEFT=$((LEFT-1))
+          if [ "${{ github.event.inputs.encadenado }}" != "true" ] || [ -z "$LEFT" ]; then LEFT=12; fi
+          if [ "${{ steps.pausa.outputs.temporizador }}" = "1" ]; then LEFT=999; else LEFT=$((LEFT-1)); fi
           if [ "$LEFT" -le 0 ]; then echo "Fin de la cadena: el siguiente pulso llegará con el próximo disparo."; exit 0; fi
-          LAST_SCHED=$(gh run list -R "$GITHUB_REPOSITORY" -w pulse.yml -e schedule -L 1 --json createdAt --jq '.[0].createdAt // ""')
-          if [ -n "$LAST_SCHED" ] && [ $(( $(date +%s) - $(date -d "$LAST_SCHED" +%s) )) -lt 900 ]; then echo "El programado de GitHub ya funciona: no hace falta encadenar."; exit 0; fi
-          WAITING=$(gh run list -R "$GITHUB_REPOSITORY" -w pulse.yml -L 20 --json status,databaseId --jq "[.[] | select(.databaseId != ${{ github.run_id }}) | select(.status==\"queued\" or .status==\"pending\" or .status==\"waiting\" or .status==\"requested\" or .status==\"in_progress\")] | length")
+          WAITING=$(gh run list -R "$GITHUB_REPOSITORY" -w pulse.yml -L 20 --json status,databaseId --jq "[.[] | select(.databaseId != $GITHUB_RUN_ID) | select(.status==\"queued\" or .status==\"pending\" or .status==\"waiting\" or .status==\"requested\" or .status==\"in_progress\")] | length")
           if [ "${WAITING:-0}" != "0" ]; then echo "Ya hay otro pulso en marcha o en cola: no se encadena."; exit 0; fi
           gh workflow run pulse.yml -R "$GITHUB_REPOSITORY" --ref main -f saltos="$LEFT" -f encadenado=true && echo "Encadenado (quedan $LEFT)"

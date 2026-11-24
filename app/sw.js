@@ -1,6 +1,6 @@
 // Service worker: la app abre sin conexión, pero siempre intenta la red primero para no enseñar datos viejos.
-const CACHE = "radar-v3-3";
-const SHELL = ["./", "index.html", "style.css?v=9", "app.js?v=9", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
+const CACHE = "radar-v3-4";
+const SHELL = ["./", "index.html", "style.css?v=10", "app.js?v=10", "manifest.webmanifest", "icons/icon-192.png", "icons/icon-512.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).catch(() => {}).then(() => self.skipWaiting()));
 });

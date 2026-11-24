@@ -28,7 +28,7 @@ NY = ZoneInfo("America/New_York")
 _local = threading.local()
 _lock = threading.Lock()
 _next_slot: dict[str, float] = {}
-HOST_GAP = {"finnhub.io": 1.05, "api.coingecko.com": 2.5, "news.google.com": 1.5, "www.infosubvenciones.es": 1.0,
+HOST_GAP = {"finnhub.io": 1.05, "api.coingecko.com": 2.5, "query1.finance.yahoo.com": 0.8, "news.google.com": 1.5, "www.infosubvenciones.es": 1.0,
             "apewisdom.io": 1.0, "api.massive.com": 13.0, "api.polygon.io": 13.0}
 
 
@@ -161,7 +161,7 @@ class Ctx:
 
 # ------------------------------------------------------------------ cripto: mercado
 def c_cg_markets(ctx: Ctx) -> list[dict]:
-    data = get_json(f"{CG}/coins/markets", params={"vs_currency": "eur", "order": "market_cap_desc", "per_page": 250, "page": 1,
+    data = get_json(f"{CG}/coins/markets", params={"vs_currency": "usd", "order": "market_cap_desc", "per_page": 250, "page": 1,
                                                    "price_change_percentage": "1h,24h,7d"})
     if not isinstance(data, list):
         raise SourceError("respuesta inesperada")
@@ -179,7 +179,7 @@ def c_cg_markets(ctx: Ctx) -> list[dict]:
         ch24 = c.get("price_change_percentage_24h_in_currency", c.get("price_change_percentage_24h"))
         ch7 = c.get("price_change_percentage_7d_in_currency")
         vr = vol / mcap if mcap else None
-        m = {"price": c.get("current_price"), "cur": "EUR", "ch1h": _r(ch1), "ch24h": _r(ch24), "ch7d": _r(ch7), "vol": vol, "mcap": mcap,
+        m = {"price": c.get("current_price"), "cur": "USD", "ch1h": _r(ch1), "ch24h": _r(ch24), "ch7d": _r(ch7), "vol": vol, "mcap": mcap,
              "rank": c.get("market_cap_rank")}
         url = f"https://www.coingecko.com/es/monedas/{c['id']}"
         hot = c["id"] in trending
@@ -187,8 +187,8 @@ def c_cg_markets(ctx: Ctx) -> list[dict]:
             up = ch24 > 0
             b = R.move_bucket(ch24)
             s = R.score_move(ch24, vr, mcap, 10) + (6 if hot else 0)
-            why = (f"Movimiento fuerte con {R.fmt_eur(vol)} de volumen en 24 h ({vr:.0%} de su capitalización)." if vr else "Movimiento fuerte.")
-            why_en = f"Strong move with {R.fmt_eur(vol, 'en')} traded in 24h."
+            why = (f"Movimiento fuerte con {R.fmt_usd(vol)} de volumen en 24 h ({vr:.0%} de su capitalización)." if vr else "Movimiento fuerte.")
+            why_en = f"Strong move with {R.fmt_usd(vol, 'en')} traded in 24h."
             if hot:
                 why += " Además está entre las más buscadas en CoinGecko."
                 why_en += " It is also trending on CoinGecko searches."
@@ -234,7 +234,7 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
         if (it.get("market_cap_rank") or 999) <= 10:
             continue  # BTC, ETH… siempre están: no aporta
         d = it.get("data") or {}
-        ch = (d.get("price_change_percentage_24h") or {}).get("eur")
+        ch = (d.get("price_change_percentage_24h") or {}).get("usd")
         rank = it.get("market_cap_rank")
         s = 40 + max(0, 15 - i) * 1.4 + (8 if ch is not None and abs(ch) >= 10 else 0)
         if rank and rank <= 100:
@@ -267,6 +267,112 @@ def c_cg_trending(ctx: Ctx) -> list[dict]:
                         act_en="If you like the theme, look at its larger, liquid coins rather than tiny ones.",
                         m={"ch24h": _r(ch)}, s=46, opp=1, risk="alto", tags=["narrativa"],
                         url=f"https://www.coingecko.com/es/categorias/{cat.get('slug') or ''}"))
+    return out
+
+
+# ------------------------------------------------------------------ macro: índices, bono a 10 años, Brent, oro y plata
+CNBC = "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
+MACRO_SYMS = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER"}
+YAHOO_SYMS = {"SPX": "^GSPC", "IXIC": "^IXIC", "US10Y": "^TNX", "BRENT": "BZ=F", "GOLD": "GC=F", "SILVER": "SI=F"}
+
+
+def _num(v):
+    if v is None or v == "":
+        return None
+    try:
+        return float(str(v).replace(",", "").replace("%", "").replace("+", "").strip())
+    except ValueError:
+        return None
+
+
+def macro_quotes() -> dict:
+    """Cotizaciones en dólares (rentabilidad en % para el bono): CNBC primero; gold-api.com y Yahoo de respaldo."""
+    out: dict = {}
+    try:
+        d = get_json(CNBC, params={"symbols": "|".join(MACRO_SYMS), "requestMethod": "itv", "noform": 1, "partnerId": 2, "fund": 1,
+                                   "exthrs": 1, "output": "json", "events": 1}, timeout=15) or {}
+        for q in (d.get("FormattedQuoteResult") or {}).get("FormattedQuote") or []:
+            k, p = MACRO_SYMS.get(q.get("symbol")), _num(q.get("last"))
+            if k and p is not None:
+                out[k] = {"p": p, "ch": _r(_num(q.get("change_pct"))), "chg": _r(_num(q.get("change")), 4), "at": q.get("last_time"), "src": "CNBC"}
+    except (SourceError, ValueError, AttributeError):
+        pass
+    for k, sym in (("GOLD", "XAU"), ("SILVER", "XAG")):
+        if k not in out:
+            try:
+                d = get_json(f"https://api.gold-api.com/price/{sym}", timeout=12) or {}
+                if d.get("price"):
+                    out[k] = {"p": _r(d["price"], 3), "ch": None, "chg": None, "at": d.get("updatedAt"), "src": "gold-api.com"}
+            except (SourceError, ValueError, AttributeError):
+                pass
+    for k, ysym in YAHOO_SYMS.items():
+        if k in out:
+            continue
+        try:
+            d = get_json(f"https://query1.finance.yahoo.com/v8/finance/chart/{quote_plus(ysym)}", params={"range": "1d", "interval": "15m"}, timeout=12) or {}
+            meta = ((d.get("chart") or {}).get("result") or [{}])[0].get("meta") or {}
+            p, prev = meta.get("regularMarketPrice"), meta.get("chartPreviousClose") or meta.get("previousClose")
+            if p is not None:
+                out[k] = {"p": p, "ch": _r((p / prev - 1) * 100) if prev else None, "chg": _r(p - prev, 4) if prev else None, "src": "Yahoo"}
+        except (SourceError, ValueError, IndexError, AttributeError):
+            pass
+    return out
+
+
+MACRO_TEXT = {
+    "BRENT": ("El petróleo Brent", "Brent crude", (3, 6, 10), "price",
+              "El precio del crudo mueve a petroleras, aerolíneas y la inflación.", "Oil moves energy stocks, airlines and inflation.",
+              "Si tienes energía o transporte, revisa tus posiciones; por sí solo no es una señal de compra.",
+              "If you hold energy or transport names, review them; on its own it's not a buy signal."),
+    "GOLD": ("El oro", "Gold", (2, 4, 7), "price",
+             "El oro suele subir con el miedo, con la caída del dólar o con la bajada de tipos.", "Gold tends to rise on fear, a weaker dollar or falling rates.",
+             "Para tener oro sin comprarlo físico existen ETC de oro en bolsa. No persigas subidas verticales.",
+             "Exchange-traded gold products avoid physical storage. Don't chase vertical moves."),
+    "SILVER": ("La plata", "Silver", (3, 6, 10), "price",
+               "La plata se mueve como el oro pero con más fuerza, y además depende de la industria.", "Silver tracks gold with more volatility and industrial demand.",
+               "Es más volátil que el oro: si entras, que sea con poco y con un límite de pérdida.", "More volatile than gold: size small with a loss limit."),
+    "SPX": ("El S&P 500", "The S&P 500", (2, 3.5, 5), "index",
+            "Movimiento muy fuerte del mercado de EE. UU. en conjunto.", "A very strong move for the whole US market.",
+            "En días así las prisas salen caras: espera a que se asiente antes de mover tu cartera.", "Rushing on days like this is costly: let it settle first."),
+    "IXIC": ("El Nasdaq", "The Nasdaq", (2.5, 4, 6), "index",
+             "Movimiento muy fuerte de las tecnológicas de EE. UU.", "A very strong move for US tech.",
+             "Mira qué empresas lo arrastran en la pestaña Bolsa antes de actuar.", "Check which companies drive it before acting."),
+}
+
+
+def c_macro(ctx: Ctx) -> list[dict]:
+    quotes = macro_quotes()
+    if not quotes:
+        raise SourceError("sin cotizaciones")
+    ctx.share["macro"] = quotes
+    out = []
+    for k, (es, en, steps, kind, why, why_en, act, act_en) in MACRO_TEXT.items():
+        q = quotes.get(k)
+        if not q or q.get("ch") is None or abs(q["ch"]) < steps[0]:
+            continue
+        up, b = q["ch"] > 0, R.move_bucket(q["ch"], steps)
+        level = R.fmt_price(q["p"], "$") if kind == "price" else f"{q['p']:,.0f}".replace(",", ".")
+        level_en = R.fmt_price(q["p"], "$", "en") if kind == "price" else f"{q['p']:,.0f}"
+        out.append(item(f"mc:{k.lower()}:{ctx.today}:{'u' if up else 'd'}{b}", "bolsa", "move", q.get("src") or "CNBC",
+                        title=f"{es} {'sube' if up else 'cae'} un {R.fmt_pct(abs(q['ch']))[1:]} hasta {level}",
+                        es=f"{es} {'sube' if up else 'cae'} un {R.fmt_pct(abs(q['ch']))[1:]} hasta {level}",
+                        en=f"{en} {'up' if up else 'down'} {abs(q['ch']):.1f}% to {level_en}", why=why, why_en=why_en, act=act, act_en=act_en,
+                        m={"price": q["p"], "cur": "USD", "ch24h": q["ch"]}, s=int(56 + min(16, (abs(q["ch"]) - steps[0]) * 4)), opp=2,
+                        risk="medio", tags=["macro", "subida" if up else "caida"], url="https://www.cnbc.com/markets/"))
+    y = quotes.get("US10Y")
+    if y and y.get("chg") is not None and abs(y["chg"]) >= 0.08:
+        up, bp = y["chg"] > 0, round(abs(y["chg"]) * 100)
+        lvl = f"{y['p']:.2f}".replace(".", ",")
+        out.append(item(f"mc:us10y:{ctx.today}:{'u' if up else 'd'}{1 if bp < 15 else 2}", "bolsa", "move", y.get("src") or "CNBC",
+                        title=f"La rentabilidad del bono de EE. UU. a 10 años {'sube' if up else 'baja'} {bp} pb hasta el {lvl} %",
+                        es=f"La rentabilidad del bono de EE. UU. a 10 años {'sube' if up else 'baja'} {bp} pb hasta el {lvl} %",
+                        en=f"US 10-year Treasury yield {'up' if up else 'down'} {bp} bp to {y['p']:.2f}%",
+                        why=("Tipos más altos encarecen el dinero y suelen presionar a tecnológicas, cripto e inmobiliarias." if up
+                             else "Tipos más bajos abaratan el dinero y suelen favorecer a tecnológicas, cripto e inmobiliarias."),
+                        why_en="Higher yields tend to weigh on tech, crypto and real estate." if up else "Lower yields tend to help tech, crypto and real estate.",
+                        act="Tenlo en cuenta antes de comprar acciones de crecimiento o cripto hoy.", act_en="Factor it in before buying growth stocks or crypto today.",
+                        m={"yield": y["p"], "chg": y["chg"]}, s=int(56 + min(16, (bp - 8) * 1.2)), opp=2, risk="medio", tags=["macro"],
+                        url="https://www.cnbc.com/quotes/US10Y"))
     return out
 
 
@@ -1177,6 +1283,7 @@ def registry(cfg: dict) -> list[tuple[str, object, int]]:
     p = cfg.get("pulse") or {}
     feeds = p.get("rss") or DEFAULT_FEEDS
     regs = [("CoinGecko mercado", c_cg_markets, 5), ("CoinGecko tendencias", c_cg_trending, 10), ("Miedo y codicia", c_fng, 60),
+            ("Índices, bono, Brent, oro y plata", c_macro, 5),
             ("Anuncios Binance", c_binance_ann, 10), ("Anuncios OKX", c_okx_ann, 10),
             ("DefiLlama", c_defillama, 30), ("Bolsa EE. UU. (cotizaciones)", c_fh_quotes, 5), ("Noticias Finnhub", c_fh_news, 10),
             ("Calendario IPO y resultados", c_fh_calendar, 60), ("Compras de directivos", c_fh_insider, 30),

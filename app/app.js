@@ -104,7 +104,7 @@
     return merged;
   };
   const invalidate = () => { merged = null; };
-  const LIVE = {items: arr(LS.get("radar-live-items", [])).filter((x) => Date.now() - (toDate(x.t) || 0) < 12 * 3600e3), at: null, cgAt: 0, trAt: 0, bnAt: 0};
+  const LIVE = {items: arr(LS.get("radar-live-items", [])).filter((x) => Date.now() - (toDate(x.t) || 0) < 12 * 3600e3 && (x.m || {}).cur !== "EUR"), at: null, cgAt: 0, trAt: 0, bnAt: 0};
   const inCat = (it, c) => it.cat === c || arr(it.also).includes(c);
   const useful = (it) => !it.h && (((it.opp ?? 1) >= 2 && (it.s ?? 0) >= 45) || (it.s ?? 0) >= 70);
   const txt = (it) => (LANG === "en" ? it.en || it.title || it.es : it.es || it.title) || "";
@@ -163,17 +163,39 @@
     if (!["vivo", "noticias", "redes"].includes(S.tab) && window.scrollY < 160 && !$("#sheet").classList.contains("open")) render();
   }
   let liveTicker = {};
+  const num = (v) => { const x = parseFloat(String(v ?? "").replace(/[,%+\s]/g, "")); return isNaN(x) ? null : x; };
+  const MACRO = {".SPX": "SPX", ".IXIC": "IXIC", "US10Y": "US10Y", "@LCO.1": "BRENT", "@GC.1": "GOLD", "@SI.1": "SILVER"};
   async function pollPrices() {
     if (document.hidden) return;
-    try {
-      const r = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=eur&include_24hr_change=true", {cache: "no-store"});
+    const crypto = (async () => {
+      const r = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true", {cache: "no-store"});
       if (!r.ok) return;
       const d = await r.json();
       for (const [id, sym] of [["bitcoin", "BTC"], ["ethereum", "ETH"], ["solana", "SOL"]]) {
-        if (d[id]) liveTicker[sym] = {p: d[id].eur, ch: d[id].eur_24h_change, cur: "EUR"};
+        if (d[id]) liveTicker[sym] = {p: d[id].usd, ch: d[id].usd_24h_change, cur: "USD"};
       }
-      renderTicker();
-    } catch {}
+    })().catch(() => {});
+    const macro = (async () => {
+      let got = 0;
+      try {
+        const r = await fetch("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=" + encodeURIComponent(Object.keys(MACRO).join("|")) +
+          "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json&events=1", {cache: "no-store"});
+        if (r.ok) {
+          const d = await r.json();
+          for (const q of arr(d?.FormattedQuoteResult?.FormattedQuote)) {
+            const k = MACRO[q.symbol], p = num(q.last);
+            if (k && p != null) { liveTicker[k] = {p, ch: num(q.change_pct), chg: num(q.change), cur: "USD"}; got++; }
+          }
+        }
+      } catch {}
+      if (got < 2) {  // respaldo para oro y plata
+        await Promise.all([["GOLD", "XAU"], ["SILVER", "XAG"]].map(async ([k, sym]) => {
+          try { const r = await fetch(`https://api.gold-api.com/price/${sym}`, {cache: "no-store"}); const d = r.ok ? await r.json() : null; if (d?.price) liveTicker[k] = {...(liveTicker[k] || {}), p: d.price, cur: "USD"}; } catch {}
+        }));
+      }
+    })();
+    await Promise.all([crypto, macro]);
+    renderTicker();
   }
 
   // ------------------------------------------------------------------ pulso en el navegador
@@ -202,14 +224,14 @@
       if (!plainCoin(sym, name) || mcap < 1e8 || vol < 5e6) continue;
       const ch1 = c.price_change_percentage_1h_in_currency, ch24 = c.price_change_percentage_24h_in_currency ?? c.price_change_percentage_24h;
       const vr = mcap ? vol / mcap : null, isHot = hot.has(c.id);
-      const m = {price: c.current_price, cur: "EUR", ch1h: ch1, ch24h: ch24, vol, mcap, rank: c.market_cap_rank};
+      const m = {price: c.current_price, cur: "USD", ch1h: ch1, ch24h: ch24, vol, mcap, rank: c.market_cap_rank};
       const url = `https://www.coingecko.com/${LANG === "en" ? "en/coins" : "es/monedas"}/${c.id}`;
       if (ch24 != null && Math.abs(ch24) >= 10) {
         const up = ch24 > 0;
         out.push({id: `mv:${c.id}:${day}:${up ? "u" : "d"}${bucket(ch24, [10, 20, 35, 60])}`, cat: "cripto", kind: "move", src: "CoinGecko", local: 1,
           title: `${name} (${sym}) ${up ? "sube" : "cae"} un ${nf(Math.abs(ch24), 1)} % en 24 h`,
           es: `${name} (${sym}) ${up ? "sube" : "cae"} un ${nf(Math.abs(ch24), 1)} % en 24 h`, en: `${name} (${sym}) ${up ? "up" : "down"} ${Math.abs(ch24).toFixed(1)}% in 24h`,
-          why: `Movimiento fuerte con ${big(vol, "EUR")} de volumen en 24 h.` + (isHot ? " Además está entre las más buscadas en CoinGecko." : ""),
+          why: `Movimiento fuerte con ${big(vol, "USD")} de volumen en 24 h.` + (isHot ? " Además está entre las más buscadas en CoinGecko." : ""),
           why_en: "Strong move on heavy 24h volume." + (isHot ? " It is also trending on CoinGecko searches." : ""),
           act: up ? "Busca la noticia que lo explica antes de entrar. Si compras, que sea poco y con stop." : "No compres a ciegas «porque está barato»: espera a que se estabilice y busca la causa.",
           act_en: up ? "Find the news behind it before buying. Size small and use a stop." : "Don't buy blindly because it's cheaper: wait for it to stabilise and find the cause.",
@@ -234,7 +256,7 @@
       ids.push(it.id);
       const rank = it.market_cap_rank;
       if ((rank || 999) <= 10) return;
-      const ch = ((it.data || {}).price_change_percentage_24h || {}).eur;
+      const ch = ((it.data || {}).price_change_percentage_24h || {}).usd;
       let s = 40 + Math.max(0, 15 - i) * 1.4 + (ch != null && Math.abs(ch) >= 10 ? 8 : 0) + (rank && rank <= 100 ? 4 : 0) - (!rank || rank > 600 ? 6 : 0);
       out.push({id: `tr:cg:${it.id}:${day}`, cat: "cripto", kind: "trend", src: "CoinGecko", local: 1,
         title: `${name} (${sym}) entre las más buscadas en CoinGecko (#${i + 1})`, es: `${name} (${sym}) entre las más buscadas en CoinGecko (#${i + 1})`,
@@ -295,11 +317,11 @@
     try {
       if (now - LIVE.cgAt > 170e3) {
         LIVE.cgAt = now;
-        const data = await get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=eur&order=market_cap_desc&per_page=150&page=1&price_change_percentage=1h,24h,7d");
+        const data = await get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=150&page=1&price_change_percentage=1h,24h,7d");
         out.push(...cgMoves(data, day));
         for (const [id, sym] of [["bitcoin", "BTC"], ["ethereum", "ETH"], ["solana", "SOL"]]) {
           const c = data.find((x) => x.id === id);
-          if (c) liveTicker[sym] = {p: c.current_price, ch: c.price_change_percentage_24h_in_currency ?? c.price_change_percentage_24h, cur: "EUR"};
+          if (c) liveTicker[sym] = {p: c.current_price, ch: c.price_change_percentage_24h_in_currency ?? c.price_change_percentage_24h, cur: "USD"};
         }
       }
     } catch {}
@@ -339,16 +361,33 @@
       ? L(`En vivo · comprobado ${ago(local.toISOString())}`, `Live · checked ${ago(local.toISOString())}`)
       : (mins < 16 ? L("En vivo · ", "Live · ") : L("Último pulso ", "Last pulse ")) + ago(at.toISOString());
   }
+  const nfg = (n, d) => { try { return new Intl.NumberFormat(LOC(), {maximumFractionDigits: d, useGrouping: "always"}).format(+n); } catch { return nf(n, d); } };
+  const usdShort = (n) => {
+    if (n == null || isNaN(+n)) return "—";
+    const v = +n, a = Math.abs(v), d = a >= 1000 ? 0 : a >= 100 ? 1 : 2;
+    return LANG === "en" ? "$" + nfg(v, d) : nfg(v, d) + " $";
+  };
   function renderTicker() {
     const tk = {...(S.feed?.ticker || {}), ...liveTicker};
+    if (!tk.SPX && tk.SPY) tk.SPX = {...tk.SPY, etf: "SPY"};
+    if (!tk.IXIC && tk.QQQ) tk.IXIC = {...tk.QQQ, etf: "QQQ"};
+    const rows = [["BTC", "BTC", "usd"], ["ETH", "ETH", "usd"], ["SOL", "SOL", "usd"], ["SPX", "S&P 500", "idx"], ["IXIC", "Nasdaq", "idx"],
+      ["GOLD", L("Oro", "Gold"), "usd"], ["SILVER", L("Plata", "Silver"), "usd"], ["BRENT", "Brent", "usd"], ["US10Y", "US10Y", "yield"]];
     const parts = [];
-    for (const sym of ["BTC", "ETH", "SOL", "SPY", "QQQ"]) {
-      const x = tk[sym]; if (!x || x.p == null) continue;
-      const ch = +x.ch;
-      const name = sym === "SPY" ? "S&P 500" : sym === "QQQ" ? "Nasdaq" : sym;
-      parts.push(`<span class="tk"><b>${esc(name)}</b>${esc(sym === "SPY" || sym === "QQQ" ? money(x.p, "USD") : money(x.p, x.cur || "EUR"))} <span class="${ch >= 0 ? "up" : "dn"}">${esc(pct(ch, 1))}</span></span>`);
+    for (const [k, name, kind] of rows) {
+      const x = tk[k]; if (!x || x.p == null) continue;
+      let val, chg;
+      if (kind === "yield") {
+        val = nf(x.p, 2) + (LANG === "en" ? "%" : " %");
+        const bp = x.chg != null ? Math.round(+x.chg * 100) : null;
+        chg = bp == null ? "" : `<span class="${bp >= 0 ? "up" : "dn"}">${bp > 0 ? "+" : ""}${bp} ${L("pb", "bp")}</span>`;
+      } else {
+        val = kind === "idx" ? (x.etf ? usdShort(x.p) : nfg(x.p, 0)) : usdShort(x.p);
+        chg = x.ch == null ? "" : `<span class="${+x.ch >= 0 ? "up" : "dn"}">${esc(pct(x.ch, 1))}</span>`;
+      }
+      parts.push(`<span class="tk"><b>${esc(name)}${x.etf ? ` (${esc(x.etf)})` : ""}</b>${esc(val)} ${chg}</span>`);
     }
-    if (tk.FNG) parts.splice(3, 0, `<span class="tk"><b>${L("Miedo/codicia", "Fear/greed")}</b><span class="${tk.FNG.v <= 25 ? "dn" : tk.FNG.v >= 75 ? "up" : ""}">${esc(tk.FNG.v)}</span></span>`);
+    if (tk.FNG) parts.push(`<span class="tk"><b>${L("Miedo/codicia", "Fear/greed")}</b><span class="${tk.FNG.v <= 25 ? "dn" : tk.FNG.v >= 75 ? "up" : ""}">${esc(tk.FNG.v)}</span></span>`);
     $("#ticker").innerHTML = parts.join("") || `<span class="tk">${L("Cotizaciones en camino…", "Prices on the way…")}</span>`;
   }
   function tabItems(id) {
@@ -684,7 +723,7 @@
     likes: L("Me gusta", "Likes"), downloads: L("Descargas", "Downloads"), epsActual: L("BPA real", "Actual EPS"), epsEstimate: L("BPA esperado", "Expected EPS"),
     surprise: L("Sorpresa", "Surprise"), total: L("Importe comprado", "Amount bought"), insiders: L("Directivos", "Insiders"), buys: L("Compras", "Purchases"),
     date: L("Fecha", "Date"), value: L("Tamaño de la operación", "Deal size"), shares: L("Acciones", "Shares"), fng: L("Índice", "Index"),
-    nivel: L("Administración", "Administration"), org: L("Organismo", "Body"), fecha: L("Publicada", "Published"), dollarVol: L("Negociado", "Traded"), cat: L("Categoría", "Category"),
+    yield: L("Rentabilidad (%)", "Yield (%)"), chg: L("Cambio (puntos)", "Change (points)"), nivel: L("Administración", "Administration"), org: L("Organismo", "Body"), fecha: L("Publicada", "Published"), dollarVol: L("Negociado", "Traded"), cat: L("Categoría", "Category"),
   });
   function metricsTable(it) {
     const m = it.m || {}, lab = M_LABEL(), cur = m.cur || "USD";

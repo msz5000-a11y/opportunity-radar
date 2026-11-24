@@ -234,6 +234,55 @@ def test_us_session():
     assert S.us_session(datetime(2026, 11, 22, 15, 0, tzinfo=timezone.utc)) == "closed"
 
 
+CNBC_FIX = {"FormattedQuoteResult": {"FormattedQuote": [
+    {"symbol": ".SPX", "last": "7,237.17", "change": "+326.78", "change_pct": "+4.73%"},
+    {"symbol": ".IXIC", "last": "24,089.558", "change": "+1,471.825", "change_pct": "+6.51%"},
+    {"symbol": "US10Y", "last": "4.906%", "change": "-0.114", "change_pct": "-2.28%"},
+    {"symbol": "@LCO.1", "last": "89.08", "change": "-0.29", "change_pct": "-0.32%"},
+    {"symbol": "@GC.1", "last": "3,622.50", "change": "-28.90", "change_pct": "-0.79%"},
+    {"symbol": "@SI.1", "last": "41.825", "change": "-1.35", "change_pct": "-3.13%"}]}}
+
+
+def test_macro_quotes_and_moves(monkeypatch):
+    monkeypatch.setattr(S, "get_json", lambda url, **kw: CNBC_FIX if "cnbc" in url else (_ for _ in ()).throw(S.SourceError("x")))
+    c = ctx()
+    out = S.c_macro(c)
+    q = c.share["macro"]
+    assert q["GOLD"]["p"] == 3622.5 and q["SPX"]["p"] == 7237.17 and q["US10Y"]["p"] == 4.906 and q["US10Y"]["chg"] == -0.114
+    ids = {x["id"] for x in out}
+    assert ids == {"mc:spx:2026-11-23:u2", "mc:ixic:2026-11-23:u3", "mc:silver:2026-11-23:d1", "mc:us10y:2026-11-23:d1"}
+    y = next(x for x in out if x["id"].startswith("mc:us10y"))
+    assert "11 pb" in y["es"] and "4,91 %" in y["es"]
+
+
+def test_macro_fallbacks(monkeypatch):
+    def fake(url, **kw):
+        if "cnbc" in url:
+            raise S.SourceError("HTTP 403")
+        if "gold-api" in url:
+            return {"price": 3600.1 if url.endswith("XAU") else 41.0, "updatedAt": "2026-11-24T10:00:00Z"}
+        if "yahoo" in url:
+            return {"chart": {"result": [{"meta": {"regularMarketPrice": 89.0, "chartPreviousClose": 88.0}}]}}
+        raise S.SourceError("x")
+    monkeypatch.setattr(S, "get_json", fake)
+    q = S.macro_quotes()
+    assert q["GOLD"]["src"] == "gold-api.com" and q["BRENT"]["src"] == "Yahoo" and round(q["BRENT"]["ch"], 2) == 1.14
+
+
+def test_migration_to_usd(tmp_path, monkeypatch):
+    live, data = tmp_path / "live", tmp_path / "data"
+    live.mkdir()
+    eur = {"id": "mv:sol:2026-11-23:u1", "cat": "cripto", "kind": "move", "src": "CoinGecko", "title": "SOL", "s": 60, "opp": 2, "risk": "alto",
+           "m": {"cur": "EUR", "price": 60}, "t": "2026-11-23T14:00:00Z", "w": "2026-11-23T14:00:00Z"}
+    keep = dict(news("n:keep", "Una noticia cualquiera de hoy"), t="2026-11-23T14:00:00Z", w="2026-11-23T14:00:00Z")
+    (live / "feed.json").write_text(json.dumps({"items": [eur, keep], "ticker": {"BTC": {"p": 1, "cur": "EUR"}}}))
+    (live / "pulse_state.json").write_text(json.dumps({"v": 5, "seen": {eur["id"]: "x", "n:keep": "x"}, "mem": {}}))
+    monkeypatch.setattr(S, "registry", lambda cfg: [])
+    feed = pulse.run(live, data, {}, now=NOW)
+    st = json.loads((live / "pulse_state.json").read_text())
+    assert [x["id"] for x in feed["items"]] == ["n:keep"] and st["v"] == 6 and eur["id"] not in st["seen"] and "BTC" not in feed["ticker"]
+
+
 def test_all_collectors_with_fixtures(monkeypatch):
     """Cada colector con datos de ejemplo: no debe lanzar excepciones y debe producir elementos válidos."""
     import time as _t
@@ -262,11 +311,14 @@ def test_all_collectors_with_fixtures(monkeypatch):
         "alternative.me": {"data": [{"value": "12", "value_classification": "Extreme Fear"}]},
         "massive.com": {"results": [{"T": "NVDA", "c": 130, "v": 5e7}, {"T": "AAPL", "c": 100, "v": 6e7}]},
         "apewisdom.io": {"results": [{"ticker": "GME", "name": "GameStop", "mentions": 400, "mentions_24h_ago": 50, "rank": 3, "rank_24h_ago": 40}]},
+        "quote.cnbc.com": CNBC_FIX,
     }
 
     def fake_get_json(url, **kw):
         params = kw.get("params") or {}
         full = url + "?" + "&".join(f"{k}={v}" for k, v in params.items())
+        if "cnbc.com" in url:
+            return CNBC_FIX
         if "massive.com" in url:
             day = url.rsplit("/", 1)[-1]
             base = {"NVDA": 100, "AAPL": 100}
@@ -302,3 +354,4 @@ def test_all_collectors_with_fixtures(monkeypatch):
     assert results["Cierre EE. UU. (Massive)"] and all(x["sym"] in fund for x in results["Cierre EE. UU. (Massive)"])
     assert results["Noticias Finnhub"] and results["Noticias Finnhub"][0]["via"] == "Finnhub"
     assert results["Miedo y codicia"][0]["id"].startswith("fg:")
+    assert c.share["macro"]["BRENT"]["p"] == 89.08
