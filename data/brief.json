@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T20:16:29Z",
- "checkedAt": "2026-11-24T20:16:29Z",
- "attemptedAt": "2026-11-24T20:16:29Z",
+ "generatedAt": "2026-11-24T20:20:50Z",
+ "checkedAt": "2026-11-24T20:20:50Z",
+ "attemptedAt": "2026-11-24T20:20:50Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -150,17 +150,16 @@
     "country": "ES",
     "municipality": "Riba-roja de Túria",
     "sections": [
-     "ayudas",
-     "extra"
+     "ayudas"
     ],
     "casa": true,
     "start_tab": "casa"
    },
-   "generatedAt": "2026-11-24T20:16:29Z",
-   "checkedAt": "2026-11-24T20:16:29Z",
+   "generatedAt": "2026-11-24T20:20:50Z",
+   "checkedAt": "2026-11-24T20:20:50Z",
    "ok": true,
    "error": null,
-   "fingerprint": "babdc1618c5d3d0e",
+   "fingerprint": "49e1144607610d3c",
    "provider": "gemini",
    "model": "gemini-3.1-flash-lite",
    "cost_usd": 0.0,
@@ -174,87 +173,28 @@
     "startups": 8,
     "clonar": 69,
     "accion": 12,
-    "ayudas": 1,
+    "ayudas": 0,
     "extra": 23
    },
-   "resumen": "Hoy para ti: 1 ayuda que puedes pedir.",
-   "descartado": "He descartado todas las noticias de criptomonedas y acciones volátiles por ser incompatibles con tu perfil de riesgo bajo y tu aversión al trading.",
-   "secciones": {
-    "ayudas": {
-     "picks": [
-      {
-       "ref": "gr943905",
-       "titulo": "Premio María la Jabalina de Memoria Democrática 2027",
-       "resumen": "Premio otorgado por la Diputación de Valencia para proyectos de educación y memoria.",
-       "por_que": "Es una ayuda directa de la Diputación de Valencia. Si tu trabajo en arte o diseño tiene un componente educativo o histórico, podrías encajar.",
-       "pasos": [
-        "Revisar las bases en el enlace oficial para ver si tu proyecto creativo encaja en la categoría educativa.",
-        "Preparar la memoria técnica del proyecto.",
-        "Presentar la solicitud a través de la sede electrónica de la Diputación de Valencia antes de septiembre de 2027."
-       ],
-       "coste": "0",
-       "plazo": "2027-09-15",
-       "potencial": "Parte de los 7.800 € de presupuesto total.",
-       "riesgos": [
-        "Concurrencia competitiva alta",
-        "Requiere justificación de proyecto"
-       ],
-       "confianza": "media",
-       "datos": {
-        "Plazo": "2027-09-15",
-        "Presupuesto": "7.800 €",
-        "Organismo": "DIPUTACIÓN PROV. DE VALENCIA · DIPUTACIÓN PROVINCIAL DE VALENCIA",
-        "Ámbito": "provincial",
-        "Tipo": "Subvención"
-       },
-       "fuentes": [
-        "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943905"
-       ],
-       "enlace": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943905"
-      }
-     ],
-     "nota": "He buscado ayudas estatales y autonómicas; la mayoría están cerradas o no aplican a tu actividad. Mantente atenta al portal de la Generalitat Valenciana para nuevas líneas de emprendimiento."
-    },
-    "extra": {
-     "picks": [],
-     "nota": "Las noticias del pulso (cripto y bolsa) son de alta volatilidad y riesgo, por lo que no encajan con tu perfil de inversión conservadora."
-    }
-   },
-   "descartados_por_validacion": 0,
    "casa": {
-    "generatedAt": "2026-11-24T20:16:29Z",
-    "checkedAt": "2026-11-24T20:16:29Z",
-    "profile_hash": "35eb5c9b959e",
+    "generatedAt": "2026-11-24T20:20:50Z",
+    "checkedAt": "2026-11-24T20:20:50Z",
+    "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
     "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
-    "descartadas": 0,
-    "nota": "He buscado ideas de servicios digitales que aprovechen tus habilidades en diseño e inmobiliaria, descartando la venta de comida casera por la complejidad de la normativa sanitaria en España (necesitas cocina industrial y registro sanitario).",
+    "nuevas": 0,
+    "descartadas": 2,
+    "nota": "He buscado ideas que aprovechen tu experiencia inmobiliaria y creativa, descartando servicios de comida a domicilio por la complejidad de la normativa sanitaria en España.",
     "oportunidades_locales": [],
-    "ayudas": [
-     {
-      "id": "gr943905",
-      "titulo": "MH Convocatoria Premio María la Jabalina de Memoria Democrática 2027",
-      "donde": "DIPUTACIÓN PROVINCIAL DE VALENCIA",
-      "ambito": "provincial",
-      "presupuesto_eur": 7800,
-      "solicitud": {
-       "desde": null,
-       "hasta": "2027-09-15"
-      },
-      "finalidad": "Educación",
-      "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943905",
-      "sede": "https://www.sede.dival.es/"
-     }
-    ],
+    "ayudas": [],
     "ideas": [
      {
       "id": "c7ca958ee",
       "fecha": "2026-11-24T20:16:29Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Diseño de Stencils Personalizados para Artesanos",
       "gancho": "Crea plantillas digitales únicas para artistas y artesanos locales usando herramientas de IA.",
       "que_es": "Utiliza IA para convertir bocetos o fotos en diseños de plantillas (stencils) listos para imprimir o cortar. Es un servicio B2B para tatuadores, artistas de murales o artesanos de muebles que necesitan precisión.",
@@ -303,7 +243,7 @@
      {
       "id": "cd6012caf",
       "fecha": "2026-11-24T20:16:29Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Gestión de 'Home Staging' Virtual para Inmobiliarias",
       "gancho": "Ayuda a inmobiliarias a vender casas más rápido decorando sus fotos vacías digitalmente.",
       "que_es": "Muchas inmobiliarias tienen pisos vacíos que no atraen compradores. Tú recibes las fotos, usas software de IA para 'amueblar' las estancias virtualmente y entregas fotos atractivas para sus anuncios.",
@@ -348,7 +288,16 @@
       "confianza": "alta"
      }
     ]
-   }
+   },
+   "resumen": "Hoy para ti: ninguna ayuda abierta que encaje.",
+   "descartado": "He descartado todas las ayudas de digitalización industrial y eficiencia energética por no ser aplicables a tu actividad y requerir inversiones que superan tu capital.",
+   "secciones": {
+    "ayudas": {
+     "picks": [],
+     "nota": "He revisado la Base de Datos Nacional de Subvenciones (BDNS) para la Comunitat Valenciana y el ámbito estatal. No hay convocatorias abiertas de concurrencia competitiva para personas físicas o pequeños proyectos de emprendimiento creativo/inmobiliario que cumplan con tus requisitos de bajo riesgo y…"
+    }
+   },
+   "descartados_por_validacion": 0
   },
   "eg": {
    "profile": {
@@ -573,24 +522,22 @@
    "n": 23,
    "err": null
   },
-  "ayudas_es": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
   "ayudas_ella": {
    "ok": true,
-   "n": 1,
-   "err": null
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 42,
+    "sin_relacion": 23,
+    "directa": 6,
+    "no_para_ti": 4,
+    "cerradas": 9,
+    "abiertas": 0
+   }
   },
   "casa_historias_ella": {
    "ok": true,
    "n": 40,
-   "err": null
-  },
-  "ayudas_eg": {
-   "ok": true,
-   "n": 0,
    "err": null
   }
  },
