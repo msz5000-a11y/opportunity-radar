@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T20:26:57Z",
- "checkedAt": "2026-11-24T20:26:57Z",
- "attemptedAt": "2026-11-24T20:26:57Z",
+ "generatedAt": "2026-11-24T20:32:30Z",
+ "checkedAt": "2026-11-24T20:32:30Z",
+ "attemptedAt": "2026-11-24T20:32:30Z",
  "spend": {
   "date": "2026-11-24",
   "usd": 0.0
@@ -177,29 +177,127 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-24T20:26:57Z",
-    "checkedAt": "2026-11-24T20:26:57Z",
+    "generatedAt": "2026-11-24T20:32:30Z",
+    "checkedAt": "2026-11-24T20:32:30Z",
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.1-flash-lite",
+    "model": "gemini-3.6-flash",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 1,
-    "descartadas": 1,
+    "nuevas": 2,
+    "descartadas": 0,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 1,
+     "sin_caso": 0,
      "vacia": 0
     },
-    "nota": "He descartado ideas de venta de comida física por la complejidad de la normativa sanitaria en España (registro sanitario, cocina industrial), enfocándome en servicios digitales de planificación y curaduría.",
+    "nota": "He buscado modelos de negocio basados en diseño inmobiliario e intermediación/curaduría online adaptados a tus gustos por la inmobiliaria, el arte y los niños, descartando opciones de alta inversión o venta física con local.",
     "oportunidades_locales": [],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c2f0774a8",
+      "fecha": "2026-11-24T20:32:30Z",
+      "nueva": true,
+      "titulo": "Kits de Visual Staging y Marketing Gráfico para Inmobiliarias Locales",
+      "gancho": "Ayuda a agencias e independientes a vender pisos más rápido diseñando dossiers visuales y staging virtual sin hacer obras.",
+      "que_es": "Consiste en ofrecer paquetes express de maquetación visual (Home Staging digital) y plantillas promocionales para portales como Idealista o Fotocasa. Transformas fotos de pisos vacíos o desordenados en imágenes atractivas y preparas dossiers de venta en 48 horas.",
+      "casos": [
+       {
+        "quien": "Redak",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 19.189 $ en 30 días",
+        "url": "https://trustmrr.com/startup/redak"
+       }
+      ],
+      "por_que_tu": "Tu experiencia en el sector inmobiliario combinada con tu gusto por el diseño te permite entender exactamente qué necesita un agente inmobiliario para destacar una propiedad.",
+      "como_empezar": [
+       "Semana 1: Crea un portfolio digital con 3 ejemplos antes/después usando herramientas de staging asistido por ordenador.",
+       "Semana 2: Prepara dos paquetes de servicios (Dossier Fotográfico Básico y Pack Marketing Digital Completo).",
+       "Semana 3: Contacta con agencias independientes y agentes autónomos de Riba-roja, Manises y Valencia ofreciendo una prueba a precio reducido.",
+       "Semana 4: Entrega los primeros encargos, recoge testimonios y crea plantillas en Canva para agilizar el trabajo a 48h."
+      ],
+      "coste_inicial": "50 € - 100 € (Suscripción a Canva Pro y herramientas de retoque/staging digital).",
+      "herramientas": [
+       "Canva Pro",
+       "Aplicaciones de retoque gráfico digital",
+       "WhatsApp Business",
+       "LinkedIn / Instagram"
+      ],
+      "precio": "Entre 60 € y 150 € por inmueble (dossier comercial + imágenes mejoradas + adaptaciones para redes sociales).",
+      "primeras_clientas": [
+       "Puerta fría y visitas directas a agencias inmobiliarias locales en la comarca del Camp de Túria.",
+       "Publicación de casos de éxito antes/después en LinkedIn dirigidos a agentes inmobiliarios de la Comunitat Valenciana."
+      ],
+      "ingresos_posibles": "Estimación prudente de 600 € a 1.200 €/mes procesando de 8 a 12 inmuebles al mes, basándose en tarifas freelance del sector.",
+      "horas_semana": "15 - 20 horas a la semana.",
+      "tramites": [
+       "Alta en el censo de empresarios de Hacienda (IAE 844/861) y en el Régimen Especial de Trabajadores Autónomos (RETA) cuando la actividad sea habitual.",
+       "Aprovechamiento de la Tarifa Plana estatal de autónomos (80 €/mes durante el primer año).",
+       "Cumplimiento del RGPD para la gestión de datos de clientes profesionales."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Dependencia de la rotación de captación de las agencias inmobiliarias clientes.",
+       "Tiempo inicial dedicado a perfeccionar el acabado visual del staging.",
+       "Competencia con fotógrafos inmobiliarios tradicionales."
+      ],
+      "confianza": "alta"
+     },
+     {
+      "id": "ccda2b54c",
+      "fecha": "2026-11-24T20:32:30Z",
+      "nueva": true,
+      "titulo": "Curaduría y Reventa de Moda Infantil Seleccionada (Vinted / Wallapop)",
+      "gancho": "Convierte tu buen ojo para el diseño y el interés por los niños en una tienda rentable de ropa infantil de segunda mano curada.",
+      "que_es": "Consiste en comprar lotes de ropa infantil de marcas reconocidas a bajo coste, ponerlas a punto, fotografiarlas con una estética muy cuidada y venderlas agrupadas o por piezas en plataformas online como Vinted o Wallapop.",
+      "casos": [
+       {
+        "quien": "Il Messaggero",
+        "pais": "",
+        "resultado": "«Ho lasciato il lavoro per vendere vestiti usati su Vinted: ora guadagno quasi 10 mila euro al mese». La storia della 25enne Chloe Lovett",
+        "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQThJWHktNGN3eWZ2LVR2WVlQRXkxTUpGWUhXV2pzWHpULS12UWJMM2NnRElVZWN0TWQ1cGFYbE5wNDhtdWtlMXVqNnRYS2g0aGxUMXJtMTRuR2lCQzRzUXhfMjNqQmZLbkloNmtXUlk4V1ZDSWRneUU0VUJFYlR5cDdRWmRvbjhoeVBBTnh1QnhQdFdSeHhxaDQwWm1kVVFic0dNLWtlSWdjZEpZbXVZQnV0N2ZzWU9qdDVNNVp6dURWNGRCTmpERGc5dWHSAdIBQVVfeXFMT0xrb3lJel9sRVBGWGZ0MUZ5T09sdFpGQWVhRFo4bFJRWW1WTzNLYlhpZ29vejlMM09KOHF5TDdScGoycTY4aFpTNmgxUUg0QUdRQy1XRGhkT09Ta3lKZ2x2NGtNdDJub0VpX2dtTWlVc0dvVHRaTDBUaXNSUVlSbFJEZmQ1VkgxaEt3R0JQbkczWDVEVUYzSjk4RzVUYmlRc1l0bGxJbVdLLTVjNFNIYW56SkMxU0E3dmdtaDNkZDlGUUtMV1RncG1TcmJzZ3k5Y3ln?oc=5"
+       }
+      ],
+      "por_que_tu": "Tu sensibilidad estética para el arte y el diseño te permite crear conjuntos con mucho estilo y fotografiar el producto de forma que destaque frente a vendedores no profesionales.",
+      "como_empezar": [
+       "Semana 1: Analiza las marcas infantiles con mayor demanda y rotación en Vinted (Mayoral, Gocco, Boboli, etc.).",
+       "Semana 2: Adquiere un primer lote pequeño (100 € - 150 €) en mercadillos locales de Valencia o lotes en oferta online.",
+       "Semana 3: Prepara las prendas (lavado, planchado) y crea un set fotográfico con luz natural en casa.",
+       "Semana 4: Publica de 3 a 5 artículos al día y ofrece descuentos por lotes para acelerar las primeras ventas y obtener valoraciones de 5 estrellas."
+      ],
+      "coste_inicial": "150 € - 200 € (Primer lote de inventario, material de embalaje sostenible y pequeña iluminación).",
+      "herramientas": [
+       "Vinted",
+       "Wallapop",
+       "Cámara del teléfono móvil",
+       "Plancha de vapor",
+       "Sobres de envío compostables"
+      ],
+      "precio": "Margen del 40% al 60% por artículo o lote (ejemplo: compra a 3 €/unidad y venta a 8-10 €/unidad).",
+      "primeras_clientas": [
+       "Compradoras habituales en Vinted mediante el algoritmo de publicaciones constantes.",
+       "Grupos de familias y conocidos de la zona de Riba-roja de Túria."
+      ],
+      "ingresos_posibles": "Estimación prudente de 400 € a 800 €/mes netos tras los primeros 2-3 meses reinvirtiendo los beneficios iniciales.",
+      "horas_semana": "10 - 15 horas a la semana.",
+      "tramites": [
+       "Ventas ocasionales de inventario personal no requieren alta fiscal, pero al constituir una reventa habitual exige alta en IAE y RETA.",
+       "Llevar un libro básico de registro de compras de inventario y ventas."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Acumular stock de baja rotación si no se seleccionan bien las marcas o estados de la ropa.",
+       "Variaciones estacionales de demanda entre temporadas de verano e invierno.",
+       "Necesidad de espacio para mantener el stock ordenado en vivienda."
+      ],
+      "confianza": "alta"
+     },
+     {
       "id": "cf6fa3f4f",
       "fecha": "2026-11-24T20:26:57Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Creación de 'Menús Semanales Saludables' para Familias Ocupadas",
       "gancho": "Diseña planes de alimentación personalizados y listas de la compra para familias de tu zona.",
       "que_es": "Ofreces un servicio digital de planificación de menús semanales adaptados a las necesidades de familias (niños, alergias, presupuesto). No cocinas, solo diseñas la estrategia de ahorro y salud.",
@@ -240,103 +338,6 @@
        "Baja retención de clientes.",
        "Competencia de apps gratuitas de IA.",
        "Dificultad para cobrar suscripciones pequeñas."
-      ],
-      "confianza": "media"
-     },
-     {
-      "id": "cde125ca1",
-      "fecha": "2026-11-24T20:23:46Z",
-      "nueva": false,
-      "titulo": "Creación de Kits de Actividades Educativas 'Print & Play'",
-      "gancho": "Diseña y vende materiales didácticos imprimibles para niños que los padres descargan y usan en casa.",
-      "que_es": "Consiste en crear archivos PDF con juegos, manualidades o fichas educativas temáticas (ej. 'aprender los números con arte'). Los padres compran el archivo, lo imprimen y lo usan, eliminando costes de envío y stock.",
-      "casos": [
-       {
-        "quien": "Daily Bulldog",
-        "pais": "",
-        "resultado": "Rural Routes: Women Entrepreneurs of Franklin County Featuring Saskia Reinholt: Artist, Founder, & Teacher",
-        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNWG9zSS1YYlJid3RHZWRiV09PYnhvZ0luam9FbDlTbUZSbjV4TkNBeE4ybkI3M0huanZPaXdkZlVVek5lLVo3Sk9ZTG1QVzhNVGVWR0dwdDdBTkw0b2dIQWc2QU9KYlJiZFBPTGFKZ2Jfak5RUlg4RTNfWGtYRnd1WVRsUXg4aU5tQTNtV2k5SlE5akhQSWlqMi1aa3Q2Z1pfRmlRcXI3SEZIa0w2QS15RTVOWTJ3Q1JXaWY2M05WbUdGaTlEU3pBOFNCbjBsaTA2"
-       }
-      ],
-      "por_que_tu": "Aprovecha tu experiencia con niños, tu habilidad en diseño y tu interés por el arte para crear productos digitales escalables.",
-      "como_empezar": [
-       "Semana 1: Define 3 temáticas (ej. 'Arte para niños', 'Cocina divertida') y diseña el primer PDF en Canva.",
-       "Semana 2: Crea una tienda sencilla en Etsy o Gumroad para vender los archivos.",
-       "Semana 3: Publica en redes sociales (Instagram/Pinterest) fotos de los materiales impresos y usados.",
-       "Semana 4: Recopila feedback de las primeras ventas y lanza un pack temático nuevo."
-      ],
-      "coste_inicial": "0 € (usando versión gratuita de Canva y plataformas de venta con comisión).",
-      "herramientas": [
-       "Canva",
-       "Etsy o Gumroad",
-       "Instagram"
-      ],
-      "precio": "Entre 3 € y 7 € por pack descargable.",
-      "primeras_clientas": [
-       "Grupos de Facebook de madres/padres en Valencia",
-       "Instagram usando hashtags de crianza respetuosa y educación infantil"
-      ],
-      "ingresos_posibles": "Estimación de 100-300 €/mes iniciales, escalable según volumen de diseños y tráfico web.",
-      "horas_semana": "8-10 horas.",
-      "tramites": [
-       "Alta en Hacienda (modelo 036/037) como autónoma cuando los ingresos sean recurrentes.",
-       "Cumplimiento RGPD si captas emails.",
-       "IVA: aplicar IVA en facturas a clientes en España."
-      ],
-      "ayudas": [],
-      "riesgos": [
-       "Baja barrera de entrada (mucha competencia).",
-       "Necesidad de marketing constante.",
-       "Protección de derechos de autor de tus diseños."
-      ],
-      "confianza": "alta"
-     },
-     {
-      "id": "c4ee3ce08",
-      "fecha": "2026-11-24T20:23:46Z",
-      "nueva": false,
-      "titulo": "Consultoría de 'Organización de Cocinas' (Home Organizing)",
-      "gancho": "Ayuda a familias a optimizar su cocina para que sea funcional, estética y eficiente.",
-      "que_es": "Un servicio presencial en tu zona (Riba-roja/Valencia) donde reorganizas armarios, despensas y zonas de trabajo. Combina tu pasión por la cocina con el diseño de interiores.",
-      "casos": [
-       {
-        "quien": "Capital Analytics Associates",
-        "pais": "",
-        "resultado": "Spotlight On: Leigh Anne Lanier, SVP – Customer Success, Verizon",
-        "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbzlWRGZFbzNKa0ZCQWJXdy1QU2RweEs4R1AyYTNPU29fRFRiOUNYSVlvOHhSVHRFQ1kzcWpqUlhheUV5RWxfa2V4UVRwQWpwOGdpdXRQNHZ6VW1QRWdna29ZWUN3Z3BMWEdFTHBZa3MzaWZFaGFJWDdUZzNMLTg2ZTdNRzI1MlV2OWtzUkVHYw"
-       }
-      ],
-      "por_que_tu": "Conoces la dinámica de una cocina real y tienes el ojo estético para el diseño, ideal para clientes que quieren espacios 'instagrameables' y funcionales.",
-      "como_empezar": [
-       "Semana 1: Crea un portafolio con tu propia cocina (fotos 'antes' y 'después').",
-       "Semana 2: Ofrece 2 sesiones gratuitas a conocidas para obtener testimonios y fotos.",
-       "Semana 3: Crea un perfil en Google Business y anuncia en grupos locales de Facebook/WhatsApp de Riba-roja.",
-       "Semana 4: Define tus tarifas por hora o por proyecto (cocina completa)."
-      ],
-      "coste_inicial": "50 € (materiales básicos de organización para mostrar como ejemplo).",
-      "herramientas": [
-       "Instagram (para mostrar el trabajo)",
-       "Google Business Profile",
-       "WhatsApp Business"
-      ],
-      "precio": "25-40 €/hora o presupuesto cerrado por cocina (ej. 150 €).",
-      "primeras_clientas": [
-       "Vecinos de Riba-roja",
-       "Grupos de Facebook de 'Vecinos de Valencia'",
-       "Recomendaciones boca a boca"
-      ],
-      "ingresos_posibles": "Estimación de 200-500 €/mes trabajando fines de semana o tardes.",
-      "horas_semana": "5-10 horas.",
-      "tramites": [
-       "Alta en el RETA (autónomos).",
-       "Seguro de responsabilidad civil (recomendable).",
-       "Facturación con IVA."
-      ],
-      "ayudas": [],
-      "riesgos": [
-       "Desplazamiento físico.",
-       "Dependencia de la confianza del cliente para entrar en su casa.",
-       "Límite geográfico inicial."
       ],
       "confianza": "media"
      },
@@ -386,53 +387,6 @@
        "Dependencia de herramientas de terceros",
        "Saturación del mercado de diseño digital",
        "Dificultad para cobrar a clientes nuevos"
-      ],
-      "confianza": "alta"
-     },
-     {
-      "id": "cd6012caf",
-      "fecha": "2026-11-24T20:16:29Z",
-      "nueva": false,
-      "titulo": "Gestión de 'Home Staging' Virtual para Inmobiliarias",
-      "gancho": "Ayuda a inmobiliarias a vender casas más rápido decorando sus fotos vacías digitalmente.",
-      "que_es": "Muchas inmobiliarias tienen pisos vacíos que no atraen compradores. Tú recibes las fotos, usas software de IA para 'amueblar' las estancias virtualmente y entregas fotos atractivas para sus anuncios.",
-      "casos": [
-       {
-        "quien": "Servicios de Home Staging Virtual (Tendencia global)",
-        "pais": "España/Global",
-        "resultado": "Aumento del 30% en la velocidad de venta de inmuebles según estudios del sector inmobiliario.",
-        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMUZxUk5JNk9LOWtYSjVaUi1MOEpXT25YTEJ1UmlkZmJuZWc2ZERwYjZWRFVucjktOW5SaURlSnUycmY2NmxUbi1FakUyMUN0UlFIVHhsbkp4a2NpcFQ3M2pBNUdkMnNTeHpCMjY3dF9HX3NKeEx2b2wwOTlJcVhycmRKazBndEpYMWdIYW9xTnF1TmxGWHA0TmJzYWRpM0kwUGVoeG5la0NoNDF6bVZHdmE3ZEttZzU2U3dXVU5zRmQ5dkxjME9uWA?oc=5"
-       }
-      ],
-      "por_que_tu": "Conoces el sector inmobiliario y tienes ojo para el diseño, lo que te permite entender qué busca el comprador.",
-      "como_empezar": [
-       "Semana 1: Selecciona un software de Home Staging virtual (ej. BoxBrownie o similares).",
-       "Semana 2: Crea un catálogo de 5 ejemplos (antes/después) usando fotos de pisos vacíos de portales inmobiliarios.",
-       "Semana 3: Visita agencias inmobiliarias en Riba-roja y Valencia ofreciendo una prueba gratuita.",
-       "Semana 4: Establece tarifas por foto y empieza a trabajar bajo demanda."
-      ],
-      "coste_inicial": "100-200 EUR (pago por uso de software de edición).",
-      "herramientas": [
-       "Software de Home Staging (ej. BoxBrownie, Virtual Staging AI)",
-       "LinkedIn para conectar con agentes inmobiliarios"
-      ],
-      "precio": "25-50 EUR por estancia editada.",
-      "primeras_clientas": [
-       "Agencias inmobiliarias locales en Riba-roja y L'Eliana",
-       "Particulares que venden su casa directamente en Idealista"
-      ],
-      "ingresos_posibles": "400-800 EUR/mes (estimación basada en 10-15 estancias al mes).",
-      "horas_semana": "12-18 horas",
-      "tramites": [
-       "Alta en Hacienda (IAE correspondiente).",
-       "Seguro de responsabilidad civil profesional (recomendado).",
-       "Facturación con IVA (21%) a empresas."
-      ],
-      "ayudas": [],
-      "riesgos": [
-       "Alta competencia de plataformas automáticas",
-       "Necesidad de captar clientes recurrentes",
-       "Variabilidad de ingresos"
       ],
       "confianza": "alta"
      }
@@ -641,7 +595,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 10,
+   "n": 11,
    "err": null
   }
  },
