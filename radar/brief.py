@@ -44,6 +44,7 @@ PRICES = {"claude-opus-5-5": (4.0, 20.0, 0.20, 5.0), "claude-sonnet-5-5": (2.0, 
           "claude-haiku-5-5": (0.10, 0.50, 0.01, 0.125), "claude-fable-5-2": (8.0, 40.0, 0.20, 10.0)}
 SEARCH_USD = 0.01  # 10 $ por cada 1.000 búsquedas
 SECTIONS = {"startups": 2, "clonar": 2, "accion": 1, "ayudas": 3, "extra": 2}
+BREAKOUT = ("ruptura", "media50")  # «rompiendo al alza»: máximo de 6-12 meses con volumen o recuperación de la media de 50
 DEFAULTS = {"model": "claude-opus-5-5", "effort": "medium", "max_searches": 3, "max_tokens": 16000, "daily_usd_cap": 1.0,
             "times": ["07:30"]}
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0 Safari/537.36",
@@ -583,6 +584,57 @@ def clean_brief(raw: dict, *, refs: dict[str, set], allowed_urls: set[str]) -> d
     return out
 
 
+def _money(v, cur="€") -> str | None:
+    if v in (None, ""):
+        return None
+    try:
+        return f"{float(v):,.0f}".replace(",", ".") + f" {cur}"
+    except (TypeError, ValueError):
+        return str(v)
+
+
+def verified_facts(sec: str, c: dict, es: bool = True) -> dict:
+    """Datos clave tal como vienen de la fuente (se anteponen a los que escriba el modelo)."""
+    t = (lambda a, b: a if es else b)
+    out: dict = {}
+    if sec == "startups":
+        out = {t("Plataforma", "Platform"): c.get("plataforma"), t("Ticket mínimo", "Minimum ticket"): _money(c.get("ticket_min_eur")),
+               t("Tipo", "Type"): c.get("tipo"), t("Cierre", "Closes"): c.get("cierre"),
+               t("Completado", "Funded"): f"{c['completado_pct']:g} %" if c.get("completado_pct") is not None else None}
+    elif sec == "accion":
+        tech, fv, m = c.get("tecnico") or {}, c.get("valor_razonable_usd"), c.get("metricas") or {}
+        out = {t("Señal", "Signal"): c.get("senal"), t("Precio", "Price"): f"{c['precio_usd']} $" if c.get("precio_usd") is not None else None,
+               "Stop": f"{tech['stop']} $" if tech.get("stop") is not None else None,
+               t("Valor razonable", "Fair value"): f"{fv[0]}-{fv[1]} $" if isinstance(fv, list) and len(fv) == 2 else None,
+               "PER": str(m.get("pe")) if m.get("pe") is not None else None, t("Nota del radar", "Radar score"): c.get("nota_radar")}
+    elif sec == "ayudas":
+        sol = c.get("solicitud") or {}
+        out = {t("Plazo", "Deadline"): sol.get("hasta"), t("Presupuesto", "Budget"): _money(c.get("presupuesto_eur")),
+               t("Organismo", "Body"): c.get("organismo"), t("Ámbito", "Scope"): c.get("ambito")}
+    elif sec == "clonar":
+        out = {t("Fuente", "Source"): c.get("fuente"), t("Ingresos 30 días", "Revenue 30 days"): _money(c.get("ingresos_30d_usd"), "$"),
+               t("País de origen", "Origin"): c.get("pais_origen")}
+    return {k: str(v) for k, v in out.items() if v not in (None, "", "None")}
+
+
+def plain_summary(brief: dict, es: bool = True) -> str:
+    """Resumen hecho con lo que de verdad quedó (para modelos gratuitos o si se descartó algo)."""
+    sec = brief["secciones"]
+    n = {k: len(v["picks"]) for k, v in sec.items()}
+    acc = sec["accion"]["picks"][0]["titulo"] if n["accion"] else None
+    if es:
+        parts = [f"{n['startups']} ronda{'s' if n['startups'] != 1 else ''} abierta{'s' if n['startups'] != 1 else ''} que encaja{'n' if n['startups'] != 1 else ''} contigo" if n["startups"] else "ninguna ronda que encaje",
+                 f"{n['clonar']} idea{'s' if n['clonar'] != 1 else ''} para clonar" if n["clonar"] else "ninguna idea para clonar",
+                 f"acción del día: {acc}" if acc else "ninguna acción infravalorada rompe al alza"]
+        if n["ayudas"]:
+            parts.append(f"{n['ayudas']} ayuda{'s' if n['ayudas'] != 1 else ''} que puedes pedir")
+        return "Hoy para ti: " + ", ".join(parts) + "."
+    parts = [f"{n['startups']} open round{'s' if n['startups'] != 1 else ''} that fit{'s' if n['startups'] == 1 else ''} you" if n["startups"] else "no round that fits",
+             f"{n['clonar']} idea{'s' if n['clonar'] != 1 else ''} to clone" if n["clonar"] else "no idea to clone",
+             f"stock of the day: {acc}" if acc else "no undervalued stock breaking out"]
+    return "Today for you: " + ", ".join(parts) + "."
+
+
 # ------------------------------------------------------------------ orquestación
 def gather(data_dir: Path, feed_path: Path | None, now: datetime) -> dict:
     st = rounds()
@@ -621,6 +673,9 @@ def compact_block(pool: dict, now: datetime) -> str:
     return f"FECHA: {local:%Y-%m-%d %H:%M} (Madrid)\n\nCANDIDATOS (resumidos):\n" + json.dumps(small, ensure_ascii=False, separators=(",", ":"))
 
 
+_GROQ_LAST = [0.0]
+
+
 def ask_free(cfg: dict, shared: str, small: str, user: str, transport=None) -> tuple[dict | None, list[str]]:
     """Respaldo gratuito: Gemini (hasta 3 modelos, porque a veces responde 503) con todo; Groq u OpenRouter con lo resumido."""
     router = Router(cfg, transport=transport)
@@ -634,6 +689,11 @@ def ask_free(cfg: dict, shared: str, small: str, user: str, transport=None) -> t
                 errs.append(f"gemini {m}: {str(e)[:90]}")
     for p in ("groq", "openrouter"):
         if router.available(p):
+            if p == "groq" and transport is None:  # el plan gratuito de Groq corta a ~8.000 tokens por minuto
+                wait = 62 - (time.time() - _GROQ_LAST[0])
+                if wait > 0:
+                    time.sleep(wait)
+                _GROQ_LAST[0] = time.time()
             try:
                 return router.ask(p, RULES + "\n\n" + small, user), errs
             except Exception as e:  # noqa: BLE001
@@ -725,7 +785,8 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
         if not force and old.get("fingerprint") == fp and fresh and now - fresh < timedelta(hours=26) and old.get("ok"):
             continue  # nada nuevo desde el último informe: no se gasta nada
         refs = {"startups": {r["id"] for r in pool["startups"]}, "clonar": {r["id"] for r in pool["clonar"]},
-                "accion": {s["id"] for s in pool["accion"]}, "ayudas": {g["id"] for g in gl}, "extra": {p["id"] for p in pool["extra"]}}
+                "accion": {s["id"] for s in pool["accion"] if s.get("tipo_senal") in BREAKOUT and not s.get("cuchillo_cayendo")},
+                "ayudas": {g["id"] for g in gl}, "extra": {p["id"] for p in pool["extra"]}}
         cand_urls = {u for sec in ("startups", "clonar", "accion", "extra") for r in pool[sec] for u in (r.get("url"), r.get("web")) if u}
         cand_urls |= {u for g in gl for u in (g.get("url"), g.get("sede"), g.get("bases")) if u}
         user = user_block(prof, gl)
@@ -752,10 +813,16 @@ def run(data_dir: Path, cfg: dict, *, feed_path: Path | None = None, only: str |
             continue
         brief = clean_brief(res["data"], refs=refs, allowed_urls=cand_urls | res["urls"])
         by_ref = {r["id"]: r for sec in ("startups", "clonar", "accion", "extra") for r in pool[sec]} | {g["id"]: g for g in gl}
-        for sec in brief["secciones"].values():
+        es = (prof.get("language") or "es") == "es"
+        for sk, sec in brief["secciones"].items():
             for pk in sec["picks"]:
                 c = by_ref.get(pk["ref"] or "")
                 pk["enlace"] = (c.get("url") if c else None) or (pk["fuentes"][0] if pk["fuentes"] else None)
+                if c:
+                    ver = verified_facts(sk, c, es)
+                    pk["datos"] = dict(list({**ver, **{k: v for k, v in pk["datos"].items() if k not in ver}}.items())[:8])
+        if res["provider"] != "anthropic" or brief.get("descartados_por_validacion"):
+            brief["resumen"] = plain_summary(brief, es)
         st = res["usage"].get("server_tool_use") or {}
         entry = {"profile": {k: prof.get(k) for k in ("id", "name", "flag", "language", "country")},
                  "generatedAt": iso(now), "checkedAt": iso(now), "ok": True, "error": err, "fingerprint": fp,

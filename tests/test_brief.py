@@ -258,3 +258,33 @@ def test_breakout_signal():
     assert M.detect_trigger(c2, h2, [x - 1 for x in c2], v2)["type"] == "ruptura"
     assert M.detect_breakout(c + [104.8, 106.0], h2, v + [1e6, 1.1e6]) is None  # sin volumen no hay ruptura
     assert M.detect_breakout(c + [104.8, 120.0], h2[:-1] + [120.5], v2) is None  # demasiado estirada para entrar
+
+
+def test_stock_needs_a_real_breakout_and_facts_come_from_the_source(monkeypatch, tmp_path):
+    cfg, transport, calls, sent = _setup(monkeypatch, tmp_path)
+    pool = json.loads(json.dumps(POOL))
+    pool["startups"][0].update({"ticket_min_eur": 500, "cierre": "2026-12-20", "completado_pct": 40.2})
+    pool["accion"] = [{"id": "STNG", "ticker": "STNG", "tipo_senal": None, "senal": None, "precio_usd": 78.06},
+                      {"id": "ACME", "ticker": "ACME", "tipo_senal": "ruptura", "senal": "Rompe su máximo de 6 meses (50,00 $)", "precio_usd": 51.2,
+                       "tecnico": {"stop": 46.1}, "valor_razonable_usd": [60, 70], "metricas": {"pe": 11.2}}]
+    monkeypatch.setattr(B, "gather", lambda data_dir, feed, now: pool)
+    reply = json.loads(json.dumps(REPLY))
+    reply["resumen"] = "Dos acciones con ruptura y una ronda."
+    reply["secciones"]["startups"]["picks"][0]["datos"] = {"Ticket mínimo": "100 €", "Equipo": "3 personas"}
+    reply["secciones"]["accion"]["picks"] = [{"ref": "STNG", "titulo": "Scorpio Tankers"}]
+
+    def t2(method, url, headers=None, json=None, **kw):
+        r = transport(method, url, headers=headers, json=json)
+        r.d["content"][-1]["text"] = __import__("json").dumps(reply)
+        return r
+    out = B.run(tmp_path, cfg, now=NOW, transport=t2)
+    p = out["profiles"]["es"]
+    assert p["secciones"]["accion"]["picks"] == []  # STNG no rompe al alza: fuera
+    assert p["resumen"].startswith("Hoy para ti: 1 ronda abierta que encaja contigo") and "ninguna acción infravalorada rompe al alza" in p["resumen"]
+    d = p["secciones"]["startups"]["picks"][0]["datos"]
+    assert d["Ticket mínimo"] == "500 €" and d["Plataforma"] == "Startupxplore" and d["Completado"] == "40.2 %" and d["Equipo"] == "3 personas"
+    # la de verdad sí entra, con los datos del radar
+    reply["secciones"]["accion"]["picks"] = [{"ref": "ACME", "titulo": "Acme", "datos": {"Señal": "inventada"}}]
+    out = B.run(tmp_path, cfg, now=NOW, transport=t2, force=True)
+    a = out["profiles"]["es"]["secciones"]["accion"]["picks"][0]
+    assert a["datos"]["Señal"].startswith("Rompe su máximo") and a["datos"]["Stop"] == "46.1 $" and a["datos"]["Valor razonable"] == "60-70 $"
