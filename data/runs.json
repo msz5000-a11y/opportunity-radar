@@ -1,5 +1,65 @@
 [
  {
+  "id": "run-20261125-1927",
+  "startedAt": "2026-11-25T19:27:10Z",
+  "kind": "exploracion",
+  "status": "parcial",
+  "candidates": 7,
+  "newCount": 5,
+  "updatedCount": 2,
+  "alertsSent": 0,
+  "notes": "Fuentes con fallos: busqueda_ia",
+  "sources": {
+   "tipo_cambio_BCE": {
+    "ok": true,
+    "items": 1,
+    "error": null,
+    "at": "2026-11-25T19:27:10+00:00"
+   },
+   "pulso": {
+    "ok": true,
+    "items": 6,
+    "error": null,
+    "at": "2026-11-25T19:27:10+00:00"
+   },
+   "El Referente": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-25T19:27:13+00:00"
+   },
+   "busqueda_ia": {
+    "ok": false,
+    "items": 0,
+    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
+    "at": "2026-11-25T19:27:30+00:00"
+   }
+  },
+  "finishedAt": "2026-11-25T19:31:01Z",
+  "ai": {
+   "calls": {
+    "gemini": 8,
+    "groq": 7
+   },
+   "models": {
+    "gemini": "gemini-3.1-flash-lite",
+    "groq": "openai/gpt-oss-120b"
+   },
+   "errors": [
+    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
+    "searcher/gemini: HTTP 429",
+    "searcher/gemini: búsqueda de Google sin cupo en Gemini",
+    "verifier/gemini: HTTP 503",
+    "verifier/gemini: HTTP 503",
+    "verifier/gemini: HTTP 503",
+    "verifier/gemini: HTTP 503",
+    "verifier/gemini: HTTP 503",
+    "verifier/gemini: HTTP 503"
+   ],
+   "googleSearch": false
+  }
+ },
+ {
   "id": "run-20261125-0851",
   "startedAt": "2026-11-25T08:51:35Z",
   "kind": "exploracion",

@@ -1,13 +1,13 @@
 {
- "lastRunAt": "2026-11-25T08:54:55Z",
+ "lastRunAt": "2026-11-25T19:31:01Z",
  "lastRunOk": false,
- "lastRunId": "run-20261125-0851",
+ "lastRunId": "run-20261125-1927",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-25T08:51:36+00:00"
+   "at": "2026-11-25T19:27:10+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
@@ -49,7 +49,7 @@
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-25T08:51:37+00:00"
+   "at": "2026-11-25T19:27:13+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
@@ -67,19 +67,19 @@
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-25T08:51:55+00:00"
+   "at": "2026-11-25T19:27:30+00:00"
   },
   "pulso": {
    "ok": true,
-   "items": 4,
+   "items": 6,
    "error": null,
-   "at": "2026-11-25T08:51:36+00:00"
+   "at": "2026-11-25T19:27:10+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 6,
-   "groq": 5
+   "gemini": 8,
+   "groq": 7
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",
@@ -88,7 +88,13 @@
   "errors": [
    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
    "searcher/gemini: HTTP 429",
-   "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+   "searcher/gemini: búsqueda de Google sin cupo en Gemini",
+   "verifier/gemini: HTTP 503",
+   "verifier/gemini: HTTP 503",
+   "verifier/gemini: HTTP 503",
+   "verifier/gemini: HTTP 503",
+   "verifier/gemini: HTTP 503",
+   "verifier/gemini: HTTP 503"
   ],
   "googleSearch": false
  },

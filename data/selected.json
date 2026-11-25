@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T08:54:55Z",
+ "generatedAt": "2026-11-25T19:31:01Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 31,
+ "studied": 36,
  "selected": [],
  "nearMisses": [
   {
@@ -70,6 +70,34 @@
     "Verificada por un segundo modelo de IA independiente"
    ],
    "hasManual": true
+  },
+  {
+   "id": "web-cotec-es",
+   "name": "Inversión en I+D en España 2025",
+   "category": "negocio",
+   "score": 45,
+   "adjustedScore": 45,
+   "risk": "medio",
+   "officialUrl": "https://www.cotec.es",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
   },
   {
    "id": "web-bfsport-gal",
@@ -138,35 +166,6 @@
    "risk": "muy alto",
    "officialUrl": "https://www.tenerife.es",
    "minEntry": 0,
-   "canLoseAll": true,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": false,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
-   "id": "web-relai-app",
-   "name": "Relai Stacks",
-   "category": "cripto",
-   "score": 53,
-   "adjustedScore": 53,
-   "risk": "alto",
-   "officialUrl": "https://relai.app/",
-   "minEntry": 0.0,
    "canLoseAll": true,
    "checks": {
     "nota": false,
@@ -378,14 +377,14 @@
   }
  },
  "ai": {
-  "used": 1,
+  "used": 0,
   "errors": [],
-  "calls": {
-   "groq": 1
-  }
+  "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-25T08:54:59Z",
-  "status": 200
+  "at": "2026-11-25T19:31:01Z",
+  "status": 503,
+  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+  "reason": []
  }
 }

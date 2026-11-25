@@ -1,5 +1,11 @@
 [
  {
+  "id": "daily-2026-11-25",
+  "type": "diaria",
+  "at": "2026-11-25T19:27:10Z",
+  "text": "📊 Resumen diario · Opportunity Radar\nExploraciones: 3 (0 sin errores) · Analizadas: 18 · Nuevas: 13 · Alertas: 0\n⚠️ Radar con incidencias: 3 de ~8 exploraciones previstas.\n\nMejores sin riesgo crítico:\n• CasasRurales.net (integrado en Holidu) · 63/100 · startups · entrada 0 € · riesgo medio\n  + Creciente demanda de turismo rural y herramientas de precios dinámicos que aumentan ingresos de los anfitriones\n  − Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\n• Real Decreto-ley para reforzar la soberanía científica y tecnológica de España · 61/100 · ia_tecnologia · entrada 0 € · riesgo medio\n  + Puede abrir oportunidades de empleo, colaboración o acceso a infraestructuras de investigación pública\n  − Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\n• Tenerife Accelera Fund (gestión Archipélago Next) · 59/100 · startups · entrada 0 € · riesgo muy alto\n  + Permite participar indirectamente en un fondo que impulsa la innovación en sectores estratégicos de Tenerife\n  − El fondo está dirigido a startups, no a inversores particulares con presupuestos reducidos\n• Relai Stacks · 53/100 · cripto · entrada 0.0 € · riesgo alto\n  + Permite separar ahorros por objetivos sin necesidad de múltiples cuentas\n  − La pérdida de la frase semilla implica la pérdida total de los fondos sin posibilidad de recuperación por parte de la empresa.\n• Spiko Euro · 47/100 · startups · entrada 1 € · riesgo medio\n  + Permite generar runway extra sin diluir capital ni cambiar de banco\n  − El capital no está garantizado; la rentabilidad es variable y depende del rendimiento del fondo subyacente.\n\nRiesgos críticos detectados: Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026) (compliance_risk); Aerya (falta_datos_financieros); Derive Options Platform (regulacion_incierta); Anthropic (OPI) (alta_volatilidad)\n\nPresupuesto configurado: 2000.0 €. Escenarios = simulaciones. La decisión es siempre tuya."
+ },
+ {
   "id": "weekly-2026-11-22",
   "type": "semanal",
   "at": "2026-11-22T19:51:12Z",

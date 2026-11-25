@@ -764,6 +764,363 @@
   "profitPath": ""
  },
  {
+  "name": "CasasRurales.net (integrado en Holidu)",
+  "category": "startups",
+  "subcategory": "turismo_rural",
+  "kind": "pasiva",
+  "description": "Plataforma española de turismo rural ahora parte de Holidu, que ofrece gestión tecnológica a anfitriones rurales.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Plataforma operativa en España y Francia.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay coste de entrada para usar la plataforma como anfitrión, salvo comisiones de reserva.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no hay inversión directa.",
+  "horizon": "mediano plazo (2-5 años)",
+  "deadline": null,
+  "potential": "moderado, crecimiento del turismo rural y herramientas de precios dinámicos.",
+  "difficulty": "baja",
+  "timeNeeded": "moderado (requiere crear y gestionar anuncios)",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "Adquisición de CasasRurales.net por Holidu para reforzar turismo rural",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7,
+    "why": "89% de anfitriones prevén crecimiento de demanda en los próximos 5 años",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 8,
+    "why": "31.000 alojamientos rurales en España y Francia; 12,9 millones de pernoctaciones en 2025",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 7,
+    "why": "Equipo de Holidu con sede en Múnich y 7 oficinas en España; equipo de Rural Rentals fundado en 2015",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 6,
+    "why": "Holidu es una empresa con financiación de venture capital; importe de la adquisición no divulgado",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 7,
+    "why": "Encuesta muestra 89% de anfitriones optimistas sobre la demanda futura",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6,
+    "why": "Plataforma reúne cerca de 31.000 alojamientos rurales",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Competidores incluyen Airbnb y Booking.com en el segmento rural",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8,
+    "why": "Software de gestión y precios dinámicos ya operativos y probados",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 7,
+    "why": "No hay coste de entrada; riesgo limitado a comisiones y ocupación",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9,
+    "why": "CasasRurales.net operaba en España y mantiene su marca",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9,
+    "why": "No hay inversión que liquidar; participación es uso de la plataforma",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Creciente demanda de turismo rural y herramientas de precios dinámicos que aumentan ingresos de los anfitriones"
+  ],
+  "howToParticipate": [
+   "Registrarse en la plataforma (CasasRurales.net o Holidu) como anfitrión",
+   "Crear y publicar el anuncio del alojamiento rural",
+   "Utilizar la herramienta de precios dinámicos y la gestión de reservas de Holidu"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Baja ocupación del alojamiento",
+   "Cambios regulatorios en alquiler vacacional",
+   "Altas comisiones de la plataforma"
+  ],
+  "earlySignals": [
+   "Aumento de pernoctaciones rurales en 2025-2026",
+   "Encuestas de anfitriones con expectativas positivas"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/startups/holidu-adquiere-casasrurales-net/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "n-casasrurales-net-integrado-en-holidu",
+  "isNew": true,
+  "score": 63,
+  "rawScore": 68.3,
+  "tier": "investigar",
+  "tierLabel": "Interesante, necesita investigación",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 10,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Adquisición de CasasRurales.net por Holidu para reforzar turismo rural",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "89% de anfitriones prevén crecimiento de demanda en los próximos 5 años",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "31.000 alojamientos rurales en España y Francia; 12,9 millones de pernoctaciones en 2025",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "Equipo de Holidu con sede en Múnich y 7 oficinas en España; equipo de Rural Rentals fundado en 2015",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Holidu es una empresa con financiación de venture capital; importe de la adquisición no divulgado",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Encuesta muestra 89% de anfitriones optimistas sobre la demanda futura",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Plataforma reúne cerca de 31.000 alojamientos rurales",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Competidores incluyen Airbnb y Booking.com en el segmento rural",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Software de gestión y precios dinámicos ya operativos y probados",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "No hay coste de entrada; riesgo limitado a comisiones y ocupación",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "CasasRurales.net operaba en España y mantiene su marca",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay inversión que liquidar; participación es uso de la plataforma",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: CasasRurales.net (integrado en Holidu)\nCATEGORÍA: startups · turismo_rural\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: moderado, crecimiento del turismo rural y herramientas de precios dinámicos.\nPUNTUACIÓN: 63/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: mediano plazo (2-5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Creciente demanda de turismo rural y herramientas de precios dinámicos que aumentan ingresos de los anfitriones\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Registrarse en la plataforma (CasasRurales.net o Holidu) como anfitrión; Crear y publicar el anuncio del alojamiento rural; Utilizar la herramienta de precios dinámicos y la gestión de reservas de Holidu\nQUÉ PODRÍA HACERME PERDER EL DINERO: Baja ocupación del alojamiento; Cambios regulatorios en alquiler vacacional; Altas comisiones de la plataforma\nFUENTES: https://elreferente.es/startups/holidu-adquiere-casasrurales-net/",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "news-elreferente-es-startups-holidu-adquiere-casasrurales-net"
+  ]
+ },
+ {
   "name": "Business Factory Health&Care Incubation Program",
   "category": "startups",
   "subcategory": "healthcare",
@@ -1153,6 +1510,365 @@
   "runId": "run-20261122-0852",
   "aliases": [
    "news-elreferente-es-actualidad-la-business-factory-healthcare-presenta-los-cinco-proyectos"
+  ],
+  "actionable": false,
+  "profitPath": ""
+ },
+ {
+  "name": "Real Decreto-ley para reforzar la soberanía científica y tecnológica de España",
+  "category": "ia_tecnologia",
+  "subcategory": "soberania_tecnologica",
+  "kind": "pasiva",
+  "description": "El Gobierno aprueba un Real Decreto-ley que crea un estatus especial para centros públicos de I+D+I vinculados a la soberanía tecnológica, facilitando contratación, financiación y transferencia de resultados. Incluye diez áreas estratégicas, entre ellas IA, semiconductores y biotecnología, con una duración inicial de cinco años.",
+  "officialUrl": "https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Se trata de una medida gubernamental; no requiere inversión directa del usuario.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay coste de entrada ni inversión requerida",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica",
+  "horizon": "largo plazo (5-10 años)",
+  "deadline": null,
+  "potential": "alto impacto en el ecosistema de I+D español y posible acceso a fondos o colaboraciones",
+  "difficulty": "media",
+  "timeNeeded": "dependiendo de la convocatoria, puede requerir tiempo de preparación de propuestas",
+  "subscores": {
+   "novedad": {
+    "v": 8,
+    "why": "Nuevo marco legal que otorga estatus especial a centros de investigación",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 9,
+    "why": "Facilita transferencia tecnológica y financiación pública",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "No se trata de un mercado comercial directo",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0,
+    "why": "No aplica a un equipo empresarial",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 7,
+    "why": "Financiación pública prevista para los centros designados",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "Impacto potencial en la comunidad científica y tecnológica española",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 7,
+    "why": "Se espera que hasta 20 centros sean designados inicialmente",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Competencia entre centros públicos por el estatus especial",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8,
+    "why": "Riesgo técnico bajo al ser iniciativa pública con infraestructura existente",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9,
+    "why": "No implica inversión financiera del usuario",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 10,
+    "why": "Aplicable exclusivamente a España",
+    "evidence": true
+   },
+   "salida": {
+    "v": 10,
+    "why": "No hay mecanismo de salida financiero",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Puede abrir oportunidades de empleo, colaboración o acceso a infraestructuras de investigación pública"
+  ],
+  "howToParticipate": [
+   "1. Monitorizar las convocatorias oficiales del Ministerio de Ciencia, Innovación y Universidades; 2. Preparar y presentar propuestas de proyecto alineadas con las áreas estratégicas; 3. Seguir el proceso de evaluación de la Comisión Interministerial; 4. En caso de ser seleccionado, gestionar la colaboración con el centro designado"
+  ],
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": [
+    "El Referente"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-elreferente-es",
+  "isNew": false,
+  "score": 61,
+  "rawScore": 65.8,
+  "tier": "investigar",
+  "tierLabel": "Interesante, necesita investigación",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Nuevo marco legal que otorga estatus especial a centros de investigación",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 9.0,
+    "points": 10.8,
+    "why": "Facilita transferencia tecnológica y financiación pública",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se trata de un mercado comercial directo",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a un equipo empresarial",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Financiación pública prevista para los centros designados",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Impacto potencial en la comunidad científica y tecnológica española",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 7.0,
+    "points": 6.3,
+    "why": "Se espera que hasta 20 centros sean designados inicialmente",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Competencia entre centros públicos por el estatus especial",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Riesgo técnico bajo al ser iniciativa pública con infraestructura existente",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No implica inversión financiera del usuario",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Aplicable exclusivamente a España",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "No hay mecanismo de salida financiero",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {},
+   "label": "Estable",
+   "since": "2026-11-23T13:15:25Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "premio": 1.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Real Decreto-ley para reforzar la soberanía científica y tecnológica de España\nCATEGORÍA: ia_tecnologia · soberania_tecnologica\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto impacto en el ecosistema de I+D español y posible acceso a fondos o colaboraciones\nPUNTUACIÓN: 61/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: largo plazo (5-10 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Puede abrir oportunidades de empleo, colaboración o acceso a infraestructuras de investigación pública\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Monitorizar las convocatorias oficiales del Ministerio de Ciencia, Innovación y Universidades; 2. Preparar y presentar propuestas de proyecto alineadas con las áreas estratégicas; 3. Seguir el proceso de evaluación de la Comisión Interministerial; 4. En caso de ser seleccionado, gestionar la colaboración con el centro designado\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "news-elreferente-es-actualidad-el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-so",
+   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d",
+   "news-elreferente-es-startups-biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevil",
+   "news-elreferente-es-startups-orbita-premia-a-las-startups-collimate-space-chatpol-biotasma"
   ],
   "actionable": false,
   "profitPath": ""
@@ -2293,380 +3009,6 @@
   ]
  },
  {
-  "name": "Premios Órbita 2026 – Startups premiadas",
-  "category": "startups",
-  "subcategory": "aceleradora",
-  "kind": "pasiva",
-  "description": "Cinco startups (Collimate Space, ChatPol, Biotasmart, CivitPhone y Versedia) recibieron 20.000 € en premios equity‑free en la novena edición del programa Órbita del CEEI Castellón.",
-  "officialUrl": "https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/",
-  "participateUrl": null,
-  "country": "España",
-  "spainAvailability": "si",
-  "spainNotes": "Programa de aceleración en Castellón, España.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "No se requiere inversión directa para recibir el premio; la participación es mediante el programa de aceleración.",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": false,
-  "liquidity": "no aplica",
-  "exitNotes": "No aplica, no hay inversión que liquidar.",
-  "horizon": "corto‑medio plazo (6 meses de aceleración)",
-  "deadline": null,
-  "potential": "Alto potencial de crecimiento por apoyo institucional y mentoría, pero sin acceso directo a capital.",
-  "difficulty": "baja",
-  "timeNeeded": "Participar en programa de 6 meses, requiere tiempo de desarrollo.",
-  "subscores": {
-   "novedad": {
-    "v": 8,
-    "why": "Premios a startups que usan IA en comunicaciones espaciales, asistencia policial y salud intestinal",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 7,
-    "why": "Reconocimiento por innovación y potencial de crecimiento según el jurado",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 5,
-    "why": "No se detallan tamaños de mercado ni clientes actuales",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 5,
-    "why": "El artículo no describe los equipos fundadores",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 6,
-    "why": "Cada startup recibió 20.000 € equity‑free y el programa ha captado 64,5 M€ en total",
-    "evidence": true
-   },
-   "comunidad": {
-    "v": 7,
-    "why": "Órbita genera una red de mentores, inversores y emprendedores",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 4,
-    "why": "Soluciones en fase temprana, sin datos de adopción comercial",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 5,
-    "why": "Sectores como IA y salud son competitivos, pero no se menciona competencia directa",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 5,
-    "why": "Tecnologías emergentes con incertidumbre de desarrollo",
-    "evidence": false
-   },
-   "riesgo_financiero": {
-    "v": 8,
-    "why": "No se requiere inversión del usuario, riesgo financiero bajo",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 9,
-    "why": "Programa localizado en España, acceso abierto a startups españolas",
-    "evidence": true
-   },
-   "salida": {
-    "v": 3,
-    "why": "No hay mecanismo de salida o liquidez definido para los premios",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "falta_de_informacion_financiera",
-    "severity": "media",
-    "detail": "No se publican métricas financieras ni valoraciones de las startups premiadas"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "distrust": [
-   "ausencia de datos de valoración y rondas de financiación públicas"
-  ],
-  "whyInteresting": [
-   "Premios equity‑free que pueden abrir puertas a inversores posteriores",
-   "Participación en ecosistema con alta tasa de supervivencia (80%)"
-  ],
-  "howToParticipate": [
-   "1. Contactar al CEEI Castellón para consultar próximas convocatorias de Órbita",
-   "2. Preparar y presentar la candidatura del proyecto",
-   "3. Superar el proceso de selección y participar en el programa de aceleración",
-   "4. Completar los 6 meses de mentoría y potencialmente recibir premios"
-  ],
-  "lossCauses": [],
-  "earlySignals": [
-   "Reconocimiento institucional y premios equity‑free indican atractivo para futuros inversores"
-  ],
-  "signals": {},
-  "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
-   "sources": []
-  },
-  "sources": [
-   {
-    "title": "El Referente",
-    "url": "https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/"
-   }
-  ],
-  "discoveredVia": "El Referente",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
-  },
-  "verification": {
-   "verdict": "sin verificar",
-   "model": null
-  },
-  "discoveredAt": "2026-11-23",
-  "id": "web-elreferente-es",
-  "isNew": false,
-  "score": 48,
-  "rawScore": 53.5,
-  "tier": "especulativa",
-  "tierLabel": "Especulativa",
-  "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
-  ],
-  "critical": false,
-  "risk": "medio",
-  "flags": [
-   {
-    "code": "falta_de_informacion_financiera",
-    "severity": "media",
-    "detail": "No se publican métricas financieras ni valoraciones de las startups premiadas"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "evidenced": 6,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Premios a startups que usan IA en comunicaciones espaciales, asistencia policial y salud intestinal",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 7.0,
-    "points": 8.4,
-    "why": "Reconocimiento por innovación y potencial de crecimiento según el jurado",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "No se detallan tamaños de mercado ni clientes actuales",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "El artículo no describe los equipos fundadores",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 6.0,
-    "points": 4.2,
-    "why": "Cada startup recibió 20.000 € equity‑free y el programa ha captado 64,5 M€ en total",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "Órbita genera una red de mentores, inversores y emprendedores",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Soluciones en fase temprana, sin datos de adopción comercial",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Sectores como IA y salud son competitivos, pero no se menciona competencia directa",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Tecnologías emergentes con incertidumbre de desarrollo",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 8.0,
-    "points": 8.0,
-    "why": "No se requiere inversión del usuario, riesgo financiero bajo",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "Programa localizado en España, acceso abierto a startups españolas",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "No hay mecanismo de salida o liquidez definido para los premios",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": true,
-   "changes": {},
-   "label": "Estable",
-   "since": "2026-11-23T13:15:25Z"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-23T13:15:25Z",
-    "premio": 1.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Premios Órbita 2026 – Startups premiadas\nCATEGORÍA: startups · aceleradora\nFECHA DE DESCUBRIMIENTO: 2026-11-23\nWEB OFICIAL: https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de crecimiento por apoyo institucional y mentoría, pero sin acceso directo a capital.\nPUNTUACIÓN: 48/100 · Especulativa\nRIESGO: medio\nPLAZO: corto‑medio plazo (6 meses de aceleración)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Premios equity‑free que pueden abrir puertas a inversores posteriores; Participación en ecosistema con alta tasa de supervivencia (80%)\nMOTIVOS PARA DESCONFIAR: No se publican métricas financieras ni valoraciones de las startups premiadas; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; ausencia de datos de valoración y rondas de financiación públicas\nCÓMO PARTICIPAR: 1. Contactar al CEEI Castellón para consultar próximas convocatorias de Órbita; 2. Preparar y presentar la candidatura del proyecto; 3. Superar el proceso de selección y participar en el programa de aceleración; 4. Completar los 6 meses de mentoría y potencialmente recibir premios\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/startups/orbita-premia-a-las-startups-collimate-space-chatpol-biotasmart-civitphone-y-versedia-en-su-novena-edicion/",
-  "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-23T22:23:41Z",
-  "runId": "run-20261123-2223",
-  "aliases": [
-   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d",
-   "news-elreferente-es-startups-biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevil",
-   "news-elreferente-es-startups-orbita-premia-a-las-startups-collimate-space-chatpol-biotasma"
-  ],
-  "actionable": false,
-  "profitPath": ""
- },
- {
   "name": "Spiko Euro",
   "category": "startups",
   "subcategory": "fintech/tesorería",
@@ -3081,6 +3423,770 @@
   ]
  },
  {
+  "name": "Inversión en I+D en España 2025",
+  "category": "negocio",
+  "subcategory": "I+D",
+  "kind": "pasiva",
+  "description": "En 2025 la inversión española en investigación y desarrollo superó los 25.000 millones de euros, alcanzando 25.321 millones. El sector empresarial aportó 14,620 M€ y el público 10,701 M€, con una tasa de crecimiento del 5,8 % interanual. El objetivo es llegar al 2,12 % del PIB en 2027, lo que implica un fuerte impulso de fondos.",
+  "officialUrl": "https://www.cotec.es",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Inversión en I+D supera 25.000 millones en 2025, primera vez.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay coste directo para acceder a la información.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica salida financiera directa; es una observación de tendencia macro.",
+  "horizon": "largo plazo",
+  "deadline": null,
+  "potential": "alto potencial de crecimiento del sector I+D y de oportunidades de financiación.",
+  "difficulty": "media",
+  "timeNeeded": "revisión periódica de datos macroeconómicos y convocatorias de fondos.",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Primera vez que la inversión supera los 25.000 millones en 2025. · Verificador: Es un dato estadístico anual actualizado a noviembre de 2026 sobre el ejercicio 2025.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "Objetivo de 2,12 % del PIB en 2027 requiere crecimiento del 25,6 % anual. · Verificador: El objetivo del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria en el sector.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 9.0,
+    "why": "Inversión total de 25.321 millones de euros en 2025. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por fuentes estadísticas.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se menciona ningún equipo o proyecto concreto. · Verificador: No aplica, es un informe macroeconómico, no una empresa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 7.0,
+    "why": "Sector empresarial 14.620 M€, sector público 10.701 M€ en 2025. · Verificador: Desglose claro entre sector público (10.701 M€) y empresarial (14.620 M€).",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Brecha de género y número de empresas con I+D (12.540) indican una comunidad en desarrollo. · Verificador: El empleo en I+D supera las 310.336 personas, indicando un ecosistema laboral activo.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Empleo total en I+D supera 310.336 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento constante de la inversión empresarial (+9,1%).",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "12.540 empresas realizan I+D, menos que antes, pero la competencia sigue presente. · Verificador: El mercado de I+D es competitivo, pero no es una oportunidad de inversión directa.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de la transición de fondos Next Generation EU a fondos nacionales.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen. · Verificador: Riesgo de estancamiento si no se alcanza el objetivo de inversión privada para 2027.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "No hay programa de entrada claro para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un activo financiero, no existe 'entrada' para particulares. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No aplica, no es una inversión con retorno directo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "dependencia_fondos_eu",
+    "severity": "alta",
+    "detail": "Gran parte del crecimiento reciente depende de los fondos Next Generation EU, que expiran en 2026."
+   },
+   {
+    "code": "dependencia_fondos_eu",
+    "severity": "alta",
+    "detail": "La sostenibilidad del crecimiento de la I+D depende de la sustitución de los fondos Next Generation EU por capital nacional tras 2026."
+   }
+  ],
+  "distrust": [
+   "Crecimiento ligado a fondos temporales y posible retroceso sin sustitución."
+  ],
+  "whyInteresting": [
+   "Crecimiento histórico de la inversión en I+D en España",
+   "Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación."
+  ],
+  "howToParticipate": [
+   "1. Monitorizar las convocatorias de fondos nacionales y europeos para I+D en España.",
+   "2. Contactar con agencias como CDTI o la Fundación Cotec para conocer requisitos de financiación.",
+   "3. Evaluar proyectos empresariales que se beneficien de la mayor inversión en I+D y considerar colaboraciones o inversión indirecta."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "Incremento del gasto empresarial en I+D (+9,1 %)",
+   "Aumento del número de empresas con actividad de I+D (+2,7 %)"
+  ],
+  "signals": {
+   "inversion_2025_eur": 25321
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un producto financiero ni un servicio de inversión, por lo que no está sujeto a supervisión de la CNMV.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/ecosistema/la-inversion-en-id-supera-por-primera-vez-los-25-000-millones/"
+   },
+   {
+    "title": "Fundación Cotec - Análisis de datos INE",
+    "url": "https://cotec.es"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La información macroeconómica sobre la inversión en I+D en España para 2025 es coherente con los datos publicados por el INE y analizados por la Fundación Cotec, tal como reporta El Referente. No se trata de un producto financiero, sino de un informe de tendencia macro.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-cotec-es",
+  "isNew": true,
+  "score": 45,
+  "rawScore": 50.3,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "dependencia_fondos_eu",
+    "severity": "alta",
+    "detail": "Gran parte del crecimiento reciente depende de los fondos Next Generation EU, que expiran en 2026."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Primera vez que la inversión supera los 25.000 millones en 2025. · Verificador: Es un dato estadístico anual actualizado a noviembre de 2026 sobre el ejercicio 2025.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "Objetivo de 2,12 % del PIB en 2027 requiere crecimiento del 25,6 % anual. · Verificador: El objetivo del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria en el sector.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Inversión total de 25.321 millones de euros en 2025. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por fuentes estadísticas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona ningún equipo o proyecto concreto. · Verificador: No aplica, es un informe macroeconómico, no una empresa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Sector empresarial 14.620 M€, sector público 10.701 M€ en 2025. · Verificador: Desglose claro entre sector público (10.701 M€) y empresarial (14.620 M€).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Brecha de género y número de empresas con I+D (12.540) indican una comunidad en desarrollo. · Verificador: El empleo en I+D supera las 310.336 personas, indicando un ecosistema laboral activo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Empleo total en I+D supera 310.336 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento constante de la inversión empresarial (+9,1%).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "12.540 empresas realizan I+D, menos que antes, pero la competencia sigue presente. · Verificador: El mercado de I+D es competitivo, pero no es una oportunidad de inversión directa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de la transición de fondos Next Generation EU a fondos nacionales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen. · Verificador: Riesgo de estancamiento si no se alcanza el objetivo de inversión privada para 2027.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay programa de entrada claro para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un activo financiero, no existe 'entrada' para particulares. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No aplica, no es una inversión con retorno directo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "inversion_2025_eur": 25321.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Inversión en I+D en España 2025\nCATEGORÍA: negocio · I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.cotec.es\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de crecimiento del sector I+D y de oportunidades de financiación.\nPUNTUACIÓN: 45/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Crecimiento histórico de la inversión en I+D en España; Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación.\nMOTIVOS PARA DESCONFIAR: Gran parte del crecimiento reciente depende de los fondos Next Generation EU, que expiran en 2026.; Crecimiento ligado a fondos temporales y posible retroceso sin sustitución.\nCÓMO PARTICIPAR: 1. Monitorizar las convocatorias de fondos nacionales y europeos para I+D en España.; 2. Contactar con agencias como CDTI o la Fundación Cotec para conocer requisitos de financiación.; 3. Evaluar proyectos empresariales que se beneficien de la mayor inversión en I+D y considerar colaboraciones o inversión indirecta.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/ecosistema/la-inversion-en-id-supera-por-primera-vez-los-25-000-millones/ | https://cotec.es",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "news-elreferente-es-ecosistema-la-inversion-en-id-supera-por-primera-vez-los-25-000-millon"
+  ]
+ },
+ {
+  "name": "NEURYN Robotics",
+  "category": "startups",
+  "subcategory": "robotics",
+  "kind": "activa",
+  "description": "Startup incubada en La Nave (Madrid) que desarrolla un sistema de IA para que brazos robóticos decidan cómo gestionar prendas devueltas en e‑commerce. Su tecnología permite asignar nuevas tareas al robot mediante lenguaje natural, sin necesidad de reprogramación.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Incubada en La Nave, centro de innovación del Ayuntamiento de Madrid",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "N/A",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": true,
+  "liquidity": "nula",
+  "exitNotes": "Posible salida mediante venta a corporación o ronda de financiación futura; sin mercado secundario actual.",
+  "horizon": "mediano plazo (2-5 años)",
+  "deadline": null,
+  "potential": "Alto potencial en automatización de devoluciones logísticas",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7,
+    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Devoluciones de moda en línea son un reto logístico importante",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 6,
+    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 4,
+    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6,
+    "why": "Incubada en La Nave, ecosistema de innovación madrileño",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 3,
+    "why": "No se citan clientes ni pilotos activos",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4,
+    "why": "No se describen competidores en la información disponible",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5,
+    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4,
+    "why": "Financiación limitada a un premio de 10.000 dólares",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 8,
+    "why": "Empresa basada e incubada en Madrid",
+    "evidence": true
+   },
+   "salida": {
+    "v": 3,
+    "why": "Sin mercado secundario ni planes de salida publicados",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "limited_funding",
+    "severity": "alta",
+    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
+   },
+   {
+    "code": "no_traction",
+    "severity": "media",
+    "detail": "No se mencionan clientes ni pilotos comerciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "poca información financiera y de clientes"
+  ],
+  "whyInteresting": [
+   "Innovación en IA aplicada a la logística de devoluciones",
+   "Participación como finalista en competición europea con visibilidad internacional"
+  ],
+  "howToParticipate": [
+   "Seguir las noticias de NEURYN Robotics",
+   "Contactar directamente a los fundadores vía LinkedIn o correo institucional",
+   "Monitorizar futuras rondas de financiación o programas de aceleración"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Falta de financiación adicional",
+   "Baja adopción por parte de operadores logísticos",
+   "Problemas técnicos en la integración de IA con hardware"
+  ],
+  "earlySignals": [
+   "Finalista en CoCreate Pitch (edición europea)",
+   "Premio de 10.000 dólares"
+  ],
+  "signals": {
+   "premio_usd": 10000
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "n-neuryn-robotics",
+  "isNew": true,
+  "score": 42,
+  "rawScore": 52.0,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "limited_funding",
+    "severity": "alta",
+    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
+   },
+   {
+    "code": "no_traction",
+    "severity": "media",
+    "detail": "No se mencionan clientes ni pilotos comerciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Devoluciones de moda en línea son un reto logístico importante",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 4.0,
+    "points": 2.8,
+    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Incubada en La Nave, ecosistema de innovación madrileño",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "No se citan clientes ni pilotos activos",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "No se describen competidores en la información disponible",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 4.0,
+    "points": 4.0,
+    "why": "Financiación limitada a un premio de 10.000 dólares",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Empresa basada e incubada en Madrid",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sin mercado secundario ni planes de salida publicados",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "premio_usd": 10000.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: NEURYN Robotics\nCATEGORÍA: startups · robotics\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial en automatización de devoluciones logísticas\nPUNTUACIÓN: 42/100 · Especulativa\nRIESGO: muy alto\nPLAZO: mediano plazo (2-5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en IA aplicada a la logística de devoluciones; Participación como finalista en competición europea con visibilidad internacional\nMOTIVOS PARA DESCONFIAR: Financiación conocida limitada al premio de 10.000 dólares; No se mencionan clientes ni pilotos comerciales; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; poca información financiera y de clientes\nCÓMO PARTICIPAR: Seguir las noticias de NEURYN Robotics; Contactar directamente a los fundadores vía LinkedIn o correo institucional; Monitorizar futuras rondas de financiación o programas de aceleración\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de financiación adicional; Baja adopción por parte de operadores logísticos; Problemas técnicos en la integración de IA con hardware\nFUENTES: https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "news-elreferente-es-startups-neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-e"
+  ]
+ },
+ {
   "name": "Deel Stablecoin Spending Card",
   "category": "cripto",
   "subcategory": "tarjeta_stablecoin",
@@ -3482,6 +4588,772 @@
   "runId": "run-20261124-2357",
   "aliases": [
    "web-thedefiant-io"
+  ]
+ },
+ {
+  "name": "HYPE token (incluido en ETF EZPZ de Franklin Templeton)",
+  "category": "cripto",
+  "subcategory": "token",
+  "kind": "pasiva",
+  "description": "El token HYPE será incorporado al ETF de criptomonedas EZPZ gestionado por Franklin Templeton a partir del 1 de diciembre de 2026. Esta inclusión permite a los inversores acceder al token a través de un fondo cotizado regulado, reduciendo la necesidad de comprarlo directamente en exchanges. La exposición está sujeta al desempeño del token y a la gestión del ETF.",
+  "officialUrl": "https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "dudosa",
+  "spainNotes": "El ETF está regulado en EE.UU.; su disponibilidad en plataformas españolas depende del bróker y de la normativa local.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Comisiones de broker pueden aplicar",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Vender las participaciones del ETF en el mercado secundario a través del bróker habitual.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "Exposición regulada al token HYPE con menor fricción que la compra directa.",
+  "difficulty": "baja",
+  "timeNeeded": "ninguno",
+  "subscores": {
+   "novedad": {
+    "v": 7,
+    "why": "Primera vez que HYPE se incluye en un ETF regulado",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Mayor visibilidad y demanda institucional pueden impulsar el precio del token",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Los ETFs de cripto están en expansión, pero HYPE sigue siendo un activo de nicho",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 3,
+    "why": "No se dispone de información pública sobre el equipo detrás de HYPE",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3,
+    "why": "No hay datos públicos sobre financiación del proyecto HYPE",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4,
+    "why": "Actividad comunitaria no documentada en fuentes consultadas",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "Adopción del token fuera del ETF es limitada y no está confirmada",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Otros tokens similares están también presentes en ETFs de cripto",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 4,
+    "why": "Riesgos inherentes a la tecnología blockchain y a la seguridad del token",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5,
+    "why": "Volatilidad del token y posible cambio regulatorio, aunque el ETF está regulado",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 5,
+    "why": "Depende del bróker y de la normativa local, sin confirmación clara",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "Alta liquidez del ETF en mercados secundarios",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "media",
+    "detail": "El token sigue sin estar regulado directamente; su exposición depende de la política del ETF"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Acceso a HYPE mediante un vehículo regulado",
+   "Posible impulso de precio por demanda institucional"
+  ],
+  "howToParticipate": [
+   "Abrir una cuenta en un bróker que ofrezca el ETF EZPZ",
+   "Depositar fondos (máximo 2000 €)",
+   "Comprar participaciones del ETF bajo el ticker EZPZ"
+  ],
+  "lossCauses": [
+   "Caída del precio del token HYPE",
+   "Variaciones adversas del mercado cripto",
+   "Cambios regulatorios que afecten al ETF"
+  ],
+  "earlySignals": [
+   "Incorporación oficial del token al ETF (SEC prospectus)",
+   "Fecha de entrada: 1‑dic‑2026"
+  ],
+  "signals": {
+   "pulseScore": 66
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "aprobado",
+   "notes": "ETF regulado por la SEC de EE.UU.; disponible para inversores cualificados",
+   "sources": [
+    "https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · The Block",
+    "url": "https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686"
+   }
+  ],
+  "discoveredVia": "Pulso · The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-theblock-co",
+  "isNew": false,
+  "score": 40,
+  "rawScore": 45.4,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "media",
+    "detail": "El token sigue sin estar regulado directamente; su exposición depende de la política del ETF"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Primera vez que HYPE se incluye en un ETF regulado",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Mayor visibilidad y demanda institucional pueden impulsar el precio del token",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Los ETFs de cripto están en expansión, pero HYPE sigue siendo un activo de nicho",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información pública sobre el equipo detrás de HYPE",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos públicos sobre financiación del proyecto HYPE",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Actividad comunitaria no documentada en fuentes consultadas",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción del token fuera del ETF es limitada y no está confirmada",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Otros tokens similares están también presentes en ETFs de cripto",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgos inherentes a la tecnología blockchain y a la seguridad del token",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 5.0,
+    "points": 5.0,
+    "why": "Volatilidad del token y posible cambio regulatorio, aunque el ETF está regulado",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende del bróker y de la normativa local, sin confirmación clara",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Alta liquidez del ETF en mercados secundarios",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3960.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 19800.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 39600.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 99000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 198000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 594000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "pulseScore": 66.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: HYPE token (incluido en ETF EZPZ de Franklin Templeton)\nCATEGORÍA: cripto · token\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Exposición regulada al token HYPE con menor fricción que la compra directa.\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: medio\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso a HYPE mediante un vehículo regulado; Posible impulso de precio por demanda institucional\nMOTIVOS PARA DESCONFIAR: El token sigue sin estar regulado directamente; su exposición depende de la política del ETF; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Abrir una cuenta en un bróker que ofrezca el ETF EZPZ; Depositar fondos (máximo 2000 €); Comprar participaciones del ETF bajo el ticker EZPZ\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio del token HYPE; Variaciones adversas del mercado cripto; Cambios regulatorios que afecten al ETF\nFUENTES: https://www.theblock.co/news/markets/2026-11-25-franklin-templeton-ezpz-etf-adds-hyperliquid-hype-446686",
+  "firstSeenAt": "2026-11-21T12:18:38Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "news-www-theblock-co-news-markets-2026-11-20-binance-hack-laundering-ramps-up-149-million",
+   "web-theblock-co"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar acciones del ETF EZPZ y beneficiarse de la apreciación del token HYPE dentro del fondo"
+ },
+ {
+  "name": "tBTC",
+  "category": "cripto",
+  "subcategory": "bridge",
+  "kind": "pasiva",
+  "description": "tBTC es un puente descentralizado que permite convertir BTC en un token ERC‑20 para usarlo en DeFi de Ethereum. Genera ingresos mediante tarifas de minting y redención y mantiene un TVL de alrededor de 222 M $.",
+  "officialUrl": "https://defillama.com/protocol/tbtc",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "La normativa española sobre cripto‑activos y puentes cross‑chain es todavía incierta, lo que puede afectar su uso local.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Costes de gas y tarifas de minting del puente",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "alta",
+  "exitNotes": "Puede vender tBTC en DEXs como Uniswap o Sushiswap, aunque con posible slippage y comisiones de gas.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "Alto potencial ligado a la adopción de DeFi por parte de holders de BTC.",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 6,
+    "why": "tBTC está activo desde 2021 (historial de TVL)",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7,
+    "why": "TVL $222 M y generación de fees mensuales > $150 k",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6,
+    "why": "Existen varios competidores como Fusion, Subfrost, BitSafe, etc.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5,
+    "why": "Audits realizados, indica equipo con experiencia (Threshold Network)",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 5,
+    "why": "No se dispone de información pública sobre financiación externa",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5,
+    "why": "Datos de holders y actividad comunitaria limitados",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 6,
+    "why": "Bridge volume 30 d $106.64 M muestra uso real",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Lista de competidores directa en el mismo nicho",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 4,
+    "why": "Depende de contratos inteligentes en Ethereum y Bitcoin, riesgo de bugs",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4,
+    "why": "TVL ha caído 34.5 % en los últimos 30 días",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3,
+    "why": "Incertidumbre regulatoria en España para puentes cross‑chain",
+    "evidence": false
+   },
+   "salida": {
+    "v": 6,
+    "why": "Token listado en DEXs con buena liquidez",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "decrecimiento_tvl",
+    "severity": "alta",
+    "detail": "TVL disminuyó 34.5 % en el último mes"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "Falta de claridad normativa en España para puentes de cripto"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Permite a los holders de BTC acceder a oportunidades DeFi en Ethereum",
+   "Genera ingresos indirectos mediante tarifas del protocolo"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible con Ethereum (MetaMask, etc.)",
+   "Adquirir BTC y enviarlo al puente tBTC",
+   "Mintar tBTC y recibir el token ERC‑20",
+   "Mantener o vender tBTC en un DEX"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar tBTC y venderlo cuando su precio suba o beneficiarse de la apreciación derivada de las tarifas del protocolo",
+  "lossCauses": [
+   "Caída del TVL y de la demanda",
+   "Fallos o vulnerabilidades en los contratos del puente",
+   "Cambios regulatorios adversos",
+   "Depreciación del precio de BTC"
+  ],
+  "earlySignals": [
+   "Incremento sostenido del bridge volume",
+   "Aumento de las tarifas mensuales",
+   "Lanzamiento de mejoras de seguridad"
+  ],
+  "signals": {
+   "pulseScore": 80
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "pendiente de verificación",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Pulso · DefiLlama",
+    "url": "https://defillama.com/protocol/tbtc"
+   }
+  ],
+  "discoveredVia": "Pulso · DefiLlama",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-defillama-com",
+  "isNew": true,
+  "score": 40,
+  "rawScore": 49.5,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "decrecimiento_tvl",
+    "severity": "alta",
+    "detail": "TVL disminuyó 34.5 % en el último mes"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "Falta de claridad normativa en España para puentes de cripto"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "tBTC está activo desde 2021 (historial de TVL)",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "TVL $222 M y generación de fees mensuales > $150 k",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Existen varios competidores como Fusion, Subfrost, BitSafe, etc.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 5.0,
+    "points": 5.0,
+    "why": "Audits realizados, indica equipo con experiencia (Threshold Network)",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de información pública sobre financiación externa",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Datos de holders y actividad comunitaria limitados",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Bridge volume 30 d $106.64 M muestra uso real",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Lista de competidores directa en el mismo nicho",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 4.0,
+    "points": 3.2,
+    "why": "Depende de contratos inteligentes en Ethereum y Bitcoin, riesgo de bugs",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 4.0,
+    "points": 4.0,
+    "why": "TVL ha caído 34.5 % en los últimos 30 días",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Incertidumbre regulatoria en España para puentes cross‑chain",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Token listado en DEXs con buena liquidez",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3960.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 19800.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 39600.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 99000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 198000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 594000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "pulseScore": 80.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: tBTC\nCATEGORÍA: cripto · bridge\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://defillama.com/protocol/tbtc\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Alto potencial ligado a la adopción de DeFi por parte de holders de BTC.\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: muy alto\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite a los holders de BTC acceder a oportunidades DeFi en Ethereum; Genera ingresos indirectos mediante tarifas del protocolo\nMOTIVOS PARA DESCONFIAR: TVL disminuyó 34.5 % en el último mes; Falta de claridad normativa en España para puentes de cripto; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: Crear una wallet compatible con Ethereum (MetaMask, etc.); Adquirir BTC y enviarlo al puente tBTC; Mintar tBTC y recibir el token ERC‑20; Mantener o vender tBTC en un DEX\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del TVL y de la demanda; Fallos o vulnerabilidades en los contratos del puente; Cambios regulatorios adversos; Depreciación del precio de BTC\nFUENTES: https://defillama.com/protocol/tbtc",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "web-defillama-com"
   ]
  },
  {
@@ -4654,6 +6526,372 @@
   "runId": "run-20261123-1315",
   "aliases": [
    "news-elreferente-es-portugal-startups-oryksa-da-a-cada-negocio-una-empleada-de-ia-con-voz"
+  ]
+ },
+ {
+  "name": "Infracap Small Cap Income ETF",
+  "category": "negocio",
+  "subcategory": "ETF",
+  "kind": "pasiva",
+  "description": "ETF que invierte en acciones de pequeña capitalización y ha incrementado su dividendo trimestral en un 2%. Ofrece exposición al segmento de small caps con pagos de dividendos periódicos. Su rendimiento depende del desempeño del mercado de pequeñas empresas.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "dudosa",
+  "spainNotes": "Puede adquirirse a través de brokers que ofrezcan acceso a mercados estadounidenses, pero no está listado en plataformas locales habituales.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Comisiones de broker y posibles spreads no especificados",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Venta en el mercado secundario mediante el broker utilizado.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "El aumento del dividendo sugiere un potencial de ingresos creciente, aunque depende del desempeño del mercado de small caps.",
+  "difficulty": "baja",
+  "timeNeeded": "bajo",
+  "subscores": {
+   "novedad": {
+    "v": 3,
+    "why": "ETF ya existente en el mercado",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 6,
+    "why": "Dividendo incrementado 2% según la noticia",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5,
+    "why": "Enfocado en el segmento de small caps",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2,
+    "why": "No se dispone de información sobre el equipo gestor",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2,
+    "why": "No hay datos de financiación pública",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2,
+    "why": "No se menciona comunidad de inversores",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4,
+    "why": "ETF cotiza en bolsa y es accesible a inversores institucionales y retail",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5,
+    "why": "Existen otros ETFs de small cap con características similares",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7,
+    "why": "Producto financiero tradicional sin componentes tecnológicos complejos",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5,
+    "why": "Exposición a la volatilidad de pequeñas capitalizaciones",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 4,
+    "why": "Requiere broker con acceso a EE.UU.; disponibilidad no garantizada",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8,
+    "why": "Alta liquidez en mercados secundarios",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "distrust": [
+   "Falta de información oficial accesible (HTTP 403)"
+  ],
+  "whyInteresting": [
+   "Incremento reciente del dividendo que mejora el rendimiento para ingresos pasivos"
+  ],
+  "howToParticipate": [
+   "1. Abrir una cuenta con un broker que permita operar en mercados estadounidenses.",
+   "2. Buscar el ticker del Infracap Small Cap Income ETF (por ejemplo, INFR).",
+   "3. Comprar la cantidad de participaciones que se ajuste al presupuesto disponible."
+  ],
+  "actionable": true,
+  "profitPath": "Obtención de dividendos trimestrales y posible revalorización del precio de la participación.",
+  "lossCauses": [
+   "Caída del mercado de small caps",
+   "Reducción o eliminación del dividendo",
+   "Riesgo de tipo de cambio EUR/USD"
+  ],
+  "earlySignals": [
+   "Disminución del dividendo anunciado",
+   "Caída sostenida del precio del ETF"
+  ],
+  "signals": {
+   "pulseScore": 56
+  },
+  "regulatory": {
+   "checked": false,
+   "status": "desconocido",
+   "notes": "Pendiente de verificación de requisitos regulatorios en España",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Pulso · Seeking Alpha",
+    "url": "https://seekingalpha.com/news/4676553-infracap-small-cap-income-etf-raises-quarterly-dividend-by-2-to-0255share?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news"
+   }
+  ],
+  "discoveredVia": "Pulso · Seeking Alpha",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "sin verificar",
+   "model": null
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "n-infracap-small-cap-income-etf",
+  "isNew": true,
+  "score": 26,
+  "rawScore": 31.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   }
+  ],
+  "evidenced": 1,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "ETF ya existente en el mercado",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Dividendo incrementado 2% según la noticia",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Enfocado en el segmento de small caps",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información sobre el equipo gestor",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No hay datos de financiación pública",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "No se menciona comunidad de inversores",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "ETF cotiza en bolsa y es accesible a inversores institucionales y retail",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros ETFs de small cap con características similares",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto financiero tradicional sin componentes tecnológicos complejos",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Exposición a la volatilidad de pequeñas capitalizaciones",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Requiere broker con acceso a EE.UU.; disponibilidad no garantizada",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Alta liquidez en mercados secundarios",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "pulseScore": 56.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Infracap Small Cap Income ETF\nCATEGORÍA: negocio · ETF\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: El aumento del dividendo sugiere un potencial de ingresos creciente, aunque depende del desempeño del mercado de small caps.\nPUNTUACIÓN: 26/100 · Descartar\nRIESGO: medio\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Incremento reciente del dividendo que mejora el rendimiento para ingresos pasivos\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Falta de información oficial accesible (HTTP 403)\nCÓMO PARTICIPAR: 1. Abrir una cuenta con un broker que permita operar en mercados estadounidenses.; 2. Buscar el ticker del Infracap Small Cap Income ETF (por ejemplo, INFR).; 3. Comprar la cantidad de participaciones que se ajuste al presupuesto disponible.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del mercado de small caps; Reducción o eliminación del dividendo; Riesgo de tipo de cambio EUR/USD\nFUENTES: https://seekingalpha.com/news/4676553-infracap-small-cap-income-etf-raises-quarterly-dividend-by-2-to-0255share?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-25T19:27:10Z",
+  "runId": "run-20261125-1927",
+  "aliases": [
+   "web-seekingalpha-com"
   ]
  },
  {
@@ -9552,362 +11790,6 @@
   "runId": "run-20261124-2357",
   "aliases": [
    "web-benzinga-com"
-  ]
- },
- {
-  "name": "Binance hack laundering report",
-  "category": "cripto",
-  "subcategory": "desconocido",
-  "kind": "pasiva",
-  "description": "Informe de The Block sobre el aumento del lavado de bitcoins vinculados al hack de Binance, con 149 M USD mezclados mediante coinjoins. No se trata de una oportunidad de inversión, sino de una actividad ilícita detectada.",
-  "officialUrl": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758",
-  "participateUrl": null,
-  "country": "global",
-  "spainAvailability": "no",
-  "spainNotes": "No disponible en España; se trata de un informe de actividad criminal.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "No hay costes de entrada, pero participar sería ilegal",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": true,
-  "liquidity": "nula",
-  "exitNotes": "No aplica, no hay salida legítima",
-  "horizon": "corto",
-  "deadline": null,
-  "potential": "Alto riesgo sin potencial de retorno legítimo",
-  "difficulty": "alta",
-  "timeNeeded": "ninguno",
-  "subscores": {
-   "novedad": {
-    "v": 5.0,
-    "why": "El informe destaca un aumento reciente de mixing tras el hack · Verificador: El informe es reciente (20 de noviembre de 2026) y detalla movimientos de fondos vinculados a un hack. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
-    "evidence": false
-   },
-   "potencial": {
-    "v": 1.0,
-    "why": "No hay retorno financiero legítimo · Verificador: No es un activo financiero, no tiene retorno.",
-    "evidence": false
-   },
-   "mercado": {
-    "v": 0.0,
-    "why": "Mercado de lavado de cripto es clandestino y limitado · Verificador: No existe mercado legítimo para esta actividad. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 0.0,
-    "why": "No hay equipo comercial o de proyecto asociado · Verificador: No aplica, es un reporte de terceros (Elliptic/The Block).",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 0.0,
-    "why": "No hay financiación pública o privada del proyecto · Verificador: No aplica.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 0.0,
-    "why": "No existe comunidad de usuarios legítimos · Verificador: No aplica.",
-    "evidence": false
-   },
-   "adopcion": {
-    "v": 0.0,
-    "why": "No hay adopción legal ni institucional · Verificador: No aplica.",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 0.0,
-    "why": "Otros actores criminales pueden ofrecer servicios similares · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 2.0,
-    "why": "Uso de coinjoins y técnicas de anonimato avanzadas · Verificador: El uso de coinjoins para lavado de dinero es una actividad de alto riesgo técnico y legal. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
-    "evidence": false
-   },
-   "riesgo_financiero": {
-    "v": 1.0,
-    "why": "Altísimo riesgo de confiscación y sanciones · Verificador: Participar en el blanqueo de capitales conlleva riesgo total de confiscación y penas de prisión. · Discrepancia entre modelos (1 vs 10): se toma el valor bajo.",
-    "evidence": false
-   },
-   "entrada_espana": {
-    "v": 0.0,
-    "why": "Actividad no permitida en España · Verificador: Actividad ilegal en España.",
-    "evidence": false
-   },
-   "salida": {
-    "v": 0.0,
-    "why": "No hay mecanismos de salida legales · Verificador: No existe salida legítima.",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "actividad_ilicita",
-    "severity": "critica",
-    "detail": "Se trata de un informe de hack y lavado de fondos, no es una inversión legal"
-   },
-   {
-    "code": "actividad_ilicita",
-    "severity": "critica",
-    "detail": "El contenido trata sobre el lavado de dinero proveniente de un hackeo. Cualquier interacción con estos fondos es un delito."
-   }
-  ],
-  "distrust": [
-   "Posible fraude y actividad criminal"
-  ],
-  "whyInteresting": [],
-  "howToParticipate": [
-   "No se recomienda participar; la actividad es ilegal"
-  ],
-  "lossCauses": [
-   "Participar en actividades ilícitas conlleva confiscación de fondos y sanciones penales"
-  ],
-  "earlySignals": [],
-  "signals": {},
-  "regulatory": {
-   "checked": true,
-   "status": "no_aplica",
-   "notes": "No es un producto financiero ni servicio de inversión. Es un informe de seguridad sobre actividad delictiva.",
-   "sources": [
-    "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758"
-   ]
-  },
-  "sources": [
-   {
-    "title": "The Block",
-    "url": "https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758"
-   }
-  ],
-  "discoveredVia": "The Block",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "confirmada",
-   "reason": "La ficha describe correctamente un informe de inteligencia sobre ciberseguridad y actividad criminal. No es una oportunidad de inversión, sino una noticia de mercado sobre el seguimiento de fondos ilícitos.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 58
-  },
-  "discoveredAt": "2026-11-21",
-  "id": "web-theblock-co",
-  "isNew": true,
-  "score": 6,
-  "rawScore": 6.2,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [],
-  "critical": true,
-  "risk": "crítico",
-  "flags": [
-   {
-    "code": "actividad_ilicita",
-    "severity": "critica",
-    "detail": "Se trata de un informe de hack y lavado de fondos, no es una inversión legal"
-   }
-  ],
-  "evidenced": 0,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "El informe destaca un aumento reciente de mixing tras el hack · Verificador: El informe es reciente (20 de noviembre de 2026) y detalla movimientos de fondos vinculados a un hack. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 1.0,
-    "points": 1.2,
-    "why": "No hay retorno financiero legítimo · Verificador: No es un activo financiero, no tiene retorno.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Mercado de lavado de cripto es clandestino y limitado · Verificador: No existe mercado legítimo para esta actividad. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay equipo comercial o de proyecto asociado · Verificador: No aplica, es un reporte de terceros (Elliptic/The Block).",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay financiación pública o privada del proyecto · Verificador: No aplica.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No existe comunidad de usuarios legítimos · Verificador: No aplica.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay adopción legal ni institucional · Verificador: No aplica.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Otros actores criminales pueden ofrecer servicios similares · Verificador: No aplica. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 2.0,
-    "points": 1.6,
-    "why": "Uso de coinjoins y técnicas de anonimato avanzadas · Verificador: El uso de coinjoins para lavado de dinero es una actividad de alto riesgo técnico y legal. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 1.0,
-    "points": 1.0,
-    "why": "Altísimo riesgo de confiscación y sanciones · Verificador: Participar en el blanqueo de capitales conlleva riesgo total de confiscación y penas de prisión. · Discrepancia entre modelos (1 vs 10): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde España",
-    "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "Actividad no permitida en España · Verificador: Actividad ilegal en España.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No hay mecanismos de salida legales · Verificador: No existe salida legítima.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": -0.0,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [],
-  "alert": {
-   "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Binance hack laundering report\nCATEGORÍA: cripto · desconocido\nFECHA DE DESCUBRIMIENTO: 2026-11-21\nWEB OFICIAL: https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto riesgo sin potencial de retorno legítimo\nPUNTUACIÓN: 6/100 · Descartar\nRIESGO: crítico\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: —\nMOTIVOS PARA DESCONFIAR: Se trata de un informe de hack y lavado de fondos, no es una inversión legal; Posible fraude y actividad criminal\nCÓMO PARTICIPAR: No se recomienda participar; la actividad es ilegal\nQUÉ PODRÍA HACERME PERDER EL DINERO: Participar en actividades ilícitas conlleva confiscación de fondos y sanciones penales\nFUENTES: https://www.theblock.co/news/markets/2026-11-20-binance-hack-laundering-ramps-up-149-million-bitcoin-mixed-coinjoins-elliptic-444758",
-  "firstSeenAt": "2026-11-21T12:18:38Z",
-  "lastSeenAt": "2026-11-21T12:18:38Z",
-  "runId": "run-20261121-1218",
-  "aliases": [
-   "news-www-theblock-co-news-markets-2026-11-20-binance-hack-laundering-ramps-up-149-million"
   ]
  },
  {
