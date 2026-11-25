@@ -1,10 +1,10 @@
 {
  "version": 2,
- "generatedAt": "2026-11-24T21:48:42Z",
- "checkedAt": "2026-11-24T21:59:35Z",
- "attemptedAt": "2026-11-24T21:59:35Z",
+ "generatedAt": "2026-11-25T00:05:50Z",
+ "checkedAt": "2026-11-25T00:05:50Z",
+ "attemptedAt": "2026-11-25T00:05:50Z",
  "spend": {
-  "date": "2026-11-24",
+  "date": "2026-11-25",
   "usd": 0.0
  },
  "profiles": {
@@ -190,8 +190,8 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-24T21:48:42Z",
-    "checkedAt": "2026-11-24T21:48:42Z",
+    "generatedAt": "2026-11-25T00:05:50Z",
+    "checkedAt": "2026-11-25T00:05:50Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -206,14 +206,128 @@
      "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado modelos de negocio probados desde casa con baja inversión que combinen inmobiliaria, arte y diseño visual. He descartado la reventa física de stock pesado o la elaboración de comida que requiera tramitar un registro sanitario industrial complejo desde la vivienda.",
-    "oportunidades_locales": [],
+    "nota": "Se descartaron opciones que requerían alta inversión en stock físico o licencias complejas de local, priorizando modelos validados desde casa combinando diseño, repostería y servicios de organización inmobiliaria.",
+    "oportunidades_locales": [
+     {
+      "titulo": "Mercados de Artesanía y Navidad en el centro de Valencia",
+      "que_es": "Espacios de venta directa ideales para artesanos e ilustradores donde promocionar productos físicos y captar primeras clientas en la zona.",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
+     }
+    ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c5303af3e",
+      "fecha": "2026-11-25T00:05:50Z",
+      "nueva": true,
+      "titulo": "Ilustraciones y Láminas Artísticas Personalizadas para Decoración Infantil y Eventos",
+      "gancho": "Diseña e imprime láminas de arte digital único para habitaciones infantiles, nacimientos y celebraciones sin necesidad de acumular stock.",
+      "que_es": "Consiste en crear ilustraciones digitales personalizadas (cuadros de nacimiento, retratos infantiles estilizados o acuarelas digitales) adaptadas al gusto de cada cliente. Se venden en formato digital listo para imprimir o impresas bajo demanda a través de proveedores locales.",
+      "casos": [
+       {
+        "quien": "Business Insider",
+        "pais": "",
+        "resultado": "How an Interior Designer Started an Eco-Friendly Product Side Hustle",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQb1V5QUNYSHhiZDFpQW5sRTljTnprd0N2Z3hGM1Y5My1rRVRKT1Z0UjRrcDlEaVF0ZkxEb0FRZG9aUlRoNUdNUktaaFRwLWh0cmMzZXlsaF9hSG9Ja1ZhekV3a1VBVHJqX1ZSZWRlc25QemFOcXpNX0dxMzhrTTlNSHYzeDI1YkQ1TWFMQktUeFllb2xMbVpGRVhhelQyQzV5TzZR?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina tu talento para el arte y el diseño con tu gusto por el mundo infantil, permitiéndote trabajar 100% online desde Riba-roja de Túria.",
+      "como_empezar": [
+       "Semana 1: Diseña un catálogo base con 5 estilos de láminas infantiles y cuadros de nacimiento en Canva o Procreate.",
+       "Semana 2: Abre una tienda en Etsy y una cuenta de Instagram/TikTok para mostrar el proceso de creación.",
+       "Semana 3: Ofrece 3 láminas gratuitas a madres/padres influyentes locales o grupos de crianza a cambio de reseñas reales.",
+       "Semana 4: Lanza promociones para regalos de bautizos, cumpleaños y baby showers en la zona de Valencia."
+      ],
+      "coste_inicial": "Aproximadamente 100 € (licencias de software de diseño, muestras de impresión e inscripción en plataforma online).",
+      "herramientas": [
+       "Canva Pro o Procreate",
+       "Etsy o Shopify",
+       "Printful / Imprenta local de Valencia para bajo demanda",
+       "Instagram / TikTok"
+      ],
+      "precio": "Lámina digital: 15 € - 25 €. Lámina impresa con marco: 35 € - 60 € según tamaño.",
+      "primeras_clientas": [
+       "Publicar en grupos de crianza y maternidad de Valencia en Facebook e Instagram",
+       "Contactar con tiendas locales de moda infantil en el Camp de Túria para exponer muestras"
+      ],
+      "ingresos_posibles": "Estimación prudente: 400 € a 1.200 €/mes vendiendo entre 15 y 30 láminas al mes a medida que ganas visibilidad online.",
+      "horas_semana": "10 a 15 horas semanales.",
+      "tramites": [
+       "Alta en el censo de adiestramientos/autónomos (IAE 861 - Pintores, Escultores, Ceramistas, Artesanos).",
+       "Aprovechar la Tarifa Plana o Cuota Cero de autónomos de la Comunitat Valenciana.",
+       "Cumplimiento de la Ley de Protección de Datos (RGPD) al tratar fotos de menores para personalizaciones."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Saturación de diseños genéricos si no te diferencias con un estilo propio.",
+       "Dependencia del tráfico orgánico en redes sociales al principio.",
+       "Derechos de imagen de ilustraciones bajo encargo."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "arte",
+       "diseño",
+       "niños"
+      ]
+     },
+     {
+      "id": "cc3843231",
+      "fecha": "2026-11-25T00:05:50Z",
+      "nueva": true,
+      "titulo": "Coordinación y Asistencia Integral en Mudanzas y Organización del Hogar",
+      "gancho": "Ofrece un servicio personalizado para ayudar a compradores e inquilinos a planificar, empaquetar y organizar sus casas durante un traslado.",
+      "que_es": "Es un servicio de acompañamiento y organización técnica para personas que cambian de vivienda o atraviesan transiciones de vida. Incluye empaquetado sistemático, selección de enseres y optimización del espacio en el nuevo inmueble.",
+      "casos": [
+       {
+        "quien": "MoneyWise.com",
+        "pais": "",
+        "resultado": "Women are paying a 29-year-old to move them out after breakups — her side hustle now brings in $13K/month",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQREUwbDRwY1FPTmxwaXFmQ01PM2NVNjJIb1BLQVYyZjRZbXIzeldubnZSeVZrYV9SUVhZcEFybTNCOHJIWDRXWWlHWXRJLWFJNGlJVEhOcU9CcDlGOXlXbXVxa255dDBITWhfQlo5NU9wSmdPNVE2d2FJaGFRbFg3STJKbTJfaFFsbGpVU2IwX0Jya1BkbWZVUUJ1RHZiWVltbmVXRzRB?oc=5",
+        "resultado_es": "Mujeres pagan a una joven de 29 años para mudarse tras rupturas — su negocio genera $13K/mes"
+       }
+      ],
+      "por_que_tu": "Aprovecha tu conocimiento del sector inmobiliario y tus habilidades de organización espacial sin necesidad de inversión en stock.",
+      "como_empezar": [
+       "Semana 1: Define 3 paquetes de servicio (Planificación previa, Día de la mudanza, Organización post-mudanza).",
+       "Semana 2: Contacta con agencias inmobiliarias locales y administradores de fincas en Riba-roja y Valencia para presentar tus servicios.",
+       "Semana 3: Crea una ficha en Google My Business e Instagram mostrando transformaciones de espacios antes/después.",
+       "Semana 4: Realiza tu primer servicio piloto con descuento a cambio de testimonio en vídeo o reseña en Google."
+      ],
+      "coste_inicial": "Aproximadamente 80 € (tarjetas de visita, etiquetas organizadoras, kits de empaquetado de muestra y web sencilla).",
+      "herramientas": [
+       "Google My Business",
+       "WhatsApp Business",
+       "Instagram / Canva",
+       "Materiales básicos de etiquetado y protección"
+      ],
+      "precio": "Asesoría y coordinación de mudanza estándar: 150 € - 350 € por proyecto (o 25 €/hora).",
+      "primeras_clientas": [
+       "Alianzas estratégicas con agentes inmobiliarios locales que recomienden tu servicio a sus compradores/inquilinos",
+       "Anuncios en tableros comunitarios y grupos de vecinos en la comarca del Túria"
+      ],
+      "ingresos_posibles": "Estimación prudente: 600 € a 1.800 €/mes coordinando de 2 a 5 mudanzas completas al mes.",
+      "horas_semana": "10 a 20 horas semanales.",
+      "tramites": [
+       "Alta en el censo de autónomos (Servicios de organización y consultoría).",
+       "Seguro de Responsabilidad Civil General para cubrir posibles imprevistos durante la manipulación de objetos.",
+       "Acuerdo de confidencialidad y contrato de prestación de servicios."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Dependencia de la recomendación de intermediarios inmobiliarios.",
+       "Riesgo de daño en objetos delicados sin un buen seguro de responsabilidad civil.",
+       "Esfuerzo físico moderado en jornadas intensas."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria",
+       "otros"
+      ]
+     },
+     {
       "id": "c9ab4966e",
       "fecha": "2026-11-24T21:48:42Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Servicio de Redacción y Marca Personal en LinkedIn para Agentes Inmobiliarios",
       "gancho": "Ayuda a agentes e inmobiliarias locales a captar propiedades redactando su contenido profesional desde casa.",
       "que_es": "Creas y gestionas la estrategia de contenidos en LinkedIn para agentes inmobiliarios y pequeñas agencias. Escribes publicaciones sobre tendencias del mercado local, casos de éxito de ventas e historias reales, acompañadas de gráficos limpios diseñados en Canva. El objetivo es que los agentes generen confianza y reciban llamadas de propietarios que quieren vender sus casas.",
@@ -273,7 +387,7 @@
      {
       "id": "c491d1ef9",
       "fecha": "2026-11-24T21:48:42Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Gestión de Canales de Pinterest para Tiendas Online y Marcas de Decoración",
       "gancho": "Ayuda a pequeñas marcas de e-commerce a multiplicar su tráfico visual y ventas mediante tableros y pines optimizados.",
       "que_es": "Pinterest funciona como un buscador visual muy potente para el sector del hogar, moda, cocina y eventos. Creas pines atractivos, programas contenido diario y optimizas el perfil de marcas de comercio electrónico o blogs para derivar tráfico cualificado a sus webs de venta.",
@@ -662,6 +776,25 @@
    "descartados_por_validacion": 1
   }
  },
- "sources": {},
+ "sources": {
+  "ayudas_ella": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 70,
+    "sin_relacion": 37,
+    "directa": 7,
+    "no_para_ti": 11,
+    "cerradas": 15,
+    "abiertas": 0
+   }
+  },
+  "casa_historias_ella": {
+   "ok": true,
+   "n": 25,
+   "err": null
+  }
+ },
  "model": "claude-opus-5-5"
 }
