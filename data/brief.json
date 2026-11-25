@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-25T12:16:53Z",
- "checkedAt": "2026-11-25T20:00:56Z",
- "attemptedAt": "2026-11-25T20:00:56Z",
+ "checkedAt": "2026-11-25T22:18:16Z",
+ "attemptedAt": "2026-11-25T22:18:16Z",
  "spend": {
   "date": "2026-11-25",
   "usd": 0.0
@@ -303,11 +303,11 @@
    },
    "casa": {
     "generatedAt": "2026-11-25T12:16:53Z",
-    "checkedAt": "2026-11-25T20:00:56Z",
+    "checkedAt": "2026-11-25T22:18:16Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
-    "provider": "groq",
-    "model": "openai/gpt-oss-120b",
+    "provider": "gemini",
+    "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
@@ -318,12 +318,17 @@
      "sin_caso": 3,
      "vacia": 0
     },
-    "nota": "",
+    "nota": "He descartado ideas de reventa de ropa usada por estar ya en la lista anterior y me he centrado en servicios de alto valor añadido que aprovechan tus habilidades creativas y de gestión.",
     "oportunidades_locales": [
      {
-      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
-      "que_es": "Convocatorias de apoyo económico y cuota cero / bonificaciones para nuevos autónomos en la Comunitat Valenciana.",
+      "titulo": "Ayudas para autónomos en la Comunitat Valenciana",
+      "que_es": "Programa de apoyo para el inicio de actividad y consolidación de autónomos.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
+     },
+     {
+      "titulo": "Incubadora de empresas para mujeres en Valencia",
+      "que_es": "Apoyo y formación para mujeres emprendedoras en la región.",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
      }
     ],
     "ayudas": [],
@@ -1120,7 +1125,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 18,
+   "n": 27,
    "err": null
   }
  },
