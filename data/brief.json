@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-25T08:27:20Z",
- "checkedAt": "2026-11-25T08:27:20Z",
- "attemptedAt": "2026-11-25T08:27:20Z",
+ "generatedAt": "2026-11-25T12:16:53Z",
+ "checkedAt": "2026-11-25T12:16:53Z",
+ "attemptedAt": "2026-11-25T12:16:53Z",
  "spend": {
   "date": "2026-11-25",
   "usd": 0.0
@@ -302,8 +302,8 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-25T08:27:20Z",
-    "checkedAt": "2026-11-25T08:27:20Z",
+    "generatedAt": "2026-11-25T12:16:53Z",
+    "checkedAt": "2026-11-25T12:16:53Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -311,27 +311,136 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 1,
-    "descartadas": 2,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 2,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado modelos validados de bajo coste enfocados en repostería artesanal, kits creativos infantiles y edición de vídeo inmobiliario, descartando negocios que requerían licencias complejas de local o stock físico elevado.",
+    "nota": "He buscado modelos de negocio probados de bajo coste en envasado gourmet de especias, talleres creativos/artísticos para eventos infantiles y servicios de diseño visual para agencias inmobiliarias, descartando opciones de alta inversión, cursos milagro y venta multinivel.",
     "oportunidades_locales": [
      {
-      "titulo": "Mercado de la Huerta de Valencia",
-      "que_es": "Espacio de venta directa ideal para darse a conocer o hacer alianzas con productores locales de ingredientes frescos.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
+      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
+      "que_es": "Convocatorias de apoyo económico y cuota cero / bonificaciones para nuevos autónomos en la Comunitat Valenciana.",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c56a8bf51",
+      "fecha": "2026-11-25T12:16:53Z",
+      "nueva": true,
+      "titulo": "Kits de Plantillas y Talleres de 'Art Party' Infantil a Domicilio",
+      "gancho": "Organiza experiencias artísticas guiadas y vende kits de pintura creativa para cumpleaños infantiles.",
+      "que_es": "Diseñas talleres itinerantes de pintura para cumpleaños y comuniones donde los niños pintan sus propios lienzos o prendas con plantillas exclusivas. Complementas el negocio vendiendo kits empaquetados para regalar o pintar en familia.",
+      "casos": [
+       {
+        "quien": "Stencil AI",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 56.490 $ en 30 días",
+        "url": "https://trustmrr.com/startup/stencil-ai"
+       }
+      ],
+      "por_que_tu": "Combina tu talento para el arte y el diseño con el interés por el público infantil, ofreciendo un ocio creativo y diferencial para familias sin necesidad de local.",
+      "como_empezar": [
+       "Semana 1: Diseña 5 plantillas de dibujo para niños (animales, superhéroes, patrones decorativos) y valida la actividad con niños allegados.",
+       "Semana 2: Compra un lote de lienzos pequeños, pinceles lavables y acuarelas/acrílicos por menos de 100 €.",
+       "Semana 3: Graba un vídeo corto de una sesión de prueba y difúndelo en redes sociales y grupos de padres de Riba-roja.",
+       "Semana 4: Ofrece tu primera 'Art Party' a un precio promocional a cambio de fotos y recomendaciones."
+      ],
+      "coste_inicial": "120 € - 180 € (pinceles, pinturas lavables, lienzos y caballetes portátiles de mesa).",
+      "herramientas": [
+       "Canva para ilustrar plantillas",
+       "Instagram / TikTok",
+       "WhatsApp Business",
+       "Material de pintura lavable para niños"
+      ],
+      "precio": "15 € a 20 € por niño en talleres presenciales (mínimo 6 niños); kits individuales a 12 €.",
+      "primeras_clientas": [
+       "Contactos en AMPAs y grupos de madres/padres de colegios en Riba-roja de Túria",
+       "Anuncios en grupos locales de Facebook y publicaciones en Instagram",
+       "Boca a boca tras la celebración del primer evento promocional"
+      ],
+      "ingresos_posibles": "Estimación prudente: 400 € a 900 € al mes realizando de 2 a 4 eventos mensuales más ventas de kits aislados.",
+      "horas_semana": "8-10 horas a la semana",
+      "tramites": [
+       "Alta en autónomos",
+       "Seguro de responsabilidad civil para actividades con menores",
+       "Cumplimiento del marcado CE en materiales y pinturas destinadas a niños",
+       "Protección de datos y autorización de imagen firmada por tutores para redes"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Concentración de la carga de trabajo en fines de semana o periodos festivos",
+       "Manchas o desperfectos en instalaciones si no se protegen bien las mesas",
+       "Cancelaciones de eventos por enfermedad de los niños"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "arte",
+       "niños"
+      ]
+     },
+     {
+      "id": "cb3e9563c",
+      "fecha": "2026-11-25T12:16:53Z",
+      "nueva": true,
+      "titulo": "Servicio de Diseño Gráfico de Dossieres de Captación y Portafolios Exclusivos para Agentes Inmobiliarios",
+      "gancho": "Diseña material gráfico de alto impacto para que agentes e inmobiliarias independientes capten inmuebles.",
+      "que_es": "Ofreces a agentes inmobiliarios el diseño de sus dossieres de captación en exclusiva, guías para vendedores y fichas de inmuebles de lujo. Les entregas plantillas personalizadas y listas para imprimir o enviar en PDF a los propietarios.",
+      "casos": [
+       {
+        "quien": "Redak",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 19.189 $ en 30 días",
+        "url": "https://trustmrr.com/startup/redak"
+       }
+      ],
+      "por_que_tu": "Fusionas tu experiencia directa en el sector inmobiliario con tu gusto por el diseño, ofreciendo un servicio técnico que muy pocos diseñadores estándar saben enfocar.",
+      "como_empezar": [
+       "Semana 1: Crea 2 modelos de dossier de captación inmobiliaria de nivel profesional en Canva Pro.",
+       "Semana 2: Prepárate un portafolio en PDF con una presentación de muestra para agentes locales.",
+       "Semana 3: Contacta por LinkedIn con 20 agentes e inmobiliarias independientes de la provincia de Valencia ofreciendo una muestra gratuita.",
+       "Semana 4: Cierra tus primeras 2 ventas con un paquete que incluya dossier + plantilla de ficha técnica de propiedad."
+      ],
+      "coste_inicial": "30 € - 50 € (suscripción Canva Pro y herramientas digitales).",
+      "herramientas": [
+       "Canva Pro",
+       "LinkedIn",
+       "Adobe InDesign / Figma",
+       "Google Drive / Dropbox"
+      ],
+      "precio": "80 € a 150 € por el diseño del dossier personalizado; 40 €/mes por adaptaciones continuas de fichas de propiedades.",
+      "primeras_clientas": [
+       "Prospección directa vía LinkedIn a agentes inmobiliarios de Valencia",
+       "Agencias inmobiliarias independientes en Camp de Túria y alrededores",
+       "Red de contactos previa dentro del sector inmobiliario"
+      ],
+      "ingresos_posibles": "Estimación prudente: 500 € a 1.200 € al mes ofreciendo el servicio 100% online con 4 a 8 pedidos al mes.",
+      "horas_semana": "10-15 horas a la semana",
+      "tramites": [
+       "Alta de autónomo en Hacienda y Seguridad Social",
+       "Uso de licencias comerciales para imágenes de stock y fuentes tipográficas",
+       "Emisión de facturas con IVA (21%) e IRPF"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Retrasos en cobros o revisiones excesivas si no se delimita el alcance por contrato",
+       "Dependencia de las fluctuaciones en el volumen de captación inmobiliaria local",
+       "Competencia de plantillas prefabricadas genéricas si no resaltas tu toque inmobiliario"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria",
+       "diseño"
+      ]
+     },
+     {
       "id": "c11123c24",
       "fecha": "2026-11-25T08:27:20Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Edición y Creación de Vídeos Cortos (Reels/TikTok) para Agentes e Inmobiliarias",
       "gancho": "Transforma grabaciones sencillas de pisos en vídeos verticales atractivos para captar compradores en redes sociales.",
       "que_es": "Ayudas a agentes inmobiliarios y pequeñas agencias a destacar sus inmuebles en redes sociales. Ellos te envían vídeos o fotos hechos con su móvil y tú editas vídeos cortos tipo Reel/TikTok con música en tendencia, subtítulos dinámicos y textos persuasivos para atraer compradores.",
@@ -996,64 +1105,6 @@
   }
  },
  "sources": {
-  "startupxplore": {
-   "ok": true,
-   "n": 4,
-   "err": null
-  },
-  "capitalcell": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "dozen": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
-  "ideas": {
-   "ok": true,
-   "n": 14,
-   "err": null
-  },
-  "trustmrr": {
-   "ok": true,
-   "n": 20,
-   "err": null
-  },
-  "ycombinator": {
-   "ok": true,
-   "n": 25,
-   "err": null
-  },
-  "producthunt": {
-   "ok": true,
-   "n": 10,
-   "err": null
-  },
-  "acciones": {
-   "ok": true,
-   "n": 12,
-   "err": null
-  },
-  "pulso": {
-   "ok": true,
-   "n": 17,
-   "err": null
-  },
-  "ayudas_es": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": {
-    "encontradas": 70,
-    "sin_relacion": 37,
-    "directa": 7,
-    "no_para_ti": 11,
-    "cerradas": 15,
-    "abiertas": 0
-   }
-  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
@@ -1069,14 +1120,8 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 27,
+   "n": 26,
    "err": null
-  },
-  "ayudas_eg": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
