@@ -2667,6 +2667,420 @@
   "profitPath": ""
  },
  {
+  "name": "Spiko Euro",
+  "category": "startups",
+  "subcategory": "fintech/tesorería",
+  "kind": "pasiva",
+  "description": "Fintech europea que permite a empresas y startups rentabilizar su tesorería diaria sin bloquear el dinero, ofreciendo un rendimiento neto anual del 2,84 % sobre el saldo disponible.",
+  "officialUrl": "https://www.spiko.com/",
+  "participateUrl": "https://www.spiko.com/",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "España es el mercado de Spiko con mayor crecimiento de nuevos clientes; ya gestionan cerca de 100 M € de tesorería española.",
+  "costs": {
+   "minEntry": 1,
+   "extra": 0,
+   "extraNotes": "No se indican comisiones de apertura; el producto cobra intereses diarios y no bloquea fondos.",
+   "recommended": 2000,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Los fondos pueden retirarse en cualquier momento, según la información de la empresa, aunque el capital no está garantizado.",
+  "horizon": "corto‑medio plazo",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "baja",
+  "timeNeeded": "pocos minutos para abrir la cuenta y transferir fondos",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Rendimiento diario del 2,84 % neto, sin bloqueo de fondos · Verificador: Rendimiento diario del 2,84% neto, sin bloqueo de fondos.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.5,
+    "why": "Mercado español con 937 000 M € en cuentas a la vista (Banco de España) · Verificador: Mercado español con gran volumen de tesorería ociosa.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 7.5,
+    "why": "Gran volumen de tesorería ociosa en empresas y startups · Verificador: Demanda creciente de startups por optimizar el runway.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 6.5,
+    "why": "Country Manager con experiencia en Enisa, JobTeaser y IE Venture Lab · Verificador: Country Manager con perfil profesional verificable en el texto.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 7.5,
+    "why": "Levantó 120 M $ en Serie B liderada por NEA, con respaldo de Index Ventures y figuras de Revolut, Wise, Qonto, Alan · Verificador: Serie B de 120M$ mencionada, aunque no se han verificado los registros de inversión.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.5,
+    "why": "Más de 15 000 clientes gestionan 3 000 M € en tesorería · Verificador: Cifras de 15.000 clientes y 3.000M€ gestionados no auditadas independientemente.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Crecimiento rápido en España, objetivo de 100 M € de tesorería española en pocos meses · Verificador: Crecimiento rápido reportado, pero sin datos públicos de mercado.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Compite con cuentas corrientes tradicionales y otros fintech de tesorería · Verificador: Alta competencia con banca tradicional y otras fintech.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Producto co‑creado con Amundi, BNP Paribas; custodia en CACEIS; auditoría anual de PwC; calificación AAAf/S1+ de S&P · Verificador: Dependencia de terceros (Amundi, CACEIS) no verificada directamente.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 4.0,
+    "why": "Indicador de riesgo 1 sobre 7; capital no garantizado pero riesgo bajo según la empresa · Verificador: Capital no garantizado y rentabilidad variable. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 7.0,
+    "why": "España es el mercado con mayor crecimiento de clientes; presencia local del Country Manager · Verificador: Presencia operativa confirmada por entrevista, pero sin registro oficial claro.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 7.0,
+    "why": "Alta liquidez, retiro posible en cualquier momento · Verificador: Alta liquidez declarada por la empresa.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "capital_no_garantizado",
+    "severity": "media",
+    "detail": "El capital no está garantizado; la rentabilidad es variable y depende del rendimiento del fondo subyacente."
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "baja",
+    "detail": "No se especifica si el producto está autorizado por la CNMV o por el Banco de España."
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "alta",
+    "detail": "No se ha verificado el registro de Spiko en la CNMV ni su pasaporte europeo para operar en España."
+   },
+   {
+    "code": "capital_no_garantizado",
+    "severity": "media",
+    "detail": "El capital no está garantizado; riesgo de pérdida de valor del fondo subyacente."
+   },
+   {
+    "code": "falta_transparencia_url",
+    "severity": "media",
+    "detail": "La ficha no proporciona una URL oficial verificada."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque la empresa Spiko existe y opera en Europa, la falta de una URL oficial verificable en la ficha y la ausencia de confirmación explícita sobre su registro en la CNMV para operar en España como entidad financiera o plataforma de inversión hace que la oportunidad sea de alto riesgo regulatorio. La información sobre el producto es coherente con el texto proporcionado, pero la falta de transparencia en la licencia operativa es una bandera roja."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Permite generar runway extra sin diluir capital ni cambiar de banco",
+   "Rendimiento superior al de una cuenta corriente tradicional"
+  ],
+  "howToParticipate": [
+   "Acceder al sitio web de Spiko (no proporcionado)",
+   "Crear una cuenta empresarial o de startup",
+   "Transferir al menos 1 € al producto Spiko Euro",
+   "Comenzar a recibir intereses diarios"
+  ],
+  "actionable": true,
+  "profitPath": "El usuario deposita su tesoro empresarial en Spiko Euro y recibe intereses diarios que se acumulan a un 2,84 % anual neto, generando ahorro y runway adicional.",
+  "lossCauses": [
+   "Variación negativa del rendimiento del fondo subyacente",
+   "Falta de garantía del capital principal"
+  ],
+  "earlySignals": [
+   "Incremento de la base de clientes en España",
+   "Nuevas alianzas con bancos o gestores de activos"
+  ],
+  "signals": {
+   "clientes_espana": 10000000
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No se ha encontrado registro de Spiko en los buscadores de entidades de la CNMV. Se recomienda precaución extrema al no poder confirmar si operan bajo licencia propia o como agente de otra entidad.",
+   "sources": [
+    "https://www.cnmv.es/portal/Consultas/ListadoEntidades.aspx"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/entrevistas/en-spiko-queremos-que-el-runway-de-las-startups-rinda-desde-el-primer-dia/"
+   },
+   {
+    "title": "CNMV - Buscador de entidades",
+    "url": "https://www.cnmv.es/portal/Consultas/ListadoEntidades.aspx"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "Aunque la empresa Spiko existe y opera en Europa, la falta de una URL oficial verificable en la ficha y la ausencia de confirmación explícita sobre su registro en la CNMV para operar en España como entidad financiera o plataforma de inversión hace que la oportunidad sea de alto riesgo regulatorio. La información sobre el producto es coherente con el texto proporcionado, pero la falta de transparencia en la licencia operativa es una bandera roja.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-spiko-com",
+  "isNew": true,
+  "score": 47,
+  "rawScore": 52.1,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "capital_no_garantizado",
+    "severity": "media",
+    "detail": "El capital no está garantizado; la rentabilidad es variable y depende del rendimiento del fondo subyacente."
+   },
+   {
+    "code": "regulacion_desconocida",
+    "severity": "baja",
+    "detail": "No se especifica si el producto está autorizado por la CNMV o por el Banco de España."
+   },
+   {
+    "code": "falta_transparencia_url",
+    "severity": "media",
+    "detail": "La ficha no proporciona una URL oficial verificada."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque la empresa Spiko existe y opera en Europa, la falta de una URL oficial verificable en la ficha y la ausencia de confirmación explícita sobre su registro en la CNMV para operar en España como entidad financiera o plataforma de inversión hace que la oportunidad sea de alto riesgo regulatorio. La información sobre el producto es coherente con el texto proporcionado, pero la falta de transparencia en la licencia operativa es una bandera roja."
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Rendimiento diario del 2,84 % neto, sin bloqueo de fondos · Verificador: Rendimiento diario del 2,84% neto, sin bloqueo de fondos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.5,
+    "points": 9.0,
+    "why": "Mercado español con 937 000 M € en cuentas a la vista (Banco de España) · Verificador: Mercado español con gran volumen de tesorería ociosa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Gran volumen de tesorería ociosa en empresas y startups · Verificador: Demanda creciente de startups por optimizar el runway.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.5,
+    "points": 6.5,
+    "why": "Country Manager con experiencia en Enisa, JobTeaser y IE Venture Lab · Verificador: Country Manager con perfil profesional verificable en el texto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Levantó 120 M $ en Serie B liderada por NEA, con respaldo de Index Ventures y figuras de Revolut, Wise, Qonto, Alan · Verificador: Serie B de 120M$ mencionada, aunque no se han verificado los registros de inversión.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Más de 15 000 clientes gestionan 3 000 M € en tesorería · Verificador: Cifras de 15.000 clientes y 3.000M€ gestionados no auditadas independientemente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Crecimiento rápido en España, objetivo de 100 M € de tesorería española en pocos meses · Verificador: Crecimiento rápido reportado, pero sin datos públicos de mercado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Compite con cuentas corrientes tradicionales y otros fintech de tesorería · Verificador: Alta competencia con banca tradicional y otras fintech.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto co‑creado con Amundi, BNP Paribas; custodia en CACEIS; auditoría anual de PwC; calificación AAAf/S1+ de S&P · Verificador: Dependencia de terceros (Amundi, CACEIS) no verificada directamente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Indicador de riesgo 1 sobre 7; capital no garantizado pero riesgo bajo según la empresa · Verificador: Capital no garantizado y rentabilidad variable. · Discrepancia entre modelos (7 vs 4): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "España es el mercado con mayor crecimiento de clientes; presencia local del Country Manager · Verificador: Presencia operativa confirmada por entrevista, pero sin registro oficial claro.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Alta liquidez, retiro posible en cualquier momento · Verificador: Alta liquidez declarada por la empresa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T08:51:35Z",
+    "clientes_espana": 10000000.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Spiko Euro\nCATEGORÍA: startups · fintech/tesorería\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.spiko.com/\nENLACE DE PARTICIPACIÓN: https://www.spiko.com/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 1,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 47/100 · Especulativa\nRIESGO: medio\nPLAZO: corto‑medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite generar runway extra sin diluir capital ni cambiar de banco; Rendimiento superior al de una cuenta corriente tradicional\nMOTIVOS PARA DESCONFIAR: El capital no está garantizado; la rentabilidad es variable y depende del rendimiento del fondo subyacente.; No se especifica si el producto está autorizado por la CNMV o por el Banco de España.; La ficha no proporciona una URL oficial verificada.; El verificador tiene dudas: Aunque la empresa Spiko existe y opera en Europa, la falta de una URL oficial verificable en la ficha y la ausencia de confirmación explícita sobre su registro en la CNMV para operar en España como entidad financiera o plataforma de inversión hace que la oportunidad sea de alto riesgo regulatorio. La información sobre el producto es coherente con el texto proporcionado, pero la falta de transparencia en la licencia operativa es una bandera roja.\nCÓMO PARTICIPAR: Acceder al sitio web de Spiko (no proporcionado); Crear una cuenta empresarial o de startup; Transferir al menos 1 € al producto Spiko Euro; Comenzar a recibir intereses diarios\nQUÉ PODRÍA HACERME PERDER EL DINERO: Variación negativa del rendimiento del fondo subyacente; Falta de garantía del capital principal\nFUENTES: https://elreferente.es/entrevistas/en-spiko-queremos-que-el-runway-de-las-startups-rinda-desde-el-primer-dia/ | https://www.cnmv.es/portal/Consultas/ListadoEntidades.aspx",
+  "firstSeenAt": "2026-11-25T08:51:35Z",
+  "lastSeenAt": "2026-11-25T08:51:35Z",
+  "runId": "run-20261125-0851",
+  "aliases": [
+   "news-elreferente-es-entrevistas-en-spiko-queremos-que-el-runway-de-las-startups-rinda-desd"
+  ]
+ },
+ {
   "name": "Deel Stablecoin Spending Card",
   "category": "cripto",
   "subcategory": "tarjeta_stablecoin",
@@ -3075,31 +3489,31 @@
   "category": "startups",
   "subcategory": "healthtech",
   "kind": "pasiva",
-  "description": "Plataforma que centraliza datos de salud y permite análisis de sangre de más de 110 biomarcadores, ofreciendo recomendaciones personalizadas. Disponible en Portugal (8 €/mes o 199 €/año).",
+  "description": "Plataforma que centraliza datos de salud y permite análisis de sangre de más de 110 biomarcadores, ofreciendo recomendaciones personalizadas. Disponible en Portugal (8 €/mes o 199 €/año) y en EE.UU., sin presencia en España.",
   "officialUrl": "https://octo.health/",
   "participateUrl": "https://octo.health/",
   "country": "Portugal, Estados Unidos",
   "spainAvailability": "no",
-  "spainNotes": "La oferta solo se menciona para Portugal; no hay información de disponibilidad en España.",
+  "spainNotes": "No hay disponibilidad en España; la oferta solo se menciona para Portugal y EE.UU.",
   "costs": {
    "minEntry": 8,
    "extra": 0,
-   "extraNotes": "Suscripción mensual; no se requieren costes adicionales para el uso básico.",
+   "extraNotes": "Suscripción mensual sin costes adicionales",
    "recommended": 199,
    "max": 199
   },
   "canLoseAll": false,
   "liquidity": "nula",
-  "exitNotes": "No hay mecanismo de salida para usuarios; la inversión directa no está disponible.",
-  "horizon": "mediano plazo (2‑5 años) para posible expansión a España.",
+  "exitNotes": "No hay mecanismo de salida; la suscripción se pierde al cancelar.",
+  "horizon": "mediano plazo (2‑5 años) para posible expansión a España",
   "deadline": null,
   "potential": "Alto potencial de crecimiento si logra escalar en mercados europeos y EE.UU., aprovechando la tendencia de salud digital.",
   "difficulty": "media",
-  "timeNeeded": "poco (suscripción y uso inmediato).",
+  "timeNeeded": "poco (suscripción y uso inmediato)",
   "subscores": {
    "novedad": {
     "v": 7.0,
-    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico integrado.",
+    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico.",
     "evidence": true
    },
    "potencial": {
@@ -3108,13 +3522,13 @@
     "evidence": true
    },
    "mercado": {
-    "v": 5.5,
-    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud preventiva en crecimiento, aunque altamente competitivo.",
+    "v": 5.2,
+    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud digital altamente competitivo.",
     "evidence": false
    },
    "equipo": {
     "v": 6.0,
-    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, liderada por Catarina Kemper.",
+    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, CEO Catarina Kemper.",
     "evidence": true
    },
    "financiacion": {
@@ -3123,38 +3537,38 @@
     "evidence": true
    },
    "comunidad": {
-    "v": 3.5,
-    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase de lanzamiento, comunidad aún no consolidada.",
+    "v": 3.2,
+    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase temprana, sin datos de comunidad activa.",
     "evidence": false
    },
    "adopcion": {
-    "v": 4.5,
-    "why": "Solo disponible en Portugal; fase temprana · Verificador: Mercado limitado a Portugal y EE.UU. actualmente.",
-    "evidence": false
+    "v": 4.2,
+    "why": "Solo disponible en Portugal y EE.UU., fase temprana · Verificador: Limitada a Portugal y EE.UU.",
+    "evidence": true
    },
    "competencia": {
     "v": 5.0,
-    "why": "Existen múltiples apps de salud y wearables · Verificador: Alta competencia con apps de salud y laboratorios directos.",
+    "why": "Existen múltiples apps de salud y wearables · Verificador: Múltiples players en salud preventiva.",
     "evidence": false
    },
    "riesgo_tecnico": {
     "v": 6.0,
-    "why": "Tecnología descrita como funcional y basada en análisis de sangre · Verificador: Dependencia de integraciones con laboratorios y dispositivos.",
+    "why": "Tecnología basada en análisis de sangre e integraciones con laboratorios · Verificador: Dependencia de integraciones con laboratorios.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 7.0,
-    "why": "Startup en fase pre‑seed, riesgo inherente alto · Verificador: No es una inversión, es un gasto de consumo (suscripción).",
+    "v": 7.5,
+    "why": "Startup en fase pre‑seed, riesgo inherente alto; suscripción es gasto · Verificador: No es inversión, es gasto de consumo; riesgo de pérdida total del capital pagado por suscripción.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 2.5,
-    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes confirmados de expansión a España.",
+    "v": 2.2,
+    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes anunciados para España.",
     "evidence": false
    },
    "salida": {
     "v": 1.0,
-    "why": "No hay ruta clara de salida para usuarios · Verificador: No aplica, es un servicio de suscripción, no un activo financiero. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "why": "No hay ruta clara de salida para usuarios; es un servicio de suscripción · Verificador: No existe salida financiera; es un servicio.",
     "evidence": false
    }
   },
@@ -3162,17 +3576,22 @@
    {
     "code": "limited_market",
     "severity": "media",
-    "detail": "Solo disponible en Portugal, sin información de expansión a España."
+    "detail": "Solo disponible en Portugal y EE.UU., sin información de expansión a España."
    },
    {
     "code": "no_investment",
     "severity": "baja",
-    "detail": "El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero."
+    "detail": "No es una oportunidad de inversión financiera, sino un servicio de suscripción."
+   },
+   {
+    "code": "no_investment",
+    "severity": "baja",
+    "detail": "El usuario no adquiere capital ni acciones; es un gasto de suscripción."
    },
    {
     "code": "limited_market",
     "severity": "media",
-    "detail": "No disponible en España actualmente."
+    "detail": "No disponible en España, lo que limita su utilidad para el usuario objetivo."
    }
   ],
   "distrust": [
@@ -3184,15 +3603,16 @@
    "Potencial de expansión a mercados con alta demanda de salud digital"
   ],
   "howToParticipate": [
-   "1. Visitar la página oficial o la app de Octo Health",
-   "2. Suscribirse al plan mensual (8 €/mes) o anual (199 €/año)",
-   "3. Utilizar la plataforma para centralizar datos de salud",
-   "4. Seguir noticias de la empresa para posibles rondas de inversión futuras"
+   "Visitar la página oficial o la app de Octo Health",
+   "Suscribirse al plan mensual (8 €/mes) o anual (199 €/año)",
+   "Utilizar la plataforma para centralizar datos de salud",
+   "Seguir noticias de la empresa para posibles rondas de inversión futuras"
   ],
   "actionable": false,
   "profitPath": "",
   "lossCauses": [
-   "No hay inversión directa; la pérdida económica se limitaría al coste de suscripción si el servicio no satisface expectativas."
+   "El gasto de suscripción se pierde si el servicio no satisface expectativas",
+   "No hay retorno financiero directo"
   ],
   "earlySignals": [
    "Ronda de financiación pre‑seed de 2,7 M€",
@@ -3204,7 +3624,7 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Es una empresa de servicios de salud digital (HealthTech). No requiere registro en la CNMV como plataforma de inversión ni bajo MiCA al no ofrecer servicios financieros o criptoactivos.",
+   "notes": "Empresa de servicios de salud. No sujeta a supervisión de la CNMV como entidad financiera.",
    "sources": [
     "https://www.cnmv.es"
    ]
@@ -3213,10 +3633,6 @@
    {
     "title": "El Referente",
     "url": "https://elreferente.es/portugal/inversiones/octo-health-recauda-27-millones-de-euros/"
-   },
-   {
-    "title": "Octo Health Official Website",
-    "url": "https://octo.health/"
    }
   ],
   "discoveredVia": "El Referente",
@@ -3227,15 +3643,15 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "La startup existe, ha cerrado una ronda pre-seed de 2,7M€ y opera en Portugal y EE.UU. La ficha es correcta en su descripción, aunque es un servicio de salud digital (SaaS) y no una oportunidad de inversión financiera directa para el usuario.",
+   "reason": "La startup existe y ha cerrado una ronda pre-seed de 2,7M€. La ficha es correcta al identificar que no es una oportunidad de inversión financiera para el usuario, sino un servicio de salud (SaaS/HealthTech) sin presencia comercial en España.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 92
+   "agreementPct": 100
   },
-  "discoveredAt": "2026-11-24",
+  "discoveredAt": "2026-11-25",
   "id": "web-octo-health",
-  "isNew": true,
+  "isNew": false,
   "score": 39,
-  "rawScore": 47.0,
+  "rawScore": 48.3,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
@@ -3248,15 +3664,15 @@
    {
     "code": "limited_market",
     "severity": "media",
-    "detail": "Solo disponible en Portugal, sin información de expansión a España."
+    "detail": "Solo disponible en Portugal y EE.UU., sin información de expansión a España."
    },
    {
     "code": "no_investment",
     "severity": "baja",
-    "detail": "El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero."
+    "detail": "No es una oportunidad de inversión financiera, sino un servicio de suscripción."
    }
   ],
-  "evidenced": 6,
+  "evidenced": 7,
   "breakdown": [
    {
     "key": "novedad",
@@ -3264,7 +3680,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico integrado.",
+    "why": "Integra más de 110 biomarcadores en una única app · Verificador: Centralización de 110 biomarcadores con análisis clínico.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3284,7 +3700,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud preventiva en crecimiento, aunque altamente competitivo.",
+    "why": "Sector salud digital amplio pero competitivo · Verificador: Sector salud digital altamente competitivo.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3294,7 +3710,7 @@
     "weight": 10,
     "value": 6.0,
     "points": 6.0,
-    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, liderada por Catarina Kemper.",
+    "why": "Fundadora y CEO Catarina Kemper citada en la noticia · Verificador: Fundada en 2023 en Lisboa, CEO Catarina Kemper.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3314,7 +3730,7 @@
     "weight": 7,
     "value": 3.0,
     "points": 2.1,
-    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase de lanzamiento, comunidad aún no consolidada.",
+    "why": "No se menciona comunidad de usuarios o partners · Verificador: Fase temprana, sin datos de comunidad activa.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3322,11 +3738,11 @@
     "key": "adopcion",
     "label": "Adopción",
     "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Solo disponible en Portugal; fase temprana · Verificador: Mercado limitado a Portugal y EE.UU. actualmente.",
-    "evidence": false,
-    "cappedForNoEvidence": true
+    "value": 4.2,
+    "points": 3.8,
+    "why": "Solo disponible en Portugal y EE.UU., fase temprana · Verificador: Limitada a Portugal y EE.UU.",
+    "evidence": true,
+    "cappedForNoEvidence": false
    },
    {
     "key": "competencia",
@@ -3334,7 +3750,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Existen múltiples apps de salud y wearables · Verificador: Alta competencia con apps de salud y laboratorios directos.",
+    "why": "Existen múltiples apps de salud y wearables · Verificador: Múltiples players en salud preventiva.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -3344,7 +3760,7 @@
     "weight": 8,
     "value": 6.0,
     "points": 4.8,
-    "why": "Tecnología descrita como funcional y basada en análisis de sangre · Verificador: Dependencia de integraciones con laboratorios y dispositivos.",
+    "why": "Tecnología basada en análisis de sangre e integraciones con laboratorios · Verificador: Dependencia de integraciones con laboratorios.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3352,9 +3768,9 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 7.0,
-    "points": 7.0,
-    "why": "Startup en fase pre‑seed, riesgo inherente alto · Verificador: No es una inversión, es un gasto de consumo (suscripción).",
+    "value": 7.5,
+    "points": 7.5,
+    "why": "Startup en fase pre‑seed, riesgo inherente alto; suscripción es gasto · Verificador: No es inversión, es gasto de consumo; riesgo de pérdida total del capital pagado por suscripción.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3362,9 +3778,9 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 2.5,
-    "points": 2.0,
-    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes confirmados de expansión a España.",
+    "value": 2.2,
+    "points": 1.8,
+    "why": "Aún no hay anuncio de lanzamiento en España · Verificador: Sin planes anunciados para España.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -3374,7 +3790,7 @@
     "weight": 8,
     "value": 1.0,
     "points": 0.8,
-    "why": "No hay ruta clara de salida para usuarios · Verificador: No aplica, es un servicio de suscripción, no un activo financiero. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "why": "No hay ruta clara de salida para usuarios; es un servicio de suscripción · Verificador: No existe salida financiera; es un servicio.",
     "evidence": false,
     "cappedForNoEvidence": false
    }
@@ -3438,13 +3854,20 @@
    "basis": "capital"
   },
   "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
+   "available": true,
+   "changes": {
+    "funding_round": 0.0
+   },
+   "label": "Estable",
+   "since": "2026-11-24T12:20:34Z"
   },
   "metrics": [
    {
     "t": "2026-11-24T12:20:34Z",
+    "funding_round": 1.0
+   },
+   {
+    "t": "2026-11-25T08:51:35Z",
     "funding_round": 1.0
    }
   ],
@@ -3453,10 +3876,10 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Octo Health\nCATEGORÍA: startups · healthtech\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://octo.health/\nENLACE DE PARTICIPACIÓN: https://octo.health/\nPAÍS: Portugal, Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 8,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 199,00 €\nPOTENCIAL: Alto potencial de crecimiento si logra escalar en mercados europeos y EE.UU., aprovechando la tendencia de salud digital.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: mediano plazo (2‑5 años) para posible expansión a España.\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Oferta única de más de 110 biomarcadores integrados; Financiación reciente indica confianza de inversores; Potencial de expansión a mercados con alta demanda de salud digital\nMOTIVOS PARA DESCONFIAR: Solo disponible en Portugal, sin información de expansión a España.; El usuario debe entender que esto es un servicio de salud, no una oportunidad de inversión con retorno financiero.; Escasa información pública sobre usuarios activos y métricas de adopción.\nCÓMO PARTICIPAR: 1. Visitar la página oficial o la app de Octo Health; 2. Suscribirse al plan mensual (8 €/mes) o anual (199 €/año); 3. Utilizar la plataforma para centralizar datos de salud; 4. Seguir noticias de la empresa para posibles rondas de inversión futuras\nQUÉ PODRÍA HACERME PERDER EL DINERO: No hay inversión directa; la pérdida económica se limitaría al coste de suscripción si el servicio no satisface expectativas.\nFUENTES: https://elreferente.es/portugal/inversiones/octo-health-recauda-27-millones-de-euros/ | https://octo.health/",
+  "alertText": "NOMBRE: Octo Health\nCATEGORÍA: startups · healthtech\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://octo.health/\nENLACE DE PARTICIPACIÓN: https://octo.health/\nPAÍS: Portugal, Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 8,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 199,00 €\nPOTENCIAL: Alto potencial de crecimiento si logra escalar en mercados europeos y EE.UU., aprovechando la tendencia de salud digital.\nPUNTUACIÓN: 39/100 · Descartar\nRIESGO: medio\nPLAZO: mediano plazo (2‑5 años) para posible expansión a España\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Oferta única de más de 110 biomarcadores integrados; Financiación reciente indica confianza de inversores; Potencial de expansión a mercados con alta demanda de salud digital\nMOTIVOS PARA DESCONFIAR: Solo disponible en Portugal y EE.UU., sin información de expansión a España.; No es una oportunidad de inversión financiera, sino un servicio de suscripción.; Escasa información pública sobre usuarios activos y métricas de adopción.\nCÓMO PARTICIPAR: Visitar la página oficial o la app de Octo Health; Suscribirse al plan mensual (8 €/mes) o anual (199 €/año); Utilizar la plataforma para centralizar datos de salud; Seguir noticias de la empresa para posibles rondas de inversión futuras\nQUÉ PODRÍA HACERME PERDER EL DINERO: El gasto de suscripción se pierde si el servicio no satisface expectativas; No hay retorno financiero directo\nFUENTES: https://elreferente.es/portugal/inversiones/octo-health-recauda-27-millones-de-euros/",
   "firstSeenAt": "2026-11-24T12:20:34Z",
-  "lastSeenAt": "2026-11-24T12:20:34Z",
-  "runId": "run-20261124-1220",
+  "lastSeenAt": "2026-11-25T08:51:35Z",
+  "runId": "run-20261125-0851",
   "aliases": [
    "news-elreferente-es-portugal-inversiones-octo-health-recauda-27-millones-de-euros"
   ]
@@ -6282,7 +6705,7 @@
   "category": "startups",
   "subcategory": "ia_tecnologia",
   "kind": "pasiva",
-  "description": "Aerya es una startup gallega que ofrece una plataforma de comercio agéntico basada en IA, capaz de atender consultas, gestionar solicitudes y ejecutar ventas de forma autónoma 24/7. Gestiona alrededor de 1.000 casos diarios y genera 35.000 € en ventas mensuales sin intervención humana, y cuenta con acuerdos de integración con Yummy y Bravo Passenger Solution.",
+  "description": "Aerya es una startup gallega que ofrece una plataforma de comercio agéntico basada en IA, capaz de atender consultas, gestionar solicitudes y ejecutar ventas de forma autónoma 24/7, gestionando alrededor de 1.000 casos diarios y generando 35.000 € en ventas mensuales sin intervención humana, con acuerdos de integración con Yummy y Bravo Passenger Solution.",
   "officialUrl": null,
   "participateUrl": null,
   "country": "España",
@@ -6311,57 +6734,57 @@
    },
    "potencial": {
     "v": 7.0,
-    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas (1.000 casos/día, 35k€ ventas/mes).",
+    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas: 1.000 casos/día y 35.000 € ventas/mes.",
     "evidence": true
    },
    "mercado": {
     "v": 6.0,
-    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector B2B SaaS de automatización altamente competitivo.",
+    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector SaaS B2B con alta competencia en automatización.",
     "evidence": true
    },
    "equipo": {
-    "v": 4.0,
-    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No hay información pública sobre los fundadores o su trayectoria.",
+    "v": 2.5,
+    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No se detallan fundadores ni trayectoria profesional en fuentes públicas.",
     "evidence": false
    },
    "financiacion": {
     "v": 5.5,
-    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Premio SeedRocket confirmado, pero sin ronda de inversión abierta al público general.",
+    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Acceso a premios y rondas de business angels, pero sin ronda abierta al público.",
     "evidence": true
    },
    "comunidad": {
-    "v": 5.5,
-    "why": "Participó en el Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus de Emprendedores de SeedRocket.",
+    "v": 7.0,
+    "why": "Ganador del 36º Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus SeedRocket, validado por mentores del sector.",
     "evidence": true
    },
    "adopcion": {
-    "v": 6.0,
+    "v": 6.5,
     "why": "Acuerdos con Yummy (5 M usuarios) y Bravo Passenger Solution, 1.000 casos diarios gestionados · Verificador: Acuerdos con Yummy y Bravo Passenger Solution mencionados en prensa.",
     "evidence": true
    },
    "competencia": {
     "v": 4.0,
-    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Alta saturación en soluciones de IA para atención al cliente.",
+    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Mercado saturado de soluciones de IA generativa para atención al cliente.",
     "evidence": false
    },
    "riesgo_tecnico": {
     "v": 5.0,
-    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia crítica de integraciones con terceros.",
+    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia de integraciones complejas con sistemas de terceros.",
     "evidence": true
    },
    "riesgo_financiero": {
-    "v": 6.0,
-    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase muy temprana, riesgo de iliquidez total.",
+    "v": 6.5,
+    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase semilla, alta probabilidad de dilución o falta de liquidez.",
     "evidence": true
    },
    "entrada_espana": {
-    "v": 8.0,
-    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Startup gallega, operativa en España.",
+    "v": 9.0,
+    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Sede en Galicia, España.",
     "evidence": true
    },
    "salida": {
-    "v": 3.5,
-    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario ni estrategia de salida clara para inversores minoristas.",
+    "v": 2.5,
+    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario; salida supeditada a M&A a largo plazo.",
     "evidence": false
    }
   },
@@ -6390,6 +6813,26 @@
     "code": "verificacion_dudosa",
     "severity": "alta",
     "detail": "El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional."
+   },
+   {
+    "code": "imposibilidad_inversion_minorista",
+    "severity": "critica",
+    "detail": "No existe canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal."
+   },
+   {
+    "code": "falta_transparencia_financiera",
+    "severity": "alta",
+    "detail": "No hay acceso a estados financieros auditados ni valoración de la empresa."
+   },
+   {
+    "code": "ausencia_web_oficial",
+    "severity": "media",
+    "detail": "No se ha verificado una URL oficial operativa para la empresa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe como entidad ganadora de un evento de aceleración (SeedRocket), pero no es una oportunidad de inversión pública. No existe un canal legal para que un minorista invierta 2.000 € directamente en una sociedad limitada privada sin participar en una ronda de inversión profesional o sindicada, la cual no está abierta al público general."
    }
   ],
   "distrust": [
@@ -6421,7 +6864,7 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "No es un producto financiero regulado bajo MiCA ni CNMV; es una inversión en capital riesgo (equity) de una sociedad limitada privada.",
+   "notes": "No es un producto financiero regulado bajo MiCA ni CNMV. Es una inversión en capital riesgo (equity) de una sociedad limitada privada, no accesible mediante plataformas de inversión pública sin registro previo.",
    "sources": [
     "https://www.cnmv.es"
    ]
@@ -6440,15 +6883,15 @@
   },
   "verification": {
    "verdict": "dudosa",
-   "reason": "La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional.",
+   "reason": "La startup existe como entidad ganadora de un evento de aceleración (SeedRocket), pero no es una oportunidad de inversión pública. No existe un canal legal para que un minorista invierta 2.000 € directamente en una sociedad limitada privada sin participar en una ronda de inversión profesional o sindicada, la cual no está abierta al público general.",
    "model": "gemini:gemini-3.1-flash-lite",
    "agreementPct": 100
   },
-  "discoveredAt": "2026-11-24",
+  "discoveredAt": "2026-11-25",
   "id": "n-aerya",
-  "isNew": true,
+  "isNew": false,
   "score": 20,
-  "rawScore": 56.0,
+  "rawScore": 57.9,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
@@ -6503,7 +6946,7 @@
     "weight": 12,
     "value": 7.0,
     "points": 8.4,
-    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas (1.000 casos/día, 35k€ ventas/mes).",
+    "why": "Gestiona 1.000 casos diarios y 35.000 € en ventas mensuales sin intervención humana · Verificador: Métricas operativas reportadas: 1.000 casos/día y 35.000 € ventas/mes.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6513,7 +6956,7 @@
     "weight": 8,
     "value": 6.0,
     "points": 4.8,
-    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector B2B SaaS de automatización altamente competitivo.",
+    "why": "Se dirige al sector B2B SaaS de automatización, mercado amplio pero competitivo · Verificador: Sector SaaS B2B con alta competencia en automatización.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6521,11 +6964,11 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No hay información pública sobre los fundadores o su trayectoria.",
+    "value": 2.5,
+    "points": 2.5,
+    "why": "No se proporcionan datos sobre el equipo fundador o experiencia · Verificador: No se detallan fundadores ni trayectoria profesional en fuentes públicas.",
     "evidence": false,
-    "cappedForNoEvidence": true
+    "cappedForNoEvidence": false
    },
    {
     "key": "financiacion",
@@ -6533,7 +6976,7 @@
     "weight": 7,
     "value": 5.5,
     "points": 3.9,
-    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Premio SeedRocket confirmado, pero sin ronda de inversión abierta al público general.",
+    "why": "Premio valorado >50.000 € y potencial de hasta 300.000 € de financiación de business angels y 4Founders Capital · Verificador: Acceso a premios y rondas de business angels, pero sin ronda abierta al público.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6541,9 +6984,9 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 5.5,
-    "points": 3.9,
-    "why": "Participó en el Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus de Emprendedores de SeedRocket.",
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Ganador del 36º Campus de Emprendedores de SeedRocket, exposición a mentores e inversores · Verificador: Ganador del 36º Campus SeedRocket, validado por mentores del sector.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6551,8 +6994,8 @@
     "key": "adopcion",
     "label": "Adopción",
     "weight": 9,
-    "value": 6.0,
-    "points": 5.4,
+    "value": 6.5,
+    "points": 5.8,
     "why": "Acuerdos con Yummy (5 M usuarios) y Bravo Passenger Solution, 1.000 casos diarios gestionados · Verificador: Acuerdos con Yummy y Bravo Passenger Solution mencionados en prensa.",
     "evidence": true,
     "cappedForNoEvidence": false
@@ -6563,7 +7006,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Alta saturación en soluciones de IA para atención al cliente.",
+    "why": "Sector con varios competidores de IA B2B, sin datos claros de ventaja competitiva · Verificador: Mercado saturado de soluciones de IA generativa para atención al cliente.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -6573,7 +7016,7 @@
     "weight": 8,
     "value": 5.0,
     "points": 4.0,
-    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia crítica de integraciones con terceros.",
+    "why": "Tecnología de IA avanzada que depende de integración con sistemas de clientes · Verificador: Dependencia de integraciones complejas con sistemas de terceros.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6581,9 +7024,9 @@
     "key": "riesgo_financiero",
     "label": "Riesgo financiero (10 = bajo)",
     "weight": 10,
-    "value": 6.0,
-    "points": 6.0,
-    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase muy temprana, riesgo de iliquidez total.",
+    "value": 6.5,
+    "points": 6.5,
+    "why": "Startup temprana, depende de financiación futura y adopción del mercado · Verificador: Startup en fase semilla, alta probabilidad de dilución o falta de liquidez.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6591,9 +7034,9 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Startup gallega, operativa en España.",
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Sede en Galicia y operaciones en territorio español · Verificador: Sede en Galicia, España.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -6601,11 +7044,11 @@
     "key": "salida",
     "label": "Posibilidad de salida o monetización",
     "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario ni estrategia de salida clara para inversores minoristas.",
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Salida prevista mediante venta o adquisición, sin mercado secundario definido · Verificador: Sin mercado secundario; salida supeditada a M&A a largo plazo.",
     "evidence": false,
-    "cappedForNoEvidence": true
+    "cappedForNoEvidence": false
    }
   ],
   "scenarios": {
@@ -6677,10 +7120,10 @@
    "reason": "Riesgo crítico: no se notifica como oportunidad"
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Aerya\nCATEGORÍA: startups · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de crecimiento en automatización B2B con IA\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano a largo plazo (3‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IA aplicada a comercio automatizado con casos de uso reales y acuerdos con plataformas de gran escala; Premio y potencial financiación de SeedRocket que valida la solidez del proyecto\nMOTIVOS PARA DESCONFIAR: No se dispone de información sobre ingresos netos, burn rate ni valoración actual; No existen estados financieros auditados ni información sobre la valoración de la empresa.; No existe un canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal.; No se ha podido verificar una URL oficial funcional para la empresa.; El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional.; Información limitada sobre equipo y métricas financieras\nCÓMO PARTICIPAR: 1. Contactar directamente con Aerya a través de su página web o correo de contacto.; 2. Consultar oportunidades de inversión en rondas seed mediante plataformas de equity crowdfunding o redes de business angels vinculadas a SeedRocket.; 3. Evaluar los términos de inversión y aportar capital dentro del presupuesto disponible (máximo 2.000 €)\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de adopción del producto; Retrasos técnicos en la integración con clientes; Agotamiento de fondos antes de alcanzar rentabilidad; Competencia fuerte en el sector IA B2B\nFUENTES: https://elreferente.es/startups/aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de-seedrocket/",
+  "alertText": "NOMBRE: Aerya\nCATEGORÍA: startups · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial de crecimiento en automatización B2B con IA\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano a largo plazo (3‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IA aplicada a comercio automatizado con casos de uso reales y acuerdos con plataformas de gran escala; Premio y potencial financiación de SeedRocket que valida la solidez del proyecto\nMOTIVOS PARA DESCONFIAR: No se dispone de información sobre ingresos netos, burn rate ni valoración actual; No existen estados financieros auditados ni información sobre la valoración de la empresa.; No existe un canal legal para invertir 2.000 € en una startup privada sin ser inversor acreditado o participar en una ronda formal.; No se ha podido verificar una URL oficial funcional para la empresa.; El verificador tiene dudas: La startup existe y ha ganado un premio reciente en SeedRocket, pero no hay información pública sobre su estructura societaria, web oficial, ni mecanismos legales para invertir 2.000 € de forma directa. La inversión en startups en fase semilla no es accesible mediante compra directa sin un proceso de due diligence y rondas de inversión profesional.; Información limitada sobre equipo y métricas financieras\nCÓMO PARTICIPAR: 1. Contactar directamente con Aerya a través de su página web o correo de contacto.; 2. Consultar oportunidades de inversión en rondas seed mediante plataformas de equity crowdfunding o redes de business angels vinculadas a SeedRocket.; 3. Evaluar los términos de inversión y aportar capital dentro del presupuesto disponible (máximo 2.000 €)\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de adopción del producto; Retrasos técnicos en la integración con clientes; Agotamiento de fondos antes de alcanzar rentabilidad; Competencia fuerte en el sector IA B2B\nFUENTES: https://elreferente.es/startups/aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de-seedrocket/",
   "firstSeenAt": "2026-11-24T12:20:34Z",
-  "lastSeenAt": "2026-11-24T12:20:34Z",
-  "runId": "run-20261124-1220",
+  "lastSeenAt": "2026-11-25T08:51:35Z",
+  "runId": "run-20261125-0851",
   "aliases": [
    "news-elreferente-es-startups-aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de"
   ]
@@ -7085,415 +7528,6 @@
   ]
  },
  {
-  "name": "Anthropic IPO",
-  "category": "lanzamientos",
-  "subcategory": "ia_tecnologia",
-  "kind": "activa",
-  "description": "Anthropic, la empresa de IA generativa detrás de Claude, ha salido a bolsa con una valoración récord. La alta valoración inicial puede crear una ventana de compra antes de una posible corrección del precio.",
-  "officialUrl": "https://www.anthropic.com",
-  "participateUrl": null,
-  "country": "EEUU",
-  "spainAvailability": "no disponible",
-  "spainNotes": "No se confirma si la compra directa está permitida para residentes en España; depende del bróker y de la normativa MiCA.",
-  "costs": {
-   "minEntry": null,
-   "extra": null,
-   "extraNotes": "Pueden aplicarse comisiones de bróker y gastos de custodia",
-   "recommended": 2000.0,
-   "max": 2000.0
-  },
-  "canLoseAll": false,
-  "liquidity": "alta",
-  "exitNotes": "Las acciones podrán venderse en el mercado secundario una vez que comience el trading en NASDAQ.",
-  "horizon": "corto-medio plazo",
-  "deadline": null,
-  "potential": "moderado",
-  "difficulty": "baja",
-  "timeNeeded": "unos minutos para abrir cuenta y suscribirse a la IPO",
-  "subscores": {
-   "novedad": {
-    "v": 2.0,
-    "why": "IPO de una empresa líder en IA con gran cobertura mediática · Verificador: No hay anuncio oficial de IPO por parte de Anthropic a fecha de hoy. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
-    "evidence": false
-   },
-   "potencial": {
-    "v": 4.0,
-    "why": "Valoración alta sugiere margen de corrección que podría generar ganancias · Verificador: El potencial es especulativo al no existir confirmación de salida a bolsa.",
-    "evidence": false
-   },
-   "mercado": {
-    "v": 7.0,
-    "why": "El mercado de IA está en fuerte expansión y la empresa tiene clientes de alto perfil · Verificador: El sector IA es relevante, pero la oportunidad de inversión es inexistente actualmente.",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 8.0,
-    "why": "Fundadores con experiencia en OpenAI y DeepMind · Verificador: El equipo fundador es reconocido en la industria.",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 7.0,
-    "why": "Financiación previa con rondas de inversión de capital riesgo reconocidas · Verificador: Anthropic ha recibido rondas de financiación privada masivas, no públicas.",
-    "evidence": false
-   },
-   "comunidad": {
-    "v": 6.0,
-    "why": "Amplia comunidad de desarrolladores y usuarios de sus modelos de IA · Verificador: Alta adopción de Claude, pero no implica acceso a acciones.",
-    "evidence": false
-   },
-   "adopcion": {
-    "v": 7.0,
-    "why": "Los modelos Claude están siendo adoptados por empresas y desarrolladores · Verificador: Uso corporativo elevado.",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 5.0,
-    "why": "Competidores como OpenAI y Google DeepMind tienen recursos similares · Verificador: Mercado altamente competitivo.",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 8.0,
-    "why": "Producto de software; riesgo técnico bajo comparado con hardware · Verificador: Riesgo operativo estándar de software.",
-    "evidence": false
-   },
-   "riesgo_financiero": {
-    "v": 4.0,
-    "why": "Alta valoración inicial y volatilidad típica de IPOs de tecnología · Verificador: Riesgo extremo al basarse en una premisa de IPO no confirmada. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
-    "evidence": false
-   },
-   "entrada_espana": {
-    "v": 2.0,
-    "why": "Incertidumbre regulatoria para residentes españoles en IPOs extranjeras · Verificador: No existe mecanismo legal directo para participar en una IPO de EE. UU. desde España sin un bróker especializado que lo soporte.",
-    "evidence": false
-   },
-   "salida": {
-    "v": 1.0,
-    "why": "Alta liquidez en NASDAQ permite venta rápida · Verificador: No hay acciones cotizando, por tanto no hay liquidez. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "high_valuation",
-    "severity": "media",
-    "detail": "Valoración inicial muy alta que podría corregirse rápidamente"
-   },
-   {
-    "code": "unconfirmed_ipo",
-    "severity": "critica",
-    "detail": "No existe confirmación oficial de que Anthropic haya salido a bolsa."
-   },
-   {
-    "code": "misleading_info",
-    "severity": "alta",
-    "detail": "La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales."
-   }
-  ],
-  "distrust": [],
-  "whyInteresting": [
-   "IPO de empresa líder en IA generativa con gran cobertura mediática"
-  ],
-  "howToParticipate": [
-   "Abrir cuenta en un bróker que permita suscripciones a IPOs internacionales",
-   "Verificar la elegibilidad para residentes en España",
-   "Depositar fondos (máximo 2000 €)",
-   "Seleccionar la oferta de Anthropic y confirmar la suscripción",
-   "Esperar la asignación de acciones y, una vez abierto el mercado, decidir venta o retención"
-  ],
-  "actionable": true,
-  "profitPath": "Comprar acciones en la IPO y vender cuando el precio suba tras la corrección inicial",
-  "lossCauses": [
-   "Caída del precio tras la salida",
-   "Corrección del mercado de tecnología",
-   "Problemas regulatorios que limiten la negociación en España"
-  ],
-  "earlySignals": [
-   "Valoración inicial récord que sugiere sobreprecio",
-   "Interés mediático elevado"
-  ],
-  "signals": {
-   "pulseScore": 64
-  },
-  "regulatory": {
-   "checked": true,
-   "status": "desconocido",
-   "notes": "No hay registros de IPO de Anthropic en la SEC (EE. UU.) ni advertencias específicas de la CNMV sobre este caso concreto, ya que no es una oferta pública real.",
-   "sources": [
-    "https://www.sec.gov/edgar/searchedgar/companysearch"
-   ]
-  },
-  "sources": [
-   {
-    "title": "Pulso · TradingView",
-    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OWV9wcHRRR3FmN2JwOEJUTFR6WGk4OC1ZdWZOaUF1RDd3Z3FaQWlEXzlTQ0FGQy1kYkdzQXM0YXhaMXN0cldObEdvT3NRaF81bnRSTlg1WWZOeVRrUTVJZkxaOUFWck5jZVQwMUdrckdKeXBPN1ow?oc=5"
-   },
-   {
-    "title": "SEC EDGAR Company Search",
-    "url": "https://www.sec.gov/edgar/searchedgar/companysearch"
-   },
-   {
-    "title": "Anthropic Official Newsroom",
-    "url": "https://www.anthropic.com/news"
-   }
-  ],
-  "discoveredVia": "Pulso · TradingView",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b",
-   "verifier": "gemini:gemini-3.1-flash-lite"
-  },
-  "verification": {
-   "verdict": "dudosa",
-   "reason": "A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales.",
-   "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 75
-  },
-  "discoveredAt": "2026-11-25",
-  "id": "web-anthropic-com",
-  "isNew": true,
-  "score": 17,
-  "rawScore": 26.8,
-  "tier": "descartar",
-  "tierLabel": "Descartar",
-  "humanReview": false,
-  "caps": [
-   "-10 por 2 riesgo(s) alto(s)"
-  ],
-  "critical": true,
-  "risk": "crítico",
-  "flags": [
-   {
-    "code": "high_valuation",
-    "severity": "media",
-    "detail": "Valoración inicial muy alta que podría corregirse rápidamente"
-   },
-   {
-    "code": "unconfirmed_ipo",
-    "severity": "critica",
-    "detail": "No existe confirmación oficial de que Anthropic haya salido a bolsa."
-   },
-   {
-    "code": "misleading_info",
-    "severity": "alta",
-    "detail": "La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa."
-   },
-   {
-    "code": "verificacion_dudosa",
-    "severity": "alta",
-    "detail": "El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales."
-   }
-  ],
-  "evidenced": 0,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 2.0,
-    "points": 1.6,
-    "why": "IPO de una empresa líder en IA con gran cobertura mediática · Verificador: No hay anuncio oficial de IPO por parte de Anthropic a fecha de hoy. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 3.0,
-    "points": 3.6,
-    "why": "Valoración alta sugiere margen de corrección que podría generar ganancias · Verificador: El potencial es especulativo al no existir confirmación de salida a bolsa.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "El mercado de IA está en fuerte expansión y la empresa tiene clientes de alto perfil · Verificador: El sector IA es relevante, pero la oportunidad de inversión es inexistente actualmente.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "Fundadores con experiencia en OpenAI y DeepMind · Verificador: El equipo fundador es reconocido en la industria.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "Financiación previa con rondas de inversión de capital riesgo reconocidas · Verificador: Anthropic ha recibido rondas de financiación privada masivas, no públicas.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "Amplia comunidad de desarrolladores y usuarios de sus modelos de IA · Verificador: Alta adopción de Claude, pero no implica acceso a acciones.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Los modelos Claude están siendo adoptados por empresas y desarrolladores · Verificador: Uso corporativo elevado.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Competidores como OpenAI y Google DeepMind tienen recursos similares · Verificador: Mercado altamente competitivo.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Producto de software; riesgo técnico bajo comparado con hardware · Verificador: Riesgo operativo estándar de software.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 3.0,
-    "points": 3.0,
-    "why": "Alta valoración inicial y volatilidad típica de IPOs de tecnología · Verificador: Riesgo extremo al basarse en una premisa de IPO no confirmada. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 2.0,
-    "points": 1.6,
-    "why": "Incertidumbre regulatoria para residentes españoles en IPOs extranjeras · Verificador: No existe mecanismo legal directo para participar en una IPO de EE. UU. desde España sin un bróker especializado que lo soporte.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 1.0,
-    "points": 0.8,
-    "why": "Alta liquidez en NASDAQ permite venta rápida · Verificador: No hay acciones cotizando, por tanto no hay liquidez. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 2000.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 4000.0,
-     "netEur": 4000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 10000.0,
-     "netEur": 10000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 20000.0,
-     "netEur": 20000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 40000.0,
-     "netEur": 40000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 100000.0,
-     "netEur": 100000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 200000.0,
-     "netEur": 200000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 600000.0,
-     "netEur": 600000.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-24T23:57:31Z",
-    "pulseScore": 64.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": "Riesgo crítico: no se notifica como oportunidad"
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Anthropic IPO\nCATEGORÍA: lanzamientos · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.anthropic.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: no disponible\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 17/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IPO de empresa líder en IA generativa con gran cobertura mediática\nMOTIVOS PARA DESCONFIAR: Valoración inicial muy alta que podría corregirse rápidamente; No existe confirmación oficial de que Anthropic haya salido a bolsa.; La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa.; El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales.\nCÓMO PARTICIPAR: Abrir cuenta en un bróker que permita suscripciones a IPOs internacionales; Verificar la elegibilidad para residentes en España; Depositar fondos (máximo 2000 €); Seleccionar la oferta de Anthropic y confirmar la suscripción; Esperar la asignación de acciones y, una vez abierto el mercado, decidir venta o retención\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio tras la salida; Corrección del mercado de tecnología; Problemas regulatorios que limiten la negociación en España\nFUENTES: https://news.google.com/rss/articles/CBMid0FVX3lxTE1OWV9wcHRRR3FmN2JwOEJUTFR6WGk4OC1ZdWZOaUF1RDd3Z3FaQWlEXzlTQ0FGQy1kYkdzQXM0YXhaMXN0cldObEdvT3NRaF81bnRSTlg1WWZOeVRrUTVJZkxaOUFWck5jZVQwMUdrckdKeXBPN1ow?oc=5 | https://www.sec.gov/edgar/searchedgar/companysearch | https://www.anthropic.com/news",
-  "firstSeenAt": "2026-11-24T23:57:31Z",
-  "lastSeenAt": "2026-11-24T23:57:31Z",
-  "runId": "run-20261124-2357",
-  "aliases": [
-   "web-news-google-com"
-  ]
- },
- {
   "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",
   "category": "cripto",
   "subcategory": "regulación",
@@ -7871,6 +7905,424 @@
   "runId": "run-20261121-1200",
   "aliases": [
    "news-www-theblock-co-news-regulation-2026-11-20-rep-casten-seeks-curb-prediction-market-in"
+  ]
+ },
+ {
+  "name": "Derive Options Platform",
+  "category": "cripto",
+  "subcategory": "opciones|derivados",
+  "kind": "activa",
+  "description": "Plataforma on‑chain que permite crear y negociar opciones sobre activos de IA como Nvidia y Anthropic, así como sobre petróleo, ofreciendo herramientas de cobertura a traders cripto.",
+  "officialUrl": "https://derive.xyz",
+  "participateUrl": "https://app.derive.xyz",
+  "country": "desconocido",
+  "spainAvailability": "no autorizada",
+  "spainNotes": "No hay información sobre disponibilidad o regulación en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "No se dispone de datos sobre comisiones o requisitos de depósito inicial.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "no aplica",
+  "exitNotes": "La salida depende de la liquidez del mercado secundario de opciones y de la disponibilidad de compradores.",
+  "horizon": "corto-medio plazo",
+  "deadline": null,
+  "potential": "Permite cubrir exposiciones a activos de IA y energía sin pasar por mercados tradicionales.",
+  "difficulty": "media",
+  "timeNeeded": "Requiere crear una wallet, depositar cripto y familiarizarse con la interfaz de Derive.",
+  "subscores": {
+   "novedad": {
+    "v": 7.5,
+    "why": "Lanzamiento reciente de opciones on‑chain sobre Nvidia, Anthropic y petróleo. · Verificador: Lanzamiento reciente de derivados sobre activos RWA (IA y commodities) on-chain.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.0,
+    "why": "Ofrece herramientas de cobertura para traders cripto en activos de IA y energía. · Verificador: Permite cobertura de activos tradicionales en DeFi, aunque con alta complejidad.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Apunta a traders cripto interesados en IA y commodities, pero sin datos de adopción. · Verificador: Nicho de traders cripto avanzados; sin datos de volumen o adopción verificables.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 2.0,
+    "why": "No se dispone de información sobre el equipo detrás de Derive. · Verificador: No hay información pública verificable sobre los fundadores o la empresa matriz.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 2.5,
+    "why": "No hay datos de financiación pública o inversores conocidos. · Verificador: Sin rondas de financiación públicas o inversores institucionales conocidos.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "No se menciona comunidad activa ni métricas de usuarios. · Verificador: Presencia limitada; no hay métricas de comunidad activa.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3.5,
+    "why": "Sin cifras de usuarios o volumen de operaciones publicados. · Verificador: Producto en fase inicial sin métricas de uso público.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otras plataformas de derivados cripto, pero sin detalle comparativo. · Verificador: Existen protocolos DeFi de opciones (Lyra, Premia), pero este se enfoca en activos RWA específicos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.5,
+    "why": "Opciones on‑chain implican riesgos de bugs y exploits en contratos inteligentes. · Verificador: Los contratos inteligentes de derivados on-chain son susceptibles a exploits y errores de oráculo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.5,
+    "why": "Posibilidad de perder la prima pagada si la opción expira sin valor y alta volatilidad del activo subyacente. · Verificador: Alto riesgo de pérdida total del capital por volatilidad y apalancamiento implícito en opciones.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.5,
+    "why": "Falta de claridad regulatoria y de disponibilidad para usuarios españoles. · Verificador: No hay registro en CNMV ni cumplimiento con MiCA para servicios de derivados.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.0,
+    "why": "Salida depende de la liquidez del mercado secundario de opciones. · Verificador: Depende totalmente de la liquidez del pool del protocolo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "regulacion_incierta",
+    "severity": "alta",
+    "detail": "Falta de claridad regulatoria en España para productos derivados on‑chain."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "critica",
+    "detail": "Ausencia total de información sobre la entidad legal responsable."
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Plataforma no registrada en el registro MiCA de ESMA ni supervisada por la CNMV para ofrecer derivados financieros."
+   },
+   {
+    "code": "riesgo_financiero",
+    "severity": "alta",
+    "detail": "Los derivados on-chain carecen de las protecciones al inversor de los mercados regulados."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque la noticia de CoinDesk confirma el lanzamiento del producto, la plataforma carece de transparencia sobre su entidad legal, equipo, registro MiCA o cumplimiento normativo en España. El acceso a derivados financieros on-chain sin supervisión regulatoria clara representa un riesgo elevado para usuarios minoristas."
+   }
+  ],
+  "distrust": [
+   "Falta de información oficial y de equipo detrás del proyecto."
+  ],
+  "whyInteresting": [
+   "Posibilidad de cubrir exposición a activos de IA sin usar brokers tradicionales."
+  ],
+  "howToParticipate": [
+   "1. Crear una wallet compatible con Ethereum.",
+   "2. Comprar ETH o stablecoin.",
+   "3. Acceder a la plataforma Derive (URL oficial).",
+   "4. Depositar fondos y crear una opción sobre el activo deseado."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Pérdida de la prima si la opción expira fuera del dinero",
+   "Fallos de contrato inteligente",
+   "Falta de liquidez para cerrar la posición",
+   "Cambios regulatorios que limiten el uso"
+  ],
+  "earlySignals": [
+   "Lanzamiento de opciones on‑chain en Derive",
+   "Interés creciente en activos de IA"
+  ],
+  "signals": {
+   "pulseScore": 57
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en los registros de la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España. No cumple con MiCA para la comercialización de derivados financieros en la UE.",
+   "sources": [
+    "https://www.cnmv.es",
+    "https://www.esma.europa.eu"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · CoinDesk",
+    "url": "https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive"
+   },
+   {
+    "title": "Derive Official Website",
+    "url": "https://derive.xyz"
+   }
+  ],
+  "discoveredVia": "Pulso · CoinDesk",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "Aunque la noticia de CoinDesk confirma el lanzamiento del producto, la plataforma carece de transparencia sobre su entidad legal, equipo, registro MiCA o cumplimiento normativo en España. El acceso a derivados financieros on-chain sin supervisión regulatoria clara representa un riesgo elevado para usuarios minoristas.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-derive-xyz",
+  "isNew": true,
+  "score": 14,
+  "rawScore": 34.1,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "regulacion_incierta",
+    "severity": "alta",
+    "detail": "Falta de claridad regulatoria en España para productos derivados on‑chain."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "critica",
+    "detail": "Ausencia total de información sobre la entidad legal responsable."
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "Plataforma no registrada en el registro MiCA de ESMA ni supervisada por la CNMV para ofrecer derivados financieros."
+   },
+   {
+    "code": "riesgo_financiero",
+    "severity": "alta",
+    "detail": "Los derivados on-chain carecen de las protecciones al inversor de los mercados regulados."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: Aunque la noticia de CoinDesk confirma el lanzamiento del producto, la plataforma carece de transparencia sobre su entidad legal, equipo, registro MiCA o cumplimiento normativo en España. El acceso a derivados financieros on-chain sin supervisión regulatoria clara representa un riesgo elevado para usuarios minoristas."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "Lanzamiento reciente de opciones on‑chain sobre Nvidia, Anthropic y petróleo. · Verificador: Lanzamiento reciente de derivados sobre activos RWA (IA y commodities) on-chain.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Ofrece herramientas de cobertura para traders cripto en activos de IA y energía. · Verificador: Permite cobertura de activos tradicionales en DeFi, aunque con alta complejidad.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Apunta a traders cripto interesados en IA y commodities, pero sin datos de adopción. · Verificador: Nicho de traders cripto avanzados; sin datos de volumen o adopción verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "No se dispone de información sobre el equipo detrás de Derive. · Verificador: No hay información pública verificable sobre los fundadores o la empresa matriz.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 2.5,
+    "points": 1.8,
+    "why": "No hay datos de financiación pública o inversores conocidos. · Verificador: Sin rondas de financiación públicas o inversores institucionales conocidos.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona comunidad activa ni métricas de usuarios. · Verificador: Presencia limitada; no hay métricas de comunidad activa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Sin cifras de usuarios o volumen de operaciones publicados. · Verificador: Producto en fase inicial sin métricas de uso público.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras plataformas de derivados cripto, pero sin detalle comparativo. · Verificador: Existen protocolos DeFi de opciones (Lyra, Premia), pero este se enfoca en activos RWA específicos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Opciones on‑chain implican riesgos de bugs y exploits en contratos inteligentes. · Verificador: Los contratos inteligentes de derivados on-chain son susceptibles a exploits y errores de oráculo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.5,
+    "points": 2.5,
+    "why": "Posibilidad de perder la prima pagada si la opción expira sin valor y alta volatilidad del activo subyacente. · Verificador: Alto riesgo de pérdida total del capital por volatilidad y apalancamiento implícito en opciones.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "Falta de claridad regulatoria y de disponibilidad para usuarios españoles. · Verificador: No hay registro en CNMV ni cumplimiento con MiCA para servicios de derivados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Salida depende de la liquidez del mercado secundario de opciones. · Verificador: Depende totalmente de la liquidez del pool del protocolo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T08:51:35Z",
+    "pulseScore": 57.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Derive Options Platform\nCATEGORÍA: cripto · opciones|derivados\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://derive.xyz\nENLACE DE PARTICIPACIÓN: https://app.derive.xyz\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no autorizada\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Permite cubrir exposiciones a activos de IA y energía sin pasar por mercados tradicionales.\nPUNTUACIÓN: 14/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posibilidad de cubrir exposición a activos de IA sin usar brokers tradicionales.\nMOTIVOS PARA DESCONFIAR: Falta de claridad regulatoria en España para productos derivados on‑chain.; Ausencia total de información sobre la entidad legal responsable.; Plataforma no registrada en el registro MiCA de ESMA ni supervisada por la CNMV para ofrecer derivados financieros.; Los derivados on-chain carecen de las protecciones al inversor de los mercados regulados.; El verificador tiene dudas: Aunque la noticia de CoinDesk confirma el lanzamiento del producto, la plataforma carece de transparencia sobre su entidad legal, equipo, registro MiCA o cumplimiento normativo en España. El acceso a derivados financieros on-chain sin supervisión regulatoria clara representa un riesgo elevado para usuarios minoristas.; Falta de información oficial y de equipo detrás del proyecto.\nCÓMO PARTICIPAR: 1. Crear una wallet compatible con Ethereum.; 2. Comprar ETH o stablecoin.; 3. Acceder a la plataforma Derive (URL oficial).; 4. Depositar fondos y crear una opción sobre el activo deseado.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de la prima si la opción expira fuera del dinero; Fallos de contrato inteligente; Falta de liquidez para cerrar la posición; Cambios regulatorios que limiten el uso\nFUENTES: https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive | https://derive.xyz",
+  "firstSeenAt": "2026-11-25T08:51:35Z",
+  "lastSeenAt": "2026-11-25T08:51:35Z",
+  "runId": "run-20261125-0851",
+  "aliases": [
+   "web-coindesk-com"
   ]
  },
  {
@@ -10758,6 +11210,425 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "Anthropic (OPI)",
+  "category": "ia_tecnologia",
+  "subcategory": "startup",
+  "kind": "activa",
+  "description": "Anthropic cotiza por debajo del precio fijado en su Oferta Pública Inicial, lo que sugiere un posible rebote. El artículo de Investing.com señala la caída y plantea la pregunta de si es momento de entrar. No se dispone de datos oficiales de la web por restricción de acceso.",
+  "officialUrl": "https://www.anthropic.com",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "no",
+  "spainNotes": "La acción no está listada en mercados españoles ni en plataformas locales de inversión directa.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Desconocido, depende del precio actual de la acción y comisiones de la correduría",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "media",
+  "exitNotes": "Dependerá de la evolución del precio tras la posible recuperación; no hay mercado secundario específico en España",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "Posible rebote tras cotizar bajo el precio de OPI",
+  "difficulty": "media",
+  "timeNeeded": "investigación y seguimiento del precio y noticias de la empresa",
+  "subscores": {
+   "novedad": {
+    "v": 0.0,
+    "why": "La caída bajo el precio de OPI es un evento reciente · Verificador: El evento de OPI es inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "Se menciona un posible rebote, pero sin datos de fundamentos · Verificador: No hay cotización pública. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "Sector IA con crecimiento, pero la empresa ya está establecida · Verificador: No es un activo negociable en mercados públicos. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo en la fuente · Verificador: Información no verificable en el contexto de una inversión pública inexistente.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No hay datos de rondas de financiación recientes en la fuente · Verificador: La empresa es privada, no hay datos de OPI.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "No se menciona comunidad de usuarios o desarrolladores · Verificador: No aplica a una acción privada.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "Producto de IA con adopción creciente, pero sin cifras concretas · Verificador: No hay adopción de mercado bursátil. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "Existen varios competidores en IA, pero la fuente no los detalla · Verificador: No hay competencia en mercados públicos. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 0.0,
+    "why": "Riesgo de que la tecnología no cumpla expectativas del mercado · Verificador: No aplica. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "Volatilidad del precio tras la caída y posible pérdida parcial · Verificador: Riesgo extremo de estafa al intentar invertir en una empresa privada que no ofrece acciones al público. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No hay acceso directo desde España a la acción · Verificador: Imposible, la empresa no cotiza.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "Liquidez media, posible venta en mercados internacionales · Verificador: No hay mercado secundario. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "alta_volatilidad",
+    "severity": "alta",
+    "detail": "El precio está por debajo del OPI, lo que indica fuerte presión vendedora"
+   },
+   {
+    "code": "estafa_suplantacion",
+    "severity": "critica",
+    "detail": "Anthropic no cotiza en bolsa. Cualquier plataforma que ofrezca comprar acciones de Anthropic es fraudulenta."
+   },
+   {
+    "code": "informacion_falsa",
+    "severity": "alta",
+    "detail": "La premisa de la ficha sobre una OPI es incorrecta y carece de base real."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: Anthropic no ha realizado una Oferta Pública Inicial (OPI/IPO) a fecha de noviembre de 2026. La empresa sigue siendo una entidad privada. Cualquier afirmación sobre un ticker bursátil (como 'ANTH') o cotización bajo precio de OPI es falsa o corresponde a una estafa de suplantación de identidad."
+   }
+  ],
+  "distrust": [
+   "falta de datos oficiales de la web de Anthropic"
+  ],
+  "whyInteresting": [
+   "posible rebote tras caída significativa",
+   "sector IA con alta expectativa de crecimiento"
+  ],
+  "howToParticipate": [
+   "Abrir una cuenta en una correduría que permita operar en mercados internacionales",
+   "Depositar fondos suficientes (máximo 2000 €)",
+   "Buscar el ticker de Anthropic (por ejemplo, ANTH) en la plataforma",
+   "Realizar una orden de compra al precio deseado"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar acciones ahora y vender cuando el precio supere el nivel del OPI",
+  "lossCauses": [
+   "Continuación de la caída del precio",
+   "Resultados financieros negativos",
+   "Problemas regulatorios en IA"
+  ],
+  "earlySignals": [
+   "Precio bajo el nivel de OPI",
+   "Incremento de interés mediático"
+  ],
+  "signals": {
+   "pulseScore": 55
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al no ser una empresa pública, no está sujeta a regulación de mercados de valores para inversores minoristas. La oferta de acciones privadas a minoristas suele ser un fraude.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Investing.com",
+    "url": "https://es.investing.com/news/stock-market-news/caida-de-anthropic-accion-cotiza-por-debajo-del-precio-opi-momento-de-entrar-3942594"
+   },
+   {
+    "title": "Anthropic Official Website",
+    "url": "https://www.anthropic.com"
+   },
+   {
+    "title": "CNMV - Advertencias sobre entidades no autorizadas",
+    "url": "https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d507119-743a-4934-8c08-013825828453}"
+   }
+  ],
+  "discoveredVia": "Pulso · Investing.com",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "Anthropic no ha realizado una Oferta Pública Inicial (OPI/IPO) a fecha de noviembre de 2026. La empresa sigue siendo una entidad privada. Cualquier afirmación sobre un ticker bursátil (como 'ANTH') o cotización bajo precio de OPI es falsa o corresponde a una estafa de suplantación de identidad.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 33
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-anthropic-com",
+  "isNew": false,
+  "score": 0,
+  "rawScore": 3.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "alta_volatilidad",
+    "severity": "alta",
+    "detail": "El precio está por debajo del OPI, lo que indica fuerte presión vendedora"
+   },
+   {
+    "code": "estafa_suplantacion",
+    "severity": "critica",
+    "detail": "Anthropic no cotiza en bolsa. Cualquier plataforma que ofrezca comprar acciones de Anthropic es fraudulenta."
+   },
+   {
+    "code": "informacion_falsa",
+    "severity": "alta",
+    "detail": "La premisa de la ficha sobre una OPI es incorrecta y carece de base real."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: Anthropic no ha realizado una Oferta Pública Inicial (OPI/IPO) a fecha de noviembre de 2026. La empresa sigue siendo una entidad privada. Cualquier afirmación sobre un ticker bursátil (como 'ANTH') o cotización bajo precio de OPI es falsa o corresponde a una estafa de suplantación de identidad."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "La caída bajo el precio de OPI es un evento reciente · Verificador: El evento de OPI es inexistente. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Se menciona un posible rebote, pero sin datos de fundamentos · Verificador: No hay cotización pública. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Sector IA con crecimiento, pero la empresa ya está establecida · Verificador: No es un activo negociable en mercados públicos. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo en la fuente · Verificador: Información no verificable en el contexto de una inversión pública inexistente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos de rondas de financiación recientes en la fuente · Verificador: La empresa es privada, no hay datos de OPI.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona comunidad de usuarios o desarrolladores · Verificador: No aplica a una acción privada.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Producto de IA con adopción creciente, pero sin cifras concretas · Verificador: No hay adopción de mercado bursátil. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Existen varios competidores en IA, pero la fuente no los detalla · Verificador: No hay competencia en mercados públicos. · Discrepancia entre modelos (6 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Riesgo de que la tecnología no cumpla expectativas del mercado · Verificador: No aplica. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Volatilidad del precio tras la caída y posible pérdida parcial · Verificador: Riesgo extremo de estafa al intentar invertir en una empresa privada que no ofrece acciones al público. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay acceso directo desde España a la acción · Verificador: Imposible, la empresa no cotiza.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Liquidez media, posible venta en mercados internacionales · Verificador: No hay mercado secundario. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "pulseScore": -14.1
+   },
+   "label": "Estable",
+   "since": "2026-11-24T23:57:31Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 64.0
+   },
+   {
+    "t": "2026-11-25T08:51:35Z",
+    "pulseScore": 55.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Anthropic (OPI)\nCATEGORÍA: ia_tecnologia · startup\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.anthropic.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Posible rebote tras cotizar bajo el precio de OPI\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: posible rebote tras caída significativa; sector IA con alta expectativa de crecimiento\nMOTIVOS PARA DESCONFIAR: El precio está por debajo del OPI, lo que indica fuerte presión vendedora; Anthropic no cotiza en bolsa. Cualquier plataforma que ofrezca comprar acciones de Anthropic es fraudulenta.; La premisa de la ficha sobre una OPI es incorrecta y carece de base real.; El verificador no pudo confirmar que sea real: Anthropic no ha realizado una Oferta Pública Inicial (OPI/IPO) a fecha de noviembre de 2026. La empresa sigue siendo una entidad privada. Cualquier afirmación sobre un ticker bursátil (como 'ANTH') o cotización bajo precio de OPI es falsa o corresponde a una estafa de suplantación de identidad.; falta de datos oficiales de la web de Anthropic\nCÓMO PARTICIPAR: Abrir una cuenta en una correduría que permita operar en mercados internacionales; Depositar fondos suficientes (máximo 2000 €); Buscar el ticker de Anthropic (por ejemplo, ANTH) en la plataforma; Realizar una orden de compra al precio deseado\nQUÉ PODRÍA HACERME PERDER EL DINERO: Continuación de la caída del precio; Resultados financieros negativos; Problemas regulatorios en IA\nFUENTES: https://es.investing.com/news/stock-market-news/caida-de-anthropic-accion-cotiza-por-debajo-del-precio-opi-momento-de-entrar-3942594 | https://www.anthropic.com | https://www.cnmv.es/portal/verdoc/verdoc.aspx?t={7d507119-743a-4934-8c08-013825828453}",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-25T08:51:35Z",
+  "runId": "run-20261125-0851",
+  "aliases": [
+   "web-es-investing-com",
+   "web-news-google-com"
+  ]
  },
  {
   "name": "CYBER",

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T00:00:40Z",
+ "generatedAt": "2026-11-25T08:54:55Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,9 +40,37 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 29,
+ "studied": 31,
  "selected": [],
  "nearMisses": [
+  {
+   "id": "web-spiko-com",
+   "name": "Spiko Euro",
+   "category": "startups",
+   "score": 47,
+   "adjustedScore": 47,
+   "risk": "medio",
+   "officialUrl": "https://www.spiko.com/",
+   "minEntry": 1,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": false,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": true,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Verificada por un segundo modelo de IA independiente"
+   ],
+   "hasManual": true
+  },
   {
    "id": "web-bfsport-gal",
    "name": "BF Sport Incubadora 2027",
@@ -155,35 +183,6 @@
    "failed": [
     "Nota del radar de 70/100 o más",
     "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
-   "id": "web-letsdeel-com",
-   "name": "Deel Stablecoin Spending Card",
-   "category": "cripto",
-   "score": 40,
-   "adjustedScore": 40,
-   "risk": "medio",
-   "officialUrl": "https://www.letsdeel.com",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": false,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Disponible en tu región",
     "Vía clara y legal para ganar dinero"
    ],
    "hasManual": false
@@ -309,15 +308,84 @@
    "webLeida": false,
    "generadoEn": "2026-11-22T08:58:02Z",
    "fichaScore": 61
+  },
+  "web-spiko-com": {
+   "segundaOpinion": {
+    "veredicto": "dudosa",
+    "motivo": "Regulación desconocida y capital no garantizado",
+    "contradicciones": [
+     "officialUrl 'https://www.spiko.com/' no coincide con la web de dominio premium",
+     "falta de registro CNMV no confirmado"
+    ]
+   },
+   "viaDeBeneficio": {
+    "existe": true,
+    "explicacion": "Depositar fondos en Spiko Euro genera intereses diarios con rendimiento neto anual del 2,84 % y se pueden retirar en cualquier momento."
+   },
+   "resumen": "Spiko Euro es una fintech que permite a empresas y startups rentabilizar su tesorería diaria sin bloquear fondos, ofreciendo un rendimiento neto anual del 2,84 %. Se puede depositar desde 1 € y retirar en cualquier momento.",
+   "cuantoPoner": "2000",
+   "antesDeEmpezar": [
+    "Confirmar registro de Spiko en la CNMV o licencia equivalente",
+    "Verificar que el producto está autorizado para operar en España",
+    "Revisar términos y condiciones en el sitio oficial",
+    "Comprobar que no existen comisiones ocultas",
+    "Confirmar que el capital no está garantizado y entender el riesgo"
+   ],
+   "pasos": [
+    {
+     "titulo": "Acceder al sitio",
+     "detalle": "Visitar https://www.spiko.com/",
+     "tiempo": "1 min"
+    },
+    {
+     "titulo": "Crear cuenta",
+     "detalle": "Rellenar formulario y verificar identidad",
+     "tiempo": "5 min"
+    },
+    {
+     "titulo": "Transferir fondos",
+     "detalle": "Depositar mínimo 1 € (recomendado 2000 €)",
+     "tiempo": "5 min"
+    },
+    {
+     "titulo": "Monitorear rendimiento",
+     "detalle": "Revisar intereses diarios en la app",
+     "tiempo": "5 min"
+    }
+   ],
+   "planDeSalida": "Cuando se necesite liquidez, solicitar retiro a través de la plataforma; se puede hacer en cualquier momento, aunque el capital no está garantizado. Se recomienda retirar si el rendimiento cae o si se necesita el capital.",
+   "senalesDeAlarma": [
+    "Rendimiento negativo o cero",
+    "Falta de registro CNMV",
+    "Aumento de comisiones inesperadas",
+    "Cambios regulatorios que afecten el producto",
+    "Inhabilidad de retirar fondos"
+   ],
+   "erroresTipicos": [
+    "No verificar licencia y regulaciones",
+    "Depositar sin comprender el riesgo de capital no garantizado",
+    "Mantener fondos sin diversificar",
+    "No retirar cuando el rendimiento disminuye",
+    "Ignorar cambios en términos y condiciones"
+   ],
+   "fiscalidad": "Los intereses se consideran rendimientos del capital mobiliario y tributan en la base imponible del ahorro del IRPF. Se recomienda confirmar con un asesor fiscal.",
+   "tiempoNecesario": "pocos minutos para abrir cuenta y transferir, seguimiento mensual",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-25T08:54:59Z",
+   "fichaScore": 47
   }
  },
  "ai": {
-  "used": 0,
+  "used": 1,
   "errors": [],
-  "calls": {}
+  "calls": {
+   "groq": 1
+  }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-25T00:00:40Z",
+  "at": "2026-11-25T08:54:59Z",
   "status": 200
  }
 }

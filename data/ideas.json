@@ -1,6 +1,432 @@
 {
- "generatedAt": "2026-11-24T12:36:32Z",
+ "generatedAt": "2026-11-25T09:06:34Z",
  "items": [
+  {
+   "name": "IndiQube",
+   "type": "servicio",
+   "originCountry": "India",
+   "summary": "Proveedor de espacios de oficina gestionados que ofrece flexibilidad, servicios integrados y experiencia de empleado. Sirve a startups, empresas medianas, multinacionales y GCCs.",
+   "traction": [
+    "34% de crecimiento interanual de ingresos, alcanzando Rs 492 crore en el Q2 FY27",
+    "Reducción de pérdidas en 80%, a Rs 6 crore",
+    "Gestión de 10.86 millones de pies cuadrados en 17 ciudades y 138 centros",
+    "884 clientes atendidos",
+    "Ocupación aumentada de 89% a 91%",
+    "85% de los inmuebles con certificación verde"
+   ],
+   "whyItWorked": [
+    "Flexibilidad en precios y duración de contratos (Rs 8,000‑20,000 por asiento)",
+    "Plataforma integrada que incluye servicios de diseño, alimentación, transporte y sostenibilidad",
+    "Enfoque en la experiencia del empleado y calidad homogénea en todas las ubicaciones",
+    "Modelo de leasing basado en talento, no en activos inmobiliarios",
+    "Gobernanza corporativa y compromiso con la sostenibilidad"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "Alta demanda de espacios flexibles en ciudades como Madrid y Barcelona, con creciente cultura de coworking y foco en sostenibilidad.",
+     "adapt": "Localizar la plataforma (español), adaptar precios a euros, cumplir con normativa de arrendamiento comercial y certificaciones medioambientales locales.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Crecimiento de startups y multinacionales en El Cairo y Alejandría, pero el mercado inmobiliario flexible aún está emergente.",
+     "adapt": "Traducción al árabe, precios en EGP, cumplir con leyes de arrendamiento y certificaciones de eficiencia energética egipcias.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 8,
+     "why": "Fuerte presencia de GCCs y empresas internacionales en Dubái, Abu Dhabi y Doha; alta valoración de servicios premium y sostenibilidad.",
+     "adapt": "Soporte en inglés y árabe, precios en AED/SAR, alinearse con regulaciones de propiedad comercial y certificaciones LEED/Estidama.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 12,
+    "team": "product manager, UI/UX designer, no‑code developer, backend integrator, sales lead",
+    "stack": "Webflow / Softr para portal de reservas, Zapier para automatizaciones, Airtable como base de datos, Stripe/PayPal para pagos",
+    "noCode": true
+   },
+   "regulated": false,
+   "monetization": "Alquiler de puestos y oficinas por suscripción mensual, tarifas por servicios adicionales (diseño, catering, transporte) y comisiones por soluciones de sostenibilidad.",
+   "risks": [
+    "Alta inversión de capital en inmuebles",
+    "Dependencia de ocupación sostenida",
+    "Regulaciones locales de arrendamiento y certificación verde",
+    "Competencia de operadores de coworking ya establecidos"
+   ],
+   "firstSteps": [
+    "Realizar estudio de demanda en una ciudad piloto (ej. Madrid, El Cairo o Dubái).",
+    "Identificar socios inmobiliarios dispuestos a ofrecer espacios bajo modelo de gestión flexible.",
+    "Desarrollar un portal de reservas no‑code para validar la propuesta de valor.",
+    "Lanzar un programa piloto con 5‑10 clientes corporativos y medir ocupación y satisfacción.",
+    "Ajustar precios y servicios según feedback y preparar expansión a más ubicaciones."
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "indiqube",
+   "links": [
+    {
+     "title": "YourStory: How flexibility, services, and employee experience are driving IndiQube’s growth",
+     "url": "https://yourstory.com/2026/11/flexibility-services-employee-experience-driving-indiqubes-growth"
+    },
+    {
+     "title": "Buscar «IndiQube» en Google",
+     "url": "https://www.google.com/search?q=IndiQube"
+    }
+   ],
+   "source": "YourStory",
+   "foundAt": "2026-11-25T09:06:34Z",
+   "why": "IndiQube gestiona cerca de 11 M sq ft de oficinas y está ampliando servicios integrados, mostrando tracción operativa que puede adaptarse a la creciente demanda de proptech en Egipto y el Golfo.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 81
+  },
+  {
+   "name": "Maple",
+   "type": "saas",
+   "originCountry": "USA",
+   "summary": "Plataforma de IA que procesa preguntas de los usuarios sin que la empresa pueda acceder a sus datos, usando entornos de ejecución confiables (TEE). Sirve a consumidores y pequeñas empresas que buscan asistentes de IA con máxima privacidad.",
+   "traction": [
+    "Ronda seed sobresuscrita de $5.3 M liderada por Epic Ventures",
+    "Participación de Draper Associates, Planetary VC y Epoch VC",
+    "Ronda pre‑seed angel de menos de $1 M"
+   ],
+   "whyItWorked": [
+    "Enfoque en privacidad mediante cifrado de extremo a extremo y TEE",
+    "Código abierto y verificable que genera confianza",
+    "Oferta de modelos de IA múltiples que el usuario puede seleccionar",
+    "Posicionamiento como alternativa a grandes jugadores que recopilan datos"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "Alta sensibilidad a la privacidad de datos tras el RGPD y creciente adopción de IA en pymes.",
+     "adapt": "Traducción al castellano, cumplimiento con RGPD, integración con pagos locales (tarjetas, Bizum).",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 5,
+     "why": "Mercado emergente de IA, pero menor conciencia de privacidad y retos de infraestructura.",
+     "adapt": "Localización al árabe, cumplimiento con leyes de protección de datos egipcias, opciones de pago con Fawry o tarjetas locales.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 6,
+     "why": "Alto gasto en tecnología y preocupación creciente por la soberanía de datos, aunque la competencia de grandes proveedores es fuerte.",
+     "adapt": "Traducción al árabe, cumplimiento con leyes de protección de datos de los Emiratos Árabes Unidos y Arabia Saudita, integración con sistemas de pago regionales.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 12,
+    "team": "desarrollador backend, ingeniero de IA, especialista en seguridad (TEE), diseñador UI/UX, product manager",
+    "stack": "AWS/GCP con instancias confidenciales, OpenAI GPT‑OSS, DeepSeek, etc.; frontend React Native o Flutter; CI/CD con GitHub Actions",
+    "noCode": false
+   },
+   "regulated": false,
+   "monetization": "Suscripciones mensuales o anuales para usuarios y pymes, con planes diferenciados por nivel de modelo y funcionalidades.",
+   "risks": [
+    "Complejidad y coste de operar TEE a escala",
+    "Desconfianza del mercado pese a la arquitectura de privacidad",
+    "Competencia de grandes jugadores con recursos superiores",
+    "Posibles cambios regulatorios en protección de datos"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con pymes en España para validar necesidad de privacidad en IA",
+    "Desarrollar un prototipo no‑code (p.ej. Bubble + API de IA) que demuestre el flujo de cifrado‑descifrado",
+    "Obtener certificación SOC 2 básica o equivalente para generar confianza",
+    "Lanzar una beta cerrada con usuarios tempranos y medir retención y disposición a pagar"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 1,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "maple",
+   "links": [
+    {
+     "title": "TechCrunch Startups: Maple raises $5.3M to build AI products that protect your data, even from itself",
+     "url": "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/"
+    },
+    {
+     "title": "Buscar «Maple» en Google",
+     "url": "https://www.google.com/search?q=Maple"
+    }
+   ],
+   "source": "TechCrunch Startups",
+   "foundAt": "2026-11-25T09:06:34Z",
+   "why": "Maple ha conseguido $5.3 M para su arquitectura de IA encriptada, un SaaS de privacidad de datos que un equipo pequeño con expertise en IA puede replicar en España o el Golfo.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 76
+  },
+  {
+   "name": "Cynoia – Hannibal AI",
+   "type": "saas",
+   "originCountry": "Tunisia",
+   "summary": "Plataforma de colaboración y gestión de trabajo con asistente IA integrado, diseñada para equipos con baja conectividad. Sirve a empresas y organizaciones que necesitan gestión de proyectos, tareas y comunicación multilingüe.",
+   "traction": [
+    "€850,000 de financiación en 2023",
+    "Crecimiento de usuarios de 3,000 a más de 7,000",
+    "Equipo de 15 personas (10 en Túnez, 3 en Senegal, 2 en Francia)",
+    "Lanzamiento de apps iOS y Android en mayo 2026",
+    "Subsidiaria en Dakar (2024) y premios como mejor SaaS startup en AfricArena 2024"
+   ],
+   "whyItWorked": [
+    "Asistente IA entrenado con datos internos del workspace, generando informes y traducciones en 9 idiomas",
+    "Funciona con bajo ancho de banda y está disponible en iOS/Android",
+    "Integración de terceros (ChatGPT, Claude, Cursor) mediante MCP con control de consentimiento",
+    "Modelo de pago local (mobile money, tarjetas) y precios en monedas locales",
+    "Gobernanza de datos con certificaciones ISO y DPO en varios países"
+   ],
+   "markets": {
+    "es": {
+     "fit": 6,
+     "why": "Mercado con alta adopción de SaaS pero competencia consolidada; necesidad de soluciones multilingües y de bajo coste para pymes.",
+     "adapt": "Traducción al castellano, integración con métodos de pago locales (tarjetas, Bizum), cumplimiento de RGPD y LOPDGDD.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 7,
+     "why": "Presencia ya en Egipto y soporte de idioma árabe; demanda de herramientas colaborativas con pagos móviles.",
+     "adapt": "Optimizar para árabe egipcio, integrar pagos con Fawry o Vodafone Cash, cumplir con la Ley de Protección de Datos de Egipto.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 5,
+     "why": "Necesita adaptación al árabe del Golfo y a normas de seguridad más estrictas; la ventaja de bajo ancho de banda es menos relevante.",
+     "adapt": "Localizar a árabe del Golfo, integrar pagos con tarjetas y Apple Pay, asegurar cumplimiento con normas de privacidad de los Emiratos y Arabia Saudita.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 16,
+    "team": "Product manager, UI/UX designer, no‑code developer, AI integration specialist, QA tester",
+    "stack": "Bubble (frontend), Airtable (base de datos), Zapier/Integromat (automatizaciones), APIs de OpenAI/Claude para IA, Stripe y proveedores locales de mobile money",
+    "noCode": true
+   },
+   "regulated": false,
+   "monetization": "Modelo de suscripción SaaS por usuario/mes, con precios en moneda local y opción de pago vía mobile money o tarjeta",
+   "risks": [
+    "Adopción lenta en mercados con alta competencia SaaS",
+    "Cumplimiento de regulaciones de datos en cada país",
+    "Dependencia de APIs de terceros (ChatGPT, Claude)",
+    "Necesidad de certificaciones de seguridad para clientes corporativos"
+   ],
+   "firstSteps": [
+    "Realizar entrevistas con pymes en España, Egipto y GCC para validar necesidad",
+    "Crear versión piloto en Bubble con funcionalidades básicas de gestión y asistente IA",
+    "Integrar pagos locales (mobile money en Egipto, Stripe en España, proveedores GCC)",
+    "Obtener feedback y ajustar traducciones y flujos de trabajo",
+    "Planificar certificaciones ISO y DPO antes del lanzamiento comercial"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "cynoiahannibalai",
+   "links": [
+    {
+     "title": "Wamda: Cynoia launches Hannibal AI ahead of further African expansion",
+     "url": "https://www.wamda.com/2026/11/cynoia-launches-hannibal-ai-ahead-african-expansion"
+    },
+    {
+     "title": "Buscar «Cynoia – Hannibal AI» en Google",
+     "url": "https://www.google.com/search?q=Cynoia+–+Hannibal+AI"
+    }
+   ],
+   "source": "Wamda",
+   "foundAt": "2026-11-25T09:06:34Z",
+   "why": "Cynoia lanzó Hannibal AI, un asistente de trabajo AI‑potenciado, y está expandiéndose en África, evidenciando interés por soluciones SaaS de productividad que pueden replicarse en España y el Golfo.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 76
+  },
+  {
+   "name": "Bound",
+   "type": "saas",
+   "originCountry": "UK",
+   "summary": "Plataforma SaaS de gestión de riesgo de tipo de cambio impulsada por IA para medianas empresas. Automatiza la ejecución de operaciones FX y monitoriza riesgos en tiempo real.",
+   "traction": [
+    "Deuda revolvente de €45.68 M a 3 años (Viola Credit)",
+    "Ronda Serie A de €20.7 M liderada por AlbionVC (febrero 2026)",
+    "Más de 200 clientes corporativos",
+    "Volumen de transacciones €1.37 bn en 2025",
+    "Objetivo de superar $6 bn en transacciones en 2026"
+   ],
+   "whyItWorked": [
+    "Resuelve la opacidad y procesos manuales de los brokers tradicionales",
+    "Automatiza la ejecución y monitoriza 24/7 con IA",
+    "Integración con software contable (p.ej. Xero)",
+    "Regulación FCA y certificación ISO 27001 que genera confianza",
+    "Enfoque en empresas con transacciones FX de $10‑100 M anuales, nicho poco atendido"
+   ],
+   "markets": {
+    "es": {
+     "fit": 7,
+     "why": "Alta actividad de exportación/importación y necesidad de cubrir riesgos cambiarios en pymes medianas.",
+     "adapt": "Traducción al español, integración con ERP locales (Sage, SAP Business One), cumplimiento con la CNMV y normativa de servicios de pago (PSD2).",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 6,
+     "why": "Creciente sector manufacturero y de servicios que necesita cubrir exposición cambiaria, pero mercado fintech aún incipiente.",
+     "adapt": "Interfaz en árabe e inglés, adaptación a regulaciones del Banco Central de Egipto, posible necesidad de licencia de servicios de pago.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 8,
+     "why": "Elevado volumen de comercio internacional y fuerte presencia de fondos y corporaciones que operan en múltiples divisas.",
+     "adapt": "Soporte multilingüe (árabe, inglés), cumplimiento con normas de la Autoridad de Servicios Financieros de cada emirato y requisitos Sharia si se dirige a clientes islámicos.",
+     "competition": "no consta, verificar"
+    }
+   },
+   "mvp": {
+    "costEur": [
+     10000,
+     60000
+    ],
+    "weeks": 16,
+    "team": "Product Manager, Backend Engineer (FinTech), Frontend Engineer (no‑code/low‑code), UI/UX Designer, Compliance Officer, QA Tester",
+    "stack": "AWS (Lambda, RDS), Node.js, React, Stripe Connect (para pagos), Zapier/Make para integraciones contables, Terraform",
+    "noCode": false
+   },
+   "regulated": true,
+   "monetization": "Comisión por transacción + spread sobre tipos de cambio + suscripción mensual por acceso a la plataforma",
+   "risks": [
+    "Obtención de licencias regulatorias (FCA, CNMV, Banco Central de Egipto, autoridades GCC)",
+    "Riesgo crediticio de contrapartes en operaciones FX",
+    "Volatilidad del mercado cambiario que afecta márgenes",
+    "Competencia de bancos y brokers tradicionales con capacidad de ofrecer precios competitivos",
+    "Desafíos de integración con sistemas contables locales"
+   ],
+   "firstSteps": [
+    "Realizar estudio de mercado específico para cada región (España, Egipto, GCC)",
+    "Contactar a potenciales clientes piloto (pymes con facturación $10‑100 M) para validar necesidad",
+    "Desarrollar prototipo de flujo de cobertura FX con 3‑4 divisas principales",
+    "Obtener asesoría legal para entender requisitos de licencia en cada jurisdicción",
+    "Diseñar plan de precios y modelo de comisión basado en datos de la tracción actual"
+   ],
+   "officialUrl": null,
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "bound",
+   "links": [
+    {
+     "title": "EU-Startups: London-based Bound secures €45.72 million debt facility for its AI-powered FX risk managem",
+     "url": "https://www.eu-startups.com/2026/11/london-based-bound-secures-e45-68-million-debt-facility-for-its-ai-powered-fx-risk-management-platform/"
+    },
+    {
+     "title": "Buscar «Bound» en Google",
+     "url": "https://www.google.com/search?q=Bound"
+    }
+   ],
+   "source": "EU-Startups",
+   "foundAt": "2026-11-25T09:06:34Z",
+   "why": "Bound obtuvo una línea de crédito de €45.72 M para su plataforma AI de gestión de riesgo FX, demostrando demanda en mid‑market y un modelo SaaS replicable en mercados con alta exposición cambiaria.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 69
+  },
+  {
+   "name": "Sooner",
+   "type": "servicio",
+   "originCountry": "UAE",
+   "summary": "Plataforma de apoyo al pago inicial de viviendas que permite a compradores primerizos pagar solo el 10% al inicio y financiar el resto en 60 cuotas mensuales shariah‑compliant. Sirve a compradores de primera vivienda y, en el futuro, a propietarios que quieran acceder a una línea de crédito sobre el valor acumulado de su inmueble.",
+   "traction": [
+    "Recibió $20 M en financiación seed (USD 5 M en equity y USD 15 M en deuda shariah‑compliant).",
+    "Desde su lanzamiento en julio 2026 ha recibido ~9 000 solicitudes, representando $4.5 B en demanda de compra.",
+    "Ya ha apoyado alrededor de $10 M en compras de vivienda.",
+    "La ronda de financiación le da capacidad para respaldar AED 1 B ($272 M) en compras de vivienda en 2027."
+   ],
+   "whyItWorked": [
+    "Resuelve la mayor barrera de entrada al mercado inmobiliario: el pago inicial del 20 %.",
+    "Modelo licenciado por el Dubai Land Department, lo que brinda confianza y acceso a hipotecas de bancos locales.",
+    "Oferta shariah‑compliant que se alinea con la normativa y preferencias del mercado del Golfo.",
+    "Equipo con experiencia en fintech y proptech (ex‑fundadores de Pluto, Keyper, Revolut, Deel)."
+   ],
+   "markets": {
+    "es": {
+     "fit": 4,
+     "why": "En España el pago inicial típico es menor (≈20 % del precio) y existen ya productos de hipoteca y ayudas públicas; la necesidad de financiar el 10 % no es tan crítica.",
+     "adapt": "Traducir la plataforma al español, integrar pagos SEPA, cumplir con la normativa de la CNMV y la Ley de Servicios de Pago, adaptar el modelo a la legislación hipotecaria española.",
+     "competition": "no consta, verificar"
+    },
+    "eg": {
+     "fit": 7,
+     "why": "Egipto tiene alta demanda de vivienda y dificultades de acceso al crédito inicial; el modelo de pago diferido puede ser atractivo, aunque el entorno regulatorio es diferente y no shariah‑compliant es necesario.",
+     "adapt": "Localizar al árabe, integrar pagos con tarjetas locales y sistemas de banca móvil, obtener licencia del Banco Central de Egipto para actividades de financiación inmobiliaria, adaptar criterios de elegibilidad a ingresos locales.",
+     "competition": "no consta, verificar"
+    },
+    "gcc": {
+     "fit": 9,
+     "why": "El modelo ya funciona en los Emiratos Árabes Unidos y se alinea con la cultura de financiamiento shariah; otros países del GCC (Arabia Saudita, Qatar, Kuwait) presentan estructuras de pago inicial similares y escasa oferta de productos de apoyo al down payment.",
+     "adapt": "Ajustar la licencia a cada autoridad reguladora (por ejemplo, SAMA en Arabia Saudita), adaptar los límites de crédito a la normativa local y ofrecer soporte en árabe y inglés.",
+     "competition": "no consta, verificar",
+     "origin": true
+    }
+   },
+   "mvp": {
+    "costEur": [
+     80000,
+     120000
+    ],
+    "weeks": 24,
+    "team": "Product Manager, Backend Engineer, Frontend Engineer, UI/UX Designer, Compliance Officer, Legal Advisor, QA Tester",
+    "stack": "Node.js, React, PostgreSQL, AWS, integración con APIs bancarias y de verificación de identidad (KYC)",
+    "noCode": false
+   },
+   "regulated": true,
+   "monetization": "Cobro de comisiones por la gestión del down payment financiado y por la línea de crédito HELOC; margen de interés sobre los pagos mensuales; tarifas por pre‑aprobación y servicios premium para bancos asociados.",
+   "risks": [
+    "Obtención y mantenimiento de licencias financieras en cada jurisdicción.",
+    "Riesgo de crédito si los usuarios incumplen los pagos mensuales.",
+    "Competencia de bancos tradicionales que puedan lanzar productos similares.",
+    "Cambios regulatorios en finanzas shariah o en la normativa hipotecaria."
+   ],
+   "firstSteps": [
+    "Realizar estudio de viabilidad regulatoria en España, Egipto y cada país del GCC.",
+    "Contactar a bancos locales para explorar alianzas de distribución de hipotecas.",
+    "Desarrollar un prototipo de flujo de solicitud de down payment con integración KYC.",
+    "Lanzar un piloto cerrado con 100‑200 usuarios en un mercado objetivo (p.ej., Egipto) para validar la demanda.",
+    "Obtener la licencia de entidad de financiación inmobiliaria o equivalente."
+   ],
+   "officialUrl": "https://www.joinsooner.com",
+   "verified": true,
+   "droppedFacts": 0,
+   "checkedBy": "gemini:gemini-3.1-flash-lite",
+   "id": "sooner",
+   "links": [
+    {
+     "title": "Wamda: UAE&#039;s Sooner raises $20 million to expand home financing solutions",
+     "url": "https://www.wamda.com/2026/11/uae-sooner-raises-20-million-expand-home-financing-solutions"
+    },
+    {
+     "title": "Web oficial",
+     "url": "https://www.joinsooner.com"
+    },
+    {
+     "title": "Buscar «Sooner» en Google",
+     "url": "https://www.google.com/search?q=Sooner"
+    }
+   ],
+   "source": "Wamda",
+   "foundAt": "2026-11-25T09:06:34Z",
+   "why": "Sooner, fintech de financiación de vivienda en EE UU, cerró $20 M de seed, validando un modelo de crédito inmobiliario que puede escalar en mercados emergentes con alta necesidad de vivienda asequible.",
+   "analyst": "groq:openai/gpt-oss-120b",
+   "score": 53
+  },
   {
    "name": "Hermit CRM",
    "type": "software",
@@ -1574,249 +2000,277 @@
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:32+00:00"
+   "at": "2026-11-25T09:06:34+00:00"
   },
   "TechCrunch Venture": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:33+00:00"
+   "at": "2026-11-25T09:06:36+00:00"
   },
   "Crunchbase News": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:33+00:00"
+   "at": "2026-11-25T09:06:36+00:00"
   },
   "EU-Startups": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:34+00:00"
+   "at": "2026-11-25T09:06:36+00:00"
   },
   "Tech.eu": {
    "ok": false,
    "items": 0,
    "error": "HTTP 403",
-   "at": "2026-11-24T12:36:34+00:00"
+   "at": "2026-11-25T09:06:36+00:00"
   },
   "Sifted": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:35+00:00"
+   "at": "2026-11-25T09:06:36+00:00"
   },
   "YourStory": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:35+00:00"
+   "at": "2026-11-25T09:06:37+00:00"
   },
   "TechCabal": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:37+00:00"
+   "at": "2026-11-25T09:06:37+00:00"
   },
   "Disrupt Africa": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:37+00:00"
+   "at": "2026-11-25T09:06:38+00:00"
   },
   "Wamda": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:38+00:00"
+   "at": "2026-11-25T09:06:39+00:00"
   },
   "Rest of World": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:36:38+00:00"
+   "at": "2026-11-25T09:06:39+00:00"
   },
   "Product Hunt": {
    "ok": true,
    "items": 8,
    "error": null,
-   "at": "2026-11-24T12:37:05+00:00"
+   "at": "2026-11-25T09:06:39+00:00"
   },
   "Hacker News": {
    "ok": true,
    "items": 3,
    "error": null,
-   "at": "2026-11-24T12:37:05+00:00"
+   "at": "2026-11-25T09:06:39+00:00"
   }
  },
- "aiErrors": [
-  "verifier/gemini: HTTP 503",
-  "verifier/gemini: HTTP 503"
- ],
+ "aiErrors": [],
  "seenUrls": [
-  "https://techcrunch.com/2026/11/23/figma-employee-sues-alleging-company-forced-her-to-confront-harassers/",
-  "https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://news.crunchbase.com/venture/interesting-startup-deals-ai-solar-healthcare-space-tech/",
-  "https://techcabal.com/2026/11/23/mzansis-power-moves/",
-  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-  "https://www.eu-startups.com/2026/11/building-in-the-uk-key-changes-and-deadlines-founders-need-to-know/",
+  "https://www.producthunt.com/products/finer-screenshot",
+  "https://techcabal.com/2026/11/21/gulf-capital-digital-nomads/",
+  "https://yourstory.com/2026/11/flexibility-services-employee-experience-driving-indiqubes-growth",
+  "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
+  "https://www.producthunt.com/products/tendor",
+  "https://www.producthunt.com/products/mai-image-2-3",
+  "https://sifted.eu/articles/starling-veteran-to-take-over-as-ceo/",
+  "https://www.eu-startups.com/2026/11/uk-based-agon-raises-e63-98-million-at-e411-3-million-valuation-to-build-europes-sovereign-defence-ai-infrastructure/",
+  "https://techcabal.com/2026/11/20/afrilabs-2026-benin-innovation/",
+  "https://old.disruptafrica.com/2024/01/23/how-egyptian-prop-tech-startup-partment-enables-hassle-free-2nd-home-ownership/",
+  "https://yourstory.com/2026/11/upi-was-never-free-but-is-its-new-merchant-fee-fair",
+  "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series",
+  "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+  "https://techcabal.com/2026/11/23/high-cost-building-ai-africa/",
+  "https://news.crunchbase.com/startups/startup-name-trends-2026-ai/",
+  "https://restofworld.org/2026/chinese-ai-labs-hire-silicon-valley-engineers-openai-anthropic/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.eu-startups.com/2026/11/theseus-robotics-secures-e455k-to-put-robots-to-work-in-supermarkets-across-europe-and-us/",
+  "https://github.com/gulivan/worker755",
   "https://sifted.eu/articles/inside-slush-2026-robots-riches-and-the-race-to-superintelligence/",
-  "https://news.crunchbase.com/venture/biggest-startup-rounds-science-neurotech-model-ml-galvanize-therapeutics/",
-  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
-  "https://www.producthunt.com/products/chat-with-work",
-  "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+  "https://yourstory.com/2026/11/8-carl-jung-ideas-that-explain-why-you-repeat-mistakes",
+  "https://yourstory.com/2026/11/beyond-upi-why-many-indians-still-need-help-accessing-basic-banking-services",
+  "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/",
+  "https://yourstory.com/2026/11/wiz-webinar-bringing-sharper-connected-focus-to-ai-security-",
   "https://news.crunchbase.com/startups/blue-economy-technology-defense-energy-onetti-mind-the-bridge/",
-  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-  "https://www.producthunt.com/products/claude-code",
-  "https://yourstory.com/2026/11/sarvam-new-model-make-ai-assistants-cheaper-to-run",
-  "https://techcabal.com/2026/11/23/lupa-robotics-1-67-million-seed-raise/",
-  "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
-  "https://news.crunchbase.com/workplace/ai-bias-in-hr-hiring-job-applications/",
-  "https://techcabal.com/2026/11/24/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-hello-from-the-absa-side/",
+  "https://yourstory.com/2026/11/cii-15-financial-sector-reforms-boost-long-term-growth-ambitions",
+  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+  "https://old.disruptafrica.com/2024/01/20/which-meme-coins-to-buy-in-2024-top-meme-coins-by-market-capitalization-and-new-trending-coins-including-apemax-dogecoin-shiba-inu-pepe-coin-floki-memecoin-by-9gag-and-bonk/",
+  "https://techcabal.com/2026/11/21/moniepoint-northern-regional-headquarters/",
+  "https://github.com/tamnd/riemann-handbook",
+  "https://sifted.eu/articles/european-angels-anthropic-ipo/",
+  "https://yourstory.com/2026/11/content-ai-empowerment-business-creativity-entrepreneur-quiz",
   "https://www.eu-startups.com/2026/11/london-based-archer-raises-e9-1-million-to-deploy-ai-recruiting-agents-for-employers-and-job-seekers/",
   "https://sifted.eu/articles/black-forest-labs-nvidia-a16z-andreas-blattmann-interview/",
-  "https://www.eu-startups.com/2026/11/bcomp-secures-e20-million-from-eib-to-scale-flax-fibre-based-alternatives-to-carbon-fibre-glass-fibre-and-plastics/",
-  "https://yourstory.com/2026/11/7-bryan-johnson-longevity-habits-anyone-can-afford",
-  "https://yourstory.com/2026/11/7-habits-that-make-you-a-better-listener",
-  "https://yourstory.com/2026/11/what-it-takes-for-indian-startups-to-win-when-building-is-no-longer-the-hard-part",
-  "https://yourstory.com/2026/11/cii-15-financial-sector-reforms-boost-long-term-growth-ambitions",
-  "https://techcabal.com/2026/11/23/ericsson-sa-5g-growth-mines-ports/",
-  "https://old.disruptafrica.com/2024/01/20/which-meme-coins-to-buy-in-2024-top-meme-coins-by-market-capitalization-and-new-trending-coins-including-apemax-dogecoin-shiba-inu-pepe-coin-floki-memecoin-by-9gag-and-bonk/",
-  "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/",
-  "https://sifted.eu/articles/acorda-pre-seed/",
-  "https://techcabal.com/2026/11/22/africa-instant-payment-systems-maturity/",
-  "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/",
-  "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
-  "https://yourstory.com/2026/11/gta-6-is-rated-17-what-indian-parents-should-know-before-letting-their-children-play",
-  "https://yourstory.com/2026/11/upi-was-never-free-but-is-its-new-merchant-fee-fair",
-  "https://www.wamda.com/2026/11/dubai-bring-global-startup-investment-leaders-doers-summit-2026",
-  "https://techcabal.com/2026/11/23/techcabal-daily-dangotes-encore/",
-  "https://www.producthunt.com/products/open-source-solana-wallet",
-  "https://www.wamda.com/2026/11/shaffra-establishes-saudi-headquarters-ai-workforce-deployments-grow",
-  "https://yourstory.com/2026/11/8-carl-jung-ideas-that-explain-why-you-repeat-mistakes",
-  "https://old.disruptafrica.com/2024/01/22/10-startups-selected-for-africa-tech-summit-nairobi-investment-showcase/",
-  "https://www.eu-startups.com/2026/11/frankfurt-based-commerzventures-closes-e50-million-fund-iv-betting-on-early-stage-fintech-and-ai/",
-  "https://sifted.eu/articles/hoplite-raise-stripe-founders/",
-  "https://restofworld.org/2026/ibm-consulting-ends-us-visa-green-card-sponsorship/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://www.producthunt.com/products/plango",
-  "https://yourstory.com/2026/11/bill-gates-book-recommendations-2026",
-  "https://techcabal.com/2026/11/23/first-circle-capital-ask-an-investor/",
-  "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-  "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
-  "https://sifted.eu/articles/plural-fund-ai-podcast/",
   "https://techcabal.com/2026/11/24/francophone-weekly-by-techcabal-049/",
-  "https://news.crunchbase.com/startups/startup-name-trends-2026-ai/",
-  "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
-  "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent",
-  "https://techcabal.com/2026/11/20/ex-banker-cherotich-rutto-tawi-fresh/",
-  "https://old.disruptafrica.com/2024/01/22/undp-launches-timbuktoo-financing-initiative-for-african-startups/",
-  "https://github.com/tamnd/riemann-handbook",
-  "https://www.producthunt.com/products/ashwa",
-  "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
-  "https://old.disruptafrica.com/2024/01/20/third-episode-of-new-disrupt-podcast-series-shines-light-on-africas-ed-tech-space/",
-  "https://techcabal.com/2026/11/20/afrilabs-2026-benin-innovation/",
-  "https://www.producthunt.com/products/granular-build",
-  "https://sifted.eu/articles/why-ai-startups-should-build-governance-early-brnd/",
-  "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
-  "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
-  "https://www.producthunt.com/products/tendor",
-  "https://www.eu-startups.com/2026/11/is-silicon-valley-turning-its-back-on-europe-plug-and-plays-thomas-bigagli-weighs-in/",
-  "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
-  "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco",
-  "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://restofworld.org/2026/chinese-ai-labs-hire-silicon-valley-engineers-openai-anthropic/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://techcabal.com/2026/11/20/gtco-revives-737-brand-with-new-ap/",
-  "https://sifted.eu/articles/european-angels-anthropic-ipo/",
-  "https://restofworld.org/2026/taiwan-labor-strike-ai-profits/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://www.producthunt.com/products/distribution-dev",
-  "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/",
-  "https://techcabal.com/2026/11/23/why-african-must-prepare-for-quantum/",
   "https://www.producthunt.com/products/motionflare",
-  "https://www.eu-startups.com/2026/11/uk-based-agon-raises-e63-98-million-at-e411-3-million-valuation-to-build-europes-sovereign-defence-ai-infrastructure/",
-  "https://hermitcrm.io/",
-  "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
-  "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
-  "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/",
-  "https://www.wamda.com/2026/11/egypt-chipverse-secures-pre-seed-funding-double-gpu-capacity",
-  "https://yourstory.com/2026/11/google-cloud-confirms-30-role-cuts-in-india-rejects-claims-of-wider-layoffs",
-  "https://www.eu-startups.com/2026/11/opinion-europes-rearmament-risks-creating-empty-factories/",
-  "https://techcabal.com/2026/11/21/moniepoint-northern-regional-headquarters/",
   "https://www.producthunt.com/products/dog-translator-supertranslator",
-  "https://www.producthunt.com/products/sparrowdesk",
-  "https://www.producthunt.com/products/modem",
-  "https://www.wamda.com/2026/11/egypt-connect-money-raises-3-5-million-pre-series",
-  "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a",
-  "https://yourstory.com/2026/11/mha-warns-whatsapp-web-users-of-account-hijacking-advises-logging-out-after-every-session",
-  "https://yourstory.com/2026/11/karnataka-cm-to-lead-delegation-to-japan-to-explore-investments",
-  "https://outpostracer.com",
-  "https://onurgumus.github.io/zero-csharp/index.html",
+  "https://restofworld.org/2026/ai-jobs-skills-gig-work/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.wamda.com/2026/11/sudans-cashi-secures-660000-investment-frances-proparco",
+  "https://masondata.ai/",
+  "https://www.eu-startups.com/2026/11/frankfurt-based-commerzventures-closes-e50-million-fund-iv-betting-on-early-stage-fintech-and-ai/",
+  "https://yourstory.com/2026/11/sarvam-new-model-make-ai-assistants-cheaper-to-run",
   "https://restofworld.org/2026/ai-government-ethics-bias-risk/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://yourstory.com/2026/11/6-must-read-indian-historical-fiction-books-to-explore",
-  "https://www.eu-startups.com/2026/11/german-startup-playbook-secures-e8-million-to-help-pharma-companies-deploy-ai-safely/",
-  "https://techcabal.com/2026/11/24/banks-card-raid-safaricom-airtel-talent/",
-  "https://yourstory.com/2026/11/content-ai-empowerment-business-creativity-entrepreneur-quiz",
+  "https://yourstory.com/2026/11/what-it-takes-for-indian-startups-to-win-when-building-is-no-longer-the-hard-part",
+  "https://gpu-demo-gallery.pages.dev/",
+  "https://yourstory.com/2026/11/how-illumine-cracked-the-us-saas-market-india-ai-gtm-growth-playbook",
+  "https://techcrunch.com/2026/11/12/norwest-pushes-deeper-into-ai-with-new-4b-fund/",
+  "https://news.crunchbase.com/venture/interesting-startup-deals-ai-solar-healthcare-space-tech/",
+  "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
   "https://yourstory.com/2026/11/sarvam-clarifies-ai-strategy-amid-debate-over-hosting-chinese-models",
-  "https://techcabal.com/2026/11/24/nigeria-data-protection-500000-jobs/",
-  "https://www.producthunt.com/products/tday",
-  "https://sifted.eu/articles/starlings-next-ceo/",
-  "https://www.producthunt.com/products/journalistic-tech",
-  "https://yourstory.com/2026/11/pidg-invests-117m-nepra-dry-waste-recycling-company",
-  "https://www.eu-startups.com/2026/11/uk-startup-clarity-sensors-receives-e2-2-million-nihr-award-to-make-advanced-medical-imaging-more-accessible/",
-  "https://www.wamda.com/2026/11/ziina-offers-new-feature-split-simplify-shared-payments",
-  "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
-  "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
-  "https://www.wamda.com/2026/11/finbursa-names-angelica-tigan-cro-lead-global-expansion",
-  "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
-  "https://techcrunch.com/2026/11/17/stripe-backer-atomico-calls-for-europe-to-own-its-success-stories/",
-  "https://techcabal.com/2026/11/21/gulf-capital-digital-nomads/",
-  "https://sifted.eu/articles/agon-raise-northzone-lakestar-defence/",
-  "https://techcrunch.com/2026/11/19/anthropic-rival-says-companies-can-mostly-skip-the-pricey-models/",
-  "https://www.eu-startups.com/2026/11/following-e1-billion-funding-round-quantum-systems-commits-over-e10-million-to-expand-drone-support-in-ukraine/",
-  "https://www.producthunt.com/products/juncts",
-  "https://old.disruptafrica.com/2024/01/23/how-egyptian-prop-tech-startup-partment-enables-hassle-free-2nd-home-ownership/",
-  "https://www.eu-startups.com/2026/11/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-nov-16-nov-20/",
-  "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
-  "https://news.crunchbase.com/venture/data-recruiting-job-hunting-hr-ai-startups-mercor/",
-  "https://sifted.eu/articles/cybersecurity-startups-mapped-108-companies-guarding-europes-digital-frontline/",
-  "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
-  "https://www.eu-startups.com/2026/11/theseus-robotics-secures-e455k-to-put-robots-to-work-in-supermarkets-across-europe-and-us/",
-  "https://old.disruptafrica.com/2024/01/22/egyptian-e-health-startup-yodawy-banks-10m-funding/",
-  "https://yourstory.com/2026/11/lightsprintai-software-factory-pms-designers-engineers",
-  "https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://old.disruptafrica.com/2024/01/20/5-top-trending-altcoins-to-buy-now-can-these-altcoins-explode-after-the-bitcoin-halving-apemax-arbitrum-polkadot-skale-maverick-protocol/",
-  "https://www.wamda.com/2026/11/19-dirham-question-facing-morocco-consumer-startups",
-  "https://techcabal.com/2026/11/20/techcabal-daily-kuda-cuts-jobs-again/",
-  "https://techcabal.com/2026/11/20/nigeria-1-trillion-stock-market-startups/",
-  "https://www.producthunt.com/products/hydrilla",
-  "https://news.crunchbase.com/ai/anthropic-ant-ipo-revenue-growth-risks-s1-analysis/",
-  "https://www.producthunt.com/products/gauth-ai-course",
-  "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
-  "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
-  "https://old.disruptafrica.com/2024/01/23/announcing-the-5m-core-africa-innovation-fund-empowering-local-web3-builders/",
-  "https://www.producthunt.com/products/mai-image-2-3",
-  "https://sifted.eu/articles/slush-20u20-2026/",
-  "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
-  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
-  "https://github.com/gulivan/worker755",
-  "https://www.wamda.com/2026/11/tamara-expands-debt-financing-facilities-400-million-global-banks",
-  "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+  "https://techcabal.com/2026/11/23/mzansis-power-moves/",
   "https://www.wamda.com/2026/11/500-global-sanabil-investments-select-seven-startups-accelerators-12th-cohort",
-  "https://www.producthunt.com/products/finer-screenshot",
-  "https://github.com/stass/type-c",
-  "https://news.crunchbase.com/venture/unicorn-startup-current-valuations-thinking-machines-sierra-crunchbase/",
-  "https://techcabal.com/2026/11/20/huang-cross-border-payments-africa/",
-  "https://www.producthunt.com/products/leantake",
+  "https://www.wamda.com/2026/11/cynoia-launches-hannibal-ai-ahead-african-expansion",
+  "https://www.producthunt.com/products/memoryworks",
+  "https://techcabal.com/2026/11/24/meta-and-sama-privacy-probe-kenya/",
+  "https://www.wamda.com/2026/11/shaffra-establishes-saudi-headquarters-ai-workforce-deployments-grow",
+  "https://techcabal.com/2026/11/23/lupa-robotics-1-67-million-seed-raise/",
+  "https://techcrunch.com/podcast/how-toyota-is-betting-on-a-future-beyond-cars/",
+  "https://techcrunch.com/2026/11/20/experts-warn-nearly-everyone-in-ai-is-susceptible-to-a-honey-trap-scheme-right-now/",
+  "https://news.crunchbase.com/venture/biggest-startup-rounds-science-neurotech-model-ml-galvanize-therapeutics/",
+  "https://techcabal.com/2026/11/20/nigeria-1-trillion-stock-market-startups/",
+  "https://www.wamda.com/2026/11/dubai-bring-global-startup-investment-leaders-doers-summit-2026",
+  "https://hermitcrm.io/",
+  "https://yourstory.com/2026/11/karnataka-cm-to-lead-delegation-to-japan-to-explore-investments",
   "https://yourstory.com/2026/11/taking-a-personal-loan-with-variable-income-heres-how-to-plan-your-emi-smartly",
-  "https://sifted.eu/articles/sign-up-for-the-first-london-tech-chess-night-brnd/",
-  "https://techcabal.com/2026/11/23/high-cost-building-ai-africa/",
-  "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
-  "https://www.eu-startups.com/2026/11/adyens-co-founder-pieter-van-der-does-to-retire-as-co-ceo-ingo-uytdehaage-to-become-sole-ceo/",
-  "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+  "https://www.wamda.com/2026/11/finbursa-names-angelica-tigan-cro-lead-global-expansion",
+  "https://news.crunchbase.com/venture/unicorn-startup-current-valuations-thinking-machines-sierra-crunchbase/",
+  "https://techcabal.com/2026/11/23/why-african-must-prepare-for-quantum/",
+  "https://www.eu-startups.com/2026/11/london-based-bound-secures-e45-68-million-debt-facility-for-its-ai-powered-fx-risk-management-platform/",
+  "https://sifted.eu/articles/kanishka-narayan-ai-uk-minister-sovereign/",
+  "https://techcabal.com/2026/11/23/techcabal-daily-dangotes-encore/",
+  "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/",
+  "https://www.eu-startups.com/2026/11/payhawk-and-dronamics-backer-eleven-secures-e57-million-first-close-of-its-fourth-fund-targets-e100-million/",
+  "https://yourstory.com/2026/11/piramal-alternatives-invests-rs-225-cr-in-ardee-engineering",
+  "https://www.producthunt.com/products/juncts",
+  "https://techcabal.com/2026/11/22/africa-instant-payment-systems-maturity/",
+  "https://www.producthunt.com/products/koed",
+  "https://www.producthunt.com/products/distribution-dev",
+  "https://www.producthunt.com/products/chat-with-work",
+  "https://sifted.eu/articles/slush-20u20-2026/",
+  "https://techcrunch.com/2026/11/23/figma-employee-sues-alleging-company-forced-her-to-confront-harassers/",
+  "https://restofworld.org/2026/taiwan-labor-strike-ai-profits/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.producthunt.com/products/journalistic-tech",
+  "https://yourstory.com/2026/11/google-cloud-confirms-30-role-cuts-in-india-rejects-claims-of-wider-layoffs",
+  "https://old.disruptafrica.com/2024/01/20/5-top-trending-altcoins-to-buy-now-can-these-altcoins-explode-after-the-bitcoin-halving-apemax-arbitrum-polkadot-skale-maverick-protocol/",
+  "https://www.wamda.com/2026/11/iliad-partners-announces-final-close-33-4-million-debut-vc-fund",
+  "https://www.eu-startups.com/2026/11/london-based-acorda-raises-e2-15-million-to-help-banks-detect-payment-scams-before-money-moves/",
+  "https://www.wamda.com/2026/11/tamara-expands-debt-financing-facilities-400-million-global-banks",
+  "https://www.producthunt.com/products/granular-build",
+  "https://restofworld.org/2026/jensen-huang-nvidia-exit-china-ai-chip-impact/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.producthunt.com/products/gauth-ai-course",
+  "https://www.producthunt.com/products/vybe-4",
+  "https://yourstory.com/2026/11/7-habits-that-make-you-a-better-listener",
+  "https://www.producthunt.com/products/open-source-solana-wallet",
+  "https://www.producthunt.com/products/leantake",
+  "https://restofworld.org/2026/ghana-ai-lab-minohealth-bioweapons-threat-dna-synthesis-regulation/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.wamda.com/2026/11/egypt-chipverse-secures-pre-seed-funding-double-gpu-capacity",
+  "https://github.com/stass/type-c",
+  "https://www.wamda.com/2026/11/ziina-offers-new-feature-split-simplify-shared-payments",
+  "https://www.producthunt.com/products/hydrilla",
+  "https://techcrunch.com/2026/11/23/supertake-raises-20m-to-let-ai-agents-turn-your-market-predictions-into-stock-portfolios/",
+  "https://sifted.eu/articles/hoplite-raise-stripe-founders/",
+  "https://techcabal.com/2026/11/23/ericsson-sa-5g-growth-mines-ports/",
+  "https://sifted.eu/articles/cybersecurity-startups-mapped-108-companies-guarding-europes-digital-frontline/",
+  "https://www.eu-startups.com/2026/11/opinion-separate-the-hype-from-reality-in-chinas-robotics-race/",
+  "https://sifted.eu/articles/agon-raise-northzone-lakestar-defence/",
+  "https://techcabal.com/2026/11/24/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-hello-from-the-absa-side/",
+  "https://techcabal.com/2026/11/23/first-circle-capital-ask-an-investor/",
+  "https://techcabal.com/2026/11/25/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-cell-c-picks-a-melon/",
+  "https://old.disruptafrica.com/2024/01/22/10-startups-selected-for-africa-tech-summit-nairobi-investment-showcase/",
+  "https://news.crunchbase.com/saas/public-market-value-regulations-ai-anton-oxx/",
+  "https://techcabal.com/2026/11/20/huang-cross-border-payments-africa/",
+  "https://news.crunchbase.com/workplace/ai-bias-in-hr-hiring-job-applications/",
+  "https://sifted.eu/articles/why-ai-startups-should-build-governance-early-brnd/",
+  "https://yourstory.com/2026/11/momentum-by-google--yourstory-uniting-indias-startup-ecos",
+  "https://sifted.eu/articles/exclusive-aikido-4bn-valuation/",
+  "https://www.eu-startups.com/2026/11/following-e1-billion-funding-round-quantum-systems-commits-over-e10-million-to-expand-drone-support-in-ukraine/",
+  "https://www.producthunt.com/products/ashwa",
+  "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a",
+  "https://sifted.eu/articles/inside-the-swedish-city-building-the-future-of-food-brnd/",
+  "https://techcabal.com/2026/11/25/mtn-telkom-deal-sa-telecoms-market/",
+  "https://www.producthunt.com/products/plango",
+  "https://www.eu-startups.com/2026/11/german-startup-playbook-secures-e8-million-to-help-pharma-companies-deploy-ai-safely/",
+  "https://www.producthunt.com/products/eluna",
+  "https://techcrunch.com/2026/11/24/maple-raises-5-3m-to-build-ai-products-that-protect-your-data-even-from-itself/",
   "https://www.producthunt.com/products/orpheus-2",
+  "https://techcrunch.com/2026/11/15/helsing-backer-plural-raises-1-1b-to-fund-europes-next-moonshots/",
+  "https://restofworld.org/2026/western-startups-realigning-chinese-ai-models/?utm_source=rss&utm_medium=rss&utm_campaign=feeds",
+  "https://www.wamda.com/2026/11/uae-sooner-raises-20-million-expand-home-financing-solutions",
+  "https://yourstory.com/2026/11/goldman-sachs-societe-generale-buy-rs-920-cr-stake-lenskart",
+  "https://www.wamda.com/2026/11/19-dirham-question-facing-morocco-consumer-startups",
+  "https://www.eu-startups.com/2026/11/opinion-europes-rearmament-risks-creating-empty-factories/",
+  "https://www.producthunt.com/products/modem",
+  "https://www.producthunt.com/products/tday",
+  "https://news.crunchbase.com/ai/anthropic-ant-ipo-revenue-growth-risks-s1-analysis/",
+  "https://techcabal.com/2026/11/20/gtco-revives-737-brand-with-new-ap/",
+  "https://techcabal.com/2026/11/20/ex-banker-cherotich-rutto-tawi-fresh/",
+  "https://www.eu-startups.com/2026/11/uk-startup-clarity-sensors-receives-e2-2-million-nihr-award-to-make-advanced-medical-imaging-more-accessible/",
+  "https://yourstory.com/2026/11/india-ai-funding-nearly-doubles-jan-sept-2026-tracxn",
+  "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+  "https://yourstory.com/2026/11/ktaka-clears-pixxel-rs-350-cr-satellite-manufacturing-project",
+  "https://www.producthunt.com/products/qube-6",
+  "https://news.crunchbase.com/venture/telecom-bust-ai-startup-debt-boom-spreng-runway-growth/",
+  "https://www.eu-startups.com/2026/11/dutch-startup-gradyent-lands-e20-million-eib-loan-to-expand-digital-twin-technology-across-europes-heating-networks/",
+  "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/",
+  "https://yourstory.com/2026/11/6-must-read-indian-historical-fiction-books-to-explore",
+  "https://sifted.eu/articles/plural-fund-ai-podcast/",
+  "https://yourstory.com/2026/11/mha-warns-whatsapp-web-users-of-account-hijacking-advises-logging-out-after-every-session",
+  "https://news.crunchbase.com/venture/data-recruiting-job-hunting-hr-ai-startups-mercor/",
+  "https://www.eu-startups.com/2026/11/weekly-funding-round-up-all-of-the-european-startup-funding-rounds-we-tracked-this-week-nov-16-nov-20/",
+  "https://old.disruptafrica.com/2024/01/22/undp-launches-timbuktoo-financing-initiative-for-african-startups/",
+  "https://www.producthunt.com/products/tendeck",
   "https://www.eu-startups.com/2026/11/opinion-ai-will-favour-the-companies-built-for-ai-not-adapted-to-it/",
+  "https://sifted.eu/articles/25-biotech-startups-to-watch-according-to-vcs/",
+  "https://techcrunch.com/2026/11/18/spend-management-platform-payhawk-announces-280m-raise-2b-valuation/",
+  "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+  "https://techcrunch.com/2026/11/20/bending-spoons-buys-mailchimp-for-3-68-billion/",
+  "https://sifted.eu/articles/pre-seed-fintechs-to-watch/",
+  "https://www.eu-startups.com/2026/11/berkshire-hathaway-backed-bending-spoons-to-buy-mailchimp-for-e3-35-billion-announces-e1-18-billion-private-placement/",
   "https://www.wamda.com/2026/11/saudi-arabia-oori-partners-oumla-digitise-private-market-investments",
-  "https://www.eu-startups.com/2026/11/dutch-startup-gradyent-lands-e20-million-eib-loan-to-expand-digital-twin-technology-across-europes-heating-networks/"
+  "https://techcrunch.com/2026/11/17/stripe-backer-atomico-calls-for-europe-to-own-its-success-stories/",
+  "https://www.eu-startups.com/2026/11/bcomp-secures-e20-million-from-eib-to-scale-flax-fibre-based-alternatives-to-carbon-fibre-glass-fibre-and-plastics/",
+  "https://techcabal.com/2026/11/24/mtn-benin-customers-data/",
+  "https://sifted.eu/articles/acorda-pre-seed/",
+  "https://sifted.eu/articles/starlings-next-ceo/",
+  "https://www.eu-startups.com/2026/11/adyens-co-founder-pieter-van-der-does-to-retire-as-co-ceo-ingo-uytdehaage-to-become-sole-ceo/",
+  "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+  "https://www.eu-startups.com/2026/11/swiss-startup-coprod-raises-e5-45-million-to-solve-integration-hell-in-robotics-and-physical-ai-hardware/",
+  "https://www.eu-startups.com/2026/11/is-silicon-valley-turning-its-back-on-europe-plug-and-plays-thomas-bigagli-weighs-in/",
+  "https://www.producthunt.com/products/claude-code",
+  "https://sifted.eu/articles/sign-up-for-the-first-london-tech-chess-night-brnd/",
+  "https://www.producthunt.com/products/fompi",
+  "https://yourstory.com/2026/11/pidg-invests-117m-nepra-dry-waste-recycling-company",
+  "https://yourstory.com/2026/11/bill-gates-book-recommendations-2026",
+  "https://news.crunchbase.com/public/ipo/anthropic-prices-ipo-ant-above-range/",
+  "https://www.eu-startups.com/2026/11/amsterdams-good-heat-raises-e2-million-to-replace-industrial-gas-fired-steam-boilers-with-heat-batteries/",
+  "https://outpostracer.com",
+  "https://techcabal.com/2026/11/24/banks-card-raid-safaricom-airtel-talent/",
+  "https://yourstory.com/2026/11/lightsprintai-software-factory-pms-designers-engineers",
+  "https://www.producthunt.com/products/myclaw-3-0",
+  "https://www.eu-startups.com/2026/11/building-in-the-uk-key-changes-and-deadlines-founders-need-to-know/",
+  "https://old.disruptafrica.com/2024/01/23/announcing-the-5m-core-africa-innovation-fund-empowering-local-web3-builders/",
+  "https://techcrunch.com/2026/11/16/serena-williams-winds-down-her-vc-firm-launches-new-fund-targets-200m/",
+  "https://www.producthunt.com/products/sparrowdesk",
+  "https://yourstory.com/2026/11/far-eye-helps-reduce-flipkart-logistics-expenses-6-percent",
+  "https://yourstory.com/2026/11/gta-6-is-rated-17-what-indian-parents-should-know-before-letting-their-children-play",
+  "https://techcabal.com/2026/11/20/techcabal-daily-kuda-cuts-jobs-again/",
+  "https://old.disruptafrica.com/2024/01/20/third-episode-of-new-disrupt-podcast-series-shines-light-on-africas-ed-tech-space/",
+  "https://techcabal.com/2026/11/24/nigeria-data-protection-500000-jobs/",
+  "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+  "https://sifted.eu/articles/europes-sovereignty-debate-luxembourg-brnd/",
+  "https://onurgumus.github.io/zero-csharp/index.html",
+  "https://yourstory.com/2026/11/7-bryan-johnson-longevity-habits-anyone-can-afford"
  ],
- "newCount": 8,
- "studied": 29
+ "newCount": 5,
+ "studied": 31
 }
