@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-25T12:16:53Z",
- "checkedAt": "2026-11-25T12:16:53Z",
- "attemptedAt": "2026-11-25T12:16:53Z",
+ "checkedAt": "2026-11-25T17:36:43Z",
+ "attemptedAt": "2026-11-25T17:36:43Z",
  "spend": {
   "date": "2026-11-25",
   "usd": 0.0
@@ -303,22 +303,22 @@
    },
    "casa": {
     "generatedAt": "2026-11-25T12:16:53Z",
-    "checkedAt": "2026-11-25T12:16:53Z",
+    "checkedAt": "2026-11-25T17:36:43Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
-    "provider": "gemini",
-    "model": "gemini-3.6-flash",
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
+    "nuevas": 0,
     "descartadas": 1,
     "motivos": {
      "repetida": 0,
      "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado modelos de negocio probados de bajo coste en envasado gourmet de especias, talleres creativos/artísticos para eventos infantiles y servicios de diseño visual para agencias inmobiliarias, descartando opciones de alta inversión, cursos milagro y venta multinivel.",
+    "nota": "",
     "oportunidades_locales": [
      {
       "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
@@ -331,7 +331,7 @@
      {
       "id": "c56a8bf51",
       "fecha": "2026-11-25T12:16:53Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Kits de Plantillas y Talleres de 'Art Party' Infantil a Domicilio",
       "gancho": "Organiza experiencias artísticas guiadas y vende kits de pintura creativa para cumpleaños infantiles.",
       "que_es": "Diseñas talleres itinerantes de pintura para cumpleaños y comuniones donde los niños pintan sus propios lienzos o prendas con plantillas exclusivas. Complementas el negocio vendiendo kits empaquetados para regalar o pintar en familia.",
@@ -386,7 +386,7 @@
      {
       "id": "cb3e9563c",
       "fecha": "2026-11-25T12:16:53Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Servicio de Diseño Gráfico de Dossieres de Captación y Portafolios Exclusivos para Agentes Inmobiliarios",
       "gancho": "Diseña material gráfico de alto impacto para que agentes e inmobiliarias independientes capten inmuebles.",
       "que_es": "Ofreces a agentes inmobiliarios el diseño de sus dossieres de captación en exclusiva, guías para vendedores y fichas de inmuebles de lujo. Les entregas plantillas personalizadas y listas para imprimir o enviar en PDF a los propietarios.",
@@ -1110,8 +1110,8 @@
    "n": 0,
    "err": null,
    "filtro": {
-    "encontradas": 70,
-    "sin_relacion": 37,
+    "encontradas": 71,
+    "sin_relacion": 38,
     "directa": 7,
     "no_para_ti": 11,
     "cerradas": 15,
@@ -1120,7 +1120,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 26,
+   "n": 27,
    "err": null
   }
  },
