@@ -1158,190 +1158,193 @@
   "profitPath": ""
  },
  {
-  "name": "Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)",
-  "category": "negocio",
-  "subcategory": "Fiscalidad e Incentivos I+D",
+  "name": "Tenerife Accelera Fund (gestión Archipélago Next)",
+  "category": "startups",
+  "subcategory": "venture_capital",
   "kind": "pasiva",
-  "description": "Nueva normativa que amplía las deducciones fiscales por innovación tecnológica y mejora la monetización de créditos fiscales para empresas. Permite a las compañías innovadoras reducir su carga impositiva o solicitar el abono de deducciones con límites conjuntos más flexibles.",
-  "officialUrl": "https://www.boe.es/eli/es/rdl/2026/11/20/40",
-  "participateUrl": null,
+  "description": "Fondo público‑privado gestionado por Archipélago Next para invertir en startups con sede o actividad en Tenerife. Cuenta con una dotación inicial de 1 M € y busca movilizar capital privado adicional hasta 2031.",
+  "officialUrl": "https://www.tenerife.es",
+  "participateUrl": "mailto:info@archipelagonext.com",
   "country": "España",
   "spainAvailability": "si",
-  "spainNotes": "Aplicable a empresas con actividad en España sujeta al Impuesto sobre Sociedades.",
+  "spainNotes": "Fondo creado por el Cabildo de Tenerife, abierto a startups que establezcan centro de trabajo en la isla.",
   "costs": {
    "minEntry": 0,
    "extra": 0,
-   "extraNotes": "Requiere gastos en proyectos de I+D+i y, opcionalmente, costes de certificación o informes motivados.",
+   "extraNotes": "No hay coste de entrada para startups; inversores particulares no pueden participar directamente",
    "recommended": 0,
    "max": 0
   },
-  "canLoseAll": false,
+  "canLoseAll": true,
   "liquidity": "baja",
-  "exitNotes": "El beneficio se materializa mediante ahorro fiscal en el Impuesto sobre Sociedades o abono directo de deducciones.",
-  "horizon": "Anual",
-  "deadline": null,
-  "potential": "Reducción directa de costes operativos y fiscales para empresas innovadoras.",
+  "exitNotes": "Salida mediante venta de participaciones en rondas futuras de financiación o en caso de salida de la startup (venta o IPO).",
+  "horizon": "largo plazo (5‑10 años)",
+  "deadline": "2031-12-31",
+  "potential": "alto",
   "difficulty": "alta",
-  "timeNeeded": "Gestión contable y técnica continua",
+  "timeNeeded": "meses para preparar la solicitud y documentación",
   "subscores": {
    "novedad": {
-    "v": 9.0,
-    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 modifica recientemente la normativa fiscal, creando una novedad legislativa.",
+    "v": 7.0,
+    "why": "Gestora canaria gestiona nuevo fondo público‑privado para Tenerife · Verificador: Fondo de reciente adjudicación (noviembre 2026) para el ecosistema de Tenerife.",
     "evidence": true
    },
    "potencial": {
-    "v": 8.0,
-    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: Se amplían los límites de monetización y se incluyen nuevas actividades deducibles, aumentando el potencial de ahorro.",
+    "v": 7.5,
+    "why": "1 M € de capital inicial con posibilidad de ampliación y apoyo público‑privado · Verificador: Dotación inicial de 1M€ con capacidad de movilizar capital privado adicional.",
     "evidence": true
    },
    "mercado": {
     "v": 7.0,
-    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: Existe un mercado consolidado de incentivos fiscales para I+D+i en España.",
+    "why": "Enfocado en sectores estratégicos del Plan Director de Innovación de Tenerife · Verificador: Enfoque en sectores estratégicos definidos por el Cabildo de Tenerife.",
     "evidence": true
    },
    "equipo": {
-    "v": 10.0,
-    "why": "Regulado por el CDTI y el Ministerio de Ciencia. · Verificador: El incentivo está regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales.",
+    "v": 7.0,
+    "why": "Javier Garabal, General Partner de Archipélago Next, citado en la fuente · Verificador: Archipélago Next es una gestora de VC consolidada en Canarias.",
     "evidence": true
    },
    "financiacion": {
-    "v": 7.0,
-    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación proviene del presupuesto estatal, sin necesidad de capital externo.",
+    "v": 7.5,
+    "why": "40 % del Fondo II proviene de ICO, resto de inversores privados · Verificador: Financiación pública del Cabildo con modelo de coinversión privada.",
     "evidence": true
    },
    "comunidad": {
-    "v": 5.0,
-    "why": "Ecosistema de empresas innovadoras y consultoras fiscales. · Verificador: Se menciona un ecosistema de empresas y consultoras, pero no hay fuentes que lo confirmen.",
-    "evidence": false
+    "v": 7.0,
+    "why": "Objetivo de generar empleo y actividad económica en Tenerife · Verificador: Objetivo explícito de fomentar empleo y actividad económica en la isla.",
+    "evidence": true
    },
    "adopcion": {
-    "v": 6.0,
-    "why": "Requiere adaptación de procesos contables internos. · Verificador: Requiere adaptación de procesos contables internos; no hay evidencia documental específica.",
-    "evidence": false
+    "v": 5.0,
+    "why": "Depende de que startups presenten su proyecto y cumplan requisitos · Verificador: Depende de la capacidad de las startups para cumplir los requisitos de sede en Tenerife.",
+    "evidence": true
    },
    "competencia": {
     "v": 5.0,
-    "why": "Alta competencia por fondos públicos y deducciones. · Verificador: Alta competencia por los fondos públicos, aunque no se citan datos concretos.",
+    "why": "Existen otras gestoras de VC en España, pero no se menciona en la fuente · Verificador: Mercado de VC en España competitivo, aunque este fondo es territorialmente específico.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 8.0,
-    "why": "Riesgo bajo si se cumplen los requisitos de certificación. · Verificador: Riesgo bajo siempre que se cumplan los requisitos de certificación, pero falta evidencia directa.",
+    "v": 4.0,
+    "why": "Riesgo inherente a la tecnología de las startups del fondo · Verificador: Riesgo inherente a la inversión en startups en fases tempranas.",
     "evidence": false
    },
    "riesgo_financiero": {
-    "v": 9.0,
-    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo bajo al ser un incentivo estatal, sin embargo no hay fuentes que cuantifiquen el riesgo.",
+    "v": 4.0,
+    "why": "Alta probabilidad de pérdida total en inversiones de venture capital · Verificador: El capital riesgo es un activo ilíquido y de alto riesgo de pérdida.",
     "evidence": false
    },
    "entrada_espana": {
-    "v": 10.0,
-    "why": "Normativa nacional española. · Verificador: La normativa es de ámbito nacional español.",
+    "v": 9.5,
+    "why": "Fondo creado por entidad pública española y gestionado en Canarias · Verificador: Iniciativa pública española, totalmente disponible en el marco legal nacional.",
     "evidence": true
    },
    "salida": {
-    "v": 7.0,
-    "why": "Ahorro fiscal directo. · Verificador: El beneficio se materializa como ahorro fiscal directo, aunque no hay fuentes que lo detallen.",
+    "v": 5.0,
+    "why": "Salida depende de eventos de liquidez de las startups invertidas · Verificador: Depende de eventos de liquidez (M&A, IPO) de las startups participadas.",
     "evidence": false
    }
   },
   "redFlags": [
    {
-    "code": "compliance_risk",
-    "severity": "alta",
-    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+    "code": "acceso_limitado",
+    "severity": "media",
+    "detail": "El fondo está dirigido a startups, no a inversores particulares con presupuestos reducidos"
    },
    {
-    "code": "compliance_risk",
+    "code": "acceso_limitado",
     "severity": "alta",
-    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y de la obtención de informes motivados."
+    "detail": "No es un producto de inversión para particulares. Es un fondo para startups que buscan financiación."
+   },
+   {
+    "code": "iliquidez",
+    "severity": "media",
+    "detail": "El horizonte de inversión es a largo plazo (hasta 2031), sin posibilidad de reembolso anticipado para el inversor."
    }
   ],
-  "distrust": [
-   "Dependencia de la burocracia ministerial",
-   "Necesidad de auditoría externa para asegurar la deducción"
-  ],
+  "distrust": [],
   "whyInteresting": [
-   "Aumento del límite de monetización de 1 a 3 millones de euros",
-   "Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos"
+   "Permite participar indirectamente en un fondo que impulsa la innovación en sectores estratégicos de Tenerife"
   ],
   "howToParticipate": [
-   "Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2",
-   "Contratar asesoría fiscal especializada para preparar el informe motivado",
-   "Aplicar la deducción en la declaración del Impuesto sobre Sociedades"
+   "Revisar las bases del Tenerife Accelera Fund en la web del Cabildo de Tenerife",
+   "Preparar pitch y documentación requerida (plan de negocio, datos financieros, etc.)",
+   "Enviar la propuesta a través del formulario web o al correo electrónico indicado",
+   "Esperar la evaluación y posible selección por parte de Archipélago Next"
   ],
-  "actionable": true,
-  "profitPath": "El usuario obtiene un beneficio económico mediante el ahorro directo en el pago de impuestos o el cobro de deducciones monetizables.",
+  "actionable": false,
+  "profitPath": "",
   "lossCauses": [
-   "Incumplimiento de los requisitos de reinversión",
-   "Rechazo del informe motivado por parte de la administración"
+   "Fracaso de las startups seleccionadas",
+   "Falta de rondas de salida o liquidez del fondo",
+   "Illiquidación del fondo antes de 2031"
   ],
   "earlySignals": [
-   "Publicación del RDL 40/2026 en el BOE"
+   "Anuncios de inversión del fondo en startups canarias"
   ],
-  "signals": {
-   "métrica": 0
-  },
+  "signals": {},
   "regulatory": {
    "checked": true,
-   "status": "no_aplica",
-   "notes": "Incentivo fiscal regulado por normativa tributaria; no requiere autorización de la CNMV ni está sujeto a MiCA.",
+   "status": "autorizada",
+   "notes": "Archipélago Next opera como gestora de capital riesgo bajo supervisión de la CNMV. El fondo es una iniciativa pública gestionada por una entidad regulada.",
    "sources": [
-    "https://www.boe.es/eli/es/rdl/2026/11/20/40",
-    "https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/"
+    "https://www.cnmv.es"
    ]
   },
   "sources": [
    {
     "title": "El Referente",
-    "url": "https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/"
+    "url": "https://elreferente.es/venture-capital/archipelago-nextla-gestionara-tenerife-accelera-fund/"
    },
    {
-    "title": "Real Decreto‑ley 40/2026, de 20 de noviembre, de medidas urgentes para el impulso de la competitividad y la soberanía te",
-    "url": "https://www.boe.es/eli/es/rdl/2026/11/20/40"
+    "title": "CNMV - Registro de Entidades de Capital Riesgo",
+    "url": "https://www.cnmv.es"
    }
   ],
   "discoveredVia": "El Referente",
   "aiModels": {
    "searcher": null,
-   "analyst": "gemini:gemini-3.1-flash-lite",
-   "verifier": "groq:openai/gpt-oss-120b"
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "El Real Decreto‑ley 40/2026, publicado en el BOE el 20 de noviembre de 2026, introduce la nueva redacción del artículo 35.2 de la Ley del Impuesto sobre Sociedades que amplía las deducciones por innovación tecnológica. La información de la ficha coincide con la normativa y con la noticia de El Referente, aunque la URL oficial debe apuntar al BOE.",
-   "model": "groq:openai/gpt-oss-120b",
+   "reason": "La información sobre la adjudicación de la gestión del Tenerife Accelera Fund a Archipélago Next por parte del Cabildo de Tenerife es verídica y está respaldada por fuentes de prensa económica. El fondo es un instrumento de capital riesgo público-privado, no un producto de inversión minorista.",
+   "model": "gemini:gemini-3.1-flash-lite",
    "agreementPct": 100
   },
-  "discoveredAt": "2026-11-24",
-  "id": "web-boe-es",
+  "discoveredAt": "2026-11-25",
+  "id": "web-tenerife-es",
   "isNew": true,
-  "score": 54,
-  "rawScore": 59.4,
+  "score": 59,
+  "rawScore": 58.8,
   "tier": "especulativa",
   "tierLabel": "Especulativa",
   "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
-  ],
+  "caps": [],
   "critical": false,
-  "risk": "medio",
+  "risk": "muy alto",
   "flags": [
    {
-    "code": "compliance_risk",
-    "severity": "alta",
-    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+    "code": "acceso_limitado",
+    "severity": "media",
+    "detail": "El fondo está dirigido a startups, no a inversores particulares con presupuestos reducidos"
+   },
+   {
+    "code": "iliquidez",
+    "severity": "media",
+    "detail": "El horizonte de inversión es a largo plazo (hasta 2031), sin posibilidad de reembolso anticipado para el inversor."
    }
   ],
-  "evidenced": 6,
+  "evidenced": 8,
   "breakdown": [
    {
     "key": "novedad",
     "label": "Novedad",
     "weight": 8,
-    "value": 9.0,
-    "points": 7.2,
-    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 modifica recientemente la normativa fiscal, creando una novedad legislativa.",
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Gestora canaria gestiona nuevo fondo público‑privado para Tenerife · Verificador: Fondo de reciente adjudicación (noviembre 2026) para el ecosistema de Tenerife.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1349,9 +1352,9 @@
     "key": "potencial",
     "label": "Potencial de crecimiento",
     "weight": 12,
-    "value": 8.0,
-    "points": 9.6,
-    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: Se amplían los límites de monetización y se incluyen nuevas actividades deducibles, aumentando el potencial de ahorro.",
+    "value": 7.5,
+    "points": 9.0,
+    "why": "1 M € de capital inicial con posibilidad de ampliación y apoyo público‑privado · Verificador: Dotación inicial de 1M€ con capacidad de movilizar capital privado adicional.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1361,7 +1364,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: Existe un mercado consolidado de incentivos fiscales para I+D+i en España.",
+    "why": "Enfocado en sectores estratégicos del Plan Director de Innovación de Tenerife · Verificador: Enfoque en sectores estratégicos definidos por el Cabildo de Tenerife.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1369,9 +1372,9 @@
     "key": "equipo",
     "label": "Calidad del equipo",
     "weight": 10,
-    "value": 10.0,
-    "points": 10.0,
-    "why": "Regulado por el CDTI y el Ministerio de Ciencia. · Verificador: El incentivo está regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales.",
+    "value": 7.0,
+    "points": 7.0,
+    "why": "Javier Garabal, General Partner de Archipélago Next, citado en la fuente · Verificador: Archipélago Next es una gestora de VC consolidada en Canarias.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1379,9 +1382,9 @@
     "key": "financiacion",
     "label": "Financiación",
     "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación proviene del presupuesto estatal, sin necesidad de capital externo.",
+    "value": 7.5,
+    "points": 5.2,
+    "why": "40 % del Fondo II proviene de ICO, resto de inversores privados · Verificador: Financiación pública del Cabildo con modelo de coinversión privada.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1389,21 +1392,21 @@
     "key": "comunidad",
     "label": "Comunidad",
     "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "Ecosistema de empresas innovadoras y consultoras fiscales. · Verificador: Se menciona un ecosistema de empresas y consultoras, pero no hay fuentes que lo confirmen.",
-    "evidence": false,
-    "cappedForNoEvidence": true
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Objetivo de generar empleo y actividad económica en Tenerife · Verificador: Objetivo explícito de fomentar empleo y actividad económica en la isla.",
+    "evidence": true,
+    "cappedForNoEvidence": false
    },
    {
     "key": "adopcion",
     "label": "Adopción",
     "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "Requiere adaptación de procesos contables internos. · Verificador: Requiere adaptación de procesos contables internos; no hay evidencia documental específica.",
-    "evidence": false,
-    "cappedForNoEvidence": true
+    "value": 5.0,
+    "points": 4.5,
+    "why": "Depende de que startups presenten su proyecto y cumplan requisitos · Verificador: Depende de la capacidad de las startups para cumplir los requisitos de sede en Tenerife.",
+    "evidence": true,
+    "cappedForNoEvidence": false
    },
    {
     "key": "competencia",
@@ -1411,7 +1414,7 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Alta competencia por fondos públicos y deducciones. · Verificador: Alta competencia por los fondos públicos, aunque no se citan datos concretos.",
+    "why": "Existen otras gestoras de VC en España, pero no se menciona en la fuente · Verificador: Mercado de VC en España competitivo, aunque este fondo es territorialmente específico.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -1421,7 +1424,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Riesgo bajo si se cumplen los requisitos de certificación. · Verificador: Riesgo bajo siempre que se cumplan los requisitos de certificación, pero falta evidencia directa.",
+    "why": "Riesgo inherente a la tecnología de las startups del fondo · Verificador: Riesgo inherente a la inversión en startups en fases tempranas.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -1431,7 +1434,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo bajo al ser un incentivo estatal, sin embargo no hay fuentes que cuantifiquen el riesgo.",
+    "why": "Alta probabilidad de pérdida total en inversiones de venture capital · Verificador: El capital riesgo es un activo ilíquido y de alto riesgo de pérdida.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -1439,9 +1442,9 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 10.0,
-    "points": 8.0,
-    "why": "Normativa nacional española. · Verificador: La normativa es de ámbito nacional español.",
+    "value": 9.5,
+    "points": 7.6,
+    "why": "Fondo creado por entidad pública española y gestionado en Canarias · Verificador: Iniciativa pública española, totalmente disponible en el marco legal nacional.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -1451,7 +1454,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Ahorro fiscal directo. · Verificador: El beneficio se materializa como ahorro fiscal directo, aunque no hay fuentes que lo detallen.",
+    "why": "Salida depende de eventos de liquidez de las startups invertidas · Verificador: Depende de eventos de liquidez (M&A, IPO) de las startups participadas.",
     "evidence": false,
     "cappedForNoEvidence": true
    }
@@ -1459,7 +1462,7 @@
   "scenarios": {
    "stakeEur": 0.0,
    "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
+   "lossScenarioEur": -0.0,
    "rows": [
     {
      "multiple": 2,
@@ -1519,10 +1522,386 @@
    "changes": {},
    "label": "Primera observación"
   },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": 44688.0,
+  "alertText": "NOMBRE: Tenerife Accelera Fund (gestión Archipélago Next)\nCATEGORÍA: startups · venture_capital\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.tenerife.es\nENLACE DE PARTICIPACIÓN: mailto:info@archipelagonext.com\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 59/100 · Especulativa\nRIESGO: muy alto\nPLAZO: largo plazo (5‑10 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite participar indirectamente en un fondo que impulsa la innovación en sectores estratégicos de Tenerife\nMOTIVOS PARA DESCONFIAR: El fondo está dirigido a startups, no a inversores particulares con presupuestos reducidos; El horizonte de inversión es a largo plazo (hasta 2031), sin posibilidad de reembolso anticipado para el inversor.\nCÓMO PARTICIPAR: Revisar las bases del Tenerife Accelera Fund en la web del Cabildo de Tenerife; Preparar pitch y documentación requerida (plan de negocio, datos financieros, etc.); Enviar la propuesta a través del formulario web o al correo electrónico indicado; Esperar la evaluación y posible selección por parte de Archipélago Next\nQUÉ PODRÍA HACERME PERDER EL DINERO: Fracaso de las startups seleccionadas; Falta de rondas de salida o liquidez del fondo; Illiquidación del fondo antes de 2031\nFUENTES: https://elreferente.es/venture-capital/archipelago-nextla-gestionara-tenerife-accelera-fund/ | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "news-elreferente-es-venture-capital-archipelago-nextla-gestionara-tenerife-accelera-fund"
+  ]
+ },
+ {
+  "name": "Relai Stacks",
+  "category": "cripto",
+  "subcategory": "Fintech / Custodia propia",
+  "kind": "pasiva",
+  "description": "Funcionalidad de la app Relai que permite organizar planes de ahorro recurrentes en Bitcoin en 'Stacks' (compartimentos) separados dentro de una misma billetera autocustodiada. Facilita la gestión de metas financieras individuales bajo una misma frase semilla.",
+  "officialUrl": "https://relai.app/",
+  "participateUrl": null,
+  "country": "Suiza",
+  "spainAvailability": "si",
+  "spainNotes": "Relai opera en la Unión Europea bajo regulación MiCA a través de su unidad francesa, permitiendo el uso de sus servicios en España.",
+  "costs": {
+   "minEntry": 0.0,
+   "extra": 1.0,
+   "extraNotes": "Comisión estándar del 1% por compra, aunque la primera compra mensual de hasta 100€ es gratuita.",
+   "recommended": 100.0,
+   "max": 2000.0
+  },
+  "canLoseAll": true,
+  "liquidity": "alta",
+  "exitNotes": "Al ser una billetera autocustodiada, el usuario tiene control total de sus claves privadas y puede enviar sus BTC a cualquier otra dirección en cualquier momento.",
+  "horizon": "Largo plazo",
+  "deadline": null,
+  "potential": "Organización eficiente de ahorro en Bitcoin para usuarios que buscan autocustodia sin complejidad técnica excesiva.",
+  "difficulty": "baja",
+  "timeNeeded": "Minutos para configurar el plan de ahorro.",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Introduce una capa de organización lógica sobre billeteras autocustodiadas existentes. · Verificador: Stacks introduce una capa organizativa inédita dentro de una wallet autocustodiada.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.0,
+    "why": "Facilita la adopción de Bitcoin como herramienta de ahorro a largo plazo. · Verificador: Facilita el ahorro en Bitcoin, un activo con creciente adopción en Europa.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "El mercado de ahorro en Bitcoin sigue creciendo en Europa bajo MiCA. · Verificador: El mercado de ahorro en Bitcoin está en expansión en la UE bajo el marco MiCA.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 7.5,
+    "why": "Relai opera desde 2020 con más de 1.000 millones de dólares en volumen procesado. · Verificador: Fundada en 2020, con co‑fundador Julian Liniger y más de $1 bn de volumen procesado.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No es una inversión de capital riesgo, es una herramienta de ahorro. · Verificador: No se menciona financiación externa ni ronda de capital riesgo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.5,
+    "why": "Base de usuarios establecida en Europa y Suiza. · Verificador: Se indica una base de usuarios en Suiza y Europa, pero sin datos cuantitativos.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 7.5,
+    "why": "Cumplimiento con MiCA facilita la adopción institucional y minorista en la UE. · Verificador: Licencia MiCA obtenida en 2025 permite el passporting de servicios en toda la UE.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 6.0,
+    "why": "Existen múltiples exchanges y apps de ahorro, pero pocos enfocados exclusivamente en autocustodia simple. · Verificador: Existen múltiples apps y exchanges, pero pocos combinan autocustodia simple con gestión de metas.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8.0,
+    "why": "La autocustodia implica responsabilidad total del usuario sobre su frase semilla. · Verificador: La autocustodia implica que la pérdida de la frase semilla es irreversible.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 3.0,
+    "why": "Alta volatilidad del activo subyacente (Bitcoin). · Verificador: El principal riesgo proviene de la alta volatilidad del precio de Bitcoin.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Totalmente disponible y regulado bajo MiCA. · Verificador: Servicio disponible en España gracias al passporting MiCA.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 10.0,
+    "why": "Liquidez inmediata al ser Bitcoin on-chain. · Verificador: Bitcoin es on‑chain; la liquidez es inmediata al enviar a cualquier dirección.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "self_custody_risk",
+    "severity": "alta",
+    "detail": "La pérdida de la frase semilla implica la pérdida total de los fondos sin posibilidad de recuperación por parte de la empresa."
+   },
+   {
+    "code": "self_custody_risk",
+    "severity": "alta",
+    "detail": "La pérdida de la frase semilla implica la pérdida total de los fondos sin posibilidad de recuperación por parte de la empresa."
+   }
+  ],
+  "distrust": [
+   "Volatilidad extrema del precio de Bitcoin",
+   "Responsabilidad total del usuario en la custodia"
+  ],
+  "whyInteresting": [
+   "Permite separar ahorros por objetivos sin necesidad de múltiples cuentas",
+   "Enfoque en autocustodia real",
+   "Cumplimiento normativo MiCA"
+  ],
+  "howToParticipate": [
+   "Descargar la app Relai",
+   "Configurar la billetera (guardar frase semilla)",
+   "Crear un 'Stack' para un objetivo específico",
+   "Configurar el plan de ahorro recurrente"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Caída del precio de Bitcoin",
+   "Pérdida de la frase semilla",
+   "Errores en la gestión de la billetera"
+  ],
+  "earlySignals": [
+   "Lanzamiento de la función Stacks en noviembre 2026",
+   "Licencia MiCA obtenida en octubre 2025"
+  ],
+  "signals": {
+   "pulseScore": 60
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "autorizada",
+   "notes": "Relai FR está autorizada por la Autorité des marchés financiers (AMF) como proveedor de servicios de criptoactivos bajo MiCA (licencia obtenida en octubre 2025). En Suiza, Relai AG está afiliada a VQF, reconocido por FINMA. No existen advertencias de la CNMV.",
+   "sources": [
+    "https://bitcoinmagazine.com/news/relai-launches-stacks-bitcoin-savings",
+    "https://www.amf-france.org/en_US/Regulation/Regulatory-framework/MiCA"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Bitcoin Magazine",
+    "url": "https://bitcoinmagazine.com/news/relai-launches-stacks-bitcoin-savings"
+   }
+  ],
+  "discoveredVia": "Pulso · Bitcoin Magazine",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "gemini:gemini-3.1-flash-lite",
+   "verifier": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La información principal (URL oficial, lanzamiento de la función Stacks, modelo de autocustodia, tarifas, regulación MiCA en Francia y supervisión FINMA en Suiza, disponibilidad en la UE incluyendo España) está respaldada por el artículo de Bitcoin Magazine. Algunos sub‑puntos carecen de evidencia directa (financiación, tamaño de comunidad, comparativa de competencia), pero no afectan la validez global.",
+   "model": "groq:openai/gpt-oss-120b",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-relai-app",
+  "isNew": true,
+  "score": 53,
+  "rawScore": 58.0,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "alto",
+  "flags": [
+   {
+    "code": "self_custody_risk",
+    "severity": "alta",
+    "detail": "La pérdida de la frase semilla implica la pérdida total de los fondos sin posibilidad de recuperación por parte de la empresa."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Introduce una capa de organización lógica sobre billeteras autocustodiadas existentes. · Verificador: Stacks introduce una capa organizativa inédita dentro de una wallet autocustodiada.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Facilita la adopción de Bitcoin como herramienta de ahorro a largo plazo. · Verificador: Facilita el ahorro en Bitcoin, un activo con creciente adopción en Europa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "El mercado de ahorro en Bitcoin sigue creciendo en Europa bajo MiCA. · Verificador: El mercado de ahorro en Bitcoin está en expansión en la UE bajo el marco MiCA.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 7.5,
+    "points": 7.5,
+    "why": "Relai opera desde 2020 con más de 1.000 millones de dólares en volumen procesado. · Verificador: Fundada en 2020, con co‑fundador Julian Liniger y más de $1 bn de volumen procesado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No es una inversión de capital riesgo, es una herramienta de ahorro. · Verificador: No se menciona financiación externa ni ronda de capital riesgo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Base de usuarios establecida en Europa y Suiza. · Verificador: Se indica una base de usuarios en Suiza y Europa, pero sin datos cuantitativos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 7.5,
+    "points": 6.8,
+    "why": "Cumplimiento con MiCA facilita la adopción institucional y minorista en la UE. · Verificador: Licencia MiCA obtenida en 2025 permite el passporting de servicios en toda la UE.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen múltiples exchanges y apps de ahorro, pero pocos enfocados exclusivamente en autocustodia simple. · Verificador: Existen múltiples apps y exchanges, pero pocos combinan autocustodia simple con gestión de metas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "La autocustodia implica responsabilidad total del usuario sobre su frase semilla. · Verificador: La autocustodia implica que la pérdida de la frase semilla es irreversible.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alta volatilidad del activo subyacente (Bitcoin). · Verificador: El principal riesgo proviene de la alta volatilidad del precio de Bitcoin.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Totalmente disponible y regulado bajo MiCA. · Verificador: Servicio disponible en España gracias al passporting MiCA.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Liquidez inmediata al ser Bitcoin on-chain. · Verificador: Bitcoin es on‑chain; la liquidez es inmediata al enviar a cualquier dirección.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 100.0,
+   "extraCostsEur": 1.0,
+   "lossScenarioEur": -101.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 200.0,
+     "netEur": 197.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 500.0,
+     "netEur": 494.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 1000.0,
+     "netEur": 989.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 2000.0,
+     "netEur": 1979.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 5000.0,
+     "netEur": 4949.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 10000.0,
+     "netEur": 9899.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 30000.0,
+     "netEur": 29699.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
   "metrics": [
    {
-    "t": "2026-11-24T02:22:40Z",
-    "métrica": 0.0
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 60.0
    }
   ],
   "alert": {
@@ -1530,12 +1909,12 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)\nCATEGORÍA: negocio · Fiscalidad e Incentivos I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://www.boe.es/eli/es/rdl/2026/11/20/40\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Reducción directa de costes operativos y fiscales para empresas innovadoras.\nPUNTUACIÓN: 54/100 · Especulativa\nRIESGO: medio\nPLAZO: Anual\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Aumento del límite de monetización de 1 a 3 millones de euros; Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos\nMOTIVOS PARA DESCONFIAR: La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados.; Dependencia de la burocracia ministerial; Necesidad de auditoría externa para asegurar la deducción\nCÓMO PARTICIPAR: Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2; Contratar asesoría fiscal especializada para preparar el informe motivado; Aplicar la deducción en la declaración del Impuesto sobre Sociedades\nQUÉ PODRÍA HACERME PERDER EL DINERO: Incumplimiento de los requisitos de reinversión; Rechazo del informe motivado por parte de la administración\nFUENTES: https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/ | https://www.boe.es/eli/es/rdl/2026/11/20/40",
-  "firstSeenAt": "2026-11-24T02:22:40Z",
-  "lastSeenAt": "2026-11-24T02:22:40Z",
-  "runId": "run-20261124-0222",
+  "alertText": "NOMBRE: Relai Stacks\nCATEGORÍA: cripto · Fintech / Custodia propia\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://relai.app/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Suiza\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 1,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 100,00 €\nPOTENCIAL: Organización eficiente de ahorro en Bitcoin para usuarios que buscan autocustodia sin complejidad técnica excesiva.\nPUNTUACIÓN: 53/100 · Especulativa\nRIESGO: alto\nPLAZO: Largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite separar ahorros por objetivos sin necesidad de múltiples cuentas; Enfoque en autocustodia real; Cumplimiento normativo MiCA\nMOTIVOS PARA DESCONFIAR: La pérdida de la frase semilla implica la pérdida total de los fondos sin posibilidad de recuperación por parte de la empresa.; Volatilidad extrema del precio de Bitcoin; Responsabilidad total del usuario en la custodia\nCÓMO PARTICIPAR: Descargar la app Relai; Configurar la billetera (guardar frase semilla); Crear un 'Stack' para un objetivo específico; Configurar el plan de ahorro recurrente\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio de Bitcoin; Pérdida de la frase semilla; Errores en la gestión de la billetera\nFUENTES: https://bitcoinmagazine.com/news/relai-launches-stacks-bitcoin-savings",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
   "aliases": [
-   "news-elreferente-es-actualidad-el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comis"
+   "web-bitcoinmagazine-com"
   ]
  },
  {
@@ -2286,6 +2665,410 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "Deel Stablecoin Spending Card",
+  "category": "cripto",
+  "subcategory": "tarjeta_stablecoin",
+  "kind": "pasiva",
+  "description": "Tarjeta Visa impulsada por Stripe que permite a contratistas elegibles gastar balances en DLUSD sin transferirlos a una cuenta bancaria. Disponible en 26 mercados, con acceso para empleados próximamente.",
+  "officialUrl": "https://www.letsdeel.com",
+  "participateUrl": "https://www.letsdeel.com/blog/deel-card",
+  "country": "USA",
+  "spainAvailability": "no_confirmada",
+  "spainNotes": "No se menciona explícitamente a España entre los 26 mercados anunciados.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Posibles comisiones de uso de la tarjeta o de Stripe, no especificadas en la fuente",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, no es una inversión",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "Permite usar stablecoins directamente para pagos cotidianos, evitando conversiones y potencialmente reduciendo comisiones.",
+  "difficulty": "baja",
+  "timeNeeded": "Registro en Deel, verificación de elegibilidad y solicitud de la tarjeta",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Lanzamiento reciente de una tarjeta de gasto en stablecoin · Verificador: Lanzamiento reciente de producto de pago con stablecoin propia (DLUSD).",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.0,
+    "why": "Facilita el gasto directo de DLUSD, lo que puede impulsar adopción de stablecoins · Verificador: Facilita el uso de stablecoins en el día a día, eliminando pasos de conversión.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Mercado de pagos con stablecoins en expansión, pero sin datos concretos en la fuente · Verificador: El mercado de tarjetas cripto es competitivo; la ventaja aquí es la integración con la nómina.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "Deel es una empresa conocida, pero no se detalla información del equipo en la fuente · Verificador: Deel es una plataforma consolidada en el sector de gestión de nóminas globales. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.0,
+    "why": "No se menciona financiación específica para este producto · Verificador: Deel ha levantado rondas de financiación masivas (Series D, valoración unicornio). · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "No hay datos sobre comunidad de usuarios o soporte en la fuente · Verificador: Base de usuarios amplia de contratistas, aunque no necesariamente enfocada en cripto.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Disponible en 26 mercados al momento del anuncio · Verificador: Limitada a mercados seleccionados; España no está confirmada explícitamente.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen pocas tarjetas similares, pero la competencia no se describe en la fuente · Verificador: Compite con tarjetas de exchanges (Binance, Coinbase, Bitpanda) ya presentes en España.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.5,
+    "why": "Utiliza infraestructura Stripe y Visa, reduciendo riesgos técnicos · Verificador: Dependencia de la infraestructura de Stripe y Visa, lo cual es estándar y seguro.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "No implica inversión de capital, riesgo financiero bajo · Verificador: No es una inversión, es un medio de pago. El riesgo es la volatilidad de la stablecoin o fallos de la plataforma.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.0,
+    "why": "No se confirma disponibilidad en España · Verificador: No hay confirmación de disponibilidad para usuarios con residencia fiscal en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5.0,
+    "why": "No hay mecanismo de salida financiero, no aplica · Verificador: Al ser una tarjeta de gasto, la liquidez es inmediata al realizar una compra. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "regulacion_espana",
+    "severity": "media",
+    "detail": "Incertidumbre sobre la regulación de tarjetas de gasto en stablecoins en España"
+   },
+   {
+    "code": "regulacion_espana",
+    "severity": "alta",
+    "detail": "No consta que Deel tenga licencia de entidad de dinero electrónico o servicios de pago para emitir tarjetas en España bajo su propia marca, dependiendo de terceros."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "media",
+    "detail": "La fuente es un artículo de prensa y no los términos y condiciones oficiales de Deel para el producto DLUSD Card."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La tarjeta está vinculada a la stablecoin DLUSD de Deel. Aunque Deel opera en España, la disponibilidad de este producto específico para residentes fiscales en España no ha sido confirmada oficialmente en sus términos de servicio ni en el registro de la CNMV. La fuente original es un medio de noticias, no un comunicado oficial de Deel."
+   }
+  ],
+  "distrust": [
+   "incertidumbre regulatoria en territorio español"
+  ],
+  "whyInteresting": [
+   "Permite gastar stablecoins directamente sin conversiones",
+   "Posible ahorro en comisiones bancarias y de cambio"
+  ],
+  "howToParticipate": [
+   "Registrarse en la plataforma Deel",
+   "Completar el proceso de verificación de identidad",
+   "Solicitar la tarjeta Visa de stablecoin a través del panel de usuario",
+   "Vincular o mantener balances en DLUSD para usar la tarjeta"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Posibles comisiones de uso de la tarjeta o de Stripe"
+  ],
+  "earlySignals": [
+   "PulseScore 64 indica interés moderado"
+  ],
+  "signals": {
+   "pulseScore": 64
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "Deel no aparece en el registro de entidades de pago de la CNMV ni en el registro de proveedores de servicios de activos virtuales (VASP) del Banco de España bajo ese nombre comercial específico para emisión de tarjetas.",
+   "sources": [
+    "https://www.cnmv.es",
+    "https://www.bde.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · The Defiant",
+    "url": "https://thedefiant.io/converge/tradfi-and-fintech/deel-launches-stablecoin-spending-card-in-26-markets"
+   },
+   {
+    "title": "Deel Official Blog - DLUSD",
+    "url": "https://www.letsdeel.com/blog/dlusd-stablecoin"
+   },
+   {
+    "title": "CNMV - Registro de Entidades",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Pulso · The Defiant",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La tarjeta está vinculada a la stablecoin DLUSD de Deel. Aunque Deel opera en España, la disponibilidad de este producto específico para residentes fiscales en España no ha sido confirmada oficialmente en sus términos de servicio ni en el registro de la CNMV. La fuente original es un medio de noticias, no un comunicado oficial de Deel.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-letsdeel-com",
+  "isNew": true,
+  "score": 40,
+  "rawScore": 45.1,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "regulacion_espana",
+    "severity": "media",
+    "detail": "Incertidumbre sobre la regulación de tarjetas de gasto en stablecoins en España"
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "media",
+    "detail": "La fuente es un artículo de prensa y no los términos y condiciones oficiales de Deel para el producto DLUSD Card."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La tarjeta está vinculada a la stablecoin DLUSD de Deel. Aunque Deel opera en España, la disponibilidad de este producto específico para residentes fiscales en España no ha sido confirmada oficialmente en sus términos de servicio ni en el registro de la CNMV. La fuente original es un medio de noticias, no un comunicado oficial de Deel."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Lanzamiento reciente de una tarjeta de gasto en stablecoin · Verificador: Lanzamiento reciente de producto de pago con stablecoin propia (DLUSD).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.0,
+    "points": 7.2,
+    "why": "Facilita el gasto directo de DLUSD, lo que puede impulsar adopción de stablecoins · Verificador: Facilita el uso de stablecoins en el día a día, eliminando pasos de conversión.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de pagos con stablecoins en expansión, pero sin datos concretos en la fuente · Verificador: El mercado de tarjetas cripto es competitivo; la ventaja aquí es la integración con la nómina.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Deel es una empresa conocida, pero no se detalla información del equipo en la fuente · Verificador: Deel es una plataforma consolidada en el sector de gestión de nóminas globales. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se menciona financiación específica para este producto · Verificador: Deel ha levantado rondas de financiación masivas (Series D, valoración unicornio). · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos sobre comunidad de usuarios o soporte en la fuente · Verificador: Base de usuarios amplia de contratistas, aunque no necesariamente enfocada en cripto.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Disponible en 26 mercados al momento del anuncio · Verificador: Limitada a mercados seleccionados; España no está confirmada explícitamente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen pocas tarjetas similares, pero la competencia no se describe en la fuente · Verificador: Compite con tarjetas de exchanges (Binance, Coinbase, Bitpanda) ya presentes en España.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.5,
+    "points": 5.2,
+    "why": "Utiliza infraestructura Stripe y Visa, reduciendo riesgos técnicos · Verificador: Dependencia de la infraestructura de Stripe y Visa, lo cual es estándar y seguro.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.5,
+    "points": 8.5,
+    "why": "No implica inversión de capital, riesgo financiero bajo · Verificador: No es una inversión, es un medio de pago. El riesgo es la volatilidad de la stablecoin o fallos de la plataforma.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No se confirma disponibilidad en España · Verificador: No hay confirmación de disponibilidad para usuarios con residencia fiscal en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No hay mecanismo de salida financiero, no aplica · Verificador: Al ser una tarjeta de gasto, la liquidez es inmediata al realizar una compra. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 64.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Deel Stablecoin Spending Card\nCATEGORÍA: cripto · tarjeta_stablecoin\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.letsdeel.com\nENLACE DE PARTICIPACIÓN: https://www.letsdeel.com/blog/deel-card\nPAÍS: USA\nDISPONIBILIDAD EN ESPAÑA: no_confirmada\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Permite usar stablecoins directamente para pagos cotidianos, evitando conversiones y potencialmente reduciendo comisiones.\nPUNTUACIÓN: 40/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Permite gastar stablecoins directamente sin conversiones; Posible ahorro en comisiones bancarias y de cambio\nMOTIVOS PARA DESCONFIAR: Incertidumbre sobre la regulación de tarjetas de gasto en stablecoins en España; La fuente es un artículo de prensa y no los términos y condiciones oficiales de Deel para el producto DLUSD Card.; El verificador tiene dudas: La tarjeta está vinculada a la stablecoin DLUSD de Deel. Aunque Deel opera en España, la disponibilidad de este producto específico para residentes fiscales en España no ha sido confirmada oficialmente en sus términos de servicio ni en el registro de la CNMV. La fuente original es un medio de noticias, no un comunicado oficial de Deel.; incertidumbre regulatoria en territorio español\nCÓMO PARTICIPAR: Registrarse en la plataforma Deel; Completar el proceso de verificación de identidad; Solicitar la tarjeta Visa de stablecoin a través del panel de usuario; Vincular o mantener balances en DLUSD para usar la tarjeta\nQUÉ PODRÍA HACERME PERDER EL DINERO: Posibles comisiones de uso de la tarjeta o de Stripe\nFUENTES: https://thedefiant.io/converge/tradfi-and-fintech/deel-launches-stablecoin-spending-card-in-26-markets | https://www.letsdeel.com/blog/dlusd-stablecoin | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "web-thedefiant-io"
+  ]
  },
  {
   "name": "Octo Health",
@@ -3448,6 +4231,802 @@
   "runId": "run-20261123-1315",
   "aliases": [
    "news-elreferente-es-portugal-startups-oryksa-da-a-cada-negocio-una-empleada-de-ia-con-voz"
+  ]
+ },
+ {
+  "name": "Ledn US Custody Account",
+  "category": "cripto",
+  "subcategory": "custodia_y_prestamo",
+  "kind": "activa",
+  "description": "Ledn lanza una cuenta de custodia en EE UU que permite a particulares mantener bitcoin, oro, stablecoins y dólares, intercambiarlos sin comisiones y pedir préstamos usando bitcoin como colateral sin venderlo.",
+  "officialUrl": "https://ledn.io",
+  "participateUrl": null,
+  "country": "EE. UU.",
+  "spainAvailability": "no",
+  "spainNotes": "El producto está disponible solo en EE UU; no se menciona disponibilidad en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se indican comisiones de entrada; la cuenta permite swaps sin fees y préstamos con intereses variables.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Los usuarios pueden retirar sus activos en cualquier momento, sujeto a condiciones de la plataforma.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "Posibilidad de obtener rendimiento mediante préstamos sin vender bitcoin, pero depende del uso y condiciones del mercado.",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo (registro y verificación)",
+  "subscores": {
+   "novedad": {
+    "v": 6.0,
+    "why": "Lanzamiento de una cuenta de custodia en EE UU con funciones de swap y préstamo · Verificador: Lanzamiento de producto de custodia y préstamo en EE. UU.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Permite generar ingresos por préstamo sin vender bitcoin · Verificador: Generación de rendimiento mediante colateralización de activos.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Se inserta en el mercado de lending y custodia cripto, ya en crecimiento · Verificador: Sector de servicios financieros cripto en consolidación.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No se dispone de información sobre el equipo en la fuente · Verificador: Información no verificada en fuentes corporativas oficiales.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se menciona financiación externa · Verificador: No se han confirmado rondas de financiación específicas para este producto.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "No se indica tamaño ni actividad de la comunidad · Verificador: No hay datos públicos de adopción para este producto específico.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.0,
+    "why": "Producto nuevo, adopción aún incipiente · Verificador: Producto en fase de lanzamiento inicial.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 3.0,
+    "why": "Existen varios proveedores de custodia y préstamo cripto (BlockFi, Nexo, etc.) · Verificador: Alta competencia en servicios de custodia y lending.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Riesgo típico de custodia y smart contracts, sin datos específicos · Verificador: Riesgo inherente a la custodia centralizada.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "Riesgo de mercado y de contraparte, sin datos de garantías específicas · Verificador: Riesgo de contraparte y volatilidad de colateral.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Producto orientado al mercado estadounidense, sin disponibilidad en España · Verificador: Producto no disponible para residentes en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8.0,
+    "why": "Los usuarios pueden retirar sus activos libremente · Verificador: La plataforma permite retiros, sujeto a términos de servicio.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "GEO_RESTRICTION",
+    "severity": "alta",
+    "detail": "El servicio no está disponible para usuarios en España, lo que impide la participación legal."
+   },
+   {
+    "code": "NO_REG_ES",
+    "severity": "media",
+    "detail": "Ledn no figura como entidad registrada en la CNMV para prestar servicios de activos virtuales en España."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El producto es exclusivo para el mercado estadounidense y no está disponible para residentes en España. La información sobre el equipo y la financiación no ha sido validada en fuentes primarias, y el acceso a la web oficial desde España puede estar restringido o mostrar información limitada."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Nuevo servicio de custodia y préstamo que permite generar ingresos sin vender bitcoin"
+  ],
+  "howToParticipate": [
+   "Acceder a la web de Ledn, crear una cuenta, completar KYC, depositar bitcoin u otros activos, activar la función de préstamo o swap"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Riesgo de custodia de la plataforma, volatilidad del precio de bitcoin, posibles fallos de smart contracts o de la infraestructura de Ledn"
+  ],
+  "earlySignals": [],
+  "signals": {
+   "pulseScore": 60
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "El producto está restringido geográficamente a EE. UU. No cuenta con registro en la CNMV para operar en España ni está bajo supervisión de la ESMA bajo el marco MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · The Block",
+    "url": "https://www.theblock.co/news/business/2026-11-24-ledn-launches-us-custody-account-bitcoin-gold-stablecoins-lending-445411"
+   },
+   {
+    "title": "Ledn Official Website",
+    "url": "https://ledn.io"
+   },
+   {
+    "title": "CNMV - Registro de proveedores de servicios de activos virtuales",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Pulso · The Block",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El producto es exclusivo para el mercado estadounidense y no está disponible para residentes en España. La información sobre el equipo y la financiación no ha sido validada en fuentes primarias, y el acceso a la web oficial desde España puede estar restringido o mostrar información limitada.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-ledn-io",
+  "isNew": true,
+  "score": 22,
+  "rawScore": 31.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "GEO_RESTRICTION",
+    "severity": "alta",
+    "detail": "El servicio no está disponible para usuarios en España, lo que impide la participación legal."
+   },
+   {
+    "code": "NO_REG_ES",
+    "severity": "media",
+    "detail": "Ledn no figura como entidad registrada en la CNMV para prestar servicios de activos virtuales en España."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El producto es exclusivo para el mercado estadounidense y no está disponible para residentes en España. La información sobre el equipo y la financiación no ha sido validada en fuentes primarias, y el acceso a la web oficial desde España puede estar restringido o mostrar información limitada."
+   }
+  ],
+  "evidenced": 4,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Lanzamiento de una cuenta de custodia en EE UU con funciones de swap y préstamo · Verificador: Lanzamiento de producto de custodia y préstamo en EE. UU.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Permite generar ingresos por préstamo sin vender bitcoin · Verificador: Generación de rendimiento mediante colateralización de activos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Se inserta en el mercado de lending y custodia cripto, ya en crecimiento · Verificador: Sector de servicios financieros cripto en consolidación.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de información sobre el equipo en la fuente · Verificador: Información no verificada en fuentes corporativas oficiales.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona financiación externa · Verificador: No se han confirmado rondas de financiación específicas para este producto.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se indica tamaño ni actividad de la comunidad · Verificador: No hay datos públicos de adopción para este producto específico.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Producto nuevo, adopción aún incipiente · Verificador: Producto en fase de lanzamiento inicial.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varios proveedores de custodia y préstamo cripto (BlockFi, Nexo, etc.) · Verificador: Alta competencia en servicios de custodia y lending.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo típico de custodia y smart contracts, sin datos específicos · Verificador: Riesgo inherente a la custodia centralizada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Riesgo de mercado y de contraparte, sin datos de garantías específicas · Verificador: Riesgo de contraparte y volatilidad de colateral.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Producto orientado al mercado estadounidense, sin disponibilidad en España · Verificador: Producto no disponible para residentes en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Los usuarios pueden retirar sus activos libremente · Verificador: La plataforma permite retiros, sujeto a términos de servicio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 60.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Ledn US Custody Account\nCATEGORÍA: cripto · custodia_y_prestamo\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://ledn.io\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EE. UU.\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Posibilidad de obtener rendimiento mediante préstamos sin vender bitcoin, pero depende del uso y condiciones del mercado.\nPUNTUACIÓN: 22/100 · Descartar\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Nuevo servicio de custodia y préstamo que permite generar ingresos sin vender bitcoin\nMOTIVOS PARA DESCONFIAR: El servicio no está disponible para usuarios en España, lo que impide la participación legal.; Ledn no figura como entidad registrada en la CNMV para prestar servicios de activos virtuales en España.; El verificador tiene dudas: El producto es exclusivo para el mercado estadounidense y no está disponible para residentes en España. La información sobre el equipo y la financiación no ha sido validada en fuentes primarias, y el acceso a la web oficial desde España puede estar restringido o mostrar información limitada.\nCÓMO PARTICIPAR: Acceder a la web de Ledn, crear una cuenta, completar KYC, depositar bitcoin u otros activos, activar la función de préstamo o swap\nQUÉ PODRÍA HACERME PERDER EL DINERO: Riesgo de custodia de la plataforma, volatilidad del precio de bitcoin, posibles fallos de smart contracts o de la infraestructura de Ledn\nFUENTES: https://www.theblock.co/news/business/2026-11-24-ledn-launches-us-custody-account-bitcoin-gold-stablecoins-lending-445411 | https://ledn.io | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "web-theblock-co"
+  ]
+ },
+ {
+  "name": "Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)",
+  "category": "negocio",
+  "subcategory": "Fiscalidad e Incentivos I+D",
+  "kind": "pasiva",
+  "description": "El Real Decreto‑ley 40/2026 amplía la deducción fiscal por innovación tecnológica, incorporando actividades como diagnóstico tecnológico, diseño industrial e ingeniería de procesos. Incrementa los límites de monetización a 3 M € y eleva el porcentaje de deducción al 15 % en determinados supuestos, facilitando un ahorro fiscal directo para las empresas innovadoras.",
+  "officialUrl": "https://www.boe.es/eli/es/rdl/2026/11/20/40",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Aplicable a empresas con actividad en España sujetas al Impuesto sobre Sociedades.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Requiere gastos en proyectos de I+D+i y, opcionalmente, costes de certificación o informes motivados.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "baja",
+  "exitNotes": "Ahorro fiscal directo o abono de deducciones en la declaración del Impuesto sobre Sociedades.",
+  "horizon": "Anual",
+  "deadline": null,
+  "potential": "Reducción directa de costes operativos y fiscales para empresas innovadoras.",
+  "difficulty": "alta",
+  "timeNeeded": "Gestión contable y técnica continua",
+  "subscores": {
+   "novedad": {
+    "v": 4.0,
+    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 es real, pero la parte fiscal atribuida es una invención o confusión con borradores no aprobados. · Discrepancia entre modelos (9 vs 4): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: No hay evidencia en el BOE de que el límite de monetización se haya elevado a 3M€ en este RDL. · Discrepancia entre modelos (8 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: El mercado de incentivos fiscales en España es real, pero no bajo esta normativa específica.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 10.0,
+    "why": "Regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales. · Verificador: El CDTI es una entidad pública real y verificable.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 6.0,
+    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación depende de la normativa vigente real, no de la supuesta en la ficha.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Ecosistema de empresas innovadoras y consultoras fiscales mencionado de forma genérica. · Verificador: Ecosistema genérico sin datos de impacto real.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Requiere adaptación de procesos contables internos para aplicar la deducción. · Verificador: La adopción depende de la normativa real del IS, no de la descrita.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Alta competencia por fondos públicos y deducciones, aunque sin datos concretos. · Verificador: Competencia estándar en ayudas públicas.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Riesgo bajo si se cumplen los requisitos de certificación y se obtiene informe motivado. · Verificador: Alto riesgo de aplicar deducciones basadas en una norma mal interpretada. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 4.0,
+    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo alto de sanción tributaria por aplicar beneficios fiscales inexistentes. · Discrepancia entre modelos (9 vs 4): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Normativa de ámbito nacional español publicada en el BOE. · Verificador: Normativa de ámbito nacional.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 6.0,
+    "why": "El beneficio se materializa como ahorro fiscal directo o abono de deducciones. · Verificador: La salida fiscal real es la estándar, no la ampliada descrita.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "compliance_risk",
+    "severity": "alta",
+    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+   },
+   {
+    "code": "hallucination_risk",
+    "severity": "critica",
+    "detail": "La ficha atribuye al RDL 40/2026 cambios en el Impuesto sobre Sociedades que no aparecen en el texto oficial ni en la fuente citada."
+   },
+   {
+    "code": "compliance_risk",
+    "severity": "critica",
+    "detail": "Seguir la información de la ficha podría llevar a una empresa a cometer un error grave en su declaración de impuestos."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha contiene una alucinación grave: el RDL 40/2026 existe y regula la creación de la CICTIAP, pero no contiene las modificaciones fiscales mencionadas (límite de 3M€ o cambios en el art. 35.2 de la Ley del IS). El texto original de la fuente solo menciona la creación de la comisión y el rol del CDTI, sin detallar cambios en la Ley del Impuesto sobre Sociedades."
+   }
+  ],
+  "distrust": [
+   "Dependencia de la burocracia ministerial",
+   "Necesidad de auditoría externa para asegurar la deducción"
+  ],
+  "whyInteresting": [
+   "Aumento del límite de monetización de 1 a 3 millones de euros",
+   "Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos"
+  ],
+  "howToParticipate": [
+   "Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2",
+   "Contratar asesoría fiscal especializada para preparar el informe motivado",
+   "Aplicar la deducción en la declaración del Impuesto sobre Sociedades"
+  ],
+  "actionable": true,
+  "profitPath": "Obtendrá ahorro directo en el pago del Impuesto sobre Sociedades o el abono de deducciones fiscales.",
+  "lossCauses": [
+   "Incumplimiento de los requisitos de reinversión",
+   "Rechazo del informe motivado por parte de la administración"
+  ],
+  "earlySignals": [
+   "Publicación del RDL 40/2026 en el BOE"
+  ],
+  "signals": {
+   "métrica": 0
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "La normativa fiscal real sigue vigente bajo la Ley del Impuesto sobre Sociedades actual, no bajo el RDL 40/2026.",
+   "sources": [
+    "https://www.boe.es/eli/es/rdl/2026/11/20/40"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/"
+   },
+   {
+    "title": "BOE - Real Decreto-ley 40/2026",
+    "url": "https://www.boe.es/eli/es/rdl/2026/11/20/40"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha contiene una alucinación grave: el RDL 40/2026 existe y regula la creación de la CICTIAP, pero no contiene las modificaciones fiscales mencionadas (límite de 3M€ o cambios en el art. 35.2 de la Ley del IS). El texto original de la fuente solo menciona la creación de la comisión y el rol del CDTI, sin detallar cambios en la Ley del Impuesto sobre Sociedades.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 67
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-boe-es",
+  "isNew": false,
+  "score": 20,
+  "rawScore": 42.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (hallucination_risk)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "compliance_risk",
+    "severity": "alta",
+    "detail": "La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados."
+   },
+   {
+    "code": "hallucination_risk",
+    "severity": "critica",
+    "detail": "La ficha atribuye al RDL 40/2026 cambios en el Impuesto sobre Sociedades que no aparecen en el texto oficial ni en la fuente citada."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha contiene una alucinación grave: el RDL 40/2026 existe y regula la creación de la CICTIAP, pero no contiene las modificaciones fiscales mencionadas (límite de 3M€ o cambios en el art. 35.2 de la Ley del IS). El texto original de la fuente solo menciona la creación de la comisión y el rol del CDTI, sin detallar cambios en la Ley del Impuesto sobre Sociedades."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Reforma reciente mediante RDL 40/2026 que modifica el artículo 35.2 de la Ley del IS. · Verificador: El RDL 40/2026 es real, pero la parte fiscal atribuida es una invención o confusión con borradores no aprobados. · Discrepancia entre modelos (9 vs 4): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Aumento de límites de monetización y ampliación de actividades deducibles. · Verificador: No hay evidencia en el BOE de que el límite de monetización se haya elevado a 3M€ en este RDL. · Discrepancia entre modelos (8 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de incentivos fiscales consolidado en España. · Verificador: El mercado de incentivos fiscales en España es real, pero no bajo esta normativa específica.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 10.0,
+    "points": 10.0,
+    "why": "Regulado por el CDTI y el Ministerio de Ciencia e Innovación, entidades oficiales. · Verificador: El CDTI es una entidad pública real y verificable.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Depende de la capacidad de inversión previa de la empresa. · Verificador: La financiación depende de la normativa vigente real, no de la supuesta en la ficha.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Ecosistema de empresas innovadoras y consultoras fiscales mencionado de forma genérica. · Verificador: Ecosistema genérico sin datos de impacto real.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Requiere adaptación de procesos contables internos para aplicar la deducción. · Verificador: La adopción depende de la normativa real del IS, no de la descrita.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Alta competencia por fondos públicos y deducciones, aunque sin datos concretos. · Verificador: Competencia estándar en ayudas públicas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo bajo si se cumplen los requisitos de certificación y se obtiene informe motivado. · Verificador: Alto riesgo de aplicar deducciones basadas en una norma mal interpretada. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Riesgo bajo al ser un incentivo estatal, sujeto a cumplimiento normativo. · Verificador: Riesgo alto de sanción tributaria por aplicar beneficios fiscales inexistentes. · Discrepancia entre modelos (9 vs 4): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Normativa de ámbito nacional español publicada en el BOE. · Verificador: Normativa de ámbito nacional.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "El beneficio se materializa como ahorro fiscal directo o abono de deducciones. · Verificador: La salida fiscal real es la estándar, no la ampliada descrita.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {},
+   "label": "Estable",
+   "since": "2026-11-24T02:22:40Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T02:22:40Z",
+    "métrica": 0.0
+   },
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)\nCATEGORÍA: negocio · Fiscalidad e Incentivos I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.boe.es/eli/es/rdl/2026/11/20/40\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Reducción directa de costes operativos y fiscales para empresas innovadoras.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: Anual\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Aumento del límite de monetización de 1 a 3 millones de euros; Inclusión de nuevas actividades como diseño industrial e ingeniería de procesos\nMOTIVOS PARA DESCONFIAR: La correcta aplicación depende de la interpretación de la Inspección de Hacienda y la obtención de informes motivados.; La ficha atribuye al RDL 40/2026 cambios en el Impuesto sobre Sociedades que no aparecen en el texto oficial ni en la fuente citada.; El verificador tiene dudas: La ficha contiene una alucinación grave: el RDL 40/2026 existe y regula la creación de la CICTIAP, pero no contiene las modificaciones fiscales mencionadas (límite de 3M€ o cambios en el art. 35.2 de la Ley del IS). El texto original de la fuente solo menciona la creación de la comisión y el rol del CDTI, sin detallar cambios en la Ley del Impuesto sobre Sociedades.; Dependencia de la burocracia ministerial; Necesidad de auditoría externa para asegurar la deducción\nCÓMO PARTICIPAR: Evaluar si la empresa realiza actividades de I+D+i según el nuevo artículo 35.2; Contratar asesoría fiscal especializada para preparar el informe motivado; Aplicar la deducción en la declaración del Impuesto sobre Sociedades\nQUÉ PODRÍA HACERME PERDER EL DINERO: Incumplimiento de los requisitos de reinversión; Rechazo del informe motivado por parte de la administración\nFUENTES: https://elreferente.es/actualidad/el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comision-interministerial-de-ciencia-tecnologia-e-innovacion-para-la-autonomia-estrategica-y-proyectos-estrategicos/ | https://www.boe.es/eli/es/rdl/2026/11/20/40",
+  "firstSeenAt": "2026-11-24T02:22:40Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "news-elreferente-es-actualidad-el-cdti-innovacion-ejercera-la-secretaria-de-la-nueva-comis"
   ]
  },
  {
@@ -5506,6 +7085,415 @@
   ]
  },
  {
+  "name": "Anthropic IPO",
+  "category": "lanzamientos",
+  "subcategory": "ia_tecnologia",
+  "kind": "activa",
+  "description": "Anthropic, la empresa de IA generativa detrás de Claude, ha salido a bolsa con una valoración récord. La alta valoración inicial puede crear una ventana de compra antes de una posible corrección del precio.",
+  "officialUrl": "https://www.anthropic.com",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "no disponible",
+  "spainNotes": "No se confirma si la compra directa está permitida para residentes en España; depende del bróker y de la normativa MiCA.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Pueden aplicarse comisiones de bróker y gastos de custodia",
+   "recommended": 2000.0,
+   "max": 2000.0
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Las acciones podrán venderse en el mercado secundario una vez que comience el trading en NASDAQ.",
+  "horizon": "corto-medio plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "unos minutos para abrir cuenta y suscribirse a la IPO",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "IPO de una empresa líder en IA con gran cobertura mediática · Verificador: No hay anuncio oficial de IPO por parte de Anthropic a fecha de hoy. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 4.0,
+    "why": "Valoración alta sugiere margen de corrección que podría generar ganancias · Verificador: El potencial es especulativo al no existir confirmación de salida a bolsa.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "El mercado de IA está en fuerte expansión y la empresa tiene clientes de alto perfil · Verificador: El sector IA es relevante, pero la oportunidad de inversión es inexistente actualmente.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 8.0,
+    "why": "Fundadores con experiencia en OpenAI y DeepMind · Verificador: El equipo fundador es reconocido en la industria.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 7.0,
+    "why": "Financiación previa con rondas de inversión de capital riesgo reconocidas · Verificador: Anthropic ha recibido rondas de financiación privada masivas, no públicas.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Amplia comunidad de desarrolladores y usuarios de sus modelos de IA · Verificador: Alta adopción de Claude, pero no implica acceso a acciones.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 7.0,
+    "why": "Los modelos Claude están siendo adoptados por empresas y desarrolladores · Verificador: Uso corporativo elevado.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Competidores como OpenAI y Google DeepMind tienen recursos similares · Verificador: Mercado altamente competitivo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8.0,
+    "why": "Producto de software; riesgo técnico bajo comparado con hardware · Verificador: Riesgo operativo estándar de software.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 4.0,
+    "why": "Alta valoración inicial y volatilidad típica de IPOs de tecnología · Verificador: Riesgo extremo al basarse en una premisa de IPO no confirmada. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "Incertidumbre regulatoria para residentes españoles en IPOs extranjeras · Verificador: No existe mecanismo legal directo para participar en una IPO de EE. UU. desde España sin un bróker especializado que lo soporte.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "Alta liquidez en NASDAQ permite venta rápida · Verificador: No hay acciones cotizando, por tanto no hay liquidez. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "high_valuation",
+    "severity": "media",
+    "detail": "Valoración inicial muy alta que podría corregirse rápidamente"
+   },
+   {
+    "code": "unconfirmed_ipo",
+    "severity": "critica",
+    "detail": "No existe confirmación oficial de que Anthropic haya salido a bolsa."
+   },
+   {
+    "code": "misleading_info",
+    "severity": "alta",
+    "detail": "La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "IPO de empresa líder en IA generativa con gran cobertura mediática"
+  ],
+  "howToParticipate": [
+   "Abrir cuenta en un bróker que permita suscripciones a IPOs internacionales",
+   "Verificar la elegibilidad para residentes en España",
+   "Depositar fondos (máximo 2000 €)",
+   "Seleccionar la oferta de Anthropic y confirmar la suscripción",
+   "Esperar la asignación de acciones y, una vez abierto el mercado, decidir venta o retención"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar acciones en la IPO y vender cuando el precio suba tras la corrección inicial",
+  "lossCauses": [
+   "Caída del precio tras la salida",
+   "Corrección del mercado de tecnología",
+   "Problemas regulatorios que limiten la negociación en España"
+  ],
+  "earlySignals": [
+   "Valoración inicial récord que sugiere sobreprecio",
+   "Interés mediático elevado"
+  ],
+  "signals": {
+   "pulseScore": 64
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No hay registros de IPO de Anthropic en la SEC (EE. UU.) ni advertencias específicas de la CNMV sobre este caso concreto, ya que no es una oferta pública real.",
+   "sources": [
+    "https://www.sec.gov/edgar/searchedgar/companysearch"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · TradingView",
+    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1OWV9wcHRRR3FmN2JwOEJUTFR6WGk4OC1ZdWZOaUF1RDd3Z3FaQWlEXzlTQ0FGQy1kYkdzQXM0YXhaMXN0cldObEdvT3NRaF81bnRSTlg1WWZOeVRrUTVJZkxaOUFWck5jZVQwMUdrckdKeXBPN1ow?oc=5"
+   },
+   {
+    "title": "SEC EDGAR Company Search",
+    "url": "https://www.sec.gov/edgar/searchedgar/companysearch"
+   },
+   {
+    "title": "Anthropic Official Newsroom",
+    "url": "https://www.anthropic.com/news"
+   }
+  ],
+  "discoveredVia": "Pulso · TradingView",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-anthropic-com",
+  "isNew": true,
+  "score": 17,
+  "rawScore": 26.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "high_valuation",
+    "severity": "media",
+    "detail": "Valoración inicial muy alta que podría corregirse rápidamente"
+   },
+   {
+    "code": "unconfirmed_ipo",
+    "severity": "critica",
+    "detail": "No existe confirmación oficial de que Anthropic haya salido a bolsa."
+   },
+   {
+    "code": "misleading_info",
+    "severity": "alta",
+    "detail": "La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "IPO de una empresa líder en IA con gran cobertura mediática · Verificador: No hay anuncio oficial de IPO por parte de Anthropic a fecha de hoy. · Discrepancia entre modelos (6 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Valoración alta sugiere margen de corrección que podría generar ganancias · Verificador: El potencial es especulativo al no existir confirmación de salida a bolsa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "El mercado de IA está en fuerte expansión y la empresa tiene clientes de alto perfil · Verificador: El sector IA es relevante, pero la oportunidad de inversión es inexistente actualmente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Fundadores con experiencia en OpenAI y DeepMind · Verificador: El equipo fundador es reconocido en la industria.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Financiación previa con rondas de inversión de capital riesgo reconocidas · Verificador: Anthropic ha recibido rondas de financiación privada masivas, no públicas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Amplia comunidad de desarrolladores y usuarios de sus modelos de IA · Verificador: Alta adopción de Claude, pero no implica acceso a acciones.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Los modelos Claude están siendo adoptados por empresas y desarrolladores · Verificador: Uso corporativo elevado.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Competidores como OpenAI y Google DeepMind tienen recursos similares · Verificador: Mercado altamente competitivo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Producto de software; riesgo técnico bajo comparado con hardware · Verificador: Riesgo operativo estándar de software.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alta valoración inicial y volatilidad típica de IPOs de tecnología · Verificador: Riesgo extremo al basarse en una premisa de IPO no confirmada. · Discrepancia entre modelos (4 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Incertidumbre regulatoria para residentes españoles en IPOs extranjeras · Verificador: No existe mecanismo legal directo para participar en una IPO de EE. UU. desde España sin un bróker especializado que lo soporte.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Alta liquidez en NASDAQ permite venta rápida · Verificador: No hay acciones cotizando, por tanto no hay liquidez. · Discrepancia entre modelos (8 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 64.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Anthropic IPO\nCATEGORÍA: lanzamientos · ia_tecnologia\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.anthropic.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: no disponible\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 17/100 · Descartar\nRIESGO: crítico\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: IPO de empresa líder en IA generativa con gran cobertura mediática\nMOTIVOS PARA DESCONFIAR: Valoración inicial muy alta que podría corregirse rápidamente; No existe confirmación oficial de que Anthropic haya salido a bolsa.; La ficha asume una IPO activa que no está respaldada por registros en la SEC o comunicados de la empresa.; El verificador tiene dudas: A fecha de 25 de noviembre de 2026, no existe confirmación oficial de una IPO de Anthropic en el NASDAQ. La información parece basarse en especulaciones de mercado o noticias no verificadas. La participación en IPOs de EE. UU. para residentes en España está sujeta a restricciones de brókeres internacionales y no está cubierta por la normativa MiCA, que regula criptoactivos, no acciones tradicionales.\nCÓMO PARTICIPAR: Abrir cuenta en un bróker que permita suscripciones a IPOs internacionales; Verificar la elegibilidad para residentes en España; Depositar fondos (máximo 2000 €); Seleccionar la oferta de Anthropic y confirmar la suscripción; Esperar la asignación de acciones y, una vez abierto el mercado, decidir venta o retención\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio tras la salida; Corrección del mercado de tecnología; Problemas regulatorios que limiten la negociación en España\nFUENTES: https://news.google.com/rss/articles/CBMid0FVX3lxTE1OWV9wcHRRR3FmN2JwOEJUTFR6WGk4OC1ZdWZOaUF1RDd3Z3FaQWlEXzlTQ0FGQy1kYkdzQXM0YXhaMXN0cldObEdvT3NRaF81bnRSTlg1WWZOeVRrUTVJZkxaOUFWck5jZVQwMUdrckdKeXBPN1ow?oc=5 | https://www.sec.gov/edgar/searchedgar/companysearch | https://www.anthropic.com/news",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "web-news-google-com"
+  ]
+ },
+ {
   "name": "Iniciativa de regulación de mercados de predicción (EE.UU.)",
   "category": "cripto",
   "subcategory": "regulación",
@@ -6699,6 +8687,419 @@
   "runId": "run-20261123-0150",
   "aliases": [
    "news-www-theblock-co-news-defi-2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free"
+  ]
+ },
+ {
+  "name": "ETF ARKK y similares expuestos a Anthropic",
+  "category": "lanzamientos",
+  "subcategory": "ETF IA",
+  "kind": "pasiva",
+  "description": "Los ETFs que incluían exposición a Anthropic han visto una fuerte salida de capital tras su IPO. Esta caída podría crear oportunidades de compra a precios rebajados, aunque el impulso ha disminuido.",
+  "officialUrl": "https://ark-funds.com/funds/arkk/",
+  "participateUrl": null,
+  "country": "EEUU",
+  "spainAvailability": "restringida",
+  "spainNotes": "Disponibles a través de brokers españoles que operan en mercados internacionales.",
+  "costs": {
+   "minEntry": 100,
+   "extra": 0,
+   "extraNotes": "Comisiones de broker y spread habitual.",
+   "recommended": 2000,
+   "max": 2000
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Venta en mercado secundario mediante broker.",
+  "horizon": "mediano",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "poco tiempo (análisis y ejecución en una sesión de trading)",
+  "subscores": {
+   "novedad": {
+    "v": 2.0,
+    "why": "ETF con exposición a IA tras IPO reciente · Verificador: La IPO de Anthropic es reciente, pero la relación con los ETFs mencionados es cuestionable. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.5,
+    "why": "Caída reciente sugiere posible rebote, pero incertidumbre alta · Verificador: Alta volatilidad y falta de correlación directa con el activo subyacente.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Sector IA con crecimiento estructural · Verificador: El sector IA es relevante, pero la estrategia de inversión es confusa.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Muchos ETFs similares compiten por exposición IA · Verificador: Alta competencia en ETFs temáticos de IA.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 8.5,
+    "why": "ETF es producto financiero estandarizado · Verificador: Producto financiero estandarizado, pero con riesgo de mercado.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4.0,
+    "why": "Pérdida de capital reciente y posible continuidad de salidas · Verificador: Alta volatilidad y riesgo de pérdida de capital. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 3.0,
+    "why": "Accesible vía brokers locales · Verificador: Los ETFs de EE.UU. (no UCITS) tienen restricciones de acceso para minoristas en España. · Discrepancia entre modelos (7 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "Alta liquidez en mercados secundarios · Verificador: Alta liquidez en mercados secundarios.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Salida masiva de fondos tras la IPO de Anthropic indica alta volatilidad."
+   },
+   {
+    "code": "regulatory_restriction",
+    "severity": "alta",
+    "detail": "Los ETFs estadounidenses no suelen cumplir con la normativa UCITS, limitando su acceso a inversores minoristas en España."
+   },
+   {
+    "code": "misleading_premise",
+    "severity": "alta",
+    "detail": "ARKK no es un vehículo de inversión directa en Anthropic; la premisa de la ficha es engañosa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha confunde la naturaleza de los ETFs. ARKK (ARK Innovation ETF) es un fondo de gestión activa que no tiene una exposición directa o significativa a Anthropic (empresa privada o recientemente salida a bolsa). La premisa de que estos ETFs son vehículos para invertir en Anthropic es técnicamente incorrecta o altamente especulativa. Además, los ETFs estadounidenses (UCITS no registrados) no pueden comercializarse directamente a inversores minoristas en España sin un folleto registrado en la CNMV."
+   }
+  ],
+  "distrust": [
+   "pérdida de capital reciente de los ETFs",
+   "falta de datos concretos sobre recuperación"
+  ],
+  "whyInteresting": [
+   "posible compra a precios rebajados tras caída de demanda",
+   "exposición a sector IA con potencial a largo plazo"
+  ],
+  "howToParticipate": [
+   "1. Abrir una cuenta en un broker que ofrezca acceso a ETFs internacionales.",
+   "2. Buscar los ETFs mencionados (p.ej., ARKK) y verificar su precio actual.",
+   "3. Evaluar el tamaño de la posición dentro del presupuesto (máx. 2000 €).",
+   "4. Ejecutar la orden de compra.",
+   "5. Monitorizar la evolución del precio y las noticias de Anthropic."
+  ],
+  "actionable": true,
+  "profitPath": "Comprar los ETFs a precios descontados y vender cuando el mercado recupere la confianza en Anthropic.",
+  "lossCauses": [
+   "continuación de la salida de fondos",
+   "bajo desempeño de Anthropic",
+   "condiciones macroeconómicas adversas"
+  ],
+  "earlySignals": [
+   "pulseScore 79 indica debilitamiento del impulso",
+   "salidas de capital de varios fondos"
+  ],
+  "signals": {
+   "pulseScore": 79
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "Los ETFs de EE.UU. no están registrados en la CNMV para su comercialización minorista. Los inversores españoles suelen requerir brokers que permitan acceso a mercados internacionales bajo condiciones específicas.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Benzinga",
+    "url": "https://www.benzinga.com/etfs/specialty-etfs/26/11/63575513/anthropic-ipo-was-the-hot-ticket-now-hedge-funds-are-dumping-arkk-and-other-etfs"
+   },
+   {
+    "title": "CNMV - Registro de Instituciones de Inversión Colectiva Extranjeras",
+    "url": "https://www.cnmv.es/portal/Consultas/IIC/IICExtranjera.aspx"
+   },
+   {
+    "title": "ARK Invest - ARKK Fact Sheet",
+    "url": "https://ark-funds.com/funds/arkk/"
+   }
+  ],
+  "discoveredVia": "Pulso · Benzinga",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha confunde la naturaleza de los ETFs. ARKK (ARK Innovation ETF) es un fondo de gestión activa que no tiene una exposición directa o significativa a Anthropic (empresa privada o recientemente salida a bolsa). La premisa de que estos ETFs son vehículos para invertir en Anthropic es técnicamente incorrecta o altamente especulativa. Además, los ETFs estadounidenses (UCITS no registrados) no pueden comercializarse directamente a inversores minoristas en España sin un folleto registrado en la CNMV.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-25",
+  "id": "web-ark-funds-com",
+  "isNew": true,
+  "score": 8,
+  "rawScore": 28.5,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 4 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "high_volatility",
+    "severity": "alta",
+    "detail": "Salida masiva de fondos tras la IPO de Anthropic indica alta volatilidad."
+   },
+   {
+    "code": "regulatory_restriction",
+    "severity": "alta",
+    "detail": "Los ETFs estadounidenses no suelen cumplir con la normativa UCITS, limitando su acceso a inversores minoristas en España."
+   },
+   {
+    "code": "misleading_premise",
+    "severity": "alta",
+    "detail": "ARKK no es un vehículo de inversión directa en Anthropic; la premisa de la ficha es engañosa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha confunde la naturaleza de los ETFs. ARKK (ARK Innovation ETF) es un fondo de gestión activa que no tiene una exposición directa o significativa a Anthropic (empresa privada o recientemente salida a bolsa). La premisa de que estos ETFs son vehículos para invertir en Anthropic es técnicamente incorrecta o altamente especulativa. Además, los ETFs estadounidenses (UCITS no registrados) no pueden comercializarse directamente a inversores minoristas en España sin un folleto registrado en la CNMV."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "ETF con exposición a IA tras IPO reciente · Verificador: La IPO de Anthropic es reciente, pero la relación con los ETFs mencionados es cuestionable. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Caída reciente sugiere posible rebote, pero incertidumbre alta · Verificador: Alta volatilidad y falta de correlación directa con el activo subyacente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Sector IA con crecimiento estructural · Verificador: El sector IA es relevante, pero la estrategia de inversión es confusa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica a ETF · Verificador: No aplica a ETFs.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Muchos ETFs similares compiten por exposición IA · Verificador: Alta competencia en ETFs temáticos de IA.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "ETF es producto financiero estandarizado · Verificador: Producto financiero estandarizado, pero con riesgo de mercado.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Pérdida de capital reciente y posible continuidad de salidas · Verificador: Alta volatilidad y riesgo de pérdida de capital. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Accesible vía brokers locales · Verificador: Los ETFs de EE.UU. (no UCITS) tienen restricciones de acceso para minoristas en España. · Discrepancia entre modelos (7 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Alta liquidez en mercados secundarios · Verificador: Alta liquidez en mercados secundarios.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-24T23:57:31Z",
+    "pulseScore": 79.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: ETF ARKK y similares expuestos a Anthropic\nCATEGORÍA: lanzamientos · ETF IA\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://ark-funds.com/funds/arkk/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: EEUU\nDISPONIBILIDAD EN ESPAÑA: restringida\nCOSTE DE ENTRADA: 100,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 8/100 · Descartar\nRIESGO: medio\nPLAZO: mediano\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: posible compra a precios rebajados tras caída de demanda; exposición a sector IA con potencial a largo plazo\nMOTIVOS PARA DESCONFIAR: Salida masiva de fondos tras la IPO de Anthropic indica alta volatilidad.; Los ETFs estadounidenses no suelen cumplir con la normativa UCITS, limitando su acceso a inversores minoristas en España.; ARKK no es un vehículo de inversión directa en Anthropic; la premisa de la ficha es engañosa.; El verificador tiene dudas: La ficha confunde la naturaleza de los ETFs. ARKK (ARK Innovation ETF) es un fondo de gestión activa que no tiene una exposición directa o significativa a Anthropic (empresa privada o recientemente salida a bolsa). La premisa de que estos ETFs son vehículos para invertir en Anthropic es técnicamente incorrecta o altamente especulativa. Además, los ETFs estadounidenses (UCITS no registrados) no pueden comercializarse directamente a inversores minoristas en España sin un folleto registrado en la CNMV.; pérdida de capital reciente de los ETFs; falta de datos concretos sobre recuperación\nCÓMO PARTICIPAR: 1. Abrir una cuenta en un broker que ofrezca acceso a ETFs internacionales.; 2. Buscar los ETFs mencionados (p.ej., ARKK) y verificar su precio actual.; 3. Evaluar el tamaño de la posición dentro del presupuesto (máx. 2000 €).; 4. Ejecutar la orden de compra.; 5. Monitorizar la evolución del precio y las noticias de Anthropic.\nQUÉ PODRÍA HACERME PERDER EL DINERO: continuación de la salida de fondos; bajo desempeño de Anthropic; condiciones macroeconómicas adversas\nFUENTES: https://www.benzinga.com/etfs/specialty-etfs/26/11/63575513/anthropic-ipo-was-the-hot-ticket-now-hedge-funds-are-dumping-arkk-and-other-etfs | https://www.cnmv.es/portal/Consultas/IIC/IICExtranjera.aspx | https://ark-funds.com/funds/arkk/",
+  "firstSeenAt": "2026-11-24T23:57:31Z",
+  "lastSeenAt": "2026-11-24T23:57:31Z",
+  "runId": "run-20261124-2357",
+  "aliases": [
+   "web-benzinga-com"
   ]
  },
  {

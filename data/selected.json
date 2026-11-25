@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-24T13:59:29Z",
+ "generatedAt": "2026-11-25T00:00:40Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,63 +40,9 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 23,
+ "studied": 29,
  "selected": [],
  "nearMisses": [
-  {
-   "id": "web-focuspyme-emprenemjunts-es",
-   "name": "FIT 2026 – Foro de Inversión y Territorio",
-   "category": "negocio",
-   "score": 73,
-   "adjustedScore": 73,
-   "risk": "bajo",
-   "officialUrl": "https://focuspyme.emprenemjunts.es/",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": true,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 8,
-   "failed": [
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-boe-es",
-   "name": "Incentivos Fiscales por Innovación Tecnológica (RDL 40/2026)",
-   "category": "negocio",
-   "score": 54,
-   "adjustedScore": 54,
-   "risk": "medio",
-   "officialUrl": "https://www.boe.es/eli/es/rdl/2026/11/20/40",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": true,
-    "vigente": true
-   },
-   "passed": 8,
-   "failed": [
-    "Nota del radar de 70/100 o más"
-   ],
-   "hasManual": true
-  },
   {
    "id": "web-bfsport-gal",
    "name": "BF Sport Incubadora 2027",
@@ -156,14 +102,72 @@
    "hasManual": true
   },
   {
-   "id": "web-octo-health",
-   "name": "Octo Health",
+   "id": "web-tenerife-es",
+   "name": "Tenerife Accelera Fund (gestión Archipélago Next)",
    "category": "startups",
-   "score": 39,
-   "adjustedScore": 39,
+   "score": 59,
+   "adjustedScore": 59,
+   "risk": "muy alto",
+   "officialUrl": "https://www.tenerife.es",
+   "minEntry": 0,
+   "canLoseAll": true,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": false,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
+   "id": "web-relai-app",
+   "name": "Relai Stacks",
+   "category": "cripto",
+   "score": 53,
+   "adjustedScore": 53,
+   "risk": "alto",
+   "officialUrl": "https://relai.app/",
+   "minEntry": 0.0,
+   "canLoseAll": true,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": false,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 6,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Riesgo global medio o bajo (ni «muy alto» ni «crítico»)",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
+   "id": "web-letsdeel-com",
+   "name": "Deel Stablecoin Spending Card",
+   "category": "cripto",
+   "score": 40,
+   "adjustedScore": 40,
    "risk": "medio",
-   "officialUrl": "https://octo.health/",
-   "minEntry": 8,
+   "officialUrl": "https://www.letsdeel.com",
+   "minEntry": 0,
    "canLoseAll": false,
    "checks": {
     "nota": false,
@@ -186,67 +190,6 @@
   }
  ],
  "manuals": {
-  "web-focuspyme-emprenemjunts-es": {
-   "segundaOpinion": {
-    "veredicto": "confirmada",
-    "motivo": "Evento gratuito con alto valor de networking y aprendizaje, sin riesgo financiero.",
-    "contradicciones": []
-   },
-   "viaDeBeneficio": {
-    "existe": false,
-    "explicacion": "No hay retorno económico directo; el beneficio es la relación y conocimiento adquirido."
-   },
-   "resumen": "Jornada presencial de un día en la Comunidad Valenciana que reúne a inversores, empresarios y expertos para debatir tendencias de financiación, IA y contratación pública.",
-   "cuantoPoner": "0 €",
-   "antesDeEmpezar": [
-    "Verificar en la web oficial si la inscripción es gratuita o requiere pago",
-    "Confirmar disponibilidad de transporte y alojamiento si fuera necesario"
-   ],
-   "pasos": [
-    {
-     "titulo": "Visitar la web oficial",
-     "detalle": "Acceder a https://focuspyme.emprenemjunts.es/ y localizar la sección de registro del evento",
-     "tiempo": "5 min"
-    },
-    {
-     "titulo": "Buscar registro",
-     "detalle": "Revisar la página del evento FIT 2026 y localizar el enlace de inscripción o el contacto de la Red CEEI",
-     "tiempo": "5 min"
-    },
-    {
-     "titulo": "Completar inscripción",
-     "detalle": "Rellenar el formulario o enviar correo a la dirección indicada",
-     "tiempo": "10 min"
-    },
-    {
-     "titulo": "Preparar agenda",
-     "detalle": "Revisar ponencias, preparar preguntas y contactos a conocer",
-     "tiempo": "15 min"
-    },
-    {
-     "titulo": "Asistir el evento",
-     "detalle": "Presentarse a las 09:00 en Bellver Blue Tech Zone y participar en las sesiones",
-     "tiempo": "5 h"
-    }
-   ],
-   "planDeSalida": "No aplica, ya que no hay inversión financiera; la salida es la experiencia y contactos obtenidos.",
-   "senalesDeAlarma": [
-    "Descubrir un coste inesperado de inscripción",
-    "Cancelación o cambio de fecha del evento"
-   ],
-   "erroresTipicos": [
-    "No preparar preguntas o temas de interés",
-    "No llevar tarjetas de visita",
-    "No seguir la agenda del día"
-   ],
-   "fiscalidad": "No hay ingresos, por lo que no afecta al IRPF. Los gastos de viaje y alojamiento podrían deducirse como gastos de actividad si se justifica.",
-   "tiempoNecesario": "5 h el día del evento, más tiempo previo para preparación",
-   "modelo": "groq:openai/gpt-oss-20b",
-   "independiente": true,
-   "webLeida": true,
-   "generadoEn": "2026-11-22T08:57:41Z",
-   "fichaScore": 73
-  },
   "web-bfsport-gal": {
    "segundaOpinion": {
     "veredicto": "dudosa",
@@ -366,69 +309,6 @@
    "webLeida": false,
    "generadoEn": "2026-11-22T08:58:02Z",
    "fichaScore": 61
-  },
-  "web-boe-es": {
-   "segundaOpinion": {
-    "veredicto": "confirmada",
-    "motivo": "El Real Decreto-ley 40/2026 es una normativa vigente publicada en el BOE.",
-    "contradicciones": [
-     "El texto oficial no menciona costes de certificación o informes motivados, aunque la ficha los indica."
-    ]
-   },
-   "viaDeBeneficio": {
-    "existe": true,
-    "explicacion": "La deducción se aplica en la declaración del Impuesto sobre Sociedades, reduciendo la carga fiscal o aboniéndose directamente las deducciones monetizadas."
-   },
-   "resumen": "El RDL 40/2026 amplía las deducciones fiscales por I+D+i, permitiendo a las empresas reducir su impuesto sobre sociedades o recibir abono directo de las deducciones. Se aplica a actividades de I+D+i dentro de la actividad empresarial en España.",
-   "cuantoPoner": "0 €",
-   "antesDeEmpezar": [
-    "Verificar que la empresa realice actividades de I+D+i según el artículo 35.2 del RDL.",
-    "Consultar el texto oficial del RDL 40/2026 para confirmar los requisitos y límites.",
-    "Reunir la documentación técnica y financiera que justifique la actividad de I+D+i.",
-    "Preparar un informe motivado que describa la actividad y los resultados esperados.",
-    "Confirmar con la Agencia Tributaria que el informe cumple los requisitos de la normativa."
-   ],
-   "pasos": [
-    {
-     "titulo": "Evaluar actividades de I+D+i",
-     "detalle": "Identificar los proyectos que cumplen con el artículo 35.2 y documentar los costes y resultados.",
-     "tiempo": "1-2 semanas"
-    },
-    {
-     "titulo": "Preparar informe motivado",
-     "detalle": "Redactar el informe con la descripción técnica, costes y justificación de la deducción.",
-     "tiempo": "2-4 semanas"
-    },
-    {
-     "titulo": "Presentar informe a la Agencia Tributaria",
-     "detalle": "Enviar el informe motivado junto con la documentación de soporte.",
-     "tiempo": "1 semana"
-    },
-    {
-     "titulo": "Aplicar deducción en la declaración",
-     "detalle": "Incluir la deducción en la declaración del Impuesto sobre Sociedades del ejercicio fiscal correspondiente.",
-     "tiempo": "1 semana"
-    }
-   ],
-   "planDeSalida": "El beneficio se materializa al presentar la declaración del Impuesto sobre Sociedades del ejercicio fiscal en el que se aplica la deducción; si se opta por abono, se recibe el importe directamente tras la aprobación del informe.",
-   "senalesDeAlarma": [
-    "Rechazo del informe motivado por la Agencia Tributaria.",
-    "Incumplimiento de los requisitos de reinversión o de la actividad de I+D+i.",
-    "Auditoría que detecte documentación insuficiente o incorrecta."
-   ],
-   "erroresTipicos": [
-    "No documentar adecuadamente la actividad de I+D+i.",
-    "Presentar un informe motivado incompleto o sin la información técnica requerida.",
-    "No cumplir con los requisitos de reinversión de los fondos deducidos.",
-    "No incluir la deducción en la declaración del Impuesto sobre Sociedades."
-   ],
-   "fiscalidad": "La deducción reduce la base imponible del Impuesto sobre Sociedades. No afecta directamente al IRPF, salvo que la empresa distribuya dividendos de los beneficios reducidos. Se recomienda confirmar con un asesor fiscal la aplicación específica a la situación de la empresa.",
-   "tiempoNecesario": "Estimado total de 2-3 meses de gestión continua, con revisiones periódicas de la documentación y cumplimiento de los requisitos.",
-   "modelo": "groq:openai/gpt-oss-20b",
-   "independiente": true,
-   "webLeida": true,
-   "generadoEn": "2026-11-24T02:24:12Z",
-   "fichaScore": 54
   }
  },
  "ai": {
@@ -437,9 +317,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-24T13:59:29Z",
-  "status": 503,
-  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "reason": []
+  "at": "2026-11-25T00:00:40Z",
+  "status": 200
  }
 }
