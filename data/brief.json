@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-25T00:05:50Z",
- "checkedAt": "2026-11-25T00:05:50Z",
- "attemptedAt": "2026-11-25T00:05:50Z",
+ "generatedAt": "2026-11-25T02:54:48Z",
+ "checkedAt": "2026-11-25T02:54:48Z",
+ "attemptedAt": "2026-11-25T02:54:48Z",
  "spend": {
   "date": "2026-11-25",
   "usd": 0.0
@@ -190,8 +190,8 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-25T00:05:50Z",
-    "checkedAt": "2026-11-25T00:05:50Z",
+    "generatedAt": "2026-11-25T02:54:48Z",
+    "checkedAt": "2026-11-25T02:54:48Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -206,20 +206,129 @@
      "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "Se descartaron opciones que requerían alta inversión en stock físico o licencias complejas de local, priorizando modelos validados desde casa combinando diseño, repostería y servicios de organización inmobiliaria.",
+    "nota": "Se han buscado modelos de negocio probados en gastronomía ligera, servicios creativos infantiles e innovación visual para comercios e inmobiliarias, descartando opciones con costes fijos altos o necesidad de local comercial.",
     "oportunidades_locales": [
      {
-      "titulo": "Mercados de Artesanía y Navidad en el centro de Valencia",
-      "que_es": "Espacios de venta directa ideales para artesanos e ilustradores donde promocionar productos físicos y captar primeras clientas en la zona.",
+      "titulo": "Mercado Medieval y Gastronómico en Riba-roja de Túria",
+      "que_es": "Evento local en Riba-roja con puestos de gastronomía y artesanía, ideal para observar tendencias de compra, precios y solicitar puestos de venta directa.",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZk92RUhXYmMyV1VuNHUtcy1xUWREQ0VndHFucGFWNzBHTTRnWjc4S3FYUG94M0hOdDZXelhFZGcwZ0w1WHNfLWQxT1RDeVY1QUdVZjZOb1lpZ0RGMUxOYTg5UnM4WllaRkpLTFZiSkY3aW1pME50bHF0ejI4QzJ4TzdkWHJiR2dBY2hRZGxtRWNxRVBJRDRQRE5Gc19WREFwanJVb0Vsd002LVBSMVE?oc=5"
+     },
+     {
+      "titulo": "Mercado de Navidad y Artesanía en el Centro de Valencia",
+      "que_es": "Espacio de exposición con 33 puestos artesanales donde conectar con creadores locales y testar la venta presencial de productos creativos.",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "cc6eec075",
+      "fecha": "2026-11-25T02:54:48Z",
+      "nueva": true,
+      "titulo": "Catering Artesanal de Mesas Saladas y Aperitivos (Grazing Tables) para Cumpleaños y Celebraciones",
+      "gancho": "Crea y entrega cajas y mesas de picoteo artesanal salado y dulce para fiestas familiares y pequeñas reuniones en Valencia.",
+      "que_es": "Ofrece un servicio de preparación de tablas y cajas gastronómicas personalizadas (empanadillas saladas, aperitivos hojaldrados, brochetas frescas y repostería artesana) listas para servir. Te encargas del diseño de la presentación, selección de ingredientes locales y entrega a domicilio para eventos de 10 a 50 personas.",
+      "casos": [
+       {
+        "quien": "Pequenas Empresas & Grandes Negócios",
+        "pais": "",
+        "resultado": "Após falência, casal investe R$ 500 e cria empresa de salgados que fatura R$ 5 milhões",
+        "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQWDVJS0tuWFFONGx4WlQzSnhqN0lVWXJ3ZF82S0xhVVNtOGl5ejdTU0lQX3ROVDlHOHhWZFNlV29hREdJY2RHQ1dIbl9SaTVaUWhSU0V2ZUYxSFcwQWxtNGlIckJaLUxqVE41Q2ZyT09pTGVIWHZRLTMxZGRtVVhva2s4SHdnNVRxVlpsSkJoLU5XN0FhMkVlMTNSYUF1V1ZpRHJ1X0sxNDJxc3ltWF9pMTNsTndDNXJWOXlaLWUzNm9yMEhwcUhTa2FJTU5aSUdLNmRvMUtsYzFmRHdGTTV4ZUpRNlNQeWhZZHfSAfgBQVVfeXFMTmNybGtndmhKdFY1aGdhbnc0c3FGb2JGM2ZWS0FiUEY0SUVVMXg4aENCRjJoV2RoZ2xXdjhSLWI1TS1JbTVRaWoyVDdKem5ieVZjWU1TTzNjVXp6TGJObE1HZ2YtbHdqRlp3MXEwVTRXbnlqdXN4RXNfYnhhclR1aDdZVmVhVFNtcjNvRjZNWmNoa3FXYV85SDRSTHRQMGlsaTN2MlppODY5ZFFMUHB6N0QwaU4zT3g4WXNUeDljUGZjcWZiSVpVUXlSWmVGWl9sbDJkNER0SWhBSkxqTlF1ZEFyWlM4OUR6QWZmZ3BWQm8xY0w3RkpKUHU?oc=5",
+        "resultado_es": "Tras la quiebra, pareja invierte R$500 y crea empresa de salgados que factura R$5 millones"
+       }
+      ],
+      "por_que_tu": "Combina tu pasión por la cocina y el diseño visual creando presentaciones gastronómicas espectaculares que las familias compran por los ojos.",
+      "como_empezar": [
+       "Semana 1: Define 3 menús tipo (infantil, brunch adulto y mesa gourmet) y calcula costes por persona.",
+       "Semana 2: Diseña 2 cajas de muestra en casa, saca fotos atractivas con luz natural y crea tu catálogo en PDF e Instagram.",
+       "Semana 3: Ofrece degustaciones o precios reducidos a amigos de Riba-roja a cambio de fotos y reseñas reales.",
+       "Semana 4: Reparte folletos visuales en parques infantiles, ludotecas y comercios locales del Camp de Túria."
+      ],
+      "coste_inicial": "120 € - 180 € (ingredientes para muestras, menaje reutilizable de presentación, empaques ecológicos y tarjetas).",
+      "herramientas": [
+       "Instagram / WhatsApp Business para pedidos",
+       "Canva para el catálogo digital",
+       "Menaje y tablas de madera decorativas"
+      ],
+      "precio": "25 € - 45 € por caja individual/pareja; 12 € - 18 € por persona para mesas de eventos (pedido mínimo 120 €).",
+      "primeras_clientas": [
+       "Publica en grupos de Facebook de madres/padres de Riba-roja de Túria y Manises ofreciendo picnics y fiestas infantiles sin complicaciones.",
+       "Contacta con organizadoras de eventos y locales de cumpleaños infantiles de la zona para ser su proveedora externa."
+      ],
+      "ingresos_posibles": "Estimación prudente: 400 € a 900 €/mes atendiendo de 3 a 5 pequeños eventos los fines de semana, basado en márgenes del 50-60% sobre ingredientes.",
+      "horas_semana": "10 - 15 horas (concentradas sobre todo en viernes y fines de semana).",
+      "tramites": [
+       "Carné de Manipulador de Alimentos en línea.",
+       "Alta en Autónomos (Tarifa Plana de 80 €/mes el primer año) y modelo 036/037 en Hacienda.",
+       "Uso de cocina homologada u obrador compartido en alquiler por horas si la producción supera el ámbito doméstico ocasional."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Desperdicio de perecederos si no se trabaja estrictamente bajo pedido previo con señal del 50%.",
+       "Picos de trabajo concentrados en fines de semana."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina",
+       "diseño",
+       "niños"
+      ]
+     },
+     {
+      "id": "c1260b0c4",
+      "fecha": "2026-11-25T02:54:48Z",
+      "nueva": true,
+      "titulo": "Diseño de Códigos QR Artísticos y Señalética Creativa para Negocios e Inmobiliarias",
+      "gancho": "Crea códigos QR personalizados e integrados artísticamente en carteles decorativos para escaparates, fichas inmobiliarias y eventos.",
+      "que_es": "Transformas un código QR aburrido en una pieza gráfica o de arte digital corporativo (con el logo, colores de marca o estilo visual de la propiedad) lista para imprimir en escaparates, letreros de 'En Venta/Alquiler' o cartas de restaurantes. Vendes el diseño digital o el producto terminado (placa acrílica/madera decorativa).",
+      "casos": [
+       {
+        "quien": "QR Code AI",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 15.694 $ en 30 días",
+        "url": "https://trustmrr.com/startup/qr-code-ai"
+       }
+      ],
+      "por_que_tu": "Combina perfectamente tu ojo para el diseño gráfico con tu conocimiento del sector inmobiliario y comercial.",
+      "como_empezar": [
+       "Semana 1: Domina herramientas de IA generativa gráfica (Midjourney, Stable Diffusion o generadores de QR estilizados) para crear plantillas limpias y escaneables.",
+       "Semana 2: Crea un porfolio de 8 muestras: 3 para agencias inmobiliarias (carteles de viviendas), 3 para comercios locales y 2 para eventos.",
+       "Semana 3: Ofrece un paquete de prueba gratuito o a bajo coste a 3 agencias inmobiliarias amigas de la comarca.",
+       "Semana 4: Presenta tus servicios a restaurantes, tiendas locales de Riba-roja y agencias de la provincia de Valencia."
+      ],
+      "coste_inicial": "40 € - 80 € (suscripción a herramientas de IA gráfica y material impreso de muestra).",
+      "herramientas": [
+       "Generadores de QR visuales (QR Code AI, Canva, Midjourney)",
+       "Adobe Illustrator o Canva Pro",
+       "Proveedor local o en línea de impresión de metacrilato/madera"
+      ],
+      "precio": "25 € - 45 € solo archivo digital optimizado; 65 € - 110 € por placa decorativa lista para instalar.",
+      "primeras_clientas": [
+       "Visita agencias inmobiliarias locales ofreciendo modernizar sus carteles de escaparate y lonas de venta con QR interactivos visuales.",
+       "Contacta con comercios y restaurantes que celebren eventos o quieran captar reseñas de Google de forma elegante."
+      ],
+      "ingresos_posibles": "Estimación prudente: 350 € a 800 €/mes vendiendo de 10 a 20 diseños/placas mensuales a comercios e inmobiliarias locales.",
+      "horas_semana": "6 - 10 horas de trabajo 100% online y desde casa.",
+      "tramites": [
+       "Alta en el IAE como diseñadora gráfica / servicios publicitarios.",
+       "Facturación con IVA (21%) y retención de IRPF si emites factura a empresas."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Asegurarse siempre de verificar que el código QR escanee perfectamente a diferentes distancias antes de imprimir.",
+       "Baja barrera de entrada si no aportas un toque artístico o soporte físico diferencial."
+      ],
+      "confianza": "media",
+      "temas": [
+       "diseño",
+       "inmobiliaria",
+       "arte"
+      ]
+     },
+     {
       "id": "c5303af3e",
       "fecha": "2026-11-25T00:05:50Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Ilustraciones y Láminas Artísticas Personalizadas para Decoración Infantil y Eventos",
       "gancho": "Diseña e imprime láminas de arte digital único para habitaciones infantiles, nacimientos y celebraciones sin necesidad de acumular stock.",
       "que_es": "Consiste en crear ilustraciones digitales personalizadas (cuadros de nacimiento, retratos infantiles estilizados o acuarelas digitales) adaptadas al gusto de cada cliente. Se venden en formato digital listo para imprimir o impresas bajo demanda a través de proveedores locales.",
@@ -273,7 +382,7 @@
      {
       "id": "cc3843231",
       "fecha": "2026-11-25T00:05:50Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Coordinación y Asistencia Integral en Mudanzas y Organización del Hogar",
       "gancho": "Ofrece un servicio personalizado para ayudar a compradores e inquilinos a planificar, empaquetar y organizar sus casas durante un traslado.",
       "que_es": "Es un servicio de acompañamiento y organización técnica para personas que cambian de vivienda o atraviesan transiciones de vida. Incluye empaquetado sistemático, selección de enseres y optimización del espacio en el nuevo inmueble.",
@@ -792,7 +901,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 25,
+   "n": 23,
    "err": null
   }
  },
