@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-25T12:16:53Z",
- "checkedAt": "2026-11-25T19:13:25Z",
- "attemptedAt": "2026-11-25T19:13:25Z",
+ "checkedAt": "2026-11-25T20:00:56Z",
+ "attemptedAt": "2026-11-25T20:00:56Z",
  "spend": {
   "date": "2026-11-25",
   "usd": 0.0
@@ -303,7 +303,7 @@
    },
    "casa": {
     "generatedAt": "2026-11-25T12:16:53Z",
-    "checkedAt": "2026-11-25T17:36:43Z",
+    "checkedAt": "2026-11-25T20:00:56Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "groq",
@@ -312,10 +312,10 @@
     "searches": 0,
     "error": null,
     "nuevas": 0,
-    "descartadas": 1,
+    "descartadas": 3,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 1,
+     "sin_caso": 3,
      "vacia": 0
     },
     "nota": "",
@@ -1104,6 +1104,25 @@
    "descartados_por_validacion": 0
   }
  },
- "sources": {},
+ "sources": {
+  "ayudas_ella": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 71,
+    "sin_relacion": 38,
+    "directa": 7,
+    "no_para_ti": 11,
+    "cerradas": 15,
+    "abiertas": 0
+   }
+  },
+  "casa_historias_ella": {
+   "ok": true,
+   "n": 18,
+   "err": null
+  }
+ },
  "model": "claude-opus-5-5"
 }
