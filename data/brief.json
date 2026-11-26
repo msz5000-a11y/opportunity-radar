@@ -1,10 +1,10 @@
 {
  "version": 2,
- "generatedAt": "2026-11-25T12:16:53Z",
- "checkedAt": "2026-11-25T22:18:16Z",
- "attemptedAt": "2026-11-25T22:18:16Z",
+ "generatedAt": "2026-11-26T03:32:33Z",
+ "checkedAt": "2026-11-26T03:32:33Z",
+ "attemptedAt": "2026-11-26T03:32:33Z",
  "spend": {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "usd": 0.0
  },
  "profiles": {
@@ -302,37 +302,95 @@
     "extra": 23
    },
    "casa": {
-    "generatedAt": "2026-11-25T12:16:53Z",
-    "checkedAt": "2026-11-25T22:18:16Z",
+    "generatedAt": "2026-11-26T03:32:33Z",
+    "checkedAt": "2026-11-26T03:32:33Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.1-flash-lite",
+    "model": "gemini-3.6-flash",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 0,
-    "descartadas": 3,
+    "nuevas": 1,
+    "descartadas": 2,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 3,
+     "sin_caso": 2,
      "vacia": 0
     },
-    "nota": "He descartado ideas de reventa de ropa usada por estar ya en la lista anterior y me he centrado en servicios de alto valor añadido que aprovechan tus habilidades creativas y de gestión.",
+    "nota": "He descartado la venta de repostería fresca por los elevados requisitos sanitarios de obrador y me he centrado en sazonadores secos gourmet, arte corporal directo y comercio bajo demanda sin inventario.",
     "oportunidades_locales": [
      {
-      "titulo": "Ayudas para autónomos en la Comunitat Valenciana",
-      "que_es": "Programa de apoyo para el inicio de actividad y consolidación de autónomos.",
+      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
+      "que_es": "Subvenciones y programas de apoyo económico para la consolidación del trabajo autónomo y el inicio de nuevos proyectos empresariales en la Comunitat.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
      },
      {
-      "titulo": "Incubadora de empresas para mujeres en Valencia",
-      "que_es": "Apoyo y formación para mujeres emprendedoras en la región.",
+      "titulo": "Mercado de la Huerta y Ferias de Artesanía de Valencia",
+      "que_es": "Ocasión idónea para observar productos locales, participar en puestos de venta directa sin intermediarios y hacer contactos comerciales en la provincia.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
+     },
+     {
+      "titulo": "Incubadora de Emprendimiento Femenino en Valencia",
+      "que_es": "Asesoramiento gratuito, acompañamiento y mentora para mujeres que lanzan sus microempresas o negocios desde casa.",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
+     {
+      "id": "cc862eedb",
+      "fecha": "2026-11-26T03:32:33Z",
+      "nueva": true,
+      "titulo": "Elaboración y Venta Online de Mezclas Gourmet de Especias y Rubs Artesanales",
+      "gancho": "Crea y envasa sazonadores artesanales únicos desde casa para vender por Shopify, Instagram y comercios delicatessen de Valencia.",
+      "que_es": "Consiste en diseñar formulaciones propias de especias, hierbas mediterráneas secas y sales ahumadas artesanales en frascos elegantes. Los vendes online mediante kits de regalo para amantes de la cocina y en pequeños comercios de cercanía.",
+      "casos": [
+       {
+        "quien": "Entrepreneur",
+        "pais": "",
+        "resultado": "‘Claude Was My First Employee’: Her Tasty Side Hustle Sold Out Fast and Makes $15,000 a Month",
+        "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUmNkNk93Y3c5Mnd0LVdodUxDY3JlS3JGOUJHNDh5eHRPcWZYWU51aDJjSHA0VGpadHBMU0F1THRBQ3ZjY3o4djFESTJEbFRsekozbEhBZGtoRUxBbHFFQ0psdlAtVmk2WkwwQzQ2cWV4Z1JLUkhWR0dDVjVCekNmZHVzd1BJME51aW1UYWIwOEJ6RmFlcEtrU1hXMTVfckJIa3Mzdy1uTmlCSWtwX3k4MFc0ZHEwZnBQTHFwQ25hejIxTy1yRVZINA?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina a la perfección tu pasión por la cocina y tu sentido estético para diseñar un envasado y etiquetado atractivo sin necesitar gran infraestructura.",
+      "como_empezar": [
+       "Semana 1: Define 4 mezclas estrella (ej. Mediterránea, Barbacoa Dulce, Sal de Cítricos Valencianos) y haz pruebas de sabor.",
+       "Semana 2: Diseña la marca y etiquetas en Canva, adquiere frascos de vidrio e ingredientes al por mayor.",
+       "Semana 3: Abre tienda en Etsy/Shopify y crea perfil de Instagram con fotos gastronómicas de alta calidad.",
+       "Semana 4: Envía muestras a gastronómicos locales e influyentes de Valencia y ofrece kits de prueba a amigos y vecinos."
+      ],
+      "coste_inicial": "180 € (compra inicial de especiería al por mayor, envases de vidrio, etiquetas de imprenta y dominio web).",
+      "herramientas": [
+       "Canva Pro",
+       "Shopify o Etsy",
+       "Báscula digital de precisión",
+       "Selladora de envases"
+      ],
+      "precio": "Pack de 3 frascos gourmet por 18 € o frasco individual a 6,50 €.",
+      "primeras_clientas": [
+       "Contactar con tiendas gourmet y frutaderías de Riba-roja y Valencia para dejar frascos en consignación.",
+       "Publicar vídeos cortos de recetas fáciles usando los sazonadores en Instagram y TikTok."
+      ],
+      "ingresos_posibles": "Estimación prudente de 300 € a 700 €/mes iniciales vendiendo 25-40 packs al mes, basándonos en márgenes del 70% sobre el coste del ingrediente.",
+      "horas_semana": "10 - 15 horas a la semana.",
+      "tramites": [
+       "Inscripción en el Registro Autonómico de Empresas Alimentarias de la Comunitat Valenciana para obrador/cocina doméstica.",
+       "Curso y carné de manipulador de alimentos de mayor riesgo.",
+       "Cumplimiento del Reglamento (UE) 1169/2011 sobre etiquetado de alérgenos y fechas de caducidad.",
+       "Alta en el RETA de autónomos (aprovechando tarifa plana o cuota cero de la Comunitat Valenciana)."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Lenta rotación inicial si no se cuida el empaquetado.",
+       "Variación de precios de materias primas.",
+       "Trámites sanitarios iniciales laboriosos."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina"
+      ]
+     },
      {
       "id": "c56a8bf51",
       "fecha": "2026-11-25T12:16:53Z",
@@ -1125,7 +1183,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 27,
+   "n": 18,
    "err": null
   }
  },
