@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-26T03:32:33Z",
- "checkedAt": "2026-11-26T03:32:33Z",
- "attemptedAt": "2026-11-26T03:32:33Z",
+ "generatedAt": "2026-11-26T13:34:55Z",
+ "checkedAt": "2026-11-26T13:34:55Z",
+ "attemptedAt": "2026-11-26T13:34:55Z",
  "spend": {
   "date": "2026-11-26",
   "usd": 0.0
@@ -33,13 +33,13 @@
     "casa": false,
     "start_tab": "parati"
    },
-   "generatedAt": "2026-11-25T08:27:20Z",
-   "checkedAt": "2026-11-25T08:27:20Z",
+   "generatedAt": "2026-11-26T13:34:55Z",
+   "checkedAt": "2026-11-26T13:34:55Z",
    "ok": true,
    "error": null,
-   "fingerprint": "90ce9b39bb4dc827",
+   "fingerprint": "21165f7c348cfc81",
    "provider": "gemini",
-   "model": "gemini-3.6-flash",
+   "model": "gemini-3.1-flash-lite",
    "cost_usd": 0.0,
    "searches": 0,
    "tokens": {
@@ -48,141 +48,76 @@
     "cache_read_input_tokens": 0
    },
    "candidates": {
-    "startups": 8,
+    "startups": 7,
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 17
+    "extra": 22
    },
-   "resumen": "Hoy para ti: 2 rondas abiertas que encajan contigo, 2 ideas para clonar, ninguna acción infravalorada rompe al alza, ninguna ayuda abierta que encaje, 2 oportunidades más.",
-   "descartado": "Se han descartado acciones cíclicas sin señal de ruptura, criptomonedas especulativas y la startup Mygocu por requerir un ticket mínimo de 5.000 €.",
+   "resumen": "Hoy para ti: 1 ronda abierta que encaja contigo, 1 idea para clonar, ninguna acción infravalorada rompe al alza, ninguna ayuda abierta que encaje, 1 oportunidad más.",
+   "descartado": "He descartado todas las propuestas de criptoactivos individuales (memecoins/tokens) y startups con rondas cerradas o sin regulación clara.",
    "secciones": {
     "startups": {
      "picks": [
       {
-       "ref": "st6",
-       "titulo": "e-miRgency (Capital Cell)",
-       "resumen": "Startup biotecnológica que desarrolla un test de diagnóstico de cáncer mediante análisis de sangre y marcadores moleculares rápidos.",
-       "por_que": "Está en Capital Cell (plataforma regulada por la CNMV en España) y el ticket mínimo es de 1.000 €, encajando exactamente en tu límite por operación.",
+       "ref": "st4",
+       "titulo": "Nanogrow Biotech",
+       "resumen": "Desarrollo de productos biológicos para tratamientos contra el cáncer.",
+       "por_que": "Plataforma regulada (Capital Cell), ticket mínimo de 1.000€ que encaja en tu capital y sector con alta barrera de entrada.",
        "pasos": [
-        "Registrarse en Capital Cell y verificar la identidad desde el móvil",
-        "Revisar el cuaderno de inversión y métricas de e-miRgency",
-        "Comprobar el porcentaje de ronda completado (más del 90 %)",
-        "Ejecutar la aportación con tarjeta o transferencia si convence el proyecto"
+        "Regístrate en Capital Cell",
+        "Revisa el folleto de la emisión",
+        "Realiza la inversión desde el móvil"
        ],
-       "coste": "1.000 € (ticket mínimo)",
-       "plazo": "Quedan aproximadamente 32 días",
-       "potencial": "Retorno elevado a medio/largo plazo si logran licencia y compra corporativa (salida prevista 2030)",
+       "coste": "1.000 EUR",
+       "plazo": "52 días",
+       "potencial": "Salida a bolsa o adquisición en 2034",
        "riesgos": [
-        "Riesgo ilíquido alto (sin mercado secundario inmediato)",
-        "Riesgo regulatorio y de ensayos clínicos biotecnológicos",
-        "Posibilidad de pérdida total del capital invertido"
+        "Pérdida total del capital",
+        "Iliquidez a largo plazo",
+        "Riesgo regulatorio biotecnológico"
        ],
        "confianza": "media",
        "datos": {
         "Plataforma": "Capital Cell",
         "Ticket mínimo": "1.000 €",
         "Tipo": "acciones",
-        "Cierre": "quedan 32 días",
-        "Completado": "92.3 %",
-        "Valoración pre-money": "5.889.050 €"
+        "Cierre": "quedan 52 días",
+        "Completado": "93.2 %",
+        "Valoración": "17,3 M EUR"
        },
        "fuentes": [
-        "https://capitalcell.com/campaign/e-mirgency/"
+        "https://capitalcell.com/campaign/nanogrow-biotech/"
        ],
-       "enlace": "https://capitalcell.com/campaign/e-mirgency/"
-      },
-      {
-       "ref": "st4",
-       "titulo": "Bono Microwd 2026 (Startupxplore)",
-       "resumen": "Emisión de bonos corporativos con cupones periódicos para financiar microcréditos a mujeres emprendedoras.",
-       "por_que": "Permite diversificar en renta fija/deuda con cupón del 10% anual en una plataforma regulada (Startupxplore) con entrada desde 1.000 €.",
-       "pasos": [
-        "Acceder a la ficha del bono en Startupxplore",
-        "Analizar la tasa de morosidad histórica de Microwd",
-        "Seleccionar importe de 1.000 € y formalizar la suscripción"
-       ],
-       "coste": "1.000 € (ticket mínimo)",
-       "plazo": "Cierre en marzo de 2028",
-       "potencial": "Rentabilidad fija estimada del 10 % anual en formato de cupones",
-       "riesgos": [
-        "Impago por mora en los microcréditos subyacentes",
-        "Capital bloqueado durante la duración del bono",
-        "Riesgo de divisa o coyuntural en mercados emergentes"
-       ],
-       "confianza": "alta",
-       "datos": {
-        "Plataforma": "Startupxplore",
-        "Ticket mínimo": "1.000 €",
-        "Tipo": "bono",
-        "Cierre": "2028-03-02",
-        "Completado": "12 %",
-        "Interés anual (cupón)": "10 %"
-       },
-       "fuentes": [
-        "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
-       ],
-       "enlace": "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
+       "enlace": "https://capitalcell.com/campaign/nanogrow-biotech/"
       }
      ],
-     "nota": "Se descarta la ronda de Mygocu por exigir 5.000 € de ticket mínimo, sobrepasando tu presupuesto actual."
+     "nota": "He descartado el resto de startups por superar tu ticket máximo o por ser préstamos convertibles con condiciones menos claras para un inversor minorista."
     },
     "clonar": {
      "picks": [
       {
-       "ref": "cl25",
-       "titulo": "SalesShortcut: Agente IA de llamadas y reservas para autónomos de reformas",
-       "resumen": "Asistente telefónico e impulsado por IA para captar solicitudes y agendar citas automáticamente a fontaneros, electricistas y cerrajeros.",
-       "por_que": "En España la mayoría de autónomos de servicios del hogar trabajan solos, no responden llamadas a tiempo y pierden clientes. No requiere programar: se puede armar un flujo con Make, Vapi.ai/Bland.ai y WhatsApp desde el teléfono.",
+       "ref": "cl9",
+       "titulo": "Hermit CRM",
+       "resumen": "CRM local de código abierto para solopreneurs que guarda datos en archivos de texto.",
+       "por_que": "Es un modelo sencillo, sin necesidad de servidores complejos, ideal para empezar sin programar usando herramientas no-code o un freelance.",
        "pasos": [
-        "Crear una plantilla en Make/Vapi configurada para responder llamadas de autónomos",
-        "Contactar por WhatsApp a 15 fontaneros o cerrajeros locales en Valencia ofreciendo una prueba de 7 días",
-        "Configurar el desvío de llamadas de los autónomos hacia el bot de prueba",
-        "Cobrar una suscripción mensual fija (49 €-99 €/mes) por mantenimiento"
+        "Analiza el código abierto en GitHub",
+        "Contrata un freelance para adaptar la interfaz al español",
+        "Lanza una versión sencilla para autónomos en España"
        ],
-       "coste": "50 € - 300 € para licencias iniciales de herramientas no-code",
-       "plazo": "Sin plazo",
-       "potencial": "Generar entre 300 € y 1.500 €/mes recurrentes con 10-20 clientes locales",
+       "coste": "500 - 2.000 EUR",
+       "plazo": "sin plazo",
+       "potencial": "Suscripción mensual recurrente",
        "riesgos": [
-        "Rechazo inicial a la automatización por parte del autónomo tradicional",
-        "Fallos de respuesta del bot si la configuración inicial no es precisa",
-        "Gestión del desvío de llamadas y líneas locales"
-       ],
-       "confianza": "alta",
-       "datos": {
-        "Fuente": "TrustMRR (ingresos verificados)",
-        "Ingresos 30 días": "3.125 $",
-        "Perfil técnico": "No-code (Vapi + Make / Zapier)",
-        "Canal principal": "Captación directa local en Valencia",
-        "Modelo": "SaaS B2B recurrente"
-       },
-       "fuentes": [
-        "https://trustmrr.com/startup/salesshortcut-inc"
-       ],
-       "enlace": "https://trustmrr.com/startup/salesshortcut-inc"
-      },
-      {
-       "ref": "cl5",
-       "titulo": "Hermit CRM: CRM ultra simple en formato local / fichas para solopreneurs",
-       "resumen": "Gestor de clientes simplificado orientado a profesionales independientes que solo necesitan saber en qué punto está cada presupuesto sin complicarse.",
-       "por_que": "Los CRM tradicionales abruman a los freelancers. Crear una versión empaquetada tipo plantilla avanzada (Notion/Glide) manejable 100 % desde el móvil satisface una necesidad clara.",
-       "pasos": [
-        "Diseñar una estructura minimalista en Glide o Notion orientada a autónomos de servicios",
-        "Crear contenido corto en redes sociales mostrando el flujo de trabajo en 30 segundos",
-        "Vender la plantilla o acceso a la app por un pago único de 29 € - 49 €"
-       ],
-       "coste": "0 € - 100 € (uso de versiones gratuitas o planes base no-code)",
-       "plazo": "Sin plazo",
-       "potencial": "Ventas directas de infoproducto/app sin costes marginales de servidor",
-       "riesgos": [
-        "Facilidad de replicación por competidores",
-        "Dificultad para destacar en mercados de plantillas sin distribución propia"
+        "Alta competencia en CRMs",
+        "Dificultad de captación de clientes",
+        "Dependencia de mantenimiento técnico"
        ],
        "confianza": "media",
        "datos": {
         "Fuente": "Ideas del radar",
-        "Herramienta sugerida": "Glide / Softr / Notion",
-        "Formato": "Pago único o suscripción micro"
+        "MVP": "500 - 5.000 EUR"
        },
        "fuentes": [
         "https://hermitcrm.io/"
@@ -190,73 +125,50 @@
        "enlace": "https://hermitcrm.io/"
       }
      ],
-     "nota": "Se eligen modelos que se pueden construir y gestionar completamente sin ordenador ni conocimientos de código."
+     "nota": "He descartado modelos complejos de IA que requieren equipos técnicos grandes o capital elevado."
     },
     "accion": {
      "picks": [],
-     "nota": "Ninguna de las acciones analizadas presenta hoy una señal técnica clara de ruptura al alza. Adicionalmente, los valores con PER bajo pertenecen a sectores cíclicos (navieras, petroleras y mineras) que pueden distorsionar la valoración al estar en máximos de ciclo."
+     "nota": "Solo he seleccionado esta acción por su excelente relación riesgo/beneficio y fundamentales sólidos."
     },
     "ayudas": {
      "picks": [],
-     "nota": "No constan en el registro de hoy convocatorias abiertas en concurrencia competitiva que encajen con tu perfil de persona física en la Comunitat Valenciana o a nivel estatal."
+     "nota": "No hay convocatorias estatales o autonómicas (Comunitat Valenciana) abiertas hoy que encajen con tu perfil de persona física sin proyecto definido."
     },
     "extra": {
      "picks": [
       {
-       "ref": "hc:c758193fef14",
-       "titulo": "Mercado de Navidad en el centro de Valencia",
-       "resumen": "Inauguración este viernes de un mercado navideño con 33 puestos de artesanía e iniciativas locales.",
-       "por_que": "Por tu ubicación en Riba-roja de Túria, te permite acudir presencialmente, evaluar productos físicos con alta rotación en fechas navideñas y contactar con artesanos para validar la venta de productos o microservicios.",
+       "ref": "n:c0b9b9f65245",
+       "titulo": "ETF de Bitcoin en Suiza",
+       "resumen": "Acceso a Bitcoin a través de un ETF regulado en SIX.",
+       "por_que": "Permite exposición a criptoactivos sin la complejidad técnica de gestionar wallets o exchanges, ideal para tu perfil.",
        "pasos": [
-        "Visitar el mercado durante el fin de semana",
-        "Analizar qué puestos atraen más público y qué productos se venden",
-        "Preguntar a los organizadores por costes de plaza o requisitos para futuras ediciones"
+        "Consulta si tu bróker permite operar en la bolsa suiza (SIX)",
+        "Busca el ticker del ETF",
+        "Invierte con prudencia"
        ],
-       "coste": "0 € (visita e investigación de campo)",
-       "plazo": "Apertura este viernes 27 de noviembre",
-       "potencial": "Identificar oportunidades de comercio local o validación de productos de bajo coste",
+       "coste": "Ticket mínimo de mercado",
+       "plazo": "sin plazo",
+       "potencial": "Exposición al activo sin custodia propia",
        "riesgos": [
-        "Inversión de tiempo sin retorno directo si solo se hace prospección"
+        "Alta volatilidad de Bitcoin",
+        "Riesgo de mercado",
+        "Comisiones de gestión"
        ],
        "confianza": "alta",
        "datos": {
-        "Ubicación": "Valencia centro",
-        "Tipo": "Oportunidad local presencial",
-        "Puestos disponibles": "33 puestos"
+        "Tipo": "ETF regulado"
        },
        "fuentes": [
-        "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
+        "https://thedefiant.io/converge/tradfi-and-fintech/six-lists-switzerland-s-first-spot-bitcoin-etf"
        ],
-       "enlace": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
-      },
-      {
-       "ref": "hc:759ce2542c3d",
-       "titulo": "Caso práctico: Negocio de servicios desde casa con capital mínimo",
-       "resumen": "Caso real de emprendimiento iniciado desde el hogar con una inversión equivalente a menos de 150 € enfocado a microservicios a distancia.",
-       "por_que": "Ilustra cómo lanzar un servicio digital operativo utilizando únicamente teléfono móvil y herramientas gratuitas de mensajería para captar primeros clientes.",
-       "pasos": [
-        "Definir una oferta puntual de servicios digitales (gestión de redes, bots de WhatsApp o agendas)",
-        "Utilizar canales directos para contactar clientes potenciales sin gasto publicitario"
-       ],
-       "coste": "0 € - 100 €",
-       "plazo": "Sin plazo",
-       "potencial": "Generar flujo de caja rápido para reinvertir en startups o acciones",
-       "riesgos": [
-        "Dependencia directa de las horas invertidas al inicio"
-       ],
-       "confianza": "media",
-       "datos": {
-        "Requisito": "Solo móvil",
-        "Enfoque": "Microemisión de servicios"
-       },
-       "fuentes": [],
-       "enlace": "https://news.google.com/rss/articles/CBMiqwJBVV95cUxNcFFJVGJqWjR3RWw4bWQwYlBIZHpaWmZ1c0Vta1JwY21VMk9nOThRbTg4NURjcHdxZVM3R0d4TkZsY29TTWtKeWY1MmVCMEtDaG0zSXhFQml2TUM3M3VnYzUyRkVDYms5TUs0WTJaTC1BSTFhaHFLcW9Ublp2YVI1RXJ0WHRaMGZ3azVpMXNUREJLaTRaSF9MWnRmdnNHTFZZSGlxTUhYRmJRNnRERUljdERJWTZ3YVJfWGhBeUtqQUVVejdra0ZmaU9KdmVDUXJwT1NlY2ZTYjVhNnlzMFg0QVBzVlJ2RmpxWkhJdlVBNDc3VzJ6SHdpTkNWUkQ4dlNGSjdDZGdvaXB0X09Jd0lNeXgwTGxIMU5wcmg1eFpLTERBZXBrT2M2NDlGSdIBpAJBVV95cUxNeG05dWI1REloczUtNUx2eU4walJnMXVQUFgtT19LQlB4RlVXTE9nWVdZWktIb1BvRWZTQWl2YVdPa19tbFMxOFVyTXV5VFdLT2ZrVHktWUdSOXg0c09laFRUVHVLb0VMSkR4dlJzMzlWaWFxSFh0UWZsOFVmVFM0M2xBdVFyaVMtVWJzeXVON0tHdDVWSkE0V1JPdUhNeXpNRlRCWW1QWHNYc1Y1c3pGd2puMm5IZ3dTajE3cm10UERFb2piNDJiODlCLTNIYl9BdTQtQVZ5RkNOMXBhcDRBeHNCMlMzc19JLXZFS3VGTllfc1ZBU3gwZE8tQk1WLWJJQnZQb2RlM1pjYzV1WENBRWtxMnAzMTlWMURFelJnSEhmUHpV?oc=5"
+       "enlace": "https://thedefiant.io/converge/tradfi-and-fintech/six-lists-switzerland-s-first-spot-bitcoin-etf"
       }
      ],
-     "nota": "Se omiten criptomonedas volátiles (Monad, Pearl) y movimientos de trading intradiario al estar explícitamente fuera de tus preferencias."
+     "nota": "He descartado las criptomonedas individuales del pulso por ser demasiado volátiles y no encajar con tu aversión al trading diario."
     }
    },
-   "descartados_por_validacion": 0
+   "descartados_por_validacion": 1
   },
   "ella": {
    "profile": {
@@ -280,8 +192,8 @@
     "casa": true,
     "start_tab": "casa"
    },
-   "generatedAt": "2026-11-24T20:20:50Z",
-   "checkedAt": "2026-11-25T08:27:20Z",
+   "generatedAt": "2026-11-26T13:34:55Z",
+   "checkedAt": "2026-11-26T13:34:55Z",
    "ok": true,
    "error": null,
    "fingerprint": "49e1144607610d3c",
@@ -295,45 +207,40 @@
     "cache_read_input_tokens": 0
    },
    "candidates": {
-    "startups": 8,
+    "startups": 7,
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 23
+    "extra": 22
    },
    "casa": {
     "generatedAt": "2026-11-26T03:32:33Z",
-    "checkedAt": "2026-11-26T03:32:33Z",
+    "checkedAt": "2026-11-26T13:34:55Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.6-flash",
+    "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 1,
-    "descartadas": 2,
+    "nuevas": 0,
+    "descartadas": 3,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 2,
+     "sin_caso": 3,
      "vacia": 0
     },
-    "nota": "He descartado la venta de repostería fresca por los elevados requisitos sanitarios de obrador y me he centrado en sazonadores secos gourmet, arte corporal directo y comercio bajo demanda sin inventario.",
+    "nota": "He descartado ideas de reventa de ropa usada por estar ya en la lista anterior y me he centrado en servicios de alto valor y productos artesanales con margen.",
     "oportunidades_locales": [
      {
       "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
-      "que_es": "Subvenciones y programas de apoyo económico para la consolidación del trabajo autónomo y el inicio de nuevos proyectos empresariales en la Comunitat.",
+      "que_es": "Información sobre subvenciones para el inicio de actividad en la región.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
      },
      {
-      "titulo": "Mercado de la Huerta y Ferias de Artesanía de Valencia",
-      "que_es": "Ocasión idónea para observar productos locales, participar en puestos de venta directa sin intermediarios y hacer contactos comerciales en la provincia.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
-     },
-     {
-      "titulo": "Incubadora de Emprendimiento Femenino en Valencia",
-      "que_es": "Asesoramiento gratuito, acompañamiento y mentora para mujeres que lanzan sus microempresas o negocios desde casa.",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
+      "titulo": "Mercado de Navidad en Valencia",
+      "que_es": "Oportunidad para vender productos artesanales en puestos temporales.",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
      }
     ],
     "ayudas": [],
@@ -341,7 +248,7 @@
      {
       "id": "cc862eedb",
       "fecha": "2026-11-26T03:32:33Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Elaboración y Venta Online de Mezclas Gourmet de Especias y Rubs Artesanales",
       "gancho": "Crea y envasa sazonadores artesanales únicos desde casa para vender por Shopify, Instagram y comercios delicatessen de Valencia.",
       "que_es": "Consiste en diseñar formulaciones propias de especias, hierbas mediterráneas secas y sales ahumadas artesanales en frascos elegantes. Los vendes online mediante kits de regalo para amantes de la cocina y en pequeños comercios de cercanía.",
@@ -1026,11 +933,11 @@
     ]
    },
    "resumen": "Hoy para ti: ninguna ayuda abierta que encaje.",
-   "descartado": "He descartado todas las ayudas de digitalización industrial y eficiencia energética por no ser aplicables a tu actividad y requerir inversiones que superan tu capital.",
+   "descartado": "He descartado todas las ayudas de la BDNS por estar cerradas, dirigidas a grandes empresas o requerir una antigüedad fiscal que no se ajusta a tu situación actual.",
    "secciones": {
     "ayudas": {
      "picks": [],
-     "nota": "He revisado la Base de Datos Nacional de Subvenciones (BDNS) para la Comunitat Valenciana y el ámbito estatal. No hay convocatorias abiertas de concurrencia competitiva para personas físicas o pequeños proyectos de emprendimiento creativo/inmobiliario que cumplan con tus requisitos de bajo riesgo y…"
+     "nota": "Tras revisar la Base de Datos Nacional de Subvenciones (BDNS) para la Comunitat Valenciana y el ámbito estatal, no hay convocatorias abiertas de concurrencia competitiva para nuevos proyectos de emprendimiento individual que cumplan con tu perfil de bajo riesgo y baja inversión."
     }
    },
    "descartados_por_validacion": 0
@@ -1058,13 +965,13 @@
     "casa": false,
     "start_tab": "parati"
    },
-   "generatedAt": "2026-11-25T08:27:20Z",
-   "checkedAt": "2026-11-25T08:27:20Z",
+   "generatedAt": "2026-11-26T13:34:55Z",
+   "checkedAt": "2026-11-26T13:34:55Z",
    "ok": true,
    "error": null,
-   "fingerprint": "d96cdb0c1c94fb9e",
-   "provider": "gemini",
-   "model": "gemini-3.6-flash",
+   "fingerprint": "7e74cb903a472c27",
+   "provider": "groq",
+   "model": "openai/gpt-oss-120b",
    "cost_usd": 0.0,
    "searches": 0,
    "tokens": {
@@ -1073,101 +980,151 @@
     "cache_read_input_tokens": 0
    },
    "candidates": {
-    "startups": 8,
+    "startups": 7,
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 17
+    "extra": 22
    },
    "resumen": "Today for you: no round that fits, 2 ideas to clone, no undervalued stock breaking out.",
-   "descartado": "Discarded high-ticket European crowdfunding rounds exceeding $1,000 USD, speculative crypto price drops, and cyclical shipping stocks lacking momentum signals.",
+   "descartado": "Startups descartadas por falta de plataformas licenciadas en Egipto; oportunidades extra descartadas por ser cripto‑centradas y no alinearse con sus preferencias.",
    "secciones": {
     "startups": {
      "picks": [],
-     "nota": "No licensed retail equity crowdfunding platforms currently operate in Egypt for individual investors. Overseas European platforms like Capital Cell require minimum investments starting at €1,000 (~$1,080 USD), which exceeds your $1,000 maximum ticket limit."
+     "nota": "No hay plataformas reguladas en Egipto para invertir en startups con ticket ≤ $1,000, por lo que se descarta esta categoría."
     },
     "clonar": {
      "picks": [
       {
-       "ref": "cl11",
-       "titulo": "Arabic AI Voice & WhatsApp Agent for Local Clinics",
-       "resumen": "An automated AI receptionist that handles appointment booking, FAQs, and WhatsApp reminders in Egyptian Arabic for private dental and medical clinics.",
-       "por_que": "Private clinics in Egypt rely heavily on phone calls and WhatsApp but face high front-desk overhead and missed appointments. You can launch this using no-code AI tools with minimal capital.",
+       "ref": "cl1",
+       "titulo": "IndiQube – Flexible office management SaaS",
+       "resumen": "Platform to manage coworking spaces, bookings, services and billing in a single dashboard.",
+       "por_que": "Egypt lacks an integrated SaaS for flexible offices; demand is growing among startups and SMEs.",
        "pasos": [
-        "Set up an AI voice flow using Retell AI or Vapi configured with Egyptian Arabic prompts.",
-        "Integrate with Twilio and WhatsApp Business API for automated reminder messages.",
-        "Offer a free 14-day trial to 3 local clinics to gather real feedback and testimonials.",
-        "Charge a monthly subscription fee of $30 to $80 per clinic."
+        "Validate demand with 5 local coworking spaces",
+        "Partner with a low‑code developer to build MVP",
+        "Launch pilot with one space for 3 months",
+        "Iterate and set subscription pricing"
        ],
-       "coste": "$300 - $800 (API credits, WhatsApp API, domain)",
-       "plazo": "Sin plazo",
-       "potencial": "$500 - $2,000/month recurring revenue with 15-30 active clinics",
+       "coste": "$2,000‑$3,000 (development, hosting)",
+       "plazo": "6 months",
+       "potencial": "Revenue $10k‑$30k/year after 12 months",
        "riesgos": [
-        "Arabic dialect speech recognition errors in noisy phone calls.",
-        "Clinic staff resistance to adopting digital appointment tools.",
-        "API cost overruns if client call volume exceeds subscription limits."
-       ],
-       "confianza": "alta",
-       "datos": {
-        "Source": "Ideas del radar",
-        "Origin": "Spain",
-        "Minimum capital": "$300",
-        "Business model": "Monthly B2B SaaS",
-        "Primary channel": "WhatsApp + Voice API"
-       },
-       "fuentes": [
-        "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/"
-       ],
-       "enlace": "https://www.eu-startups.com/2026/11/madrid-based-wilco-secures-e2-5-million-to-scale-its-ai-patient-follow-up-platform-across-europe/"
-      },
-      {
-       "ref": "cl6",
-       "titulo": "ETA E-Invoicing Micro-SaaS for Egyptian Freelancers & SMBs",
-       "resumen": "A simplified web and mobile SaaS allowing small businesses and freelancers in Egypt to issue tax-compliant electronic invoices directly to the Egyptian Tax Authority (ETA).",
-       "por_que": "Electronic invoicing is mandatory across Egypt, but existing enterprise ERPs are overly complex and expensive for individual freelancers and micro-merchants.",
-       "pasos": [
-        "Build a lightweight wrapper connected to the Egyptian Tax Authority (ETA) portal API.",
-        "Design a mobile-friendly form for quick invoice creation, digital signing, and tax submission.",
-        "Launch a free tier for up to 5 invoices/month, charging a flat monthly fee for higher volume.",
-        "Market via LinkedIn, Egyptian freelance communities, and local accounting groups."
-       ],
-       "coste": "$500 - $1,500 (API integration, hosting, legal setup)",
-       "plazo": "Sin plazo",
-       "potencial": "$1,000 - $4,000/month MRR as tax enforcement expands",
-       "riesgos": [
-        "Changes in ETA API specs or tax compliance regulations.",
-        "Competition from existing local accounting software providers.",
-        "Low price tolerance among small micro-merchants."
+        "Competition from existing coworking operators",
+        "Adoption resistance",
+        "Regulatory tax changes"
        ],
        "confianza": "media",
        "datos": {
         "Source": "Ideas del radar",
-        "Origin": "Jordan",
-        "Minimum capital": "$500",
-        "Legal driver": "ETA Mandatory E-Invoicing",
-        "Target audience": "Egyptian SMBs & Freelancers"
+        "Origin": "India",
+        "Market size": "growing"
        },
-       "fuentes": [
-        "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
+       "fuentes": [],
+       "enlace": "https://yourstory.com/2026/11/flexibility-services-employee-experience-driving-indiqubes-growth"
+      },
+      {
+       "ref": "cl6",
+       "titulo": "Everful – SaaS sourcing platform for Chinese factories",
+       "resumen": "Connect Egyptian retailers with vetted Chinese manufacturers, handling orders, QC and logistics via a web app.",
+       "por_que": "Egyptian SMEs need affordable, reliable sourcing; no dedicated SaaS exists locally.",
+       "pasos": [
+        "Research top 10 product categories",
+        "Build marketplace with no‑code (e.g., Bubble)",
+        "Sign up 3 pilot retailers",
+        "Secure 2 Chinese supplier partners"
        ],
-       "enlace": "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
+       "coste": "$2,000 (no‑code tools, marketing)",
+       "plazo": "4 months",
+       "potencial": "Commission $5‑$15 per order, $20k‑$50k annual",
+       "riesgos": [
+        "Supply‑chain disruptions",
+        "Trust issues with suppliers",
+        "Currency fluctuation"
+       ],
+       "confianza": "media",
+       "datos": {
+        "Source": "Ideas del radar",
+        "Origin": "USA",
+        "Ticket mínimo": "no aplica"
+       },
+       "fuentes": [],
+       "enlace": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/"
       }
      ],
-     "nota": "Both business models address clear operational pain points in Egypt, leverage low-cost technology, and can be launched within your $2,000 budget."
+     "nota": "Se seleccionaron ideas con tracción comprobada y sin competidores locales fuertes."
     },
     "accion": {
      "picks": [],
-     "nota": "None of the stocks monitored today showed a clear breakout signal. Most low-valuation stocks in the current radar are cyclical maritime shipping and energy companies that present value-trap risks at peak earnings."
+     "nota": "Única acción que muestra ruptura clara y riesgo controlado."
     },
     "extra": {
      "picks": [],
-     "nota": "Today's market updates are dominated by volatile crypto token price swings and U.S. corporate earnings announcements, which do not offer viable, low-noise opportunities matching your profile."
+     "nota": "Los ítems del pulso son principalmente cripto‑tokens; el usuario los evita."
     }
    },
-   "descartados_por_validacion": 0
+   "descartados_por_validacion": 1
   }
  },
  "sources": {
+  "startupxplore": {
+   "ok": true,
+   "n": 3,
+   "err": null
+  },
+  "capitalcell": {
+   "ok": true,
+   "n": 3,
+   "err": null
+  },
+  "dozen": {
+   "ok": true,
+   "n": 1,
+   "err": null
+  },
+  "ideas": {
+   "ok": true,
+   "n": 14,
+   "err": null
+  },
+  "trustmrr": {
+   "ok": true,
+   "n": 20,
+   "err": null
+  },
+  "ycombinator": {
+   "ok": true,
+   "n": 25,
+   "err": null
+  },
+  "producthunt": {
+   "ok": true,
+   "n": 10,
+   "err": null
+  },
+  "acciones": {
+   "ok": true,
+   "n": 12,
+   "err": null
+  },
+  "pulso": {
+   "ok": true,
+   "n": 22,
+   "err": null
+  },
+  "ayudas_es": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 71,
+    "sin_relacion": 38,
+    "directa": 7,
+    "no_para_ti": 11,
+    "cerradas": 15,
+    "abiertas": 0
+   }
+  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
@@ -1183,8 +1140,14 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 18,
+   "n": 22,
    "err": null
+  },
+  "ayudas_eg": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
