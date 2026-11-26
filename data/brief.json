@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-26T13:34:55Z",
- "checkedAt": "2026-11-26T13:34:55Z",
- "attemptedAt": "2026-11-26T13:34:55Z",
+ "checkedAt": "2026-11-26T16:50:54Z",
+ "attemptedAt": "2026-11-26T16:50:54Z",
  "spend": {
   "date": "2026-11-26",
   "usd": 0.0
@@ -215,11 +215,11 @@
    },
    "casa": {
     "generatedAt": "2026-11-26T03:32:33Z",
-    "checkedAt": "2026-11-26T13:34:55Z",
+    "checkedAt": "2026-11-26T16:50:54Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.1-flash-lite",
+    "model": "gemini-3.6-flash",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
@@ -230,7 +230,7 @@
      "sin_caso": 3,
      "vacia": 0
     },
-    "nota": "He descartado ideas de reventa de ropa usada por estar ya en la lista anterior y me he centrado en servicios de alto valor y productos artesanales con margen.",
+    "nota": "He seleccionado 3 ideas viables sin necesidad de stock elevado ni inversión inicial superior a 300 €, priorizando sus pasiones por la cocina, el arte y el diseño enfocado a niños.",
     "oportunidades_locales": [
      {
       "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
@@ -1067,87 +1067,23 @@
   }
  },
  "sources": {
-  "startupxplore": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "capitalcell": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "dozen": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
-  "ideas": {
-   "ok": true,
-   "n": 14,
-   "err": null
-  },
-  "trustmrr": {
-   "ok": true,
-   "n": 20,
-   "err": null
-  },
-  "ycombinator": {
-   "ok": true,
-   "n": 25,
-   "err": null
-  },
-  "producthunt": {
-   "ok": true,
-   "n": 10,
-   "err": null
-  },
-  "acciones": {
-   "ok": true,
-   "n": 12,
-   "err": null
-  },
-  "pulso": {
-   "ok": true,
-   "n": 22,
-   "err": null
-  },
-  "ayudas_es": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": {
-    "encontradas": 71,
-    "sin_relacion": 38,
-    "directa": 7,
-    "no_para_ti": 11,
-    "cerradas": 15,
-    "abiertas": 0
-   }
-  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
    "err": null,
    "filtro": {
-    "encontradas": 71,
+    "encontradas": 70,
     "sin_relacion": 38,
     "directa": 7,
     "no_para_ti": 11,
-    "cerradas": 15,
+    "cerradas": 14,
     "abiertas": 0
    }
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 22,
+   "n": 28,
    "err": null
-  },
-  "ayudas_eg": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
