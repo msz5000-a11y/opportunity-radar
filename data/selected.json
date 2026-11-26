@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-25T19:31:01Z",
+ "generatedAt": "2026-11-26T03:40:06Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 36,
+ "studied": 37,
  "selected": [],
  "nearMisses": [
   {
@@ -382,7 +382,7 @@
   "calls": {}
  },
  "geminiDiagnostic": {
-  "at": "2026-11-25T19:31:01Z",
+  "at": "2026-11-26T03:40:06Z",
   "status": 503,
   "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
   "reason": []

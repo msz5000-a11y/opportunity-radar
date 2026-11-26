@@ -12660,6 +12660,408 @@
   ]
  },
  {
+  "name": "Tempo Native Multisig",
+  "category": "lanzamientos",
+  "subcategory": "infraestructura",
+  "kind": "pasiva",
+  "description": "Funcionalidad nativa de multisig que permite crear cuentas con varias firmas sin mover fondos, facilitando la gestión segura de activos en cadena. La versión testnet está activa y la activación en mainnet está prevista para el 8 de diciembre.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se ha anunciado disponibilidad para usuarios en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requieren costes para usar la testnet; posibles costes futuros en mainnet no especificados.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, es una funcionalidad de la red, no un activo negociable.",
+  "horizon": "corto plazo",
+  "deadline": "2026-12-08",
+  "potential": "Mejora la seguridad y flexibilidad en la gestión de activos al permitir aprobaciones múltiples sin transferir fondos, lo que puede impulsar adopción de soluciones on‑chain más complejas.",
+  "difficulty": "media",
+  "timeNeeded": "Registrarse en la testnet de Tempo, crear una cuenta multisig y configurar los umbrales de aprobación.",
+  "subscores": {
+   "novedad": {
+    "v": 6.0,
+    "why": "Lanzamiento reciente de una solución multisig nativa en testnet · Verificador: La funcionalidad multisig nativa es un estándar en desarrollo, pero la existencia del proyecto Tempo no está confirmada.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 3.0,
+    "why": "Facilita gestión de activos sin mover fondos, potencial de adopción en mainnet · Verificador: Sin un ecosistema o red verificable, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 1.0,
+    "why": "No se dispone de datos de mercado en la fuente · Verificador: No existen datos de mercado ni capitalización para este proyecto. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No se menciona información del equipo en la fuente · Verificador: No se ha podido identificar a los desarrolladores o la entidad legal detrás de Tempo. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No se indica financiación específica para este desarrollo · Verificador: No hay información sobre rondas de financiación o respaldo institucional. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 1.0,
+    "why": "No hay datos sobre comunidad de usuarios o desarrolladores en la fuente · Verificador: No se observa tracción en redes sociales o foros de desarrolladores. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "Solo disponible en testnet; adopción real aún no probada · Verificador: Al no existir red principal, la adopción es nula.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 2.0,
+    "why": "Existen otras soluciones multisig, pero esta es nativa; la competencia no se describe · Verificador: Existen soluciones multisig consolidadas (Gnosis Safe, etc.) que superan cualquier propuesta no verificada. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 2.0,
+    "why": "Utiliza infraestructura nativa y evita mover fondos, reduciendo riesgos técnicos · Verificador: La falta de transparencia y auditorías públicas eleva el riesgo de seguridad. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "No implica inversión de capital, riesgo financiero bajo · Verificador: Aunque no requiere inversión, el uso de una infraestructura no verificada puede comprometer activos.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "No se confirma disponibilidad para usuarios españoles · Verificador: No hay presencia ni cumplimiento normativo en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No hay mecanismo de salida financiero; es una funcionalidad de la red · Verificador: No existe mercado secundario ni liquidez. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "tecnico_inmaduro",
+    "severity": "media",
+    "detail": "La funcionalidad está en testnet; posibles bugs o cambios antes del lanzamiento en mainnet."
+   },
+   {
+    "code": "proyecto_fantasma",
+    "severity": "alta",
+    "detail": "No se ha podido verificar la existencia técnica o legal del proyecto Tempo."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia de documentación técnica (whitepaper) o repositorio oficial accesible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información sobre 'Tempo' como red o protocolo es insuficiente y no existen registros públicos verificables de un proyecto blockchain consolidado bajo ese nombre con una multisig nativa. La fuente citada (The Defiant) no permite verificar el contenido debido a un error 403, y no hay rastro de una red llamada 'Tempo' en los repositorios principales de desarrollo o registros de la CNMV."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Facilita gestión de activos con múltiples firmas sin mover fondos",
+   "Mejora la seguridad y flexibilidad de cuentas on‑chain"
+  ],
+  "howToParticipate": [
+   "Registrarse en la testnet de Tempo",
+   "Crear una cuenta multisig configurando umbrales y claves",
+   "Probar la funcionalidad de aprobación y cambios de clave"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Posibles bugs o vulnerabilidades en la fase testnet",
+   "Pérdida de fondos si se usa en mainnet antes de auditorías completas"
+  ],
+  "earlySignals": [
+   "PulseScore 55 indica interés moderado"
+  ],
+  "signals": {
+   "pulseScore": 55
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en los registros de la CNMV ni en el registro MiCA de ESMA. Al ser una infraestructura de red, no está sujeta a supervisión directa salvo que ofrezca servicios financieros.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · The Defiant",
+    "url": "https://thedefiant.io/news/blockchains/tempo-s-native-multisig-goes-live-on-testnet"
+   },
+   {
+    "title": "CNMV - Registros oficiales",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Pulso · The Defiant",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La información sobre 'Tempo' como red o protocolo es insuficiente y no existen registros públicos verificables de un proyecto blockchain consolidado bajo ese nombre con una multisig nativa. La fuente citada (The Defiant) no permite verificar el contenido debido a un error 403, y no hay rastro de una red llamada 'Tempo' en los repositorios principales de desarrollo o registros de la CNMV.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 33
+  },
+  "discoveredAt": "2026-11-26",
+  "id": "n-tempo-native-multisig",
+  "isNew": true,
+  "score": 4,
+  "rawScore": 19.0,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "tecnico_inmaduro",
+    "severity": "media",
+    "detail": "La funcionalidad está en testnet; posibles bugs o cambios antes del lanzamiento en mainnet."
+   },
+   {
+    "code": "proyecto_fantasma",
+    "severity": "alta",
+    "detail": "No se ha podido verificar la existencia técnica o legal del proyecto Tempo."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia de documentación técnica (whitepaper) o repositorio oficial accesible."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información sobre 'Tempo' como red o protocolo es insuficiente y no existen registros públicos verificables de un proyecto blockchain consolidado bajo ese nombre con una multisig nativa. La fuente citada (The Defiant) no permite verificar el contenido debido a un error 403, y no hay rastro de una red llamada 'Tempo' en los repositorios principales de desarrollo o registros de la CNMV."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Lanzamiento reciente de una solución multisig nativa en testnet · Verificador: La funcionalidad multisig nativa es un estándar en desarrollo, pero la existencia del proyecto Tempo no está confirmada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Facilita gestión de activos sin mover fondos, potencial de adopción en mainnet · Verificador: Sin un ecosistema o red verificable, el potencial es puramente especulativo. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No se dispone de datos de mercado en la fuente · Verificador: No existen datos de mercado ni capitalización para este proyecto. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se menciona información del equipo en la fuente · Verificador: No se ha podido identificar a los desarrolladores o la entidad legal detrás de Tempo. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No se indica financiación específica para este desarrollo · Verificador: No hay información sobre rondas de financiación o respaldo institucional. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay datos sobre comunidad de usuarios o desarrolladores en la fuente · Verificador: No se observa tracción en redes sociales o foros de desarrolladores. · Discrepancia entre modelos (4 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "Solo disponible en testnet; adopción real aún no probada · Verificador: Al no existir red principal, la adopción es nula.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 2.0,
+    "points": 1.0,
+    "why": "Existen otras soluciones multisig, pero esta es nativa; la competencia no se describe · Verificador: Existen soluciones multisig consolidadas (Gnosis Safe, etc.) que superan cualquier propuesta no verificada. · Discrepancia entre modelos (5 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Utiliza infraestructura nativa y evita mover fondos, reduciendo riesgos técnicos · Verificador: La falta de transparencia y auditorías públicas eleva el riesgo de seguridad. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No implica inversión de capital, riesgo financiero bajo · Verificador: Aunque no requiere inversión, el uso de una infraestructura no verificada puede comprometer activos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se confirma disponibilidad para usuarios españoles · Verificador: No hay presencia ni cumplimiento normativo en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No hay mecanismo de salida financiero; es una funcionalidad de la red · Verificador: No existe mercado secundario ni liquidez. · Discrepancia entre modelos (5 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-26T03:39:27Z",
+    "pulseScore": 55.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": 284.3,
+  "alertText": "NOMBRE: Tempo Native Multisig\nCATEGORÍA: lanzamientos · infraestructura\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Mejora la seguridad y flexibilidad en la gestión de activos al permitir aprobaciones múltiples sin transferir fondos, lo que puede impulsar adopción de soluciones on‑chain más complejas.\nPUNTUACIÓN: 4/100 · Descartar\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Facilita gestión de activos con múltiples firmas sin mover fondos; Mejora la seguridad y flexibilidad de cuentas on‑chain\nMOTIVOS PARA DESCONFIAR: La funcionalidad está en testnet; posibles bugs o cambios antes del lanzamiento en mainnet.; No se ha podido verificar la existencia técnica o legal del proyecto Tempo.; Ausencia de documentación técnica (whitepaper) o repositorio oficial accesible.; El verificador tiene dudas: La información sobre 'Tempo' como red o protocolo es insuficiente y no existen registros públicos verificables de un proyecto blockchain consolidado bajo ese nombre con una multisig nativa. La fuente citada (The Defiant) no permite verificar el contenido debido a un error 403, y no hay rastro de una red llamada 'Tempo' en los repositorios principales de desarrollo o registros de la CNMV.\nCÓMO PARTICIPAR: Registrarse en la testnet de Tempo; Crear una cuenta multisig configurando umbrales y claves; Probar la funcionalidad de aprobación y cambios de clave\nQUÉ PODRÍA HACERME PERDER EL DINERO: Posibles bugs o vulnerabilidades en la fase testnet; Pérdida de fondos si se usa en mainnet antes de auditorías completas\nFUENTES: https://thedefiant.io/news/blockchains/tempo-s-native-multisig-goes-live-on-testnet | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-26T03:39:27Z",
+  "lastSeenAt": "2026-11-26T03:39:27Z",
+  "runId": "run-20261126-0339",
+  "aliases": [
+   "web-thedefiant-io"
+  ]
+ },
+ {
   "name": "Chainflip Bounty por robo de 122.9 BTC",
   "category": "cripto",
   "subcategory": "bounty",
