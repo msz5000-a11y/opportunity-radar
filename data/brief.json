@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-26T13:34:55Z",
- "checkedAt": "2026-11-26T17:17:59Z",
- "attemptedAt": "2026-11-26T17:17:59Z",
+ "generatedAt": "2026-11-26T22:35:59Z",
+ "checkedAt": "2026-11-26T22:35:59Z",
+ "attemptedAt": "2026-11-26T22:35:59Z",
  "spend": {
   "date": "2026-11-26",
   "usd": 0.0
@@ -214,8 +214,8 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-26T03:32:33Z",
-    "checkedAt": "2026-11-26T16:50:54Z",
+    "generatedAt": "2026-11-26T22:35:59Z",
+    "checkedAt": "2026-11-26T22:35:59Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -223,28 +223,128 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 0,
-    "descartadas": 3,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 3,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He seleccionado 3 ideas viables sin necesidad de stock elevado ni inversión inicial superior a 300 €, priorizando sus pasiones por la cocina, el arte y el diseño enfocado a niños.",
+    "nota": "He buscado opciones rentables sin local adaptadas a 1.000 € de capital, descartando esquemas piramidales, productos de alto riesgo financiero y catering masivo sin infraestructura.",
     "oportunidades_locales": [
      {
-      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
-      "que_es": "Información sobre subvenciones para el inicio de actividad en la región.",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
-     },
-     {
-      "titulo": "Mercado de Navidad en Valencia",
-      "que_es": "Oportunidad para vender productos artesanales en puestos temporales.",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
+      "titulo": "Incubadora de Emprendimiento en Valencia para Mujeres",
+      "que_es": "Iniciativa de apoyo e incubación que ofrece formación y asesoría gratuita para lanzar negocios desde casa.",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
+     {
+      "id": "c57f910b4",
+      "fecha": "2026-11-26T22:35:59Z",
+      "nueva": true,
+      "titulo": "Repostería Creativa y Galletas Personalizadas por Encargo para Eventos y Mercados Locales",
+      "gancho": "Crea galletas decoradas y tartas artesanales temáticas para cumpleaños, bautizos y ferias de Valencia.",
+      "que_es": "Elaboración de galletas decoradas, cupcakes y tartas personalizadas bajo pedido para eventos infantiles y celebraciones. Te enfocas en la venta por encargos directos en Instagram/WhatsApp y la participación con puestos en ferias y mercados artesanales locales de Valencia.",
+      "casos": [
+       {
+        "quien": "Pequenas Empresas & Grandes Negócios",
+        "pais": "",
+        "resultado": "Aos 50 anos, ela criou negócio na cozinha de casa e hoje fatura R$ 157 milhões por ano",
+        "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNb25wcVM0SVhnRUJXMzNsdi1kcHMxNWJIanhFQnpsdFBHZExVOERNbm5GNDc5M3B0bGZJZzRpTFRsemVtNkdvU3FDaWpiVlBNV0FWS1ZaNGhSOGZPOXVtTTFxdHkxZERWOTRFX0hVMWlEajNVUDIyVy05ZkZnRHozcTBtUS1yQ3hxSUUwdVVGejlRS2ZtWllTcUsyNjhXM3V5d0ZZUkJqRnpnVXRiSnRMXzgxU1RBT0lXT0FNUVA4aEkxa2J3MnZaRWdmUGNOZlRFaTVLUm9RMVFfdEs1RzlxYXdtR3lxYXhYaWlKS1BpdHgwQdIBgAJBVV95cUxNQUZuQ1JaUTlENF9KcnVlSEhOY0hYaGlqMmpaQl9pNVFxbktaaDRjQXVMUzFfbmp4QjdxcXc5cGp2TlU1a0FHNWl4eWpVMmtBWElSTXZDVExBd3Z5ek9jNGg0MkI5UEY4cmtsazRtSWhrQVl0M1QzRmtraGd5RWY3VzlkMjc5a01rWjNsdWR0VjJsNklCME9Ydm93Mkt6SS1CUlpjdjRjYVpiQURFV1l4T0VrYmo4bGZwczRFd3BCMXdobzRIZ0hGVkhKQ003YzJIS2UtN1V2NG9lNjJsdmJ4QnlMblZPSVRqTVJrYjc3V2M4OWpjQVdCN29HRHBRSlpa?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina perfectamente tu afición por la cocina creativa y el detalle estético en el diseño de repostería.",
+      "como_empezar": [
+       "Semana 1: Diseñar catálogo inicial de galletas y bizcochos temáticos, preparar muestras y fotografiarlas.",
+       "Semana 2: Obtener el carné de manipulador de alimentos online y reservar uso de obrador/cocina compartida autorizada.",
+       "Semana 3: Crear perfil profesional en Instagram y difundir fotos en grupos locales de Riba-roja de Túria y alrededores.",
+       "Semana 4: Ofrecer packs de prueba para cumpleaños infantiles y solicitar puesto en ferias artesanales del municipio."
+      ],
+      "coste_inicial": "150 € - 250 € (ingredientes, cortadores/moldes, empaquetado y reserva de obrador por horas)",
+      "herramientas": [
+       "Instagram",
+       "Canva",
+       "WhatsApp Business",
+       "Obrador o cocina adaptada"
+      ],
+      "precio": "Packs de galletas decoradas desde 25 € a 50 € por docena; tartas personalizadas desde 45 € a 80 € según complejidad.",
+      "primeras_clientas": [
+       "Publicidad directa en grupos de familias y mamás/papás de Riba-roja.",
+       "Puestos en el Mercado de la Huerta o ferias medievales/navideñas de Valencia."
+      ],
+      "ingresos_posibles": "Estimación prudente de 300 € a 900 €/mes al vender entre 10 y 20 encargos mensuales, basada en los precios habituales de repostería artesanal por encargo en España.",
+      "horas_semana": "10 - 15 horas",
+      "tramites": [
+       "Alta en autónomos (Tarifa Plana de 80 €/mes en España).",
+       "Carné de manipulador de alimentos y cumplimiento del Reglamento UE 1169/2011 sobre información de alérgenos.",
+       "Elaboración en cocina con registro sanitario autonómico o alquiler de obrador registrado."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Caudal de pedidos variable según la época del año.",
+       "Caducidad corta de productos si no son bajo pedido estricto.",
+       "Exigencia en el cumplimiento estricto de la normativa de higiene alimentaria."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina"
+      ]
+     },
+     {
+      "id": "c4f386057",
+      "fecha": "2026-11-26T22:35:59Z",
+      "nueva": true,
+      "titulo": "Fotografía y Venta Digital Inmediata en Eventos Infantiles y Deportivos Locales",
+      "gancho": "Cubre eventos locales y vende las fotos digitales al instante a las familias escaneando un código QR.",
+      "que_es": "Ofreces cobertura fotográfica en eventos deportivos de niños, festivales escolares o actos locales. Subes las imágenes a una plataforma digital de venta rápida con QR (como ZebraSnap), permitiendo que las familias encuentren y compren la descarga digital de sus fotos al momento desde el móvil.",
+      "casos": [
+       {
+        "quien": "ZebraSnap",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 129.679 $ en 30 días",
+        "url": "https://trustmrr.com/startup/zebrasnap"
+       }
+      ],
+      "por_que_tu": "Aprovecha tu gusto por los niños y las redes/internet, requiriendo mínima inversión y trabajo principalmente en fines de semana.",
+      "como_empezar": [
+       "Semana 1: Crear cuenta en ZebraSnap o plataforma similar e integrarla con un sistema de cobro online.",
+       "Semana 2: Contactar con clubes deportivos infantiles y escuelas de Riba-roja para solicitar permiso de foto en partidos.",
+       "Semana 3: Acudir al primer evento, tomar las imágenes, subirlas al sistema e imprimir tarjetas con el QR de la galería.",
+       "Semana 4: Repartir las tarjetas QR entre las familias asistentes y ofrecer descarga inmediata."
+      ],
+      "coste_inicial": "30 € - 80 € (impresión de tarjetas QR, funda/accesorios para smartphone o cámara)",
+      "herramientas": [
+       "Cámara réflex o Smartphone de gama media/alta",
+       "Plataforma ZebraSnap",
+       "Canva",
+       "WhatsApp Business"
+      ],
+      "precio": "3 € a 6 € por foto digital descargable, o pack de 15 € por la galería completa de un participante en el evento.",
+      "primeras_clientas": [
+       "Familias en partidos de fútbol/baloncesto base y torneos infantiles locales.",
+       "Organizadores de exhibiciones de danza, festivales escolares y fiestas municipales."
+      ],
+      "ingresos_posibles": "Estimación prudente de 300 € a 1.000 €/mes (cubriendo 2 a 4 eventos al mes con compras promedio de 20 a 40 familias por evento), basada en las métricas de la plataforma ZebraSnap.",
+      "horas_semana": "6 - 10 horas",
+      "tramites": [
+       "Alta en autónomos (Tarifa Plana de 80 €/mes en España).",
+       "Cumplimiento de la Ley de Protección de Datos (RGPD) y protección del menor.",
+       "Acuerdo o autorización previa por escrito con el club u organizador del evento."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Necesidad de obtener autorizaciones en eventos con menores.",
+       "Dependencia del calendario de torneos y eventos los fines de semana.",
+       "Riesgo de aplazamiento por inclemencias meteorológicas."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "niños",
+       "otros"
+      ]
+     },
      {
       "id": "cc862eedb",
       "fecha": "2026-11-26T03:32:33Z",
@@ -1066,6 +1166,25 @@
    "descartados_por_validacion": 1
   }
  },
- "sources": {},
+ "sources": {
+  "ayudas_ella": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 70,
+    "sin_relacion": 38,
+    "directa": 7,
+    "no_para_ti": 11,
+    "cerradas": 14,
+    "abiertas": 0
+   }
+  },
+  "casa_historias_ella": {
+   "ok": true,
+   "n": 25,
+   "err": null
+  }
+ },
  "model": "claude-opus-5-5"
 }
