@@ -12,18 +12,32 @@
    "trigger": "Recupera su media de 50 sesiones tras semanas por debajo, con RSI por encima de 50",
    "benchEntry": 59794.875617000005,
    "status": "abierta",
-   "returnPct": 6.51,
-   "last": 24.72,
-   "lastAt": "2026-11-25",
-   "benchPct": -1.01
+   "returnPct": 16.5,
+   "last": 27.04,
+   "lastAt": "2026-11-26",
+   "benchPct": 1.19
+  },
+  {
+   "id": "cripto-RUNE-2026-11-26",
+   "type": "cripto",
+   "symbol": "RUNE",
+   "name": "THORChain",
+   "date": "2026-11-26",
+   "entry": 0.551968,
+   "stop": 0.481877,
+   "score": 87,
+   "trigger": "Rebota en su media de 200 sesiones, que va subiendo",
+   "benchEntry": 60505.50334549779,
+   "status": "abierta",
+   "returnPct": 0.0
   }
  ],
  "summary": {
-  "signals": 1,
-  "open": 1,
+  "signals": 2,
+  "open": 2,
   "closed": 0,
-  "avgReturn": 6.51,
-  "avgBench": -1.01,
+  "avgReturn": 8.25,
+  "avgBench": 1.19,
   "hitRate": null
  }
 }

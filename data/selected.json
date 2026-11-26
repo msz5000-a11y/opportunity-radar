@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-26T03:40:06Z",
+ "generatedAt": "2026-11-26T17:09:45Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,7 +40,7 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 37,
+ "studied": 40,
  "selected": [],
  "nearMisses": [
   {
@@ -78,7 +78,7 @@
    "score": 45,
    "adjustedScore": 45,
    "risk": "medio",
-   "officialUrl": "https://www.cotec.es",
+   "officialUrl": "https://cotec.es",
    "minEntry": 0,
    "canLoseAll": false,
    "checks": {
@@ -374,17 +374,81 @@
    "webLeida": true,
    "generadoEn": "2026-11-25T08:54:59Z",
    "fichaScore": 47
+  },
+  "web-hisense-es": {
+   "segundaOpinion": {
+    "veredicto": "rechazada",
+    "motivo": "No existe mecanismo de ganancia; es una compra de consumo.",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "El producto no ofrece recompensas, airdrops ni venta de servicios; no genera ingresos."
+   },
+   "resumen": "Televisor portátil de 32\" con pantalla Hi‑QLED y batería integrada, disponible en Amazon.es por 1.399 €.",
+   "cuantoPoner": "1399 € (costo de compra, dentro del presupuesto de 2000 €).",
+   "antesDeEmpezar": [
+    "Confirmar disponibilidad en Amazon.es",
+    "Verificar precio exacto y condiciones de envío",
+    "Revisar política de devoluciones y garantía",
+    "Consultar duración real de la batería en condiciones de uso real"
+   ],
+   "pasos": [
+    {
+     "titulo": "Acceder a Amazon.es",
+     "detalle": "Abrir el navegador y entrar a www.amazon.es",
+     "tiempo": "1 min"
+    },
+    {
+     "titulo": "Buscar el producto",
+     "detalle": "Escribir \"Hisense Roam View 32S6S\" en la barra de búsqueda y seleccionar el listado oficial",
+     "tiempo": "1 min"
+    },
+    {
+     "titulo": "Añadir al carrito",
+     "detalle": "Hacer clic en \"Añadir al carrito\" y confirmar la cantidad",
+     "tiempo": "1 min"
+    },
+    {
+     "titulo": "Completar compra",
+     "detalle": "Proceder al pago con tarjeta o método disponible, introducir datos de envío y confirmar",
+     "tiempo": "2 min"
+    },
+    {
+     "titulo": "Recibir y configurar",
+     "detalle": "Esperar la entrega, desempaquetar, conectar a la corriente y seguir las instrucciones de configuración",
+     "tiempo": "30 min"
+    }
+   ],
+   "planDeSalida": "Si decide vender el televisor, puede listar en eBay, Wallapop o grupos de Facebook; la demanda es limitada y el precio de reventa será inferior al de compra.",
+   "senalesDeAlarma": [
+    "Baja demanda de reventa",
+    "Degradación de la batería con el tiempo",
+    "Obsolescencia tecnológica rápida"
+   ],
+   "erroresTipicos": [
+    "Comprar sin comprobar la garantía y política de devoluciones",
+    "No valorar la vida útil de la batería",
+    "No comparar precios con otros modelos portátiles"
+   ],
+   "fiscalidad": "La compra es un gasto de consumo; no se deduce en IRPF. Si se vende, la ganancia se considera ganancia patrimonial y tributa en la base del ahorro; consulte con un asesor fiscal.",
+   "tiempoNecesario": "poco, unos 35 min en total (compra y configuración).",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": true,
+   "generadoEn": "2026-11-26T17:09:49Z",
+   "fichaScore": 48
   }
  },
  "ai": {
-  "used": 0,
+  "used": 1,
   "errors": [],
-  "calls": {}
+  "calls": {
+   "groq": 1
+  }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-26T03:40:06Z",
-  "status": 503,
-  "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
-  "reason": []
+  "at": "2026-11-26T17:09:49Z",
+  "status": 200
  }
 }

@@ -3009,6 +3009,391 @@
   ]
  },
  {
+  "name": "Hisense Roam View 32S6S",
+  "category": "ia_tecnologia",
+  "subcategory": "hardware|televisores|portátil",
+  "kind": "pasiva",
+  "description": "Televisor portátil de 32\" con pantalla Hi‑QLED y batería integrada que ofrece hasta 10 h de autonomía. Ideal para usar en exteriores o trasladarlo entre habitaciones, aunque no sustituye a un televisor de salón grande.",
+  "officialUrl": "https://www.hisense.es",
+  "participateUrl": "https://www.amazon.es",
+  "country": "China",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible en Amazon.es a 1.399 €",
+  "costs": {
+   "minEntry": 1399,
+   "extra": 0,
+   "extraNotes": "Sin costes adicionales obligatorios",
+   "recommended": 1399,
+   "max": 1399
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "Reventa posible en segunda mano, pero demanda limitada",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "moderado",
+  "difficulty": "baja",
+  "timeNeeded": "poco (compra y puesta en marcha)",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Primer televisor portátil de Hisense con Hi‑QLED y batería integrada · Verificador: Es un formato de televisor portátil con batería integrada, poco común en el mercado de 32 pulgadas.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Nicho limitado a usos secundarios y exteriores · Verificador: Producto de nicho para usuarios que requieren movilidad en pantallas de tamaño medio.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 4.5,
+    "why": "Falta de datos de tamaño de mercado para televisores portátiles en España · Verificador: Mercado de televisores lifestyle en crecimiento, aunque con competencia de proyectores portátiles.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Hisense es un fabricante establecido, pero no se detallan responsables del proyecto · Verificador: Hisense es un fabricante global de electrónica de consumo con amplia trayectoria. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.0,
+    "why": "No se revelan fuentes de financiación del modelo · Verificador: Producto comercializado directamente por el fabricante a través de canales minoristas. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 3.5,
+    "why": "Escasa comunidad de usuarios específica para este producto · Verificador: Al ser un producto nuevo, la comunidad de usuarios específica es limitada.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 4.5,
+    "why": "Adopción esperada limitada a usuarios que necesiten movilidad · Verificador: Adopción moderada esperada por su precio elevado para ser un televisor de 32 pulgadas.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen pocos competidores directos en televisores portátiles con batería · Verificador: Existen alternativas como el LG StanbyME, aunque con diferentes especificaciones.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.0,
+    "why": "Autonomía depende del brillo y tipo de uso, según el artículo · Verificador: La degradación de la batería integrada es el principal factor de riesgo técnico a largo plazo.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 8.0,
+    "why": "Precio fijo y disponibilidad clara en Amazon · Verificador: Es una compra de consumo, no una inversión. El riesgo es la depreciación del bien.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.5,
+    "why": "Producto ya a la venta en Amazon.es · Verificador: Disponible en Amazon.es y distribuidores oficiales en España.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 4.5,
+    "why": "Reventa posible pero con pérdida de valor potencial · Verificador: La reventa de electrónica de consumo suele implicar una pérdida significativa de valor.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "autonomia_subjetiva",
+    "severity": "media",
+    "detail": "La duración de la batería de 10 h depende del brillo y del tipo de contenido"
+   },
+   {
+    "code": "depreciacion_tecnologica",
+    "severity": "media",
+    "detail": "Los televisores portátiles pierden valor rápidamente y la batería tiene una vida útil limitada."
+   },
+   {
+    "code": "precio_premium",
+    "severity": "baja",
+    "detail": "El precio de 1.399 € es elevado para un panel de 32 pulgadas, pagando un sobrecoste por la portabilidad."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Portabilidad con batería integrada",
+   "Tecnología Hi‑QLED en formato compacto"
+  ],
+  "howToParticipate": [
+   "Acceder a Amazon.es",
+   "Buscar \"Hisense Roam View 32S6S\"",
+   "Añadir al carrito y completar la compra"
+  ],
+  "actionable": true,
+  "profitPath": "Ahorro en instalación eléctrica y posible reventa a precio cercano al de compra",
+  "lossCauses": [
+   "Degradación de la batería con el tiempo",
+   "Obsolescencia tecnológica",
+   "Baja demanda de reventa"
+  ],
+  "earlySignals": [
+   "PulseScore 58 indica interés moderado en la publicación"
+  ],
+  "signals": {
+   "pulseScore": 58
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser un producto de consumo electrónico, no está sujeto a regulación financiera ni de la CNMV.",
+   "sources": []
+  },
+  "sources": [
+   {
+    "title": "Pulso · Xataka",
+    "url": "https://www.xataka.com/seleccion/hisense-presenta-32s6s-televisor-portatil-hi-qled-10-horas-bateria-para-moverlo-llevarlo-fuera-casa"
+   }
+  ],
+  "discoveredVia": "Pulso · Xataka",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El producto es un dispositivo electrónico de consumo (televisor portátil) comercializado por Hisense, una marca consolidada. La información sobre su disponibilidad en Amazon.es y sus características técnicas es coherente con el material proporcionado. No es un producto financiero ni de inversión, por lo que no requiere registro en la CNMV ni MiCA.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-26",
+  "id": "web-hisense-es",
+  "isNew": true,
+  "score": 48,
+  "rawScore": 48.2,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "autonomia_subjetiva",
+    "severity": "media",
+    "detail": "La duración de la batería de 10 h depende del brillo y del tipo de contenido"
+   },
+   {
+    "code": "depreciacion_tecnologica",
+    "severity": "media",
+    "detail": "Los televisores portátiles pierden valor rápidamente y la batería tiene una vida útil limitada."
+   },
+   {
+    "code": "precio_premium",
+    "severity": "baja",
+    "detail": "El precio de 1.399 € es elevado para un panel de 32 pulgadas, pagando un sobrecoste por la portabilidad."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Primer televisor portátil de Hisense con Hi‑QLED y batería integrada · Verificador: Es un formato de televisor portátil con batería integrada, poco común en el mercado de 32 pulgadas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.0,
+    "points": 6.0,
+    "why": "Nicho limitado a usos secundarios y exteriores · Verificador: Producto de nicho para usuarios que requieren movilidad en pantallas de tamaño medio.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Falta de datos de tamaño de mercado para televisores portátiles en España · Verificador: Mercado de televisores lifestyle en crecimiento, aunque con competencia de proyectores portátiles.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Hisense es un fabricante establecido, pero no se detallan responsables del proyecto · Verificador: Hisense es un fabricante global de electrónica de consumo con amplia trayectoria. · Discrepancia entre modelos (6 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se revelan fuentes de financiación del modelo · Verificador: Producto comercializado directamente por el fabricante a través de canales minoristas. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Escasa comunidad de usuarios específica para este producto · Verificador: Al ser un producto nuevo, la comunidad de usuarios específica es limitada.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Adopción esperada limitada a usuarios que necesiten movilidad · Verificador: Adopción moderada esperada por su precio elevado para ser un televisor de 32 pulgadas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen pocos competidores directos en televisores portátiles con batería · Verificador: Existen alternativas como el LG StanbyME, aunque con diferentes especificaciones.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Autonomía depende del brillo y tipo de uso, según el artículo · Verificador: La degradación de la batería integrada es el principal factor de riesgo técnico a largo plazo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 8.0,
+    "points": 8.0,
+    "why": "Precio fijo y disponibilidad clara en Amazon · Verificador: Es una compra de consumo, no una inversión. El riesgo es la depreciación del bien.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.5,
+    "points": 7.6,
+    "why": "Producto ya a la venta en Amazon.es · Verificador: Disponible en Amazon.es y distribuidores oficiales en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Reventa posible pero con pérdida de valor potencial · Verificador: La reventa de electrónica de consumo suele implicar una pérdida significativa de valor.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 1399.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 2798.0,
+     "netEur": 2798.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 6995.0,
+     "netEur": 6995.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 13990.0,
+     "netEur": 13990.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 27980.0,
+     "netEur": 27980.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 69950.0,
+     "netEur": 69950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 139900.0,
+     "netEur": 139900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 419700.0,
+     "netEur": 419700.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-26T17:06:46Z",
+    "pulseScore": 58.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Hisense Roam View 32S6S\nCATEGORÍA: ia_tecnologia · hardware|televisores|portátil\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: https://www.hisense.es\nENLACE DE PARTICIPACIÓN: https://www.amazon.es\nPAÍS: China\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 1.399,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 1.399,00 €\nPOTENCIAL: moderado\nPUNTUACIÓN: 48/100 · Especulativa\nRIESGO: medio\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Portabilidad con batería integrada; Tecnología Hi‑QLED en formato compacto\nMOTIVOS PARA DESCONFIAR: La duración de la batería de 10 h depende del brillo y del tipo de contenido; Los televisores portátiles pierden valor rápidamente y la batería tiene una vida útil limitada.; El precio de 1.399 € es elevado para un panel de 32 pulgadas, pagando un sobrecoste por la portabilidad.\nCÓMO PARTICIPAR: Acceder a Amazon.es; Buscar \"Hisense Roam View 32S6S\"; Añadir al carrito y completar la compra\nQUÉ PODRÍA HACERME PERDER EL DINERO: Degradación de la batería con el tiempo; Obsolescencia tecnológica; Baja demanda de reventa\nFUENTES: https://www.xataka.com/seleccion/hisense-presenta-32s6s-televisor-portatil-hi-qled-10-horas-bateria-para-moverlo-llevarlo-fuera-casa",
+  "firstSeenAt": "2026-11-26T17:06:46Z",
+  "lastSeenAt": "2026-11-26T17:06:46Z",
+  "runId": "run-20261126-1706",
+  "aliases": [
+   "web-xataka-com"
+  ]
+ },
+ {
   "name": "Spiko Euro",
   "category": "startups",
   "subcategory": "fintech/tesorería",
@@ -3427,8 +3812,8 @@
   "category": "negocio",
   "subcategory": "I+D",
   "kind": "pasiva",
-  "description": "En 2025 la inversión española en investigación y desarrollo superó los 25.000 millones de euros, alcanzando 25.321 millones. El sector empresarial aportó 14,620 M€ y el público 10,701 M€, con una tasa de crecimiento del 5,8 % interanual. El objetivo es llegar al 2,12 % del PIB en 2027, lo que implica un fuerte impulso de fondos.",
-  "officialUrl": "https://www.cotec.es",
+  "description": "En 2025 la inversión española en investigación y desarrollo superó los 25.000 millones de euros, alcanzando 25,321 M€. El sector empresarial aportó 14,620 M€ y el público 10,701 M€, con un crecimiento interanual del 5,8 %. El objetivo es llegar al 2,12 % del PIB en 2027, lo que requerirá un impulso adicional de fondos.",
+  "officialUrl": "https://cotec.es",
   "participateUrl": null,
   "country": "España",
   "spainAvailability": "si",
@@ -3445,68 +3830,68 @@
   "exitNotes": "No aplica salida financiera directa; es una observación de tendencia macro.",
   "horizon": "largo plazo",
   "deadline": null,
-  "potential": "alto potencial de crecimiento del sector I+D y de oportunidades de financiación.",
+  "potential": "alto",
   "difficulty": "media",
-  "timeNeeded": "revisión periódica de datos macroeconómicos y convocatorias de fondos.",
+  "timeNeeded": "Revisión periódica de datos macroeconómicos y convocatorias de fondos.",
   "subscores": {
    "novedad": {
     "v": 7.0,
-    "why": "Primera vez que la inversión supera los 25.000 millones en 2025. · Verificador: Es un dato estadístico anual actualizado a noviembre de 2026 sobre el ejercicio 2025.",
+    "why": "Primera vez que la inversión supera 25.000 M€ en 2025. · Verificador: Es la primera vez que la inversión supera los 25.000 millones de euros.",
     "evidence": true
    },
    "potencial": {
     "v": 8.0,
-    "why": "Objetivo de 2,12 % del PIB en 2027 requiere crecimiento del 25,6 % anual. · Verificador: El objetivo del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria en el sector.",
+    "why": "Objetivo de 2,12 % del PIB en 2027 implica crecimiento sostenido del sector. · Verificador: El objetivo gubernamental del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria.",
     "evidence": true
    },
    "mercado": {
     "v": 9.0,
-    "why": "Inversión total de 25.321 millones de euros en 2025. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por fuentes estadísticas.",
+    "why": "Inversión total de 25,321 M€ en 2025, cifra oficial del INE y Cotec. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por el INE.",
     "evidence": true
    },
    "equipo": {
     "v": 0.0,
-    "why": "No se menciona ningún equipo o proyecto concreto. · Verificador: No aplica, es un informe macroeconómico, no una empresa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "why": "No se menciona ningún equipo o proyecto concreto; es un informe macroeconómico. · Verificador: No aplica, es un informe macroeconómico nacional.",
     "evidence": false
    },
    "financiacion": {
     "v": 7.0,
-    "why": "Sector empresarial 14.620 M€, sector público 10.701 M€ en 2025. · Verificador: Desglose claro entre sector público (10.701 M€) y empresarial (14.620 M€).",
+    "why": "Desglose entre sector empresarial (14,620 M€) y público (10,701 M€) en 2025. · Verificador: Desglose claro entre sector público (10.701M€) y privado (14.620M€).",
     "evidence": true
    },
    "comunidad": {
     "v": 5.0,
-    "why": "Brecha de género y número de empresas con I+D (12.540) indican una comunidad en desarrollo. · Verificador: El empleo en I+D supera las 310.336 personas, indicando un ecosistema laboral activo.",
+    "why": "12.540 empresas realizan I+D y 310.336 personas empleadas en el sector. · Verificador: Más de 310.000 personas empleadas en I+D.",
     "evidence": true
    },
    "adopcion": {
     "v": 6.0,
-    "why": "Empleo total en I+D supera 310.336 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento constante de la inversión empresarial (+9,1%).",
+    "why": "Empleo total en I+D supera 310.000 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento sostenido del empleo en I+D.",
     "evidence": true
    },
    "competencia": {
     "v": 5.0,
-    "why": "12.540 empresas realizan I+D, menos que antes, pero la competencia sigue presente. · Verificador: El mercado de I+D es competitivo, pero no es una oportunidad de inversión directa.",
+    "why": "12.540 empresas con actividad I+D; competencia presente pero no excesiva. · Verificador: 12.540 empresas con actividad I+D, cifra estable.",
     "evidence": true
    },
    "riesgo_tecnico": {
     "v": 6.0,
-    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de la transición de fondos Next Generation EU a fondos nacionales.",
+    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de fondos Next Generation EU que finalizan en 2026.",
     "evidence": true
    },
    "riesgo_financiero": {
     "v": 6.0,
-    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen. · Verificador: Riesgo de estancamiento si no se alcanza el objetivo de inversión privada para 2027.",
+    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen con capital nacional. · Verificador: Riesgo de desaceleración si no se reemplazan los fondos europeos por capital nacional.",
     "evidence": true
    },
    "entrada_espana": {
     "v": 0.0,
-    "why": "No hay programa de entrada claro para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un activo financiero, no existe 'entrada' para particulares. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No hay programa de entrada directo para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un vehículo de inversión directa para particulares.",
     "evidence": false
    },
    "salida": {
     "v": 1.0,
-    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No aplica, no es una inversión con retorno directo.",
+    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No existen mecanismos de salida al ser un dato macroeconómico.",
     "evidence": false
    }
   },
@@ -3519,7 +3904,7 @@
    {
     "code": "dependencia_fondos_eu",
     "severity": "alta",
-    "detail": "La sostenibilidad del crecimiento de la I+D depende de la sustitución de los fondos Next Generation EU por capital nacional tras 2026."
+    "detail": "El crecimiento está fuertemente vinculado a fondos Next Generation EU que expiran en 2026."
    }
   ],
   "distrust": [
@@ -3527,7 +3912,7 @@
   ],
   "whyInteresting": [
    "Crecimiento histórico de la inversión en I+D en España",
-   "Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación."
+   "Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación"
   ],
   "howToParticipate": [
    "1. Monitorizar las convocatorias de fondos nacionales y europeos para I+D en España.",
@@ -3536,7 +3921,9 @@
   ],
   "actionable": false,
   "profitPath": "",
-  "lossCauses": [],
+  "lossCauses": [
+   "Pérdida de impulso si desaparecen los fondos europeos y no se sustituyen con capital nacional"
+  ],
   "earlySignals": [
    "Incremento del gasto empresarial en I+D (+9,1 %)",
    "Aumento del número de empresas con actividad de I+D (+2,7 %)"
@@ -3547,9 +3934,10 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "No es un producto financiero ni un servicio de inversión, por lo que no está sujeto a supervisión de la CNMV.",
+   "notes": "No es un producto financiero ni un servicio de inversión; es un informe de datos macroeconómicos.",
    "sources": [
-    "https://www.cnmv.es"
+    "https://www.cnmv.es",
+    "https://www.ine.es"
    ]
   },
   "sources": [
@@ -3558,7 +3946,7 @@
     "url": "https://elreferente.es/ecosistema/la-inversion-en-id-supera-por-primera-vez-los-25-000-millones/"
    },
    {
-    "title": "Fundación Cotec - Análisis de datos INE",
+    "title": "Fundación Cotec",
     "url": "https://cotec.es"
    }
   ],
@@ -3570,13 +3958,13 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "La información macroeconómica sobre la inversión en I+D en España para 2025 es coherente con los datos publicados por el INE y analizados por la Fundación Cotec, tal como reporta El Referente. No se trata de un producto financiero, sino de un informe de tendencia macro.",
+   "reason": "La información macroeconómica sobre la inversión en I+D en España para 2025 es coherente con los datos publicados por el INE y analizados por la Fundación Cotec, tal como reporta El Referente. No es un producto de inversión, sino un indicador de tendencia.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 83
+   "agreementPct": 100
   },
-  "discoveredAt": "2026-11-25",
+  "discoveredAt": "2026-11-26",
   "id": "web-cotec-es",
-  "isNew": true,
+  "isNew": false,
   "score": 45,
   "rawScore": 50.3,
   "tier": "especulativa",
@@ -3602,7 +3990,7 @@
     "weight": 8,
     "value": 7.0,
     "points": 5.6,
-    "why": "Primera vez que la inversión supera los 25.000 millones en 2025. · Verificador: Es un dato estadístico anual actualizado a noviembre de 2026 sobre el ejercicio 2025.",
+    "why": "Primera vez que la inversión supera 25.000 M€ en 2025. · Verificador: Es la primera vez que la inversión supera los 25.000 millones de euros.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3612,7 +4000,7 @@
     "weight": 12,
     "value": 8.0,
     "points": 9.6,
-    "why": "Objetivo de 2,12 % del PIB en 2027 requiere crecimiento del 25,6 % anual. · Verificador: El objetivo del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria en el sector.",
+    "why": "Objetivo de 2,12 % del PIB en 2027 implica crecimiento sostenido del sector. · Verificador: El objetivo gubernamental del 2,12% del PIB para 2027 marca una tendencia de crecimiento necesaria.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3622,7 +4010,7 @@
     "weight": 8,
     "value": 9.0,
     "points": 7.2,
-    "why": "Inversión total de 25.321 millones de euros en 2025. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por fuentes estadísticas.",
+    "why": "Inversión total de 25,321 M€ en 2025, cifra oficial del INE y Cotec. · Verificador: Cifra oficial de 25.321 millones de euros confirmada por el INE.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3632,7 +4020,7 @@
     "weight": 10,
     "value": 0.0,
     "points": 0.0,
-    "why": "No se menciona ningún equipo o proyecto concreto. · Verificador: No aplica, es un informe macroeconómico, no una empresa. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "why": "No se menciona ningún equipo o proyecto concreto; es un informe macroeconómico. · Verificador: No aplica, es un informe macroeconómico nacional.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -3642,7 +4030,7 @@
     "weight": 7,
     "value": 7.0,
     "points": 4.9,
-    "why": "Sector empresarial 14.620 M€, sector público 10.701 M€ en 2025. · Verificador: Desglose claro entre sector público (10.701 M€) y empresarial (14.620 M€).",
+    "why": "Desglose entre sector empresarial (14,620 M€) y público (10,701 M€) en 2025. · Verificador: Desglose claro entre sector público (10.701M€) y privado (14.620M€).",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3652,7 +4040,7 @@
     "weight": 7,
     "value": 5.0,
     "points": 3.5,
-    "why": "Brecha de género y número de empresas con I+D (12.540) indican una comunidad en desarrollo. · Verificador: El empleo en I+D supera las 310.336 personas, indicando un ecosistema laboral activo.",
+    "why": "12.540 empresas realizan I+D y 310.336 personas empleadas en el sector. · Verificador: Más de 310.000 personas empleadas en I+D.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3662,7 +4050,7 @@
     "weight": 9,
     "value": 6.0,
     "points": 5.4,
-    "why": "Empleo total en I+D supera 310.336 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento constante de la inversión empresarial (+9,1%).",
+    "why": "Empleo total en I+D supera 310.000 personas, señal de adopción de actividades de I+D. · Verificador: Crecimiento sostenido del empleo en I+D.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3672,7 +4060,7 @@
     "weight": 5,
     "value": 5.0,
     "points": 2.5,
-    "why": "12.540 empresas realizan I+D, menos que antes, pero la competencia sigue presente. · Verificador: El mercado de I+D es competitivo, pero no es una oportunidad de inversión directa.",
+    "why": "12.540 empresas con actividad I+D; competencia presente pero no excesiva. · Verificador: 12.540 empresas con actividad I+D, cifra estable.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3682,7 +4070,7 @@
     "weight": 8,
     "value": 6.0,
     "points": 4.8,
-    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de la transición de fondos Next Generation EU a fondos nacionales.",
+    "why": "Dependencia de fondos Next Generation EU y necesidad de sustitución por fondos nacionales. · Verificador: Alta dependencia de fondos Next Generation EU que finalizan en 2026.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3692,7 +4080,7 @@
     "weight": 10,
     "value": 6.0,
     "points": 6.0,
-    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen. · Verificador: Riesgo de estancamiento si no se alcanza el objetivo de inversión privada para 2027.",
+    "why": "Riesgo de caída si desaparecen los fondos europeos y no se sustituyen con capital nacional. · Verificador: Riesgo de desaceleración si no se reemplazan los fondos europeos por capital nacional.",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -3702,7 +4090,7 @@
     "weight": 8,
     "value": 0.0,
     "points": 0.0,
-    "why": "No hay programa de entrada claro para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un activo financiero, no existe 'entrada' para particulares. · Discrepancia entre modelos (4 vs 0): se toma el valor bajo.",
+    "why": "No hay programa de entrada directo para inversores particulares; requiere acceso a fondos institucionales. · Verificador: No es un vehículo de inversión directa para particulares.",
     "evidence": false,
     "cappedForNoEvidence": false
    },
@@ -3712,7 +4100,7 @@
     "weight": 8,
     "value": 1.0,
     "points": 0.8,
-    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No aplica, no es una inversión con retorno directo.",
+    "why": "No existen mecanismos de salida financiera directa para este tipo de inversión macro. · Verificador: No existen mecanismos de salida al ser un dato macroeconómico.",
     "evidence": false,
     "cappedForNoEvidence": false
    }
@@ -3776,13 +4164,20 @@
    "basis": "capital"
   },
   "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
+   "available": true,
+   "changes": {
+    "inversion_2025_eur": 0.0
+   },
+   "label": "Estable",
+   "since": "2026-11-25T19:27:10Z"
   },
   "metrics": [
    {
     "t": "2026-11-25T19:27:10Z",
+    "inversion_2025_eur": 25321.0
+   },
+   {
+    "t": "2026-11-26T17:06:46Z",
     "inversion_2025_eur": 25321.0
    }
   ],
@@ -3791,399 +4186,12 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Inversión en I+D en España 2025\nCATEGORÍA: negocio · I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://www.cotec.es\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de crecimiento del sector I+D y de oportunidades de financiación.\nPUNTUACIÓN: 45/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Crecimiento histórico de la inversión en I+D en España; Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación.\nMOTIVOS PARA DESCONFIAR: Gran parte del crecimiento reciente depende de los fondos Next Generation EU, que expiran en 2026.; Crecimiento ligado a fondos temporales y posible retroceso sin sustitución.\nCÓMO PARTICIPAR: 1. Monitorizar las convocatorias de fondos nacionales y europeos para I+D en España.; 2. Contactar con agencias como CDTI o la Fundación Cotec para conocer requisitos de financiación.; 3. Evaluar proyectos empresariales que se beneficien de la mayor inversión en I+D y considerar colaboraciones o inversión indirecta.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/ecosistema/la-inversion-en-id-supera-por-primera-vez-los-25-000-millones/ | https://cotec.es",
+  "alertText": "NOMBRE: Inversión en I+D en España 2025\nCATEGORÍA: negocio · I+D\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: https://cotec.es\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 45/100 · Especulativa\nRIESGO: medio\nPLAZO: largo plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Crecimiento histórico de la inversión en I+D en España; Objetivo ambicioso para 2027 que podría impulsar sectores tecnológicos y crear oportunidades de financiación\nMOTIVOS PARA DESCONFIAR: Gran parte del crecimiento reciente depende de los fondos Next Generation EU, que expiran en 2026.; Crecimiento ligado a fondos temporales y posible retroceso sin sustitución.\nCÓMO PARTICIPAR: 1. Monitorizar las convocatorias de fondos nacionales y europeos para I+D en España.; 2. Contactar con agencias como CDTI o la Fundación Cotec para conocer requisitos de financiación.; 3. Evaluar proyectos empresariales que se beneficien de la mayor inversión en I+D y considerar colaboraciones o inversión indirecta.\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de impulso si desaparecen los fondos europeos y no se sustituyen con capital nacional\nFUENTES: https://elreferente.es/ecosistema/la-inversion-en-id-supera-por-primera-vez-los-25-000-millones/ | https://cotec.es",
   "firstSeenAt": "2026-11-25T19:27:10Z",
-  "lastSeenAt": "2026-11-25T19:27:10Z",
-  "runId": "run-20261125-1927",
+  "lastSeenAt": "2026-11-26T17:06:46Z",
+  "runId": "run-20261126-1706",
   "aliases": [
    "news-elreferente-es-ecosistema-la-inversion-en-id-supera-por-primera-vez-los-25-000-millon"
-  ]
- },
- {
-  "name": "NEURYN Robotics",
-  "category": "startups",
-  "subcategory": "robotics",
-  "kind": "activa",
-  "description": "Startup incubada en La Nave (Madrid) que desarrolla un sistema de IA para que brazos robóticos decidan cómo gestionar prendas devueltas en e‑commerce. Su tecnología permite asignar nuevas tareas al robot mediante lenguaje natural, sin necesidad de reprogramación.",
-  "officialUrl": null,
-  "participateUrl": null,
-  "country": "España",
-  "spainAvailability": "si",
-  "spainNotes": "Incubada en La Nave, centro de innovación del Ayuntamiento de Madrid",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "N/A",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": true,
-  "liquidity": "nula",
-  "exitNotes": "Posible salida mediante venta a corporación o ronda de financiación futura; sin mercado secundario actual.",
-  "horizon": "mediano plazo (2-5 años)",
-  "deadline": null,
-  "potential": "Alto potencial en automatización de devoluciones logísticas",
-  "difficulty": "media",
-  "timeNeeded": "baja",
-  "subscores": {
-   "novedad": {
-    "v": 7,
-    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 7,
-    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 5,
-    "why": "Devoluciones de moda en línea son un reto logístico importante",
-    "evidence": true
-   },
-   "equipo": {
-    "v": 6,
-    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino",
-    "evidence": true
-   },
-   "financiacion": {
-    "v": 4,
-    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch",
-    "evidence": true
-   },
-   "comunidad": {
-    "v": 6,
-    "why": "Incubada en La Nave, ecosistema de innovación madrileño",
-    "evidence": true
-   },
-   "adopcion": {
-    "v": 3,
-    "why": "No se citan clientes ni pilotos activos",
-    "evidence": false
-   },
-   "competencia": {
-    "v": 4,
-    "why": "No se describen competidores en la información disponible",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 5,
-    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 4,
-    "why": "Financiación limitada a un premio de 10.000 dólares",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 8,
-    "why": "Empresa basada e incubada en Madrid",
-    "evidence": true
-   },
-   "salida": {
-    "v": 3,
-    "why": "Sin mercado secundario ni planes de salida publicados",
-    "evidence": false
-   }
-  },
-  "redFlags": [
-   {
-    "code": "limited_funding",
-    "severity": "alta",
-    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
-   },
-   {
-    "code": "no_traction",
-    "severity": "media",
-    "detail": "No se mencionan clientes ni pilotos comerciales"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "distrust": [
-   "poca información financiera y de clientes"
-  ],
-  "whyInteresting": [
-   "Innovación en IA aplicada a la logística de devoluciones",
-   "Participación como finalista en competición europea con visibilidad internacional"
-  ],
-  "howToParticipate": [
-   "Seguir las noticias de NEURYN Robotics",
-   "Contactar directamente a los fundadores vía LinkedIn o correo institucional",
-   "Monitorizar futuras rondas de financiación o programas de aceleración"
-  ],
-  "actionable": false,
-  "profitPath": "",
-  "lossCauses": [
-   "Falta de financiación adicional",
-   "Baja adopción por parte de operadores logísticos",
-   "Problemas técnicos en la integración de IA con hardware"
-  ],
-  "earlySignals": [
-   "Finalista en CoCreate Pitch (edición europea)",
-   "Premio de 10.000 dólares"
-  ],
-  "signals": {
-   "premio_usd": 10000
-  },
-  "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
-   "sources": []
-  },
-  "sources": [
-   {
-    "title": "El Referente",
-    "url": "https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/"
-   }
-  ],
-  "discoveredVia": "El Referente",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
-  },
-  "verification": {
-   "verdict": "sin verificar",
-   "model": null
-  },
-  "discoveredAt": "2026-11-25",
-  "id": "n-neuryn-robotics",
-  "isNew": true,
-  "score": 42,
-  "rawScore": 52.0,
-  "tier": "especulativa",
-  "tierLabel": "Especulativa",
-  "humanReview": false,
-  "caps": [
-   "-10 por 2 riesgo(s) alto(s)"
-  ],
-  "critical": false,
-  "risk": "muy alto",
-  "flags": [
-   {
-    "code": "limited_funding",
-    "severity": "alta",
-    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
-   },
-   {
-    "code": "no_traction",
-    "severity": "media",
-    "detail": "No se mencionan clientes ni pilotos comerciales"
-   },
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "evidenced": 9,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 7.0,
-    "points": 5.6,
-    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 7.0,
-    "points": 8.4,
-    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 5.0,
-    "points": 4.0,
-    "why": "Devoluciones de moda en línea son un reto logístico importante",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 6.0,
-    "points": 6.0,
-    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 4.0,
-    "points": 2.8,
-    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 6.0,
-    "points": 4.2,
-    "why": "Incubada en La Nave, ecosistema de innovación madrileño",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 3.0,
-    "points": 2.7,
-    "why": "No se citan clientes ni pilotos activos",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "No se describen competidores en la información disponible",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 5.0,
-    "points": 4.0,
-    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 4.0,
-    "points": 4.0,
-    "why": "Financiación limitada a un premio de 10.000 dólares",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Empresa basada e incubada en Madrid",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "Sin mercado secundario ni planes de salida publicados",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": -0.0,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-25T19:27:10Z",
-    "premio_usd": 10000.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: NEURYN Robotics\nCATEGORÍA: startups · robotics\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial en automatización de devoluciones logísticas\nPUNTUACIÓN: 42/100 · Especulativa\nRIESGO: muy alto\nPLAZO: mediano plazo (2-5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en IA aplicada a la logística de devoluciones; Participación como finalista en competición europea con visibilidad internacional\nMOTIVOS PARA DESCONFIAR: Financiación conocida limitada al premio de 10.000 dólares; No se mencionan clientes ni pilotos comerciales; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; poca información financiera y de clientes\nCÓMO PARTICIPAR: Seguir las noticias de NEURYN Robotics; Contactar directamente a los fundadores vía LinkedIn o correo institucional; Monitorizar futuras rondas de financiación o programas de aceleración\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de financiación adicional; Baja adopción por parte de operadores logísticos; Problemas técnicos en la integración de IA con hardware\nFUENTES: https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/",
-  "firstSeenAt": "2026-11-25T19:27:10Z",
-  "lastSeenAt": "2026-11-25T19:27:10Z",
-  "runId": "run-20261125-1927",
-  "aliases": [
-   "news-elreferente-es-startups-neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-e"
   ]
  },
  {
@@ -5757,6 +5765,388 @@
   ]
  },
  {
+  "name": "Braiins advierte sobre ataques a mineros de Bitcoin",
+  "category": "cripto",
+  "subcategory": "seguridad",
+  "kind": "pasiva",
+  "description": "Braiins alerta sobre ataques que hijackean la potencia de minado de Bitcoin mediante conexiones Stratum V1 inseguras, afectando más de 1.000 sitios.",
+  "officialUrl": "https://braiins.com",
+  "participateUrl": null,
+  "country": "global",
+  "spainAvailability": "disponible (tecnología global)",
+  "spainNotes": "No hay información de programas o incentivos específicos para España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Coste de actualizar software o hardware para Stratum V2",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no hay inversión directa.",
+  "horizon": "corto-medio plazo",
+  "deadline": null,
+  "potential": "Reducir pérdidas por ataques y mejorar eficiencia de minería.",
+  "difficulty": "media",
+  "timeNeeded": "Horas a días para actualizar software y configurar conexiones seguras.",
+  "subscores": {
+   "novedad": {
+    "v": 6.0,
+    "why": "Ataques reportados en noviembre 2026 · Verificador: Reporte publicado el 25 de noviembre de 2026 sobre incidentes activos. · Discrepancia entre modelos (6 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 2.0,
+    "why": "Posible ahorro de recompensas al evitar hijackeo · Verificador: No es una inversión, es una medida de mitigación de pérdidas. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Mercado de minería Bitcoin grande pero altamente competitivo · Verificador: Afecta a la infraestructura crítica de la red Bitcoin. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Braiins es operador de pool reconocido · Verificador: Braiins es un actor histórico y reputado en el ecosistema de minería (Slush Pool). · Discrepancia entre modelos (6 vs 9): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.0,
+    "why": "No se disponen de datos de financiación pública · Verificador: No aplica, es una empresa privada de servicios de minería.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Comunidad de mineros citada en el artículo · Verificador: La comunidad minera está activamente discutiendo la migración a Stratum V2.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Stratum V2 aún tiene adopción limitada · Verificador: Stratum V2 es el estándar recomendado pero su adopción es gradual.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Otros pools ofrecen soluciones similares · Verificador: El mercado de pools es competitivo, pero la seguridad es un estándar común.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 8.0,
+    "why": "Riesgo bajo si se migra a Stratum V2 o se usa cifrado · Verificador: Riesgo alto de secuestro de hashrate si no se actualiza el protocolo.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 7.0,
+    "why": "Pérdida potencial de recompensas si no se protege · Verificador: Pérdida directa de recompensas mineras por redirección de tráfico.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 4.5,
+    "why": "Los ataques incluyen sitios en Europa, pero sin detalle específico de España · Verificador: Los mineros en España que usen Stratum V1 sin cifrar son vulnerables.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No aplica, no es un producto financiero. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Ataques a mineros pueden robar recompensas y generar pérdidas operativas"
+   },
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Vulnerabilidad en el protocolo Stratum V1 permite el secuestro de hashrate y robo de recompensas."
+   }
+  ],
+  "distrust": [
+   "Braiins no publica cifras de pérdidas monetarias"
+  ],
+  "whyInteresting": [
+   "Protección de ingresos de minería",
+   "Posible ahorro en costos operativos"
+  ],
+  "howToParticipate": [
+   "Revisar configuración de tu pool de minería",
+   "Cambiar a Stratum V2 si está disponible",
+   "Usar conexiones encriptadas si mantienes Stratum V1",
+   "Monitorizar hashrate y recompensas para detectar anomalías"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Ataques de redireccionamiento",
+   "Uso de Stratum V1 sin cifrar",
+   "Falta de monitoreo"
+  ],
+  "earlySignals": [
+   "Incremento de incidentes de 175 PH/s a 1.9 EH/s en dos semanas",
+   "Mayor número de sitios afectados en Europa"
+  ],
+  "signals": {
+   "pulseScore": 55
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un servicio financiero regulado bajo MiCA o CNMV; es una alerta de seguridad de software/protocolo.",
+   "sources": [
+    "https://cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Cointelegraph",
+    "url": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+   },
+   {
+    "title": "Braiins warns of Bitcoin mining attacks affecting over 1,000 sites",
+    "url": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites"
+   }
+  ],
+  "discoveredVia": "Pulso · Cointelegraph",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La información sobre la alerta de seguridad de Braiins respecto a ataques a mineros mediante Stratum V1 es coherente con los reportes técnicos y de prensa especializada de noviembre de 2026. No es una oportunidad de inversión, sino una alerta de ciberseguridad operativa.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-26",
+  "id": "web-braiins-com",
+  "isNew": true,
+  "score": 36,
+  "rawScore": 40.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-5 por 1 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "security_risk",
+    "severity": "alta",
+    "detail": "Ataques a mineros pueden robar recompensas y generar pérdidas operativas"
+   }
+  ],
+  "evidenced": 6,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Ataques reportados en noviembre 2026 · Verificador: Reporte publicado el 25 de noviembre de 2026 sobre incidentes activos. · Discrepancia entre modelos (6 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 2.0,
+    "points": 2.4,
+    "why": "Posible ahorro de recompensas al evitar hijackeo · Verificador: No es una inversión, es una medida de mitigación de pérdidas. · Discrepancia entre modelos (7 vs 2): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado de minería Bitcoin grande pero altamente competitivo · Verificador: Afecta a la infraestructura crítica de la red Bitcoin. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Braiins es operador de pool reconocido · Verificador: Braiins es un actor histórico y reputado en el ecosistema de minería (Slush Pool). · Discrepancia entre modelos (6 vs 9): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se disponen de datos de financiación pública · Verificador: No aplica, es una empresa privada de servicios de minería.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Comunidad de mineros citada en el artículo · Verificador: La comunidad minera está activamente discutiendo la migración a Stratum V2.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 5.5,
+    "points": 5.0,
+    "why": "Stratum V2 aún tiene adopción limitada · Verificador: Stratum V2 es el estándar recomendado pero su adopción es gradual.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.5,
+    "points": 2.2,
+    "why": "Otros pools ofrecen soluciones similares · Verificador: El mercado de pools es competitivo, pero la seguridad es un estándar común.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Riesgo bajo si se migra a Stratum V2 o se usa cifrado · Verificador: Riesgo alto de secuestro de hashrate si no se actualiza el protocolo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "Pérdida potencial de recompensas si no se protege · Verificador: Pérdida directa de recompensas mineras por redirección de tráfico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 4.5,
+    "points": 3.6,
+    "why": "Los ataques incluyen sitios en Europa, pero sin detalle específico de España · Verificador: Los mineros en España que usen Stratum V1 sin cifrar son vulnerables.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida de inversión · Verificador: No aplica, no es un producto financiero. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-26T17:06:46Z",
+    "pulseScore": 55.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Braiins advierte sobre ataques a mineros de Bitcoin\nCATEGORÍA: cripto · seguridad\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: https://braiins.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: global\nDISPONIBILIDAD EN ESPAÑA: disponible (tecnología global)\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Reducir pérdidas por ataques y mejorar eficiencia de minería.\nPUNTUACIÓN: 36/100 · Descartar\nRIESGO: medio\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Protección de ingresos de minería; Posible ahorro en costos operativos\nMOTIVOS PARA DESCONFIAR: Ataques a mineros pueden robar recompensas y generar pérdidas operativas; Braiins no publica cifras de pérdidas monetarias\nCÓMO PARTICIPAR: Revisar configuración de tu pool de minería; Cambiar a Stratum V2 si está disponible; Usar conexiones encriptadas si mantienes Stratum V1; Monitorizar hashrate y recompensas para detectar anomalías\nQUÉ PODRÍA HACERME PERDER EL DINERO: Ataques de redireccionamiento; Uso de Stratum V1 sin cifrar; Falta de monitoreo\nFUENTES: https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound | https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites",
+  "firstSeenAt": "2026-11-26T17:06:46Z",
+  "lastSeenAt": "2026-11-26T17:06:46Z",
+  "runId": "run-20261126-1706",
+  "aliases": [
+   "web-cointelegraph-com"
+  ]
+ },
+ {
   "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
   "category": "startups",
   "subcategory": "salud_genómica",
@@ -6109,6 +6499,445 @@
   "runId": "run-20261124-0222",
   "aliases": [
    "web-infosubvenciones-es"
+  ]
+ },
+ {
+  "name": "NEURYN Robotics",
+  "category": "startups",
+  "subcategory": "robotics",
+  "kind": "activa",
+  "description": "Startup incubada en La Nave (Madrid) que desarrolla IA para que brazos robóticos gestionen prendas devueltas en e‑commerce mediante instrucciones en lenguaje natural, sin reprogramación.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Incubada en La Nave, centro de innovación del Ayuntamiento de Madrid",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "N/A",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": true,
+  "liquidity": "nula",
+  "exitNotes": "Posible salida mediante venta a corporación o ronda de financiación futura; sin mercado secundario actual.",
+  "horizon": "mediano plazo (2-5 años)",
+  "deadline": null,
+  "potential": "Alto potencial en automatización de devoluciones logísticas para e‑commerce",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo · Verificador: Uso de lenguaje natural para reprogramación de brazos robóticos es una propuesta de valor clara.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 6.5,
+    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda · Verificador: El mercado de logística inversa en e-commerce es masivo, pero la ejecución técnica es compleja.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Devoluciones de moda en línea son un reto logístico importante · Verificador: Mercado objetivo definido, pero sin validación de clientes reales.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino · Verificador: Fundadores identificados (Pascual, Velasco, Merino) con respaldo de La Nave.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 3.5,
+    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch · Verificador: Financiación limitada a premios de concursos; no hay rondas de capital riesgo confirmadas.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Incubada en La Nave, ecosistema de innovación madrileño · Verificador: Incubada en La Nave (Madrid), ecosistema reconocido.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 2.0,
+    "why": "No se citan clientes ni pilotos activos · Verificador: No existen clientes, pilotos comerciales ni ingresos recurrentes reportados.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "No se describen competidores en la información disponible · Verificador: Sector altamente competitivo con grandes players de robótica industrial.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados · Verificador: Integración de IA en entornos físicos no controlados es un reto técnico alto.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4.0,
+    "why": "Financiación limitada a un premio de 10.000 dólares · Verificador: Riesgo de insolvencia alto al depender de premios y falta de capital operativo. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 8.5,
+    "why": "Empresa basada e incubada en Madrid · Verificador: Empresa constituida y operando en Madrid.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 2.5,
+    "why": "Sin mercado secundario ni planes de salida publicados · Verificador: Inexistente a corto plazo; solo posible mediante adquisición tecnológica (acqui-hiring).",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "limited_funding",
+    "severity": "alta",
+    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
+   },
+   {
+    "code": "no_traction",
+    "severity": "media",
+    "detail": "No se mencionan clientes ni pilotos comerciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "no_commercial_traction",
+    "severity": "alta",
+    "detail": "Ausencia total de clientes o pilotos comerciales confirmados."
+   },
+   {
+    "code": "no_official_web",
+    "severity": "media",
+    "detail": "La empresa carece de una página web corporativa funcional para verificar su actividad."
+   },
+   {
+    "code": "high_financial_risk",
+    "severity": "alta",
+    "detail": "Dependencia exclusiva de premios de concursos para su supervivencia operativa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe y ha sido validada como finalista en el evento mencionado, pero no tiene presencia comercial, web oficial operativa ni estructura de inversión abierta al público minorista. Es una fase pre-semilla con riesgo extremo."
+   }
+  ],
+  "distrust": [
+   "poca información financiera y de clientes"
+  ],
+  "whyInteresting": [
+   "Innovación en IA aplicada a la logística de devoluciones",
+   "Participación como finalista en competición europea con visibilidad internacional"
+  ],
+  "howToParticipate": [
+   "Seguir las noticias de NEURYN Robotics",
+   "Contactar directamente a los fundadores vía LinkedIn o correo institucional",
+   "Monitorizar futuras rondas de financiación o programas de aceleración"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Falta de financiación adicional",
+   "Baja adopción por parte de operadores logísticos",
+   "Problemas técnicos en la integración de IA con hardware"
+  ],
+  "earlySignals": [
+   "Finalista en CoCreate Pitch (edición europea)",
+   "Premio de 10.000 dólares"
+  ],
+  "signals": {
+   "premio_usd": 10000
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una startup en fase de incubación sin oferta pública de valores, no está sujeta a supervisión de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La startup existe y ha sido validada como finalista en el evento mencionado, pero no tiene presencia comercial, web oficial operativa ni estructura de inversión abierta al público minorista. Es una fase pre-semilla con riesgo extremo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-26",
+  "id": "n-neuryn-robotics",
+  "isNew": false,
+  "score": 28,
+  "rawScore": 47.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-20 por 5 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "limited_funding",
+    "severity": "alta",
+    "detail": "Financiación conocida limitada al premio de 10.000 dólares"
+   },
+   {
+    "code": "no_traction",
+    "severity": "media",
+    "detail": "No se mencionan clientes ni pilotos comerciales"
+   },
+   {
+    "code": "sin_verificacion_independiente",
+    "severity": "alta",
+    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
+   },
+   {
+    "code": "no_commercial_traction",
+    "severity": "alta",
+    "detail": "Ausencia total de clientes o pilotos comerciales confirmados."
+   },
+   {
+    "code": "no_official_web",
+    "severity": "media",
+    "detail": "La empresa carece de una página web corporativa funcional para verificar su actividad."
+   },
+   {
+    "code": "high_financial_risk",
+    "severity": "alta",
+    "detail": "Dependencia exclusiva de premios de concursos para su supervivencia operativa."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La startup existe y ha sido validada como finalista en el evento mencionado, pero no tiene presencia comercial, web oficial operativa ni estructura de inversión abierta al público minorista. Es una fase pre-semilla con riesgo extremo."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Sistema de IA que permite asignar tareas nuevas al robot con instrucciones en lenguaje natural sin reprogramarlo · Verificador: Uso de lenguaje natural para reprogramación de brazos robóticos es una propuesta de valor clara.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 6.5,
+    "points": 7.8,
+    "why": "Busca automatizar una tarea que hoy exige mucho trabajo manual en devoluciones de moda · Verificador: El mercado de logística inversa en e-commerce es masivo, pero la ejecución técnica es compleja.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Devoluciones de moda en línea son un reto logístico importante · Verificador: Mercado objetivo definido, pero sin validación de clientes reales.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Co‑fundadores Jorge Pascual, Jaime Velasco y Jesús Merino · Verificador: Fundadores identificados (Pascual, Velasco, Merino) con respaldo de La Nave.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.5,
+    "points": 2.5,
+    "why": "Recibió un premio de 10.000 dólares en CoCreate Pitch · Verificador: Financiación limitada a premios de concursos; no hay rondas de capital riesgo confirmadas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Incubada en La Nave, ecosistema de innovación madrileño · Verificador: Incubada en La Nave (Madrid), ecosistema reconocido.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 2.0,
+    "points": 1.8,
+    "why": "No se citan clientes ni pilotos activos · Verificador: No existen clientes, pilotos comerciales ni ingresos recurrentes reportados.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "No se describen competidores en la información disponible · Verificador: Sector altamente competitivo con grandes players de robótica industrial.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Desarrollo de IA para brazos robóticos conlleva desafíos técnicos moderados · Verificador: Integración de IA en entornos físicos no controlados es un reto técnico alto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Financiación limitada a un premio de 10.000 dólares · Verificador: Riesgo de insolvencia alto al depender de premios y falta de capital operativo. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "Empresa basada e incubada en Madrid · Verificador: Empresa constituida y operando en Madrid.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "Sin mercado secundario ni planes de salida publicados · Verificador: Inexistente a corto plazo; solo posible mediante adquisición tecnológica (acqui-hiring).",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {
+    "premio_usd": 0.0
+   },
+   "label": "Estable",
+   "since": "2026-11-25T19:27:10Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-25T19:27:10Z",
+    "premio_usd": 10000.0
+   },
+   {
+    "t": "2026-11-26T17:06:46Z",
+    "premio_usd": 10000.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: NEURYN Robotics\nCATEGORÍA: startups · robotics\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alto potencial en automatización de devoluciones logísticas para e‑commerce\nPUNTUACIÓN: 28/100 · Descartar\nRIESGO: muy alto\nPLAZO: mediano plazo (2-5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación en IA aplicada a la logística de devoluciones; Participación como finalista en competición europea con visibilidad internacional\nMOTIVOS PARA DESCONFIAR: Financiación conocida limitada al premio de 10.000 dólares; No se mencionan clientes ni pilotos comerciales; Ningún segundo modelo pudo verificar esta ficha en esta ejecución.; Ausencia total de clientes o pilotos comerciales confirmados.; La empresa carece de una página web corporativa funcional para verificar su actividad.; Dependencia exclusiva de premios de concursos para su supervivencia operativa.; El verificador tiene dudas: La startup existe y ha sido validada como finalista en el evento mencionado, pero no tiene presencia comercial, web oficial operativa ni estructura de inversión abierta al público minorista. Es una fase pre-semilla con riesgo extremo.; poca información financiera y de clientes\nCÓMO PARTICIPAR: Seguir las noticias de NEURYN Robotics; Contactar directamente a los fundadores vía LinkedIn o correo institucional; Monitorizar futuras rondas de financiación o programas de aceleración\nQUÉ PODRÍA HACERME PERDER EL DINERO: Falta de financiación adicional; Baja adopción por parte de operadores logísticos; Problemas técnicos en la integración de IA con hardware\nFUENTES: https://elreferente.es/startups/neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-edicion-europea-de-cocreate-pitch/",
+  "firstSeenAt": "2026-11-25T19:27:10Z",
+  "lastSeenAt": "2026-11-26T17:06:46Z",
+  "runId": "run-20261126-1706",
+  "aliases": [
+   "news-elreferente-es-startups-neuryn-robotics-startup-incubada-en-la-nave-finalista-de-la-e"
   ]
  },
  {
@@ -9364,6 +10193,404 @@
   "runId": "run-20261125-0851",
   "aliases": [
    "news-elreferente-es-startups-aerya-se-proclama-ganadora-del-36-campus-de-emprendedores-de"
+  ]
+ },
+ {
+  "name": "Anaconda Biomed – Tecnología de catéter para trombectomía mecánica",
+  "category": "startups",
+  "subcategory": "medtech",
+  "kind": "activa",
+  "description": "Anaconda Biomed es una empresa española que desarrolla catéteres endovasculares patentados para el tratamiento del ictus isquémico. La ronda Serie E, de 49 M €, incluye una inversión de 11 M € de COFIDES a través del fondo FOCO para acelerar ensayos clínicos y la comercialización.",
+  "officialUrl": "https://www.anaconda.bio/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "no",
+  "spainNotes": "Producto desarrollado en España, con marcado CE para el catéter ANA5 Funnel; previsto para el mercado español y europeo.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "La ronda está dirigida a inversores institucionales; no hay acceso directo para particulares.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "nula",
+  "exitNotes": "Salida posible mediante venta de acciones en una futura ronda de financiación o adquisición por parte de un gran grupo médico.",
+  "horizon": "mediano plazo (3‑5 años)",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "alta",
+  "timeNeeded": "requiere investigación de fondos de inversión que participen en la ronda y proceso de due diligence.",
+  "subscores": {
+   "novedad": {
+    "v": 8.0,
+    "why": "Catéter Funnel con aspiración y balón integrado, patentado y con CE para ANA5 · Verificador: Tecnología de catéter Funnel con aspiración y balón integrado patentada.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.5,
+    "why": "Mercado global de dispositivos para ictus estimado en varios miles de millones de euros · Verificador: Mercado de dispositivos para ictus con alta demanda clínica.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "Creciente demanda de tratamientos endovasculares en Europa y EE. UU. · Verificador: Sector medtech en crecimiento, aunque altamente competitivo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 6.5,
+    "why": "Equipo técnico descrito en la web, pero sin datos públicos de experiencia previa · Verificador: Empresa consolidada con respaldo de fondos de capital riesgo especializados (Asabys, Ysios).",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 8.0,
+    "why": "Ronda Serie E de 49 M € con participación de COFIDES y fondos internacionales · Verificador: Ronda Serie E de 49M€ confirmada con inversores institucionales de primer nivel.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 4.5,
+    "why": "Poca información sobre comunidad de usuarios o pacientes · Verificador: Enfoque B2B/hospitalario, sin comunidad de inversores minoristas.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Catéter con CE, pero aún en fase de ensayos clínicos en EE. UU. · Verificador: Marcado CE obtenido, pero en fase de ensayos clínicos (ATHENA/ARTEMIS) para expansión en EE.UU.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen varios catéteres de trombectomía; la ventaja competitiva no está probada en mercado · Verificador: Mercado con actores establecidos como Penumbra o Medtronic.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.5,
+    "why": "Dependencia de resultados positivos de ensayos ATHENA y ARTEMIS y de aprobaciones regulatorias · Verificador: Dependencia crítica de resultados de ensayos clínicos y aprobaciones FDA.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 3.0,
+    "why": "Alta inversión requerida y falta de liquidez para inversores minoristas · Verificador: Inversión privada sin liquidez secundaria para minoristas.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "Empresa española con apoyo de fondos públicos; sin embargo, acceso directo limitado · Verificador: No existe mecanismo de entrada para inversores minoristas con 2.000€. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 4.0,
+    "why": "Salida depende de eventos de liquidez externos (venta a terceros o IPO) poco predecibles · Verificador: Depende de M&A o IPO a largo plazo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "alta_barrera_entrada",
+    "severity": "alta",
+    "detail": "Ronda dirigida a inversores institucionales; no hay mecanismo de participación para particulares con 2 000 €."
+   },
+   {
+    "code": "inversion_institucional_exclusiva",
+    "severity": "critica",
+    "detail": "La ronda está cerrada a inversores institucionales (Venture Capital). No existe acceso para inversores minoristas."
+   },
+   {
+    "code": "falta_liquidez",
+    "severity": "alta",
+    "detail": "Activo ilíquido sin mercado secundario para participaciones minoritarias."
+   }
+  ],
+  "distrust": [
+   "falta de acceso directo a la ronda de financiación",
+   "información limitada sobre equipo y roadmap comercial"
+  ],
+  "whyInteresting": [
+   "tecnología innovadora para una patología de alto impacto sanitario",
+   "apoyo de fondos públicos y privados que valida el proyecto"
+  ],
+  "howToParticipate": [
+   "1. Identificar fondos de inversión o plataformas que participen en la ronda Serie E (p.ej., Omega Funds, FOCO).",
+   "2. Contactar al gestor del fondo para conocer requisitos de inversión mínima.",
+   "3. Realizar el proceso de due diligence y suscripción si se cumplen los criterios de inversión."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "fracaso de ensayos clínicos",
+   "retrasos o denegaciones regulatorias",
+   "falta de liquidez para vender la participación"
+  ],
+  "earlySignals": [
+   "avances publicados de los ensayos ATHENA y ARTEMIS",
+   "obtención de marcados CE adicionales"
+  ],
+  "signals": {
+   "métrica": 0
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser una empresa privada de capital riesgo, no está sujeta a registro de plataformas de financiación participativa de la CNMV para esta ronda específica, ya que no es una oferta pública de valores.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/inversiones/cofides-invierte-11-millones-de-euros-en-anaconda-biomed-para-impulsar-una-tecnologia-contra-el-ictus/"
+   },
+   {
+    "title": "Anaconda Biomed Official Website",
+    "url": "https://www.anaconda.bio/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La empresa Anaconda Biomed es una entidad real con sede en Barcelona, España. La ronda Serie E de 49M€ con participación de COFIDES (FOCO), Omega Funds, Asabys y Ysios está documentada. No es una oportunidad de inversión abierta a particulares, confirmando la imposibilidad de participación directa con 2.000€.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-26",
+  "id": "web-anaconda-bio",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 39.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (inversion_institucional_exclusiva)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "alta_barrera_entrada",
+    "severity": "alta",
+    "detail": "Ronda dirigida a inversores institucionales; no hay mecanismo de participación para particulares con 2 000 €."
+   },
+   {
+    "code": "inversion_institucional_exclusiva",
+    "severity": "critica",
+    "detail": "La ronda está cerrada a inversores institucionales (Venture Capital). No existe acceso para inversores minoristas."
+   },
+   {
+    "code": "falta_liquidez",
+    "severity": "alta",
+    "detail": "Activo ilíquido sin mercado secundario para participaciones minoritarias."
+   }
+  ],
+  "evidenced": 5,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Catéter Funnel con aspiración y balón integrado, patentado y con CE para ANA5 · Verificador: Tecnología de catéter Funnel con aspiración y balón integrado patentada.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Mercado global de dispositivos para ictus estimado en varios miles de millones de euros · Verificador: Mercado de dispositivos para ictus con alta demanda clínica.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Creciente demanda de tratamientos endovasculares en Europa y EE. UU. · Verificador: Sector medtech en crecimiento, aunque altamente competitivo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Equipo técnico descrito en la web, pero sin datos públicos de experiencia previa · Verificador: Empresa consolidada con respaldo de fondos de capital riesgo especializados (Asabys, Ysios).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 8.0,
+    "points": 5.6,
+    "why": "Ronda Serie E de 49 M € con participación de COFIDES y fondos internacionales · Verificador: Ronda Serie E de 49M€ confirmada con inversores institucionales de primer nivel.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Poca información sobre comunidad de usuarios o pacientes · Verificador: Enfoque B2B/hospitalario, sin comunidad de inversores minoristas.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Catéter con CE, pero aún en fase de ensayos clínicos en EE. UU. · Verificador: Marcado CE obtenido, pero en fase de ensayos clínicos (ATHENA/ARTEMIS) para expansión en EE.UU.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen varios catéteres de trombectomía; la ventaja competitiva no está probada en mercado · Verificador: Mercado con actores establecidos como Penumbra o Medtronic.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 4.5,
+    "points": 3.6,
+    "why": "Dependencia de resultados positivos de ensayos ATHENA y ARTEMIS y de aprobaciones regulatorias · Verificador: Dependencia crítica de resultados de ensayos clínicos y aprobaciones FDA.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Alta inversión requerida y falta de liquidez para inversores minoristas · Verificador: Inversión privada sin liquidez secundaria para minoristas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "Empresa española con apoyo de fondos públicos; sin embargo, acceso directo limitado · Verificador: No existe mecanismo de entrada para inversores minoristas con 2.000€. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Salida depende de eventos de liquidez externos (venta a terceros o IPO) poco predecibles · Verificador: Depende de M&A o IPO a largo plazo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-26T17:06:46Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Anaconda Biomed – Tecnología de catéter para trombectomía mecánica\nCATEGORÍA: startups · medtech\nFECHA DE DESCUBRIMIENTO: 2026-11-26\nWEB OFICIAL: https://www.anaconda.bio/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano plazo (3‑5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: tecnología innovadora para una patología de alto impacto sanitario; apoyo de fondos públicos y privados que valida el proyecto\nMOTIVOS PARA DESCONFIAR: Ronda dirigida a inversores institucionales; no hay mecanismo de participación para particulares con 2 000 €.; La ronda está cerrada a inversores institucionales (Venture Capital). No existe acceso para inversores minoristas.; Activo ilíquido sin mercado secundario para participaciones minoritarias.; falta de acceso directo a la ronda de financiación; información limitada sobre equipo y roadmap comercial\nCÓMO PARTICIPAR: 1. Identificar fondos de inversión o plataformas que participen en la ronda Serie E (p.ej., Omega Funds, FOCO).; 2. Contactar al gestor del fondo para conocer requisitos de inversión mínima.; 3. Realizar el proceso de due diligence y suscripción si se cumplen los criterios de inversión.\nQUÉ PODRÍA HACERME PERDER EL DINERO: fracaso de ensayos clínicos; retrasos o denegaciones regulatorias; falta de liquidez para vender la participación\nFUENTES: https://elreferente.es/inversiones/cofides-invierte-11-millones-de-euros-en-anaconda-biomed-para-impulsar-una-tecnologia-contra-el-ictus/ | https://www.anaconda.bio/",
+  "firstSeenAt": "2026-11-26T17:06:46Z",
+  "lastSeenAt": "2026-11-26T17:06:46Z",
+  "runId": "run-20261126-1706",
+  "aliases": [
+   "news-elreferente-es-inversiones-cofides-invierte-11-millones-de-euros-en-anaconda-biomed-p"
   ]
  },
  {
