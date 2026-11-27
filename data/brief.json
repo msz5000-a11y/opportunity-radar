@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-27T12:11:04Z",
- "checkedAt": "2026-11-27T12:11:04Z",
- "attemptedAt": "2026-11-27T12:11:04Z",
+ "generatedAt": "2026-11-27T14:29:44Z",
+ "checkedAt": "2026-11-27T14:29:44Z",
+ "attemptedAt": "2026-11-27T14:29:44Z",
  "spend": {
   "date": "2026-11-27",
   "usd": 0.0
@@ -241,8 +241,8 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-27T12:11:04Z",
-    "checkedAt": "2026-11-27T12:11:04Z",
+    "generatedAt": "2026-11-27T14:29:44Z",
+    "checkedAt": "2026-11-27T14:29:44Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -250,32 +250,139 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 1,
-    "descartadas": 2,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 2,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado opciones rentables desde casa compatibles con sus intereses en cocina, arte y niños, descartando negocios que requerían locales comerciales o licencias complejas.",
+    "nota": "He buscado ideas caseras validadas en arte, cocina y textil infantil, descartando negocios que requerían local físico o gran inversión en equipamiento.",
     "oportunidades_locales": [
      {
-      "titulo": "Mercados navideños y ferias de artesanía en Valencia",
-      "que_es": "Puestos de venta local directa para emprendedores de productos artesanales y gastronómicos durante la temporada.",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOTFBKU0ZZSU9jbkhVNHRPTmhtZUUtSTZVMnMzSXlXc3BuSlM1bUJ2V1VEWGdJX2R1STBtU0trd0lfWWhFcjkzLWRVa0drcEZsUTNDNE05TVBWenpzYjI1Y3NqUV92a0pidC12VzZxMFdCakx2Um5mYlo0Umw3dDBBLXFuSHFqaWRhOU42SVdUVC1ULU91Vy15bndhemRaMmFHRFoxTGxycUJSM1lObVFEQUI3dl9FalVaUjVjLTZNYWpzOVRsakREdG9WdEdpZw?oc=5"
+      "titulo": "Plataforma Relevo y Asesoría CEEI Valencia",
+      "que_es": "El CEEI Valencia ofrece apoyo a emprendedores locales para desarrollar negocios desde casa y dar continuidad a proyectos de la provincia.",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
      },
      {
-      "titulo": "Incubadora de Valencia para mujeres emprendedoras",
-      "que_es": "Programa de apoyo y asesoramiento gratuito para impulsar pequeños negocios creados por mujeres desde casa.",
-      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
+      "titulo": "Nuevas Ayudas para Autónomos Comunitat Valenciana 2026",
+      "que_es": "Subvenciones e incentivos autonómicos para el alta de nuevos trabajadores autónomos e impulso del trabajo desde casa.",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
+     },
+     {
+      "titulo": "Mercado de la Huerta y Mercados Artesanales de Valencia",
+      "que_es": "Puntos de venta directa en la zona metropolitana de Valencia ideales para exponer productos artesanales o alimentarios.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c6190ce05",
+      "fecha": "2026-11-27T14:29:44Z",
+      "nueva": true,
+      "titulo": "Creación y Venta de Velas Escultóricas Artesanales y Aromáticas de Soja",
+      "gancho": "Diseña velas decorativas escultóricas y botánicas para regalos, eventos y tiendas de decoración.",
+      "que_es": "Consiste en fabricar artesanalmente en casa velas de cera de soja vegetal con diseños escultóricos y aromas naturales. Se venden por encargo a particulares para eventos (bodas, bautizos) y a tiendas locales de decoración o a través de plataformas online.",
+      "casos": [
+       {
+        "quien": "Business Insider",
+        "pais": "",
+        "resultado": "An exec wanted to better understand entrepreneurs, so he launched a candle company from his kitchen. Here's what he learned.",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQVGlneDFWaEhKcExJaFMxYzRwUGZVZ2trM2xXT2U2UDZtN0xQUG9pOHlNRUljTFpWbEFlY0hLQmZjaGUzQjl4UVhvb3NGUXNwbENSbVRhYkJ6Tk5vdUlxdVJaa2J4UE43VG43bHRXSkc1R01qSmlwQi1GWm5KMUVtelRXZG5hNjBlNWVHWWdEaFIydlBzZ05YWHhEOEc1QQ?oc=5",
+        "resultado_es": "Un ejecutivo lanzó una empresa de velas desde su cocina para entender a emprendedores"
+       }
+      ],
+      "por_que_tu": "Combina perfectamente tus habilidades de arte y diseño para crear piezas visualmente atractivas sin salir de casa.",
+      "como_empezar": [
+       "Semana 1: Compra cera de soja, mechas y moldes de silicona estéticos; realiza las primeras pruebas de fundido y modelado.",
+       "Semana 2: Crea un catálogo digital en Instagram y Etsy con fotografías bien iluminadas de tus creaciones.",
+       "Semana 3: Presenta tu catálogo a pequeñas tiendas de decoración de Riba-roja y Valencia para venta en consignación.",
+       "Semana 4: Lanza packs de regalo para eventos (comuniones, bodas) anunciándote en grupos locales de Facebook y WhatsApp."
+      ],
+      "coste_inicial": "120 € (cera de soja, esencias, moldes de silicona estéticos, mechas y embalaje).",
+      "herramientas": [
+       "Instagram / TikTok",
+       "Etsy",
+       "Canva (para etiquetas)",
+       "Báscula digital y cazo para baño maría"
+      ],
+      "precio": "Entre 12 € y 25 € por vela escultórica grande; packs para eventos a 4 € - 6 € la unidad.",
+      "primeras_clientas": [
+       "Muestra muestras físicas en floristerías y tiendas de regalo de Riba-roja de Túria.",
+       "Publica vídeos del proceso de desmoldeo (reel / shorts) en Instagram para atraer pedidos online."
+      ],
+      "ingresos_posibles": "Estimación prudente: 300 € a 700 €/mes vendiendo entre 30 y 50 velas mensuales o pequeños pedidos para eventos.",
+      "horas_semana": "10 - 12 horas a la semana.",
+      "tramites": [
+       "Alta en el IAE y Régimen de Autónomos (aprovechando tarifa plana o Cuota Cero autonómica si aplica).",
+       "Cumplir normativa europea CLP de etiquetado de sustancias e ingredientes aromáticos."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Acumulación de stock no vendido si no se trabaja bajo demanda.",
+       "Competencia de velas industriales baratas (hay que diferenciarse por diseño y calidad)."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "arte",
+       "diseño"
+      ]
+     },
+     {
+      "id": "cb9471491",
+      "fecha": "2026-11-27T14:29:44Z",
+      "nueva": true,
+      "titulo": "Personalización y Customización Artesanal de Ropa Infantil y Canastillas",
+      "gancho": "Diseña prendas infantiles únicas con técnicas artesanas de teñido, bordado y estampado.",
+      "que_es": "Creación y customización artesanal de ropa para niños y recién nacidos (bodys, camisetas teñidas artesanalmente o bordadas con nombres) para regalos de nacimiento y cumpleaños infantil. Venta directa por internet y en mercados de artesanía.",
+      "casos": [
+       {
+        "quien": "Daily Mail",
+        "pais": "",
+        "resultado": "I started tie-dying T-shirts as hobby and today this easy side hustle is earning me up to $1,000 a month",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY3BMN0ZiTnRHRlVXdjdXbUpIeWpVdk5hLWVMRjZ2aVFIQUt4emlsQWwza0RqMF9HWnJwMXhBaXB1UWNFdEhKTzhNVktQRGg3TkpwU0d1c0VWQ1lmTmpuZ3d5d2pHTHlfRkpKbVNDeXMxcTZldzNNVUdnTDFGdXpKZ3A0Ty1sLWQ0M0lOckJ1anVnUjI50gGaAUFVX3lxTE1rdXZoS3QyaHF5M1h3aFBjM205ZlhQM1FwYVJhbTlZdlBpeGtOTllDWUw1YUNYVjR4eUhfYU5Ucm9LREMzQmtpNUxYalNGYTlKajA1Q1VtN2d0MmREdWs2YXdGaUpSQVdSVDlIbHF5MEpkbGxOU3lLdk5UN0ZZNUM4TXlrNUFqSHRnLXA0cXRSd2Q1OEVIdWw2ekE?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina tus dos pasiones: el diseño/arte textil con la sensibilidad por el público infantil.",
+      "como_empezar": [
+       "Semana 1: Adquiere prendas de algodón neutro de calidad y tintes textiles no tóxicos / hilos de bordar.",
+       "Semana 2: Crea las primeras muestras (conjuntos personalizables para recién nacido) y haz fotos de estudio casero.",
+       "Semana 3: Abre catálogo en Instagram y Etsy ofreciendo la opción de personalizar con el nombre del niño.",
+       "Semana 4: Contacta con guarderías o tiendas locales de puericultura para ofrecer muestras física o folletos."
+      ],
+      "coste_inicial": "130 € (prendas base de algodón, tintes textiles, hilos, embalaje y etiquetas).",
+      "herramientas": [
+       "Etsy",
+       "Instagram / TikTok",
+       "Canva (diseño de etiquetas de presentación)"
+      ],
+      "precio": "Prendas individuales de 15 € a 25 €; canastillas o packs de regalo personalizados entre 35 € y 60 €.",
+      "primeras_clientas": [
+       "Ofrece un sorteo en Instagram colaborando con mamás creadoras de contenido de Valencia.",
+       "Asiste a mercados artesanales locales de la zona para mostrar las prendas en vivo."
+      ],
+      "ingresos_posibles": "Estimación prudente: 250 € a 650 €/mes con 15 a 30 pedidos personalizados al mes.",
+      "horas_semana": "8 - 12 horas semanales.",
+      "tramites": [
+       "Alta en Autónomos e IAE de fabricación/comercio textil.",
+       "Cumplimiento de la normativa sobre etiquetado textil y seguridad en productos infantiles."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Tiempos de confección elevados si no se optimizan los diseños.",
+       "Devoluciones por fallos en la personalización si no se confirman los datos por escrito."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "diseño",
+       "niños"
+      ]
+     },
+     {
       "id": "c12fa9476",
       "fecha": "2026-11-27T12:11:04Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Venta de Kits Imprimibles Didácticos y Juegos de Aprendizaje Infantil",
       "gancho": "Diseña fichas descargables, juegos educativos y planificadores infantiles para vender online sin stock.",
       "que_es": "Creas recursos gráficos educativos en formato PDF descargable (cuadernos de trazado, fichas de vocabulario, agendas escolares visuales y juegos de mesa imprimibles). Se comercializan de forma 100% automatizada en Etsy, Teachers Pay Teachers y redes sociales.",
@@ -1467,64 +1574,6 @@
   }
  },
  "sources": {
-  "startupxplore": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "capitalcell": {
-   "ok": true,
-   "n": 0,
-   "err": null
-  },
-  "dozen": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
-  "ideas": {
-   "ok": true,
-   "n": 14,
-   "err": null
-  },
-  "trustmrr": {
-   "ok": true,
-   "n": 20,
-   "err": null
-  },
-  "ycombinator": {
-   "ok": true,
-   "n": 25,
-   "err": null
-  },
-  "producthunt": {
-   "ok": true,
-   "n": 10,
-   "err": null
-  },
-  "acciones": {
-   "ok": true,
-   "n": 12,
-   "err": null
-  },
-  "pulso": {
-   "ok": true,
-   "n": 17,
-   "err": null
-  },
-  "ayudas_es": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": {
-    "encontradas": 70,
-    "sin_relacion": 38,
-    "directa": 7,
-    "no_para_ti": 11,
-    "cerradas": 14,
-    "abiertas": 0
-   }
-  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
@@ -1540,14 +1589,8 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 25,
+   "n": 20,
    "err": null
-  },
-  "ayudas_eg": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
