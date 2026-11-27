@@ -12,10 +12,10 @@
    "trigger": "Recupera su media de 50 sesiones tras semanas por debajo, con RSI por encima de 50",
    "benchEntry": 59794.875617000005,
    "status": "abierta",
-   "returnPct": 16.5,
-   "last": 27.04,
-   "lastAt": "2026-11-26",
-   "benchPct": 1.19
+   "returnPct": 10.81,
+   "last": 25.72,
+   "lastAt": "2026-11-27",
+   "benchPct": 0.03
   },
   {
    "id": "cripto-RUNE-2026-11-26",
@@ -29,15 +29,18 @@
    "trigger": "Rebota en su media de 200 sesiones, que va subiendo",
    "benchEntry": 60505.50334549779,
    "status": "abierta",
-   "returnPct": 0.0
+   "returnPct": 3.01,
+   "last": 0.568564,
+   "lastAt": "2026-11-27",
+   "benchPct": -1.15
   }
  ],
  "summary": {
   "signals": 2,
   "open": 2,
   "closed": 0,
-  "avgReturn": 8.25,
-  "avgBench": 1.19,
+  "avgReturn": 6.91,
+  "avgBench": -0.56,
   "hitRate": null
  }
 }

@@ -6515,6 +6515,410 @@
   ]
  },
  {
+  "name": "Swan DAO",
+  "category": "lanzamientos",
+  "subcategory": "DeFi CDP",
+  "kind": "pasiva",
+  "description": "Protocolo DeFi de tipo CDP (Collateralized Debt Position) que permite emitir stablecoins respaldadas por wstETH. Actualmente no posee token propio, lo que sugiere una posible estrategia de incentivos mediante airdrop para usuarios tempranos.",
+  "officialUrl": "https://swan.finance",
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "dudosa",
+  "spainNotes": "La normativa MiCA regula los emisores de stablecoins; al ser un protocolo descentralizado, la responsabilidad y el cumplimiento en España son inciertos.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 50,
+   "extraNotes": "Costes de gas en la red Ethereum para interactuar con los contratos.",
+   "recommended": 500,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Al no tener token, la salida implica retirar el colateral (wstETH) del protocolo, sujeto a las condiciones de liquidez del pool.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "Alto potencial especulativo ante un posible lanzamiento de token (airdrop) y crecimiento del TVL.",
+  "difficulty": "media",
+  "timeNeeded": "baja",
+  "subscores": {
+   "novedad": {
+    "v": 8.5,
+    "why": "Protocolo lanzado en noviembre de 2026 con tracción inicial rápida. · Verificador: Lanzado en noviembre de 2026 con rápido crecimiento de TVL.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.0,
+    "why": "TVL de 8,5 M$ en 15 días y generación de ingresos activos. · Verificador: TVL de 8,5 M USD en 15 días y generación de fees.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Mercado de stablecoins saturado pero con demanda de alternativas descentralizadas. · Verificador: Opera en el mercado saturado de stablecoins, pero ofrece una alternativa descentralizada respaldada por wstETH.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 4.5,
+    "why": "Desconocido, aunque el protocolo cuenta con auditorías. · Verificador: No se dispone de información pública sobre los fundadores ni el equipo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 3.5,
+    "why": "No hay datos públicos de rondas de inversión. · Verificador: No hay datos públicos de rondas de inversión o financiación externa.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "Comunidad en fase de formación temprana. · Verificador: Comunidad en fase temprana, sin métricas claras de participación.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Crecimiento constante del TVL desde el lanzamiento.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.0,
+    "why": "Compite con gigantes como Sky Lending y Liquity. · Verificador: Compite con protocolos consolidados como Sky Lending, Liquity y Reservoir.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Protocolo nuevo con riesgo inherente de bugs en smart contracts. · Verificador: Protocolo nuevo con riesgo inherente de bugs en los smart contracts.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 5.0,
+    "why": "Riesgo de desanclaje de la stablecoin o fallo en el colateral. · Verificador: Riesgo de desanclaje del stablecoin o caída del valor del colateral wstETH.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.5,
+    "why": "Incertidumbre regulatoria sobre protocolos DeFi. · Verificador: Incertidumbre regulatoria y ausencia de registro MiCA o CNMV para usuarios españoles.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5.0,
+    "why": "Depende de la capacidad de retirar colateral sin slippage excesivo. · Verificador: Depende de la capacidad de retirar el colateral sin slippage excesivo; no hay datos de liquidez suficiente.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "sin_token_propio",
+    "severity": "media",
+    "detail": "El potencial de ganancia depende de un airdrop no confirmado."
+   },
+   {
+    "code": "protocolo_nuevo",
+    "severity": "alta",
+    "detail": "Riesgo elevado por falta de historial operativo a largo plazo."
+   },
+   {
+    "code": "sin_token_propio",
+    "severity": "media",
+    "detail": "El potencial de ganancia depende de un airdrop no confirmado."
+   },
+   {
+    "code": "protocolo_nuevo",
+    "severity": "alta",
+    "detail": "Riesgo elevado por falta de historial operativo a largo plazo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información básica (TVL, fees, competencia) está confirmada por DefiLlama, pero faltan datos verificables sobre el equipo, financiación, comunidad, y la disponibilidad regulatoria en España. Además, la URL oficial indicada no corresponde al sitio web del proyecto."
+   }
+  ],
+  "distrust": [
+   "Falta de información sobre el equipo fundador",
+   "Dependencia total de la red Ethereum"
+  ],
+  "whyInteresting": [
+   "Crecimiento rápido del TVL en pocos días",
+   "Modelo de negocio claro basado en fees de préstamo y yield de PSM"
+  ],
+  "howToParticipate": [
+   "Conectar una wallet compatible con Ethereum (ej. MetaMask)",
+   "Depositar wstETH en el protocolo Swan DAO",
+   "Emitir la stablecoin del protocolo",
+   "Mantener la posición para ser elegible ante futuros incentivos"
+  ],
+  "actionable": true,
+  "profitPath": "El usuario busca obtener un airdrop de tokens futuros o rentabilidad por el uso del protocolo.",
+  "lossCauses": [
+   "Vulnerabilidad en smart contracts",
+   "Caída del valor del colateral (wstETH)",
+   "Ausencia de airdrop o incentivos"
+  ],
+  "earlySignals": [
+   "Aumento sostenido del TVL",
+   "Incremento en la generación de fees diarias"
+  ],
+  "signals": {
+   "pulseScore": 68
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No se ha encontrado registro MiCA ni advertencia de la CNMV para Swan DAO. La naturaleza descentralizada del protocolo dificulta la determinación de su autorización en España.",
+   "sources": [
+    "https://defillama.com/protocol/swan-dao"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · DefiLlama",
+    "url": "https://defillama.com/protocol/swan-dao"
+   }
+  ],
+  "discoveredVia": "Pulso · DefiLlama",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "gemini:gemini-3.1-flash-lite",
+   "verifier": "groq:openai/gpt-oss-120b"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La información básica (TVL, fees, competencia) está confirmada por DefiLlama, pero faltan datos verificables sobre el equipo, financiación, comunidad, y la disponibilidad regulatoria en España. Además, la URL oficial indicada no corresponde al sitio web del proyecto.",
+   "model": "groq:openai/gpt-oss-120b",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-28",
+  "id": "web-swan-finance",
+  "isNew": true,
+  "score": 38,
+  "rawScore": 48.4,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "sin_token_propio",
+    "severity": "media",
+    "detail": "El potencial de ganancia depende de un airdrop no confirmado."
+   },
+   {
+    "code": "protocolo_nuevo",
+    "severity": "alta",
+    "detail": "Riesgo elevado por falta de historial operativo a largo plazo."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información básica (TVL, fees, competencia) está confirmada por DefiLlama, pero faltan datos verificables sobre el equipo, financiación, comunidad, y la disponibilidad regulatoria en España. Además, la URL oficial indicada no corresponde al sitio web del proyecto."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.5,
+    "points": 6.8,
+    "why": "Protocolo lanzado en noviembre de 2026 con tracción inicial rápida. · Verificador: Lanzado en noviembre de 2026 con rápido crecimiento de TVL.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "TVL de 8,5 M$ en 15 días y generación de ingresos activos. · Verificador: TVL de 8,5 M USD en 15 días y generación de fees.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Mercado de stablecoins saturado pero con demanda de alternativas descentralizadas. · Verificador: Opera en el mercado saturado de stablecoins, pero ofrece una alternativa descentralizada respaldada por wstETH.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Desconocido, aunque el protocolo cuenta con auditorías. · Verificador: No se dispone de información pública sobre los fundadores ni el equipo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No hay datos públicos de rondas de inversión. · Verificador: No hay datos públicos de rondas de inversión o financiación externa.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Comunidad en fase de formación temprana. · Verificador: Comunidad en fase temprana, sin métricas claras de participación.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Crecimiento constante del TVL desde el lanzamiento.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.0,
+    "points": 2.0,
+    "why": "Compite con gigantes como Sky Lending y Liquity. · Verificador: Compite con protocolos consolidados como Sky Lending, Liquity y Reservoir.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Protocolo nuevo con riesgo inherente de bugs en smart contracts. · Verificador: Protocolo nuevo con riesgo inherente de bugs en los smart contracts.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 5.0,
+    "points": 5.0,
+    "why": "Riesgo de desanclaje de la stablecoin o fallo en el colateral. · Verificador: Riesgo de desanclaje del stablecoin o caída del valor del colateral wstETH.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Incertidumbre regulatoria sobre protocolos DeFi. · Verificador: Incertidumbre regulatoria y ausencia de registro MiCA o CNMV para usuarios españoles.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la capacidad de retirar colateral sin slippage excesivo. · Verificador: Depende de la capacidad de retirar el colateral sin slippage excesivo; no hay datos de liquidez suficiente.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 500.0,
+   "extraCostsEur": 50.0,
+   "lossScenarioEur": -550.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 1000.0,
+     "netEur": 950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 2500.0,
+     "netEur": 2450.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 5000.0,
+     "netEur": 4950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 10000.0,
+     "netEur": 9950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 25000.0,
+     "netEur": 24950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 50000.0,
+     "netEur": 49950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 150000.0,
+     "netEur": 149950.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T23:34:39Z",
+    "pulseScore": 68.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Swan DAO\nCATEGORÍA: lanzamientos · DeFi CDP\nFECHA DE DESCUBRIMIENTO: 2026-11-28\nWEB OFICIAL: https://swan.finance\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: dudosa\nCOSTE DE ENTRADA: 0,00 € (+ 50,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 500,00 €\nPOTENCIAL: Alto potencial especulativo ante un posible lanzamiento de token (airdrop) y crecimiento del TVL.\nPUNTUACIÓN: 38/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Crecimiento rápido del TVL en pocos días; Modelo de negocio claro basado en fees de préstamo y yield de PSM\nMOTIVOS PARA DESCONFIAR: El potencial de ganancia depende de un airdrop no confirmado.; Riesgo elevado por falta de historial operativo a largo plazo.; El verificador tiene dudas: La información básica (TVL, fees, competencia) está confirmada por DefiLlama, pero faltan datos verificables sobre el equipo, financiación, comunidad, y la disponibilidad regulatoria en España. Además, la URL oficial indicada no corresponde al sitio web del proyecto.; Falta de información sobre el equipo fundador; Dependencia total de la red Ethereum\nCÓMO PARTICIPAR: Conectar una wallet compatible con Ethereum (ej. MetaMask); Depositar wstETH en el protocolo Swan DAO; Emitir la stablecoin del protocolo; Mantener la posición para ser elegible ante futuros incentivos\nQUÉ PODRÍA HACERME PERDER EL DINERO: Vulnerabilidad en smart contracts; Caída del valor del colateral (wstETH); Ausencia de airdrop o incentivos\nFUENTES: https://defillama.com/protocol/swan-dao",
+  "firstSeenAt": "2026-11-27T23:34:39Z",
+  "lastSeenAt": "2026-11-27T23:34:39Z",
+  "runId": "run-20261127-2334",
+  "aliases": [
+   "web-defillama-com"
+  ]
+ },
+ {
   "name": "Braiins advierte sobre ataques a mineros de Bitcoin",
   "category": "cripto",
   "subcategory": "seguridad",
@@ -6897,16 +7301,16 @@
   ]
  },
  {
-  "name": "Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica",
+  "name": "Becas de Internacionalización Empresarial 52ª Promoción",
   "category": "startups",
-  "subcategory": "salud_genómica",
+  "subcategory": "internacionalizacion",
   "kind": "activa",
-  "description": "Convocatoria del Ministerio de Asuntos Exteriores, UE y Cooperación para financiar proyectos de innovación genómica aplicados a la salud. No requiere inversión inicial y está abierta a entidades españolas.",
-  "officialUrl": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
-  "participateUrl": "https://sede.administracion.gob.es/",
+  "description": "Convocatoria anual de ICEX España Exportación e Inversiones que otorga becas para financiar proyectos de internacionalización de empresas españolas. No requiere aporte económico y está dirigida a cualquier empresa que cumpla los requisitos de la ayuda.",
+  "officialUrl": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945346",
+  "participateUrl": "https://www.icex.es",
   "country": "España",
   "spainAvailability": "si",
-  "spainNotes": "Convocatoria gestionada por un organismo español, dirigida a solicitantes con sede en España",
+  "spainNotes": "Convocatoria gestionada por ICEX, organismo español, dirigida a empresas con sede en España",
   "costs": {
    "minEntry": 0,
    "extra": 0,
@@ -6916,91 +7320,97 @@
   },
   "canLoseAll": false,
   "liquidity": "no aplica",
-  "exitNotes": "No aplica salida financiera; el beneficio es la obtención de la subvención",
+  "exitNotes": "No hay salida financiera; el beneficio es la obtención de la beca que cubre gastos de internacionalización",
   "horizon": "corto-medio plazo",
   "deadline": null,
-  "potential": "alto potencial de financiación pública para proyectos de salud genómica",
+  "potential": "alto potencial de financiación pública para proyectos de internacionalización",
   "difficulty": "media",
   "timeNeeded": "varias semanas a meses para preparar y presentar la solicitud",
   "subscores": {
    "novedad": {
     "v": 7.0,
-    "why": "Enfoque en innovación genómica para salud · Verificador: Enfoque en innovación genómica aplicada a salud en cooperación internacional",
+    "why": "Es una convocatoria anual de becas de internacionalización · Verificador: Convocatoria anual de la 52ª promoción, un programa consolidado.",
     "evidence": false
    },
    "potencial": {
-    "v": 8.0,
-    "why": "Financiación pública puede impulsar desarrollo del proyecto · Verificador: Financiación pública no reembolsable para proyectos de I+D",
+    "v": 7.5,
+    "why": "Financiación pública que puede cubrir gastos de internacionalización · Verificador: Alta proyección profesional para los becarios, no es financiación directa a empresas.",
     "evidence": false
    },
    "mercado": {
-    "v": 6.0,
-    "why": "Sector de salud y genómica en crecimiento a nivel global · Verificador: Sector biotecnológico con alta demanda de soluciones genómicas",
+    "v": 5.5,
+    "why": "Apoya a empresas que buscan expandirse internacionalmente · Verificador: Alta demanda en el sector de comercio exterior.",
     "evidence": false
    },
    "equipo": {
     "v": 5.0,
-    "why": "La convocatoria no especifica requisitos de equipo · Verificador: Depende de la capacidad técnica del solicitante",
+    "why": "No se especifican requisitos de equipo en la convocatoria · Verificador: Depende de la formación académica del solicitante.",
     "evidence": false
    },
    "financiacion": {
-    "v": 9.5,
-    "why": "Subvención sin coste para el beneficiario · Verificador: Subvención pública, riesgo financiero nulo para el beneficiario",
+    "v": 9.0,
+    "why": "Subvención sin aporte financiero del beneficiario · Verificador: Es una beca remunerada, no requiere inversión del solicitante.",
     "evidence": false
    },
    "comunidad": {
     "v": 4.0,
-    "why": "No se menciona comunidad de usuarios o adopción previa · Verificador: No aplica, es una relación administrativa con el Estado",
+    "why": "No hay comunidad de usuarios asociada, es relación con el Estado · Verificador: Existe una red consolidada de ex-becarios ICEX. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
     "evidence": false
    },
    "adopcion": {
-    "v": 5.0,
-    "why": "Dependerá de la ejecución y resultados del proyecto · Verificador: Depende de la ejecución del proyecto subvencionado",
+    "v": 5.5,
+    "why": "Dependerá de la capacidad de la empresa para ejecutar el proyecto internacional · Verificador: Proceso de selección altamente competitivo.",
     "evidence": false
    },
    "competencia": {
-    "v": 6.0,
-    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Concurrencia competitiva estándar en ayudas públicas",
+    "v": 3.0,
+    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Muy alta, es un programa de prestigio nacional. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
     "evidence": false
    },
    "riesgo_tecnico": {
-    "v": 7.0,
-    "why": "Tecnología genómica con riesgos técnicos moderados · Verificador: La complejidad técnica es inherente a la genómica",
+    "v": 8.0,
+    "why": "Riesgo técnico depende del proyecto presentado, moderado en general · Verificador: Riesgo técnico nulo, es un proceso administrativo.",
     "evidence": false
    },
    "riesgo_financiero": {
     "v": 9.5,
-    "why": "No hay inversión directa, riesgo financiero bajo · Verificador: No hay inversión de capital, riesgo financiero inexistente",
+    "why": "No hay inversión de capital, riesgo financiero prácticamente nulo · Verificador: Riesgo financiero nulo, el solicitante recibe fondos.",
     "evidence": false
    },
    "entrada_espana": {
-    "v": 9.5,
-    "why": "Convocatoria gestionada por organismo español · Verificador: Convocatoria oficial del Estado español",
+    "v": 9.8,
+    "why": "Convocatoria gestionada por organismo español · Verificador: Organismo oficial español (ICEX).",
     "evidence": true
    },
    "salida": {
-    "v": 5.0,
-    "why": "Beneficio es la obtención de la subvención, no hay salida financiera directa · Verificador: El beneficio es la ejecución del proyecto, no una salida financiera",
+    "v": 6.0,
+    "why": "Beneficio es la obtención de la beca, no una salida financiera directa · Verificador: Alta empleabilidad tras finalizar el programa.",
     "evidence": false
    }
   },
-  "redFlags": [],
+  "redFlags": [
+   {
+    "code": "ERROR_DESCRIPCION",
+    "severity": "media",
+    "detail": "La ficha original indicaba que era para financiar proyectos de empresas, cuando el programa ICEX de becas es para formación de personas físicas (becarios)."
+   }
+  ],
   "distrust": [],
   "whyInteresting": [
-   "Financiación pública sin coste para proyectos de innovación genómica en salud, alineada con tendencias de biotecnología"
+   "Financiación pública sin coste para proyectos de internacionalización, apoyo institucional de ICEX y potencial de ahorro de inversión propia"
   ],
   "howToParticipate": [
-   "Revisar la convocatoria en la URL oficial",
-   "Descargar y leer los requisitos y bases de la ayuda",
-   "Preparar la documentación requerida (plan de proyecto, presupuesto, CVs, etc.)",
-   "Presentar la solicitud antes de la fecha límite indicada en la convocatoria",
-   "Esperar la evaluación y, en caso de ser seleccionado, gestionar la firma del convenio de subvención"
+   "Acceder a la convocatoria en la URL oficial",
+   "Descargar y leer el pliego de bases y requisitos",
+   "Preparar la documentación requerida (plan de internacionalización, presupuesto, CVs, etc.)",
+   "Presentar la solicitud dentro del plazo indicado",
+   "Esperar la evaluación y, si se concede, gestionar la firma del convenio de beca"
   ],
   "actionable": true,
-  "profitPath": "Obtener financiación pública que cubra los costes del proyecto de innovación genómica, sin necesidad de inversión propia",
+  "profitPath": "Obtener la beca que cubra los gastos de internacionalización, reduciendo la inversión propia del proyecto",
   "lossCauses": [
-   "Rechazo de la solicitud por no cumplir requisitos",
-   "Incumplimiento de los hitos y condiciones de la subvención"
+   "Rechazo de la solicitud por incumplir requisitos",
+   "Incumplimiento de los hitos y condiciones de la beca"
   ],
   "earlySignals": [
    "pulseScore 78 indica interés institucional"
@@ -7011,15 +7421,20 @@
   "regulatory": {
    "checked": true,
    "status": "no_aplica",
-   "notes": "Al ser una subvención pública, no está sujeta a regulación financiera (MiCA/CNMV) sino a la Ley General de Subvenciones.",
+   "notes": "Se rige por la Ley General de Subvenciones y las bases reguladoras del ICEX. No es un producto financiero ni de inversión.",
    "sources": [
-    "https://www.infosubvenciones.es/"
+    "https://www.infosubvenciones.es/",
+    "https://www.icex.es"
    ]
   },
   "sources": [
    {
     "title": "Pulso · BDNS",
-    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124"
+    "url": "https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945346"
+   },
+   {
+    "title": "ICEX - Becas de Internacionalización",
+    "url": "https://www.icex.es"
    }
   ],
   "discoveredVia": "Pulso · BDNS",
@@ -7030,22 +7445,28 @@
   },
   "verification": {
    "verdict": "confirmada",
-   "reason": "La convocatoria existe en la Base de Datos Nacional de Subvenciones (BDNS) bajo el ID 943124. Es una ayuda pública oficial gestionada por el Ministerio de Asuntos Exteriores, UE y Cooperación. No es una inversión financiera, sino una subvención pública.",
+   "reason": "La convocatoria ha sido verificada en la Base de Datos Nacional de Subvenciones (BDNS) con fecha de publicación 27/11/2026. Es una beca de formación y prácticas, no una subvención directa a empresas, por lo que la descripción original contenía una imprecisión técnica sobre el beneficiario.",
    "model": "gemini:gemini-3.1-flash-lite",
-   "agreementPct": 100
+   "agreementPct": 83
   },
-  "discoveredAt": "2026-11-24",
+  "discoveredAt": "2026-11-28",
   "id": "web-infosubvenciones-es",
-  "isNew": true,
+  "isNew": false,
   "score": 35,
-  "rawScore": 35.2,
+  "rawScore": 35.4,
   "tier": "descartar",
   "tierLabel": "Descartar",
   "humanReview": false,
   "caps": [],
   "critical": false,
   "risk": "bajo",
-  "flags": [],
+  "flags": [
+   {
+    "code": "ERROR_DESCRIPCION",
+    "severity": "media",
+    "detail": "La ficha original indicaba que era para financiar proyectos de empresas, cuando el programa ICEX de becas es para formación de personas físicas (becarios)."
+   }
+  ],
   "evidenced": 1,
   "breakdown": [
    {
@@ -7054,7 +7475,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Enfoque en innovación genómica para salud · Verificador: Enfoque en innovación genómica aplicada a salud en cooperación internacional",
+    "why": "Es una convocatoria anual de becas de internacionalización · Verificador: Convocatoria anual de la 52ª promoción, un programa consolidado.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7064,7 +7485,7 @@
     "weight": 12,
     "value": 3.0,
     "points": 3.6,
-    "why": "Financiación pública puede impulsar desarrollo del proyecto · Verificador: Financiación pública no reembolsable para proyectos de I+D",
+    "why": "Financiación pública que puede cubrir gastos de internacionalización · Verificador: Alta proyección profesional para los becarios, no es financiación directa a empresas.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7074,7 +7495,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Sector de salud y genómica en crecimiento a nivel global · Verificador: Sector biotecnológico con alta demanda de soluciones genómicas",
+    "why": "Apoya a empresas que buscan expandirse internacionalmente · Verificador: Alta demanda en el sector de comercio exterior.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7084,7 +7505,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "La convocatoria no especifica requisitos de equipo · Verificador: Depende de la capacidad técnica del solicitante",
+    "why": "No se especifican requisitos de equipo en la convocatoria · Verificador: Depende de la formación académica del solicitante.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7094,7 +7515,7 @@
     "weight": 7,
     "value": 3.0,
     "points": 2.1,
-    "why": "Subvención sin coste para el beneficiario · Verificador: Subvención pública, riesgo financiero nulo para el beneficiario",
+    "why": "Subvención sin aporte financiero del beneficiario · Verificador: Es una beca remunerada, no requiere inversión del solicitante.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7104,7 +7525,7 @@
     "weight": 7,
     "value": 3.0,
     "points": 2.1,
-    "why": "No se menciona comunidad de usuarios o adopción previa · Verificador: No aplica, es una relación administrativa con el Estado",
+    "why": "No hay comunidad de usuarios asociada, es relación con el Estado · Verificador: Existe una red consolidada de ex-becarios ICEX. · Discrepancia entre modelos (4 vs 7): se toma el valor bajo.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7114,7 +7535,7 @@
     "weight": 9,
     "value": 3.0,
     "points": 2.7,
-    "why": "Dependerá de la ejecución y resultados del proyecto · Verificador: Depende de la ejecución del proyecto subvencionado",
+    "why": "Dependerá de la capacidad de la empresa para ejecutar el proyecto internacional · Verificador: Proceso de selección altamente competitivo.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7124,9 +7545,9 @@
     "weight": 5,
     "value": 3.0,
     "points": 1.5,
-    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Concurrencia competitiva estándar en ayudas públicas",
+    "why": "Posibles múltiples solicitantes compitiendo por la misma ayuda · Verificador: Muy alta, es un programa de prestigio nacional. · Discrepancia entre modelos (6 vs 3): se toma el valor bajo.",
     "evidence": false,
-    "cappedForNoEvidence": true
+    "cappedForNoEvidence": false
    },
    {
     "key": "riesgo_tecnico",
@@ -7134,7 +7555,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Tecnología genómica con riesgos técnicos moderados · Verificador: La complejidad técnica es inherente a la genómica",
+    "why": "Riesgo técnico depende del proyecto presentado, moderado en general · Verificador: Riesgo técnico nulo, es un proceso administrativo.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7144,7 +7565,7 @@
     "weight": 10,
     "value": 3.0,
     "points": 3.0,
-    "why": "No hay inversión directa, riesgo financiero bajo · Verificador: No hay inversión de capital, riesgo financiero inexistente",
+    "why": "No hay inversión de capital, riesgo financiero prácticamente nulo · Verificador: Riesgo financiero nulo, el solicitante recibe fondos.",
     "evidence": false,
     "cappedForNoEvidence": true
    },
@@ -7152,9 +7573,9 @@
     "key": "entrada_espana",
     "label": "Facilidad de entrada desde tu región",
     "weight": 8,
-    "value": 9.5,
-    "points": 7.6,
-    "why": "Convocatoria gestionada por organismo español · Verificador: Convocatoria oficial del Estado español",
+    "value": 9.8,
+    "points": 7.8,
+    "why": "Convocatoria gestionada por organismo español · Verificador: Organismo oficial español (ICEX).",
     "evidence": true,
     "cappedForNoEvidence": false
    },
@@ -7164,7 +7585,7 @@
     "weight": 8,
     "value": 3.0,
     "points": 2.4,
-    "why": "Beneficio es la obtención de la subvención, no hay salida financiera directa · Verificador: El beneficio es la ejecución del proyecto, no una salida financiera",
+    "why": "Beneficio es la obtención de la beca, no una salida financiera directa · Verificador: Alta empleabilidad tras finalizar el programa.",
     "evidence": false,
     "cappedForNoEvidence": true
    }
@@ -7228,13 +7649,20 @@
    "basis": "capital"
   },
   "momentum": {
-   "available": false,
-   "changes": {},
-   "label": "Primera observación"
+   "available": true,
+   "changes": {
+    "pulseScore": 0.0
+   },
+   "label": "Estable",
+   "since": "2026-11-24T02:22:40Z"
   },
   "metrics": [
    {
     "t": "2026-11-24T02:22:40Z",
+    "pulseScore": 78.0
+   },
+   {
+    "t": "2026-11-27T23:34:39Z",
     "pulseScore": 78.0
    }
   ],
@@ -7243,10 +7671,10 @@
    "reason": ""
   },
   "hoursLeft": null,
-  "alertText": "NOMBRE: Convocatoria instrumental El Salvador 2026 Salud Innovación Genómica\nCATEGORÍA: startups · salud_genómica\nFECHA DE DESCUBRIMIENTO: 2026-11-24\nWEB OFICIAL: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124\nENLACE DE PARTICIPACIÓN: https://sede.administracion.gob.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de financiación pública para proyectos de salud genómica\nPUNTUACIÓN: 35/100 · Descartar\nRIESGO: bajo\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Financiación pública sin coste para proyectos de innovación genómica en salud, alineada con tendencias de biotecnología\nMOTIVOS PARA DESCONFIAR: ninguno detectado (eso no significa que no existan)\nCÓMO PARTICIPAR: Revisar la convocatoria en la URL oficial; Descargar y leer los requisitos y bases de la ayuda; Preparar la documentación requerida (plan de proyecto, presupuesto, CVs, etc.); Presentar la solicitud antes de la fecha límite indicada en la convocatoria; Esperar la evaluación y, en caso de ser seleccionado, gestionar la firma del convenio de subvención\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rechazo de la solicitud por no cumplir requisitos; Incumplimiento de los hitos y condiciones de la subvención\nFUENTES: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/943124",
+  "alertText": "NOMBRE: Becas de Internacionalización Empresarial 52ª Promoción\nCATEGORÍA: startups · internacionalizacion\nFECHA DE DESCUBRIMIENTO: 2026-11-28\nWEB OFICIAL: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945346\nENLACE DE PARTICIPACIÓN: https://www.icex.es\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de financiación pública para proyectos de internacionalización\nPUNTUACIÓN: 35/100 · Descartar\nRIESGO: bajo\nPLAZO: corto-medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Financiación pública sin coste para proyectos de internacionalización, apoyo institucional de ICEX y potencial de ahorro de inversión propia\nMOTIVOS PARA DESCONFIAR: La ficha original indicaba que era para financiar proyectos de empresas, cuando el programa ICEX de becas es para formación de personas físicas (becarios).\nCÓMO PARTICIPAR: Acceder a la convocatoria en la URL oficial; Descargar y leer el pliego de bases y requisitos; Preparar la documentación requerida (plan de internacionalización, presupuesto, CVs, etc.); Presentar la solicitud dentro del plazo indicado; Esperar la evaluación y, si se concede, gestionar la firma del convenio de beca\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rechazo de la solicitud por incumplir requisitos; Incumplimiento de los hitos y condiciones de la beca\nFUENTES: https://www.infosubvenciones.es/bdnstrans/GE/es/convocatorias/945346 | https://www.icex.es",
   "firstSeenAt": "2026-11-24T02:22:40Z",
-  "lastSeenAt": "2026-11-24T02:22:40Z",
-  "runId": "run-20261124-0222",
+  "lastSeenAt": "2026-11-27T23:34:39Z",
+  "runId": "run-20261127-2334",
   "aliases": [
    "web-infosubvenciones-es"
   ]
@@ -18661,5 +19089,415 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "Ryfinite",
+  "category": "lanzamientos",
+  "subcategory": "cripto",
+  "kind": "activa",
+  "description": "Ryfinite es un proyecto de token RFN que ofrece un launchpool con el 52,4 % de los tokens ya distribuidos. El Token Generation Event (TGE) está previsto para el primer trimestre de 2027, lo que permite a los participantes obtener RFN antes de su listado. La información disponible es limitada y no se dispone de una web oficial verificable.",
+  "officialUrl": null,
+  "participateUrl": null,
+  "country": "desconocido",
+  "spainAvailability": "no",
+  "spainNotes": "No se dispone de información sobre la disponibilidad del launchpool para residentes en España.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Desconocido",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "nula",
+  "exitNotes": "No habrá mercado secundario hasta el TGE; la liquidez dependerá del listado en exchanges tras el Q1 2027.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "Posible revalorización tras el TGE si el proyecto gana adopción y logra listar el token en exchanges.",
+  "difficulty": "media",
+  "timeNeeded": "Investigar el launchpool, conectar una wallet compatible y aportar fondos antes del TGE.",
+  "subscores": {
+   "novedad": {
+    "v": 1.0,
+    "why": "El launchpool está en fase de distribución (52,4 %) y el TGE está programado para Q1 2027. · Verificador: La información es una repetición de un anuncio sin base técnica ni operativa. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 0.0,
+    "why": "La participación anticipada puede generar ganancias si el token se lista y su precio sube tras el TGE. · Verificador: Sin producto, equipo ni modelo de negocio, el potencial es nulo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 0.0,
+    "why": "No se dispone de datos sobre el tamaño del mercado objetivo del token RFN. · Verificador: No hay mercado definido para un token sin utilidad conocida. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 0.0,
+    "why": "No hay información disponible sobre el equipo del proyecto. · Verificador: Equipo inexistente o no identificado.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 0.0,
+    "why": "No se citan rondas de financiación ni fuentes de capital en la fuente proporcionada. · Verificador: No hay registro de rondas de inversión o capital semilla.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 0.0,
+    "why": "No se menciona comunidad de usuarios o desarrolladores en la información disponible. · Verificador: No hay comunidad activa en redes sociales verificables.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 0.0,
+    "why": "No hay datos concretos de adopción del token o del proyecto. · Verificador: Adopción inexistente.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 0.0,
+    "why": "No se describen competidores directos en la fuente. · Verificador: No hay competidores porque el proyecto no existe como entidad operativa.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 3.0,
+    "why": "Los proyectos de token suelen presentar riesgos técnicos elevados, como fallos de contrato o vulnerabilidades. · Verificador: Riesgo máximo: alta probabilidad de estafa (scam) o contrato malicioso. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 2.0,
+    "why": "Alta probabilidad de pérdida total si el proyecto no llega al TGE o el token no obtiene liquidez. · Verificador: Pérdida total garantizada al no haber activo subyacente real. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 1.0,
+    "why": "No se indica si los residentes españoles pueden participar en el launchpool. · Verificador: No es un servicio financiero regulado ni disponible legalmente.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "La liquidez post‑TGE es incierta y dependerá de listados en exchanges externos. · Verificador: No hay mercado secundario ni liquidez.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "incertidumbre_alta",
+    "severity": "alta",
+    "detail": "Falta de información sobre el proyecto, equipo, financiación y regulaciones; alto riesgo de pérdida total."
+   },
+   {
+    "code": "scam_potencial",
+    "severity": "critica",
+    "detail": "Proyecto sin rastro digital, sin web oficial y promocionado en sitios de baja reputación. Alto riesgo de phishing o estafa de drenaje de billeteras."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de equipo, whitepaper o contrato inteligente auditable."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El proyecto Ryfinite carece de presencia digital verificable, sitio web oficial, repositorio de código o documentación técnica (whitepaper). La información proviene exclusivamente de agregadores de noticias de baja calidad (Coin Gabbar) que suelen replicar contenido automatizado o promocional sin auditoría. No existe evidencia de un 'launchpool' legítimo ni de un equipo detrás del token RFN."
+   }
+  ],
+  "distrust": [
+   "falta de datos oficiales del proyecto",
+   "no se puede verificar la web oficial"
+  ],
+  "whyInteresting": [
+   "Launchpool con alta distribución (52,4 %)",
+   "TGE previsto para el primer trimestre de 2027"
+  ],
+  "howToParticipate": [
+   "Acceder al launchpool mediante el enlace oficial del proyecto (si está disponible)",
+   "Conectar una wallet compatible (e.g., MetaMask)",
+   "Depositar los fondos requeridos según las instrucciones del launchpool",
+   "Reclamar los tokens RFN asignados antes del TGE"
+  ],
+  "actionable": true,
+  "profitPath": "Participar en el launchpool para recibir tokens RFN y venderlos después del TGE si el precio supera el coste de entrada.",
+  "lossCauses": [
+   "Cancelación o retraso del TGE",
+   "Falta de liquidez tras el listado",
+   "Caída del precio del token",
+   "Problemas técnicos del contrato inteligente"
+  ],
+  "earlySignals": [
+   "Distribución del 52,4 % completada",
+   "Anuncios oficiales del TGE en Q1 2027",
+   "Incremento de menciones en redes sociales y foros cripto"
+  ],
+  "signals": {
+   "pulseScore": 84
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No figura en los registros de la CNMV ni de la ESMA. Al no tener entidad legal, no puede cumplir con la normativa MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Coin Gabbar",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1OHQ4czJyM24ya3Z4RWI2dDF1REZsZm0tYWpoeHRGR1lCUDJxck40Z0dfcEFMaHNwandyRXJPSTB4LXNQV19heV9ZM0kxbmZ0NG5QWTVBSFV6TzdjWTNBeWJ2QWo2b1J1?oc=5"
+   },
+   {
+    "title": "CNMV - Registro de plataformas",
+    "url": "https://www.cnmv.es"
+   }
+  ],
+  "discoveredVia": "Pulso · Coin Gabbar",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "falsa",
+   "reason": "El proyecto Ryfinite carece de presencia digital verificable, sitio web oficial, repositorio de código o documentación técnica (whitepaper). La información proviene exclusivamente de agregadores de noticias de baja calidad (Coin Gabbar) que suelen replicar contenido automatizado o promocional sin auditoría. No existe evidencia de un 'launchpool' legítimo ni de un equipo detrás del token RFN.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 58
+  },
+  "discoveredAt": "2026-11-28",
+  "id": "n-ryfinite",
+  "isNew": true,
+  "score": 0,
+  "rawScore": 6.8,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "incertidumbre_alta",
+    "severity": "alta",
+    "detail": "Falta de información sobre el proyecto, equipo, financiación y regulaciones; alto riesgo de pérdida total."
+   },
+   {
+    "code": "scam_potencial",
+    "severity": "critica",
+    "detail": "Proyecto sin rastro digital, sin web oficial y promocionado en sitios de baja reputación. Alto riesgo de phishing o estafa de drenaje de billeteras."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Ausencia total de equipo, whitepaper o contrato inteligente auditable."
+   },
+   {
+    "code": "verificacion_fallida",
+    "severity": "critica",
+    "detail": "El verificador no pudo confirmar que sea real: El proyecto Ryfinite carece de presencia digital verificable, sitio web oficial, repositorio de código o documentación técnica (whitepaper). La información proviene exclusivamente de agregadores de noticias de baja calidad (Coin Gabbar) que suelen replicar contenido automatizado o promocional sin auditoría. No existe evidencia de un 'launchpool' legítimo ni de un equipo detrás del token RFN."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "El launchpool está en fase de distribución (52,4 %) y el TGE está programado para Q1 2027. · Verificador: La información es una repetición de un anuncio sin base técnica ni operativa. · Discrepancia entre modelos (7 vs 1): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "La participación anticipada puede generar ganancias si el token se lista y su precio sube tras el TGE. · Verificador: Sin producto, equipo ni modelo de negocio, el potencial es nulo. · Discrepancia entre modelos (5 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se dispone de datos sobre el tamaño del mercado objetivo del token RFN. · Verificador: No hay mercado definido para un token sin utilidad conocida. · Discrepancia entre modelos (3 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay información disponible sobre el equipo del proyecto. · Verificador: Equipo inexistente o no identificado.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se citan rondas de financiación ni fuentes de capital en la fuente proporcionada. · Verificador: No hay registro de rondas de inversión o capital semilla.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se menciona comunidad de usuarios o desarrolladores en la información disponible. · Verificador: No hay comunidad activa en redes sociales verificables.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay datos concretos de adopción del token o del proyecto. · Verificador: Adopción inexistente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No se describen competidores directos en la fuente. · Verificador: No hay competidores porque el proyecto no existe como entidad operativa.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Los proyectos de token suelen presentar riesgos técnicos elevados, como fallos de contrato o vulnerabilidades. · Verificador: Riesgo máximo: alta probabilidad de estafa (scam) o contrato malicioso. · Discrepancia entre modelos (3 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.0,
+    "points": 2.0,
+    "why": "Alta probabilidad de pérdida total si el proyecto no llega al TGE o el token no obtiene liquidez. · Verificador: Pérdida total garantizada al no haber activo subyacente real. · Discrepancia entre modelos (2 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No se indica si los residentes españoles pueden participar en el launchpool. · Verificador: No es un servicio financiero regulado ni disponible legalmente.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "La liquidez post‑TGE es incierta y dependerá de listados en exchanges externos. · Verificador: No hay mercado secundario ni liquidez.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T23:34:39Z",
+    "pulseScore": 84.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Ryfinite\nCATEGORÍA: lanzamientos · cripto\nFECHA DE DESCUBRIMIENTO: 2026-11-28\nWEB OFICIAL: no verificada\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: desconocido\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Posible revalorización tras el TGE si el proyecto gana adopción y logra listar el token en exchanges.\nPUNTUACIÓN: 0/100 · Descartar\nRIESGO: crítico\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Launchpool con alta distribución (52,4 %); TGE previsto para el primer trimestre de 2027\nMOTIVOS PARA DESCONFIAR: Falta de información sobre el proyecto, equipo, financiación y regulaciones; alto riesgo de pérdida total.; Proyecto sin rastro digital, sin web oficial y promocionado en sitios de baja reputación. Alto riesgo de phishing o estafa de drenaje de billeteras.; Ausencia total de equipo, whitepaper o contrato inteligente auditable.; El verificador no pudo confirmar que sea real: El proyecto Ryfinite carece de presencia digital verificable, sitio web oficial, repositorio de código o documentación técnica (whitepaper). La información proviene exclusivamente de agregadores de noticias de baja calidad (Coin Gabbar) que suelen replicar contenido automatizado o promocional sin auditoría. No existe evidencia de un 'launchpool' legítimo ni de un equipo detrás del token RFN.; falta de datos oficiales del proyecto; no se puede verificar la web oficial\nCÓMO PARTICIPAR: Acceder al launchpool mediante el enlace oficial del proyecto (si está disponible); Conectar una wallet compatible (e.g., MetaMask); Depositar los fondos requeridos según las instrucciones del launchpool; Reclamar los tokens RFN asignados antes del TGE\nQUÉ PODRÍA HACERME PERDER EL DINERO: Cancelación o retraso del TGE; Falta de liquidez tras el listado; Caída del precio del token; Problemas técnicos del contrato inteligente\nFUENTES: https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1OHQ4czJyM24ya3Z4RWI2dDF1REZsZm0tYWpoeHRGR1lCUDJxck40Z0dfcEFMaHNwandyRXJPSTB4LXNQV19heV9ZM0kxbmZ0NG5QWTVBSFV6TzdjWTNBeWJ2QWo2b1J1?oc=5 | https://www.cnmv.es",
+  "firstSeenAt": "2026-11-27T23:34:39Z",
+  "lastSeenAt": "2026-11-27T23:34:39Z",
+  "runId": "run-20261127-2334",
+  "aliases": [
+   "web-news-google-com"
+  ]
  }
 ]
