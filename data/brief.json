@@ -1,10 +1,10 @@
 {
  "version": 2,
- "generatedAt": "2026-11-26T22:35:59Z",
- "checkedAt": "2026-11-26T22:35:59Z",
- "attemptedAt": "2026-11-26T22:35:59Z",
+ "generatedAt": "2026-11-27T01:42:41Z",
+ "checkedAt": "2026-11-27T01:42:41Z",
+ "attemptedAt": "2026-11-27T01:42:41Z",
  "spend": {
-  "date": "2026-11-26",
+  "date": "2026-11-27",
   "usd": 0.0
  },
  "profiles": {
@@ -214,8 +214,8 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-26T22:35:59Z",
-    "checkedAt": "2026-11-26T22:35:59Z",
+    "generatedAt": "2026-11-27T01:42:41Z",
+    "checkedAt": "2026-11-27T01:42:41Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -223,27 +223,82 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
-    "descartadas": 1,
+    "nuevas": 1,
+    "descartadas": 2,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 1,
+     "sin_caso": 2,
      "vacia": 0
     },
-    "nota": "He buscado opciones rentables sin local adaptadas a 1.000 € de capital, descartando esquemas piramidales, productos de alto riesgo financiero y catering masivo sin infraestructura.",
+    "nota": "He descartado negocios que requerían alquiler de local o gran inventario (como franquicias o lavanderías automáticas) para priorizar ideas de menos de 200 € iniciables desde su casa en Riba-roja de Túria.",
     "oportunidades_locales": [
      {
-      "titulo": "Incubadora de Emprendimiento en Valencia para Mujeres",
-      "que_es": "Iniciativa de apoyo e incubación que ofrece formación y asesoría gratuita para lanzar negocios desde casa.",
+      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana",
+      "que_es": "Subvenciones y programas de apoyo al inicio de actividad para personas trabajadoras autónomas en la región.",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
+     },
+     {
+      "titulo": "Incubadora de Emprendimiento para Mujeres en Valencia",
+      "que_es": "Programa de asesoramiento y formación gratuita para impulsar microempresas y negocios liderados por mujeres.",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "ce40e2f18",
+      "fecha": "2026-11-27T01:42:41Z",
+      "nueva": true,
+      "titulo": "Kits de Decoración Temática DIY y Candy Bars para Cumpleaños Infantiles en Alquiler",
+      "gancho": "Alquila paquetes completos de decoración infantil reutilizable que los padres montan solos en 15 minutos.",
+      "que_es": "Diseña cajas temáticas (Selva, Magia, Espacio, Princesas) con manteles, soportes de tartas, guirnaldas, cartelería de madera y fondos reutilizables. Los padres recogen o reciben el kit el fin de semana, decoran su fiesta sin gastar de más y te lo devuelven el lunes.",
+      "casos": [
+       {
+        "quien": "Yahoo Finance Australia",
+        "pais": "",
+        "resultado": "Mum turns spare bedroom into base for $2,000 side hustle as Aussies search for extra income",
+        "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOWHhqVE40V3NSMk9SVjhfUk1QMDJqeUUyX253RGo2a3cwcXJxaUtrX2pPWHlKeW42VGY2OW5XNEtQa1JicWJtajlBWU9KV2J5c2pnX2Q0YWl2aXRZaVRLaFBXSUdnSXc3cHZ0NEhPLTZCZF9VaUtQMG55Qms5R1pIdDlZT3NoazRiNmNUMDZ0bkNacE1ZWkdBaFByYWthZmhZWVhzUkFadjI4T0NXSW1SWHVRU3Q3SGx4SnB5bmMyMFJ4MkxMdlhGbGxjNnNXbTdyREpQcg?oc=5"
+       }
+      ],
+      "por_que_tu": "Une tus habilidades en diseño y tu interés por el mundo infantil. Es un negocio que gestionas desde una habitación o trastero sin tener stock perecedero.",
+      "como_empezar": [
+       "Semana 1: Compra elementos de decoración duraderos (madera, tela, estructuras plegables) para 2 temas infantiles clave.",
+       "Semana 2: Monta un 'set' de prueba en tu salón, saca fotos profesionales y redacta las instrucciones simples de montaje.",
+       "Semana 3: Publica los kits en Wallapop, Instagram y grupos de madres y familias de Riba-roja y Manises.",
+       "Semana 4: Alquila los primeros kits cobrando fianza y ofreciendo recogida local o entrega cercana."
+      ],
+      "coste_inicial": "180 € (materiales reutilizables de decoración para los 2 primeros kits y cajas de almacenamiento)",
+      "herramientas": [
+       "Wallapop",
+       "Instagram",
+       "Canva (fichas visuales de montaje)"
+      ],
+      "precio": "45 € a 75 € por alquiler de fin de semana por kit (con fianza devuelta de 30 €).",
+      "primeras_clientas": [
+       "Anuncios en Wallapop local en Valencia y alrededores.",
+       "Carteles en parques infantiles, ludotecas y colegios de Riba-roja de Túria."
+      ],
+      "ingresos_posibles": "Estimación de 450 € a 900 € al mes alquilando de 3 a 5 kits por fin de semana (el coste marginal por uso es casi cero una vez comprado el material).",
+      "horas_semana": "6-10 horas",
+      "tramites": [
+       "Alta de autónomo",
+       "Contrato sencillo de alquiler de material con cláusula de fianza por extravío o rotura"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Deterioro o mancha del material reutilizable por parte del cliente",
+       "Espacio necesario en casa para almacenar las cajas de kits"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "niños",
+       "diseño"
+      ]
+     },
+     {
       "id": "c57f910b4",
       "fecha": "2026-11-26T22:35:59Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Repostería Creativa y Galletas Personalizadas por Encargo para Eventos y Mercados Locales",
       "gancho": "Crea galletas decoradas y tartas artesanales temáticas para cumpleaños, bautizos y ferias de Valencia.",
       "que_es": "Elaboración de galletas decoradas, cupcakes y tartas personalizadas bajo pedido para eventos infantiles y celebraciones. Te enfocas en la venta por encargos directos en Instagram/WhatsApp y la participación con puestos en ferias y mercados artesanales locales de Valencia.",
@@ -295,7 +350,7 @@
      {
       "id": "c4f386057",
       "fecha": "2026-11-26T22:35:59Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Fotografía y Venta Digital Inmediata en Eventos Infantiles y Deportivos Locales",
       "gancho": "Cubre eventos locales y vende las fotos digitales al instante a las familias escaneando un código QR.",
       "que_es": "Ofreces cobertura fotográfica en eventos deportivos de niños, festivales escolares o actos locales. Subes las imágenes a una plataforma digital de venta rápida con QR (como ZebraSnap), permitiendo que las familias encuentren y compren la descarga digital de sus fotos al momento desde el móvil.",
@@ -1182,7 +1237,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 25,
+   "n": 26,
    "err": null
   }
  },
