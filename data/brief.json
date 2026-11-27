@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-27T01:42:41Z",
- "checkedAt": "2026-11-27T01:42:41Z",
- "attemptedAt": "2026-11-27T01:42:41Z",
+ "generatedAt": "2026-11-27T04:32:29Z",
+ "checkedAt": "2026-11-27T04:32:29Z",
+ "attemptedAt": "2026-11-27T04:32:29Z",
  "spend": {
   "date": "2026-11-27",
   "usd": 0.0
@@ -214,8 +214,8 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-27T01:42:41Z",
-    "checkedAt": "2026-11-27T01:42:41Z",
+    "generatedAt": "2026-11-27T04:32:29Z",
+    "checkedAt": "2026-11-27T04:32:29Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -223,32 +223,145 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 1,
-    "descartadas": 2,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 2,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He descartado negocios que requerían alquiler de local o gran inventario (como franquicias o lavanderías automáticas) para priorizar ideas de menos de 200 € iniciables desde su casa en Riba-roja de Túria.",
+    "nota": "Se han descartado ideas anteriores de repostería, kits DIY y marketing gráfico, priorizando proyectos de muy baja inversión en gastronomía embotellada, arte corporal para eventos y home staging inmobiliario.",
     "oportunidades_locales": [
      {
-      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana",
-      "que_es": "Subvenciones y programas de apoyo al inicio de actividad para personas trabajadoras autónomas en la región.",
+      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana 2026",
+      "que_es": "Subvenciones y apoyos financieros autonómicos para el alta de nuevos trabajadores autónomos y consolidación de proyectos desde casa.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
      },
      {
-      "titulo": "Incubadora de Emprendimiento para Mujeres en Valencia",
-      "que_es": "Programa de asesoramiento y formación gratuita para impulsar microempresas y negocios liderados por mujeres.",
+      "titulo": "Incubadora de Emprendimiento Femenino en Valencia",
+      "que_es": "Programa local de asesoramiento gratuito y mentoría para emprendedoras que lanzan pequeños negocios artesanales o de servicios.",
       "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
+     },
+     {
+      "titulo": "Mercado de la Huerta y Ferias de Artesanía de Valencia",
+      "que_es": "Espacios comunitarios de venta directa sin intermediarios ideales para validar salsas artesanales, arte y productos hechos a mano.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c085bfd71",
+      "fecha": "2026-11-27T04:32:29Z",
+      "nueva": true,
+      "titulo": "Elaboración y Venta de Salsas Gourmet y Aceites Aromatizados de Autor",
+      "gancho": "Crea una línea exclusiva de condimentos artesanales y salsas picantes o de autor en tarro para vender en mercados locales y tienda online.",
+      "que_es": "Consiste en formular y envasar salsas gourmet, aceites picantes infusionados o aderezos artesanales con sello local valenciano. Se comercializan mediante puestos en ferias y mercados de fin de semana, así como en packs regalo y venta online a particulares y comercios de delicatessen.",
+      "casos": [
+       {
+        "quien": "Entrepreneur",
+        "pais": "",
+        "resultado": "54-Year-Old's Flavorful Side Hustle Hits $10K a Month on Amazon",
+        "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOQlJPNTJlbnRELUlHYUN2VnhBeXBCOGRGTWp6SFJ0Si1GSHI5WG15am1ZMlhJRm01c1lidThtNTQwMUQ2dHR4TW5LY0oyQ2ZrWjZGR2J2QmlOa0VKdUROWDduNk9XelNDY1VwbG1GMHpUejhORVJjcmwwcHRMOVd4RHlrQllvU2JsSFJSMmUzUHkwRjVSV0lYaXQ5XzRIeV9WbXVwNjFNMUZTWHdDdnI2TUZJUjVybzF1OTJweVJFMzdlMTB1SW5Cako0bm9wdHYxSFYyWWtoZlBSbVVYelJ4bkFqTV9HbzQteXlGRUl3dkV5TEE2NUd4QkhIOEZjS00?oc=5",
+        "resultado_es": "Emprendedora de 54 años gana $10K al mes vendiendo en Amazon"
+       }
+      ],
+      "por_que_tu": "Combina tu pasión por la cocina con la facilidad de empaquetar productos de larga conservación desde casa, aprovechando la rica tradición gastronómica y la red de mercados artesanales de Valencia.",
+      "como_empezar": [
+       "Semana 1: Diseña 3 recetas estrella (ej. aceite infusionado con romero/guindilla local, salsa romesco de autor o picante mediterráneo), calcula costes y compra ingredientes y frascos de cristal.",
+       "Semana 2: Prepara el primer lote de muestra, diseña etiquetas bonitas en Canva e imprime los adhesivos.",
+       "Semana 3: Solicita puesto en los mercados locales de artesanía y gastronomía de Valencia y Riba-roja.",
+       "Semana 4: Acude a tu primer mercado con degustación gratuita en tostas y activa perfiles en Instagram y Shopify/Etsy para recibir encargos."
+      ],
+      "coste_inicial": "180 € (ingredientes gourmet, frascos esterilizados, etiquetas impresas y tasa de puesto de mercado).",
+      "herramientas": [
+       "Canva para diseño de etiquetas",
+       "Esterilizador / Batidora",
+       "Instagram / TikTok",
+       "Tarjeta Bizum de empresa o datáfono SumUp"
+      ],
+      "precio": "Entre 5 € y 8 € por tarro de 200ml; packs regalo de 3 unidades a 18 €.",
+      "primeras_clientas": [
+       "Puesto en el Mercado de la Huerta o ferias gastronómicas comunitarias en Valencia y Riba-roja.",
+       "Grupos de WhatsApp de vecinos y amigos ofreciendo cajas regalo para fechas señaladas.",
+       "Tiendas de barrio y ultramarinos gourmet ofreciendo pequeñas consignaciones."
+      ],
+      "ingresos_posibles": "Estimación prudente basada en vender 50 tarros a la semana en mercados y online: unos 300 € a 400 € brutos/semana (unos 1.200 € al mes).",
+      "horas_semana": "10 - 15 horas (repartidas entre producción a mitad de semana y puesto en mercad…",
+      "tramites": [
+       "Carnet de manipulador de alimentos (online y gratuito en muchos portales).",
+       "Cumplimiento del Reglamento CE 852/2004 para elaboración alimentaria y etiquetado UE 1169/2011.",
+       "Registro Sanitario de Comercio Minorista o uso de cocina obrador autorizada para la venta al público.",
+       "Alta en el IAE y régimen de autónomos (beneficiándose de la Tarifa Plana / Cuota Cero autonómica si aplica)."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Caducidad o mala conservación si no se realiza un envasado al vacío y esterilización rigurosa.",
+       "Baja afluencia de público en días lluviosos durante mercados al aire libre."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina"
+      ]
+     },
+     {
+      "id": "c21ee9450",
+      "fecha": "2026-11-27T04:32:29Z",
+      "nueva": true,
+      "titulo": "Servicio de Home Staging Low-Cost y Atrezzo para Alquileres e Inmobiliarias",
+      "gancho": "Transforma viviendas vacías o desactualizadas con decoración efímera y atrezzo textil para vender o alquilar más rápido.",
+      "que_es": "Ofreces a particulares y agencias inmobiliarias la preparación estética de viviendas a la venta o alquiler. Usas elementos efímeros (cojines, plantas de atrezzo, iluminación, textiles y mobiliario ligero de cartón) y realizas la sesión fotográfica profesional para el anuncio.",
+      "casos": [
+       {
+        "quien": "O POVO",
+        "pais": "",
+        "resultado": "Mulher troca projeto de casa para aluguel por estufa no quintal e transforma o espaço em negócio de eventos",
+        "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUTc2dEFpUHhoTDBlN3BPdFZhY01GRVVrREZZVEZVV0xBZlpSUnBPNWNnMmN1VjFkRDFzaENVai1FWmNrc2g3enBxV2FBYzBOVTJXR2xMdnotNDJNbmE5NVg4YldWNVNjMThDWEhjM0NHVzZkbE9wX2FNYkdiUjBNVlJsa2JVemZQLU9xZ3ZtNGZBdDJGempLdk8yZi1xUjBYTVpNS19nWmRJeHRJVHgyMkREeTdEeWpsXzFwdS1kMzdSVVNhd3pZTWNDLUp0SG1xaFVaLVVpRQ?oc=5",
+        "resultado_es": "Mujer cambia proyecto de casa por alquiler a invernadero en el patio y lo convierte en negocio de eventos"
+       }
+      ],
+      "por_que_tu": "Aprovechas directamente tus conocimientos en el sector inmobiliario y tus dotes de diseño interior, creando un servicio de alto valor añadido y bajo coste inicial.",
+      "como_empezar": [
+       "Semana 1: Prepara un kit básico de atrezzo reutilizable (juegos de cama neutros, cojines, láminas de arte, plantas artificiales y atrezzo de cocina/baño).",
+       "Semana 2: Realiza una intervención piloto en la vivienda de un conocido o en un inmueble captado y saca fotos de 'Antes y Después'.",
+       "Semana 3: Crea un dossier comercial en PDF y portfolio web para presentar el servicio a agencias inmobiliarias locales.",
+       "Semana 4: Haz visitas comerciales directas a inmobiliarias de Riba-roja, Manises, Paterna y Valencia ofreciendo un 20% de descuento en el primer piso."
+      ],
+      "coste_inicial": "250 € (kit de textiles neutros, plantas decorativas, atrezzo de atrezzo staging y transporte).",
+      "herramientas": [
+       "Móvil con cámara de gran angular o cámara digital",
+       "Canva para dossiers de presentación",
+       "Instagram / LinkedIn"
+      ],
+      "precio": "Entre 200 € y 450 € por piso (incluye preparación efímera de 1 día, alquiler de atrezzo durante el reportaje y fotos).",
+      "primeras_clientas": [
+       "Contactar directamente con agentes inmobiliarios locales en la comarca del Camp de Túria.",
+       "Propietarios particulares que publican pisos desocupados en Idealista o Fotocasa.",
+       "Promotores de alquiler vacacional / Airbnb en la zona de Valencia."
+      ],
+      "ingresos_posibles": "Estimación prudente realizando 2 intervenciones al mes: 600 € a 900 € al mes de ingresos adicionales.",
+      "horas_semana": "8 - 12 horas por proyecto.",
+      "tramites": [
+       "Contrato de prestación de servicios con claúsuula de responsabilidad sobre el atrezzo aportado.",
+       "Facturación con IVA (21%) y retención de IRPF si se trabaja para agencias profesionales.",
+       "Alta en el IAE correspondiente a diseño de interiores / servicios fotográficos y régimen de autónomos."
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Dañar elementos durante el montaje/desmontaje (mitigado con un seguro de responsabilidad civil básico).",
+       "Tiempos muertos si el sector inmobiliario local reduce el volumen de captación."
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria",
+       "diseño",
+       "arte"
+      ]
+     },
+     {
       "id": "ce40e2f18",
       "fecha": "2026-11-27T01:42:41Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Kits de Decoración Temática DIY y Candy Bars para Cumpleaños Infantiles en Alquiler",
       "gancho": "Alquila paquetes completos de decoración infantil reutilizable que los padres montan solos en 15 minutos.",
       "que_es": "Diseña cajas temáticas (Selva, Magia, Espacio, Princesas) con manteles, soportes de tartas, guirnaldas, cartelería de madera y fondos reutilizables. Los padres recogen o reciben el kit el fin de semana, decoran su fiesta sin gastar de más y te lo devuelven el lunes.",
