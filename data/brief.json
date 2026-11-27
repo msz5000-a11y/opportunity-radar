@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-27T16:57:42Z",
- "checkedAt": "2026-11-27T16:57:42Z",
- "attemptedAt": "2026-11-27T16:57:42Z",
+ "generatedAt": "2026-11-27T21:22:50Z",
+ "checkedAt": "2026-11-27T21:22:50Z",
+ "attemptedAt": "2026-11-27T21:22:50Z",
  "spend": {
   "date": "2026-11-27",
   "usd": 0.0
@@ -241,41 +241,143 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-27T16:57:42Z",
-    "checkedAt": "2026-11-27T16:57:42Z",
+    "generatedAt": "2026-11-27T21:22:50Z",
+    "checkedAt": "2026-11-27T21:22:50Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.1-flash-lite",
+    "model": "gemini-3.6-flash",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 3,
-    "descartadas": 0,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 0,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado opciones que aprovechen tu experiencia inmobiliaria y creativa, descartando ideas de dropshipping o trading por tu perfil de bajo riesgo.",
+    "nota": "He descartado esquemas de reventa masiva e intermediación pasiva, seleccionando negocios validados de bajo riesgo adaptados a cocina, arte y sector inmobiliario.",
     "oportunidades_locales": [
      {
-      "titulo": "CEEI Valencia - Plataforma Relevo",
-      "que_es": "Plataforma para dar continuidad a negocios locales, ideal para networking y alianzas.",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
-     },
-     {
-      "titulo": "Ayudas para autónomos Comunitat Valenciana",
-      "que_es": "Programa de subvenciones para el fomento del autoempleo en la región.",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
+      "titulo": "Mercado de la Huerta de Valencia",
+      "que_es": "Espacio de venta directa sin intermediarios donde productores artesanales pueden ofrecer sus elaboraciones culinarias o artesanas directamente al público.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "cdeb5477d",
+      "fecha": "2026-11-27T21:22:50Z",
+      "nueva": true,
+      "titulo": "Elaboración Artesanal de Granola Gourmet y Mixes de Frutos Secos Horneados",
+      "gancho": "Vende snacks saludables y nutritivos horneados en pequeños lotes para desayunos, eventos y comercios locales.",
+      "que_es": "Creación de granolas artesanales (con miel local, cacao o especias) y mezclas de frutos secos horneados sin azúcares refinados. Se empaquetan en bolsas compostables para venta directa a particulares en redes sociales y a cafeterías de especialidad u herbolarios de la zona.",
+      "casos": [
+       {
+        "quien": "Austin American-Statesman",
+        "pais": "",
+        "resultado": "She started a food business from home. Now her kitchen can't keep up.",
+        "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNR2RiX1RUdUVqSWU1bndnMjdZc2JfVmh2TzFaR0lpaHBiZ3dQQVI3empqdVhka0tMWkFXMTA0N0VCMW5JZUZBVmFZd2d3Yk5XaENMNm5kT3ZmbmtTZW5sbTVyX21SdzVIV2w0WmEtWC11cHNPSlZRYXJlMlY2QUNGcEgtUUloeWoyQ2FmUW9BeU5wR1ZsNGUzb0pINnhsNVMzaHUzRw?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina tu gusto por la cocina con la creciente demanda de productos gastronómicos artesanales y saludables en Valencia.",
+      "como_empezar": [
+       "Semana 1: Diseñar 3 recetas fijas (ej. granola con miel de Montroi y canela) y pedir envases herméticos compostables.",
+       "Semana 2: Tramitar la declaración responsable/registro de elaboración artesanal alimentaria y preparar las fichas de alérgenos.",
+       "Semana 3: Hornear muestras, hacer fotos atractivas y llevar catas a 10 herbolarios y cafeterías de Riba-roja y Valencia.",
+       "Semana 4: Abrir pedidos anticipados en Instagram/WhatsApp y participar en mercados locales de la zona."
+      ],
+      "coste_inicial": "120 € (ingredientes gourmet, bolsas compostables, selladora manual y etiquetas personalizadas)",
+      "herramientas": [
+       "Horno convencional",
+       "Selladora térmica manual low-cost",
+       "Canva para diseño de etiquetas",
+       "Instagram y WhatsApp Business"
+      ],
+      "precio": "Bolsas de 300g entre 6 € y 8 €; packs regalo a 20 € (margen aproximado del 65%)",
+      "primeras_clientas": [
+       "Ofrecer degustaciones en herbolarios y cafeterías de especialidad de Riba-roja y Valencia.",
+       "Montar un puesto de venta directa en el Mercado de la Huerta o mercadillos artesanales de la comarca.",
+       "Publicar reels cortos en Instagram mostrando el proceso de horneado e ingredientes naturales."
+      ],
+      "ingresos_posibles": "Estimación prudente de 350 € a 900 €/mes vendiendo entre 60 y 120 paquetes mensuales a particulares y tiendas.",
+      "horas_semana": "8 - 12 horas",
+      "tramites": [
+       "Alta en el Régimen de Autónomos (aprovechando la Cuota Cero o tarifa plana autonómica)",
+       "Registro Sanitario de Industrias Alimentarias o notificación municipal para elaboración artesana en vivienda",
+       "Carné de manipulador de alimentos",
+       "Etiquetado normativo con desglose obligatorio de alérgenos (Reglamento UE 1169/2011)"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Caducidad y conservación si no se almacena en envases bien sellados",
+       "Cumplimiento estricto de la normativa de etiquetado de alérgenos",
+       "Competencia de marcas industriales en grandes superficies"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina"
+      ]
+     },
+     {
+      "id": "c50536fcd",
+      "fecha": "2026-11-27T21:22:50Z",
+      "nueva": true,
+      "titulo": "Co-Anfitriona Virtual y Gestión Digital de Alquileres Vacacionales",
+      "gancho": "Gestiona la atención a huéspedes, precios y reservas en Airbnb/Booking para propietarios sin tiempo desde tu casa.",
+      "que_es": "Servicio de gestión remota para propietarios de apartamentos y casas de alquiler vacacional o temporal. Te encargas de responder dudas a huéspedes, gestionar check-ins virtuales, redactar guías turísticas digitales personalizadas, optimizar precios y coordinar limpiezas.",
+      "casos": [
+       {
+        "quien": "Entrepreneur",
+        "pais": "",
+        "resultado": "I’m in the Navy and Have a Home-Based Side Hustle Making $8,000 to $11,000 a Month. It’s Better Than Uber.",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZzh3ZkY5UGN5VGRmZHJHRzFOcHkzOEdRbUlFNXJmRjVjS0JEZDBRRTdLLW9yYlRabXJpYUIyQ05ieVpwUURnMUxNcTlnRmVtWGdEdWxsUU8zZzExRXdNanJTRjNoUDZDQldmY2g4eVNCVGlYeUJudzNBb0Z1MUxub2tKbkthUnpWNDB1SmNaRW9zNEhRR0thLWtmTGNESU8tUmdYR2w3RmNmR2d2S2ZOMDgwZnVnZjE0ZnJ5ZGZRdw?oc=5"
+       }
+      ],
+      "por_que_tu": "Aprovechas tus conocimientos del sector inmobiliario para prestar un servicio remoto de alto valor sin gastar capital.",
+      "como_empezar": [
+       "Semana 1: Diseñar tu propuesta de servicio (atención a huéspedes 24/7, guía de la zona, actualización de precios).",
+       "Semana 2: Crear un dossier de presentación en Canva y optimizar tu perfil en LinkedIn.",
+       "Semana 3: Contactar a 15 propietarios con anuncios descuidados en plataformas de alquiler en Valencia y alrededores.",
+       "Semana 4: Cerrar los 2 primeros clientes firmando un acuerdo de prueba de 30 días a comisión."
+      ],
+      "coste_inicial": "0 € (solo requiere ordenador, teléfono móvil y conexión a internet)",
+      "herramientas": [
+       "Plataformas Airbnb / Booking",
+       "WhatsApp Business",
+       "Canva (para guías digitales del huésped)",
+       "Google Workspace"
+      ],
+      "precio": "Comisión de entre el 10% y el 15% sobre los ingresos netos de las reservas mensuales gestionadas",
+      "primeras_clientas": [
+       "Contactar por mensaje directo a propietarios de viviendas vacacionales con valoraciones bajas en atención.",
+       "Publicar consejos sobre cómo rentabilizar pisos turísticos en LinkedIn e Instagram.",
+       "Networking con agentes inmobiliarios locales que gestionen carteras de inversores en alquiler."
+      ],
+      "ingresos_posibles": "Estimación prudente de 500 € a 1.200 €/mes gestionando entre 3 y 5 propiedades vacacionales.",
+      "horas_semana": "10 - 15 horas (repartidas a lo largo del día para responder mensajes de huésped…",
+      "tramites": [
+       "Alta en el Régimen de Autónomos (prestación de servicios)",
+       "Contrato de prestación de servicios de co-anfitrión/gestión con cada propietario",
+       "Cumplimiento del RGPD para la gestión de datos personales de propietarios y huéspedes"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Necesidad de estar disponible en el móvil durante la llegada de los huéspedes",
+       "Dependencia del trabajo de terceros para la limpieza física del inmueble",
+       "Estacionalidad turística según la época del año en la comarca"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria"
+      ]
+     },
+     {
       "id": "c11555265",
       "fecha": "2026-11-27T16:57:42Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Chef de 'Batch Cooking' a Domicilio",
       "gancho": "Cocina el menú semanal de familias ocupadas en su propia casa.",
       "que_es": "Ofreces un servicio donde vas a casa del cliente, compras los ingredientes y cocinas en 3-4 horas todos los platos de la semana. Es un modelo muy demandado por familias que quieren comer sano pero no tienen tiempo.",
@@ -327,7 +429,7 @@
      {
       "id": "cc57b8301",
       "fecha": "2026-11-27T16:57:42Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Diseño de 'Art Kits' para Eventos",
       "gancho": "Kits de manualidades listos para usar en fiestas infantiles.",
       "que_es": "Creas cajas temáticas con todo lo necesario para que los niños hagan una actividad artística (pintura, arcilla, collage). Vendes el kit físico o alquilas el material profesional.",
@@ -379,7 +481,7 @@
      {
       "id": "caa844dd0",
       "fecha": "2026-11-27T16:57:42Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Consultoría de 'Home Staging' Virtual",
       "gancho": "Ayuda a vendedores a redecorar sus casas para venderlas más rápido.",
       "que_es": "Usas tus conocimientos inmobiliarios y de diseño para asesorar a propietarios sobre cómo organizar sus muebles y decoración para fotos de venta. Puedes ofrecer un informe PDF o videollamada.",
@@ -1739,7 +1841,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 27,
+   "n": 20,
    "err": null
   }
  },
