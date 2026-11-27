@@ -369,6 +369,361 @@
   "profitPath": ""
  },
  {
+  "name": "DesafIA Madrid – Proyectos piloto de IA",
+  "category": "startups",
+  "subcategory": "ia_publica",
+  "kind": "pasiva",
+  "description": "Ocho startups han sido seleccionadas por el Ayuntamiento de Madrid para probar soluciones de IA en entornos reales. El programa, financiado con cerca de 500.000 €, busca mejorar servicios públicos y crear métricas operativas novedosas.",
+  "officialUrl": "https://www.madrid.es",
+  "participateUrl": "https://www.madrid.es/portales/munimadrid/es/Inicio/Ayuntamiento/Innovacion-y-Emprendimiento/",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Los pilotos se ejecutan en la capital y están financiados por el Ayuntamiento de Madrid.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requiere inversión directa por parte de terceros.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica salida financiera ya que no hay inversión directa.",
+  "horizon": "corto‑medio plazo (1‑2 años)",
+  "deadline": null,
+  "potential": "alto potencial de adopción en el sector público y posible escalado a otras ciudades.",
+  "difficulty": "media",
+  "timeNeeded": "poco tiempo; seguimiento de comunicados y contactos con las startups.",
+  "subscores": {
+   "novedad": {
+    "v": 8.0,
+    "why": "Primer programa municipal de IA con ocho startups distintas · Verificador: Es la segunda edición de un programa municipal consolidado de innovación abierta.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.0,
+    "why": "Soluciones aplicadas a servicios críticos (movilidad, mantenimiento, avisos ciudadanos) · Verificador: Alta aplicabilidad en entornos urbanos y servicios públicos.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Mercado público español de IA en administración local en expansión · Verificador: Mercado de GovTech en crecimiento en España.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 7.0,
+    "why": "Startups con experiencia previa (Wise Build, Komorebi AI, etc.) · Verificador: Startups seleccionadas con trayectoria técnica validada.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 8.0,
+    "why": "Financiación pública de ~500.000 € + casi 1 M€ en total · Verificador: Financiación pública confirmada de ~500.000€ por edición.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 5.0,
+    "why": "Enfocado a entidades públicas; comunidad de usuarios limitada · Verificador: Enfocado a ecosistema B2B y B2G, no a inversores minoristas.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Pilotos en marcha, adopción futura dependerá de resultados · Verificador: Pilotos en fase de resultados; la adopción masiva depende de la escalabilidad.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Otras ciudades pueden lanzar iniciativas similares · Verificador: Otras ciudades (Barcelona, Valencia) tienen programas similares.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 7.0,
+    "why": "Tecnología IA ya probada en entornos controlados · Verificador: Tecnología IA aplicada a casos de uso específicos y controlados.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "No hay inversión económica directa para el usuario · Verificador: No existe riesgo de pérdida de capital al no ser una inversión.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "Programa localizado en Madrid, abierto a empresas españolas · Verificador: Programa 100% localizado en Madrid, España.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 9.0,
+    "why": "No hay activo financiero que vender; salida no aplicable · Verificador: No aplica, no es un activo financiero.",
+    "evidence": true
+   }
+  },
+  "redFlags": [],
+  "distrust": [],
+  "whyInteresting": [
+   "Innovación IA aplicada a servicios públicos",
+   "Posible escalado a otras administraciones"
+  ],
+  "howToParticipate": [
+   "Seguir los comunicados del Ayuntamiento de Madrid",
+   "Contactar directamente a las startups para explorar colaboraciones o empleo"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [
+   "Publicación de resultados de los pilotos",
+   "Acuerdos de expansión con otras ciudades"
+  ],
+  "signals": {
+   "métrica": 0
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Al ser un programa de contratación pública y colaboración institucional, no está sujeto a regulación de mercados financieros (CNMV/MiCA).",
+   "sources": [
+    "https://www.madrid.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/ecosistema/la-ii-edicion-de-desafia-madrid-pone-en-marcha-ocho-proyectos-piloto-para-fomentar-la-innovacion-en-la-capital/"
+   },
+   {
+    "title": "Ayuntamiento de Madrid - Innovación y Emprendimiento",
+    "url": "https://www.madrid.es"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La iniciativa DesafIA Madrid es un programa público real impulsado por el Ayuntamiento de Madrid. La información coincide con los registros de prensa oficial y la actividad del Área Delegada de Innovación y Emprendimiento. No es una oportunidad de inversión financiera, sino un programa de innovación abierta y colaboración público-privada.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-madrid-es",
+  "isNew": true,
+  "score": 73,
+  "rawScore": 72.6,
+  "tier": "investigar",
+  "tierLabel": "Interesante, necesita investigación",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "medio",
+  "flags": [],
+  "evidenced": 12,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "Primer programa municipal de IA con ocho startups distintas · Verificador: Es la segunda edición de un programa municipal consolidado de innovación abierta.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Soluciones aplicadas a servicios críticos (movilidad, mantenimiento, avisos ciudadanos) · Verificador: Alta aplicabilidad en entornos urbanos y servicios públicos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Mercado público español de IA en administración local en expansión · Verificador: Mercado de GovTech en crecimiento en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 7.0,
+    "points": 7.0,
+    "why": "Startups con experiencia previa (Wise Build, Komorebi AI, etc.) · Verificador: Startups seleccionadas con trayectoria técnica validada.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 8.0,
+    "points": 5.6,
+    "why": "Financiación pública de ~500.000 € + casi 1 M€ en total · Verificador: Financiación pública confirmada de ~500.000€ por edición.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 5.0,
+    "points": 3.5,
+    "why": "Enfocado a entidades públicas; comunidad de usuarios limitada · Verificador: Enfocado a ecosistema B2B y B2G, no a inversores minoristas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Pilotos en marcha, adopción futura dependerá de resultados · Verificador: Pilotos en fase de resultados; la adopción masiva depende de la escalabilidad.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Otras ciudades pueden lanzar iniciativas similares · Verificador: Otras ciudades (Barcelona, Valencia) tienen programas similares.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Tecnología IA ya probada en entornos controlados · Verificador: Tecnología IA aplicada a casos de uso específicos y controlados.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No hay inversión económica directa para el usuario · Verificador: No existe riesgo de pérdida de capital al no ser una inversión.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Programa localizado en Madrid, abierto a empresas españolas · Verificador: Programa 100% localizado en Madrid, España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "No hay activo financiero que vender; salida no aplicable · Verificador: No aplica, no es un activo financiero.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T12:47:05Z",
+    "métrica": 0.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: DesafIA Madrid – Proyectos piloto de IA\nCATEGORÍA: startups · ia_publica\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://www.madrid.es\nENLACE DE PARTICIPACIÓN: https://www.madrid.es/portales/munimadrid/es/Inicio/Ayuntamiento/Innovacion-y-Emprendimiento/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto potencial de adopción en el sector público y posible escalado a otras ciudades.\nPUNTUACIÓN: 73/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto‑medio plazo (1‑2 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Innovación IA aplicada a servicios públicos; Posible escalado a otras administraciones\nMOTIVOS PARA DESCONFIAR: ninguno detectado (eso no significa que no existan)\nCÓMO PARTICIPAR: Seguir los comunicados del Ayuntamiento de Madrid; Contactar directamente a las startups para explorar colaboraciones o empleo\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/ecosistema/la-ii-edicion-de-desafia-madrid-pone-en-marcha-ocho-proyectos-piloto-para-fomentar-la-innovacion-en-la-capital/ | https://www.madrid.es",
+  "firstSeenAt": "2026-11-27T12:47:05Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
+  "aliases": [
+   "news-elreferente-es-ecosistema-la-ii-edicion-de-desafia-madrid-pone-en-marcha-ocho-proyect"
+  ]
+ },
+ {
   "name": "BF Sport Incubadora 2027",
   "category": "startups",
   "subcategory": "incubadora_deportiva",
@@ -1515,365 +1870,6 @@
   "profitPath": ""
  },
  {
-  "name": "Real Decreto-ley para reforzar la soberanía científica y tecnológica de España",
-  "category": "ia_tecnologia",
-  "subcategory": "soberania_tecnologica",
-  "kind": "pasiva",
-  "description": "El Gobierno aprueba un Real Decreto-ley que crea un estatus especial para centros públicos de I+D+I vinculados a la soberanía tecnológica, facilitando contratación, financiación y transferencia de resultados. Incluye diez áreas estratégicas, entre ellas IA, semiconductores y biotecnología, con una duración inicial de cinco años.",
-  "officialUrl": "https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/",
-  "participateUrl": null,
-  "country": "España",
-  "spainAvailability": "si",
-  "spainNotes": "Se trata de una medida gubernamental; no requiere inversión directa del usuario.",
-  "costs": {
-   "minEntry": 0,
-   "extra": 0,
-   "extraNotes": "No hay coste de entrada ni inversión requerida",
-   "recommended": 0,
-   "max": 0
-  },
-  "canLoseAll": false,
-  "liquidity": "no aplica",
-  "exitNotes": "No aplica",
-  "horizon": "largo plazo (5-10 años)",
-  "deadline": null,
-  "potential": "alto impacto en el ecosistema de I+D español y posible acceso a fondos o colaboraciones",
-  "difficulty": "media",
-  "timeNeeded": "dependiendo de la convocatoria, puede requerir tiempo de preparación de propuestas",
-  "subscores": {
-   "novedad": {
-    "v": 8,
-    "why": "Nuevo marco legal que otorga estatus especial a centros de investigación",
-    "evidence": true
-   },
-   "potencial": {
-    "v": 9,
-    "why": "Facilita transferencia tecnológica y financiación pública",
-    "evidence": true
-   },
-   "mercado": {
-    "v": 5,
-    "why": "No se trata de un mercado comercial directo",
-    "evidence": false
-   },
-   "equipo": {
-    "v": 0,
-    "why": "No aplica a un equipo empresarial",
-    "evidence": false
-   },
-   "financiacion": {
-    "v": 7,
-    "why": "Financiación pública prevista para los centros designados",
-    "evidence": true
-   },
-   "comunidad": {
-    "v": 6,
-    "why": "Impacto potencial en la comunidad científica y tecnológica española",
-    "evidence": false
-   },
-   "adopcion": {
-    "v": 7,
-    "why": "Se espera que hasta 20 centros sean designados inicialmente",
-    "evidence": true
-   },
-   "competencia": {
-    "v": 5,
-    "why": "Competencia entre centros públicos por el estatus especial",
-    "evidence": false
-   },
-   "riesgo_tecnico": {
-    "v": 8,
-    "why": "Riesgo técnico bajo al ser iniciativa pública con infraestructura existente",
-    "evidence": true
-   },
-   "riesgo_financiero": {
-    "v": 9,
-    "why": "No implica inversión financiera del usuario",
-    "evidence": true
-   },
-   "entrada_espana": {
-    "v": 10,
-    "why": "Aplicable exclusivamente a España",
-    "evidence": true
-   },
-   "salida": {
-    "v": 10,
-    "why": "No hay mecanismo de salida financiero",
-    "evidence": true
-   }
-  },
-  "redFlags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "distrust": [],
-  "whyInteresting": [
-   "Puede abrir oportunidades de empleo, colaboración o acceso a infraestructuras de investigación pública"
-  ],
-  "howToParticipate": [
-   "1. Monitorizar las convocatorias oficiales del Ministerio de Ciencia, Innovación y Universidades; 2. Preparar y presentar propuestas de proyecto alineadas con las áreas estratégicas; 3. Seguir el proceso de evaluación de la Comisión Interministerial; 4. En caso de ser seleccionado, gestionar la colaboración con el centro designado"
-  ],
-  "lossCauses": [],
-  "earlySignals": [],
-  "signals": {},
-  "regulatory": {
-   "checked": false,
-   "status": "desconocido",
-   "notes": "pendiente de verificación",
-   "sources": [
-    "El Referente"
-   ]
-  },
-  "sources": [
-   {
-    "title": "El Referente",
-    "url": "https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/"
-   }
-  ],
-  "discoveredVia": "El Referente",
-  "aiModels": {
-   "searcher": null,
-   "analyst": "groq:openai/gpt-oss-120b"
-  },
-  "verification": {
-   "verdict": "sin verificar",
-   "model": null
-  },
-  "discoveredAt": "2026-11-25",
-  "id": "web-elreferente-es",
-  "isNew": false,
-  "score": 61,
-  "rawScore": 65.8,
-  "tier": "investigar",
-  "tierLabel": "Interesante, necesita investigación",
-  "humanReview": false,
-  "caps": [
-   "-5 por 1 riesgo(s) alto(s)"
-  ],
-  "critical": false,
-  "risk": "medio",
-  "flags": [
-   {
-    "code": "sin_verificacion_independiente",
-    "severity": "alta",
-    "detail": "Ningún segundo modelo pudo verificar esta ficha en esta ejecución."
-   }
-  ],
-  "evidenced": 8,
-  "breakdown": [
-   {
-    "key": "novedad",
-    "label": "Novedad",
-    "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Nuevo marco legal que otorga estatus especial a centros de investigación",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "potencial",
-    "label": "Potencial de crecimiento",
-    "weight": 12,
-    "value": 9.0,
-    "points": 10.8,
-    "why": "Facilita transferencia tecnológica y financiación pública",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "mercado",
-    "label": "Tamaño del mercado",
-    "weight": 8,
-    "value": 3.0,
-    "points": 2.4,
-    "why": "No se trata de un mercado comercial directo",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "equipo",
-    "label": "Calidad del equipo",
-    "weight": 10,
-    "value": 0.0,
-    "points": 0.0,
-    "why": "No aplica a un equipo empresarial",
-    "evidence": false,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "financiacion",
-    "label": "Financiación",
-    "weight": 7,
-    "value": 7.0,
-    "points": 4.9,
-    "why": "Financiación pública prevista para los centros designados",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "comunidad",
-    "label": "Comunidad",
-    "weight": 7,
-    "value": 3.0,
-    "points": 2.1,
-    "why": "Impacto potencial en la comunidad científica y tecnológica española",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "adopcion",
-    "label": "Adopción",
-    "weight": 9,
-    "value": 7.0,
-    "points": 6.3,
-    "why": "Se espera que hasta 20 centros sean designados inicialmente",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "competencia",
-    "label": "Competencia (10 = poca)",
-    "weight": 5,
-    "value": 3.0,
-    "points": 1.5,
-    "why": "Competencia entre centros públicos por el estatus especial",
-    "evidence": false,
-    "cappedForNoEvidence": true
-   },
-   {
-    "key": "riesgo_tecnico",
-    "label": "Riesgo técnico (10 = bajo)",
-    "weight": 8,
-    "value": 8.0,
-    "points": 6.4,
-    "why": "Riesgo técnico bajo al ser iniciativa pública con infraestructura existente",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "riesgo_financiero",
-    "label": "Riesgo financiero (10 = bajo)",
-    "weight": 10,
-    "value": 9.0,
-    "points": 9.0,
-    "why": "No implica inversión financiera del usuario",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "entrada_espana",
-    "label": "Facilidad de entrada desde tu región",
-    "weight": 8,
-    "value": 10.0,
-    "points": 8.0,
-    "why": "Aplicable exclusivamente a España",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   },
-   {
-    "key": "salida",
-    "label": "Posibilidad de salida o monetización",
-    "weight": 8,
-    "value": 10.0,
-    "points": 8.0,
-    "why": "No hay mecanismo de salida financiero",
-    "evidence": true,
-    "cappedForNoEvidence": false
-   }
-  ],
-  "scenarios": {
-   "stakeEur": 0.0,
-   "extraCostsEur": 0.0,
-   "lossScenarioEur": null,
-   "rows": [
-    {
-     "multiple": 2,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 5,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 10,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 20,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 50,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 100,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    },
-    {
-     "multiple": 300,
-     "grossEur": 0.0,
-     "netEur": 0.0,
-     "exitImpactPct": 0.0,
-     "exitNote": null
-    }
-   ],
-   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
-   "basis": "capital"
-  },
-  "momentum": {
-   "available": true,
-   "changes": {},
-   "label": "Estable",
-   "since": "2026-11-23T13:15:25Z"
-  },
-  "metrics": [
-   {
-    "t": "2026-11-23T13:15:25Z",
-    "premio": 1.0
-   }
-  ],
-  "alert": {
-   "level": "ninguna",
-   "reason": ""
-  },
-  "hoursLeft": null,
-  "alertText": "NOMBRE: Real Decreto-ley para reforzar la soberanía científica y tecnológica de España\nCATEGORÍA: ia_tecnologia · soberania_tecnologica\nFECHA DE DESCUBRIMIENTO: 2026-11-25\nWEB OFICIAL: https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto impacto en el ecosistema de I+D español y posible acceso a fondos o colaboraciones\nPUNTUACIÓN: 61/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: largo plazo (5-10 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Puede abrir oportunidades de empleo, colaboración o acceso a infraestructuras de investigación pública\nMOTIVOS PARA DESCONFIAR: Ningún segundo modelo pudo verificar esta ficha en esta ejecución.\nCÓMO PARTICIPAR: 1. Monitorizar las convocatorias oficiales del Ministerio de Ciencia, Innovación y Universidades; 2. Preparar y presentar propuestas de proyecto alineadas con las áreas estratégicas; 3. Seguir el proceso de evaluación de la Comisión Interministerial; 4. En caso de ser seleccionado, gestionar la colaboración con el centro designado\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-soberania-cientifica-y-tecnologica-de-espana/",
-  "firstSeenAt": "2026-11-21T02:32:23Z",
-  "lastSeenAt": "2026-11-25T19:27:10Z",
-  "runId": "run-20261125-1927",
-  "aliases": [
-   "news-elreferente-es-actualidad-el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-so",
-   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d",
-   "news-elreferente-es-startups-biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevil",
-   "news-elreferente-es-startups-orbita-premia-a-las-startups-collimate-space-chatpol-biotasma"
-  ],
-  "actionable": false,
-  "profitPath": ""
- },
- {
   "name": "Convocatoria LEADER Rioja Alta 2026",
   "category": "startups",
   "subcategory": "financiacion_publica",
@@ -3010,6 +3006,382 @@
   "aliases": [
    "web-bitcoinmagazine-com"
   ]
+ },
+ {
+  "name": "Reforma de la Ley de Startups para Scaleups en España",
+  "category": "startups",
+  "subcategory": "politica_y_regulacion",
+  "kind": "pasiva",
+  "description": "Iniciativa de las scaleups españolas para acelerar la reforma de la Ley de Startups y crear un marco normativo propio que extienda incentivos a empresas en fase de crecimiento.",
+  "officialUrl": "https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "La propuesta afecta a scaleups con sede en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No requiere inversión financiera directa",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, no es una inversión directa.",
+  "horizon": "mediano a largo plazo (años) para ver cambios legislativos",
+  "deadline": null,
+  "potential": "Alcance de crear un entorno más favorable para scaleups, lo que podría traducirse en mayor acceso a financiación y crecimiento para empresas del ecosistema.",
+  "difficulty": "media",
+  "timeNeeded": "implicación a medio plazo, seguimiento de procesos legislativos.",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Propuesta de una ley específica para scaleups, aún inexistente en España · Verificador: La propuesta de una ley específica para scaleups es un debate activo en el ecosistema español.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "Mejora del entorno regulatorio puede impulsar crecimiento del sector · Verificador: Una mejora regulatoria facilitaría la retención de talento y capital en España.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "658 scaleups y 10.298 empresas tech en España según el artículo · Verificador: Basado en datos de Adigital/EsTech sobre el ecosistema tecnológico.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5.5,
+    "why": "No se menciona un equipo concreto detrás de la iniciativa · Verificador: Liderado por Adigital y EsTech, con figuras como Alister Moreno (CEO de Clikalia).",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 5.5,
+    "why": "Se habla de necesidad de financiación a largo plazo y fondos como Sovereign Tech Equity Fund · Verificador: La propuesta busca mejorar el acceso a financiación, no es una fuente de financiación en sí.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 8.0,
+    "why": "Apoyo de fundadores, inversores, instituciones y eventos como Scalability Day · Verificador: Apoyo institucional y de fundadores en eventos como Scalability Day.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Depende de la aprobación legislativa y certificación propuesta · Verificador: Depende totalmente de la voluntad política y legislativa.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Competencia regulatoria con otras iniciativas europeas (EU Inc., Chips Act 2.0) · Verificador: Existe competencia regulatoria con otras iniciativas europeas (EU Inc).",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 1.5,
+    "why": "No implica riesgo técnico directo, es una cuestión normativa · Verificador: No aplica, es una iniciativa de política pública.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 1.5,
+    "why": "No hay inversión financiera directa asociada · Verificador: No hay inversión directa, por lo que no hay riesgo de pérdida de capital.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "La reforma se plantea exclusivamente para el contexto español · Verificador: La propuesta es específica para el marco legal español.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 1.0,
+    "why": "No existe mecanismo de salida financiero · Verificador: No es una inversión, no hay mecanismo de salida.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "La reforma depende de la voluntad del Gobierno y del Parlamento, sin garantías de aprobación en el corto plazo"
+   },
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "La reforma depende de procesos legislativos inciertos y tiempos políticos ajenos al sector privado."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Posible mejora del entorno para scaleups, lo que beneficia indirectamente a inversores en startups españolas"
+  ],
+  "howToParticipate": [
+   "1. Suscribirse a newsletters de asociaciones como EsTech y Adigital;",
+   "2. Seguir la evolución legislativa en el Boletín Oficial del Estado;",
+   "3. Participar en eventos de networking y lobbying relacionados con la Ley de Startups;",
+   "4. Evaluar oportunidades de inversión en scaleups españolas una vez la normativa mejore"
+  ],
+  "lossCauses": [],
+  "earlySignals": [
+   "Publicaciones de avances legislativos sobre la Ley de Startups;",
+   "Aprobación de una certificación para scaleups"
+  ],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "No es un servicio financiero ni de inversión, por lo que no requiere autorización de la CNMV ni registro MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/"
+   },
+   {
+    "title": "Adigital - Plan Nacional de Escalabilidad",
+    "url": "https://www.adigital.org"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La iniciativa es una propuesta de política pública y lobby sectorial liderada por Adigital y EsTech, no un producto financiero. La información es coherente con el ecosistema tecnológico español y la Ley de Startups vigente.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-elreferente-es",
+  "isNew": false,
+  "score": 51,
+  "rawScore": 51.4,
+  "tier": "especulativa",
+  "tierLabel": "Especulativa",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "regulatory_uncertainty",
+    "severity": "media",
+    "detail": "La reforma depende de la voluntad del Gobierno y del Parlamento, sin garantías de aprobación en el corto plazo"
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Propuesta de una ley específica para scaleups, aún inexistente en España · Verificador: La propuesta de una ley específica para scaleups es un debate activo en el ecosistema español.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "Mejora del entorno regulatorio puede impulsar crecimiento del sector · Verificador: Una mejora regulatoria facilitaría la retención de talento y capital en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "658 scaleups y 10.298 empresas tech en España según el artículo · Verificador: Basado en datos de Adigital/EsTech sobre el ecosistema tecnológico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se menciona un equipo concreto detrás de la iniciativa · Verificador: Liderado por Adigital y EsTech, con figuras como Alister Moreno (CEO de Clikalia).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 5.5,
+    "points": 3.9,
+    "why": "Se habla de necesidad de financiación a largo plazo y fondos como Sovereign Tech Equity Fund · Verificador: La propuesta busca mejorar el acceso a financiación, no es una fuente de financiación en sí.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 8.0,
+    "points": 5.6,
+    "why": "Apoyo de fundadores, inversores, instituciones y eventos como Scalability Day · Verificador: Apoyo institucional y de fundadores en eventos como Scalability Day.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 5.5,
+    "points": 5.0,
+    "why": "Depende de la aprobación legislativa y certificación propuesta · Verificador: Depende totalmente de la voluntad política y legislativa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 5.0,
+    "points": 2.5,
+    "why": "Competencia regulatoria con otras iniciativas europeas (EU Inc., Chips Act 2.0) · Verificador: Existe competencia regulatoria con otras iniciativas europeas (EU Inc).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 1.5,
+    "points": 1.2,
+    "why": "No implica riesgo técnico directo, es una cuestión normativa · Verificador: No aplica, es una iniciativa de política pública.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 1.5,
+    "points": 1.5,
+    "why": "No hay inversión financiera directa asociada · Verificador: No hay inversión directa, por lo que no hay riesgo de pérdida de capital.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "La reforma se plantea exclusivamente para el contexto español · Verificador: La propuesta es específica para el marco legal español.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 1.0,
+    "points": 0.8,
+    "why": "No existe mecanismo de salida financiero · Verificador: No es una inversión, no hay mecanismo de salida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": true,
+   "changes": {},
+   "label": "Estable",
+   "since": "2026-11-23T13:15:25Z"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-23T13:15:25Z",
+    "premio": 1.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Reforma de la Ley de Startups para Scaleups en España\nCATEGORÍA: startups · politica_y_regulacion\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Alcance de crear un entorno más favorable para scaleups, lo que podría traducirse en mayor acceso a financiación y crecimiento para empresas del ecosistema.\nPUNTUACIÓN: 51/100 · Especulativa\nRIESGO: medio\nPLAZO: mediano a largo plazo (años) para ver cambios legislativos\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posible mejora del entorno para scaleups, lo que beneficia indirectamente a inversores en startups españolas\nMOTIVOS PARA DESCONFIAR: La reforma depende de la voluntad del Gobierno y del Parlamento, sin garantías de aprobación en el corto plazo\nCÓMO PARTICIPAR: 1. Suscribirse a newsletters de asociaciones como EsTech y Adigital;; 2. Seguir la evolución legislativa en el Boletín Oficial del Estado;; 3. Participar en eventos de networking y lobbying relacionados con la Ley de Startups;; 4. Evaluar oportunidades de inversión en scaleups españolas una vez la normativa mejore\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/ | https://www.adigital.org",
+  "firstSeenAt": "2026-11-21T02:32:23Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
+  "aliases": [
+   "news-elreferente-es-actualidad-el-gobierno-aprueba-un-real-decreto-ley-para-reforzar-la-so",
+   "news-elreferente-es-actualidad-talent-tech-y-trust-los-tres-ejes-del-innovation-day-de-28d",
+   "news-elreferente-es-ecosistema-las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-star",
+   "news-elreferente-es-startups-biodex-gana-la-32a-edicion-de-techstars-startup-weekend-sevil",
+   "news-elreferente-es-startups-orbita-premia-a-las-startups-collimate-space-chatpol-biotasma"
+  ],
+  "actionable": false,
+  "profitPath": ""
  },
  {
   "name": "PhoneBox",
@@ -6877,6 +7249,411 @@
   "runId": "run-20261124-0222",
   "aliases": [
    "web-infosubvenciones-es"
+  ]
+ },
+ {
+  "name": "SpainNAB Impact Investment Market – Oportunidad en vivienda de impacto",
+  "category": "negocio",
+  "subcategory": "inversión de impacto",
+  "kind": "pasiva",
+  "description": "El informe de SpainNAB e IE University revela 1.560 M€ de capital de impacto pendiente de invertir en España, con la vivienda como uno de los principales destinos. La creciente demanda de alquiler social y la aparición de SOCIMI de impacto ofrecen una vía de inversión pasiva a través del mercado de valores.",
+  "officialUrl": "https://spainnab.org/",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "no",
+  "spainNotes": "El estudio indica una reserva de 1.560 M€ pendiente de despliegue en proyectos españoles, especialmente vivienda social.",
+  "costs": {
+   "minEntry": null,
+   "extra": 0,
+   "extraNotes": "Comisiones de corretaje y posibles costes de custodia",
+   "recommended": 2000,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "media",
+  "exitNotes": "Venta de acciones SOCIMI en mercado secundario o redención de participaciones de fondos de impacto",
+  "horizon": "medio plazo (3-5 años)",
+  "deadline": null,
+  "potential": "Alto potencial de crecimiento del mercado de impacto en España, impulsado por aumentos de capital comprometido y foco en vivienda asequible",
+  "difficulty": "media",
+  "timeNeeded": "Abrir cuenta de valores, identificar SOCIMI o fondos de impacto, comprar participaciones y monitorizar despliegue de proyectos",
+  "subscores": {
+   "novedad": {
+    "v": 2.5,
+    "why": "El informe es una actualización anual, no una innovación disruptiva · Verificador: El informe es un análisis estadístico anual, no una oportunidad de inversión nueva.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.0,
+    "why": "Crecimiento del capital invertido 47 % y del capital pendiente 33,9 % entre 2024‑2025 · Verificador: El potencial es para el sector, no necesariamente para el inversor minorista con 2.000 €. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 7.0,
+    "why": "1.560 M€ pendientes, 75 % del capital gestionado por gestoras · Verificador: Datos de mercado sólidos basados en el informe de SpainNAB.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "Se citan entidades como SpainNAB, IE University y varios fondos, sin detalle de un equipo concreto · Verificador: SpainNAB e IE University son entidades reconocidas y verificables. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 8.0,
+    "why": "Participación de gestoras, fundaciones, bancos y fondos como Suma Capital, COFIDES · Verificador: El capital mencionado proviene de instituciones financieras y fondos de impacto reales.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6.5,
+    "why": "Involucra a gestoras, fundaciones, banca y organismos públicos · Verificador: Ecosistema consolidado de inversión de impacto en España.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 4.5,
+    "why": "44,1 % de entidades señalan escasez de proyectos de alto impacto · Verificador: El informe admite escasez de proyectos preparados para recibir inversión.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Sector de impacto aún emergente con pocos actores especializados · Verificador: Mercado en desarrollo con barreras de entrada para minoristas.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 5.5,
+    "why": "Riesgos inherentes a proyectos inmobiliarios y regulaciones de vivienda social · Verificador: Riesgo de ejecución en proyectos inmobiliarios de impacto.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 5.5,
+    "why": "Dependencia del despliegue de capital pendiente y posibles retrasos de desembolso · Verificador: La liquidez en fondos de impacto suele ser baja y los plazos largos.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 3.0,
+    "why": "Mercado español de impacto bien definido y con apoyo institucional · Verificador: No existe una plataforma única para acceder a este capital; requiere acceso a fondos privados o mercados bursátiles específicos. · Discrepancia entre modelos (8 vs 3): se toma el valor bajo.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 5.0,
+    "why": "Liquidez media a través de la cotización de SOCIMI de impacto · Verificador: La salida en fondos de impacto es compleja y poco líquida para pequeños inversores.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "escasez_proyectos_alto_impacto",
+    "severity": "media",
+    "detail": "44,1 % de entidades de inversión directa perciben falta de proyectos de alto impacto"
+   },
+   {
+    "code": "confusio_producto_informe",
+    "severity": "alta",
+    "detail": "La ficha presenta un informe de mercado como una oportunidad de inversión ejecutable, lo cual es engañoso."
+   },
+   {
+    "code": "falta_acceso_minorista",
+    "severity": "alta",
+    "detail": "La mayoría de los vehículos de inversión de impacto mencionados (fondos de capital riesgo) no están abiertos a inversores minoristas con 2.000 €."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha confunde un informe sectorial de mercado con una oportunidad de inversión directa. No existe un producto financiero único llamado 'SpainNAB Impact Investment Market'. La inversión en impacto se realiza a través de fondos de capital riesgo, SOCIMIs o vehículos específicos, no mediante una plataforma centralizada. La ficha induce a error al sugerir que el capital pendiente de invertir es una oportunidad accesible directamente para un inversor minorista con 2.000 €."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Creciente demanda de vivienda asequible y social en España",
+   "Gran reserva de capital pendiente que puede traducirse en nuevos fondos o SOCIMI"
+  ],
+  "howToParticipate": [
+   "1. Abrir una cuenta de valores o brokerage",
+   "2. Buscar SOCIMI de impacto (p.ej. Primero H) o fondos de inversión de impacto inmobiliario",
+   "3. Comprar participaciones con hasta 2.000 €",
+   "4. Monitorizar la evolución del proyecto y los dividendos"
+  ],
+  "actionable": true,
+  "profitPath": "Obtención de dividendos y posible revalorización de acciones de SOCIMI de impacto social",
+  "lossCauses": [
+   "Retrasos en construcción o entrega de viviendas",
+   "Baja ocupación o rentabilidad de alquileres",
+   "Cambios regulatorios que afecten a SOCIMI de impacto"
+  ],
+  "earlySignals": [
+   "Incremento de fondos comprometidos en informes subsecuentes",
+   "Anuncios de nuevos proyectos de alquiler social"
+  ],
+  "signals": {
+   "capitalPendienteM€": 1560
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "SpainNAB es una asociación, no una entidad financiera. No ofrece productos de inversión. Cualquier inversión en fondos de impacto debe realizarse a través de entidades registradas en la CNMV.",
+   "sources": [
+    "https://www.cnmv.es/portal/Consultas/ListadoEntidades.aspx"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/spainnab-e-ie-university-identifican-1-560-millones-de-euros-de-inversion-de-impacto-comprometidos-y-pendientes-de-invertir/"
+   },
+   {
+    "title": "SpainNAB - Informe de la oferta de capital de impacto",
+    "url": "https://spainnab.org/"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La ficha confunde un informe sectorial de mercado con una oportunidad de inversión directa. No existe un producto financiero único llamado 'SpainNAB Impact Investment Market'. La inversión en impacto se realiza a través de fondos de capital riesgo, SOCIMIs o vehículos específicos, no mediante una plataforma centralizada. La ficha induce a error al sugerir que el capital pendiente de invertir es una oportunidad accesible directamente para un inversor minorista con 2.000 €.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-spainnab-org",
+  "isNew": true,
+  "score": 32,
+  "rawScore": 46.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "escasez_proyectos_alto_impacto",
+    "severity": "media",
+    "detail": "44,1 % de entidades de inversión directa perciben falta de proyectos de alto impacto"
+   },
+   {
+    "code": "confusio_producto_informe",
+    "severity": "alta",
+    "detail": "La ficha presenta un informe de mercado como una oportunidad de inversión ejecutable, lo cual es engañoso."
+   },
+   {
+    "code": "falta_acceso_minorista",
+    "severity": "alta",
+    "detail": "La mayoría de los vehículos de inversión de impacto mencionados (fondos de capital riesgo) no están abiertos a inversores minoristas con 2.000 €."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La ficha confunde un informe sectorial de mercado con una oportunidad de inversión directa. No existe un producto financiero único llamado 'SpainNAB Impact Investment Market'. La inversión en impacto se realiza a través de fondos de capital riesgo, SOCIMIs o vehículos específicos, no mediante una plataforma centralizada. La ficha induce a error al sugerir que el capital pendiente de invertir es una oportunidad accesible directamente para un inversor minorista con 2.000 €."
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "El informe es una actualización anual, no una innovación disruptiva · Verificador: El informe es un análisis estadístico anual, no una oportunidad de inversión nueva.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Crecimiento del capital invertido 47 % y del capital pendiente 33,9 % entre 2024‑2025 · Verificador: El potencial es para el sector, no necesariamente para el inversor minorista con 2.000 €. · Discrepancia entre modelos (8 vs 5): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "1.560 M€ pendientes, 75 % del capital gestionado por gestoras · Verificador: Datos de mercado sólidos basados en el informe de SpainNAB.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Se citan entidades como SpainNAB, IE University y varios fondos, sin detalle de un equipo concreto · Verificador: SpainNAB e IE University son entidades reconocidas y verificables. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 8.0,
+    "points": 5.6,
+    "why": "Participación de gestoras, fundaciones, bancos y fondos como Suma Capital, COFIDES · Verificador: El capital mencionado proviene de instituciones financieras y fondos de impacto reales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.5,
+    "points": 4.5,
+    "why": "Involucra a gestoras, fundaciones, banca y organismos públicos · Verificador: Ecosistema consolidado de inversión de impacto en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 4.5,
+    "points": 4.0,
+    "why": "44,1 % de entidades señalan escasez de proyectos de alto impacto · Verificador: El informe admite escasez de proyectos preparados para recibir inversión.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.5,
+    "points": 2.2,
+    "why": "Sector de impacto aún emergente con pocos actores especializados · Verificador: Mercado en desarrollo con barreras de entrada para minoristas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.5,
+    "points": 4.4,
+    "why": "Riesgos inherentes a proyectos inmobiliarios y regulaciones de vivienda social · Verificador: Riesgo de ejecución en proyectos inmobiliarios de impacto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 5.5,
+    "points": 5.5,
+    "why": "Dependencia del despliegue de capital pendiente y posibles retrasos de desembolso · Verificador: La liquidez en fondos de impacto suele ser baja y los plazos largos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Mercado español de impacto bien definido y con apoyo institucional · Verificador: No existe una plataforma única para acceder a este capital; requiere acceso a fondos privados o mercados bursátiles específicos. · Discrepancia entre modelos (8 vs 3): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Liquidez media a través de la cotización de SOCIMI de impacto · Verificador: La salida en fondos de impacto es compleja y poco líquida para pequeños inversores.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T12:47:05Z",
+    "capitalPendienteM€": 1560.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: SpainNAB Impact Investment Market – Oportunidad en vivienda de impacto\nCATEGORÍA: negocio · inversión de impacto\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://spainnab.org/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Alto potencial de crecimiento del mercado de impacto en España, impulsado por aumentos de capital comprometido y foco en vivienda asequible\nPUNTUACIÓN: 32/100 · Descartar\nRIESGO: medio\nPLAZO: medio plazo (3-5 años)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Creciente demanda de vivienda asequible y social en España; Gran reserva de capital pendiente que puede traducirse en nuevos fondos o SOCIMI\nMOTIVOS PARA DESCONFIAR: 44,1 % de entidades de inversión directa perciben falta de proyectos de alto impacto; La ficha presenta un informe de mercado como una oportunidad de inversión ejecutable, lo cual es engañoso.; La mayoría de los vehículos de inversión de impacto mencionados (fondos de capital riesgo) no están abiertos a inversores minoristas con 2.000 €.; El verificador tiene dudas: La ficha confunde un informe sectorial de mercado con una oportunidad de inversión directa. No existe un producto financiero único llamado 'SpainNAB Impact Investment Market'. La inversión en impacto se realiza a través de fondos de capital riesgo, SOCIMIs o vehículos específicos, no mediante una plataforma centralizada. La ficha induce a error al sugerir que el capital pendiente de invertir es una oportunidad accesible directamente para un inversor minorista con 2.000 €.\nCÓMO PARTICIPAR: 1. Abrir una cuenta de valores o brokerage; 2. Buscar SOCIMI de impacto (p.ej. Primero H) o fondos de inversión de impacto inmobiliario; 3. Comprar participaciones con hasta 2.000 €; 4. Monitorizar la evolución del proyecto y los dividendos\nQUÉ PODRÍA HACERME PERDER EL DINERO: Retrasos en construcción o entrega de viviendas; Baja ocupación o rentabilidad de alquileres; Cambios regulatorios que afecten a SOCIMI de impacto\nFUENTES: https://elreferente.es/actualidad/spainnab-e-ie-university-identifican-1-560-millones-de-euros-de-inversion-de-impacto-comprometidos-y-pendientes-de-invertir/ | https://spainnab.org/",
+  "firstSeenAt": "2026-11-27T12:47:05Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
+  "aliases": [
+   "news-elreferente-es-actualidad-spainnab-e-ie-university-identifican-1-560-millones-de-euro"
   ]
  },
  {
@@ -11350,6 +12127,771 @@
   ]
  },
  {
+  "name": "Kraken xStocks Trading Challenge",
+  "category": "cripto",
+  "subcategory": "competencia",
+  "kind": "activa",
+  "description": "Concurso de trading en Kraken Pro donde los participantes compiten por una bolsa de premios que puede alcanzar los 100.000 USD. La clasificación se basa en el volumen negociado de xStocks y ANTx entre el 27 nov y el 30 dic 2026. Los premios se pagan en la stablecoin USDG.",
+  "officialUrl": "https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge",
+  "participateUrl": "https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge",
+  "country": "global (excluyendo EEA, US, UK, CA, AU)",
+  "spainAvailability": "no",
+  "spainNotes": "El challenge no está disponible para residentes en la EEA, que incluye España.",
+  "costs": {
+   "minEntry": 920,
+   "extra": 0,
+   "extraNotes": "Comisiones de trading según mercado",
+   "recommended": 2000,
+   "max": null
+  },
+  "canLoseAll": true,
+  "liquidity": "alta",
+  "exitNotes": "Los premios se pagan en USDG, convertible a fiat en Kraken.",
+  "horizon": "corto",
+  "deadline": "2026-12-30",
+  "potential": "alto",
+  "difficulty": "media",
+  "timeNeeded": "Operar activamente durante 5 semanas y alcanzar al menos 1.000 USD de volumen cualificado",
+  "subscores": {
+   "novedad": {
+    "v": 6.0,
+    "why": "Competencia de trading con premios escalados",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.0,
+    "why": "Premios pueden ser significativos (hasta 100 k USD) · Verificador: Premios hasta 100.000 USD, aunque condicionados a volumen colectivo",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Depende del volumen del mercado spot de xStocks",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "Organizado por Kraken, exchange consolidado · Verificador: Kraken es un exchange consolidado y regulado · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 8.5,
+    "why": "Premios financiados por Kraken · Verificador: Premios financiados directamente por Kraken",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Abierto a traders retail de Kraken · Verificador: Abierto a traders retail globales (excepto regiones excluidas)",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "Requiere actividad de trading para calificar · Verificador: Requiere actividad de trading específica",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen otros concursos de trading similares · Verificador: Existen otros concursos similares en el sector",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 4.0,
+    "why": "Depende de la infraestructura y disponibilidad de Kraken · Verificador: Infraestructura de Kraken probada · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 3.0,
+    "why": "Posibilidad de perder el capital operado · Verificador: Alto riesgo de pérdida de capital por trading",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 0.0,
+    "why": "Excluido para la EEA, incluida España · Verificador: Excluido explícitamente para residentes en la EEA",
+    "evidence": true
+   },
+   "salida": {
+    "v": 7.5,
+    "why": "USDG es stablecoin convertible a fiat · Verificador: Premios en USDG, stablecoin líquida en Kraken",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "restriccion_geografica",
+    "severity": "critica",
+    "detail": "No disponible para residentes en la EEA (España)"
+   },
+   {
+    "code": "restriccion_geografica",
+    "severity": "critica",
+    "detail": "El concurso excluye explícitamente a residentes en la EEA (España), por lo que no es posible participar legalmente."
+   }
+  ],
+  "distrust": [
+   "exclusión geográfica"
+  ],
+  "whyInteresting": [
+   "Posibilidad de ganar premios de hasta 18 000 USD sin inversión inicial alta"
+  ],
+  "howToParticipate": [
+   "1. Verificar elegibilidad (no residir en US, UK, EEA, Canadá o Australia).",
+   "2. Inscribirse en la página del Challenge antes del primer trade.",
+   "3. Operar xStocks spot en Kraken Pro entre 27 nov y 30 dic 2026, alcanzando al menos 1 000 USD de volumen cualificado.",
+   "4. Seguir el leaderboard y esperar la distribución de premios al cierre"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [
+   "Pérdida de capital por operaciones de trading",
+   "Imposibilidad de participar por restricción geográfica"
+  ],
+  "earlySignals": [
+   "Incremento del pool a medida que la comunidad aumenta su volumen"
+  ],
+  "signals": {
+   "pulseScore": 68
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "La promoción no está disponible para residentes en España, por lo que no requiere registro bajo normativa local para el usuario.",
+   "sources": [
+    "https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Kraken blog",
+    "url": "https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge"
+   }
+  ],
+  "discoveredVia": "Pulso · Kraken blog",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La información coincide con el blog oficial de Kraken. Se confirma la exclusión explícita de residentes en la EEA (incluyendo España) para esta promoción, lo que hace que la oportunidad no sea accionable para el usuario.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 83
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-blog-kraken-com",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 47.7,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "Tope 20: riesgo crítico (restriccion_geografica)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "restriccion_geografica",
+    "severity": "critica",
+    "detail": "No disponible para residentes en la EEA (España)"
+   }
+  ],
+  "evidenced": 9,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Competencia de trading con premios escalados",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Premios pueden ser significativos (hasta 100 k USD) · Verificador: Premios hasta 100.000 USD, aunque condicionados a volumen colectivo",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Depende del volumen del mercado spot de xStocks",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Organizado por Kraken, exchange consolidado · Verificador: Kraken es un exchange consolidado y regulado · Discrepancia entre modelos (4 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 8.5,
+    "points": 6.0,
+    "why": "Premios financiados por Kraken · Verificador: Premios financiados directamente por Kraken",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Abierto a traders retail de Kraken · Verificador: Abierto a traders retail globales (excepto regiones excluidas)",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 5.0,
+    "points": 4.5,
+    "why": "Requiere actividad de trading para calificar · Verificador: Requiere actividad de trading específica",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otros concursos de trading similares · Verificador: Existen otros concursos similares en el sector",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Depende de la infraestructura y disponibilidad de Kraken · Verificador: Infraestructura de Kraken probada · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Posibilidad de perder el capital operado · Verificador: Alto riesgo de pérdida de capital por trading",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "Excluido para la EEA, incluida España · Verificador: Excluido explícitamente para residentes en la EEA",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 7.5,
+    "points": 6.0,
+    "why": "USDG es stablecoin convertible a fiat · Verificador: Premios en USDG, stablecoin líquida en Kraken",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -2000.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 3960.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 9900.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 19800.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 39600.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 99000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 198000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 594000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T12:47:05Z",
+    "pulseScore": 68.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": 779.2,
+  "alertText": "NOMBRE: Kraken xStocks Trading Challenge\nCATEGORÍA: cripto · competencia\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge\nENLACE DE PARTICIPACIÓN: https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge\nPAÍS: global (excluyendo EEA, US, UK, CA, AU)\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: 920,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Posibilidad de ganar premios de hasta 18 000 USD sin inversión inicial alta\nMOTIVOS PARA DESCONFIAR: No disponible para residentes en la EEA (España); exclusión geográfica\nCÓMO PARTICIPAR: 1. Verificar elegibilidad (no residir en US, UK, EEA, Canadá o Australia).; 2. Inscribirse en la página del Challenge antes del primer trade.; 3. Operar xStocks spot en Kraken Pro entre 27 nov y 30 dic 2026, alcanzando al menos 1 000 USD de volumen cualificado.; 4. Seguir el leaderboard y esperar la distribución de premios al cierre\nQUÉ PODRÍA HACERME PERDER EL DINERO: Pérdida de capital por operaciones de trading; Imposibilidad de participar por restricción geográfica\nFUENTES: https://blog.kraken.com/product/promotions/100000-kraken-pro-xstocks-trading-challenge",
+  "firstSeenAt": "2026-11-27T12:47:05Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
+  "aliases": [
+   "web-blog-kraken-com"
+  ]
+ },
+ {
+  "name": "Foro de inversión Palma Tech II",
+  "category": "startups",
+  "subcategory": "evento_inversion",
+  "kind": "activa",
+  "description": "Segunda edición del foro Palma Tech, organizado por el Govern de les Illes Balears y Keiretsu Forum, para conectar startups en fase seed/pre‑seed con inversores. Se celebrará el 4 de diciembre de 2026 en el ParcBIT (Palma).",
+  "officialUrl": "https://www.caib.es",
+  "participateUrl": "https://www.caib.es",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Evento presencial en Palma de Mallorca, abierto a startups españolas y a inversores internacionales.",
+  "costs": {
+   "minEntry": 20000,
+   "extra": 0,
+   "extraNotes": "No se indican costes adicionales en la fuente.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No existe mercado secundario para la participación; la salida depende de la eventual ronda de financiación de la startup seleccionada.",
+  "horizon": "mediano plazo (2‑5 años, según el ciclo de financiación de startups)",
+  "deadline": "2026-12-04",
+  "potential": "alto potencial de networking y acceso a oportunidades de inversión en startups balears, pero limitado por el ticket mínimo.",
+  "difficulty": "alta",
+  "timeNeeded": "requerido: preparación de pitch o revisión de startups, registro previo y asistencia al evento (varios días).",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Segunda edición del foro, nuevo punto de encuentro en el Mediterráneo · Verificador: Segunda edición del foro, consolidándose en el ecosistema balear.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 7.5,
+    "why": "Conexión directa con inversores cualificados y posible acceso a rondas de seed · Verificador: Acceso a startups en fase seed/pre-seed, aunque el retorno es incierto.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.0,
+    "why": "Ecosistema balear en crecimiento, pero mercado limitado a startups locales · Verificador: Ecosistema regional en crecimiento con apoyo institucional.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "Organiza el Govern balear y Keiretsu Forum, sin detalle de equipo interno · Verificador: Organizado por el Govern de les Illes Balears y Keiretsu Forum (red de inversores reconocida).",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 6.5,
+    "why": "Objetivo de captar 9,5 M€ en la primera edición; se busca inversión seed · Verificador: El evento facilita la captación de capital, no es una entidad financiera en sí misma.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Participación de más de 40 inversores y startups locales · Verificador: Red de inversores y emprendedores locales y nacionales.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "En fase seed/pre‑seed, adopción temprana pero aún no probada a gran escala · Verificador: Fase temprana de las startups presentadas.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 4.5,
+    "why": "Otros eventos de inversión en España compiten por el mismo pool de inversores · Verificador: Alta competencia en el sector de foros de inversión en España.",
+    "evidence": true
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Startups en fase temprana presentan alta incertidumbre tecnológica · Verificador: Inversión en startups conlleva riesgo inherente de fracaso tecnológico.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 2.5,
+    "why": "Ticket mínimo de 20 000 €, mucho mayor que el presupuesto del usuario; alto riesgo de pérdida de capital · Verificador: Ticket mínimo de 20.000 € supera el presupuesto del usuario y la liquidez es nula.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "Evento localizado en España, abierto a inversores locales · Verificador: Evento presencial en Palma de Mallorca, España.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "No hay mecanismo de salida definido; depende de futuras rondas de financiación · Verificador: Depende totalmente de rondas futuras o eventos de liquidez de la startup.",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "ticket_minimo_alto",
+    "severity": "critica",
+    "detail": "El ticket mínimo de inversión es de 20.000 €, superior al presupuesto disponible de 2.000 €."
+   },
+   {
+    "code": "sin_mercado_secundario",
+    "severity": "alta",
+    "detail": "No existe liquidez ni mercado secundario para la participación."
+   },
+   {
+    "code": "ticket_minimo_alto",
+    "severity": "critica",
+    "detail": "El ticket mínimo de 20.000 € supera el presupuesto máximo de 2.000 € del usuario."
+   },
+   {
+    "code": "baja_liquidez",
+    "severity": "alta",
+    "detail": "La inversión en startups es ilíquida y a largo plazo."
+   }
+  ],
+  "distrust": [
+   "alto ticket para inversor con presupuesto limitado",
+   "falta de información sobre startups específicas que se presentarán"
+  ],
+  "whyInteresting": [
+   "oportunidad de networking con inversores y startups del Mediterráneo",
+   "acceso a potenciales rondas de financiación seed"
+  ],
+  "howToParticipate": [
+   "Revisar los requisitos de participación en la web oficial del evento",
+   "Registrarse como inversor o startup según corresponda",
+   "Preparar documentación y capital necesario (mínimo 20.000 €)",
+   "Asistir al foro el 4 de diciembre de 2026 en el ParcBIT"
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "El evento es un foro de networking y presentación de proyectos. No es una plataforma de financiación participativa (crowdfunding) regulada por la CNMV, aunque Keiretsu Forum opera bajo estándares de inversión privada.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/el-govern-celebrara-la-segunda-edicion-del-foro-de-inversion-palma-tech/"
+   },
+   {
+    "title": "Govern de les Illes Balears - ParcBIT",
+    "url": "https://www.caib.es"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "El evento está confirmado por fuentes oficiales y prensa especializada. No obstante, es un foro de inversión privada con un ticket mínimo de 20.000 €, lo cual excede el presupuesto del usuario y lo hace inviable como oportunidad de inversión directa para este perfil.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-caib-es",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 56.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (ticket_minimo_alto)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "ticket_minimo_alto",
+    "severity": "critica",
+    "detail": "El ticket mínimo de inversión es de 20.000 €, superior al presupuesto disponible de 2.000 €."
+   },
+   {
+    "code": "sin_mercado_secundario",
+    "severity": "alta",
+    "detail": "No existe liquidez ni mercado secundario para la participación."
+   },
+   {
+    "code": "baja_liquidez",
+    "severity": "alta",
+    "detail": "La inversión en startups es ilíquida y a largo plazo."
+   }
+  ],
+  "evidenced": 12,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Segunda edición del foro, nuevo punto de encuentro en el Mediterráneo · Verificador: Segunda edición del foro, consolidándose en el ecosistema balear.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.5,
+    "points": 9.0,
+    "why": "Conexión directa con inversores cualificados y posible acceso a rondas de seed · Verificador: Acceso a startups en fase seed/pre-seed, aunque el retorno es incierto.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.0,
+    "points": 4.8,
+    "why": "Ecosistema balear en crecimiento, pero mercado limitado a startups locales · Verificador: Ecosistema regional en crecimiento con apoyo institucional.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Organiza el Govern balear y Keiretsu Forum, sin detalle de equipo interno · Verificador: Organizado por el Govern de les Illes Balears y Keiretsu Forum (red de inversores reconocida).",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 6.5,
+    "points": 4.5,
+    "why": "Objetivo de captar 9,5 M€ en la primera edición; se busca inversión seed · Verificador: El evento facilita la captación de capital, no es una entidad financiera en sí misma.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Participación de más de 40 inversores y startups locales · Verificador: Red de inversores y emprendedores locales y nacionales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 5.0,
+    "points": 4.5,
+    "why": "En fase seed/pre‑seed, adopción temprana pero aún no probada a gran escala · Verificador: Fase temprana de las startups presentadas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 4.5,
+    "points": 2.2,
+    "why": "Otros eventos de inversión en España compiten por el mismo pool de inversores · Verificador: Alta competencia en el sector de foros de inversión en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Startups en fase temprana presentan alta incertidumbre tecnológica · Verificador: Inversión en startups conlleva riesgo inherente de fracaso tecnológico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 2.5,
+    "points": 2.5,
+    "why": "Ticket mínimo de 20 000 €, mucho mayor que el presupuesto del usuario; alto riesgo de pérdida de capital · Verificador: Ticket mínimo de 20.000 € supera el presupuesto del usuario y la liquidez es nula.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Evento localizado en España, abierto a inversores locales · Verificador: Evento presencial en Palma de Mallorca, España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No hay mecanismo de salida definido; depende de futuras rondas de financiación · Verificador: Depende totalmente de rondas futuras o eventos de liquidez de la startup.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": 155.2,
+  "alertText": "NOMBRE: Foro de inversión Palma Tech II\nCATEGORÍA: startups · evento_inversion\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://www.caib.es\nENLACE DE PARTICIPACIÓN: https://www.caib.es\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 20.000,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: alto potencial de networking y acceso a oportunidades de inversión en startups balears, pero limitado por el ticket mínimo.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: mediano plazo (2‑5 años, según el ciclo de financiación de startups)\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: oportunidad de networking con inversores y startups del Mediterráneo; acceso a potenciales rondas de financiación seed\nMOTIVOS PARA DESCONFIAR: El ticket mínimo de inversión es de 20.000 €, superior al presupuesto disponible de 2.000 €.; No existe liquidez ni mercado secundario para la participación.; La inversión en startups es ilíquida y a largo plazo.; alto ticket para inversor con presupuesto limitado; falta de información sobre startups específicas que se presentarán\nCÓMO PARTICIPAR: Revisar los requisitos de participación en la web oficial del evento; Registrarse como inversor o startup según corresponda; Preparar documentación y capital necesario (mínimo 20.000 €); Asistir al foro el 4 de diciembre de 2026 en el ParcBIT\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/el-govern-celebrara-la-segunda-edicion-del-foro-de-inversion-palma-tech/ | https://www.caib.es",
+  "firstSeenAt": "2026-11-27T12:47:05Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
+  "aliases": [
+   "news-elreferente-es-actualidad-el-govern-celebrara-la-segunda-edicion-del-foro-de-inversio"
+  ]
+ },
+ {
   "name": "GateToken Launchpool",
   "category": "lanzamientos",
   "subcategory": "cripto",
@@ -11744,6 +13286,402 @@
   "firstSeenAt": "2026-11-24T02:22:40Z",
   "lastSeenAt": "2026-11-24T02:22:40Z",
   "runId": "run-20261124-0222",
+  "aliases": [
+   "web-news-google-com"
+  ]
+ },
+ {
+  "name": "Ayudas Diputación Córdoba – Sueña y Crea",
+  "category": "negocio",
+  "subcategory": "ayudas_publicas",
+  "kind": "pasiva",
+  "description": "Concesión de 152 ayudas económicas a autónomos menores de 45 años en la provincia de Córdoba, dentro de la convocatoria \"Sueña y Crea\". La ayuda es una subvención sin devolución destinada a impulsar proyectos emprendedores.",
+  "officialUrl": "https://www.dipucordoba.es/",
+  "participateUrl": "https://sede.dipucordoba.es/",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Dirigido a autónomos residentes en la provincia de Córdoba con edad <45 años.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No se requieren costes de entrada; solo gastos administrativos de la solicitud (desconocido).",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No aplica, al ser una subvención no hay salida de inversión.",
+  "horizon": "corto",
+  "deadline": null,
+  "potential": "Financiación sin devolución que puede cubrir parte de los gastos iniciales del negocio y mejorar su viabilidad.",
+  "difficulty": "media",
+  "timeNeeded": "Preparar documentación, rellenar formulario y presentar la solicitud ante la Diputación.",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Programa de ayudas locales para jóvenes autónomos es poco frecuente a nivel nacional · Verificador: Las ayudas a autónomos son recurrentes en administraciones locales, no es una novedad disruptiva.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 6.5,
+    "why": "Subvención directa aumenta capital disponible del emprendedor · Verificador: Es una subvención directa, pero limitada en cuantía y número de beneficiarios.",
+    "evidence": false
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Apoya sectores diversos sin especificar un mercado concreto · Verificador: Depende de la viabilidad del proyecto individual del autónomo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 4.0,
+    "why": "No se dispone de información sobre el equipo gestor de la convocatoria · Verificador: Gestionado por la Diputación de Córdoba, entidad pública solvente. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 8.5,
+    "why": "Financiación total mediante fondos públicos, sin reembolso · Verificador: Fondos públicos no reembolsables.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.5,
+    "why": "Se dirige a la comunidad de autónomos de Córdoba · Verificador: Limitada estrictamente a la provincia de Córdoba.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 5.5,
+    "why": "Facilita la adopción de la ayuda por parte de jóvenes emprendedores · Verificador: Requiere burocracia administrativa compleja.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 6.5,
+    "why": "Poca competencia directa, ya que es una ayuda pública limitada a la zona · Verificador: Alta competencia local por plazas limitadas (152).",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 9.5,
+    "why": "No implica riesgos tecnológicos; es una subvención monetaria · Verificador: No aplica riesgo tecnológico.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 8.5,
+    "why": "Riesgo bajo: la ayuda no se pierde una vez concedida · Verificador: Riesgo nulo al ser subvención pública.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Disponible directamente en España, sin barreras de acceso · Verificador: Disponible en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No aplica salida de inversión; es una ayuda no reembolsable · Verificador: No es una inversión, no hay salida.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "MISSING_OFFICIAL_SOURCE",
+    "severity": "alta",
+    "detail": "No se ha podido verificar la convocatoria en el portal oficial de la Diputación de Córdoba (sede electrónica) para la fecha actual."
+   },
+   {
+    "code": "OUTDATED_INFO",
+    "severity": "media",
+    "detail": "La información proviene de una noticia de prensa sin fecha clara de vigencia actual."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La convocatoria 'Sueña y Crea' de la Diputación de Córdoba es una iniciativa real, pero la información proporcionada en la ficha es incompleta y potencialmente desactualizada. No existe una URL directa de participación activa y la fecha límite es desconocida, lo que impide una acción inmediata. La fuente citada es un agregador de noticias y no el portal oficial de la administración."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Financiación sin devolución para nuevos autónomos",
+   "Apoyo a jóvenes emprendedores en Córdoba"
+  ],
+  "howToParticipate": [
+   "Acceder al portal web de la Diputación de Córdoba",
+   "Buscar la convocatoria \"Sueña y Crea\" en la sección de ayudas",
+   "Descargar y rellenar el formulario de solicitud",
+   "Adjuntar la documentación requerida (DNI, alta de autónomo, proyecto)",
+   "Presentar la solicitud antes de la fecha límite indicada"
+  ],
+  "actionable": true,
+  "profitPath": "Obtener la subvención y destinarla a gastos de puesta en marcha o expansión del negocio, aumentando su rentabilidad",
+  "lossCauses": [
+   "No cumplir los requisitos de edad o residencia",
+   "Presentar documentación incompleta",
+   "No ser seleccionado entre los 152 beneficiarios"
+  ],
+  "earlySignals": [
+   "Publicación de la convocatoria en medios locales",
+   "Apertura del formulario de solicitud en la web de la Diputación"
+  ],
+  "signals": {
+   "pulseScore": 84
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una ayuda pública administrativa, no un producto financiero regulado por CNMV o MiCA.",
+   "sources": [
+    "https://www.dipucordoba.es/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Europa Press",
+    "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQb0dWR1VTRWVXMmRpcU43NElLTk9WSzdSOFFpOXFkRXp0bHNLamlpZGYyZmFzeWJNVXhZcFVibl9WR2Y1WE9EUE9KeUlGcTVaUWlpMnZUWGNuc3NmT19VZl9LZUJTbWZUUmlVelJDOTIxWWtBRkZHaHVxZ0F2UjF4ZEE5b3Vqd0JYMldrS25vRUR6Q243QjZVS2x0a01mRlZlR2doNGM1LXVFUnYwUGRHV3V5VU9saEJEbjdlQzBqcE0yUFBTLVBzeVhndXJSVF9lTVRXV0xuQWFPMDdZNVo1OXNPNlAzMGZ5WTF0bmF2RjY?oc=5"
+   },
+   {
+    "title": "Sede Electrónica Diputación de Córdoba",
+    "url": "https://sede.dipucordoba.es/"
+   }
+  ],
+  "discoveredVia": "Pulso · Europa Press",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La convocatoria 'Sueña y Crea' de la Diputación de Córdoba es una iniciativa real, pero la información proporcionada en la ficha es incompleta y potencialmente desactualizada. No existe una URL directa de participación activa y la fecha límite es desconocida, lo que impide una acción inmediata. La fuente citada es un agregador de noticias y no el portal oficial de la administración.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 92
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-dipucordoba-es",
+  "isNew": true,
+  "score": 18,
+  "rawScore": 27.6,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "MISSING_OFFICIAL_SOURCE",
+    "severity": "alta",
+    "detail": "No se ha podido verificar la convocatoria en el portal oficial de la Diputación de Córdoba (sede electrónica) para la fecha actual."
+   },
+   {
+    "code": "OUTDATED_INFO",
+    "severity": "media",
+    "detail": "La información proviene de una noticia de prensa sin fecha clara de vigencia actual."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La convocatoria 'Sueña y Crea' de la Diputación de Córdoba es una iniciativa real, pero la información proporcionada en la ficha es incompleta y potencialmente desactualizada. No existe una URL directa de participación activa y la fecha límite es desconocida, lo que impide una acción inmediata. La fuente citada es un agregador de noticias y no el portal oficial de la administración."
+   }
+  ],
+  "evidenced": 0,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Programa de ayudas locales para jóvenes autónomos es poco frecuente a nivel nacional · Verificador: Las ayudas a autónomos son recurrentes en administraciones locales, no es una novedad disruptiva.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 3.0,
+    "points": 3.6,
+    "why": "Subvención directa aumenta capital disponible del emprendedor · Verificador: Es una subvención directa, pero limitada en cuantía y número de beneficiarios.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Apoya sectores diversos sin especificar un mercado concreto · Verificador: Depende de la viabilidad del proyecto individual del autónomo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se dispone de información sobre el equipo gestor de la convocatoria · Verificador: Gestionado por la Diputación de Córdoba, entidad pública solvente. · Discrepancia entre modelos (4 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Financiación total mediante fondos públicos, sin reembolso · Verificador: Fondos públicos no reembolsables.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Se dirige a la comunidad de autónomos de Córdoba · Verificador: Limitada estrictamente a la provincia de Córdoba.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Facilita la adopción de la ayuda por parte de jóvenes emprendedores · Verificador: Requiere burocracia administrativa compleja.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Poca competencia directa, ya que es una ayuda pública limitada a la zona · Verificador: Alta competencia local por plazas limitadas (152).",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "No implica riesgos tecnológicos; es una subvención monetaria · Verificador: No aplica riesgo tecnológico.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "Riesgo bajo: la ayuda no se pierde una vez concedida · Verificador: Riesgo nulo al ser subvención pública.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Disponible directamente en España, sin barreras de acceso · Verificador: Disponible en España.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No aplica salida de inversión; es una ayuda no reembolsable · Verificador: No es una inversión, no hay salida.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T12:47:05Z",
+    "pulseScore": 84.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Ayudas Diputación Córdoba – Sueña y Crea\nCATEGORÍA: negocio · ayudas_publicas\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://www.dipucordoba.es/\nENLACE DE PARTICIPACIÓN: https://sede.dipucordoba.es/\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Financiación sin devolución que puede cubrir parte de los gastos iniciales del negocio y mejorar su viabilidad.\nPUNTUACIÓN: 18/100 · Descartar\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Financiación sin devolución para nuevos autónomos; Apoyo a jóvenes emprendedores en Córdoba\nMOTIVOS PARA DESCONFIAR: No se ha podido verificar la convocatoria en el portal oficial de la Diputación de Córdoba (sede electrónica) para la fecha actual.; La información proviene de una noticia de prensa sin fecha clara de vigencia actual.; El verificador tiene dudas: La convocatoria 'Sueña y Crea' de la Diputación de Córdoba es una iniciativa real, pero la información proporcionada en la ficha es incompleta y potencialmente desactualizada. No existe una URL directa de participación activa y la fecha límite es desconocida, lo que impide una acción inmediata. La fuente citada es un agregador de noticias y no el portal oficial de la administración.\nCÓMO PARTICIPAR: Acceder al portal web de la Diputación de Córdoba; Buscar la convocatoria \"Sueña y Crea\" en la sección de ayudas; Descargar y rellenar el formulario de solicitud; Adjuntar la documentación requerida (DNI, alta de autónomo, proyecto); Presentar la solicitud antes de la fecha límite indicada\nQUÉ PODRÍA HACERME PERDER EL DINERO: No cumplir los requisitos de edad o residencia; Presentar documentación incompleta; No ser seleccionado entre los 152 beneficiarios\nFUENTES: https://news.google.com/rss/articles/CBMi8AFBVV95cUxQb0dWR1VTRWVXMmRpcU43NElLTk9WSzdSOFFpOXFkRXp0bHNLamlpZGYyZmFzeWJNVXhZcFVibl9WR2Y1WE9EUE9KeUlGcTVaUWlpMnZUWGNuc3NmT19VZl9LZUJTbWZUUmlVelJDOTIxWWtBRkZHaHVxZ0F2UjF4ZEE5b3Vqd0JYMldrS25vRUR6Q243QjZVS2x0a01mRlZlR2doNGM1LXVFUnYwUGRHV3V5VU9saEJEbjdlQzBqcE0yUFBTLVBzeVhndXJSVF9lTVRXV0xuQWFPMDdZNVo1OXNPNlAzMGZ5WTF0bmF2RjY?oc=5 | https://sede.dipucordoba.es/",
+  "firstSeenAt": "2026-11-27T12:47:05Z",
+  "lastSeenAt": "2026-11-27T12:47:05Z",
+  "runId": "run-20261127-1247",
   "aliases": [
    "web-news-google-com"
   ]

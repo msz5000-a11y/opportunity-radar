@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-27T01:49:48Z",
+ "generatedAt": "2026-11-27T12:49:39Z",
  "minScore": 70,
  "budget": 2000.0,
  "criteria": [
@@ -40,9 +40,36 @@
    "label": "Vigente: no descartada, plazo abierto y vista hace menos de 14 días"
   }
  ],
- "studied": 42,
+ "studied": 47,
  "selected": [],
  "nearMisses": [
+  {
+   "id": "web-madrid-es",
+   "name": "DesafIA Madrid – Proyectos piloto de IA",
+   "category": "startups",
+   "score": 73,
+   "adjustedScore": 73,
+   "risk": "medio",
+   "officialUrl": "https://www.madrid.es",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": true,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 8,
+   "failed": [
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": true
+  },
   {
    "id": "web-adra-riojaalta-org",
    "name": "Convocatoria LEADER Rioja Alta 2026",
@@ -72,6 +99,62 @@
    "hasManual": true
   },
   {
+   "id": "web-elreferente-es",
+   "name": "Reforma de la Ley de Startups para Scaleups en España",
+   "category": "startups",
+   "score": 51,
+   "adjustedScore": 51,
+   "risk": "medio",
+   "officialUrl": "https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/",
+   "minEntry": 0,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
+   "id": "web-hisense-es",
+   "name": "Hisense Roam View 32S6S",
+   "category": "ia_tecnologia",
+   "score": 48,
+   "adjustedScore": 48,
+   "risk": "medio",
+   "officialUrl": "https://www.hisense.es",
+   "minEntry": 1399,
+   "canLoseAll": false,
+   "checks": {
+    "nota": false,
+    "verificada": true,
+    "riesgos": true,
+    "espana": true,
+    "presupuesto": true,
+    "riesgo_global": true,
+    "fuentes": true,
+    "beneficio": false,
+    "vigente": true
+   },
+   "passed": 7,
+   "failed": [
+    "Nota del radar de 70/100 o más",
+    "Vía clara y legal para ganar dinero"
+   ],
+   "hasManual": false
+  },
+  {
    "id": "web-spiko-com",
    "name": "Spiko Euro",
    "category": "startups",
@@ -96,92 +179,6 @@
    "failed": [
     "Nota del radar de 70/100 o más",
     "Verificada por un segundo modelo de IA independiente"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-cotec-es",
-   "name": "Inversión en I+D en España 2025",
-   "category": "negocio",
-   "score": 45,
-   "adjustedScore": 45,
-   "risk": "medio",
-   "officialUrl": "https://cotec.es",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": true,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 7,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": false
-  },
-  {
-   "id": "web-bfsport-gal",
-   "name": "BF Sport Incubadora 2027",
-   "category": "startups",
-   "score": 63,
-   "adjustedScore": 63,
-   "risk": "medio",
-   "officialUrl": "https://bfsport.gal/",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
-    "Vía clara y legal para ganar dinero"
-   ],
-   "hasManual": true
-  },
-  {
-   "id": "web-bfhc-es",
-   "name": "Business Factory Health&Care Incubation Program",
-   "category": "startups",
-   "score": 61,
-   "adjustedScore": 61,
-   "risk": "medio",
-   "officialUrl": "https://bfhc.es/",
-   "minEntry": 0,
-   "canLoseAll": false,
-   "checks": {
-    "nota": false,
-    "verificada": false,
-    "riesgos": true,
-    "espana": true,
-    "presupuesto": true,
-    "riesgo_global": true,
-    "fuentes": true,
-    "beneficio": false,
-    "vigente": true
-   },
-   "passed": 6,
-   "failed": [
-    "Nota del radar de 70/100 o más",
-    "Verificada por un segundo modelo de IA independiente",
-    "Vía clara y legal para ganar dinero"
    ],
    "hasManual": true
   }
@@ -430,6 +427,57 @@
    "webLeida": false,
    "generadoEn": "2026-11-27T01:49:54Z",
    "fichaScore": 60
+  },
+  "web-madrid-es": {
+   "segundaOpinion": {
+    "veredicto": "confirmada",
+    "motivo": "No hay costes ni riesgos financieros, la iniciativa es pública y no requiere inversión.",
+    "contradicciones": []
+   },
+   "viaDeBeneficio": {
+    "existe": false,
+    "explicacion": "El programa no ofrece retorno económico directo; la participación se limita a colaboración y posibles oportunidades de empleo."
+   },
+   "resumen": "DesafIA Madrid es un programa municipal que selecciona startups para probar soluciones de IA en servicios públicos, financiado con 500 k€ y sin coste para terceros. La participación es pasiva y no genera ingresos.",
+   "cuantoPoner": "0 €",
+   "antesDeEmpezar": [
+    "Verificar que la iniciativa sigue activa en la web oficial del Ayuntamiento de Madrid",
+    "Confirmar que no se requiere ningún tipo de inversión o compromiso financiero",
+    "Revisar la disponibilidad de los proyectos piloto y la posibilidad de contacto con las startups"
+   ],
+   "pasos": [
+    {
+     "titulo": "Seguir comunicados",
+     "detalle": "Consultar la sección de Innovación y Emprendimiento del Ayuntamiento para novedades",
+     "tiempo": "30 min/mes"
+    },
+    {
+     "titulo": "Contactar startups",
+     "detalle": "Enviar correo a los contactos indicados en los comunicados para explorar colaboración o empleo",
+     "tiempo": "1 h/mes"
+    },
+    {
+     "titulo": "Evaluar oportunidades",
+     "detalle": "Analizar si la colaboración ofrece beneficios laborales o de visibilidad",
+     "tiempo": "30 min/mes"
+    }
+   ],
+   "planDeSalida": "No aplica, ya que no hay inversión ni salida financiera.",
+   "senalesDeAlarma": [
+    "Se solicita algún tipo de inversión o pago",
+    "La iniciativa se cancela o cambia su modelo"
+   ],
+   "erroresTipicos": [
+    "Confundir la participación con una inversión financiera",
+    "Creer que se obtendrá retorno económico directo"
+   ],
+   "fiscalidad": "Como no hay ingresos, no hay obligación fiscal. Si se recibe empleo, se declara como ingresos laborales. Se recomienda confirmar con un asesor fiscal.",
+   "tiempoNecesario": "poco tiempo, unos 1‑2 h al mes",
+   "modelo": "groq:openai/gpt-oss-20b",
+   "independiente": true,
+   "webLeida": false,
+   "generadoEn": "2026-11-27T12:49:42Z",
+   "fichaScore": 73
   }
  },
  "ai": {
@@ -440,7 +488,7 @@
   }
  },
  "geminiDiagnostic": {
-  "at": "2026-11-27T01:49:54Z",
+  "at": "2026-11-27T12:49:42Z",
   "status": 200
  }
 }

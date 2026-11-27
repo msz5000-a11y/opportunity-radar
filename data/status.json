@@ -1,13 +1,13 @@
 {
- "lastRunAt": "2026-11-27T01:49:48Z",
+ "lastRunAt": "2026-11-27T12:49:38Z",
  "lastRunOk": false,
- "lastRunId": "run-20261127-0149",
+ "lastRunId": "run-20261127-1247",
  "sources": {
   "tipo_cambio_BCE": {
    "ok": true,
    "items": 1,
    "error": null,
-   "at": "2026-11-27T01:49:10+00:00"
+   "at": "2026-11-27T12:47:06+00:00"
   },
   "dexscreener_tokens": {
    "ok": true,
@@ -49,7 +49,7 @@
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-27T01:49:12+00:00"
+   "at": "2026-11-27T12:47:06+00:00"
   },
   "TechCrunch Startups": {
    "ok": true,
@@ -67,19 +67,19 @@
    "ok": false,
    "items": 0,
    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
-   "at": "2026-11-27T01:49:29+00:00"
+   "at": "2026-11-27T12:47:24+00:00"
   },
   "pulso": {
    "ok": true,
    "items": 4,
    "error": null,
-   "at": "2026-11-27T01:49:10+00:00"
+   "at": "2026-11-27T12:47:06+00:00"
   }
  },
  "ai": {
   "calls": {
-   "gemini": 3,
-   "groq": 2
+   "gemini": 7,
+   "groq": 6
   },
   "models": {
    "gemini": "gemini-3.1-flash-lite",

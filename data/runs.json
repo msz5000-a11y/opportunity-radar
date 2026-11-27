@@ -1,5 +1,59 @@
 [
  {
+  "id": "run-20261127-1247",
+  "startedAt": "2026-11-27T12:47:05Z",
+  "kind": "exploracion",
+  "status": "parcial",
+  "candidates": 6,
+  "newCount": 5,
+  "updatedCount": 1,
+  "alertsSent": 0,
+  "notes": "Fuentes con fallos: busqueda_ia",
+  "sources": {
+   "tipo_cambio_BCE": {
+    "ok": true,
+    "items": 1,
+    "error": null,
+    "at": "2026-11-27T12:47:06+00:00"
+   },
+   "pulso": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-27T12:47:06+00:00"
+   },
+   "El Referente": {
+    "ok": true,
+    "items": 4,
+    "error": null,
+    "at": "2026-11-27T12:47:06+00:00"
+   },
+   "busqueda_ia": {
+    "ok": false,
+    "items": 0,
+    "error": "sin resultados: searcher/gemini: HTTP 429; searcher/gemini: búsqueda de Google sin cupo en Gemini",
+    "at": "2026-11-27T12:47:24+00:00"
+   }
+  },
+  "finishedAt": "2026-11-27T12:49:38Z",
+  "ai": {
+   "calls": {
+    "gemini": 7,
+    "groq": 6
+   },
+   "models": {
+    "gemini": "gemini-3.1-flash-lite",
+    "groq": "openai/gpt-oss-120b"
+   },
+   "errors": [
+    "gemini: búsqueda de Google sin cupo (429); se continúa sin búsqueda",
+    "searcher/gemini: HTTP 429",
+    "searcher/gemini: búsqueda de Google sin cupo en Gemini"
+   ],
+   "googleSearch": false
+  }
+ },
+ {
   "id": "run-20261127-0149",
   "startedAt": "2026-11-27T01:49:10Z",
   "kind": "exploracion",
