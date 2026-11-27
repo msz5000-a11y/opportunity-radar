@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-27T14:29:44Z",
- "checkedAt": "2026-11-27T14:29:44Z",
- "attemptedAt": "2026-11-27T14:29:44Z",
+ "generatedAt": "2026-11-27T16:57:42Z",
+ "checkedAt": "2026-11-27T16:57:42Z",
+ "attemptedAt": "2026-11-27T16:57:42Z",
  "spend": {
   "date": "2026-11-27",
   "usd": 0.0
@@ -241,46 +241,196 @@
     "extra": 22
    },
    "casa": {
-    "generatedAt": "2026-11-27T14:29:44Z",
-    "checkedAt": "2026-11-27T14:29:44Z",
+    "generatedAt": "2026-11-27T16:57:42Z",
+    "checkedAt": "2026-11-27T16:57:42Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.6-flash",
+    "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
-    "descartadas": 1,
+    "nuevas": 3,
+    "descartadas": 0,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 1,
+     "sin_caso": 0,
      "vacia": 0
     },
-    "nota": "He buscado ideas caseras validadas en arte, cocina y textil infantil, descartando negocios que requerían local físico o gran inversión en equipamiento.",
+    "nota": "He buscado opciones que aprovechen tu experiencia inmobiliaria y creativa, descartando ideas de dropshipping o trading por tu perfil de bajo riesgo.",
     "oportunidades_locales": [
      {
-      "titulo": "Plataforma Relevo y Asesoría CEEI Valencia",
-      "que_es": "El CEEI Valencia ofrece apoyo a emprendedores locales para desarrollar negocios desde casa y dar continuidad a proyectos de la provincia.",
+      "titulo": "CEEI Valencia - Plataforma Relevo",
+      "que_es": "Plataforma para dar continuidad a negocios locales, ideal para networking y alianzas.",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
      },
      {
-      "titulo": "Nuevas Ayudas para Autónomos Comunitat Valenciana 2026",
-      "que_es": "Subvenciones e incentivos autonómicos para el alta de nuevos trabajadores autónomos e impulso del trabajo desde casa.",
+      "titulo": "Ayudas para autónomos Comunitat Valenciana",
+      "que_es": "Programa de subvenciones para el fomento del autoempleo en la región.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
-     },
-     {
-      "titulo": "Mercado de la Huerta y Mercados Artesanales de Valencia",
-      "que_es": "Puntos de venta directa en la zona metropolitana de Valencia ideales para exponer productos artesanales o alimentarios.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
      {
+      "id": "c11555265",
+      "fecha": "2026-11-27T16:57:42Z",
+      "nueva": true,
+      "titulo": "Chef de 'Batch Cooking' a Domicilio",
+      "gancho": "Cocina el menú semanal de familias ocupadas en su propia casa.",
+      "que_es": "Ofreces un servicio donde vas a casa del cliente, compras los ingredientes y cocinas en 3-4 horas todos los platos de la semana. Es un modelo muy demandado por familias que quieren comer sano pero no tienen tiempo.",
+      "casos": [
+       {
+        "quien": "The Times of India",
+        "pais": "",
+        "resultado": "At 48, Kashmir's Ruksana Begum left teaching after 19 years and started selling home-cooked meals from he",
+        "url": "https://news.google.com/rss/articles/CBMijANBVV95cUxQOUl4U19KOS1qNUQzU3ItMUNBbVotSXhfQ1JUM2R5Z24xc1hLMHBkYWEzMld2WjJtd2ZkVU1ROHlwSkdjbTZHaWJTaDc1OGlZWUtOT0tCMU54dW9LcmFWb2lCWHlsandkVzI1OUM3V0VCYS1BRDdHZlpMcE1MVW0yRWtLdXAxUEFmY1dZWU1maFd2LUNsUlNHamh5T2ZkWW5GWHNjZDZWbzkyaHA1MElWNmlsN0YweWtKREN5YmVEMVItd2NmV2JJZXNuRS1mS1gwZWEyV0p5N2ZRdEk3NktSVE84UWtNTFRyRTZKSnpHUkdoaWFBUjdnWVlWTjJZeFp1MUFqelhTRXNEVkpjZ3VibWt3VlJkTHlEa0EwZEhWUk0xcHZUUzRNblh2OW9CV3FJWlBRUGJ3UzZWQ002ay1USnRqX0V4QVM4M1hzWENVVkdyLUx5cVNUWjRDUkVLaHNHaUZpdURMNkVQblh5RFlNYVJfMDZQejFDaDVncjBKY1p4VDVxMzlLY3Z3Sy3SAZIDQVVfeXFMTkl6QVFBY2p4TVYwNEZUNnFFYXV6TDRtdTh6OWllWmhHNnBvS0o1aEZaa0JsdzdHQ0pSQUxKVHB0dnZTNkdES2MxRzhaY2otMU1IWFl2amRMcjJpV205R2k5RXIza1BjTnlSSXRnV3Q5Z1pSZkkxanFDNkpHLXVlTll2QjBESTdlTHUyRHg0RnBCYXo1NEVuSWNoTW5GOFF5Ulhka08tTFk4Q3A0cmI5YUVEZVFOQ2NQS2hBYk41Z2ZMUzlkbVVHUlo3Q1pOby1YTlJ2Y0g1bW5lbXpvZ3BHd0wxbGRCTHhkQm9sdWZaNEVScXBFTTV5b2JCb0FuYXMzQWQyLTFEbXFlSk1od3JmaS0yOG5XcW82Y05JMVprRmZqd2ROcFYxck1PRzVJY3ROQjBmMFVBbmVCX2JQazR4aVVrWHdPM2ZkZWZpUlhRSlJPaERWaFZZLTBQUkFteUw5SnFaU3Z6Y0x4QTk3MDdwWUtDQ3B0T0t5aXpPNFNLTnV5TV9wR08teFFXbV9Wb3VxOWtR?oc=5",
+        "resultado_es": "A los 48, Ruksana Begum, de Cachemira, dejó la docencia tras 19 años y empezó a vender comidas caseras"
+       }
+      ],
+      "por_que_tu": "Aprovecha tu interés en la cocina y tu conocimiento de la zona en Riba-roja.",
+      "como_empezar": [
+       "Semana 1: Diseña 3 menús saludables y calcula costes de ingredientes.",
+       "Semana 2: Crea un perfil en Instagram mostrando tus platos y el orden de tu cocina.",
+       "Semana 3: Ofrece una sesión de prueba a precio reducido a conocidos.",
+       "Semana 4: Pide testimonios y empieza a cobrar por sesión (ej. 60-80€ + compra)."
+      ],
+      "coste_inicial": "50€ (transporte y material básico de cocina).",
+      "herramientas": [
+       "Instagram",
+       "WhatsApp Business",
+       "Tuppers de calidad"
+      ],
+      "precio": "60-90€ por sesión de 4 horas (excluyendo compra).",
+      "primeras_clientas": [
+       "Grupos de madres/padres en el colegio",
+       "Vecinos de Riba-roja en grupos de Facebook"
+      ],
+      "ingresos_posibles": "300-600€/mes (estimación basada en 1-2 sesiones semanales).",
+      "horas_semana": "8-12 horas.",
+      "tramites": [
+       "Alta en Hacienda (IAE) cuando sea recurrente",
+       "Carnet de manipulador de alimentos",
+       "Seguro de responsabilidad civil"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Seguridad alimentaria",
+       "Gestión de alérgenos",
+       "Desplazamiento"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "cocina"
+      ]
+     },
+     {
+      "id": "cc57b8301",
+      "fecha": "2026-11-27T16:57:42Z",
+      "nueva": true,
+      "titulo": "Diseño de 'Art Kits' para Eventos",
+      "gancho": "Kits de manualidades listos para usar en fiestas infantiles.",
+      "que_es": "Creas cajas temáticas con todo lo necesario para que los niños hagan una actividad artística (pintura, arcilla, collage). Vendes el kit físico o alquilas el material profesional.",
+      "casos": [
+       {
+        "quien": "CNBC",
+        "pais": "",
+        "resultado": "NASA engineer spent $200 to start a side hustle from her closet—now it brings in over $32,000 a month",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOcjkzM3hqSWJGLVk4YVU4eWNPNnJMbGxEZTZ5Wm1GWkppRjNzSXFjVUdwV05XS3MzdFlXZzU5RVdWNmpEWGQxOEM5TThNQjRPRVUtdm1ZM2RyYUJuQkVsdkItNEd0TGJDNURMU2N4c0RqXy1JTWp4SVZmYVFHZmZhWnVVRzg0TnI3cGdlZ3AxME9UcU83OEZZMWs5dXBKSVd5M2VzdG9Ya2p4dG_SAbABQVVfeXFMTmJ5UW5sdEFxZ2JvZ0lmb0s4OERjd0RIaGpCdHpEMWVRNkdLLVJJd3ZCNnlEVEpPb3M3aGw0QkhkdHQ0djJUYVlzd21iaTF0QUNCNHpSUHFzQ3U2WUpONndjckZqN1kzdERFNW96cFhQZC00QTFwLXJiVlhMQ2ZJanZkWDNMRTM1QVkxcURkbW0tanFxTVpFT2sybWZZNk1ucXdyZ3pZVGFXT2xuNjhrWVc?oc=5"
+       }
+      ],
+      "por_que_tu": "Combina tu pasión por el arte, el diseño y los niños.",
+      "como_empezar": [
+       "Semana 1: Define 2 temáticas (ej. 'Pequeños Pintores', 'Escultores de Arcilla').",
+       "Semana 2: Compra materiales al por mayor y diseña el packaging.",
+       "Semana 3: Haz fotos profesionales de los kits montados.",
+       "Semana 4: Publica en redes sociales y contacta con organizadores de eventos locales."
+      ],
+      "coste_inicial": "150€ (materiales y packaging).",
+      "herramientas": [
+       "Canva (diseño de guías)",
+       "Instagram",
+       "Material de papelería"
+      ],
+      "precio": "25-40€ por kit.",
+      "primeras_clientas": [
+       "Madres en grupos de WhatsApp",
+       "Centros de ocio infantil en Valencia"
+      ],
+      "ingresos_posibles": "200-500€/mes (estimación basada en venta de 10-15 kits).",
+      "horas_semana": "5-8 horas.",
+      "tramites": [
+       "Alta en IAE",
+       "Cumplimiento normativa de seguridad de juguetes (marcado CE)"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Stock no vendido",
+       "Normativa de seguridad infantil",
+       "Logística"
+      ],
+      "confianza": "media",
+      "temas": [
+       "arte",
+       "niños",
+       "diseño"
+      ]
+     },
+     {
+      "id": "caa844dd0",
+      "fecha": "2026-11-27T16:57:42Z",
+      "nueva": true,
+      "titulo": "Consultoría de 'Home Staging' Virtual",
+      "gancho": "Ayuda a vendedores a redecorar sus casas para venderlas más rápido.",
+      "que_es": "Usas tus conocimientos inmobiliarios y de diseño para asesorar a propietarios sobre cómo organizar sus muebles y decoración para fotos de venta. Puedes ofrecer un informe PDF o videollamada.",
+      "casos": [
+       {
+        "quien": "ZebraSnap",
+        "pais": "",
+        "resultado": "Ingresos verificados en TrustMRR: 132.732 $ en 30 días",
+        "url": "https://trustmrr.com/startup/zebrasnap"
+       }
+      ],
+      "por_que_tu": "Es el punto de encuentro perfecto entre tu experiencia inmobiliaria y tu ojo para el diseño.",
+      "como_empezar": [
+       "Semana 1: Crea un portafolio con fotos de 'antes y después' de tu propia casa.",
+       "Semana 2: Diseña un paquete de servicios (ej. 1 hora de consultoría + PDF de consejos).",
+       "Semana 3: Contacta con agentes inmobiliarios locales para ofrecerte como servicio extra.",
+       "Semana 4: Lanza tu servicio en redes sociales."
+      ],
+      "coste_inicial": "0€ (solo tu tiempo y conocimiento).",
+      "herramientas": [
+       "Canva",
+       "Zoom/WhatsApp",
+       "Cámara de móvil"
+      ],
+      "precio": "50-100€ por asesoría.",
+      "primeras_clientas": [
+       "Agentes inmobiliarios de Riba-roja",
+       "Particulares en portales como Idealista"
+      ],
+      "ingresos_posibles": "300-700€/mes (estimación basada en 4-6 asesorías).",
+      "horas_semana": "4-6 horas.",
+      "tramites": [
+       "Alta en IAE",
+       "Protección de datos (RGPD)"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Baja demanda inicial",
+       "Dificultad de cobro",
+       "Competencia"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "inmobiliaria",
+       "diseño"
+      ]
+     },
+     {
       "id": "c6190ce05",
       "fecha": "2026-11-27T14:29:44Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Creación y Venta de Velas Escultóricas Artesanales y Aromáticas de Soja",
       "gancho": "Diseña velas decorativas escultóricas y botánicas para regalos, eventos y tiendas de decoración.",
       "que_es": "Consiste en fabricar artesanalmente en casa velas de cera de soja vegetal con diseños escultóricos y aromas naturales. Se venden por encargo a particulares para eventos (bodas, bautizos) y a tiendas locales de decoración o a través de plataformas online.",
@@ -332,7 +482,7 @@
      {
       "id": "cb9471491",
       "fecha": "2026-11-27T14:29:44Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Personalización y Customización Artesanal de Ropa Infantil y Canastillas",
       "gancho": "Diseña prendas infantiles únicas con técnicas artesanas de teñido, bordado y estampado.",
       "que_es": "Creación y customización artesanal de ropa para niños y recién nacidos (bodys, camisetas teñidas artesanalmente o bordadas con nombres) para regalos de nacimiento y cumpleaños infantil. Venta directa por internet y en mercados de artesanía.",
@@ -1579,17 +1729,17 @@
    "n": 0,
    "err": null,
    "filtro": {
-    "encontradas": 70,
-    "sin_relacion": 38,
-    "directa": 7,
+    "encontradas": 67,
+    "sin_relacion": 35,
+    "directa": 8,
     "no_para_ti": 11,
-    "cerradas": 14,
+    "cerradas": 13,
     "abiertas": 0
    }
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 20,
+   "n": 27,
    "err": null
   }
  },
