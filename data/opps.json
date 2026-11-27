@@ -1874,6 +1874,384 @@
   "profitPath": ""
  },
  {
+  "name": "Convocatoria LEADER Rioja Alta 2026",
+  "category": "startups",
+  "subcategory": "financiacion_publica",
+  "kind": "pasiva",
+  "description": "Los emprendedores de la zona de Rioja Alta pueden solicitar una subvención de hasta 80.000 €, sin necesidad de devolución, dentro de la nueva convocatoria LEADER. La ayuda está dirigida a proyectos innovadores que impulsen el desarrollo económico local.",
+  "officialUrl": "https://www.adra-riojaalta.org/",
+  "participateUrl": "https://www.larioja.org/agricultura/es/desarrollo-rural/grupos-accion-local",
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Disponible para residentes y empresas de la comarca de Rioja Alta.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay costes de solicitud, salvo posibles gastos de gestión",
+   "recommended": 2000,
+   "max": 80000
+  },
+  "canLoseAll": false,
+  "liquidity": "nula",
+  "exitNotes": "No aplica, es una subvención no reembolsable.",
+  "horizon": "corto",
+  "deadline": "Consultar sede electrónica de ADRA o Gobierno de La Rioja",
+  "potential": "Financiación sin devolución que puede cubrir gran parte del presupuesto del proyecto.",
+  "difficulty": "media",
+  "timeNeeded": "Preparar documentación, plan de negocio y presentar la solicitud.",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Se anuncia como \"nueva convocatoria\" en la fuente · Verificador: Se refiere a la convocatoria del periodo 2026, consistente con los ciclos de fondos europeos.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 8.0,
+    "why": "Hasta 80.000 € de ayuda disponible · Verificador: Subvención a fondo perdido de hasta 80.000 euros.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Impacto regional estimado, sin datos concretos · Verificador: Impacto limitado a la zona geográfica de Rioja Alta.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 5.0,
+    "why": "No se menciona información sobre el equipo gestor · Verificador: Gestionado por el Grupo de Acción Local ADRA, entidad pública/privada reconocida.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 8.5,
+    "why": "Subvención pública sin devolución · Verificador: Fondos públicos FEADER/Gobierno de La Rioja.",
+    "evidence": true
+   },
+   "comunidad": {
+    "v": 7.0,
+    "why": "Dirigida a emprendedores de Rioja Alta · Verificador: Enfoque territorial específico.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 5.0,
+    "why": "No hay datos de adopción de la ayuda · Verificador: Depende de la demanda local de proyectos.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.5,
+    "why": "Existen otras convocatorias, pero no detalladas · Verificador: Concurrencia competitiva entre proyectos de la zona.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 9.0,
+    "why": "Riesgo técnico bajo, la ayuda no depende de tecnología · Verificador: Bajo, es gestión administrativa de subvenciones.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 9.0,
+    "why": "No hay riesgo de pérdida financiera directa · Verificador: No hay inversión inicial, solo riesgo de no obtener la ayuda.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 10.0,
+    "why": "Disponible en España, específicamente Rioja Alta · Verificador: Programa oficial en España.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay salida financiera, es una subvención · Verificador: No es una inversión, es una ayuda pública.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "CONCURRENCIA_COMPETITIVA",
+    "severity": "media",
+    "detail": "La obtención de la ayuda no está garantizada; depende de la valoración del proyecto frente a otros candidatos."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Financiación sin devolución",
+   "Apoyo a proyectos innovadores en Rioja Alta"
+  ],
+  "howToParticipate": [
+   "Verificar requisitos de la convocatoria LEADER para Rioja Alta",
+   "Reunir documentación del proyecto y presupuesto",
+   "Acceder al portal de la entidad gestora y rellenar el formulario de solicitud",
+   "Adjuntar los documentos requeridos y enviar la solicitud",
+   "Esperar la resolución y, si es favorable, recibir la subvención"
+  ],
+  "actionable": true,
+  "profitPath": "Obtener la subvención y financiar el proyecto sin coste adicional",
+  "lossCauses": [
+   "Rechazo de la solicitud por no cumplir requisitos",
+   "Incumplimiento de condiciones y posible devolución"
+  ],
+  "earlySignals": [
+   "Publicación de la convocatoria en medios locales",
+   "Apertura del plazo de presentación"
+  ],
+  "signals": {
+   "pulseScore": 72
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Se trata de una subvención pública bajo el marco LEADER (FEADER), no es un servicio financiero sujeto a CNMV o MiCA.",
+   "sources": [
+    "https://www.larioja.org/agricultura/es/desarrollo-rural/grupos-accion-local",
+    "https://www.adra-riojaalta.org/"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Haro Digital",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWVQwUi0zRWV0aG9mSG1Eb0ZEYUNnYmc1enVidTc5ZjlidEJ1TzFvamdjT1h2Z1lfbUVRTjRkZWgteW9TeEFKQ3lPOE1IOXNFdDdSamhEdmpQOXFvNEJtWHZnbnB0bk9Gd3VOMmpPUVJKb2tpWVZIcW41Zkg2NHNoQVo3cE9fc1FzOE40N284anFHbWRUUWcxMmFnOU9DOEFReDRlaF8zRnMzMVdsLXRRSnBEbVZxOUozUkVfckM1cnNCR3htRnI3MGVTQ0d3ZVh0QzB4emRNaVJuclFMUEE?oc=5"
+   },
+   {
+    "title": "ADRA - Asociación para el Desarrollo de la Rioja Alta",
+    "url": "https://www.adra-riojaalta.org/"
+   },
+   {
+    "title": "Gobierno de La Rioja - Grupos de Acción Local",
+    "url": "https://www.larioja.org/agricultura/es/desarrollo-rural/grupos-accion-local"
+   }
+  ],
+  "discoveredVia": "Pulso · Haro Digital",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La convocatoria LEADER es un programa real de desarrollo rural gestionado por grupos de acción local (en este caso, ADRA - Asociación para el Desarrollo de la Rioja Alta). La información sobre subvenciones de hasta 80.000 euros es coherente con los marcos de financiación del Programa de Desarrollo Rural de La Rioja.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-adra-riojaalta-org",
+  "isNew": true,
+  "score": 60,
+  "rawScore": 59.9,
+  "tier": "investigar",
+  "tierLabel": "Interesante, necesita investigación",
+  "humanReview": false,
+  "caps": [],
+  "critical": false,
+  "risk": "medio",
+  "flags": [
+   {
+    "code": "CONCURRENCIA_COMPETITIVA",
+    "severity": "media",
+    "detail": "La obtención de la ayuda no está garantizada; depende de la valoración del proyecto frente a otros candidatos."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Se anuncia como \"nueva convocatoria\" en la fuente · Verificador: Se refiere a la convocatoria del periodo 2026, consistente con los ciclos de fondos europeos.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 8.0,
+    "points": 9.6,
+    "why": "Hasta 80.000 € de ayuda disponible · Verificador: Subvención a fondo perdido de hasta 80.000 euros.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Impacto regional estimado, sin datos concretos · Verificador: Impacto limitado a la zona geográfica de Rioja Alta.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se menciona información sobre el equipo gestor · Verificador: Gestionado por el Grupo de Acción Local ADRA, entidad pública/privada reconocida.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 8.5,
+    "points": 6.0,
+    "why": "Subvención pública sin devolución · Verificador: Fondos públicos FEADER/Gobierno de La Rioja.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 7.0,
+    "points": 4.9,
+    "why": "Dirigida a emprendedores de Rioja Alta · Verificador: Enfoque territorial específico.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "No hay datos de adopción de la ayuda · Verificador: Depende de la demanda local de proyectos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen otras convocatorias, pero no detalladas · Verificador: Concurrencia competitiva entre proyectos de la zona.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Riesgo técnico bajo, la ayuda no depende de tecnología · Verificador: Bajo, es gestión administrativa de subvenciones.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 9.0,
+    "points": 9.0,
+    "why": "No hay riesgo de pérdida financiera directa · Verificador: No hay inversión inicial, solo riesgo de no obtener la ayuda.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 10.0,
+    "points": 8.0,
+    "why": "Disponible en España, específicamente Rioja Alta · Verificador: Programa oficial en España.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay salida financiera, es una subvención · Verificador: No es una inversión, es una ayuda pública.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 2000.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 4000.0,
+     "netEur": 4000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 10000.0,
+     "netEur": 10000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 20000.0,
+     "netEur": 20000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 40000.0,
+     "netEur": 40000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 100000.0,
+     "netEur": 100000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 200000.0,
+     "netEur": 200000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 600000.0,
+     "netEur": 600000.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-27T01:49:10Z",
+    "pulseScore": 72.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Convocatoria LEADER Rioja Alta 2026\nCATEGORÍA: startups · financiacion_publica\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://www.adra-riojaalta.org/\nENLACE DE PARTICIPACIÓN: https://www.larioja.org/agricultura/es/desarrollo-rural/grupos-accion-local\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 2.000,00 €\nPOTENCIAL: Financiación sin devolución que puede cubrir gran parte del presupuesto del proyecto.\nPUNTUACIÓN: 60/100 · Interesante, necesita investigación\nRIESGO: medio\nPLAZO: corto\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Financiación sin devolución; Apoyo a proyectos innovadores en Rioja Alta\nMOTIVOS PARA DESCONFIAR: La obtención de la ayuda no está garantizada; depende de la valoración del proyecto frente a otros candidatos.\nCÓMO PARTICIPAR: Verificar requisitos de la convocatoria LEADER para Rioja Alta; Reunir documentación del proyecto y presupuesto; Acceder al portal de la entidad gestora y rellenar el formulario de solicitud; Adjuntar los documentos requeridos y enviar la solicitud; Esperar la resolución y, si es favorable, recibir la subvención\nQUÉ PODRÍA HACERME PERDER EL DINERO: Rechazo de la solicitud por no cumplir requisitos; Incumplimiento de condiciones y posible devolución\nFUENTES: https://news.google.com/rss/articles/CBMi3gFBVV95cUxOWVQwUi0zRWV0aG9mSG1Eb0ZEYUNnYmc1enVidTc5ZjlidEJ1TzFvamdjT1h2Z1lfbUVRTjRkZWgteW9TeEFKQ3lPOE1IOXNFdDdSamhEdmpQOXFvNEJtWHZnbnB0bk9Gd3VOMmpPUVJKb2tpWVZIcW41Zkg2NHNoQVo3cE9fc1FzOE40N284anFHbWRUUWcxMmFnOU9DOEFReDRlaF8zRnMzMVdsLXRRSnBEbVZxOUozUkVfckM1cnNCR3htRnI3MGVTQ0d3ZVh0QzB4emRNaVJuclFMUEE?oc=5 | https://www.adra-riojaalta.org/ | https://www.larioja.org/agricultura/es/desarrollo-rural/grupos-accion-local",
+  "firstSeenAt": "2026-11-27T01:49:10Z",
+  "lastSeenAt": "2026-11-27T01:49:10Z",
+  "runId": "run-20261127-0149",
+  "aliases": [
+   "web-news-google-com"
+  ]
+ },
+ {
   "name": "Tenerife Accelera Fund (gestión Archipélago Next)",
   "category": "startups",
   "subcategory": "venture_capital",
@@ -10591,6 +10969,384 @@
   "runId": "run-20261126-1706",
   "aliases": [
    "news-elreferente-es-inversiones-cofides-invierte-11-millones-de-euros-en-anaconda-biomed-p"
+  ]
+ },
+ {
+  "name": "Adquisición de Softonic por Newborn Town",
+  "category": "startups",
+  "subcategory": "software",
+  "kind": "pasiva",
+  "description": "Newborn Town, empresa tecnológica china, ha adquirido Softonic por hasta 50 millones de euros. Softonic mantiene su marca, equipo y sede en Barcelona, con más de 100 millones de usuarios mensuales.",
+  "officialUrl": "https://www.softonic.com",
+  "participateUrl": null,
+  "country": "España",
+  "spainAvailability": "si",
+  "spainNotes": "Softonic seguirá operando en España con su oficina en Barcelona y su equipo local.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "No hay coste de entrada para inversores particulares.",
+   "recommended": 0,
+   "max": 0
+  },
+  "canLoseAll": false,
+  "liquidity": "no aplica",
+  "exitNotes": "No existe mecanismo de salida para inversores externos.",
+  "horizon": "n/a",
+  "deadline": null,
+  "potential": "alto",
+  "difficulty": "baja",
+  "timeNeeded": "ninguno",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Adquisición de Softonic por Newborn Town · Verificador: Operación de adquisición comunicada el 26 de noviembre de 2026. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false
+   },
+   "potencial": {
+    "v": 7.0,
+    "why": "Softonic cuenta con >100 M usuarios únicos mensuales · Verificador: Softonic mantiene una base de 100 millones de usuarios mensuales.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 6.5,
+    "why": "Más de 4 M descargas diarias en Softonic.com · Verificador: Líder histórico en distribución de software con 4 millones de descargas diarias.",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 6.0,
+    "why": "CEO Fiona Garvey mantiene su cargo · Verificador: Fiona Garvey continúa como CEO y se mantiene la estructura local.",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 5.0,
+    "why": "Operación valorada en hasta 50 M € · Verificador: Operación valorada en 50 millones de euros. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 6.0,
+    "why": "Audiencia global >100 M usuarios mensuales · Verificador: Audiencia global consolidada, aunque el modelo de negocio ha cambiado drásticamente en la última década.",
+    "evidence": true
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Uso activo de la plataforma por 100 M usuarios · Verificador: Uso masivo pero con alta competencia de tiendas de aplicaciones nativas.",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 3.5,
+    "why": "Existen múltiples plataformas de descubrimiento de software · Verificador: Alta competencia de App Stores (Apple, Google, Microsoft) y repositorios directos.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Integración de IA y escala global · Verificador: Integración de IA en el descubrimiento de software es un reto operativo.",
+    "evidence": true
+   },
+   "riesgo_financiero": {
+    "v": 4.5,
+    "why": "Valor de la operación 50 M €, alto riesgo financiero · Verificador: La valoración de 50M€ refleja el valor de la base de usuarios y activos digitales.",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 9.0,
+    "why": "Softonic mantiene oficina y equipo en Barcelona · Verificador: Empresa española con sede en Barcelona, plenamente operativa.",
+    "evidence": true
+   },
+   "salida": {
+    "v": 0.0,
+    "why": "No hay mecanismo de salida para inversores externos · Verificador: No existe mecanismo de salida para inversores externos al ser una empresa privada. · Discrepancia entre modelos (7 vs 0): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "dependencia_china",
+    "severity": "media",
+    "detail": "Empresa adquirente es china, lo que puede generar riesgos geopolíticos y regulatorios en la UE."
+   },
+   {
+    "code": "no_inversion",
+    "severity": "critica",
+    "detail": "No es una oportunidad de inversión para particulares. La ficha original inducía a error al categorizarla como oportunidad."
+   },
+   {
+    "code": "dependencia_china",
+    "severity": "media",
+    "detail": "La adquisición por parte de una multinacional china puede estar sujeta a escrutinio bajo normativas de inversión extranjera directa (IED) en la UE."
+   }
+  ],
+  "distrust": [
+   "riesgo regulatorio en la UE",
+   "posible restricción de transferencia de datos"
+  ],
+  "whyInteresting": [
+   "Softonic posee una base de usuarios muy grande y estable.",
+   "Sinergias con la IA y escala global de Newborn Town."
+  ],
+  "howToParticipate": [
+   "No hay participación directa disponible para inversores particulares.",
+   "Monitorizar posibles rondas de financiación futuras de Newborn Town o spin‑offs de Softonic.",
+   "Considerar oportunidades de empleo o colaboraciones con Softonic bajo la nueva estructura."
+  ],
+  "actionable": false,
+  "profitPath": "",
+  "lossCauses": [],
+  "earlySignals": [],
+  "signals": {},
+  "regulatory": {
+   "checked": true,
+   "status": "no_aplica",
+   "notes": "Es una operación corporativa de M&A, no un producto financiero regulado por la CNMV o MiCA.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "El Referente",
+    "url": "https://elreferente.es/actualidad/newborn-town-compra-softonic-por-hasta-50-millones-de-euros/"
+   },
+   {
+    "title": "elEconomista - Softonic vendida a Newborn Town",
+    "url": "https://www.eleconomista.es"
+   }
+  ],
+  "discoveredVia": "El Referente",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "confirmada",
+   "reason": "La adquisición de Softonic por parte de Newborn Town es un hecho corporativo confirmado por medios económicos y la propia empresa. No es una oportunidad de inversión para particulares, ya que se trata de una operación de M&A (fusiones y adquisiciones) entre entidades privadas.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 75
+  },
+  "discoveredAt": "2026-11-27",
+  "id": "web-softonic-com",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 50.9,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "Tope 20: riesgo crítico (no_inversion)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "dependencia_china",
+    "severity": "media",
+    "detail": "Empresa adquirente es china, lo que puede generar riesgos geopolíticos y regulatorios en la UE."
+   },
+   {
+    "code": "no_inversion",
+    "severity": "critica",
+    "detail": "No es una oportunidad de inversión para particulares. La ficha original inducía a error al categorizarla como oportunidad."
+   }
+  ],
+  "evidenced": 8,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Adquisición de Softonic por Newborn Town · Verificador: Operación de adquisición comunicada el 26 de noviembre de 2026. · Discrepancia entre modelos (5 vs 10): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 7.0,
+    "points": 8.4,
+    "why": "Softonic cuenta con >100 M usuarios únicos mensuales · Verificador: Softonic mantiene una base de 100 millones de usuarios mensuales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 6.5,
+    "points": 5.2,
+    "why": "Más de 4 M descargas diarias en Softonic.com · Verificador: Líder histórico en distribución de software con 4 millones de descargas diarias.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "CEO Fiona Garvey mantiene su cargo · Verificador: Fiona Garvey continúa como CEO y se mantiene la estructura local.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "Operación valorada en hasta 50 M € · Verificador: Operación valorada en 50 millones de euros. · Discrepancia entre modelos (5 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 6.0,
+    "points": 4.2,
+    "why": "Audiencia global >100 M usuarios mensuales · Verificador: Audiencia global consolidada, aunque el modelo de negocio ha cambiado drásticamente en la última década.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Uso activo de la plataforma por 100 M usuarios · Verificador: Uso masivo pero con alta competencia de tiendas de aplicaciones nativas.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen múltiples plataformas de descubrimiento de software · Verificador: Alta competencia de App Stores (Apple, Google, Microsoft) y repositorios directos.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Integración de IA y escala global · Verificador: Integración de IA en el descubrimiento de software es un reto operativo.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 4.5,
+    "points": 4.5,
+    "why": "Valor de la operación 50 M €, alto riesgo financiero · Verificador: La valoración de 50M€ refleja el valor de la base de usuarios y activos digitales.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 9.0,
+    "points": 7.2,
+    "why": "Softonic mantiene oficina y equipo en Barcelona · Verificador: Empresa española con sede en Barcelona, plenamente operativa.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 0.0,
+    "points": 0.0,
+    "why": "No hay mecanismo de salida para inversores externos · Verificador: No existe mecanismo de salida para inversores externos al ser una empresa privada. · Discrepancia entre modelos (7 vs 0): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Adquisición de Softonic por Newborn Town\nCATEGORÍA: startups · software\nFECHA DE DESCUBRIMIENTO: 2026-11-27\nWEB OFICIAL: https://www.softonic.com\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: España\nDISPONIBILIDAD EN ESPAÑA: si\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: alto\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: n/a\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Softonic posee una base de usuarios muy grande y estable.; Sinergias con la IA y escala global de Newborn Town.\nMOTIVOS PARA DESCONFIAR: Empresa adquirente es china, lo que puede generar riesgos geopolíticos y regulatorios en la UE.; No es una oportunidad de inversión para particulares. La ficha original inducía a error al categorizarla como oportunidad.; riesgo regulatorio en la UE; posible restricción de transferencia de datos\nCÓMO PARTICIPAR: No hay participación directa disponible para inversores particulares.; Monitorizar posibles rondas de financiación futuras de Newborn Town o spin‑offs de Softonic.; Considerar oportunidades de empleo o colaboraciones con Softonic bajo la nueva estructura.\nQUÉ PODRÍA HACERME PERDER EL DINERO: —\nFUENTES: https://elreferente.es/actualidad/newborn-town-compra-softonic-por-hasta-50-millones-de-euros/ | https://www.eleconomista.es",
+  "firstSeenAt": "2026-11-27T01:49:10Z",
+  "lastSeenAt": "2026-11-27T01:49:10Z",
+  "runId": "run-20261127-0149",
+  "aliases": [
+   "news-elreferente-es-actualidad-newborn-town-compra-softonic-por-hasta-50-millones-de-euros"
   ]
  },
  {
