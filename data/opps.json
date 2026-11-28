@@ -13320,6 +13320,420 @@
   ]
  },
  {
+  "name": "Franklin Templeton adds Hyperliquid’s HYPE to Crypto Index ETF",
+  "category": "cripto",
+  "subcategory": "etf",
+  "kind": "activa",
+  "description": "Franklin Templeton incorporará el token nativo HYPE de Hyperliquid al ETF Franklin Crypto Index (ticker EZPZ) a partir del 1 de dic.  La inclusión permite a inversores acceder al token mediante una inversión mínima en el fondo, sin necesidad de poseerlo directamente.",
+  "officialUrl": "https://www.franklintempleton.com/",
+  "participateUrl": null,
+  "country": "Estados Unidos",
+  "spainAvailability": "no",
+  "spainNotes": "El ETF cotiza en EE.UU.; los residentes españoles solo pueden acceder a través de brokers internacionales y podrían enfrentar restricciones regulatorias bajo MiCA.",
+  "costs": {
+   "minEntry": null,
+   "extra": null,
+   "extraNotes": "Comisiones de broker y posible coste de conversión de divisas.",
+   "recommended": null,
+   "max": null
+  },
+  "canLoseAll": false,
+  "liquidity": "alta",
+  "exitNotes": "Se puede vender el ETF en cualquier momento durante el horario de mercado del exchange donde cotiza.",
+  "horizon": "medio plazo",
+  "deadline": null,
+  "potential": "Exposición al crecimiento del token HYPE y al ecosistema Hyperliquid mediante un vehículo financiero regulado.",
+  "difficulty": "baja",
+  "timeNeeded": "Horas para abrir cuenta con broker que ofrezca ETFs estadounidenses y ejecutar la compra.",
+  "subscores": {
+   "novedad": {
+    "v": 7.0,
+    "why": "Primera inclusión de HYPE en un ETF tradicional · Verificador: Primera inclusión de HYPE en un ETF de Franklin Templeton",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 5.5,
+    "why": "Precio de HYPE $63.92 y TVL creciente indican upside potencial · Verificador: Depende de la volatilidad del token HYPE y el éxito del DEX Hyperliquid",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 5.0,
+    "why": "Productos US spot tracking HYPE acumulan $266.5 M AUM · Verificador: AUM de $266.5M en ETPs de HYPE reportados por Coinperps",
+    "evidence": true
+   },
+   "equipo": {
+    "v": 7.5,
+    "why": "Franklin Templeton es gestor de activos global con larga trayectoria; Hyperliquid es una L1 con DEX de futuros · Verificador: Franklin Templeton es una gestora de activos global consolidada",
+    "evidence": true
+   },
+   "financiacion": {
+    "v": 3.5,
+    "why": "No se dispone de datos públicos sobre financiación del proyecto HYPE · Verificador: No hay datos públicos de financiación externa de Hyperliquid",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 4.0,
+    "why": "No se citan métricas de comunidad de usuarios o desarrolladores de HYPE · Verificador: No se aportan métricas verificables de comunidad",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 6.0,
+    "why": "Tres ETPs US tracking HYPE lanzados desde mayo 2024; ahora incluido en ETF · Verificador: Crecimiento del TVL a $7.3B reportado por DefiLlama",
+    "evidence": true
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Otros ETFs cripto existen pero ninguno incluye HYPE hasta ahora · Verificador: El ETF EZPZ es un producto específico de Franklin Templeton",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 6.5,
+    "why": "Token usado para fees y staking; buy‑back vincula demanda a actividad del exchange · Verificador: Dependencia de la seguridad del protocolo L1 Hyperliquid",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "Volatilidad del token HYPE y posible restricción regulatoria en España · Verificador: Alta volatilidad del activo subyacente y riesgo de divisa/regulatorio",
+    "evidence": true
+   },
+   "entrada_espana": {
+    "v": 2.0,
+    "why": "Acceso indirecto vía brokers internacionales, sin claridad regulatoria local · Verificador: Los ETFs de EE.UU. no son comercializables para minoristas en España bajo normativa UCITS",
+    "evidence": false
+   },
+   "salida": {
+    "v": 8.0,
+    "why": "ETF cotiza en mercados líquidos, venta inmediata posible · Verificador: Alta liquidez en mercados secundarios estadounidenses",
+    "evidence": true
+   }
+  },
+  "redFlags": [
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "Posibles limitaciones bajo la normativa MiCA para ETFs de cripto en España"
+   },
+   {
+    "code": "token_volatility",
+    "severity": "media",
+    "detail": "El precio de HYPE es altamente volátil"
+   },
+   {
+    "code": "regulatory_risk",
+    "severity": "critica",
+    "detail": "Los inversores minoristas en España no pueden comprar ETFs estadounidenses (no UCITS) directamente en brokers europeos debido a la normativa PRIIPs/UCITS."
+   },
+   {
+    "code": "token_volatility",
+    "severity": "alta",
+    "detail": "HYPE es un activo altamente volátil y el ETF traslada ese riesgo al inversor."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información proviene de un medio de noticias cripto y reporta un filing ante la SEC, pero el acceso a ETFs estadounidenses para inversores minoristas en España está severamente restringido por la normativa UCITS (los ETFs de EE.UU. no suelen estar registrados para su comercialización en la UE)."
+   }
+  ],
+  "distrust": [
+   "Incertidumbre sobre la elegibilidad de inversores europeos para ETFs de cripto en EE.UU."
+  ],
+  "whyInteresting": [
+   "Acceso a HYPE sin necesidad de custodiar el token",
+   "Diversificación mediante un ETF regulado",
+   "Potencial upside del ecosistema Hyperliquid"
+  ],
+  "howToParticipate": [
+   "Abrir cuenta con broker que ofrezca ETFs estadounidenses",
+   "Verificar que el broker permita residentes españoles",
+   "Comprar acciones del ticker EZPZ en la bolsa correspondiente"
+  ],
+  "actionable": true,
+  "profitPath": "Comprar acciones del ETF EZPZ y beneficiarse de la apreciación del token HYPE dentro del fondo.",
+  "lossCauses": [
+   "Caída del precio de HYPE",
+   "Restricciones regulatorias que impidan la compra o venta del ETF en España",
+   "Delistado o cierre del ETF"
+  ],
+  "earlySignals": [
+   "Incorporación de HYPE al benchmark del ETF (1 dic)",
+   "TVL de Hyperliquid sube a $7.3 B",
+   "Ingresos mensuales de $80.3 M en la plataforma"
+  ],
+  "signals": {
+   "pulseScore": 55
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "no_autorizada",
+   "notes": "Los ETFs domiciliados en EE.UU. no cumplen con la directiva UCITS necesaria para ser comercializados a inversores minoristas en España.",
+   "sources": [
+    "https://www.cnmv.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · Cointelegraph",
+    "url": "https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound"
+   },
+   {
+    "title": "Franklin Templeton Adds Hyperliquid’s HYPE to Crypto Index ETF",
+    "url": "https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf"
+   }
+  ],
+  "discoveredVia": "Pulso · Cointelegraph",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "La información proviene de un medio de noticias cripto y reporta un filing ante la SEC, pero el acceso a ETFs estadounidenses para inversores minoristas en España está severamente restringido por la normativa UCITS (los ETFs de EE.UU. no suelen estar registrados para su comercialización en la UE).",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 100
+  },
+  "discoveredAt": "2026-11-28",
+  "id": "web-franklintempleton-com",
+  "isNew": true,
+  "score": 20,
+  "rawScore": 51.2,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-10 por 2 riesgo(s) alto(s)",
+   "Tope 20: riesgo crítico (regulatorio)"
+  ],
+  "critical": true,
+  "risk": "crítico",
+  "flags": [
+   {
+    "code": "regulatory_risk",
+    "severity": "alta",
+    "detail": "Posibles limitaciones bajo la normativa MiCA para ETFs de cripto en España"
+   },
+   {
+    "code": "token_volatility",
+    "severity": "media",
+    "detail": "El precio de HYPE es altamente volátil"
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: La información proviene de un medio de noticias cripto y reporta un filing ante la SEC, pero el acceso a ETFs estadounidenses para inversores minoristas en España está severamente restringido por la normativa UCITS (los ETFs de EE.UU. no suelen estar registrados para su comercialización en la UE)."
+   },
+   {
+    "code": "regulatorio",
+    "severity": "critica",
+    "detail": "Los ETFs domiciliados en EE.UU. no cumplen con la directiva UCITS necesaria para ser comercializados a inversores minoristas en España."
+   }
+  ],
+  "evidenced": 7,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 7.0,
+    "points": 5.6,
+    "why": "Primera inclusión de HYPE en un ETF tradicional · Verificador: Primera inclusión de HYPE en un ETF de Franklin Templeton",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 5.5,
+    "points": 6.6,
+    "why": "Precio de HYPE $63.92 y TVL creciente indican upside potencial · Verificador: Depende de la volatilidad del token HYPE y el éxito del DEX Hyperliquid",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Productos US spot tracking HYPE acumulan $266.5 M AUM · Verificador: AUM de $266.5M en ETPs de HYPE reportados por Coinperps",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 7.5,
+    "points": 7.5,
+    "why": "Franklin Templeton es gestor de activos global con larga trayectoria; Hyperliquid es una L1 con DEX de futuros · Verificador: Franklin Templeton es una gestora de activos global consolidada",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se dispone de datos públicos sobre financiación del proyecto HYPE · Verificador: No hay datos públicos de financiación externa de Hyperliquid",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 3.0,
+    "points": 2.1,
+    "why": "No se citan métricas de comunidad de usuarios o desarrolladores de HYPE · Verificador: No se aportan métricas verificables de comunidad",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 6.0,
+    "points": 5.4,
+    "why": "Tres ETPs US tracking HYPE lanzados desde mayo 2024; ahora incluido en ETF · Verificador: Crecimiento del TVL a $7.3B reportado por DefiLlama",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Otros ETFs cripto existen pero ninguno incluye HYPE hasta ahora · Verificador: El ETF EZPZ es un producto específico de Franklin Templeton",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Token usado para fees y staking; buy‑back vincula demanda a actividad del exchange · Verificador: Dependencia de la seguridad del protocolo L1 Hyperliquid",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 6.0,
+    "points": 6.0,
+    "why": "Volatilidad del token HYPE y posible restricción regulatoria en España · Verificador: Alta volatilidad del activo subyacente y riesgo de divisa/regulatorio",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Acceso indirecto vía brokers internacionales, sin claridad regulatoria local · Verificador: Los ETFs de EE.UU. no son comercializables para minoristas en España bajo normativa UCITS",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 8.0,
+    "points": 6.4,
+    "why": "ETF cotiza en mercados líquidos, venta inmediata posible · Verificador: Alta liquidez en mercados secundarios estadounidenses",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": null,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-28T08:06:10Z",
+    "pulseScore": 55.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": "Riesgo crítico: no se notifica como oportunidad"
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Franklin Templeton adds Hyperliquid’s HYPE to Crypto Index ETF\nCATEGORÍA: cripto · etf\nFECHA DE DESCUBRIMIENTO: 2026-11-28\nWEB OFICIAL: https://www.franklintempleton.com/\nENLACE DE PARTICIPACIÓN: no disponible\nPAÍS: Estados Unidos\nDISPONIBILIDAD EN ESPAÑA: no\nCOSTE DE ENTRADA: desconocido (+ desconocido adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: Exposición al crecimiento del token HYPE y al ecosistema Hyperliquid mediante un vehículo financiero regulado.\nPUNTUACIÓN: 20/100 · Descartar\nRIESGO: crítico\nPLAZO: medio plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Acceso a HYPE sin necesidad de custodiar el token; Diversificación mediante un ETF regulado; Potencial upside del ecosistema Hyperliquid\nMOTIVOS PARA DESCONFIAR: Posibles limitaciones bajo la normativa MiCA para ETFs de cripto en España; El precio de HYPE es altamente volátil; El verificador tiene dudas: La información proviene de un medio de noticias cripto y reporta un filing ante la SEC, pero el acceso a ETFs estadounidenses para inversores minoristas en España está severamente restringido por la normativa UCITS (los ETFs de EE.UU. no suelen estar registrados para su comercialización en la UE).; Los ETFs domiciliados en EE.UU. no cumplen con la directiva UCITS necesaria para ser comercializados a inversores minoristas en España.; Incertidumbre sobre la elegibilidad de inversores europeos para ETFs de cripto en EE.UU.\nCÓMO PARTICIPAR: Abrir cuenta con broker que ofrezca ETFs estadounidenses; Verificar que el broker permita residentes españoles; Comprar acciones del ticker EZPZ en la bolsa correspondiente\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio de HYPE; Restricciones regulatorias que impidan la compra o venta del ETF en España; Delistado o cierre del ETF\nFUENTES: https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound | https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf",
+  "firstSeenAt": "2026-11-28T08:06:10Z",
+  "lastSeenAt": "2026-11-28T08:06:10Z",
+  "runId": "run-20261128-0806",
+  "aliases": [
+   "web-cointelegraph-com"
+  ]
+ },
+ {
   "name": "GateToken Launchpool",
   "category": "lanzamientos",
   "subcategory": "cripto",
@@ -15342,6 +15756,416 @@
   ],
   "actionable": false,
   "profitPath": ""
+ },
+ {
+  "name": "Sky (token)",
+  "category": "cripto",
+  "subcategory": "staking",
+  "kind": "activa",
+  "description": "Sky ha aumentado las recompensas para los stakers y ha reducido los límites de deuda de sus vaults. Los nuevos ajustes entraron en vigor el 23 de noviembre. La propuesta de transferir 25 M USDS para el pago de deuda no fue aprobada aún.",
+  "officialUrl": "https://sky.money/",
+  "participateUrl": "https://app.sky.money/",
+  "country": "internacional",
+  "spainAvailability": "disponible_globalmente",
+  "spainNotes": "No se ha confirmado disponibilidad o cumplimiento normativo para usuarios en España.",
+  "costs": {
+   "minEntry": 0,
+   "extra": 0,
+   "extraNotes": "Puede requerir compra de SKY en exchanges y pagar gas; esos costes no están incluidos.",
+   "recommended": 0,
+   "max": 2000
+  },
+  "canLoseAll": true,
+  "liquidity": "baja",
+  "exitNotes": "Dependerá de la disponibilidad en exchanges y del precio del token; no hay mercado secundario garantizado.",
+  "horizon": "corto plazo",
+  "deadline": null,
+  "potential": "El aumento de recompensas puede atraer más stakers, pero el valor y la adopción del token SKY siguen sin datos claros.",
+  "difficulty": "media",
+  "timeNeeded": "Crear una wallet compatible, adquirir SKY, delegar en el contrato de staking y monitorizar las recompensas.",
+  "subscores": {
+   "novedad": {
+    "v": 5.0,
+    "why": "Incremento de recompensas y reducción de deuda es una novedad operativa para el protocolo · Verificador: La transición de Maker a Sky es un evento reciente y relevante en DeFi.",
+    "evidence": true
+   },
+   "potencial": {
+    "v": 4.5,
+    "why": "Mayor recompensa puede impulsar la participación, aunque depende del valor del token · Verificador: Depende totalmente de la adopción del ecosistema Sky y la estabilidad de USDS.",
+    "evidence": true
+   },
+   "mercado": {
+    "v": 2.0,
+    "why": "No se dispone de datos de capitalización, volumen o exchanges donde cotice SKY · Verificador: Sky (SKY) tiene liquidez en exchanges centralizados y descentralizados, a diferencia de lo que indicaba la ficha. · Discrepancia entre modelos (2 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "equipo": {
+    "v": 1.0,
+    "why": "No se menciona información del equipo en la fuente · Verificador: El equipo detrás de Sky es el mismo que el de MakerDAO, con amplia trayectoria. · Discrepancia entre modelos (1 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "financiacion": {
+    "v": 1.0,
+    "why": "No hay información sobre financiación o respaldo institucional · Verificador: Protocolo con gran capitalización y respaldo institucional en el ecosistema DeFi. · Discrepancia entre modelos (1 vs 8): se toma el valor bajo.",
+    "evidence": false
+   },
+   "comunidad": {
+    "v": 2.0,
+    "why": "PulseScore 55 indica interés moderado en la comunidad · Verificador: Comunidad muy activa y consolidada bajo la gobernanza de Sky/Maker. · Discrepancia entre modelos (2 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "adopcion": {
+    "v": 3.0,
+    "why": "Staking ya está activo, pero la adopción real del token es desconocida · Verificador: Protocolo ampliamente utilizado en el sector DeFi. · Discrepancia entre modelos (3 vs 7): se toma el valor bajo.",
+    "evidence": false
+   },
+   "competencia": {
+    "v": 5.0,
+    "why": "Existen muchos tokens con staking; la propuesta no destaca frente a competidores · Verificador: Alta competencia en el sector de stablecoins y protocolos de préstamo.",
+    "evidence": false
+   },
+   "riesgo_tecnico": {
+    "v": 5.0,
+    "why": "Riesgo de bugs o vulnerabilidades en el contrato de staking, sin auditorías públicas visibles · Verificador: Riesgo inherente a contratos inteligentes complejos en Ethereum.",
+    "evidence": false
+   },
+   "riesgo_financiero": {
+    "v": 6.0,
+    "why": "No se requiere inversión directa, pero la pérdida de valor del token o fallos del contrato pueden generar pérdidas · Verificador: Volatilidad del token SKY y riesgos de desanclaje de USDS.",
+    "evidence": false
+   },
+   "entrada_espana": {
+    "v": 2.5,
+    "why": "No hay confirmación de disponibilidad o cumplimiento regulatorio en España · Verificador: No existe registro MiCA específico para este protocolo en España.",
+    "evidence": false
+   },
+   "salida": {
+    "v": 2.0,
+    "why": "Liquidez limitada y ausencia de mercados secundarios claros para SKY · Verificador: Alta liquidez en mercados secundarios globales. · Discrepancia entre modelos (2 vs 8): se toma el valor bajo.",
+    "evidence": false
+   }
+  },
+  "redFlags": [
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Escasa información pública sobre el proyecto, equipo y auditorías."
+   },
+   {
+    "code": "riesgo_tecnico",
+    "severity": "media",
+    "detail": "Staking en fase de cambios; posibles bugs o vulnerabilidades en el contrato."
+   },
+   {
+    "code": "falta_transparencia",
+    "severity": "media",
+    "detail": "La ficha original no identificó correctamente el sitio oficial (sky.money), lo que expone al usuario a sitios de phishing."
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "El staking de tokens de gobernanza no está regulado bajo MiCA en España, lo que implica falta de protección al inversor."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto Sky (anteriormente MakerDAO) es una entidad conocida, pero la ficha original carece de enlaces oficiales y confunde la marca con un token genérico. La falta de verificación de la URL oficial y la ausencia de un marco regulatorio claro para el staking de este token en España lo hacen de alto riesgo."
+   }
+  ],
+  "distrust": [],
+  "whyInteresting": [
+   "Incremento de recompensas para stakers",
+   "Reducción de límites de deuda del vault"
+  ],
+  "howToParticipate": [
+   "Crear una wallet compatible (e.g., Metamask)",
+   "Adquirir tokens SKY en un exchange",
+   "Delegar los tokens en el contrato de staking indicado por Sky",
+   "Monitorizar las recompensas y retirar cuando convenga"
+  ],
+  "actionable": true,
+  "profitPath": "Staking de SKY genera recompensas adicionales en el mismo token, que pueden venderse o reinvertirse.",
+  "lossCauses": [
+   "Caída del precio del token SKY",
+   "Fallos o hackeos del contrato de staking",
+   "Cambios futuros en la política de recompensas"
+  ],
+  "earlySignals": [
+   "PulseScore 55 indica interés moderado"
+  ],
+  "signals": {
+   "pulseScore": 55
+  },
+  "regulatory": {
+   "checked": true,
+   "status": "desconocido",
+   "notes": "No consta en el registro de proveedores de servicios de activos virtuales del Banco de España ni en la CNMV como entidad autorizada. El staking es una actividad no regulada específicamente bajo MiCA en este momento.",
+   "sources": [
+    "https://www.cnmv.es",
+    "https://www.bde.es"
+   ]
+  },
+  "sources": [
+   {
+    "title": "Pulso · The Defiant",
+    "url": "https://thedefiant.io/news/defi/sky-allocates-more-sky-to-stakers-cuts-vault-debt-limits"
+   },
+   {
+    "title": "Sky Protocol Official Website",
+    "url": "https://sky.money/"
+   }
+  ],
+  "discoveredVia": "Pulso · The Defiant",
+  "aiModels": {
+   "searcher": null,
+   "analyst": "groq:openai/gpt-oss-120b",
+   "verifier": "gemini:gemini-3.1-flash-lite"
+  },
+  "verification": {
+   "verdict": "dudosa",
+   "reason": "El proyecto Sky (anteriormente MakerDAO) es una entidad conocida, pero la ficha original carece de enlaces oficiales y confunde la marca con un token genérico. La falta de verificación de la URL oficial y la ausencia de un marco regulatorio claro para el staking de este token en España lo hacen de alto riesgo.",
+   "model": "gemini:gemini-3.1-flash-lite",
+   "agreementPct": 50
+  },
+  "discoveredAt": "2026-11-28",
+  "id": "web-sky-money",
+  "isNew": true,
+  "score": 12,
+  "rawScore": 27.3,
+  "tier": "descartar",
+  "tierLabel": "Descartar",
+  "humanReview": false,
+  "caps": [
+   "-15 por 3 riesgo(s) alto(s)"
+  ],
+  "critical": false,
+  "risk": "muy alto",
+  "flags": [
+   {
+    "code": "falta_transparencia",
+    "severity": "alta",
+    "detail": "Escasa información pública sobre el proyecto, equipo y auditorías."
+   },
+   {
+    "code": "riesgo_tecnico",
+    "severity": "media",
+    "detail": "Staking en fase de cambios; posibles bugs o vulnerabilidades en el contrato."
+   },
+   {
+    "code": "riesgo_regulatorio",
+    "severity": "alta",
+    "detail": "El staking de tokens de gobernanza no está regulado bajo MiCA en España, lo que implica falta de protección al inversor."
+   },
+   {
+    "code": "verificacion_dudosa",
+    "severity": "alta",
+    "detail": "El verificador tiene dudas: El proyecto Sky (anteriormente MakerDAO) es una entidad conocida, pero la ficha original carece de enlaces oficiales y confunde la marca con un token genérico. La falta de verificación de la URL oficial y la ausencia de un marco regulatorio claro para el staking de este token en España lo hacen de alto riesgo."
+   }
+  ],
+  "evidenced": 2,
+  "breakdown": [
+   {
+    "key": "novedad",
+    "label": "Novedad",
+    "weight": 8,
+    "value": 5.0,
+    "points": 4.0,
+    "why": "Incremento de recompensas y reducción de deuda es una novedad operativa para el protocolo · Verificador: La transición de Maker a Sky es un evento reciente y relevante en DeFi.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "potencial",
+    "label": "Potencial de crecimiento",
+    "weight": 12,
+    "value": 4.5,
+    "points": 5.4,
+    "why": "Mayor recompensa puede impulsar la participación, aunque depende del valor del token · Verificador: Depende totalmente de la adopción del ecosistema Sky y la estabilidad de USDS.",
+    "evidence": true,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "mercado",
+    "label": "Tamaño del mercado",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "No se dispone de datos de capitalización, volumen o exchanges donde cotice SKY · Verificador: Sky (SKY) tiene liquidez en exchanges centralizados y descentralizados, a diferencia de lo que indicaba la ficha. · Discrepancia entre modelos (2 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "equipo",
+    "label": "Calidad del equipo",
+    "weight": 10,
+    "value": 1.0,
+    "points": 1.0,
+    "why": "No se menciona información del equipo en la fuente · Verificador: El equipo detrás de Sky es el mismo que el de MakerDAO, con amplia trayectoria. · Discrepancia entre modelos (1 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "financiacion",
+    "label": "Financiación",
+    "weight": 7,
+    "value": 1.0,
+    "points": 0.7,
+    "why": "No hay información sobre financiación o respaldo institucional · Verificador: Protocolo con gran capitalización y respaldo institucional en el ecosistema DeFi. · Discrepancia entre modelos (1 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "comunidad",
+    "label": "Comunidad",
+    "weight": 7,
+    "value": 2.0,
+    "points": 1.4,
+    "why": "PulseScore 55 indica interés moderado en la comunidad · Verificador: Comunidad muy activa y consolidada bajo la gobernanza de Sky/Maker. · Discrepancia entre modelos (2 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "adopcion",
+    "label": "Adopción",
+    "weight": 9,
+    "value": 3.0,
+    "points": 2.7,
+    "why": "Staking ya está activo, pero la adopción real del token es desconocida · Verificador: Protocolo ampliamente utilizado en el sector DeFi. · Discrepancia entre modelos (3 vs 7): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "competencia",
+    "label": "Competencia (10 = poca)",
+    "weight": 5,
+    "value": 3.0,
+    "points": 1.5,
+    "why": "Existen muchos tokens con staking; la propuesta no destaca frente a competidores · Verificador: Alta competencia en el sector de stablecoins y protocolos de préstamo.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_tecnico",
+    "label": "Riesgo técnico (10 = bajo)",
+    "weight": 8,
+    "value": 3.0,
+    "points": 2.4,
+    "why": "Riesgo de bugs o vulnerabilidades en el contrato de staking, sin auditorías públicas visibles · Verificador: Riesgo inherente a contratos inteligentes complejos en Ethereum.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "riesgo_financiero",
+    "label": "Riesgo financiero (10 = bajo)",
+    "weight": 10,
+    "value": 3.0,
+    "points": 3.0,
+    "why": "No se requiere inversión directa, pero la pérdida de valor del token o fallos del contrato pueden generar pérdidas · Verificador: Volatilidad del token SKY y riesgos de desanclaje de USDS.",
+    "evidence": false,
+    "cappedForNoEvidence": true
+   },
+   {
+    "key": "entrada_espana",
+    "label": "Facilidad de entrada desde tu región",
+    "weight": 8,
+    "value": 2.5,
+    "points": 2.0,
+    "why": "No hay confirmación de disponibilidad o cumplimiento regulatorio en España · Verificador: No existe registro MiCA específico para este protocolo en España.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   },
+   {
+    "key": "salida",
+    "label": "Posibilidad de salida o monetización",
+    "weight": 8,
+    "value": 2.0,
+    "points": 1.6,
+    "why": "Liquidez limitada y ausencia de mercados secundarios claros para SKY · Verificador: Alta liquidez en mercados secundarios globales. · Discrepancia entre modelos (2 vs 8): se toma el valor bajo.",
+    "evidence": false,
+    "cappedForNoEvidence": false
+   }
+  ],
+  "scenarios": {
+   "stakeEur": 0.0,
+   "extraCostsEur": 0.0,
+   "lossScenarioEur": -0.0,
+   "rows": [
+    {
+     "multiple": 2,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 5,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 10,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 20,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 50,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 100,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    },
+    {
+     "multiple": 300,
+     "grossEur": 0.0,
+     "netEur": 0.0,
+     "exitImpactPct": 0.0,
+     "exitNote": null
+    }
+   ],
+   "disclaimer": "Simulación matemática. No es una predicción ni una rentabilidad prometida, y no implica ninguna probabilidad.",
+   "basis": "capital"
+  },
+  "momentum": {
+   "available": false,
+   "changes": {},
+   "label": "Primera observación"
+  },
+  "metrics": [
+   {
+    "t": "2026-11-28T08:06:10Z",
+    "pulseScore": 55.0
+   }
+  ],
+  "alert": {
+   "level": "ninguna",
+   "reason": ""
+  },
+  "hoursLeft": null,
+  "alertText": "NOMBRE: Sky (token)\nCATEGORÍA: cripto · staking\nFECHA DE DESCUBRIMIENTO: 2026-11-28\nWEB OFICIAL: https://sky.money/\nENLACE DE PARTICIPACIÓN: https://app.sky.money/\nPAÍS: internacional\nDISPONIBILIDAD EN ESPAÑA: disponible_globalmente\nCOSTE DE ENTRADA: 0,00 € (+ 0,00 € adicionales)\nPRESUPUESTO RECOMENDADO: 0,00 €\nPOTENCIAL: El aumento de recompensas puede atraer más stakers, pero el valor y la adopción del token SKY siguen sin datos claros.\nPUNTUACIÓN: 12/100 · Descartar\nRIESGO: muy alto\nPLAZO: corto plazo\nMOTIVO POR EL QUE PUEDE SER INTERESANTE: Incremento de recompensas para stakers; Reducción de límites de deuda del vault\nMOTIVOS PARA DESCONFIAR: Escasa información pública sobre el proyecto, equipo y auditorías.; Staking en fase de cambios; posibles bugs o vulnerabilidades en el contrato.; El staking de tokens de gobernanza no está regulado bajo MiCA en España, lo que implica falta de protección al inversor.; El verificador tiene dudas: El proyecto Sky (anteriormente MakerDAO) es una entidad conocida, pero la ficha original carece de enlaces oficiales y confunde la marca con un token genérico. La falta de verificación de la URL oficial y la ausencia de un marco regulatorio claro para el staking de este token en España lo hacen de alto riesgo.\nCÓMO PARTICIPAR: Crear una wallet compatible (e.g., Metamask); Adquirir tokens SKY en un exchange; Delegar los tokens en el contrato de staking indicado por Sky; Monitorizar las recompensas y retirar cuando convenga\nQUÉ PODRÍA HACERME PERDER EL DINERO: Caída del precio del token SKY; Fallos o hackeos del contrato de staking; Cambios futuros en la política de recompensas\nFUENTES: https://thedefiant.io/news/defi/sky-allocates-more-sky-to-stakers-cuts-vault-debt-limits | https://sky.money/",
+  "firstSeenAt": "2026-11-28T08:06:10Z",
+  "lastSeenAt": "2026-11-28T08:06:10Z",
+  "runId": "run-20261128-0806",
+  "aliases": [
+   "web-thedefiant-io"
+  ]
  },
  {
   "name": "Fusionist ACE Bridge (post‑exploit)",

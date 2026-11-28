@@ -1,6 +1,6 @@
 {
  "usdToEur": 0.91266,
- "discoveryCursor": 0,
+ "discoveryCursor": 2,
  "lastDaily": "2026-11-25",
  "lastWeekly": "2026-11-22",
  "cleanupV3": true,
@@ -63,6 +63,8 @@
   "dn:swan-dao",
   "gr:945253",
   "n:c7b9200ad4b6",
-  "n:cab6bb9cbeb1"
+  "n:cab6bb9cbeb1",
+  "n:ad60b1637593",
+  "n:1e5683fe0792"
  ]
 }
