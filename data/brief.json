@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-27T21:22:50Z",
- "checkedAt": "2026-11-27T23:49:14Z",
- "attemptedAt": "2026-11-27T23:49:14Z",
+ "checkedAt": "2026-11-28T04:22:50Z",
+ "attemptedAt": "2026-11-28T04:22:50Z",
  "spend": {
   "date": "2026-11-28",
   "usd": 0.0
@@ -242,7 +242,7 @@
    },
    "casa": {
     "generatedAt": "2026-11-27T21:22:50Z",
-    "checkedAt": "2026-11-27T23:49:14Z",
+    "checkedAt": "2026-11-28T04:22:50Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -257,22 +257,12 @@
      "sin_caso": 3,
      "vacia": 0
     },
-    "nota": "Buscadas e identificadas opciones de bajo riesgo enfocadas en servicios bajo pedido e iniciativas artesanales sin inventario inicial alto, descartando modelos que requerían alquiler de local o gran stock.",
+    "nota": "He buscado ideas sencillas con bajo capital inicial vinculadas al arte corporal, servicios de cocina para empresas cercanas e integración de voz profesional para inmobiliarias, descartando negocios con stock elevado.",
     "oportunidades_locales": [
      {
-      "titulo": "CEEI Valencia - Plataforma Relevo para emprendedores",
-      "que_es": "Servicio de asesoramiento y plataforma para dar continuidad o lanzar iniciativas emprendedoras desde casa en la provincia.",
+      "titulo": "Programa Relevo de CEEI Valencia",
+      "que_es": "Iniciativa para apoyar a personas emprendedoras a poner en marcha o dar continuidad a pequeños negocios en la provincia de Valencia.",
       "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
-     },
-     {
-      "titulo": "Nuevas ayudas para autónomos de la Comunitat Valenciana 2026",
-      "que_es": "Convocatorias y subvenciones autonómicas para el establecimiento de nuevos autónomos y consolidación del empleo independiente.",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
-     },
-     {
-      "titulo": "Mercado de la Huerta en Valencia para Venta Directa",
-      "que_es": "Espacio de venta directa al público sin intermediarios ideal para testar productos artesanales o gastronómicos caseros.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOVFdWX2FaRzZhWkhSaTlVQWxlM1ZhRUZLUVpwMUdTZnVQUmdSUXJLdkJSWm95d3E3R1F4VkUxNWFFSVV6Zld5bHVOOHh5TkpxOWhLN05CSTFDa2U5SVlNcmF6Tm1GWWM5YXRvNzlFNnp6VTF6dVpJME9MYmFraEtZd29CNEN6c0JHMklxaGp3eW5WXzVXYjBvTFZGUkdqUQ?oc=5"
      }
     ],
     "ayudas": [],
@@ -1851,7 +1841,7 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 21,
+   "n": 19,
    "err": null
   }
  },
