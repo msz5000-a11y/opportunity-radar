@@ -1,8 +1,8 @@
 {
  "version": 2,
- "generatedAt": "2026-11-27T21:22:50Z",
- "checkedAt": "2026-11-28T04:22:50Z",
- "attemptedAt": "2026-11-28T04:22:50Z",
+ "generatedAt": "2026-11-28T07:42:45Z",
+ "checkedAt": "2026-11-28T07:42:45Z",
+ "attemptedAt": "2026-11-28T07:42:45Z",
  "spend": {
   "date": "2026-11-28",
   "usd": 0.0
@@ -33,11 +33,11 @@
     "casa": false,
     "start_tab": "parati"
    },
-   "generatedAt": "2026-11-27T12:11:04Z",
-   "checkedAt": "2026-11-27T12:11:04Z",
+   "generatedAt": "2026-11-28T07:42:45Z",
+   "checkedAt": "2026-11-28T07:42:45Z",
    "ok": true,
    "error": null,
-   "fingerprint": "736f58353af9d4ec",
+   "fingerprint": "951ed06bb52a27fb",
    "provider": "gemini",
    "model": "gemini-3.6-flash",
    "cost_usd": 0.0,
@@ -52,39 +52,40 @@
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 17
+    "extra": 13
    },
    "resumen": "Hoy para ti: 1 ronda abierta que encaja contigo, 2 ideas para clonar, ninguna acción infravalorada rompe al alza, ninguna ayuda abierta que encaje, 1 oportunidad más.",
-   "descartado": "Descartada la ronda de Mygocu por requerir 5.000 € de ticket mínimo, la ayuda de Rioja Alta por no corresponder a tu ubicación y las criptomonedas con fuerte volatilidad diaria para evitar riesgos innecesarios.",
+   "descartado": "Se han descartado la ronda de Mygocu por exigir 5.000 € de ticket, todas las acciones por falta de señal de ruptura y las ayudas fuera de la Comunitat Valenciana.",
    "secciones": {
     "startups": {
      "picks": [
       {
        "ref": "st2",
-       "titulo": "Bono Microwd 2026 en Startupxplore",
-       "resumen": "Bono de impacto social emitido en la plataforma regulada Startupxplore con un cupón anual del 10 %.",
-       "por_que": "Se ajusta exactamente a tu ticket máximo disponible (1.000 €) y opera bajo una plataforma autorizada por la CNMV.",
+       "titulo": "Bono Microwd 2026 (Startupxplore)",
+       "resumen": "Inversión en bono de impacto social emitido por MICROWD a través de Startupxplore para financiar microcréditos a mujeres emprendedoras en Latinoamérica.",
+       "por_que": "Encaja exactamente con tu límite de ticket máximo (1.000 €) y tu capital disponible (2.000 €). Se realiza a través de una plataforma española regulada y ofrece rentabilidad fija por cupón.",
        "pasos": [
-        "Crea cuenta e identifícate en Startupxplore.",
-        "Revisa la información financiera y riesgos del Bono Microwd 2026.",
-        "Invierte el ticket mínimo de 1.000 € si encaja con tus objetivos de renta fija."
+        "Acceder a la ficha de la ronda en Startupxplore y revisar el folleto informativo de la emisión",
+        "Completar el proceso de verificación KYC en la plataforma si no estás registrado",
+        "Realizar la suscripción de 1.000 € elegible antes del cierre de la ronda"
        ],
        "coste": "1.000 €",
        "plazo": "2028-03-02",
-       "potencial": "Rendimiento del 10 % anual mediante cupones periódicos.",
+       "potencial": "Cobro de un cupón fijo del 10 % anual hasta el vencimiento del bono",
        "riesgos": [
-        "Riesgo de impago o mora de la cartera de microcréditos.",
-        "Iliquidez del título hasta la fecha de vencimiento.",
-        "Riesgo de pérdida del capital invertido."
+        "Riesgo de impago o demora en la cartera de microcréditos subyacentes",
+        "Falta de liquidez para vender el bono antes del vencimiento",
+        "Riesgo de tipo de cambio en los países de operación de la entidad"
        ],
-       "confianza": "media",
+       "confianza": "alta",
        "datos": {
         "Plataforma": "Startupxplore",
         "Ticket mínimo": "1.000 €",
         "Tipo": "bono",
         "Cierre": "2028-03-02",
-        "Completado": "12 %",
-        "Cupón": "10 %"
+        "Completado": "12.1 %",
+        "Tipo de activo": "Bono",
+        "Cupón anual": "10 %"
        },
        "fuentes": [
         "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
@@ -92,107 +93,117 @@
        "enlace": "https://startupxplore.com/es/inversores/invertir-startups/bonomicrowd2026"
       }
      ],
-     "nota": "Descartada Mygocu por exigir un ticket mínimo de 5.000 €, muy superior a tu límite de 1.000 €."
+     "nota": "Se selecciona el bono de MICROWD por ajustarse estrictamente a tu capital y a tu tope por operación (1.000 €) en una plataforma con licencia. La startup Mygocu ha sido descartada por requerir 5.000 € de ticket mínimo."
     },
     "clonar": {
      "picks": [
       {
-       "ref": "cl9",
-       "titulo": "CRM minimalista para autónomos españoles",
-       "resumen": "Gestor de clientes e ingresos ultraligero enfocado en la privacidad y simplicidad para trabajadores independientes.",
-       "por_que": "Muchos autónomos en España buscan evitar suscripciones complejas. Al no programar, puedes construir un MVP funcional con herramientas No-Code o maquetadores web.",
+       "ref": "cl58",
+       "titulo": "Recepcionista de voz con IA para empresas locales de servicios",
+       "resumen": "Clonar el concepto de Rezora IO: un agente telefónico con IA que atiende llamadas de clientes, responde dudas, presupuesta y agenda citas automáticamente 24/7 para fontaneros, cerrajeros y electricistas.",
+       "por_que": "En la zona de Valencia hay miles de autónomos de servicios que pierden trabajo mientras están en una obra o conduciendo. Puedes crearlo desde el móvil usando plataformas sin código (Vapi/Retell AI + Make + WhatsApp) vendiéndolo como suscripción mensual.",
        "pasos": [
-        "Diseña los campos esenciales (contactos, presupuestos, facturas pendientes).",
-        "Construye una versión inicial No-Code (p. ej. en Bubble o Glide).",
-        "Valida ofreciendo el producto en comunidades de autónomos en España."
+        "Configurar una demo del agente de voz en español con Vapi.ai o Retell AI conectada a Google Calendar",
+        "Diseñar una oferta simple (p. ej. 49 €/mes por atención de llamadas y reservas)",
+        "Contactar por WhatsApp o teléfono con 15-20 autónomos del sector reformas/servicios en Valencia",
+        "Configurar el desvío de llamadas del móvil del profesional al número asignado por la IA"
        ],
-       "coste": "500 € - 5.000 €",
-       "plazo": "sin plazo",
-       "potencial": "Cobro por licencia única o suscripción mensual ligera (9 € - 19 €/mes).",
+       "coste": "300 € - 600 € (suscripciones de herramientas no-code y paquete inicial de minutos de voz)",
+       "plazo": "Sin plazo",
+       "potencial": "Ingresos recurrentes (MRR) cobrando cuotas mensuales por mantenimiento y uso del servicio",
        "riesgos": [
-        "Gran competencia de CRMs gratuitos.",
-        "Resistencia al pago por software por parte del cliente autónomo."
+        "Resistencia inicial de clientes tradicionales a ser atendidos por una voz sintética",
+        "Malentendidos de la IA en llamadas con ruido de fondo o acentos marcados",
+        "Dependencia de proveedores de API de telefonía y LLMs"
        ],
-       "confianza": "media",
+       "confianza": "alta",
        "datos": {
-        "Fuente": "Ideas del radar",
-        "Coste MVP": "500 € - 5.000 €",
-        "Ejecución": "No-Code / Freelance"
+        "Fuente": "Y Combinator Fall 2026",
+        "Modelo de negocio": "SaaS B2B micro-cuota",
+        "Requisito técnico": "Herramientas sin código (No-Code)",
+        "MVP estimado": "400 €"
        },
        "fuentes": [
-        "https://hermitcrm.io/"
+        "https://rezora.io/"
        ],
-       "enlace": "https://hermitcrm.io/"
+       "enlace": "https://www.ycombinator.com/companies/rezora-io"
       },
       {
-       "ref": "cl14",
-       "titulo": "Bandeja unificada de llamadas y WhatsApp para PYMEs",
-       "resumen": "Plataforma que centraliza la atención telefónica y los mensajes de WhatsApp/email en un único panel sencillo.",
-       "por_que": "Pequeños negocios locales (talleres, clínicas, comercios) pierden ventas por no atender llamadas a tiempo; se puede orquestar conectando APIs con herramientas No-Code.",
+       "ref": "cl63",
+       "titulo": "Agente IA generador de contenido profesional para LinkedIn en español",
+       "resumen": "Clonar la app Depost AI creando una herramienta que analiza publicaciones virales B2B en español, aprende el estilo del usuario y genera borradores optimizados para LinkedIn.",
+       "por_que": "Existe alta demanda de marcas personales en LinkedIn en España por parte de consultores y directivos sin tiempo. Se puede estructurar una web móvil simple con Softr o Bubble consumiendo la API de Claude u OpenAI sin programar.",
        "pasos": [
-        "Identifica 3 comercios locales en Valencia para analizar su flujo de llamadas.",
-        "Integra Twilio o API de WhatsApp con un panel web básico usando un freelance o No-Code.",
-        "Ofrece una prueba piloto gratuita de 14 días para medir la conversión."
+        "Construir la interfaz web con Softr o Bubble adaptada para uso desde el teléfono inteligente",
+        "Integrar la API de OpenAI/Anthropic con prompts entrenados en formatos virales de LinkedIn en español",
+        "Ofrecer 7 días de prueba gratuita a profesionales del sector tecnológico o consultoría en LinkedIn",
+        "Lanzar un plan de suscripción mensual de 19 € a 39 €/mes"
        ],
-       "coste": "500 € - 5.000 €",
-       "plazo": "sin plazo",
-       "potencial": "Cuota mensual B2B (29 € - 69 €/mes por negocio).",
+       "coste": "200 € - 400 € (dominio, herramientas no-code y saldo de API)",
+       "plazo": "Sin plazo",
+       "potencial": "Micro-SaaS de bajo coste operativo con margen de beneficio elevado sobre cada suscripción",
        "riesgos": [
-        "Costes de infraestructura y uso de APIs telefónicas.",
-        "Dificultad de venta directa a comercios tradicionales."
+        "Competencia alta de herramientas genéricas de IA para redacción",
+        "Cambios en las políticas de la API o alcance orgánico de LinkedIn",
+        "Cancelación si el usuario no percibe interacción en sus publicaciones"
        ],
        "confianza": "media",
        "datos": {
-        "Fuente": "Ideas del radar",
-        "Coste MVP": "500 € - 5.000 €",
-        "Modelo": "SaaS B2B"
+        "Fuente": "Product Hunt",
+        "Modelo de negocio": "SaaS Freemium",
+        "Requisito técnico": "Softr/Bubble + API LLM (No-Code)",
+        "MVP estimado": "300 €"
        },
        "fuentes": [
-        "https://www.producthunt.com/products/sparrowdesk"
+        "https://www.producthunt.com/products/depost-ai"
        ],
-       "enlace": "https://www.producthunt.com/products/sparrowdesk"
+       "enlace": "https://www.producthunt.com/products/depost-ai"
       }
      ],
-     "nota": "Se descartan modelos que exigen elevados capitales de desarrollo (como infraestructuras IA complejas o microchips)."
+     "nota": "Se han elegido dos conceptos probados en EE. UU./Europa con costes de MVP muy ajustados a tu capital y ejecutables enteramente desde el navegador móvil con herramientas no-code."
     },
     "accion": {
      "picks": [],
-     "nota": "Ninguna de las acciones analizadas presenta actualmente una señal técnica clara de ruptura al alza con una relación riesgo/beneficio favorable. Se aconseja esperar mejores confirmaciones."
+     "nota": "Se han analizado las 12 empresas del radar. Ninguna presenta actualmente una señal técnica clara de ruptura al alza («senal»: null). Además, la mayoría (STNG, TNK, LPG, TEN, HAFN, GSL, NMM) son navieras y petroleras cíclicas cuyo bajo PER suele señalar un máximo en el ciclo de beneficios más que un…"
     },
     "ayudas": {
      "picks": [],
-     "nota": "No constan convocatorias abiertas en la BDNS específicas para la provincia de Valencia o Comunitat Valenciana que encajen con tu perfil de persona física en esta sesión."
+     "nota": "No constan hoy en la base de datos convocatorias públicas abiertas en concurrencia competitiva específicas para tu provincia (Valencia) ni a nivel estatal con plazo confirmado. Se descarta proponer ayudas de otras comunidades autónomas como Andalucía."
     },
     "extra": {
      "picks": [
       {
-       "ref": "in:PLTR:2026-W48",
-       "titulo": "Compras acumuladas de insiders en Palantir (PLTR)",
-       "resumen": "Directivos de Palantir Technologies han realizado compras por valor de 122,3 M$ en los últimos 30 días.",
-       "por_que": "Las compras sustanciales con dinero propio por parte de directivos son uno de los indicadores más sólidos para hacer seguimiento a un valor en bolsa.",
+       "ref": "df:jupiter-lend-dex:2026-11-28",
+       "titulo": "Crecimiento de depósitos (TVL) en Jupiter Lend DEX (+43,9 %)",
+       "resumen": "El protocolo de préstamos y liquidez de Jupiter en la red Solana ha registrado un incremento del 43,9 % en sus depósitos en las últimas 24 h, alcanzando los 34,6 M$.",
+       "por_que": "Encaja con tu interés en cripto evitando memecoins. Jupiter es una infraestructura DeFi consolidada; el fuerte flujo de capital muestra adopción en generación de rendimiento sin apalancamiento.",
        "pasos": [
-        "Añade el ticker PLTR a tu lista de seguimiento en la app de bolsa.",
-        "Monitoriza los niveles de soporte antes de valorar cualquier posición."
+        "Revisar el desglose de pools y rendimientos de Jupiter Lend en DefiLlama",
+        "Evaluar el rendimiento de depósitos en monedas estables (USDC/USDT) para evitar volatilidad de precio",
+        "Seguir la evolución del token de gobernanza JUP si buscas exposición indirecta al protocolo"
        ],
-       "coste": "no consta",
-       "plazo": "sin plazo",
-       "potencial": "Acompañar la convicción de los directivos en caso de continuación de tendencia.",
+       "coste": "A partir de 100 €",
+       "plazo": "Sin plazo",
+       "potencial": "Obtención de rendimiento en DeFi o revalorización por volumen en el ecosistema Solana",
        "riesgos": [
-        "Elevada volatilidad en acciones tecnológicas.",
-        "Riesgo de corrección del mercado general."
+        "Riesgo de fallo o vulnerabilidad en los contratos inteligentes del protocolo",
+        "Volatilidad propia del mercado cripto si se mantiene exposición en tokens no estables",
+        "Riesgo de liquidez en situaciones de estrés extremo de mercado"
        ],
        "confianza": "media",
        "datos": {
-        "Volumen comprado": "122,3 M$",
-        "Compradores": "1 persona/grupo directivo"
+        "Protocolo": "Jupiter Lend DEX",
+        "Red": "Solana",
+        "TVL total": "34.6 M$",
+        "Crecimiento 24h": "+43.9 %"
        },
        "fuentes": [
-        "https://finance.yahoo.com/quote/PLTR/insider-transactions"
+        "https://defillama.com/protocol/jupiter-lend-dex"
        ],
-       "enlace": "https://finance.yahoo.com/quote/PLTR/insider-transactions"
+       "enlace": "https://defillama.com/protocol/jupiter-lend-dex"
       }
      ],
-     "nota": "Se descartan opciones de criptoactivos con movimientos bruscos de volumen que impliquen alto riesgo de trading diario o apalancamiento."
+     "nota": "Se selecciona el impulso de TVL en Jupiter Lend DEX por representar actividad real en finanzas descentralizadas maduras, descartando activos especulativos como WLFI o Bitway."
     }
    },
    "descartados_por_validacion": 0
@@ -219,8 +230,8 @@
     "casa": true,
     "start_tab": "casa"
    },
-   "generatedAt": "2026-11-26T13:34:55Z",
-   "checkedAt": "2026-11-27T12:11:04Z",
+   "generatedAt": "2026-11-28T07:42:45Z",
+   "checkedAt": "2026-11-28T07:42:45Z",
    "ok": true,
    "error": null,
    "fingerprint": "49e1144607610d3c",
@@ -234,15 +245,15 @@
     "cache_read_input_tokens": 0
    },
    "candidates": {
-    "startups": 7,
+    "startups": 4,
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 22
+    "extra": 13
    },
    "casa": {
-    "generatedAt": "2026-11-27T21:22:50Z",
-    "checkedAt": "2026-11-28T04:22:50Z",
+    "generatedAt": "2026-11-28T07:42:45Z",
+    "checkedAt": "2026-11-28T07:42:45Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
@@ -250,23 +261,134 @@
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 0,
-    "descartadas": 3,
+    "nuevas": 2,
+    "descartadas": 1,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 3,
+     "sin_caso": 1,
      "vacia": 0
     },
-    "nota": "He buscado ideas sencillas con bajo capital inicial vinculadas al arte corporal, servicios de cocina para empresas cercanas e integración de voz profesional para inmobiliarias, descartando negocios con stock elevado.",
+    "nota": "He buscado modelos de negocio probados sin inversión alta, descartando esquemas de afiliados o revendedores sin marca propia, para centrarme en opciones de confección, teñido textil y alimentación casera con clientes recurrentes en su zona.",
     "oportunidades_locales": [
      {
-      "titulo": "Programa Relevo de CEEI Valencia",
-      "que_es": "Iniciativa para apoyar a personas emprendedoras a poner en marcha o dar continuidad a pequeños negocios en la provincia de Valencia.",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
+      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana",
+      "que_es": "Convocatorias y bonificaciones autonómicas (como la Cuota Cero y ayudas al inicio de actividad) para personas que emprendan desde casa.",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
+     },
+     {
+      "titulo": "Mercados gastronómicos y muestras artesanales en la provincia de Valencia",
+      "que_es": "Ferias de artesanía y gastronomía ideales para testar productos en puestos temporales sin grandes costes fijos.",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWDBiajNoM2lZVkRSWThtd2xqWDBQbU9sTDZqU2lZcDVCZ0F1RXpSal93U1I4RldJcmxiTEliWlQ5VVp0cVVXQTV4dVhjZzBmbmRSekpSQ2pjMTFBdVd5Y1Nmb1B1UGhzWDUxVk1hUl95VDlBZXpSOEJyMDFCSWdaZHJMT3o2anFG?oc=5"
      }
     ],
     "ayudas": [],
     "ideas": [
+     {
+      "id": "c7e415cab",
+      "fecha": "2026-11-28T07:42:45Z",
+      "nueva": true,
+      "titulo": "Diseño y Confección de Moda Textil Tie-Dye y Piezas Únicas Hechas a Mano",
+      "gancho": "Crea prendas y accesorios con técnicas artísticas de teñido y desteñido para vender por internet y en ferias locales.",
+      "que_es": "Consiste en adquirir prendas básicas de algodón (camisetas, sudaderas, tote bags) y transformarlas artesanalmente utilizando técnicas de teñido tie-dye y efectos visuales de color. Las piezas exclusivas se venden online a través de Instagram, Vinted y Etsy, así como en mercados artesanales de la zona.",
+      "casos": [
+       {
+        "quien": "Daily Mail",
+        "pais": "",
+        "resultado": "I'm earning up to $1,000 a month from my tye-dye T-shirts side hustle",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQY3BMN0ZiTnRHRlVXdjdXbUpIeWpVdk5hLWVMRjZ2aVFIQUt4emlsQWwza0RqMF9HWnJwMXhBaXB1UWNFdEhKTzhNVktQRGg3TkpwU0d1c0VWQ1lmTmpuZ3d5d2pHTHlfRkpKbVNDeXMxcTZldzNNVUdnTDFGdXpKZ3A0Ty1sLWQ0M0lOckJ1anVnUjI5?oc=5"
+       }
+      ],
+      "por_que_tu": "Aprovechas tu sensibilidad para el arte y el diseño sin necesidad de grandes inversiones ni maquinarias complejas.",
+      "como_empezar": [
+       "Semana 1: Comprar un lote de tintes textiles de calidad y camisetas/bolsas de algodón para probar patrones.",
+       "Semana 2: Teñir una primera colección cápsula de 15 piezas y fotografiarlas con buena luz natural.",
+       "Semana 3: Abrir perfil comercial en Instagram y tienda en Etsy o Vinted subiendo vídeos cortos del proceso.",
+       "Semana 4: Contactar con organizadores de ferias de artesanía en la provincia de Valencia para reservar puesto."
+      ],
+      "coste_inicial": "90 € - 160 € (kit de tintes textiles, fijadores, cubetas y lote inicial de 20 prendas/bolsas de algodón).",
+      "herramientas": [
+       "Instagram / TikTok",
+       "Etsy o Vinted",
+       "Canva",
+       "Tintes de tela ecológicos"
+      ],
+      "precio": "20 € a 35 € por camiseta o bolsa decorada, y 45 € a 65 € por sudaderas artesanales exclusivas.",
+      "primeras_clientas": [
+       "Publicar vídeos breves del proceso de desteñido y teñido artesanal en Instagram Reels.",
+       "Montar un stand en mercados de artesanía y eventos culturales de la comarca del Camp de Túria y Valencia."
+      ],
+      "ingresos_posibles": "Estimación prudente: 400 € a 900 €/mes vendiendo entre 20 y 35 piezas al mes.",
+      "horas_semana": "10 a 15 horas a la semana.",
+      "tramites": [
+       "Alta en Autónomos (epígrafe artesanal textil)",
+       "Aviso legal y cumplimiento LOPD para tienda online",
+       "Emisión de facturas con IVA (21%)"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Acumular prendas terminadas si no se promociona activamente en redes",
+       "Variación sutil entre lotes si no se mide bien la mezcla de tinte"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "arte",
+       "diseño"
+      ]
+     },
+     {
+      "id": "c7b11ec0c",
+      "fecha": "2026-11-28T07:42:45Z",
+      "nueva": true,
+      "titulo": "Confección Artesanal de Quilts y Mantas Personalizadas por Encargo",
+      "gancho": "Elabora mantas acolchadas hechas a mano con motivos personalizados para regalos infantiles y decoración del hogar.",
+      "que_es": "Consiste en diseñar y confeccionar a máquina o a mano mantas acolchadas artesanalmente (quilts) con patrones temáticos, infantiles o de recuerdos. Se venden bajo pedido en internet y redes sociales como objetos de regalo únicos de alto valor decorativo.",
+      "casos": [
+       {
+        "quien": "The Economic Times",
+        "pais": "",
+        "resultado": "He made Star Wars blankets for his two sons. Now his quilting side hustle brings in $117,000 a month in sales, and he only works on it one day a week",
+        "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxOSm1pU0ZublJ6WUZFNDhVRC1laW5wNmFnTVlaWVJMSF9aakRVTk5tWFV4dF9JVTZBandSQkRUUkxOUzE5Ty04OF9RWXl6U3dWTzNxUlBxWVBHU3lWTm55VV82X3dQY3JTZ0g5dDVpMmxocXFsOUpuT1pFZWQyUlBpTnVSMDIwN2NIam1VQy1IdWxKUEQ1T3VvZGhNYTk2ZGVpeDZPN0wwNEhPU181aWxfM1pNaWJDcXVNTW5KZ2dVNGN1Vy1zd3hZMW94bkQ0NXhlSkhMcEtTd1Y4NmpldGFnY3oyZVZDeVlfSVRabEZrOW16WWprdWRfUFdzMFA2V1NsblJ4QXN6TEcwWUw1aHUwYmRwNkFFTFpYRWdMdzVVZC1jRC0zdlpSNy1Hb2hRcWNERFJ3eFJOZ091MEx3NGc?oc=5",
+        "resultado_es": "Hace mantas de Star Wars y su negocio de acolchado factura $117.000 al mes trabajando un día a la semana"
+       }
+      ],
+      "por_que_tu": "Combina tu gusto por el diseño, el arte textil y los detalles enfocados a niños y decoración del hogar en un producto duradero y de gran carga emocional.",
+      "como_empezar": [
+       "Semana 1: Seleccionar telas de algodón de calidad y confeccionar 2 mantas de muestra (una infantil para cuna y otra de salón).",
+       "Semana 2: Realizar una sesión de fotos de las muestras en ambientes cuidados del hogar.",
+       "Semana 3: Crear perfil en Etsy y Pinterest con opciones de personalización (nombres bordados, paletas de color).",
+       "Semana 4: Difundir en comunidades de madres y decoración para captar los primeros encargos."
+      ],
+      "coste_inicial": "110 € - 190 € (telas de algodón premium, relleno de guata, hilos y material de mercería).",
+      "herramientas": [
+       "Máquina de coser doméstica",
+       "Etsy",
+       "Pinterest / Instagram",
+       "Canva"
+      ],
+      "precio": "65 € a 110 € por manta infantil de cuna y 130 € a 220 € por manta de sofá/cama personalizada.",
+      "primeras_clientas": [
+       "Publicar fotos de alta calidad en Pinterest e Instagram enfocadas a regalos de nacimiento y baby showers.",
+       "Ofrecer el catálogo digital en grupos de crianza y mercadillos locales de Valencia."
+      ],
+      "ingresos_posibles": "Estimación prudente: 500 € a 1.200 €/mes elaborando entre 5 y 10 mantas al mes.",
+      "horas_semana": "12 a 18 horas a la semana.",
+      "tramites": [
+       "Alta en Autónomos (epígrafe artesanal/confección)",
+       "Facturación con IVA (21%)",
+       "Respetar derechos de autor en diseños y no usar marcas registradas sin licencia"
+      ],
+      "ayudas": [],
+      "riesgos": [
+       "Requerir elevado tiempo de costura si el patrón es muy complejo",
+       "Subida puntual del coste de tejidos de alta calidad"
+      ],
+      "confianza": "alta",
+      "temas": [
+       "arte",
+       "diseño",
+       "niños"
+      ]
+     },
      {
       "id": "cdeb5477d",
       "fecha": "2026-11-27T21:22:50Z",
@@ -1633,11 +1755,11 @@
     ]
    },
    "resumen": "Hoy para ti: ninguna ayuda abierta que encaje.",
-   "descartado": "He descartado todas las ayudas de la BDNS por estar cerradas, dirigidas a grandes empresas o requerir una antigüedad fiscal que no se ajusta a tu situación actual.",
+   "descartado": "He descartado todas las ayudas de la BDNS que requieren una antigüedad mínima en el IAE o que están dirigidas exclusivamente a sectores industriales o de innovación tecnológica profunda.",
    "secciones": {
     "ayudas": {
      "picks": [],
-     "nota": "Tras revisar la Base de Datos Nacional de Subvenciones (BDNS) para la Comunitat Valenciana y el ámbito estatal, no hay convocatorias abiertas de concurrencia competitiva para nuevos proyectos de emprendimiento individual que cumplan con tu perfil de bajo riesgo y baja inversión."
+     "nota": "He revisado la Base de Datos Nacional de Subvenciones (BDNS) para la Comunitat Valenciana y el ámbito estatal. Actualmente no hay convocatorias abiertas de concurrencia competitiva para nuevos proyectos de emprendimiento generalista o digital que se ajusten a tu perfil de baja inversión."
     }
    },
    "descartados_por_validacion": 0
@@ -1665,11 +1787,11 @@
     "casa": false,
     "start_tab": "parati"
    },
-   "generatedAt": "2026-11-27T12:11:04Z",
-   "checkedAt": "2026-11-27T12:11:04Z",
+   "generatedAt": "2026-11-28T07:42:45Z",
+   "checkedAt": "2026-11-28T07:42:45Z",
    "ok": true,
    "error": null,
-   "fingerprint": "8d3b1f60c9a55aa6",
+   "fingerprint": "b3a91e8a817c62a5",
    "provider": "gemini",
    "model": "gemini-3.6-flash",
    "cost_usd": 0.0,
@@ -1684,148 +1806,154 @@
     "clonar": 69,
     "accion": 12,
     "ayudas": 0,
-    "extra": 17
+    "extra": 13
    },
-   "resumen": "Today for you: no round that fits, 2 ideas to clone, no undervalued stock breaking out, 2 more opportunities.",
-   "descartado": "Excluded speculative crypto memecoins, day-trading alerts, cyclical shipping stocks at peak earnings, and startup rounds exceeding your max ticket.",
+   "resumen": "Today for you: no round that fits, 2 ideas to clone, no undervalued stock breaking out.",
+   "descartado": "Discarded high-risk crypto spikes (WLFI, Bitway), European startups requiring EU tax residency, and cyclical stocks lacking clear breakout technicals.",
    "secciones": {
     "startups": {
      "picks": [],
-     "nota": "No regulated equity crowdfunding platforms for retail investors are currently available in Egypt, and listed EU platform rounds either exceed your $1,000 max ticket or present cross-border regulatory friction."
+     "nota": "Egypt currently lacks licensed equity crowdfunding platforms for retail investors. The platforms in today's radar (Startupxplore and Dozen) operate under Spanish regulation (CNMV), require EU residency, or feature minimum tickets above your $1,000 limit."
     },
     "clonar": {
      "picks": [
       {
-       "ref": "cl14",
-       "titulo": "SparrowDesk: Unified WhatsApp & Call Inbox for Egyptian SMBs",
-       "resumen": "An omnichannel support inbox that unifies WhatsApp messages, phone calls, and email into a single interface for customer service teams.",
-       "por_que": "Egyptian SMBs and Instagram sellers process most orders over WhatsApp and mobile calls. Providing an affordable multi-agent tool solves a major operational pain point.",
+       "ref": "cl11",
+       "titulo": "Micro-SaaS for Egyptian ETA E-Invoicing Integration",
+       "resumen": "Inspired by invoiceQ ($5M Series A in MENA), a lightweight e-invoicing middleware tailored specifically for Egyptian SMEs and retailers to automatically sync sales data with the Egyptian Tax Authority (ETA) portal.",
+       "por_que": "Egypt's mandatory electronic invoicing regulations force small businesses to digitize compliance, but enterprise solutions are too expensive and complex for local merchants.",
        "pasos": [
-        "Build a lightweight MVP using No-Code/React connected to the WhatsApp Business API and Twilio.",
-        "Integrate local Egyptian payment options (Fawry, Paymob) for monthly subscription billing.",
-        "Offer a 14-day trial to local e-commerce stores and Instagram businesses.",
-        "Expand by adding basic CRM and automated order-status replies."
+        "Develop a lightweight API connector between WooCommerce/Shopify/local POS systems and the ETA e-invoicing gateway.",
+        "Offer a simple subscription tier ($15–$30/month) with automated tax-compliant PDF invoice generation and QR codes.",
+        "Acquire initial clients by partnering with local tax consultants and accounting freelancers in Cairo.",
+        "Expand to automated tax filing summaries for Egyptian VAT compliance."
        ],
-       "coste": "$500 - $2,000 MVP",
-       "plazo": "Sin plazo",
-       "potencial": "High recurring revenue ($20-$50/month per business account)",
+       "coste": "$1,500 - $3,000 for initial MVP development using standard APIs",
+       "plazo": "sin plazo",
+       "potencial": "$1,000 - $4,000 MRR within 6-12 months",
        "riesgos": [
-        "Meta WhatsApp API pricing changes",
-        "Competition from global customer desks",
-        "Initial user onboarding friction"
+        "Changes in Egyptian Tax Authority API specifications",
+        "Competition from established regional ERP vendors",
+        "Slow adoption rate among non-digitized micro-merchants"
        ],
        "confianza": "alta",
        "datos": {
         "Source": "Ideas del radar",
-        "Coste MVP": "$500 - $2,000",
-        "Mercado clave": "E-commerce y pymes en Egipto"
-       },
-       "fuentes": [
-        "https://www.producthunt.com/products/sparrowdesk"
-       ],
-       "enlace": "https://www.producthunt.com/products/sparrowdesk"
-      },
-      {
-       "ref": "cl10",
-       "titulo": "invoiceQ Clone: E-Invoicing Middleware for Egyptian Tax Compliance",
-       "resumen": "A micro-SaaS platform that automates e-invoice generation and syncs local sales data with government tax portals.",
-       "por_que": "With Egypt mandating electronic invoicing for businesses, small merchants and accounting firms need simple, cheap connectors to comply without buying costly enterprise ERPs.",
-       "pasos": [
-        "Map the Egyptian Tax Authority (ETA) e-invoicing API requirements.",
-        "Develop a straightforward web tool that converts Excel/CSV sales reports into tax-compliant e-invoices.",
-        "Market directly to small accounting practices and independent merchants.",
-        "Charge on a monthly subscription or pay-per-batch invoice tier."
-       ],
-       "coste": "$1,000 - $2,000 MVP",
-       "plazo": "Sin plazo",
-       "potencial": "Strong B2B retention driven by statutory tax compliance",
-       "riesgos": [
-        "Regulatory changes by tax authorities",
-        "Direct competition from local ERP vendors",
-        "Data security and compliance requirements"
-       ],
-       "confianza": "media",
-       "datos": {
-        "Source": "Ideas del radar",
         "Origin": "Jordan",
-        "Inversión MVP": "$1,000 - $2,000",
-        "Referencia regional": "$5M Serie A en Jordania"
+        "Estimated MVP Cost": "$1,500 - $3,000",
+        "Target Audience": "Egyptian SMEs & Freelancers",
+        "Monetization": "Monthly SaaS subscription"
        },
        "fuentes": [
         "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
        ],
        "enlace": "https://www.wamda.com/2026/11/jordanian-fintech-invoiceq-raises-5-million-oversubscribed-series-a"
-      }
-     ],
-     "nota": "Both micro-SaaS picks fit your budget ($500-$2,000) and target immediate operational needs in the Egyptian market."
-    },
-    "accion": {
-     "picks": [],
-     "nota": "No stock candidate currently shows a clear technical breakout signal without high cyclical risk (e.g., shipping/tankers near cyclical peaks)."
-    },
-    "extra": {
-     "picks": [
-      {
-       "ref": "hc:d0f3f6900c9c",
-       "titulo": "Case Study: Scaling a $200 Micro-Business to 6 Figures",
-       "resumen": "An engineer launched a lean digital business with $200 and scaled it beyond a corporate salary without raising venture capital.",
-       "por_que": "Demonstrates how low-capital bootstrapping can build high-margin digital products tailored to your limited startup budget.",
-       "pasos": [
-        "Validate demand for a hyper-focused service or digital tool.",
-        "Launch a minimum viable version using minimal hosting/domain costs ($200).",
-        "Focus on direct organic user acquisition before re-investing profits."
-       ],
-       "coste": "$200",
-       "plazo": "Sin plazo",
-       "potencial": "High-margin cash flow with zero equity dilution",
-       "riesgos": [
-        "Execution speed",
-        "Initial time commitment without immediate pay"
-       ],
-       "confianza": "alta",
-       "datos": {
-        "Inversión inicial": "$200",
-        "Modelo": "Lean Bootstrap SaaS/Digital Product"
-       },
-       "fuentes": [
-        "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSkRPV3pxMWFPZlVNYnpVLVUtUHl6MVRnWGgxWDg5OU5zZTVUdWVpTHZ2dU1sRUxpRFNzNGZZaDdwaGdxTGZxdm9FTHdIekFNdGFTSEZQMllEZmhFTGJ4RXdSUnZBX2dTN09mSV9yc0RwTkEzdGhiUUJoWFNrd2R3aDJQbHZ2bG8?oc=5"
-       ],
-       "enlace": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOSkRPV3pxMWFPZlVNYnpVLVUtUHl6MVRnWGgxWDg5OU5zZTVUdWVpTHZ2dU1sRUxpRFNzNGZZaDdwaGdxTGZxdm9FTHdIekFNdGFTSEZQMllEZmhFTGJ4RXdSUnZBX2dTN09mSV9yc0RwTkEzdGhiUUJoWFNrd2R3aDJQbHZ2bG8?oc=5"
       },
       {
-       "ref": "in:PLTR:2026-W48",
-       "titulo": "Palantir (PLTR): $122.3M Insider Buying Cluster",
-       "resumen": "Company executives have purchased over $122M of PLTR stock within the past 30 days.",
-       "por_que": "Significant executive cluster buying is one of the strongest bullish indicators of long-term fundamental confidence.",
+       "ref": "cl58",
+       "titulo": "Localized AI Voice & WhatsApp Booking Agent for Egyptian Service Businesses",
+       "resumen": "Inspired by Rezora IO, an automated AI voice and WhatsApp booking agent customized in Egyptian Arabic dialect to answer customer inquiries and schedule appointments for local clinics, dental offices, and home services.",
+       "por_que": "Egyptian clinics and service providers rely heavily on phone calls and WhatsApp, frequently losing customers due to slow response times during peak hours.",
        "pasos": [
-        "Track PLTR price pullbacks toward key moving averages.",
-        "Assess valuation before taking non-leveraged equity positions."
+        "Build a prototype using voice/chat platforms (e.g., Retell AI or WhatsApp API) fine-tuned for Egyptian Arabic speech.",
+        "Offer a 14-day free trial to dental clinics and auto repair shops in major urban areas.",
+        "Integrate automatic calendar scheduling and SMS/WhatsApp confirmation reminders.",
+        "Charge a recurring monthly fee ($30–$60 per location) based on booked appointments."
        ],
-       "coste": "Variable",
-       "plazo": "Sin plazo",
-       "potencial": "Long-term equity appreciation backed by enterprise AI demand",
+       "coste": "$500 - $1,500 using No-Code platforms and standard telephony APIs",
+       "plazo": "sin plazo",
+       "potencial": "$1,500 - $5,000 MRR with 50-100 local business clients",
        "riesgos": [
-        "High valuation ratios",
-        "General market sentiment shifts"
+        "Speech recognition friction with heavy local dialect variations",
+        "Dependence on third-party WhatsApp/telephony API pricing",
+        "Customer churn if initial setup requires ongoing support"
        ],
        "confianza": "media",
        "datos": {
-        "Volumen insider 30d": "$122.3 M",
-        "Ticker": "PLTR"
+        "Source": "Y Combinator Fall 2026",
+        "Estimated MVP Cost": "$500 - $1,500",
+        "Primary Channel": "WhatsApp & Voice AI integration",
+        "Target Industry": "Medical clinics and home services in Egypt"
        },
        "fuentes": [
-        "https://finance.yahoo.com/quote/PLTR/insider-transactions"
+        "https://rezora.io/"
        ],
-       "enlace": "https://finance.yahoo.com/quote/PLTR/insider-transactions"
+       "enlace": "https://www.ycombinator.com/companies/rezora-io"
       }
      ],
-     "nota": "Selected lean business inspiration and high-conviction institutional insider signals while filtering out volatile memecoins and day-trading speculative noise."
+     "nota": "Both business models address clear operational pain points in Egypt with minimal initial software development costs."
+    },
+    "accion": {
+     "picks": [],
+     "nota": "None of the candidate stocks in today's radar exhibit confirmed breakout signals ('ruptura') combined with favorable risk/reward ratios. Furthermore, the overall market context shows the S&P 500 trading below its 200-day moving average, signaling caution."
+    },
+    "extra": {
+     "picks": [],
+     "nota": "Today's pulse feeds focused primarily on speculative cryptocurrency spikes and local grant programs in Spain, none of which fit your medium-risk tolerance or Egyptian geographic profile."
     }
    },
    "descartados_por_validacion": 0
   }
  },
  "sources": {
+  "startupxplore": {
+   "ok": true,
+   "n": 3,
+   "err": null
+  },
+  "capitalcell": {
+   "ok": true,
+   "n": 0,
+   "err": null
+  },
+  "dozen": {
+   "ok": true,
+   "n": 1,
+   "err": null
+  },
+  "ideas": {
+   "ok": true,
+   "n": 14,
+   "err": null
+  },
+  "trustmrr": {
+   "ok": true,
+   "n": 20,
+   "err": null
+  },
+  "ycombinator": {
+   "ok": true,
+   "n": 25,
+   "err": null
+  },
+  "producthunt": {
+   "ok": true,
+   "n": 10,
+   "err": null
+  },
+  "acciones": {
+   "ok": true,
+   "n": 12,
+   "err": null
+  },
+  "pulso": {
+   "ok": true,
+   "n": 13,
+   "err": null
+  },
+  "ayudas_es": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": {
+    "encontradas": 67,
+    "sin_relacion": 35,
+    "directa": 8,
+    "no_para_ti": 11,
+    "cerradas": 13,
+    "abiertas": 0
+   }
+  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
@@ -1841,8 +1969,14 @@
   },
   "casa_historias_ella": {
    "ok": true,
-   "n": 19,
+   "n": 26,
    "err": null
+  },
+  "ayudas_eg": {
+   "ok": true,
+   "n": 0,
+   "err": null,
+   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
