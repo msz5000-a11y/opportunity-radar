@@ -1,8 +1,8 @@
 {
  "version": 2,
  "generatedAt": "2026-11-28T07:42:45Z",
- "checkedAt": "2026-11-28T07:42:45Z",
- "attemptedAt": "2026-11-28T07:42:45Z",
+ "checkedAt": "2026-11-28T13:25:55Z",
+ "attemptedAt": "2026-11-28T13:25:55Z",
  "spend": {
   "date": "2026-11-28",
   "usd": 0.0
@@ -253,32 +253,37 @@
    },
    "casa": {
     "generatedAt": "2026-11-28T07:42:45Z",
-    "checkedAt": "2026-11-28T07:42:45Z",
+    "checkedAt": "2026-11-28T13:25:55Z",
     "notifiedAt": null,
     "profile_hash": "d39ca72f0eda",
     "provider": "gemini",
-    "model": "gemini-3.6-flash",
+    "model": "gemini-3.1-flash-lite",
     "cost_usd": 0.0,
     "searches": 0,
     "error": null,
-    "nuevas": 2,
-    "descartadas": 1,
+    "nuevas": 0,
+    "descartadas": 3,
     "motivos": {
      "repetida": 0,
-     "sin_caso": 1,
+     "sin_caso": 3,
      "vacia": 0
     },
-    "nota": "He buscado modelos de negocio probados sin inversión alta, descartando esquemas de afiliados o revendedores sin marca propia, para centrarme en opciones de confección, teñido textil y alimentación casera con clientes recurrentes en su zona.",
+    "nota": "He buscado oportunidades de emprendimiento local en Valencia y las he cruzado con tus intereses, descartando ideas de trading o multinivel para centrarme en negocios de servicios y productos artesanales con baja inversión inicial.",
     "oportunidades_locales": [
      {
-      "titulo": "Nuevas ayudas para autónomos en la Comunitat Valenciana",
-      "que_es": "Convocatorias y bonificaciones autonómicas (como la Cuota Cero y ayudas al inicio de actividad) para personas que emprendan desde casa.",
+      "titulo": "CEEI Valencia - Plataforma Relevo",
+      "que_es": "Plataforma para dar continuidad a negocios locales, ideal para buscar alianzas o traspasos.",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQblh3R0haamR4aXppMDhVYVVQQ0JRVTFnVy1FRmJuRGR3V3lJdEMxaUpocGVOaTZEQ3J1VlFRX0hGZi1rcGpHSEhkejBkX0pnbU5VaHI4RWx4dWJ5UWlGUVRMaXpqdzB5OGVLckxmS08tQ1NidHZtaDFHZ0cyTi1vQ3JxU21oQUZpYUlGU291NGllT3dlamNCd2plWFdrV19VOXN3WXdTVWZwY0dFQlBkeGd3RmYtb0c5Tm85SlBFQl81MHRibk5EejBoRUVaSTAwY3prVzJoa09aZDkyTEdNdXF5cU5GT21ZYUpfNA?oc=5"
+     },
+     {
+      "titulo": "Ayudas para autónomos Comunitat Valenciana 2026",
+      "que_es": "Información sobre subvenciones vigentes para el inicio de actividad.",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQNzY5WU5LR2RNYWNiYmRwVnVTeGpuRXFwbEZVbGt1aUhIQkNwaW5QMFdvWk9Wb0hIZnpGMFZQUHBPMkZ3UGtVSUNWOG4wU25LTmMzS2lKQ3hjZUFtZ0JZTmlRRGlrYjJpSkpnSHFreUdiZDZ6dWVxNE1Qb2VYVVlBQ1FlS2draGlWZ0dibW9yUTluZWE1eU82ZnpWTTNmd1E5aHZMYVZYRjRCdERFdkh2VTZJVDkzR2RZUnp4RGhlWFI2bWpPc0dEWW9XSGF5Nnpyc1NRbzZhQjl4MzZE?oc=5"
      },
      {
-      "titulo": "Mercados gastronómicos y muestras artesanales en la provincia de Valencia",
-      "que_es": "Ferias de artesanía y gastronomía ideales para testar productos en puestos temporales sin grandes costes fijos.",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWDBiajNoM2lZVkRSWThtd2xqWDBQbU9sTDZqU2lZcDVCZ0F1RXpSal93U1I4RldJcmxiTEliWlQ5VVp0cVVXQTV4dVhjZzBmbmRSekpSQ2pjMTFBdVd5Y1Nmb1B1UGhzWDUxVk1hUl95VDlBZXpSOEJyMDFCSWdaZHJMT3o2anFG?oc=5"
+      "titulo": "Incubadora de empresas para mujeres en Valencia",
+      "que_es": "Apoyo y asesoría para mujeres emprendedoras en la región.",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPZGo0MmJ0aTg4WnpOWjJBWDlyLWdqdWJPVXQzZC1jdGhmZmhKZlVneFJpSHkyS3lfTTVPYm8zeWViaGlEUU9peWFaV2hqeXV1V1V5dXl0X1hBOF96TmtKRXhvZWZiQ1pNWXczVTJwLXAxUllOdnFEUDBaQ3ZfRm1OZlRkMFlGaHdydG5JLWlMbVhaTzBGcjMyTDZqMXBWbFQ1b08zanB3Z2s1OGVtdzU0a1VlVFpxXzJrWWpHaXg2QTJBT1hnTUUyVWF0N0dJQWxzY2hmN1FLSHk4Skh6YTZtbTdCQkJvQUFWa3F6Sm1DTnZseEx1Wm9aS2hEQTLSAYICQVVfeXFMUEVUTUNSX0hiX29CU25ERV9ibE5WcW9PQ1V5WDhzcU5VcUZuRWZnX3RGMmZKNHRXbFg0NS16Tl9iSmczb2ctVWRmQjBoSXR3LV84XzJmcHRHdGZXbFNrN0t4SWZCYVFTWVFQZEVKWnNDTU80dUpmcHBPODFfVEJXa2lmVHRJVGd4ZzhkLUh2bHRIYU44S3Q0eGVMMEsyR3F3Vm14MC02YjUwcmI1Qzh2NGplSEZsczZDNldIRGtJTWRFbU85ZzJRcEY0RmZuREdGOW56aEJlRktxd0pEWHpQb25FUGtIaWFuVUdjVk1QUkNPMm8tQmQ0aUVhLVRsTTJ1TDVR?oc=5"
      }
     ],
     "ayudas": [],
@@ -286,7 +291,7 @@
      {
       "id": "c7e415cab",
       "fecha": "2026-11-28T07:42:45Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Diseño y Confección de Moda Textil Tie-Dye y Piezas Únicas Hechas a Mano",
       "gancho": "Crea prendas y accesorios con técnicas artísticas de teñido y desteñido para vender por internet y en ferias locales.",
       "que_es": "Consiste en adquirir prendas básicas de algodón (camisetas, sudaderas, tote bags) y transformarlas artesanalmente utilizando técnicas de teñido tie-dye y efectos visuales de color. Las piezas exclusivas se venden online a través de Instagram, Vinted y Etsy, así como en mercados artesanales de la zona.",
@@ -338,7 +343,7 @@
      {
       "id": "c7b11ec0c",
       "fecha": "2026-11-28T07:42:45Z",
-      "nueva": true,
+      "nueva": false,
       "titulo": "Confección Artesanal de Quilts y Mantas Personalizadas por Encargo",
       "gancho": "Elabora mantas acolchadas hechas a mano con motivos personalizados para regalos infantiles y decoración del hogar.",
       "que_es": "Consiste en diseñar y confeccionar a máquina o a mano mantas acolchadas artesanalmente (quilts) con patrones temáticos, infantiles o de recuerdos. Se venden bajo pedido en internet y redes sociales como objetos de regalo únicos de alto valor decorativo.",
@@ -1896,64 +1901,6 @@
   }
  },
  "sources": {
-  "startupxplore": {
-   "ok": true,
-   "n": 3,
-   "err": null
-  },
-  "capitalcell": {
-   "ok": true,
-   "n": 0,
-   "err": null
-  },
-  "dozen": {
-   "ok": true,
-   "n": 1,
-   "err": null
-  },
-  "ideas": {
-   "ok": true,
-   "n": 14,
-   "err": null
-  },
-  "trustmrr": {
-   "ok": true,
-   "n": 20,
-   "err": null
-  },
-  "ycombinator": {
-   "ok": true,
-   "n": 25,
-   "err": null
-  },
-  "producthunt": {
-   "ok": true,
-   "n": 10,
-   "err": null
-  },
-  "acciones": {
-   "ok": true,
-   "n": 12,
-   "err": null
-  },
-  "pulso": {
-   "ok": true,
-   "n": 13,
-   "err": null
-  },
-  "ayudas_es": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": {
-    "encontradas": 67,
-    "sin_relacion": 35,
-    "directa": 8,
-    "no_para_ti": 11,
-    "cerradas": 13,
-    "abiertas": 0
-   }
-  },
   "ayudas_ella": {
    "ok": true,
    "n": 0,
@@ -1971,12 +1918,6 @@
    "ok": true,
    "n": 26,
    "err": null
-  },
-  "ayudas_eg": {
-   "ok": true,
-   "n": 0,
-   "err": null,
-   "filtro": null
   }
  },
  "model": "claude-opus-5-5"
